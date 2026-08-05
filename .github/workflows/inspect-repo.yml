@@ -1,0 +1,37 @@
+name: Inspect Trending Repository
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: owner/repository
+        required: true
+        type: string
+      ref:
+        description: commit SHA/tag/branch
+        required: true
+        default: main
+        type: string
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate
+        env:
+          REPOSITORY: ${{ inputs.repository }}
+        run: echo "$REPOSITORY" | grep -Eq '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$'
+      - name: Clone without execution
+        env:
+          REPOSITORY: ${{ inputs.repository }}
+          REF: ${{ inputs.ref }}
+        run: |
+          git clone --filter=blob:none --no-checkout "https://github.com/${REPOSITORY}.git" target
+          cd target && git checkout "$REF"
+      - run: python tools/static_inspect.py target > inspection.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inspection-report
+          path: inspection.md
