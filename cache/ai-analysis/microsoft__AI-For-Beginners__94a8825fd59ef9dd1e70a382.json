@@ -1,0 +1,50 @@
+{
+  "summary_ja": "初心者向けの人工知能（AI）カリキュラムを提供するリポジトリです。12週間、24のレッスンを通じて、知識表現、ニューラルネットワーク、コンピュータビジョン、自然言語処理、AI倫理などの基礎をTensorFlowやPyTorchを用いた実践的なコードとともに学べます。",
+  "capabilities": [
+    {
+      "text": "12週間、24レッスン構成の初心者向けAIカリキュラムとクイズ、ラボの提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "TensorFlowやPyTorchを使用したニューラルネットワークやコンピュータビジョン、自然言語処理の実装コードとJupyter Notebookの提供",
+      "evidence_section": "What you will learn"
+    },
+    {
+      "text": "翻訳ファイルを除外して高速にクローンできるスパースチェックアウト手順の提供",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIをゼロから学びたい初心者が、パターン認識やニューラルネットワークの基礎をハンズオンで学習する",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "教育者が、自身のクラスや講座で人工知能の基礎教育カリキュラムとして活用する",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして初心者向けのエクササイズやカリキュラムの環境を準備する",
+    "steps": [
+      "リポジトリをフォークする",
+      "git clone https://github.com/microsoft/AI-For-Beginners.git を実行してクローンする"
+    ],
+    "success_criteria": "ローカル環境にリポジトリが正しくクローンされ、初心者向けサンプルやセットアップレッスンを確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What you will learn",
+    "Getting Started"
+  ],
+  "unconfirmed": [
+    "ローカル環境での具体的なPython実行コマンドや依存関係インストールの詳細（セットアップレッスン内の個別手順）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "229d738c43730add39f7e964e61c71b155e7453d",
+  "generated_at": "2026-08-05T22:32:32.856350+09:00"
+}

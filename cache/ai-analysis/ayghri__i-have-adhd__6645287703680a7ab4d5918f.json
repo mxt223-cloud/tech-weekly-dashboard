@@ -1,0 +1,53 @@
+{
+  "summary_ja": "コーディングアシスタントの出力スタイルを変更し、前置きや雑談を省いて結論や次に取るべき行動を最初から明確に伝えるためのスキルです。",
+  "capabilities": [
+    {
+      "text": "次に取るべき行動を先頭に提示する機能",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "複数ステップのタスクを番号付きで整理する機能",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "挨拶や振り返り、結びの言葉などの不要な前置きを排除する機能",
+      "evidence_section": "The rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントからの回答で、結論が長文の中に埋もれてしまうのを防ぎたいとき",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "要点が整理された分かりやすいステップで作業手順を確認したいとき",
+      "basis": "README明記",
+      "evidence_section": "What changes"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeでプラグインを追加してスキルを有効にする",
+    "steps": [
+      "claude plugin marketplace add ayghri/i-have-adhd を実行する",
+      "claude plugin install i-have-adhd@i-have-adhd を実行する",
+      "/i-have-adhd と入力する"
+    ],
+    "success_criteria": "Claude Code上でプラグインがインストールされ、コマンドが使用できること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it"
+  ],
+  "unconfirmed": [
+    "Claude CodeやCodex以外の対応コーディングエージェントの詳細なインストール手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "00e1e05fb0ea2f9006027eccf78db0685524c868",
+  "generated_at": "2026-08-05T22:32:57.444980+09:00"
+}

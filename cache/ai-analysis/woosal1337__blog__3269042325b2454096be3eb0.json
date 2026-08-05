@@ -1,0 +1,54 @@
+{
+  "summary_ja": "woosal1337/blogは、Next.js 14やMDX、Tailwind CSS、Biomeを使用して構築された個人のブログおよびポートフォリオサイトです。",
+  "capabilities": [
+    {
+      "text": "MDXを使用したブログ記事の投稿、左側の目次、コールアウト表示機能",
+      "evidence_section": "Highlights"
+    },
+    {
+      "text": "タイトルから決定論的にポストバナー（コンツァーマーク）を自動生成する機能",
+      "evidence_section": "Highlights"
+    },
+    {
+      "text": "ASCIIアニメーション（donut、flow、plasma、tunnel）の表示機能",
+      "evidence_section": "Credits"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "技術的な記事やブログの執筆と公開",
+      "basis": "README明記",
+      "evidence_section": "Highlights"
+    },
+    {
+      "text": "個人のプロジェクトや読書棚（reading shelf）を含むポートフォリオサイトとしての利用",
+      "basis": "README明記",
+      "evidence_section": "chele.bi"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境で開発サーバーを起動する",
+    "steps": [
+      "bun install",
+      "bun dev"
+    ],
+    "success_criteria": "開発サーバーがローカルで起動し、サイトにアクセスできること"
+  },
+  "evidence_sections": [
+    "chele.bi",
+    "Highlights",
+    "Stack",
+    "Local setup",
+    "Commands",
+    "Credits",
+    "License"
+  ],
+  "unconfirmed": [
+    "デプロイ手順の詳細やVercel以外の環境へのデプロイ方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8640d428fe6810dcfbe1312b575da5f3c7dbf410",
+  "generated_at": "2026-08-05T22:33:02.308227+09:00"
+}

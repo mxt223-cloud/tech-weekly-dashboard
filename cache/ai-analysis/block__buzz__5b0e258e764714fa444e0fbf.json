@@ -1,0 +1,68 @@
+{
+  "summary_ja": "Buzzは、人間とAIエージェントが同じ部屋やチャンネルで共同作業を行える、自身でホスト可能なワークスペースプラットフォームです。Nostrリレーを基盤としており、メッセージやレビュー、Gitイベントなどをすべて署名付きイベントのログとして管理します。",
+  "capabilities": [
+    {
+      "text": "人間とAIエージェントが同じチャンネルやワークスペースに参加し、共通のイベントログを通じて共同作業を行う",
+      "evidence_section": "What is this, really?"
+    },
+    {
+      "text": "Nostrプロトコルベースのリレーにより、メッセージ、リアクション、ワークフロー、コードレビュー、Gitイベントを一元管理する",
+      "evidence_section": "What is this, really?"
+    },
+    {
+      "text": "YAMLによるワークフロー自動化や、JSON入出力に対応したエージェント向けCLI（buzz-cli）を提供する",
+      "evidence_section": "Works today · Being wired up · Strong opinions, pending code"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "過去のプロジェクトの会話履歴やスレッドをエージェントに検索させ、根拠となる情報や過去の修正内容を踏まえて質問に回答させる",
+      "basis": "README明記",
+      "evidence_section": "Three little stories"
+    },
+    {
+      "text": "機能ブランチごとに自動で専用のルーム（チャンネル）を作成し、パッチ、CI結果、レビュー、マージ判断を一箇所に集約する",
+      "basis": "README明記",
+      "evidence_section": "Three little stories"
+    },
+    {
+      "text": "リリースタグをトリガーにワークフローを実行し、エージェントがマージされたPRを読み込んでリリースノートの下書きを作成・提示する",
+      "basis": "README明記",
+      "evidence_section": "Three little stories"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でリレーとデスクトップアプリを起動し、Buzzを動かす",
+    "steps": [
+      "git clone https://github.com/block/buzz.git && cd buzz",
+      ". ./bin/activate-hermit",
+      "just setup && just build",
+      "just dev"
+    ],
+    "success_criteria": "リレーがws://localhost:3000で起動し、デスクトップアプリがポップアップして画面が表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What is this, really?",
+    "Stuff you do in Buzz",
+    "A look inside",
+    "Why Buzz is better",
+    "Three little stories",
+    "Works today · Being wired up · Strong opinions, pending code",
+    "Getting started",
+    "Quick start",
+    "Windows prerequisites",
+    "Architecture",
+    "Going further",
+    "What it is not"
+  ],
+  "unconfirmed": [
+    "リレーのマルチテナント運用時における詳細なパフォーマンスや負荷耐性",
+    "モバイルクライアント（iOS/Android）およびプッシュ通知の具体的な実装時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "56439f00bc1565ce7aca273a886eecdc12df5c1d",
+  "generated_at": "2026-08-05T22:32:40.216850+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "summary_ja": "OpenWorkは、AIワークフローを共有・再利用するための無料のオープンソースデスクトップアプリおよびMCPサーバーです。macOS、Windows、Linuxに対応しており、Claude CodeやCursor、Codexなどのエージェント間でスキルや接続サービスを共有できます。",
+  "capabilities": [
+    {
+      "text": "OpenWork MCPをCodexやClaude Code、Cursorなどの対応エージェントに追加し、スキルやMCP、接続されたサービスを共有できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "search_capabilitiesで利用可能な機能を探し、execute_capabilityで実行することができる。",
+      "evidence_section": "Use OpenWork from any agent"
+    },
+    {
+      "text": "チームや組織向けに管理画面（OpenWork Den）を提供し、メンバーの管理やアクセス権限、モデルプロバイダの制御、スキル・プラグインの公開と割り当てを行える。",
+      "evidence_section": "OpenWork Den"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIワークフローやスキルをチームメイトや友人同士で共有する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "組織内で管理画面（OpenWork Den）を使い、モデルプロバイダの利用制御やデスクトップポリシーを設定する。",
+      "basis": "README明記",
+      "evidence_section": "OpenWork Den"
+    },
+    {
+      "text": "使い慣れたAIエージェントからOpenWorkのMCPを呼び出して利用する。",
+      "basis": "README明記",
+      "evidence_section": "Use OpenWork from any agent"
+    }
+  ],
+  "first_trial": {
+    "goal": "AIエージェントにプロンプトを渡し、OpenWorkのインストールとワークスペースのセットアップを行う。",
+    "steps": [
+      "AIエージェント（Claude Code、Cursor、Codex、ChatGPTなど）に指定のプロンプトをコピーして貼り付ける。",
+      "プロンプト内の指示に従い、インストールの実行とワークスペースの作成を行う。"
+    ],
+    "success_criteria": "OpenWorkがインストールされ、ワークスペースが作成されてすぐに実行できる状態で開くこと。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install with your AI agent",
+    "Use OpenWork from any agent",
+    "Codex",
+    "Claude Code",
+    "OpenCode",
+    "Any MCP client",
+    "OpenWork Den",
+    "Documentation",
+    "Local development"
+  ],
+  "unconfirmed": [
+    "個人用や組織向けの具体的な有償プランやクラウドホスティングの有無"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "923d6c796a58b083d9d7e0fa5b28e87c15e14f67",
+  "generated_at": "2026-08-05T22:32:54.873653+09:00"
+}

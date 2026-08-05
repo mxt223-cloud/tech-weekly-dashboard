@@ -1,0 +1,61 @@
+{
+  "summary_ja": "TencentDB Agent Memoryは、AIエージェント向けのチームレベルのメモリハブです。会話、ドキュメント、コードをチャットメモリ、スキル、LLMウィキ、コードグラフの4つの再利用可能なメモリ資産に変換し、エージェントやフレームワーク間で共有・管理できます。",
+  "capabilities": [
+    {
+      "text": "会話やタスクからチャットメモリやスキルを自動抽出し、ドキュメントやコードをウィキやコードグラフに変換して管理・レビュー・ルーティングします。",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "フレームワークから独立して動作し、複数のエージェントやチームメンバー間でメモリ資産を共有・維持できます。",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "既存のドキュメント、コードベース、エージェントの会話セッションをインポートし、コールドスタートに対応します。",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プロジェクトの文脈や過去の決定事項をエージェント間で引き継ぎ、繰り返しの説明を削減する。",
+      "basis": "README明記",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "複雑な作業完了後に再利用可能なスキルを抽出し、指定したエージェントの文脈にインポートしてチーム全体で活用する。",
+      "basis": "README明記",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "コードを変更する前に、コードグラフを使用して呼び出し関係や影響範囲を分析する。",
+      "basis": "README明記",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    }
+  ],
+  "first_trial": {
+    "goal": "メモリ関連サービス（memory-core、memory-hub、proxy）を一括で起動し、パネルにアクセスする",
+    "steps": [
+      "git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+      "cd TencentDB-Agent-Memory/deploy/global-images",
+      "cp .env.example .env",
+      "$EDITOR .env",
+      "./start-all.sh"
+    ],
+    "success_criteria": "すべてがワンコマンドで起動し、Claudeに直接貼り付けられる1行のテキストが出力された後、http://localhost:8125 でパネルを開くことができること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "What is TencentDB Agent Memory?",
+    "Cold Start: Load the Save File, Then Get to Work",
+    "One Play Style: Build a Growing Agent Team for a One-Person Company",
+    "Technical Implementation"
+  ],
+  "unconfirmed": [
+    "プライベートリポジトリおよびSSH認証情報のコードグラフにおける完全なサポートの進捗状況",
+    "自動メモリルーティング機能の具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "39d45a164ce2fe4e4e54de2bef732e4307452fbb",
+  "generated_at": "2026-08-05T22:32:43.680984+09:00"
+}

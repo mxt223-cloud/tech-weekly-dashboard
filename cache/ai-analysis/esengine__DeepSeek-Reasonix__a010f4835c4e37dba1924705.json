@@ -1,0 +1,52 @@
+{
+  "summary_ja": "DeepSeek-Reasonixは、ターミナル向けのDeepSeekネイティブなAIコーディングエージェントです。プレフィックスキャッシュの安定性に特化して設計されており、長時間のセッションでもトークンコストを低く抑えます。",
+  "capabilities": [
+    {
+      "text": "プロバイダ、エージェント、有効なツール、プラグインをすべてreasonix.tomlで定義できる設定駆動の設計。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "DeepSeekをプリセットとして搭載し、OpenAI互換のエンドポイントを追加可能。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "CGO_ENABLED=0の単一バイナリとして配布され、依存関係はTOMLパーサーのみ。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ターミナル上でAIコーディングエージェントを使用した開発作業。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "長時間のセッションにおいてプレフィックスキャッシュを活用したコスト効率の良いコード生成。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI/TUI環境でReasonixの初期設定を行い、インタラクティブセッションを開始する",
+    "steps": [
+      "reasonix setup",
+      "reasonix"
+    ],
+    "success_criteria": "プロバイダとモデルの設定が完了し、インタラクティブセッションが起動すること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Install",
+    "Quick start",
+    "Documentation",
+    "Acknowledgments"
+  ],
+  "unconfirmed": [
+    "詳細な内部プロンプトの構成や、サードパーティ製プラグインの具体的な実装方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6943d32c4718cae3056e4fd9d5b93ed40f43c68e",
+  "generated_at": "2026-08-05T22:33:00.079463+09:00"
+}

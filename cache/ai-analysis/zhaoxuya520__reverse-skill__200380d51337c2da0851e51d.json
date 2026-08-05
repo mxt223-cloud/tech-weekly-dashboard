@@ -1,0 +1,53 @@
+{
+  "summary_ja": "reverse-skillは、Claude Code、Cursor、ClineなどのAIコーディングクライアント向けに、逆方向エンジニアリング、ペネトレーションテスト、セキュリティ調査のタスクを自動ルーティングし、適切な手法やツールチェーンに導くためのセキュリティスキルルーターパッケージです。",
+  "capabilities": [
+    {
+      "text": "APK、バイナリ、フロントエンドJS暗号化、CTFチャレンジ、ペネトレーションテストなどのタスクを適切な方法論にルーティングする",
+      "evidence_section": "About"
+    },
+    {
+      "text": "Java/JDK、Node.js、Pythonなどの前提条件を満たした上で、プラットフォームに応じたツールインデックスの更新を行う",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "Android解析、バイナリ逆解析、モバイル、マルウェア解析、ファームウェア、APIセキュリティなど多様なシナリオに対応する",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントにAPKやバイナリの解析タスクを与えた際、どのツールを使うべきか迷わずに適切なワークフローを実行させる",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "HTTPキャプチャやリクエストリプレイ、マルウェア解析などのセキュリティ診断業務で自動化された手順やプレイブックを活用する",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "CTFコンペティションにおいてサンドボックスオーケストレーター等のサブスキルを活用した競技支援を行う",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンし、Windows環境でツールインデックスを更新する",
+    "steps": [
+      "git clone https://github.com/zhaoxuya520/reverse-skill.git",
+      "powershell -File skills/scripts/refresh-tool-index.ps1"
+    ],
+    "success_criteria": "ツールインデックスの更新スクリプトが正常に実行され、ローカルツール状況が確認できるようになること"
+  },
+  "evidence_sections": [
+    "About",
+    "Getting Started",
+    "Usage"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b45f5155e59d907b4692aeb7ba7fff925960b967",
+  "generated_at": "2026-08-05T22:32:29.701449+09:00"
+}

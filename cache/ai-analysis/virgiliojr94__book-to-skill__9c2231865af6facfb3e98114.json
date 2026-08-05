@@ -1,0 +1,57 @@
+{
+  "summary_ja": "技術書やドキュメントのPDFなどを解析し、エージェントがオンデマンドで読み込める構造化されたスキルへ変換するツールです。",
+  "capabilities": [
+    {
+      "text": "技術書や文書のPDF、フォルダ、ファイル群を統合されたエージェントスキルに変換する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Core mental models、章ごとのインデックス、用語集、デザインパターン、クイックリファレンスなどのファイルを生成する",
+      "evidence_section": "📦 What it generates"
+    },
+    {
+      "text": "Pythonの抽出器と仕様駆動型のジェネレーターにより、ドキュメントのテキスト抽出や構造化を行う",
+      "evidence_section": "⚙️ How it works"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "技術書を読み込んだ後に内容を忘れ去るのを防ぐため、エージェントからオンデマンドで参照できるようにする",
+      "basis": "README明記",
+      "evidence_section": "🤔 Why"
+    },
+    {
+      "text": "社内ドキュメントやアーキテクチャ決定記録などをフォルダ単位でスキル化し、コーディング中に質問する",
+      "basis": "README明記",
+      "evidence_section": "🏢 Beyond books"
+    },
+    {
+      "text": "ブランドのトーン＆マナーやデザインシステムのガイドラインをスキル化し、チームでクエリできるようにする",
+      "basis": "README明記",
+      "evidence_section": "🏢 Beyond books"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをClaude Codeのエージェントスキルフォルダにクローンして利用可能にする",
+    "steps": [
+      "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill"
+    ],
+    "success_criteria": "~/.claude/skills/book-to-skill にリポジトリがクローンされ、/book-to-skill コマンドが登録されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🤔 Why",
+    "📦 What it generates",
+    "🏢 Beyond books",
+    "⚙️ How it works",
+    "📥 Install"
+  ],
+  "unconfirmed": [
+    "GitHub Copilot CLIやAmpでの実際の動作確認手順の詳細なコマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "388b7751bdf85229792c9b83c4276f9a80f80e45",
+  "generated_at": "2026-08-05T22:32:46.808966+09:00"
+}

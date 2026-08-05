@@ -1,28 +1,431 @@
-# Tech Weekly — 2026-08-05
+# Tech Daily — 2026-08-05
 
-生成日時: 2026-08-05T18:58:00.088154+09:00
-
-## GitHub Trending 週間上位10件
-
-|順位|リポジトリ|言語|今週★|ライセンス|最終更新|
-|---:|---|---|---:|---|---|
-|1|[zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill)|PowerShell|8386|MIT|2026-08-05T08:53:41Z|
-|2|[microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)|Jupyter Notebook|8582|MIT|2026-07-21T11:11:48Z|
-|3|[block/buzz](https://github.com/block/buzz)|Rust|7262|Apache-2.0|2026-08-05T09:56:17Z|
-|4|[virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)|Python|5420|MIT|2026-08-05T02:11:11Z|
-|5|[different-ai/openwork](https://github.com/different-ai/openwork)|TypeScript|3601|NOASSERTION|2026-08-05T09:56:37Z|
-|6|[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)|Python|4389|MIT|2026-08-05T02:46:10Z|
-|7|[lyogavin/airllm](https://github.com/lyogavin/airllm)|Jupyter Notebook|3911|Apache-2.0|2026-07-29T01:08:32Z|
-|8|[1jehuang/jcode](https://github.com/1jehuang/jcode)|Rust|3294|MIT|2026-08-05T05:56:38Z|
-|9|[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)|TypeScript|3659|NOASSERTION|2026-08-05T08:04:09Z|
-|10|[opengeos/GeoLibre](https://github.com/opengeos/GeoLibre)|TypeScript|2236|MIT|2026-08-05T05:33:46Z|
+生成日時: 2026-08-05T22:33:02.485081+09:00  
+AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
-## Zenn公式RSS
+## 1. [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill)
+
+**概要:** reverse-skillは、Claude Code、Cursor、ClineなどのAIコーディングクライアント向けに、逆方向エンジニアリング、ペネトレーションテスト、セキュリティ調査のタスクを自動ルーティングし、適切な手法やツールチェーンに導くためのセキュリティスキルルーターパッケージです。
+
+- 言語: PowerShell
+- 今週のスター: 8386
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- APK、バイナリ、フロントエンドJS暗号化、CTFチャレンジ、ペネトレーションテストなどのタスクを適切な方法論にルーティングする（根拠: About）
+
+- Java/JDK、Node.js、Pythonなどの前提条件を満たした上で、プラットフォームに応じたツールインデックスの更新を行う（根拠: Getting Started）
+
+- Android解析、バイナリ逆解析、モバイル、マルウェア解析、ファームウェア、APIセキュリティなど多様なシナリオに対応する（根拠: Usage）
+
+
+### 利用例
+
+- AIエージェントにAPKやバイナリの解析タスクを与えた際、どのツールを使うべきか迷わずに適切なワークフローを実行させる（README明記／根拠: About）
+
+- HTTPキャプチャやリクエストリプレイ、マルウェア解析などのセキュリティ診断業務で自動化された手順やプレイブックを活用する（README明記／根拠: Usage）
+
+- CTFコンペティションにおいてサンドボックスオーケストレーター等のサブスキルを活用した競技支援を行う（README明記／根拠: Usage）
+
+
+### 最初に試すこと
+
+リポジトリをクローンし、Windows環境でツールインデックスを更新する
+
+1. git clone https://github.com/zhaoxuya520/reverse-skill.git
+
+2. powershell -File skills/scripts/refresh-tool-index.ps1
+
+
+成功の目安: ツールインデックスの更新スクリプトが正常に実行され、ローカルツール状況が確認できるようになること
+
+
+
+
+## 2. [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)
+
+**概要:** 初心者向けの人工知能（AI）カリキュラムを提供するリポジトリです。12週間、24のレッスンを通じて、知識表現、ニューラルネットワーク、コンピュータビジョン、自然言語処理、AI倫理などの基礎をTensorFlowやPyTorchを用いた実践的なコードとともに学べます。
+
+- 言語: Jupyter Notebook
+- 今週のスター: 8582
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 12週間、24レッスン構成の初心者向けAIカリキュラムとクイズ、ラボの提供（根拠: README冒頭）
+
+- TensorFlowやPyTorchを使用したニューラルネットワークやコンピュータビジョン、自然言語処理の実装コードとJupyter Notebookの提供（根拠: What you will learn）
+
+- 翻訳ファイルを除外して高速にクローンできるスパースチェックアウト手順の提供（根拠: README冒頭）
+
+
+### 利用例
+
+- AIをゼロから学びたい初心者が、パターン認識やニューラルネットワークの基礎をハンズオンで学習する（README明記／根拠: Getting Started）
+
+- 教育者が、自身のクラスや講座で人工知能の基礎教育カリキュラムとして活用する（README明記／根拠: Getting Started）
+
+
+### 最初に試すこと
+
+リポジトリをクローンして初心者向けのエクササイズやカリキュラムの環境を準備する
+
+1. リポジトリをフォークする
+
+2. git clone https://github.com/microsoft/AI-For-Beginners.git を実行してクローンする
+
+
+成功の目安: ローカル環境にリポジトリが正しくクローンされ、初心者向けサンプルやセットアップレッスンを確認できること
+
+未確認: ローカル環境での具体的なPython実行コマンドや依存関係インストールの詳細（セットアップレッスン内の個別手順）
+
+
+## 3. [lyogavin/airllm](https://github.com/lyogavin/airllm)
+
+**概要:** AirLLMは、量子化、蒸留、プルーニングを行わずに、単一の4GB GPUなどの小規模なハードウェアで70Bなどの大規模言語モデルの推論メモリ使用量を劇的に削減するライブラリです。
+
+- 言語: Jupyter Notebook
+- 今週のスター: 3911
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- 単一の4GB GPUなどの小規模なハードウェアで、量子化や蒸留なしに70Bの大規模言語モデルを実行する。（根拠: README冒頭）
+
+- ブロック単位の量子化ベースのモデル圧縮により、推論速度を最大3倍に向上させる。（根拠: Model Compression - 3x Inference Speed Up!）
+
+- AutoModelを使用して、モデルクラスを指定することなくモデルタイプを自動検出する。（根拠: Quickstart）
+
+
+### 利用例
+
+- LlamaやQwenなどの大規模言語モデルを、メモリの限られたローカル環境や単一のGPUカードで実行する。（README明記／根拠: README冒頭）
+
+- MacOSのApple silicon環境で大容量の言語モデルを実行する。（README明記／根拠: MacOS）
+
+- ディスク容量が不足する場合にオリジナルモデルを削除してディスク領域を節約する。（README明記／根拠: Configurations）
+
+
+### 最初に試すこと
+
+airllmパッケージのインストールと基本的なモデル推論の実行
+
+1. pip install airllm
+
+2. Pythonスクリプト上でAutoModel.from_pretrainedを使用してモデルを初期化し、生成処理を実行する
+
+
+成功の目安: モデルの推論結果がデコードされてコンソールに出力されること
+
+未確認: 詳細な内部のメモリ管理アルゴリズムの挙動／サポートされているすべてのモデルの詳細な動作検証結果
+
+
+## 4. [block/buzz](https://github.com/block/buzz)
+
+**概要:** Buzzは、人間とAIエージェントが同じ部屋やチャンネルで共同作業を行える、自身でホスト可能なワークスペースプラットフォームです。Nostrリレーを基盤としており、メッセージやレビュー、Gitイベントなどをすべて署名付きイベントのログとして管理します。
+
+- 言語: Rust
+- 今週のスター: 7262
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- 人間とAIエージェントが同じチャンネルやワークスペースに参加し、共通のイベントログを通じて共同作業を行う（根拠: What is this, really?）
+
+- Nostrプロトコルベースのリレーにより、メッセージ、リアクション、ワークフロー、コードレビュー、Gitイベントを一元管理する（根拠: What is this, really?）
+
+- YAMLによるワークフロー自動化や、JSON入出力に対応したエージェント向けCLI（buzz-cli）を提供する（根拠: Works today · Being wired up · Strong opinions, pending code）
+
+
+### 利用例
+
+- 過去のプロジェクトの会話履歴やスレッドをエージェントに検索させ、根拠となる情報や過去の修正内容を踏まえて質問に回答させる（README明記／根拠: Three little stories）
+
+- 機能ブランチごとに自動で専用のルーム（チャンネル）を作成し、パッチ、CI結果、レビュー、マージ判断を一箇所に集約する（README明記／根拠: Three little stories）
+
+- リリースタグをトリガーにワークフローを実行し、エージェントがマージされたPRを読み込んでリリースノートの下書きを作成・提示する（README明記／根拠: Three little stories）
+
+
+### 最初に試すこと
+
+ローカル環境でリレーとデスクトップアプリを起動し、Buzzを動かす
+
+1. git clone https://github.com/block/buzz.git && cd buzz
+
+2. . ./bin/activate-hermit
+
+3. just setup && just build
+
+4. just dev
+
+
+成功の目安: リレーがws://localhost:3000で起動し、デスクトップアプリがポップアップして画面が表示されること
+
+未確認: リレーのマルチテナント運用時における詳細なパフォーマンスや負荷耐性／モバイルクライアント（iOS/Android）およびプッシュ通知の具体的な実装時期
+
+
+## 5. [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)
+
+**概要:** TencentDB Agent Memoryは、AIエージェント向けのチームレベルのメモリハブです。会話、ドキュメント、コードをチャットメモリ、スキル、LLMウィキ、コードグラフの4つの再利用可能なメモリ資産に変換し、エージェントやフレームワーク間で共有・管理できます。
+
+- 言語: TypeScript
+- 今週のスター: 3659
+- ライセンス: NOASSERTION
+- AI分析状態: ok
+
+### できること
+
+- 会話やタスクからチャットメモリやスキルを自動抽出し、ドキュメントやコードをウィキやコードグラフに変換して管理・レビュー・ルーティングします。（根拠: What is TencentDB Agent Memory?）
+
+- フレームワークから独立して動作し、複数のエージェントやチームメンバー間でメモリ資産を共有・維持できます。（根拠: What is TencentDB Agent Memory?）
+
+- 既存のドキュメント、コードベース、エージェントの会話セッションをインポートし、コールドスタートに対応します。（根拠: What is TencentDB Agent Memory?）
+
+
+### 利用例
+
+- プロジェクトの文脈や過去の決定事項をエージェント間で引き継ぎ、繰り返しの説明を削減する。（README明記／根拠: What is TencentDB Agent Memory?）
+
+- 複雑な作業完了後に再利用可能なスキルを抽出し、指定したエージェントの文脈にインポートしてチーム全体で活用する。（README明記／根拠: What is TencentDB Agent Memory?）
+
+- コードを変更する前に、コードグラフを使用して呼び出し関係や影響範囲を分析する。（README明記／根拠: What is TencentDB Agent Memory?）
+
+
+### 最初に試すこと
+
+メモリ関連サービス（memory-core、memory-hub、proxy）を一括で起動し、パネルにアクセスする
+
+1. git clone https://github.com/Tencent/TencentDB-Agent-Memory.git
+
+2. cd TencentDB-Agent-Memory/deploy/global-images
+
+3. cp .env.example .env
+
+4. $EDITOR .env
+
+5. ./start-all.sh
+
+
+成功の目安: すべてがワンコマンドで起動し、Claudeに直接貼り付けられる1行のテキストが出力された後、http://localhost:8125 でパネルを開くことができること
+
+未確認: プライベートリポジトリおよびSSH認証情報のコードグラフにおける完全なサポートの進捗状況／自動メモリルーティング機能の具体的なリリース時期
+
+
+## 6. [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)
+
+**概要:** 技術書やドキュメントのPDFなどを解析し、エージェントがオンデマンドで読み込める構造化されたスキルへ変換するツールです。
+
+- 言語: Python
+- 今週のスター: 5420
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 技術書や文書のPDF、フォルダ、ファイル群を統合されたエージェントスキルに変換する（根拠: README冒頭）
+
+- Core mental models、章ごとのインデックス、用語集、デザインパターン、クイックリファレンスなどのファイルを生成する（根拠: 📦 What it generates）
+
+- Pythonの抽出器と仕様駆動型のジェネレーターにより、ドキュメントのテキスト抽出や構造化を行う（根拠: ⚙️ How it works）
+
+
+### 利用例
+
+- 技術書を読み込んだ後に内容を忘れ去るのを防ぐため、エージェントからオンデマンドで参照できるようにする（README明記／根拠: 🤔 Why）
+
+- 社内ドキュメントやアーキテクチャ決定記録などをフォルダ単位でスキル化し、コーディング中に質問する（README明記／根拠: 🏢 Beyond books）
+
+- ブランドのトーン＆マナーやデザインシステムのガイドラインをスキル化し、チームでクエリできるようにする（README明記／根拠: 🏢 Beyond books）
+
+
+### 最初に試すこと
+
+リポジトリをClaude Codeのエージェントスキルフォルダにクローンして利用可能にする
+
+1. git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill
+
+
+成功の目安: ~/.claude/skills/book-to-skill にリポジトリがクローンされ、/book-to-skill コマンドが登録されること
+
+未確認: GitHub Copilot CLIやAmpでの実際の動作確認手順の詳細なコマンド
+
+
+## 7. [different-ai/openwork](https://github.com/different-ai/openwork)
+
+**概要:** OpenWorkは、AIワークフローを共有・再利用するための無料のオープンソースデスクトップアプリおよびMCPサーバーです。macOS、Windows、Linuxに対応しており、Claude CodeやCursor、Codexなどのエージェント間でスキルや接続サービスを共有できます。
+
+- 言語: TypeScript
+- 今週のスター: 3601
+- ライセンス: NOASSERTION
+- AI分析状態: ok
+
+### できること
+
+- OpenWork MCPをCodexやClaude Code、Cursorなどの対応エージェントに追加し、スキルやMCP、接続されたサービスを共有できる。（根拠: README冒頭）
+
+- search_capabilitiesで利用可能な機能を探し、execute_capabilityで実行することができる。（根拠: Use OpenWork from any agent）
+
+- チームや組織向けに管理画面（OpenWork Den）を提供し、メンバーの管理やアクセス権限、モデルプロバイダの制御、スキル・プラグインの公開と割り当てを行える。（根拠: OpenWork Den）
+
+
+### 利用例
+
+- AIワークフローやスキルをチームメイトや友人同士で共有する。（README明記／根拠: README冒頭）
+
+- 組織内で管理画面（OpenWork Den）を使い、モデルプロバイダの利用制御やデスクトップポリシーを設定する。（README明記／根拠: OpenWork Den）
+
+- 使い慣れたAIエージェントからOpenWorkのMCPを呼び出して利用する。（README明記／根拠: Use OpenWork from any agent）
+
+
+### 最初に試すこと
+
+AIエージェントにプロンプトを渡し、OpenWorkのインストールとワークスペースのセットアップを行う。
+
+1. AIエージェント（Claude Code、Cursor、Codex、ChatGPTなど）に指定のプロンプトをコピーして貼り付ける。
+
+2. プロンプト内の指示に従い、インストールの実行とワークスペースの作成を行う。
+
+
+成功の目安: OpenWorkがインストールされ、ワークスペースが作成されてすぐに実行できる状態で開くこと。
+
+未確認: 個人用や組織向けの具体的な有償プランやクラウドホスティングの有無
+
+
+## 8. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
+
+**概要:** コーディングアシスタントの出力スタイルを変更し、前置きや雑談を省いて結論や次に取るべき行動を最初から明確に伝えるためのスキルです。
+
+- 言語: Python
+- 今週のスター: 4389
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 次に取るべき行動を先頭に提示する機能（根拠: The rules）
+
+- 複数ステップのタスクを番号付きで整理する機能（根拠: The rules）
+
+- 挨拶や振り返り、結びの言葉などの不要な前置きを排除する機能（根拠: The rules）
+
+
+### 利用例
+
+- コーディングエージェントからの回答で、結論が長文の中に埋もれてしまうのを防ぎたいとき（README明記／根拠: What it does）
+
+- 要点が整理された分かりやすいステップで作業手順を確認したいとき（README明記／根拠: What changes）
+
+
+### 最初に試すこと
+
+Claude Codeでプラグインを追加してスキルを有効にする
+
+1. claude plugin marketplace add ayghri/i-have-adhd を実行する
+
+2. claude plugin install i-have-adhd@i-have-adhd を実行する
+
+3. /i-have-adhd と入力する
+
+
+成功の目安: Claude Code上でプラグインがインストールされ、コマンドが使用できること
+
+未確認: Claude CodeやCodex以外の対応コーディングエージェントの詳細なインストール手順
+
+
+## 9. [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix)
+
+**概要:** DeepSeek-Reasonixは、ターミナル向けのDeepSeekネイティブなAIコーディングエージェントです。プレフィックスキャッシュの安定性に特化して設計されており、長時間のセッションでもトークンコストを低く抑えます。
+
+- 言語: Go
+- 今週のスター: 2857
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- プロバイダ、エージェント、有効なツール、プラグインをすべてreasonix.tomlで定義できる設定駆動の設計。（根拠: Features）
+
+- DeepSeekをプリセットとして搭載し、OpenAI互換のエンドポイントを追加可能。（根拠: Features）
+
+- CGO_ENABLED=0の単一バイナリとして配布され、依存関係はTOMLパーサーのみ。（根拠: Features）
+
+
+### 利用例
+
+- ターミナル上でAIコーディングエージェントを使用した開発作業。（README明記／根拠: README冒頭）
+
+- 長時間のセッションにおいてプレフィックスキャッシュを活用したコスト効率の良いコード生成。（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+CLI/TUI環境でReasonixの初期設定を行い、インタラクティブセッションを開始する
+
+1. reasonix setup
+
+2. reasonix
+
+
+成功の目安: プロバイダとモデルの設定が完了し、インタラクティブセッションが起動すること
+
+未確認: 詳細な内部プロンプトの構成や、サードパーティ製プラグインの具体的な実装方法
+
+
+## 10. [woosal1337/blog](https://github.com/woosal1337/blog)
+
+**概要:** woosal1337/blogは、Next.js 14やMDX、Tailwind CSS、Biomeを使用して構築された個人のブログおよびポートフォリオサイトです。
+
+- 言語: JavaScript
+- 今週のスター: 158
+- ライセンス: NOASSERTION
+- AI分析状態: ok
+
+### できること
+
+- MDXを使用したブログ記事の投稿、左側の目次、コールアウト表示機能（根拠: Highlights）
+
+- タイトルから決定論的にポストバナー（コンツァーマーク）を自動生成する機能（根拠: Highlights）
+
+- ASCIIアニメーション（donut、flow、plasma、tunnel）の表示機能（根拠: Credits）
+
+
+### 利用例
+
+- 技術的な記事やブログの執筆と公開（README明記／根拠: Highlights）
+
+- 個人のプロジェクトや読書棚（reading shelf）を含むポートフォリオサイトとしての利用（README明記／根拠: chele.bi）
+
+
+### 最初に試すこと
+
+ローカル環境で開発サーバーを起動する
+
+1. bun install
+
+2. bun dev
+
+
+成功の目安: 開発サーバーがローカルで起動し、サイトにアクセスできること
+
+未確認: デプロイ手順の詳細やVercel以外の環境へのデプロイ方法
+
+
+
+## Zenn
+
+- [Claude Code の「無駄」を可視化するツール cclens を作った](https://zenn.dev/lambdalisue/articles/introduce-cclens) — Alisue
+
+- [散らばった議論を LLM-Wiki でフル活用する AI 時代のデザインシステムのカタチ](https://zenn.dev/cybozu_frontend/articles/llm-wiki-for-design-systems) — saku
+
+- [タイムボクシングのすすめ](https://zenn.dev/tokium_dev/articles/timeboxing-design-and-practice) — あのたろう
 
 - [プロンプトエンジニアリングのすすめかた](https://zenn.dev/nrs/articles/70db94beb7b76d) — nrs
-
-- [プロンプトキャッシュを意識して claude code のトークンを節約しよう](https://zenn.dev/ceres_tech_blog/articles/7163ae482e124e) — tamapon
 
 - [Microsoft 謹製 デスクトップアプリ「Skill Recorder」で業務効率化スキル（SKILL.md）の作成が捗る？](https://zenn.dev/benjuwan/articles/c2ba48e7662f92) — benjuwan
 
@@ -34,13 +437,13 @@
 
 - [【RAG】話題の米国AIベンチャーで実践される「社内ナレッジ」管理](https://zenn.dev/knowledgesense/articles/7c1a8f7720b119) — Atsushi Kadowaki
 
+- [AIエージェント向けのツールを、MCPではなくCLIとして作った — 設計の3原則](https://zenn.dev/codatum/articles/80b99faba75704) — g0e
+
 - [AI家臣団を解散して、影武者を一人だけ残した　兵法書と訓練記録](https://zenn.dev/shio_shoppaize/books/kagemusha-book) — おしお
 
 - [Web を iOS に乗せると仕様書に載っていない WebKit にボコボコにされる](https://zenn.dev/tamat_llc/articles/ios-webkit-invisible-specs) — たけ(TakehiroT)
 
 - [Web 標準動向 2026年7月版](https://zenn.dev/cybozu_frontend/articles/web_standards_trends_202607) — mehm8128
-
-- [入出力フォーマットで LLM トークンはどれだけ変わるのか](https://zenn.dev/aiforall/articles/8cbeb63f5cbc00) — たこやき
 
 - [オントロジーで AI に業務知識を渡す — AWS の OSS「Context Ontology Accelerator」を試してみた](https://zenn.dev/aws_japan/articles/context-ontology-accelerator-deploy) — いなりく / Riku Inada
 
@@ -54,14 +457,7 @@
 
 - [育てて学ぶ はじめての自作プログラミング言語](https://zenn.dev/kb84tkhr/books/learning-by-growing-language) — kb84tkhr
 
-- [Claude CodeのSkillsは「手順書」だったので、/article コマンドを作ってみた](https://zenn.dev/osakayakyu/articles/e6aa9835c04d73) — KoH
-
-- [Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした](https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac) — hellohazime
-
 - [GDBで始めるアセンブリと解析](https://zenn.dev/juck28/articles/091c07869aba28) — JUCK
 
 
-## 共通キーワード
-code / claude / skill / web / llm / cli / rust / microsoft / any / base / knowledge
-
-> 自動処理はメタデータ収集までです。ランキングやスター数は安全性を保証しません。
+> AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

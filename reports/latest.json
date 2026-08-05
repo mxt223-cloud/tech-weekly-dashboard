@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05T18:58:00.088154+09:00",
+  "generated_at": "2026-08-05T22:33:02.485081+09:00",
   "week": "2026-08-05",
-  "title": "Tech Weekly",
+  "title": "Tech Daily",
   "github": [
     {
       "rank": 1,
@@ -9,18 +9,79 @@
       "url": "https://github.com/zhaoxuya520/reverse-skill",
       "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
       "language": "PowerShell",
-      "stars_total": 18677,
-      "forks_total": 2550,
+      "stars_total": 18819,
+      "forks_total": 2567,
       "stars_period": 8386,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-08-05T09:57:26Z",
-        "pushed_at": "2026-08-05T08:53:41Z",
-        "open_issues": 16,
+        "updated_at": "2026-08-05T13:30:41Z",
+        "pushed_at": "2026-08-05T10:05:07Z",
+        "open_issues": 12,
         "archived": false,
-        "size_kb": 7439,
+        "size_kb": 7462,
         "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b45f5155e59d907b4692aeb7ba7fff925960b967",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 10282,
+        "used_chars": 8825
+      },
+      "analysis": {
+        "summary_ja": "reverse-skillは、Claude Code、Cursor、ClineなどのAIコーディングクライアント向けに、逆方向エンジニアリング、ペネトレーションテスト、セキュリティ調査のタスクを自動ルーティングし、適切な手法やツールチェーンに導くためのセキュリティスキルルーターパッケージです。",
+        "capabilities": [
+          {
+            "text": "APK、バイナリ、フロントエンドJS暗号化、CTFチャレンジ、ペネトレーションテストなどのタスクを適切な方法論にルーティングする",
+            "evidence_section": "About"
+          },
+          {
+            "text": "Java/JDK、Node.js、Pythonなどの前提条件を満たした上で、プラットフォームに応じたツールインデックスの更新を行う",
+            "evidence_section": "Getting Started"
+          },
+          {
+            "text": "Android解析、バイナリ逆解析、モバイル、マルウェア解析、ファームウェア、APIセキュリティなど多様なシナリオに対応する",
+            "evidence_section": "Usage"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "AIエージェントにAPKやバイナリの解析タスクを与えた際、どのツールを使うべきか迷わずに適切なワークフローを実行させる",
+            "basis": "README明記",
+            "evidence_section": "About"
+          },
+          {
+            "text": "HTTPキャプチャやリクエストリプレイ、マルウェア解析などのセキュリティ診断業務で自動化された手順やプレイブックを活用する",
+            "basis": "README明記",
+            "evidence_section": "Usage"
+          },
+          {
+            "text": "CTFコンペティションにおいてサンドボックスオーケストレーター等のサブスキルを活用した競技支援を行う",
+            "basis": "README明記",
+            "evidence_section": "Usage"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをクローンし、Windows環境でツールインデックスを更新する",
+          "steps": [
+            "git clone https://github.com/zhaoxuya520/reverse-skill.git",
+            "powershell -File skills/scripts/refresh-tool-index.ps1"
+          ],
+          "success_criteria": "ツールインデックスの更新スクリプトが正常に実行され、ローカルツール状況が確認できるようになること"
+        },
+        "evidence_sections": [
+          "About",
+          "Getting Started",
+          "Usage"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "b45f5155e59d907b4692aeb7ba7fff925960b967",
+        "generated_at": "2026-08-05T22:32:29.701449+09:00"
       }
     },
     {
@@ -29,13 +90,13 @@
       "url": "https://github.com/microsoft/AI-For-Beginners",
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
-      "stars_total": 61902,
-      "forks_total": 12030,
+      "stars_total": 61961,
+      "forks_total": 12046,
       "stars_period": 8582,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-08-05T09:57:46Z",
+        "updated_at": "2026-08-05T13:31:42Z",
         "pushed_at": "2026-07-21T11:11:48Z",
         "open_issues": 20,
         "archived": false,
@@ -52,110 +113,81 @@
           "nlp",
           "rnn"
         ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "229d738c43730add39f7e964e61c71b155e7453d",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 28786,
+        "used_chars": 28600
+      },
+      "analysis": {
+        "summary_ja": "初心者向けの人工知能（AI）カリキュラムを提供するリポジトリです。12週間、24のレッスンを通じて、知識表現、ニューラルネットワーク、コンピュータビジョン、自然言語処理、AI倫理などの基礎をTensorFlowやPyTorchを用いた実践的なコードとともに学べます。",
+        "capabilities": [
+          {
+            "text": "12週間、24レッスン構成の初心者向けAIカリキュラムとクイズ、ラボの提供",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "TensorFlowやPyTorchを使用したニューラルネットワークやコンピュータビジョン、自然言語処理の実装コードとJupyter Notebookの提供",
+            "evidence_section": "What you will learn"
+          },
+          {
+            "text": "翻訳ファイルを除外して高速にクローンできるスパースチェックアウト手順の提供",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "AIをゼロから学びたい初心者が、パターン認識やニューラルネットワークの基礎をハンズオンで学習する",
+            "basis": "README明記",
+            "evidence_section": "Getting Started"
+          },
+          {
+            "text": "教育者が、自身のクラスや講座で人工知能の基礎教育カリキュラムとして活用する",
+            "basis": "README明記",
+            "evidence_section": "Getting Started"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをクローンして初心者向けのエクササイズやカリキュラムの環境を準備する",
+          "steps": [
+            "リポジトリをフォークする",
+            "git clone https://github.com/microsoft/AI-For-Beginners.git を実行してクローンする"
+          ],
+          "success_criteria": "ローカル環境にリポジトリが正しくクローンされ、初心者向けサンプルやセットアップレッスンを確認できること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "What you will learn",
+          "Getting Started"
+        ],
+        "unconfirmed": [
+          "ローカル環境での具体的なPython実行コマンドや依存関係インストールの詳細（セットアップレッスン内の個別手順）"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "229d738c43730add39f7e964e61c71b155e7453d",
+        "generated_at": "2026-08-05T22:32:32.856350+09:00"
       }
     },
     {
       "rank": 3,
-      "full_name": "block/buzz",
-      "url": "https://github.com/block/buzz",
-      "description": "A hive mind communication platform",
-      "language": "Rust",
-      "stars_total": 22749,
-      "forks_total": 2556,
-      "stars_period": 7262,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-08-05T09:56:11Z",
-        "pushed_at": "2026-08-05T09:56:17Z",
-        "open_issues": 1982,
-        "archived": false,
-        "size_kb": 467314,
-        "topics": []
-      }
-    },
-    {
-      "rank": 4,
-      "full_name": "virgiliojr94/book-to-skill",
-      "url": "https://github.com/virgiliojr94/book-to-skill",
-      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
-      "language": "Python",
-      "stars_total": 16663,
-      "forks_total": 1770,
-      "stars_period": 5420,
-      "api": {
-        "default_branch": "master",
-        "license": "MIT",
-        "updated_at": "2026-08-05T09:57:17Z",
-        "pushed_at": "2026-08-05T02:11:11Z",
-        "open_issues": 12,
-        "archived": false,
-        "size_kb": 1603,
-        "topics": []
-      }
-    },
-    {
-      "rank": 5,
-      "full_name": "different-ai/openwork",
-      "url": "https://github.com/different-ai/openwork",
-      "description": "The open-source alternative to Claude Cowork (powered by opencode)",
-      "language": "TypeScript",
-      "stars_total": 21001,
-      "forks_total": 2060,
-      "stars_period": 3601,
-      "api": {
-        "default_branch": "dev",
-        "license": "NOASSERTION",
-        "updated_at": "2026-08-05T09:52:36Z",
-        "pushed_at": "2026-08-05T09:56:37Z",
-        "open_issues": 467,
-        "archived": false,
-        "size_kb": 282465,
-        "topics": []
-      }
-    },
-    {
-      "rank": 6,
-      "full_name": "ayghri/i-have-adhd",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "stars_total": 16995,
-      "forks_total": 957,
-      "stars_period": 4389,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-08-05T09:57:20Z",
-        "pushed_at": "2026-08-05T02:46:10Z",
-        "open_issues": 16,
-        "archived": false,
-        "size_kb": 206,
-        "topics": [
-          "adhd",
-          "claude-",
-          "claude-code-plugin",
-          "claude-skills",
-          "developer-tools",
-          "productivity"
-        ]
-      }
-    },
-    {
-      "rank": 7,
       "full_name": "lyogavin/airllm",
       "url": "https://github.com/lyogavin/airllm",
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars_total": 28719,
-      "forks_total": 3085,
+      "stars_total": 28827,
+      "forks_total": 3102,
       "stars_period": 3911,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-08-05T09:51:36Z",
+        "updated_at": "2026-08-05T13:32:08Z",
         "pushed_at": "2026-07-29T01:08:32Z",
-        "open_issues": 127,
+        "open_issues": 128,
         "archived": false,
         "size_kb": 5323,
         "topics": [
@@ -173,56 +205,185 @@
           "open-source-models",
           "qlora"
         ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "160cffd570606290b202382b3e2745142b61a045",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 16119,
+        "used_chars": 15815
+      },
+      "analysis": {
+        "summary_ja": "AirLLMは、量子化、蒸留、プルーニングを行わずに、単一の4GB GPUなどの小規模なハードウェアで70Bなどの大規模言語モデルの推論メモリ使用量を劇的に削減するライブラリです。",
+        "capabilities": [
+          {
+            "text": "単一の4GB GPUなどの小規模なハードウェアで、量子化や蒸留なしに70Bの大規模言語モデルを実行する。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ブロック単位の量子化ベースのモデル圧縮により、推論速度を最大3倍に向上させる。",
+            "evidence_section": "Model Compression - 3x Inference Speed Up!"
+          },
+          {
+            "text": "AutoModelを使用して、モデルクラスを指定することなくモデルタイプを自動検出する。",
+            "evidence_section": "Quickstart"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "LlamaやQwenなどの大規模言語モデルを、メモリの限られたローカル環境や単一のGPUカードで実行する。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "MacOSのApple silicon環境で大容量の言語モデルを実行する。",
+            "basis": "README明記",
+            "evidence_section": "MacOS"
+          },
+          {
+            "text": "ディスク容量が不足する場合にオリジナルモデルを削除してディスク領域を節約する。",
+            "basis": "README明記",
+            "evidence_section": "Configurations"
+          }
+        ],
+        "first_trial": {
+          "goal": "airllmパッケージのインストールと基本的なモデル推論の実行",
+          "steps": [
+            "pip install airllm",
+            "Pythonスクリプト上でAutoModel.from_pretrainedを使用してモデルを初期化し、生成処理を実行する"
+          ],
+          "success_criteria": "モデルの推論結果がデコードされてコンソールに出力されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quickstart",
+          "Model Compression - 3x Inference Speed Up!",
+          "Configurations",
+          "MacOS"
+        ],
+        "unconfirmed": [
+          "詳細な内部のメモリ管理アルゴリズムの挙動",
+          "サポートされているすべてのモデルの詳細な動作検証結果"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "160cffd570606290b202382b3e2745142b61a045",
+        "generated_at": "2026-08-05T22:32:36.419258+09:00"
       }
     },
     {
-      "rank": 8,
-      "full_name": "1jehuang/jcode",
-      "url": "https://github.com/1jehuang/jcode",
-      "description": "The most RAM efficient harness",
+      "rank": 4,
+      "full_name": "block/buzz",
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
       "language": "Rust",
-      "stars_total": 15966,
-      "forks_total": 1760,
-      "stars_period": 3294,
+      "stars_total": 22832,
+      "forks_total": 2570,
+      "stars_period": 7262,
       "api": {
-        "default_branch": "master",
-        "license": "MIT",
-        "updated_at": "2026-08-05T09:52:35Z",
-        "pushed_at": "2026-08-05T05:56:38Z",
-        "open_issues": 222,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-08-05T13:32:19Z",
+        "pushed_at": "2026-08-05T13:27:12Z",
+        "open_issues": 1995,
         "archived": false,
-        "size_kb": 447624,
-        "topics": [
-          "ai",
-          "ai-agent",
-          "ai-coding-agent",
-          "claude",
-          "cli",
-          "coding-agent",
-          "llm",
-          "mcp",
-          "openai",
-          "rust",
-          "terminal",
-          "tui"
-        ]
+        "size_kb": 467524,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "56439f00bc1565ce7aca273a886eecdc12df5c1d",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14876,
+        "used_chars": 14271
+      },
+      "analysis": {
+        "summary_ja": "Buzzは、人間とAIエージェントが同じ部屋やチャンネルで共同作業を行える、自身でホスト可能なワークスペースプラットフォームです。Nostrリレーを基盤としており、メッセージやレビュー、Gitイベントなどをすべて署名付きイベントのログとして管理します。",
+        "capabilities": [
+          {
+            "text": "人間とAIエージェントが同じチャンネルやワークスペースに参加し、共通のイベントログを通じて共同作業を行う",
+            "evidence_section": "What is this, really?"
+          },
+          {
+            "text": "Nostrプロトコルベースのリレーにより、メッセージ、リアクション、ワークフロー、コードレビュー、Gitイベントを一元管理する",
+            "evidence_section": "What is this, really?"
+          },
+          {
+            "text": "YAMLによるワークフロー自動化や、JSON入出力に対応したエージェント向けCLI（buzz-cli）を提供する",
+            "evidence_section": "Works today · Being wired up · Strong opinions, pending code"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "過去のプロジェクトの会話履歴やスレッドをエージェントに検索させ、根拠となる情報や過去の修正内容を踏まえて質問に回答させる",
+            "basis": "README明記",
+            "evidence_section": "Three little stories"
+          },
+          {
+            "text": "機能ブランチごとに自動で専用のルーム（チャンネル）を作成し、パッチ、CI結果、レビュー、マージ判断を一箇所に集約する",
+            "basis": "README明記",
+            "evidence_section": "Three little stories"
+          },
+          {
+            "text": "リリースタグをトリガーにワークフローを実行し、エージェントがマージされたPRを読み込んでリリースノートの下書きを作成・提示する",
+            "basis": "README明記",
+            "evidence_section": "Three little stories"
+          }
+        ],
+        "first_trial": {
+          "goal": "ローカル環境でリレーとデスクトップアプリを起動し、Buzzを動かす",
+          "steps": [
+            "git clone https://github.com/block/buzz.git && cd buzz",
+            ". ./bin/activate-hermit",
+            "just setup && just build",
+            "just dev"
+          ],
+          "success_criteria": "リレーがws://localhost:3000で起動し、デスクトップアプリがポップアップして画面が表示されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "What is this, really?",
+          "Stuff you do in Buzz",
+          "A look inside",
+          "Why Buzz is better",
+          "Three little stories",
+          "Works today · Being wired up · Strong opinions, pending code",
+          "Getting started",
+          "Quick start",
+          "Windows prerequisites",
+          "Architecture",
+          "Going further",
+          "What it is not"
+        ],
+        "unconfirmed": [
+          "リレーのマルチテナント運用時における詳細なパフォーマンスや負荷耐性",
+          "モバイルクライアント（iOS/Android）およびプッシュ通知の具体的な実装時期"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "56439f00bc1565ce7aca273a886eecdc12df5c1d",
+        "generated_at": "2026-08-05T22:32:40.216850+09:00"
       }
     },
     {
-      "rank": 9,
+      "rank": 5,
       "full_name": "TencentCloud/TencentDB-Agent-Memory",
       "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
       "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
       "language": "TypeScript",
-      "stars_total": 14517,
-      "forks_total": 1321,
+      "stars_total": 14714,
+      "forks_total": 1333,
       "stars_period": 3659,
       "api": {
         "default_branch": "feat/server_team",
         "license": "NOASSERTION",
-        "updated_at": "2026-08-05T09:57:51Z",
+        "updated_at": "2026-08-05T13:31:51Z",
         "pushed_at": "2026-08-05T08:04:09Z",
-        "open_issues": 511,
+        "open_issues": 513,
         "archived": false,
         "size_kb": 34185,
         "topics": [
@@ -236,52 +397,548 @@
           "openclaw-plugin",
           "vector-search"
         ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "39d45a164ce2fe4e4e54de2bef732e4307452fbb",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 18301,
+        "used_chars": 17005
+      },
+      "analysis": {
+        "summary_ja": "TencentDB Agent Memoryは、AIエージェント向けのチームレベルのメモリハブです。会話、ドキュメント、コードをチャットメモリ、スキル、LLMウィキ、コードグラフの4つの再利用可能なメモリ資産に変換し、エージェントやフレームワーク間で共有・管理できます。",
+        "capabilities": [
+          {
+            "text": "会話やタスクからチャットメモリやスキルを自動抽出し、ドキュメントやコードをウィキやコードグラフに変換して管理・レビュー・ルーティングします。",
+            "evidence_section": "What is TencentDB Agent Memory?"
+          },
+          {
+            "text": "フレームワークから独立して動作し、複数のエージェントやチームメンバー間でメモリ資産を共有・維持できます。",
+            "evidence_section": "What is TencentDB Agent Memory?"
+          },
+          {
+            "text": "既存のドキュメント、コードベース、エージェントの会話セッションをインポートし、コールドスタートに対応します。",
+            "evidence_section": "What is TencentDB Agent Memory?"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "プロジェクトの文脈や過去の決定事項をエージェント間で引き継ぎ、繰り返しの説明を削減する。",
+            "basis": "README明記",
+            "evidence_section": "What is TencentDB Agent Memory?"
+          },
+          {
+            "text": "複雑な作業完了後に再利用可能なスキルを抽出し、指定したエージェントの文脈にインポートしてチーム全体で活用する。",
+            "basis": "README明記",
+            "evidence_section": "What is TencentDB Agent Memory?"
+          },
+          {
+            "text": "コードを変更する前に、コードグラフを使用して呼び出し関係や影響範囲を分析する。",
+            "basis": "README明記",
+            "evidence_section": "What is TencentDB Agent Memory?"
+          }
+        ],
+        "first_trial": {
+          "goal": "メモリ関連サービス（memory-core、memory-hub、proxy）を一括で起動し、パネルにアクセスする",
+          "steps": [
+            "git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+            "cd TencentDB-Agent-Memory/deploy/global-images",
+            "cp .env.example .env",
+            "$EDITOR .env",
+            "./start-all.sh"
+          ],
+          "success_criteria": "すべてがワンコマンドで起動し、Claudeに直接貼り付けられる1行のテキストが出力された後、http://localhost:8125 でパネルを開くことができること"
+        },
+        "evidence_sections": [
+          "Installation",
+          "What is TencentDB Agent Memory?",
+          "Cold Start: Load the Save File, Then Get to Work",
+          "One Play Style: Build a Growing Agent Team for a One-Person Company",
+          "Technical Implementation"
+        ],
+        "unconfirmed": [
+          "プライベートリポジトリおよびSSH認証情報のコードグラフにおける完全なサポートの進捗状況",
+          "自動メモリルーティング機能の具体的なリリース時期"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "39d45a164ce2fe4e4e54de2bef732e4307452fbb",
+        "generated_at": "2026-08-05T22:32:43.680984+09:00"
+      }
+    },
+    {
+      "rank": 6,
+      "full_name": "virgiliojr94/book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "language": "Python",
+      "stars_total": 16793,
+      "forks_total": 1786,
+      "stars_period": 5420,
+      "api": {
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-08-05T13:31:42Z",
+        "pushed_at": "2026-08-05T02:11:11Z",
+        "open_issues": 12,
+        "archived": false,
+        "size_kb": 1603,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "388b7751bdf85229792c9b83c4276f9a80f80e45",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 13187,
+        "used_chars": 11706
+      },
+      "analysis": {
+        "summary_ja": "技術書やドキュメントのPDFなどを解析し、エージェントがオンデマンドで読み込める構造化されたスキルへ変換するツールです。",
+        "capabilities": [
+          {
+            "text": "技術書や文書のPDF、フォルダ、ファイル群を統合されたエージェントスキルに変換する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Core mental models、章ごとのインデックス、用語集、デザインパターン、クイックリファレンスなどのファイルを生成する",
+            "evidence_section": "📦 What it generates"
+          },
+          {
+            "text": "Pythonの抽出器と仕様駆動型のジェネレーターにより、ドキュメントのテキスト抽出や構造化を行う",
+            "evidence_section": "⚙️ How it works"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "技術書を読み込んだ後に内容を忘れ去るのを防ぐため、エージェントからオンデマンドで参照できるようにする",
+            "basis": "README明記",
+            "evidence_section": "🤔 Why"
+          },
+          {
+            "text": "社内ドキュメントやアーキテクチャ決定記録などをフォルダ単位でスキル化し、コーディング中に質問する",
+            "basis": "README明記",
+            "evidence_section": "🏢 Beyond books"
+          },
+          {
+            "text": "ブランドのトーン＆マナーやデザインシステムのガイドラインをスキル化し、チームでクエリできるようにする",
+            "basis": "README明記",
+            "evidence_section": "🏢 Beyond books"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをClaude Codeのエージェントスキルフォルダにクローンして利用可能にする",
+          "steps": [
+            "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill"
+          ],
+          "success_criteria": "~/.claude/skills/book-to-skill にリポジトリがクローンされ、/book-to-skill コマンドが登録されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "🤔 Why",
+          "📦 What it generates",
+          "🏢 Beyond books",
+          "⚙️ How it works",
+          "📥 Install"
+        ],
+        "unconfirmed": [
+          "GitHub Copilot CLIやAmpでの実際の動作確認手順の詳細なコマンド"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "388b7751bdf85229792c9b83c4276f9a80f80e45",
+        "generated_at": "2026-08-05T22:32:46.808966+09:00"
+      }
+    },
+    {
+      "rank": 7,
+      "full_name": "different-ai/openwork",
+      "url": "https://github.com/different-ai/openwork",
+      "description": "The open-source alternative to Claude Cowork (powered by opencode)",
+      "language": "TypeScript",
+      "stars_total": 21023,
+      "forks_total": 2062,
+      "stars_period": 3601,
+      "api": {
+        "default_branch": "dev",
+        "license": "NOASSERTION",
+        "updated_at": "2026-08-05T13:27:30Z",
+        "pushed_at": "2026-08-05T13:20:59Z",
+        "open_issues": 463,
+        "archived": false,
+        "size_kb": 282286,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "923d6c796a58b083d9d7e0fa5b28e87c15e14f67",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 4347,
+        "used_chars": 4031
+      },
+      "analysis": {
+        "summary_ja": "OpenWorkは、AIワークフローを共有・再利用するための無料のオープンソースデスクトップアプリおよびMCPサーバーです。macOS、Windows、Linuxに対応しており、Claude CodeやCursor、Codexなどのエージェント間でスキルや接続サービスを共有できます。",
+        "capabilities": [
+          {
+            "text": "OpenWork MCPをCodexやClaude Code、Cursorなどの対応エージェントに追加し、スキルやMCP、接続されたサービスを共有できる。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "search_capabilitiesで利用可能な機能を探し、execute_capabilityで実行することができる。",
+            "evidence_section": "Use OpenWork from any agent"
+          },
+          {
+            "text": "チームや組織向けに管理画面（OpenWork Den）を提供し、メンバーの管理やアクセス権限、モデルプロバイダの制御、スキル・プラグインの公開と割り当てを行える。",
+            "evidence_section": "OpenWork Den"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "AIワークフローやスキルをチームメイトや友人同士で共有する。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "組織内で管理画面（OpenWork Den）を使い、モデルプロバイダの利用制御やデスクトップポリシーを設定する。",
+            "basis": "README明記",
+            "evidence_section": "OpenWork Den"
+          },
+          {
+            "text": "使い慣れたAIエージェントからOpenWorkのMCPを呼び出して利用する。",
+            "basis": "README明記",
+            "evidence_section": "Use OpenWork from any agent"
+          }
+        ],
+        "first_trial": {
+          "goal": "AIエージェントにプロンプトを渡し、OpenWorkのインストールとワークスペースのセットアップを行う。",
+          "steps": [
+            "AIエージェント（Claude Code、Cursor、Codex、ChatGPTなど）に指定のプロンプトをコピーして貼り付ける。",
+            "プロンプト内の指示に従い、インストールの実行とワークスペースの作成を行う。"
+          ],
+          "success_criteria": "OpenWorkがインストールされ、ワークスペースが作成されてすぐに実行できる状態で開くこと。"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Install with your AI agent",
+          "Use OpenWork from any agent",
+          "Codex",
+          "Claude Code",
+          "OpenCode",
+          "Any MCP client",
+          "OpenWork Den",
+          "Documentation",
+          "Local development"
+        ],
+        "unconfirmed": [
+          "個人用や組織向けの具体的な有償プランやクラウドホスティングの有無"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "923d6c796a58b083d9d7e0fa5b28e87c15e14f67",
+        "generated_at": "2026-08-05T22:32:54.873653+09:00"
+      }
+    },
+    {
+      "rank": 8,
+      "full_name": "ayghri/i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars_total": 17078,
+      "forks_total": 968,
+      "stars_period": 4389,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-08-05T13:31:08Z",
+        "pushed_at": "2026-08-05T02:46:10Z",
+        "open_issues": 16,
+        "archived": false,
+        "size_kb": 206,
+        "topics": [
+          "adhd",
+          "claude-",
+          "claude-code-plugin",
+          "claude-skills",
+          "developer-tools",
+          "productivity"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "00e1e05fb0ea2f9006027eccf78db0685524c868",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 3600,
+        "used_chars": 3448
+      },
+      "analysis": {
+        "summary_ja": "コーディングアシスタントの出力スタイルを変更し、前置きや雑談を省いて結論や次に取るべき行動を最初から明確に伝えるためのスキルです。",
+        "capabilities": [
+          {
+            "text": "次に取るべき行動を先頭に提示する機能",
+            "evidence_section": "The rules"
+          },
+          {
+            "text": "複数ステップのタスクを番号付きで整理する機能",
+            "evidence_section": "The rules"
+          },
+          {
+            "text": "挨拶や振り返り、結びの言葉などの不要な前置きを排除する機能",
+            "evidence_section": "The rules"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "コーディングエージェントからの回答で、結論が長文の中に埋もれてしまうのを防ぎたいとき",
+            "basis": "README明記",
+            "evidence_section": "What it does"
+          },
+          {
+            "text": "要点が整理された分かりやすいステップで作業手順を確認したいとき",
+            "basis": "README明記",
+            "evidence_section": "What changes"
+          }
+        ],
+        "first_trial": {
+          "goal": "Claude Codeでプラグインを追加してスキルを有効にする",
+          "steps": [
+            "claude plugin marketplace add ayghri/i-have-adhd を実行する",
+            "claude plugin install i-have-adhd@i-have-adhd を実行する",
+            "/i-have-adhd と入力する"
+          ],
+          "success_criteria": "Claude Code上でプラグインがインストールされ、コマンドが使用できること"
+        },
+        "evidence_sections": [
+          "Install",
+          "What it does",
+          "What changes",
+          "The rules",
+          "Tune it"
+        ],
+        "unconfirmed": [
+          "Claude CodeやCodex以外の対応コーディングエージェントの詳細なインストール手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "00e1e05fb0ea2f9006027eccf78db0685524c868",
+        "generated_at": "2026-08-05T22:32:57.444980+09:00"
+      }
+    },
+    {
+      "rank": 9,
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "language": "Go",
+      "stars_total": 31282,
+      "forks_total": 2009,
+      "stars_period": 2857,
+      "api": {
+        "default_branch": "main-v2",
+        "license": "MIT",
+        "updated_at": "2026-08-05T13:31:28Z",
+        "pushed_at": "2026-08-05T13:24:10Z",
+        "open_issues": 789,
+        "archived": false,
+        "size_kb": 66936,
+        "topics": [
+          "agent",
+          "agent-framework",
+          "ai-agent",
+          "ai-coding",
+          "cli",
+          "coding-agent",
+          "deepseek",
+          "developer-tools",
+          "ink",
+          "llm",
+          "prompt-caching",
+          "r1",
+          "terminal",
+          "tool-use",
+          "tui",
+          "typescript"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "6943d32c4718cae3056e4fd9d5b93ed40f43c68e",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 11581,
+        "used_chars": 9400
+      },
+      "analysis": {
+        "summary_ja": "DeepSeek-Reasonixは、ターミナル向けのDeepSeekネイティブなAIコーディングエージェントです。プレフィックスキャッシュの安定性に特化して設計されており、長時間のセッションでもトークンコストを低く抑えます。",
+        "capabilities": [
+          {
+            "text": "プロバイダ、エージェント、有効なツール、プラグインをすべてreasonix.tomlで定義できる設定駆動の設計。",
+            "evidence_section": "Features"
+          },
+          {
+            "text": "DeepSeekをプリセットとして搭載し、OpenAI互換のエンドポイントを追加可能。",
+            "evidence_section": "Features"
+          },
+          {
+            "text": "CGO_ENABLED=0の単一バイナリとして配布され、依存関係はTOMLパーサーのみ。",
+            "evidence_section": "Features"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "ターミナル上でAIコーディングエージェントを使用した開発作業。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "長時間のセッションにおいてプレフィックスキャッシュを活用したコスト効率の良いコード生成。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "CLI/TUI環境でReasonixの初期設定を行い、インタラクティブセッションを開始する",
+          "steps": [
+            "reasonix setup",
+            "reasonix"
+          ],
+          "success_criteria": "プロバイダとモデルの設定が完了し、インタラクティブセッションが起動すること"
+        },
+        "evidence_sections": [
+          "Features",
+          "Install",
+          "Quick start",
+          "Documentation",
+          "Acknowledgments"
+        ],
+        "unconfirmed": [
+          "詳細な内部プロンプトの構成や、サードパーティ製プラグインの具体的な実装方法"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "6943d32c4718cae3056e4fd9d5b93ed40f43c68e",
+        "generated_at": "2026-08-05T22:33:00.079463+09:00"
       }
     },
     {
       "rank": 10,
-      "full_name": "opengeos/GeoLibre",
-      "url": "https://github.com/opengeos/GeoLibre",
-      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
-      "language": "TypeScript",
-      "stars_total": 5433,
-      "forks_total": 531,
-      "stars_period": 2236,
+      "full_name": "woosal1337/blog",
+      "url": "https://github.com/woosal1337/blog",
+      "description": "My blog website.",
+      "language": "JavaScript",
+      "stars_total": 368,
+      "forks_total": 30,
+      "stars_period": 158,
       "api": {
         "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-08-05T09:48:56Z",
-        "pushed_at": "2026-08-05T05:33:46Z",
-        "open_issues": 26,
+        "license": "NOASSERTION",
+        "updated_at": "2026-08-05T13:23:45Z",
+        "pushed_at": "2026-08-01T16:19:34Z",
+        "open_issues": 7,
         "archived": false,
-        "size_kb": 29109,
-        "topics": [
-          "data-science",
-          "duckdb",
-          "geolibre",
-          "geospatial",
-          "gis",
-          "maplibre",
-          "maplibre-gl-js",
-          "tauri-app"
-        ]
+        "size_kb": 53481,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "8640d428fe6810dcfbe1312b575da5f3c7dbf410",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 1978,
+        "used_chars": 1896
+      },
+      "analysis": {
+        "summary_ja": "woosal1337/blogは、Next.js 14やMDX、Tailwind CSS、Biomeを使用して構築された個人のブログおよびポートフォリオサイトです。",
+        "capabilities": [
+          {
+            "text": "MDXを使用したブログ記事の投稿、左側の目次、コールアウト表示機能",
+            "evidence_section": "Highlights"
+          },
+          {
+            "text": "タイトルから決定論的にポストバナー（コンツァーマーク）を自動生成する機能",
+            "evidence_section": "Highlights"
+          },
+          {
+            "text": "ASCIIアニメーション（donut、flow、plasma、tunnel）の表示機能",
+            "evidence_section": "Credits"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "技術的な記事やブログの執筆と公開",
+            "basis": "README明記",
+            "evidence_section": "Highlights"
+          },
+          {
+            "text": "個人のプロジェクトや読書棚（reading shelf）を含むポートフォリオサイトとしての利用",
+            "basis": "README明記",
+            "evidence_section": "chele.bi"
+          }
+        ],
+        "first_trial": {
+          "goal": "ローカル環境で開発サーバーを起動する",
+          "steps": [
+            "bun install",
+            "bun dev"
+          ],
+          "success_criteria": "開発サーバーがローカルで起動し、サイトにアクセスできること"
+        },
+        "evidence_sections": [
+          "chele.bi",
+          "Highlights",
+          "Stack",
+          "Local setup",
+          "Commands",
+          "Credits",
+          "License"
+        ],
+        "unconfirmed": [
+          "デプロイ手順の詳細やVercel以外の環境へのデプロイ方法"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "8640d428fe6810dcfbe1312b575da5f3c7dbf410",
+        "generated_at": "2026-08-05T22:33:02.308227+09:00"
       }
     }
   ],
   "zenn": [
+    {
+      "title": "Claude Code の「無駄」を可視化するツール cclens を作った",
+      "url": "https://zenn.dev/lambdalisue/articles/introduce-cclens",
+      "author": "Alisue",
+      "published": "Wed, 05 Aug 2026 06:37:39 GMT",
+      "summary": "どうも、医者からアルコールを控えろと言われたのでノンアルビールを飲んでみたものの、あまり好みではなかった 16 歳（進数不明）、ありすえです。\n突然ですが、皆さんは自分の Claude Code が どれくらい無駄なことをしているか 把握していますか？\n\n 設定の効果検証は難しい\nAI って非決定的なツールですよね。なので、設定の効果検証がめちゃくちゃ難しい。\nある目的のためにルールやスキルを書いたとして、それが本当に効いてるのか？ 効いてるとして、ちゃんと効果的に効いてるの"
+    },
+    {
+      "title": "散らばった議論を LLM-Wiki でフル活用する AI 時代のデザインシステムのカタチ",
+      "url": "https://zenn.dev/cybozu_frontend/articles/llm-wiki-for-design-systems",
+      "author": "saku",
+      "published": "Wed, 05 Aug 2026 03:00:09 GMT",
+      "summary": "!\nこの記事は、CYBOZU SUMMER BLOG FES '26の記事です。\n\n筆者が携わる kDS (kintone Design System) Team は、kintone、Slack、GitHub、Confluence など、さまざまな場所にデザインの議論を蓄積してきました。しかし、情報が分散し、蓄積されるにつれ、過去の意思決定を探す作業はかなりメンバーの記憶に依存していました。\nそこで、散らばった議論を LLM-Wiki に取り込み、根拠付きで検索できる仕組みを"
+    },
+    {
+      "title": "タイムボクシングのすすめ",
+      "url": "https://zenn.dev/tokium_dev/articles/timeboxing-design-and-practice",
+      "author": "あのたろう",
+      "published": "Wed, 05 Aug 2026 01:00:05 GMT",
+      "summary": "株式会社TOKIUMでエンジニアをしているあのです。\n今年の3月から、開発チームのリーダーとして業務しています。\n私のチームは、会計ソフトへ連携するためのフォーマットをお客様ごとにカスタマイズしています。そのため他の開発チームに比べて、「この仕様は実装できるか」「今はどういう実装になっているか」といった相談や確認が、チームの外から入ってきやすい立ち位置にあります。\nリーダーになってからというもの、自分の1日の過ごし方が変わりました。\n自分で手を動かす時間よりも、レビュー、相談"
+    },
     {
       "title": "プロンプトエンジニアリングのすすめかた",
       "url": "https://zenn.dev/nrs/articles/70db94beb7b76d",
       "author": "nrs",
       "published": "Tue, 04 Aug 2026 10:40:05 GMT",
       "summary": "!\nTAKT を Product Hunt に出します！\n8/9 に公開されます。\nProduct Hunt はローンチ当日の反応でランキングが決まり、上位に入るほど海外の開発者に届きます。\n当日、見に来て応援してもらえると嬉しいです。\nhttps://www.producthunt.com/products/takt-3?launch=takt-3\n\n最近 AI が暴走して他社に攻撃してしまった。\nそんな話が耳に入りつつ、自分とは関係ないことだと思っていました。\nそう、過去"
-    },
-    {
-      "title": "プロンプトキャッシュを意識して claude code のトークンを節約しよう",
-      "url": "https://zenn.dev/ceres_tech_blog/articles/7163ae482e124e",
-      "author": "tamapon",
-      "published": "Tue, 04 Aug 2026 07:48:52 GMT",
-      "summary": "困ってたこと\n前日のやり取りを複数再開したら、いきなり claude code の5時間制限が2割くらい持っていかれた。まだ一言も打ってないのに....\n\n そもそもプロンプトキャッシュとは\nモデルはリクエスト間で何も覚えていない。だから会話を続けるには、毎回コンテキストを丸ごと送り直す必要がある。claude code が毎ターン送っているのは、システムプロンプト・プロジェクト文脈・会話履歴のぜんぶ。\nそのままだと毎ターン全文を処理し直すことになるが、api は「リクエスト"
     },
     {
       "title": "Microsoft 謹製 デスクトップアプリ「Skill Recorder」で業務効率化スキル（SKILL.md）の作成が捗る？",
@@ -319,6 +976,13 @@
       "summary": "本記事では、今をときめくAI半導体ベンチャーである「Cerebras」による、「社内ナレッジ検索」の仕組みについて、解説します。\n株式会社ナレッジセンスは、社内データ検索技術をエンタープライズ企業向けに提供しているスタートアップです。\n\n この記事は何\nこの記事は、Cerebras社が公開した技術ブログ「How We Built Our Knowledge Base」[1]について、日本語で簡単にまとめたものです。\nhttps://www.cerebras.ai/blog/h"
     },
     {
+      "title": "AIエージェント向けのツールを、MCPではなくCLIとして作った — 設計の3原則",
+      "url": "https://zenn.dev/codatum/articles/80b99faba75704",
+      "author": "g0e",
+      "published": "Mon, 03 Aug 2026 23:02:09 GMT",
+      "summary": "AI エージェントのためのデータ分析環境 Codatum CLI（cdm）をベータ版としてリリースしました。この CLI は、人間がターミナルから使うだけでなく、Cursor や Claude Code のような AI エージェントに操作させることを主要な用途のひとつとして設計しています。\nhttps://codatum.jp/cli\nhttps://codatum.jp/blog/post/codatum-cli-beta\nhttps://cli-docs.codatum."
+    },
+    {
       "title": "AI家臣団を解散して、影武者を一人だけ残した　兵法書と訓練記録",
       "url": "https://zenn.dev/shio_shoppaize/books/kagemusha-book",
       "author": "おしお",
@@ -338,13 +1002,6 @@
       "author": "mehm8128",
       "published": "Mon, 03 Aug 2026 08:25:48 GMT",
       "summary": "こんにちは！ サイボウズ株式会社 フロントエンドエンジニアの mehm8128 (@mehm8128) です。\n\n はじめに\nサイボウズは 2025 年 4 月より、W3C のメンバーに加入しました。\nhttps://blog.cybozu.io/entry/joining-w3c\n標準化プロセスに関わることができるようになるための最初の一歩として、フロントエンドエンジニアの一部のメンバーは積極的に Web 標準のキャッチアップを行っています。\nそこで、毎月メンバーが興味を持"
-    },
-    {
-      "title": "入出力フォーマットで LLM トークンはどれだけ変わるのか",
-      "url": "https://zenn.dev/aiforall/articles/8cbeb63f5cbc00",
-      "author": "たこやき",
-      "published": "Mon, 03 Aug 2026 05:38:52 GMT",
-      "summary": "はじめに\nLLM をアプリケーションに組み込むとき、入力や出力を JSON で扱う場面はよくあります。ただ、テキストで渡す・受け取る場合と比べて、トークン数やコストがどれくらい変わるのかが気になり調査してみました。\nそこで本記事では、入力と出力それぞれを text / JSON で組み合わせた 4 パターンを Bedrock Converse API + Claude Haiku 4.5 で実測し、どこにトークンコストが乗るのかを可視化してみました。題材は肉じゃがのレシピ要約"
     },
     {
       "title": "オントロジーで AI に業務知識を渡す — AWS の OSS「Context Ontology Accelerator」を試してみた",
@@ -389,20 +1046,6 @@
       "summary": "※執筆途中のドラフト状態ですが第 1 部まで書いたので公開しています。\n※そのため、今後修正が入る可能性があります。ご了承ください。\n\n「Python や Ruby みたいなプログラミング言語って、中はどう動いているんだろう？」\n「言語を自作するのって面白そうだけど、難しいんだろうな」\n\nそんな風に思っている方に読んでみていただきたい「プログラミング言語の作り方」超入門です。\n\n本書の狙いは、小さい小さい（プログラミング言語とは思えないような）言語からスタートし、少しずつ機能"
     },
     {
-      "title": "Claude CodeのSkillsは「手順書」だったので、/article コマンドを作ってみた",
-      "url": "https://zenn.dev/osakayakyu/articles/e6aa9835c04d73",
-      "author": "KoH",
-      "published": "Sun, 02 Aug 2026 03:15:05 GMT",
-      "summary": "概要\nClaude Codeの「スキル」という言葉を見たとき、最初はプラグインや拡張機能みたいなものを想像していました。\n何かスクリプトを書いて、コマンドから呼び出して、決まった処理を自動実行するようなイメージです。\nでも実際に触ってみると、思っていたよりずっとシンプルでした。\n用意するのは、基本的には SKILL.md というMarkdownファイルです。\nそこに「こういう順番で作業してほしい」「ここは必ず確認してほしい」という手順を書いておくと、Claude Codeがそ"
-    },
-    {
-      "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
-      "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac",
-      "author": "hellohazime",
-      "published": "Sun, 02 Aug 2026 00:43:07 GMT",
-      "summary": "お疲れ様です波浪です。\n今回は、最近流行りのKimi K3です。前回の失敗を活かして自分の中でも熱があるうちにBLOGにしました。\n結論。枝刈りしたKimi K3がMac Studio(Apple M3 Ultra、512GB)1台で動きました。ハーネスとしてKimi Code CLIを繋いで、SWE-Lancerの実タスク8本中5本正解、$3,500。そのうち2本は、前回2bitのK2.7が解けなかった問題でした。\nモデルはHugging Faceに置いてあります。\nhtt"
-    },
-    {
       "title": "GDBで始めるアセンブリと解析",
       "url": "https://zenn.dev/juck28/articles/091c07869aba28",
       "author": "JUCK",
@@ -411,22 +1054,29 @@
     }
   ],
   "common_terms": [
-    "code",
-    "claude",
-    "skill",
-    "web",
-    "llm",
     "cli",
-    "rust",
-    "microsoft",
+    "code",
+    "skill",
+    "claude",
+    "blog",
     "any",
-    "base",
-    "knowledge"
+    "llm-wiki",
+    "microsoft",
+    "cursor",
+    "knowledge",
+    "typescript",
+    "base"
   ],
+  "ai_analysis": {
+    "enabled": true,
+    "model": "gemini-3.5-flash-lite",
+    "successful": 10,
+    "total": 10
+  },
   "verification": {
-    "mode": "metadata-only",
+    "mode": "metadata-and-readme-analysis",
     "completed": 0,
     "pending": 10,
-    "note": "自動収集ではコードを実行しません。"
+    "note": "AI分析はREADMEの要約であり、実行検証や安全性保証ではありません。"
   }
 }

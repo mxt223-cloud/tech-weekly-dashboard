@@ -1,0 +1,58 @@
+{
+  "summary_ja": "AirLLMは、量子化、蒸留、プルーニングを行わずに、単一の4GB GPUなどの小規模なハードウェアで70Bなどの大規模言語モデルの推論メモリ使用量を劇的に削減するライブラリです。",
+  "capabilities": [
+    {
+      "text": "単一の4GB GPUなどの小規模なハードウェアで、量子化や蒸留なしに70Bの大規模言語モデルを実行する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ブロック単位の量子化ベースのモデル圧縮により、推論速度を最大3倍に向上させる。",
+      "evidence_section": "Model Compression - 3x Inference Speed Up!"
+    },
+    {
+      "text": "AutoModelを使用して、モデルクラスを指定することなくモデルタイプを自動検出する。",
+      "evidence_section": "Quickstart"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "LlamaやQwenなどの大規模言語モデルを、メモリの限られたローカル環境や単一のGPUカードで実行する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "MacOSのApple silicon環境で大容量の言語モデルを実行する。",
+      "basis": "README明記",
+      "evidence_section": "MacOS"
+    },
+    {
+      "text": "ディスク容量が不足する場合にオリジナルモデルを削除してディスク領域を節約する。",
+      "basis": "README明記",
+      "evidence_section": "Configurations"
+    }
+  ],
+  "first_trial": {
+    "goal": "airllmパッケージのインストールと基本的なモデル推論の実行",
+    "steps": [
+      "pip install airllm",
+      "Pythonスクリプト上でAutoModel.from_pretrainedを使用してモデルを初期化し、生成処理を実行する"
+    ],
+    "success_criteria": "モデルの推論結果がデコードされてコンソールに出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quickstart",
+    "Model Compression - 3x Inference Speed Up!",
+    "Configurations",
+    "MacOS"
+  ],
+  "unconfirmed": [
+    "詳細な内部のメモリ管理アルゴリズムの挙動",
+    "サポートされているすべてのモデルの詳細な動作検証結果"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "160cffd570606290b202382b3e2745142b61a045",
+  "generated_at": "2026-08-05T22:32:36.419258+09:00"
+}
