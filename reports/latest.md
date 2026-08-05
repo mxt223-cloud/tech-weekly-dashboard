@@ -1,6 +1,6 @@
 # Tech Weekly — 2026-08-05
 
-生成日時: 2026-08-05T18:56:26.700979+09:00
+生成日時: 2026-08-05T18:58:00.088154+09:00
 
 ## GitHub Trending 週間上位10件
 
@@ -10,7 +10,7 @@
 |2|[microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)|Jupyter Notebook|8582|MIT|2026-07-21T11:11:48Z|
 |3|[block/buzz](https://github.com/block/buzz)|Rust|7262|Apache-2.0|2026-08-05T09:56:17Z|
 |4|[virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)|Python|5420|MIT|2026-08-05T02:11:11Z|
-|5|[different-ai/openwork](https://github.com/different-ai/openwork)|TypeScript|3601|NOASSERTION|2026-08-05T09:41:38Z|
+|5|[different-ai/openwork](https://github.com/different-ai/openwork)|TypeScript|3601|NOASSERTION|2026-08-05T09:56:37Z|
 |6|[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)|Python|4389|MIT|2026-08-05T02:46:10Z|
 |7|[lyogavin/airllm](https://github.com/lyogavin/airllm)|Jupyter Notebook|3911|Apache-2.0|2026-07-29T01:08:32Z|
 |8|[1jehuang/jcode](https://github.com/1jehuang/jcode)|Rust|3294|MIT|2026-08-05T05:56:38Z|
@@ -62,6 +62,6 @@
 
 
 ## 共通キーワード
-code / claude / web / skill / llm / cli / rust / microsoft / any / base / knowledge
+code / claude / skill / web / llm / cli / rust / microsoft / any / base / knowledge
 
 > 自動処理はメタデータ収集までです。ランキングやスター数は安全性を保証しません。
