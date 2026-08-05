@@ -1,0 +1,55 @@
+{
+  "summary_ja": "コーディングエージェントの出力から前置きや余計な解説を排除し、結論を最初に行動ベースで示すためのスキルです。",
+  "capabilities": [
+    {
+      "text": "コーディングアシスタントの出力をADHDフレンドリーな形式に変更し、結論や次に取るべき行動を最初に提示する",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "10のルール（最初に行動を提示する、マルチステップのタスクに番号を振る、箇条書きは5つまで、前置きや結びの言葉をなくすなど）を適用する",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "プラグインのアンインストール、マーケットプレイスからの削除・追加を経て、独自にカスタマイズしたフォーク版を利用できるようにする",
+      "evidence_section": "Tune it"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "長い前置きや解説を省き、すぐにコードの修正作業に取り掛かりたいとき",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "エージェントの回答に含まれる手順を番号付きのステップで明確に把握したいとき",
+      "basis": "README明記",
+      "evidence_section": "What changes"
+    }
+  ],
+  "first_trial": {
+    "goal": "プラグインのインストールと、READMEに記載されたチューニング手順を確認する",
+    "steps": [
+      "INSTALL.mdを参照してインストール手順を確認する",
+      "claude plugin uninstall i-have-adhd や claude plugin marketplace add などのコマンドを実行する"
+    ],
+    "success_criteria": "Claude Codeを再起動し、/i-have-adhd を再実行できる状態になること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it",
+    "Credits",
+    "License"
+  ],
+  "unconfirmed": [
+    "INSTALL.mdの詳細なインストール手順",
+    "SKILL.mdに記載されている10のルールの詳細な記述内容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "68a6030da28f6519657a724af30b8ee9a8235b41",
+  "generated_at": "2026-08-06T07:36:02.220866+09:00"
+}
