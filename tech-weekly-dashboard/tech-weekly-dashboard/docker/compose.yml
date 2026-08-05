@@ -1,0 +1,15 @@
+services:
+  sandbox:
+    build:
+      context: ..
+      dockerfile: docker/sandbox.Dockerfile
+    read_only: true
+    network_mode: "none"
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 1g
+    cpus: 1.0
+    tmpfs: [/tmp:size=256m,mode=1777]
+    volumes:
+      - ../target:/workspace/target:ro
