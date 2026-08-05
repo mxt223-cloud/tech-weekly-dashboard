@@ -1,1 +1,12 @@
-{"github_trending_language":"","github_trending_since":"weekly","github_limit":10,"zenn_feed":"https://zenn.dev/feed","zenn_limit":20,"site_title":"Tech Weekly","timezone":"Asia/Tokyo"}
+{
+  "github_trending_language": "",
+  "github_trending_since": "weekly",
+  "github_limit": 10,
+  "zenn_feed": "https://zenn.dev/feed",
+  "zenn_limit": 20,
+  "site_title": "Tech Daily",
+  "timezone": "Asia/Tokyo",
+  "gemini_model": "gemini-3.5-flash-lite",
+  "analysis_prompt_version": "v1",
+  "readme_max_chars": 30000
+}
