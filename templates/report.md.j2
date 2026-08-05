@@ -1,0 +1,21 @@
+# {{ data.title }} — {{ data.week }}
+
+生成日時: {{ data.generated_at }}
+
+## GitHub Trending 週間上位10件
+
+|順位|リポジトリ|言語|今週★|ライセンス|最終更新|
+|---:|---|---|---:|---|---|
+{% for r in data.github -%}
+|{{r.rank}}|[{{r.full_name}}]({{r.url}})|{{r.language}}|{{r.stars_period if r.stars_period is not none else "不明"}}|{{r.api.license or "不明"}}|{{r.api.pushed_at or "不明"}}|
+{% endfor %}
+
+## Zenn公式RSS
+{% for x in data.zenn %}
+- [{{x.title}}]({{x.url}}) — {{x.author or "著者不明"}}
+{% endfor %}
+
+## 共通キーワード
+{{data.common_terms|join(" / ") if data.common_terms else "抽出なし"}}
+
+> 自動処理はメタデータ収集までです。ランキングやスター数は安全性を保証しません。
