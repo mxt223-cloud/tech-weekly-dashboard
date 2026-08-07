@@ -1,0 +1,55 @@
+{
+  "summary_ja": "reverse-skillは、AIエージェント（Claude Code、Cursorなど）がAPK解析、バイナリ逆解析、Webフロントエンドの難読化解除、ペネトレーションテスト、CTFなどのセキュリティタスクに直面した際、適切な手法やツールへ自動ルーティングし、繰り返し可能なワークフローを実行するためのサイバーセキュリティ用スキルルーターパックです。",
+  "capabilities": [
+    {
+      "text": "APKやAndroidアプリ、iOS、バイナリ（exe, dll, so, elf）、.NET、フロントエンドJS、マルウェアなどの多様なセキュリティシナリオに対応するメソッドへのルーティングを提供します。",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "プラットフォームごとのツールインデックスを更新するスクリプト（Windows、Linux/macOS、Kali Linux向け）を備えています。",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "スコープやタイムライン、作業項目を管理するためのケース初期化スクリプトやオペレーションコントラクトを提供します。",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングクライアントを用いてAPKやバイナリ解析、ペネトレーションテストのターゲットに遭遇した際、適切なツールやワークフローの選択に活用する。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "CTF競技において、Sandboxオーケストレーター等のサブスキルを活用して効率的に課題を攻略する。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "ローカル環境で検出されたツール状態を確認しながら、ファームウェアやファームウェアペネトレーション、APIセキュリティなどの脆弱性調査を実施する。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンし、プラットフォームごとのツールインデックスを更新する",
+    "steps": [
+      "git clone https://github.com/zhaoxuya520/reverse-skill.git",
+      "powershell -File skills/scripts/refresh-tool-index.ps1"
+    ],
+    "success_criteria": "ツールインデックスの更新スクリプトが正常に実行され、検出されたツールが確認できること"
+  },
+  "evidence_sections": [
+    "About",
+    "Getting Started",
+    "Usage"
+  ],
+  "unconfirmed": [
+    "リポジトリ内の各サブスキルや外部ツールが実際に動作するための詳細なAPIキーや外部サービスのセットアップ手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e448d121a33a0b8ce47b54f5495de4fd1fb17dab",
+  "generated_at": "2026-08-07T10:03:58.428419+09:00"
+}

@@ -1,0 +1,59 @@
+{
+  "summary_ja": "tuicrは、Vimのキーバインドに対応したターミナル向けのコードレビューTUIツールです。Git、Jujutsu、Mercurialに対応しており、GitHub、GitLab、Bitbucketへのレビューの送信や、クリップボードへの構造化されたMarkdownエクスポートが可能です。",
+  "capabilities": [
+    {
+      "text": "GitHubスタイルの連続的な差分表示をターミナル上で提供し、すべての変更ファイルを一つのストリームでスクロール確認できます。",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "行、範囲、ファイル、レビューレベルでのPR風のコメント作成や、ファイル・ハンク単位でのレビュー状況の追跡が可能です。",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "GitHub、GitLab、Bitbucketへのレビュー送信や、クリップボードへの構造化Markdownコピー、標準出力へのパイプ出力という3つのエクスポート先をサポートしています。",
+      "evidence_section": "What it does"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "git、jj、mercurialの未コミットの変更、コミット範囲、または各種ホスティングサービスのプルリクエストやマージリクエストをレビューする。",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "作成したレビューコメントを構造化されたMarkdownとしてクリップボードにコピーし、AIコーディングエージェントに貼り付けて修正を依頼する。",
+      "basis": "README明記",
+      "evidence_section": "To your coding agent"
+    },
+    {
+      "text": "RustのライブラリAPIを利用して、永続化されたレビューセッションをベースにしたカスタムツールやスクリプトを構築する。",
+      "basis": "README明記",
+      "evidence_section": "Library API"
+    }
+  ],
+  "first_trial": {
+    "goal": "tuicrをインストールし、コミットセレクターからレビュー対象を選んで起動する",
+    "steps": [
+      "curl -fsSL tuicr.dev/install.sh | sh",
+      "tuicr"
+    ],
+    "success_criteria": "コミットセレクター画面またはTUIの差分ビューアーがターミナル上に起動すること"
+  },
+  "evidence_sections": [
+    "What it does",
+    "Install",
+    "Quick start",
+    "How it compares",
+    "Export your review",
+    "Review session CLI",
+    "Library API",
+    "Configuration",
+    "Keybindings"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5f7792189d81529550152708f81ddec165476ad7",
+  "generated_at": "2026-08-07T10:04:07.369001+09:00"
+}

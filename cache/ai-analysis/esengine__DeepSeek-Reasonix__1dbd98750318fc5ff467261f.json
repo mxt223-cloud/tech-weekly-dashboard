@@ -1,0 +1,52 @@
+{
+  "summary_ja": "DeepSeek-Reasonixは、ターミナルで動作するDeepSeekネイティブのAIコーディングエージェントです。プレフィックスキャッシュの安定性に最適化されており、長時間のセッションでもトークンコストを抑えながら実行できます。",
+  "capabilities": [
+    {
+      "text": "プロバイダやエージェント、有効なツールなどをreasonix.tomlで設定できる設定駆動型のエージェントです。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "MCPサーバーを介してツール、プロンプト、リソースを提供するプラグイン駆動に対応しています。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "単一の静的バイナリとして動作し、追加の依存関係なしで実行できます。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ターミナル上でAIコーディングエージェント対話セッションを開始し、コードの実装や修正を依頼する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "プロジェクトの初期化時に手順や指示を作成させる。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI環境で初期設定を行い、インタラクティブセッションを開始する",
+    "steps": [
+      "npm i -g reasonix",
+      "reasonix setup",
+      "reasonix"
+    ],
+    "success_criteria": "インタラクティブセッションが正常に開始されること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Install",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのモデルの詳細な挙動",
+    "デスクトップアプリおよびVS Code拡張機能の具体的な内部処理"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "16cf00cbb7841696b176b4b295c3bb9f51398484",
+  "generated_at": "2026-08-07T10:04:03.727936+09:00"
+}
