@@ -1,0 +1,49 @@
+{
+  "summary_ja": "paperswithbacktest/awesome-systematic-trading は、システマティックトレーディング（クオンツ取引）に関するライブラリ、パッケージ、戦略、書籍、ブログ、チュートリアルなどのリソースを収集したキュレーションリストです。",
+  "capabilities": [
+    {
+      "text": "リサーチやライブトレードのための多数のライブラリやパッケージを収集している。",
+      "evidence_section": "What will you find here?"
+    },
+    {
+      "text": "機関投資家や学者によって記述された戦略を掲載している。",
+      "evidence_section": "What will you find here?"
+    },
+    {
+      "text": "初心者やプロ向けの書籍、動画、ブログ、コースを紹介している。",
+      "evidence_section": "What will you find here?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "システマティックトレーディング戦略の発見、開発、実行に役立つリソースを探す。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "バックテストやライブトレードで使用するPythonなどのライブラリを比較・選定する。",
+      "basis": "提案",
+      "evidence_section": "Libraries and packages"
+    }
+  ],
+  "first_trial": {
+    "goal": "リソースリストから必要なライブラリや戦略を確認する",
+    "steps": [
+      "READMEの目次または各セクションを参照する。"
+    ],
+    "success_criteria": "目的のカテゴリのリソース情報を閲覧できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What will you find here?",
+    "Libraries and packages"
+  ],
+  "unconfirmed": [
+    "インストールのための具体的なコマンドやクイックスタート手順は記載されていない"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6f11f119e6db02190abaadf693855090be036281",
+  "generated_at": "2026-08-08T07:09:05.779436+09:00"
+}
