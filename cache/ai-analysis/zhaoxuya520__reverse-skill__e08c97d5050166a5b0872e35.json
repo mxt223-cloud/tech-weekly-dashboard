@@ -1,0 +1,54 @@
+{
+  "summary_ja": "reverse-skillは、AIエージェントがAPKやバイナリ解析、ペネトレーションテスト、CTFなどのセキュリティタスクに直面した際に、適切な手法やツールへ自動でルーティングし反復可能なワークフローを実行するためのサイバーセキュリティスキルルーティングパックです。",
+  "capabilities": [
+    {
+      "text": "APK、バイナリ、フロントエンドJS暗号化、CTF、ペネトレーションテストなどのターゲットに対して適切な手法をルーティングする",
+      "evidence_section": "About"
+    },
+    {
+      "text": "Windows、Linux、macOSなどのプラットフォームに対応し、ローカルツールのインデックス作成や検証スクリプトを提供する",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "APK解析、バイナリ逆向、.NET、マルウェア解析、ファームウェア、ペネトレーションテストなどの多岐にわたるシナリオをサポートする",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントがAPKやバイナリ、CTFの課題などに遭遇した際に、適切なワークフローやツールを選択して実行させる",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "クロスプラットフォームのCIや回帰ベンチマークを用いてルーティングの検証を行う",
+      "basis": "README明記",
+      "evidence_section": "About"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンし、プラットフォームごとのツールインデックスを更新する",
+    "steps": [
+      "git clone https://github.com/zhaoxuya520/reverse-skill.git",
+      "powershell -File skills/scripts/refresh-tool-index.ps1"
+    ],
+    "success_criteria": "ツールインデックスの更新スクリプトが正常に実行され、検出されたツールが確認できること"
+  },
+  "evidence_sections": [
+    "About",
+    "Getting Started",
+    "Usage",
+    "Sponsors",
+    "Contributing",
+    "License",
+    "Acknowledgments"
+  ],
+  "unconfirmed": [
+    "具体的なAIクライアント（Claude Code、Cursor等）との詳細な連携設定の内部実装"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1b0358bcd691e33d6f638607da8cc4eb4c2828e5",
+  "generated_at": "2026-08-09T06:56:41.921826+09:00"
+}

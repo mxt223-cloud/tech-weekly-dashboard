@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Invidiousは、YouTubeの軽量で広告やトラッキングのない代替フロントエンドです。公式APIを使用せず、プライバシーを重視した動画視聴環境を提供します。",
+  "capabilities": [
+    {
+      "text": "広告なし、トラッキングなし、JavaScriptなしで動作する軽量な動画視聴環境",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "YouTube、NewPipe、FreeTubeからの登録情報や視聴履歴のインポートおよびエクスポート",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "公式YouTube APIを使用しない開発者向けAPIの提供",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "広告やトラッキングを気にせずにYouTubeの動画を視聴する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Googleアカウントを使わずにチャンネル登録や通知の管理を行う",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "モバイル端末でバックグラウンド再生や音声のみモードを利用する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "公開されているインスタンスを利用してすぐに動画を視聴する",
+    "steps": [
+      "Instances listのページにアクセスする",
+      "公開インスタンスの一覧から好きなものを選択する",
+      "選択したインスタンスのサイトで動画の視聴を開始する"
+    ],
+    "success_criteria": "ブラウザ上でInvidiousのインターフェースを通じて動画が再生されること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Quick start",
+    "Documentation",
+    "Contribute"
+  ],
+  "unconfirmed": [
+    "ローカル環境での具体的なビルド手順やコンパイルコマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a50441a97a20c52d6a52b1ce51c3f599b1a95ac5",
+  "generated_at": "2026-08-09T06:56:48.989743+09:00"
+}

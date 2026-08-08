@@ -1,0 +1,66 @@
+{
+  "summary_ja": "SwarmForgeは、tmuxをベースにしたAIエージェントのオーケストレーションプラットフォームです。複数のAIエージェントをgitワークトリーに割り当てて連携させ、信頼性の高いソフトウェア開発を行います。",
+  "capabilities": [
+    {
+      "text": "設定駆動型のトポロジーにより、swarmforge/swarmforge.confを通じてスウォームの構成を定義できる",
+      "evidence_section": "Core Features"
+    },
+    {
+      "text": "ロールごとのバックエンド選択をサポートし、claude、codex、copilot、grokなどを利用できる",
+      "evidence_section": "Core Features"
+    },
+    {
+      "text": "デーモン配信のハンドオフファイルを介したエージェント間の通信プロトコルを備えている",
+      "evidence_section": "Handoff Protocol"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "TDDと単体テストによる迅速なバックエンド実装ループ",
+      "basis": "README明記",
+      "evidence_section": "two-pack"
+    },
+    {
+      "text": "Gherkin仕様書や受け入れテストを組み込んだ中規模プロジェクトの開発",
+      "basis": "README明記",
+      "evidence_section": "four-pack"
+    },
+    {
+      "text": "仕様策定、事前の品質保証、バックエンド検証を分離した大規模プロジェクトのワークフロー",
+      "basis": "README明記",
+      "evidence_section": "six-pack"
+    }
+  ],
+  "first_trial": {
+    "goal": "SwarmForgeの実行可能なブランチをクローンしてスウォームを起動する",
+    "steps": [
+      "BRANCH=four-pack",
+      "curl -L \"https://github.com/unclebob/swarm-forge/archive/refs/heads/${BRANCH}.tar.gz\" | tar -xz --strip-components=1",
+      "./swarm"
+    ],
+    "success_criteria": "tmuxセッションとターミナルウィンドウが自動的に開き、スウォームが起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Intent",
+    "Branches",
+    "Prerequisites",
+    "Getting Started",
+    "What SwarmForge Does",
+    "Core Features",
+    "Constitution Structure",
+    "Roles",
+    "How It Works",
+    "Handoff Protocol",
+    "The swarmforge.conf File",
+    "tmux Behavior",
+    "Terminal Behavior",
+    "Window Behavior"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "981150281638458b72e31a9cd88a312ad8c0f14b",
+  "generated_at": "2026-08-09T06:56:52.163650+09:00"
+}

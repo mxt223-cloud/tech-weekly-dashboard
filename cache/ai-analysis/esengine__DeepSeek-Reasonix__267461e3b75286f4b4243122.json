@@ -1,0 +1,50 @@
+{
+  "summary_ja": "DeepSeek-Reasonixは、ターミナルやデスクトップ、ブラウザ、エディタから利用できるDeepSeekネイティブのAIコーディングエージェントです。",
+  "capabilities": [
+    {
+      "text": "プロバイダ、エージェント、有効なツール、プラグインをreasonix.tomlで設定可能です。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "MCPサーバーからツール、プロンプト、リソースを追加でき、拡張プロトコルv1サイドカーによる機能拡張が可能です。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "単一の静的バイナリとして動作し、クロスコンパイルやターゲット環境へのデプロイが容易です。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ターミナル上で対話的なセッションを開始し、AIコーディング支援を受ける。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "特定のタスク（TODOの実装など）を指定してエージェントに自動実行させる。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI/TUI環境でReasonixのセットアップと対話セッションを開始する",
+    "steps": [
+      "reasonix setup",
+      "reasonix"
+    ],
+    "success_criteria": "対話型セッションが起動し、プロバイダとモデルの設定が行えること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Install",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "具体的な対応モデルの全リストやAPIキーの設定詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "206317c2b435e7202b51f344dc57a859b3f6d3ed",
+  "generated_at": "2026-08-09T06:56:45.764425+09:00"
+}
