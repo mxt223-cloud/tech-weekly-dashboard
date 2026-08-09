@@ -1,0 +1,54 @@
+{
+  "summary_ja": "google/skillsは、Googleの製品やテクノロジー（Google Cloud、Google Adsなど）に関するAgent Skillsおよびプラグインを集めたリポジトリです。",
+  "capabilities": [
+    {
+      "text": "Google CloudをはじめとするGoogle製品やテクノロジーに関する多数のAgent Skillsを提供している。",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "npx skills addコマンドを使用して特定のスキルを選択し、インストールできる。",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "エージェントハーネス向けのGoogle製品プラグイン（SkillsとMCPサーバー）をバンドルしている。",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Google Cloudの構築や運用、AI/ML、データベース関連のスキルをAIエージェントに導入する。",
+      "basis": "README明記",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "Google Ads APIの利用や広告SDKの導入に関するスキルを活用する。",
+      "basis": "README明記",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "Claude Codeなどの対応するエージェントハーネスにプラグインを追加して開発や管理を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリから特定のスキルを選択してインストールする",
+    "steps": [
+      "npx skills add google/skills"
+    ],
+    "success_criteria": "コマンドを実行し、表示されるプロンプトからリポジトリ内の特定のスキルを選択してインストールできること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "Available Skills",
+    "Plugins"
+  ],
+  "unconfirmed": [
+    "各スキルが内部でどのような処理やAPI呼び出しを行っているかの詳細な実装仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "753d99b7f98eb7fe572198470985585c4442f45c",
+  "generated_at": "2026-08-10T06:59:29.918949+09:00"
+}

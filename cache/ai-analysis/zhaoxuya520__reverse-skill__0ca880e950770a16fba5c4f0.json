@@ -1,0 +1,56 @@
+{
+  "summary_ja": "zhaoxuya520/reverse-skillは、逆方向エンジニアリングやペネトレーションテスト、セキュリティ研究のためのAI駆動型スキルルーティングパッケージです。Claude Code、Cursor、ClineなどのAIコーディングクライアントをサポートし、タスクに応じた適切な手法の選択、ツールの可用性確認、反復可能なワークフローの実行を支援します。",
+  "capabilities": [
+    {
+      "text": "APK、バイナリ、フロントエンドJS暗号化、CTFチャレンジ、ペネトレーションテストのターゲットに対するAI駆動のスキルルーティング",
+      "evidence_section": "About"
+    },
+    {
+      "text": "プラットフォーム別のツールインデックスの更新機能（Windows、Linux/macOS、Kali Linux向けスクリプトを提供）",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "Android解析、バイナリ逆向、.NET/C#、マルウェア解析、ファームウェアペンテストなど多数のシナリオに対応するスキルモジュール群の提供",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "APKやバイナリ、CTFターゲットに遭遇した際、AIエージェントに適切な手法やワークフローを自動選択させる",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "WindowsやLinux環境でツールインデックスを更新し、利用可能なセキュリティツールを自動検知する",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "ルーティング設定変更後にルーティング回帰テストや整合性チェックを実行する",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンし、プラットフォームに応じたツールインデックスを更新してインストールを完了させる",
+    "steps": [
+      "git clone https://github.com/zhaoxuya520/reverse-skill.git",
+      "powershell -File skills/scripts/refresh-tool-index.ps1"
+    ],
+    "success_criteria": "ツールインデックス更新スクリプトが正常に実行され、skills/tool-index.mdで検知されたツールが確認できること"
+  },
+  "evidence_sections": [
+    "About",
+    "Getting Started",
+    "Usage"
+  ],
+  "unconfirmed": [
+    "詳細な各AIクライアントごとの個別アダプターの導入手順",
+    "サードパーティ製依存モジュールの詳細な内部実装"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "059b340e9f22b675337e381cbd928366482c0ec3",
+  "generated_at": "2026-08-10T06:59:20.398266+09:00"
+}

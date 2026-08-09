@@ -1,0 +1,62 @@
+{
+  "summary_ja": "Kaneoは、シンプルで高速なオープンソースのセルフホスト型プロジェクト管理ツールです。複雑さを排除し、チームがプロダクトの構築に集中できるように設計されています。",
+  "capabilities": [
+    {
+      "text": "シンプルで高速なクリーンなインターフェースを提供します。",
+      "evidence_section": "Why Kaneo?"
+    },
+    {
+      "text": "セルフホストに対応しており、データを自前で管理できます。",
+      "evidence_section": "Why Kaneo?"
+    },
+    {
+      "text": "MCP（Model Context Protocol）サーバーを内蔵しており、AIツールからタスクやプロジェクトを管理できます。",
+      "evidence_section": "MCP Server"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自社のサーバーにプロジェクト管理ツールを構築し、データを安全に管理したい場合。",
+      "basis": "README明記",
+      "evidence_section": "Why Kaneo?"
+    },
+    {
+      "text": "余計な通知や複雑なワークフローを排除した、軽量なツールでチームの開発効率を上げたい場合。",
+      "basis": "README明記",
+      "evidence_section": "Why Kaneo?"
+    },
+    {
+      "text": "ClaudeやCursorなどのAIクライアントと連携してタスク管理を行いたい場合。",
+      "basis": "README明記",
+      "evidence_section": "MCP Server"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker Composeを使用してKaneoをすばやく起動する",
+    "steps": [
+      "compose.ymlファイルを作成し、Docker Composeの設定を記述する。",
+      ".env.sampleを.envにコピーし、必要な環境変数を設定する。",
+      "docker compose up -dコマンドを実行し、http://localhost:5173にアクセスする。"
+    ],
+    "success_criteria": "ブラウザで http://localhost:5173 にアクセスし、Kaneoが起動していることを確認できる。"
+  },
+  "evidence_sections": [
+    "Why Kaneo?",
+    "Getting Started",
+    "Kubernetes Deployment",
+    "Development",
+    "MCP Server",
+    "Community",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的な画面のデザインや詳細な機能一覧",
+    "公式ドキュメントに記載されているすべての環境変数や詳細な設定項目"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "861ae72d13d559abe9db26092901c446ae25a208",
+  "generated_at": "2026-08-10T06:59:26.522865+09:00"
+}
