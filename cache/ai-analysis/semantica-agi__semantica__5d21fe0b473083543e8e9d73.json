@@ -1,0 +1,50 @@
+{
+  "summary_ja": "semanticaは、コンテキストや説明可能なAIシステムを構築するためのグラフネイティブなインフラストラクチャです。企業データの取り込み、ナレッジグラフやコンテキストグラフの構築、因果推論、意思決定の追跡などを提供します。",
+  "capabilities": [
+    {
+      "text": "Context Graphsにより、エンティティ、決定、関係性のクエリ、因果リンク、クロスグラフナビゲーションを実現",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "Decision Intelligenceにより、意思決定の記録や追跡、類似決定の検索、影響分析、ルールチェックが可能",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "Semantic Extractionにより、固有表現抽出(NER)、関係抽出、イベント検出、トリプレット生成、共参照解析をサポート",
+      "evidence_section": "Features at a Glance"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントの意思決定プロセスやコンテキストを追跡可能にし、コンプライアンスや規制に対応する高リスク領域での利用",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "エンタープライズデータのインジェストとコンテキストグラフの構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージのインストールと基本的なコンテキストグラフの初期化",
+    "steps": [
+      "pip install semantica"
+    ],
+    "success_criteria": "パッケージがエラーなくインストールされ、Pythonスクリプト内でContextGraphをインポートして利用できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "Features at a Glance",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "コードスニペットのBiTemporalFactの詳細な動作や全体のサンプルコードの完全な実行手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "745c54e4fd354972e37bbfca889e73ab0c42903b",
+  "generated_at": "2026-08-11T07:08:18.794363+09:00"
+}

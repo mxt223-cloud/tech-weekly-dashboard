@@ -1,0 +1,49 @@
+{
+  "summary_ja": "Googleの製品およびテクノロジー（Google Cloudや広告など）に関するAgent Skillsを多数提供するリポジトリです。",
+  "capabilities": [
+    {
+      "text": "Google CloudをはじめとするGoogle製品向けのAgent Skillsを多数提供する",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "npxコマンドを使用して特定のスキルを選択してインストールできる",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "Agent harness向けにGoogle製品のプラグイン（SkillsとMCPサーバー）を同梱している",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Google Cloudのインフラ構築やAI・ML、データベースなどの開発・運用タスクをAIエージェントに支援させる",
+      "basis": "提案",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "Google Ads APIやGoogle Mobile Ads SDKなどの広告関連の開発をエージェントスキルで効率化する",
+      "basis": "提案",
+      "evidence_section": "Available Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリから特定のスキルを追加する",
+    "steps": [
+      "npx skills add google/skills"
+    ],
+    "success_criteria": "コマンドを実行し、リポジトリから特定のスキルを選択してインストールできること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "Available Skills",
+    "Plugins"
+  ],
+  "unconfirmed": [
+    "リポジトリ内の各スキルが具体的にどのような内部プロンプトや処理を持つか詳細な仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e1f357d09ba57b3a80a29b8ab1ef82ec4f8b07b0",
+  "generated_at": "2026-08-11T07:08:21.029583+09:00"
+}

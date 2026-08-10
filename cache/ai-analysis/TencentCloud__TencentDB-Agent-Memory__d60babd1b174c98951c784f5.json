@@ -1,0 +1,62 @@
+{
+  "summary_ja": "TencentDB-Agent-Memoryは、AIエージェントのチーム向けに会話、ドキュメント、コードを4つの再利用可能なメモリアセット（Chat Memory、Skill、LLM-Wiki、CodeGraph）に変換し、共有・管理するためのシステムです。",
+  "capabilities": [
+    {
+      "text": "会話やタスクからChat MemoryやSkillを自動抽出し、ドキュメントやコードをWikiとCodeGraphに変換して管理します。",
+      "evidence_section": "Let experience accumulate, flow, and pass on to the next Agent"
+    },
+    {
+      "text": "プライベート、チーム、制限付き（ACL）、エージェント単位など、きめ細かなアクセス制御と共有設定が可能です。",
+      "evidence_section": "Every Loop Gains Experience"
+    },
+    {
+      "text": "L0会話からL3コア／ペルソナまで、会話を階層的に要約・保持します。",
+      "evidence_section": "Technical Implementation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "既存のコードベース、ドキュメント、過去の会話セッションをインポートし、新しいAIエージェントチームのコールドスタートを支援する。",
+      "basis": "README明記",
+      "evidence_section": "Cold Start: Load the Save File, Then Get to Work"
+    },
+    {
+      "text": "トラブルシューティングやコードレビュー、リリースチェックリストなどの再利用可能なスキルをチーム全体で共有・適用する。",
+      "basis": "README明記",
+      "evidence_section": "A Skill library that accumulates expertise"
+    },
+    {
+      "text": "コードの変更が他に与える影響範囲を分析するため、CodeGraphを用いて呼び出し関係やシンボルを調査する。",
+      "basis": "README明記",
+      "evidence_section": "A knowledge map that reads both docs and code"
+    }
+  ],
+  "first_trial": {
+    "goal": "すべてのサービス（memory-core、memory-hub、proxy）を一度に起動する",
+    "steps": [
+      "git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+      "cd TencentDB-Agent-Memory/deploy/global-images",
+      "cp .env.example .env",
+      "$EDITOR .env",
+      "./start-all.sh"
+    ],
+    "success_criteria": "終了時にClaudeに直接貼り付けられるワンライナーが出力され、http://localhost:8125 のパネルを開くことができること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "What is TencentDB Agent Memory?",
+    "Cold Start: Load the Save File, Then Get to Work",
+    "One Play Style: Build a Growing Agent Team for a One-Person Company",
+    "Technical Implementation"
+  ],
+  "unconfirmed": [
+    "プライベートリポジトリおよびSSH認証情報のCodeGraphサポートの詳細な実装状況",
+    "自動メモリルーティングの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "75df756751815db5a50da144c81ffb62f8ab4ac2",
+  "generated_at": "2026-08-11T07:08:12.976115+09:00"
+}

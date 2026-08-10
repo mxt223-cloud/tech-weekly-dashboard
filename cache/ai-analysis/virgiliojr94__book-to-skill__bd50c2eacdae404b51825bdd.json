@@ -1,0 +1,58 @@
+{
+  "summary_ja": "技術書などのPDFやドキュメントを、エージェントがオンデマンドで読み込める構造化されたスキルに変換するツールです。",
+  "capabilities": [
+    {
+      "text": "技術書などのPDFやドキュメントフォルダをエージェントのスキルに変換する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "章ごとのファイル、用語集、パターン、チートシートを生成する",
+      "evidence_section": "What it generates"
+    },
+    {
+      "text": "抽出ツールのインストール状態や不足しているコマンドを確認できる",
+      "evidence_section": "Requirements"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "購入した技術書をスキル化し、コーディング中にエージェントへ質問して正確な回答を得る",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "社内のアーキテクチャ決定レコードや手順書をまとめて検索可能なスキルにする",
+      "basis": "README明記",
+      "evidence_section": "Beyond books"
+    },
+    {
+      "text": "ブランドガイドラインやトーン＆マナー文書をスキル化してチームで活用する",
+      "basis": "README明記",
+      "evidence_section": "Beyond books"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてスキルフォルダに配置する",
+    "steps": [
+      "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill"
+    ],
+    "success_criteria": "指定したパスにリポジトリがクローンされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "What it generates",
+    "Beyond books",
+    "Requirements",
+    "Install"
+  ],
+  "unconfirmed": [
+    "具体的な生成結果の出力サンプル詳細",
+    "コマンド実行時の実際の動作ログ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "70c4ce540d6a451f4e4eaed3d12969c02fb7834f",
+  "generated_at": "2026-08-11T07:08:23.541146+09:00"
+}

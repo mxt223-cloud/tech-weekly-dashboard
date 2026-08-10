@@ -1,0 +1,70 @@
+{
+  "summary_ja": "LoopXは、長期間にわたるAIエージェントのチーム運用を管理するための、軽量なループエンジニアリング状態カーネルおよびローカルファーストのコントロールプレーンです。プロバイダーに依存せず、CodexやClaude Code、Cursorなどのコーディングエージェントの実行環境を変更することなく、持続的な目標、クォータ認識による自動ウェイク、実行可能なTODO、証拠ログ、検証可能なハンドオフを維持します。",
+  "capabilities": [
+    {
+      "text": "アクティブな目標、明確なスコープ、現在の権限を追跡するゴール状態とステータス管理機能",
+      "evidence_section": "Capabilities"
+    },
+    {
+      "text": "エージェントのターン実行、質問、待機、自己修復、または停止を判断するクォータおよびインタラクションコントラクト機能",
+      "evidence_section": "Capabilities"
+    },
+    {
+      "text": "Codex App、Codex CLI、Claude Code、汎用ワーカーなどのエージェントランタイムブリッジ機能",
+      "evidence_section": "Capabilities"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "数日間にわたるエンジニアリング、研究、ベンチマーク、または実験の目的の実行",
+      "basis": "README明記",
+      "evidence_section": "Why LoopX"
+    },
+    {
+      "text": "スコープ、証拠、レビュー状態を維持する必要があるIssueおよびPRループの管理",
+      "basis": "README明記",
+      "evidence_section": "Why LoopX"
+    },
+    {
+      "text": "所有者、安全性、公開、またはプライベートデータのゲートを持つプロジェクトの管理",
+      "basis": "README明記",
+      "evidence_section": "Why LoopX"
+    }
+  ],
+  "first_trial": {
+    "goal": "LoopXをインストールしてプロジェクトに接続し、動作確認を行う",
+    "steps": [
+      "curl -fsSL https://huangruiteng.github.io/loopx/install.sh | bash",
+      "export PATH=\"$HOME/.local/bin:$PATH\"",
+      "loopx doctor",
+      "cd /path/to/your-project",
+      "loopx connect",
+      "loopx status"
+    ],
+    "success_criteria": "loopx doctorが成功し、loopx statusによって現在の目的やユーザーゲート、エージェントのTODOが表示されること"
+  },
+  "evidence_sections": [
+    "Learn LoopX",
+    "Why LoopX",
+    "Evidence",
+    "Try LoopX",
+    "Capabilities",
+    "Advanced Paths",
+    "Advanced Documentation",
+    "Partner Projects",
+    "Community and Feedback",
+    "Contributing",
+    "Current Status",
+    "Star History",
+    "License"
+  ],
+  "unconfirmed": [
+    "内部の具体的な実装コードや詳細なアルゴリズムの動作",
+    "標準ライブラリ外の依存関係の有無に関する完全なソースコード検証"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "400e82928593a49531e2cb25b2a022745ef12f49",
+  "generated_at": "2026-08-11T07:08:09.323296+09:00"
+}
