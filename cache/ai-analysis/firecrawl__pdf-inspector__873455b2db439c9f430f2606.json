@@ -1,0 +1,51 @@
+{
+  "summary_ja": "pdf-inspectorは、Rust製の高速なPDF検査、分類、テキスト抽出ライブラリです。OCRを使わずにテキストベースのPDFかスキャン済みかを高速に判定し、位置情報や構造を保持したままクリーンなMarkdownへと変換します。",
+  "capabilities": [
+    {
+      "text": "テキストベース、スキャン済み、画像ベース、混在などのPDF種類を高速に判定し、信頼度スコアやページごとのOCRルーティング情報を返す。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "フォント情報やX/Y座標といった位置情報を保持したテキスト抽出と、自動的なマルチカラムの読み順判定を行う。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "見出し、箇条書き、コードブロック、テーブル、太字・斜体、URLリンクなどを網羅したMarkdownへの変換機能を持つ。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "大規模なPDF処理パイプラインにおいて、テキストベースのPDFをローカルで高速に処理し、OCRが必要なものだけを外部サービスへルーティングすることでコストと遅延を削減する。",
+      "basis": "README明記",
+      "evidence_section": "Use case: smart PDF routing"
+    },
+    {
+      "text": "レポート、研究論文、財務諸表、請求書、法的文書などのネイティブテキストPDFから、OCRのレイテンシやインフラを追加せずに構造化されたきれいなMarkdownを生成する。",
+      "basis": "README明記",
+      "evidence_section": "Benchmark"
+    }
+  ],
+  "first_trial": {
+    "goal": "Python環境でpdf-inspectorを使用してPDFファイルを処理し、種類とMarkdown結果を確認する",
+    "steps": [
+      "pip install maturin",
+      "maturin develop --release"
+    ],
+    "success_criteria": "Pythonスクリプトからpdf_inspectorモジュールをインポートし、process_pdf関数でPDFのタイプとMarkdown文字列を取得できること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Benchmark",
+    "Quick start",
+    "Use case: smart PDF routing"
+  ],
+  "unconfirmed": [
+    "ローカルビルド以外の本番環境における具体的な外部インテグレーション手順や詳細なパフォーマンス数値"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2c78525d2bd1003b906b142c3729798ff60ce143",
+  "generated_at": "2026-08-12T07:15:46.271798+09:00"
+}

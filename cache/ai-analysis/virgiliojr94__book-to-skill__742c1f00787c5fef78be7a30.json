@@ -1,0 +1,57 @@
+{
+  "summary_ja": "book-to-skillは、技術書や文書フォルダなどの構造化されたソースを読み込み、AIエージェント（GitHub Copilot CLI、Amp、Claude Codeなど）用の構造化されたスキルに変換するツールです。PDFなどの文書をそのままコンテキストに読み込ませるのに比べ、24倍から51倍少ないトークン数で効率的に質問や参照が行えます。",
+  "capabilities": [
+    {
+      "text": "技術書や文書ファイル、フォルダ、グロブなどをエージェント用スキルに変換する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コアのメンタルモデルや章インデックスをまとめたSKILL.md、章ごとのファイル、用語集、デザインパターン、チートシートを生成する",
+      "evidence_section": "What it generates"
+    },
+    {
+      "text": "PDF、EPUB、DOCX、HTML、RTF、MOBIなどの多様なフォーマットから抽出を行う",
+      "evidence_section": "Requirements"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "技術書を読み込ませて、後から特定の章や内容についてハルシネーションなしでエージェントに質問・参照する",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "社内ドキュメントやアーキテクチャ決定レコード（ADR）、オンボーディングガイドをまとめてコーディング中にエージェントに問い合わせる",
+      "basis": "README明記",
+      "evidence_section": "Beyond books"
+    },
+    {
+      "text": "ブランドのトーン＆マナーやデザインシステムのガイドラインを変換し、チームでクエリできるようにする",
+      "basis": "README明記",
+      "evidence_section": "Beyond books"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドを使用してbook-to-skillをエージェントのスキルとして追加する",
+    "steps": [
+      "npx skills add virgiliojr94/book-to-skill"
+    ],
+    "success_criteria": "エージェントにスキルが追加され、/book-to-skillコマンドが利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "What it generates",
+    "Beyond books",
+    "Requirements",
+    "Install"
+  ],
+  "unconfirmed": [
+    "対応しているエージェントホストのうち、GitHub Copilot CLI、Amp、Claude Code以外の具体的なカスタムホストでの動作詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ee2cb39ef2a5b5ccb0467708072a67f3186e21f3",
+  "generated_at": "2026-08-12T07:16:02.295618+09:00"
+}

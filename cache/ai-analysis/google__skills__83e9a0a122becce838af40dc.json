@@ -1,0 +1,49 @@
+{
+  "summary_ja": "google/skillsは、Googleの製品やテクノロジー（Google Cloud、AI/ML、データベース、広告など）に関するAgent Skillsをまとめたリポジトリです。",
+  "capabilities": [
+    {
+      "text": "Google CloudをはじめとするGoogle製品向けの多様なAgent Skillsの提供",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "npxコマンドによる特定スキルの選択および追加インストール",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "エージェントハーネス向けのGoogle製品プラグイン（SkillsとMCPサーバー）のバンドル",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Google Cloudのインフラ構築、GKE運用、AI/MLワークロードの管理をAIエージェントに支援させる",
+      "basis": "提案",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "Google Ads APIやGoogle Mobile Ads SDKを活用した広告関連の開発をエージェントスキルで効率化する",
+      "basis": "提案",
+      "evidence_section": "Available Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "npxを使ってリポジトリからスキルを追加する",
+    "steps": [
+      "npx skills add google/skills"
+    ],
+    "success_criteria": "コマンドを実行し、リポジトリから特定のスキルを選択してインストールできること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "Available Skills",
+    "Plugins"
+  ],
+  "unconfirmed": [
+    "各スキルが内部でどのような処理を行うかについての詳細な実装仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e4499e7ee5f5f210d24f5d1919c830c53f74b1bb",
+  "generated_at": "2026-08-12T07:15:56.418139+09:00"
+}

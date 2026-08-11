@@ -1,0 +1,50 @@
+{
+  "summary_ja": "semanticaは、コンテキストと説明可能なAIシステムのためのグラフネイティブインフラストラクチャであり、エンタープライズデータの取り込み、コンテキストグラフおよび知識グラフの構築、グラフ分析、因果推論、意思決定のトレーサビリティを提供します。",
+  "capabilities": [
+    {
+      "text": "エンティティ、決定、関係性のクエリ可能なグラフ構築や因果関係リンクを提供するContext Graphs機能",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "決定の記録、決定チェーンの追跡、類似決定の検索などを行うDecision Intelligence機能",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "ポイントインタイムスナップショットやバイテンポラルな起源管理を行うTemporal Intelligence機能",
+      "evidence_section": "Features at a Glance"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "監査証跡の必要な融資や規制の厳しい業界などのハイステークスで規制されたドメインでのAIエージェント活用",
+      "basis": "README明記",
+      "evidence_section": "Graph-Native Infrastructure for Context and Accountable AI Systems"
+    },
+    {
+      "text": "エンタープライズデータの取り込みと意味の抽出",
+      "basis": "README明記",
+      "evidence_section": "Graph-Native Infrastructure for Context and Accountable AI Systems"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージをインストールしてContextGraphを初期化する",
+    "steps": [
+      "pip install semantica"
+    ],
+    "success_criteria": "pipによるインストールが完了し、PythonスクリプトでContextGraphクラスがインポート・初期化できること"
+  },
+  "evidence_sections": [
+    "Graph-Native Infrastructure for Context and Accountable AI Systems",
+    "Quick Start",
+    "Features at a Glance",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "Quick Start内のコードスニペットの完全な実行結果や詳細なチュートリアル手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fbc207813d9adc352546351a77ef95a9b6e5a41d",
+  "generated_at": "2026-08-12T07:15:52.673788+09:00"
+}

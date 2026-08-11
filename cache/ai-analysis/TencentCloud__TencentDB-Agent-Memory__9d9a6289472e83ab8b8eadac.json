@@ -1,0 +1,61 @@
+{
+  "summary_ja": "TencentDB-Agent-Memoryは、AIエージェント向けチームレベルのメモリハブであり、会話、ドキュメント、コードを再利用可能な4つのメモリ資産（Chat Memory、Skill、LLM-Wiki、CodeGraph）に変換し、エージェントやフレームワーク間で共有・管理します。",
+  "capabilities": [
+    {
+      "text": "会話やタスクからChat MemoryとSkillsを自動抽出し、ドキュメントやコードをWikiとCodeGraphに変換して管理・レビューする",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "プライベート、チーム、ACL（User / Role / Agent）に基づくアクセス制御と共有範囲の管理を行う",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "CodeGraphによるコードのシンボル、ファイル、呼び出し関係、影響パスのインデックス化と影響分析を行う",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "既存のリポジトリ、ドキュメント、会話セッションをインポートし、新しいエージェントチームのコールドスタートを効率化する",
+      "basis": "README明記",
+      "evidence_section": "Cold Start: Load the Save File, Then Get to Work"
+    },
+    {
+      "text": "複数の異なる役割を持つエージェント（スカウト、ビルダー、レビュアーなど）に特定のメモリ資産を割り当ててチームで共有する",
+      "basis": "README明記",
+      "evidence_section": "One Play Style: Build a Growing Agent Team for a One-Person Company"
+    },
+    {
+      "text": "コードを変更する前に影響パスや呼び出し関係を網羅的に確認し、修正時のリスクを低減する",
+      "basis": "提案",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    }
+  ],
+  "first_trial": {
+    "goal": "メモリサービス（memory-core、memory-hub、proxy）を一括起動して管理パネルにアクセスする",
+    "steps": [
+      "git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+      "cd TencentDB-Agent-Memory/deploy/global-images",
+      "cp .env.example .env",
+      "$EDITOR .env",
+      "./start-all.sh"
+    ],
+    "success_criteria": "http://localhost:8125 にアクセスしてパネルを開くことができる"
+  },
+  "evidence_sections": [
+    "Installation",
+    "What is TencentDB Agent Memory?",
+    "Cold Start: Load the Save File, Then Get to Work",
+    "One Play Style: Build a Growing Agent Team for a One-Person Company",
+    "Technical Implementation"
+  ],
+  "unconfirmed": [
+    "プライベートリポジトリおよびSSH認証情報の完全なサポート時期",
+    "完全自動化されたメモリルーティングの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "11ae2a219b7905e57bf9f00a7c189a158040b22d",
+  "generated_at": "2026-08-12T07:15:49.691250+09:00"
+}
