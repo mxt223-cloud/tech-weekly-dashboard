@@ -1,0 +1,44 @@
+{
+  "summary_ja": "drawDBは、ブラウザ上で動作する無料かつ直感的なデータベースのエンティティ関係図（ERD）エディタであり、SQLスクリプトのエクスポートやインポート、マイグレーション生成などの機能を備えています。",
+  "capabilities": [
+    {
+      "text": "数回クリックするだけでブラウザ上でERDを作成できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "SQLスクリプトのエクスポートとインポート、マイグレーション生成が可能",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アカウント作成なしでブラウザ上から手軽にデータベーススキーマの図を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でdrawDBを起動して開発サーバーで動作確認する",
+    "steps": [
+      "git clone https://github.com/drawdb-io/drawdb",
+      "cd drawdb",
+      "npm install",
+      "npm run dev"
+    ],
+    "success_criteria": "ローカル開発サーバーが起動し、ブラウザでアプリケーションにアクセスできること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Getting Started",
+    "Contributing",
+    "Support"
+  ],
+  "unconfirmed": [
+    "共有機能を利用する場合の具体的なサーバー設定や環境変数の詳細な手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "61ce89ecb0c9b134cec87980e78babacc8b75ce1",
+  "generated_at": "2026-08-13T07:12:36.889432+09:00"
+}

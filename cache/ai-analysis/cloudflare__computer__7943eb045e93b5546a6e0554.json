@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Cloudflare Computerは、Durable Object内のSQLiteを権威ある状態として保持し、仮想ファイルシステムを提供する仕組みです。Container、Isolate shell、Isolate JavaScriptの3つのバックエンドを実行基盤として備えています。",
+  "capabilities": [
+    {
+      "text": "SQLiteをベースにしたDurable Object上の仮想ファイルシステムを提供する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Container、Isolate shell、Isolate JavaScriptの3つの実行バックエンドをサポートする。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "バックエンドなしで仮想ファイルシステム単体としても構築できる。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コンテナ内やワーカー環境でファイル操作やシェルコマンド、スクリプト実行を行う実験やプロトタイプ作成。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "チャットエージェントの作業ディレクトリとしてワークスペースを利用する。",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    },
+    {
+      "text": "Workers AIで生成した画像をワークスペースに書き込み、共有リンクを生成する。",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    }
+  ],
+  "first_trial": {
+    "goal": "@cloudflare/computerパッケージのインストールと各パッケージのREADMEの確認を行う。",
+    "steps": [
+      "@cloudflare/computerパッケージをインストールする。"
+    ],
+    "success_criteria": "インストール手順やexamplesの各READMEに沿って機能を確認できること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Using it",
+    "Examples",
+    "Repository layout",
+    "Performance",
+    "Documentation",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "正確なインストールのための具体的なnpmコマンドや具体的なコード例は、トップレベルのREADMEには記載がなく、各サブパッケージのREADMEを参照する必要がある。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "412b67032d316794ecc1067d58da105e7e8dee0c",
+  "generated_at": "2026-08-13T07:12:24.258340+09:00"
+}

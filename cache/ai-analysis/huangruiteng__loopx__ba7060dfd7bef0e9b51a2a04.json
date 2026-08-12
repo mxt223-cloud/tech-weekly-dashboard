@@ -1,0 +1,67 @@
+{
+  "summary_ja": "LoopXは、長期間実行されるAIエージェントチーム向けに、目標、ゲート、タスク、エビデンス、クォータなどの状態を永続的に管理するための軽量なループエンジニアリング状態カーネルおよびローカルファーストのコントロールプレーンです。特定のランタイムに依存せず、CodexやClaude Codeなどと組み合わせて動作します。",
+  "capabilities": [
+    {
+      "text": "アクティブな目標、明示的なスコープ、現在の権限の追跡",
+      "evidence_section": "Capabilities"
+    },
+    {
+      "text": "順序付けられたユーザーおよびエージェントのタスク、所有権、クレーム、リースの管理",
+      "evidence_section": "Capabilities"
+    },
+    {
+      "text": "コンパクトな実行履歴、検証、ブロック要因、受け入れられたライトバックを含むエビデンスの記録",
+      "evidence_section": "Capabilities"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "数日間にわたるエンジニアリング、リサーチ、ベンチマーク、実験目標の実行管理",
+      "basis": "README明記",
+      "evidence_section": "Why LoopX"
+    },
+    {
+      "text": "スコープ、エビデンス、レビュー状態を維持する必要があるIssueおよびPRループの管理",
+      "basis": "README明記",
+      "evidence_section": "Why LoopX"
+    },
+    {
+      "text": "所有権、リース、ハンドオフが重要となるピアエージェントチームの協調管理",
+      "basis": "README明記",
+      "evidence_section": "Why LoopX"
+    }
+  ],
+  "first_trial": {
+    "goal": "LoopXをインストールして動作確認を行い、プロジェクトを接続する",
+    "steps": [
+      "curl -fsSL https://huangruiteng.github.io/loopx/install.sh | bash",
+      "export PATH=\"$HOME/.local/bin:$PATH\"",
+      "loopx doctor",
+      "cd /path/to/your-project",
+      "loopx connect",
+      "loopx status"
+    ],
+    "success_criteria": "loopx doctorがパスし、loopx statusによって現在の目標やステータスが表示されること"
+  },
+  "evidence_sections": [
+    "Learn LoopX",
+    "Why LoopX",
+    "Evidence",
+    "Try LoopX",
+    "Capabilities",
+    "Advanced Paths",
+    "Advanced Documentation",
+    "Partner Projects",
+    "Community and Feedback",
+    "Contributing",
+    "Current Status",
+    "Star History",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ae74545266cbf55ea2d14d11fcf21a5f61ae991a",
+  "generated_at": "2026-08-13T07:12:28.865284+09:00"
+}
