@@ -1,0 +1,49 @@
+{
+  "summary_ja": "addyosmani/agent-skillsは、AIコーディングエージェント向けに本番品質のエンジニアリングスキルやワークフロー、品質ゲート、ベストプラクティスをパッケージ化したものです。",
+  "capabilities": [
+    {
+      "text": "開発ライフサイクル全体に対応する24のスキル（23のライフサイクルスキルと1つのメタスキル）を提供します。",
+      "evidence_section": "All 24 Skills"
+    },
+    {
+      "text": "定義、計画、構築、検証、レビュー、出荷のフェーズにマップされる8つのスラッシュコマンドを使用できます。",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "コードレビューやテストエンジニアなどの事前設定された専門家ペルソナを利用できます。",
+      "evidence_section": "Agent Personas"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングエージェントに一貫したワークフローや品質ゲートを強制し、本番品質の開発を行いたい場合",
+      "basis": "README明記",
+      "evidence_section": "Agent Skills"
+    },
+    {
+      "text": "スキルCLIを使用して複数の対応エージェントにスキルを一括または個別でインストールする場合",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "skills CLIを使用してリポジトリの全スキルをインストールする",
+    "steps": [
+      "npx skills add addyosmani/agent-skills"
+    ],
+    "success_criteria": "すべてのスキルが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Commands",
+    "Quick Start",
+    "All 24 Skills",
+    "Agent Personas"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f31b37f7fc881e76cf9ba9cedd74efad27d4d255",
+  "generated_at": "2026-08-14T07:12:55.821796+09:00"
+}

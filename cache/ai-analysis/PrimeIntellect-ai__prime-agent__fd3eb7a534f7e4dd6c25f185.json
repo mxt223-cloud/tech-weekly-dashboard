@@ -1,0 +1,60 @@
+{
+  "summary_ja": "Prime Agentは、コーディングや長時間の自律的タスク向けに設計された自己改善型RLMエージェントです。持続的なIPython制御環境と頑健なハーネス状態を組み合わせ、バックグラウンドでの継続実行やエージェント間の直接通信などを実現します。",
+  "capabilities": [
+    {
+      "text": "プログラミング可能な環境：持続的なIPythonをビルトインのモデルツールとして備え、ファイル操作やシェルコマンドなどをコード経由で実行できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "サブエージェントの内蔵：rlm(...)を使って並行処理やバックグラウンド作業用の実際の子エージェントを起動し、その結果をプログラムで受け取ることができる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "バックグラウンドでのセッション実行：デーモンベースのエージェントにより、ターミナルを切断しても処理を継続し、後から再アタッチすることができる。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "長時間にわたるコーディング作業やリサーチ評価の自動実行",
+      "basis": "README明記",
+      "evidence_section": "Built for Long-Running Work"
+    },
+    {
+      "text": "複数エージェントによる協調作業や直接的なメッセージ交換",
+      "basis": "README明記",
+      "evidence_section": "Built for Long-Running Work"
+    },
+    {
+      "text": "定期的な心拍やスケジュール設定によるタスクの自動再開",
+      "basis": "README明記",
+      "evidence_section": "Built for Long-Running Work"
+    }
+  ],
+  "first_trial": {
+    "goal": "Prime Agentをインストールしてセッションを開始する",
+    "steps": [
+      "curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh",
+      "cd /path/to/project",
+      "prime-agent"
+    ],
+    "success_criteria": "prime-agentコマンドが実行され、プロジェクトディレクトリ内でエージェントが起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Getting Started",
+    "Built for Long-Running Work",
+    "Documentation",
+    "Acknowledgements",
+    "License"
+  ],
+  "unconfirmed": [
+    "Topicsに関する詳細情報",
+    "具体的なAPIキープロバイダーの種類やサブスクリプションの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b5646bd6cb5d3cae79c76ef784316bc4f3eaac5b",
+  "generated_at": "2026-08-14T07:12:48.690685+09:00"
+}
