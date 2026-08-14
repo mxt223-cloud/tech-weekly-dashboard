@@ -1,0 +1,62 @@
+{
+  "summary_ja": "Switchyardは、OpenAIとAnthropicのAPI互換性を維持しながら、LLMのトラフィックを複数のプロバイダーやモデルにルーティング、変換、記録するためのRust製プロキシおよびライブラリです。",
+  "capabilities": [
+    {
+      "text": "OpenAI Chat、Anthropic Messages、OpenAI Responsesのフォーマット間のプロトコル変換を行う機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ランダムルーティング、LLM分類器によるルーティング、シグナル駆動型ステージルーターなどのマルチバックエンドルーティング機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "リクエスト、エラー、レイテンシ、トークン、ルーティングオーバーヘッドに関するPrometheusメトリクスの記録機能",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude CodeやCodexなどのコーディングエージェントをオープンソースモデルに向ける",
+      "basis": "README明記",
+      "evidence_section": "Switchyard"
+    },
+    {
+      "text": "複数のモデル間でトラフィックを分散させてA/Bベンチマークやコスト削減の実験を行う",
+      "basis": "README明記",
+      "evidence_section": "Switchyard"
+    },
+    {
+      "text": "独自のRustアプリケーションにルーティングアルゴリズムを埋め込む",
+      "basis": "README明記",
+      "evidence_section": "Library Path"
+    }
+  ],
+  "first_trial": {
+    "goal": "スタンドアロンのRustプロキシをインストールしてヘルプを表示する",
+    "steps": [
+      "cargo install --locked switchyard-server",
+      "switchyard-server --help"
+    ],
+    "success_criteria": "コマンドが正常に実行され、ヘルプ情報が表示されること"
+  },
+  "evidence_sections": [
+    "Switchyard",
+    "Features",
+    "Maturity",
+    "Quick Start",
+    "Routing Strategies",
+    "Architecture",
+    "Documentation",
+    "Community",
+    "License"
+  ],
+  "unconfirmed": [
+    "v1.0リリースに向けたAPIおよびアルゴリズムの具体的な変更スケジュール",
+    "本番環境での利用における安全性やパフォーマンスの保証"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c697f6b69c2d0507db37094411fae8f8011df2d5",
+  "generated_at": "2026-08-15T06:51:09.511136+09:00"
+}

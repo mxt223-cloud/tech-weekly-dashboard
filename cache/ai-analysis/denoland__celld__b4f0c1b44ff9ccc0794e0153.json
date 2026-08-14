@@ -1,0 +1,55 @@
+{
+  "summary_ja": "celldは、独自のインフラ上でCloudflare WorkersとDurable Objectsを実行するためのセルフホスト型かつ分散型のデーモンです。制御プレーンや合意形成サービスを持たず、S3互換ストレージやGoogle Cloud Storageなどのバケットを介してノード間で協調動作します。",
+  "capabilities": [
+    {
+      "text": "各オブジェクトを独自のSQLiteデータベースとして保持し、指定したバケットへ継続的にレプリケーションします。",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "ストレージのコンペア・アンド・スワップを使用して、制御プレーンや合意形成サービスなしで正確に1つのノードがセルを所有する仕組みを提供します。",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "celld diagnoseコマンドにより、すべてのノードリースの列挙やライブピアの署名付き直接プローブを実行できます。",
+      "evidence_section": "Operate a fleet"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自分のマシンやインフラ上でCloudflare WorkersとDurable Objectsの仕組みをセルフホストして実行する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "S3互換のバケットやGoogle Cloud Storageを信頼できるデータストアとして使用し、複数のノード間でアプリケーションの状態を同期・運用する。",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    }
+  ],
+  "first_trial": {
+    "goal": "バイナリのインストーラーを使用してcelldをインストールし、コンテナイメージのバージョンを確認する。",
+    "steps": [
+      "curl -fsSL https://celld.dev/install.sh | sh",
+      "docker run --rm ghcr.io/denoland/celld --version"
+    ],
+    "success_criteria": "celldのバージョン情報やインストールの完了がエラーなく確認できること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "How it works",
+    "Install",
+    "Container",
+    "Run it",
+    "Operate a fleet",
+    "Contributions",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なパフォーマンス数値や本番運用時における詳細なスケーラビリティの限界値"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "90665e65cf77ab1db02e3e6cd04553c8d4871381",
+  "generated_at": "2026-08-15T06:51:04.033652+09:00"
+}

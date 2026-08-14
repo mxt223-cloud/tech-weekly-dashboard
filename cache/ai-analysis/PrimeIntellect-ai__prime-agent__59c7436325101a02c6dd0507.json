@@ -1,0 +1,61 @@
+{
+  "summary_ja": "Prime Agentは、コーディングワークフローや長時間実行する自律的タスク向けに設計された自己改善型RLM（Recursive Language Model）エージェントです。",
+  "capabilities": [
+    {
+      "text": "プログラム可能なPythonベースの制御環境を提供し、ファイル操作やシェルコマンド、サブエージェントの呼び出しなどをコード経由で実行できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "バックグラウンドで動作するデーモンを備え、ターミナルの接続が切れてもセッションを維持して後から再アタッチできる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "実行中のエージェント同士が直接メッセージを交換し、お互いをオーケストレーションできる",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コード生成やリサーチなど、長期間にわたる自律的なタスクの実行と管理",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "定期実行やハートbeat機能、永続的な目標管理を活用した継続的なワークフローの自動化",
+      "basis": "README明記",
+      "evidence_section": "Built for Long-Running Work"
+    },
+    {
+      "text": "カスタムスキルを作成・インポートして、繰り返しの作業をプロジェクト固有の機能として再利用すること",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "macOSまたはLinux環境でPrime Agentをインストールして起動する",
+    "steps": [
+      "curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh",
+      "cd /path/to/project",
+      "prime-agent"
+    ],
+    "success_criteria": "prime-agentコマンドが実行され、初回起動時に/loginコマンドなどでサブスクリプションやAPIキープロバイダーを選択して作業を開始できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Getting Started",
+    "Built for Long-Running Work",
+    "Documentation",
+    "Contributing",
+    "Acknowledgements",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的な対応AIプロバイダーの種類やAPIキーの設定画面の詳細",
+    "Autonomous modeの詳細な設定パラメータやトークン制限のデフォルト値"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b4fd502b066ebc80feebe5a70151b9b8b51492f7",
+  "generated_at": "2026-08-15T06:50:58.058927+09:00"
+}

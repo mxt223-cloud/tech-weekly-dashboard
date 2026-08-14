@@ -1,0 +1,56 @@
+{
+  "summary_ja": "このリポジトリは、Google製品および技術に関するエージェントスキル（Agent Skills）を多数提供しています。Google CloudやAI/ML、インフラ、データベース、開発ツールなど多様な分野のスキルやプラグインが含まれており、AIエージェントの活用をサポートします。",
+  "capabilities": [
+    {
+      "text": "Google CloudをはじめとするGoogle製品および技術に関するエージェントスキルを提供する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "npxコマンドを使用して特定のスキルを選択しインストールできる。",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "Google製品のプラグイン（SkillsとMCPサーバー）をエージェントハルネス向けにバンドルしている。",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Google Cloudの認証や基盤構築、ソリューションアーキテクチャ設計などのスキルをAIエージェントに導入する。",
+      "basis": "README明記",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "GKEのクラスター作成やトラブルシューティング、コスト最適化などのインフラ管理スキルを利用する。",
+      "basis": "README明記",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "Google Ads APIやGoogle Analytics APIを活用した広告・アナリティクス関連のエージェントスキルを組み込む。",
+      "basis": "README明記",
+      "evidence_section": "Available Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリから特定のスキルをインストールする",
+    "steps": [
+      "npx skills add google/skills を実行する",
+      "プロンプトからインストールしたい特定のスキルを選択する"
+    ],
+    "success_criteria": "選択したスキルが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Available Skills",
+    "Plugins"
+  ],
+  "unconfirmed": [
+    "各スキルが内部でどのように動作するかや、詳細な設定手順に関する具体的な記述"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "bffe2bcfa9a2eaca54c123260ecf697d742b1519",
+  "generated_at": "2026-08-15T06:51:01.227088+09:00"
+}

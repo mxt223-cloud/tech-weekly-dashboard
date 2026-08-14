@@ -1,0 +1,51 @@
+{
+  "summary_ja": "holeheは、指定されたメールアドレスがTwitterやInstagramなどの様々なサイトで登録に使用されているかどうか効率的に確認できるOSINTツールです。",
+  "capabilities": [
+    {
+      "text": "120以上のサイトでメールアドレスがアカウントに紐付いているか確認できる",
+      "evidence_section": "Summary"
+    },
+    {
+      "text": "パスワード忘れ機能等を利用して情報を取得し、対象のメールに通知を送らない",
+      "evidence_section": "Summary"
+    },
+    {
+      "text": "コマンドラインインターフェース（CLI）およびPythonアプリケーションのコード内から実行できる",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "指定したメールアドレスが各種SNSやサービスで使われているか調査する",
+      "basis": "README明記",
+      "evidence_section": "Summary"
+    },
+    {
+      "text": "OSINT調査やセキュリティ教育目的で、登録済みアカウントの存在を確認する",
+      "basis": "README明記",
+      "evidence_section": "📝 License"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIを使用してメールアドレスの登録状況を確認する",
+    "steps": [
+      "pip3 install holehe",
+      "holehe test@gmail.com"
+    ],
+    "success_criteria": "指定したメールアドレスに対する各サイトの登録状況や回復用メールアドレス等の結果が出力されること"
+  },
+  "evidence_sections": [
+    "Summary",
+    "Installation",
+    "Quick Start",
+    "Module Output",
+    "📝 License",
+    "Modules"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "03f120002a87578372bf137f699aaa562980d6a2",
+  "generated_at": "2026-08-15T06:51:06.924518+09:00"
+}

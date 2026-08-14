@@ -1,0 +1,61 @@
+{
+  "summary_ja": "TencentDB Agent Memoryは、AIエージェント向けのチームレベルのメモリハブです。会話、ドキュメント、コードを再利用可能な4つのメモリ資産（Chat Memory、Skill、LLM-Wiki、CodeGraph）に変換し、エージェントやフレームワーク間で管理、共有、装備させることができます。",
+  "capabilities": [
+    {
+      "text": "会話やタスクからChat MemoryとSkillsを自動抽出し、ドキュメントやコードをWikiとCodeGraphに変換して管理します。",
+      "evidence_section": "Let experience accumulate, flow, and pass on to the next Agent"
+    },
+    {
+      "text": "フレームワークから独立して動作し、複数のエージェントやチームメンバー間で共有・保守できます。",
+      "evidence_section": "Let experience accumulate, flow, and pass on to the next Agent"
+    },
+    {
+      "text": "既存のドキュメント、コードベース、エージェントの会話セッションをインポートしてコールドスタートに対応します。",
+      "evidence_section": "Let experience accumulate, flow, and pass on to the next Agent"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントチームのメンバー間で経験やコンテキストを共有し、新しいエージェントが前回の成果を引き継ぐ。",
+      "basis": "README明記",
+      "evidence_section": "Let experience accumulate, flow, and pass on to the next Agent"
+    },
+    {
+      "text": "コードベースやドキュメントをインポートして自動的にCodeGraphやWikiを構築し、エージェントの探索コストを削減する。",
+      "basis": "README明記",
+      "evidence_section": "Cold Start: Load the Save File, Then Get to Work"
+    },
+    {
+      "text": "開発やトラブルシューティングの手順をSkillとして抽出・共有し、チーム全体で再利用する。",
+      "basis": "README明記",
+      "evidence_section": "A Skill library that accumulates expertise"
+    }
+  ],
+  "first_trial": {
+    "goal": "memory-core、memory-hub、proxyの3つのサービスをまとめて起動する",
+    "steps": [
+      "git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+      "cd TencentDB-Agent-Memory/deploy/global-images",
+      "cp .env.example .env",
+      "$EDITOR .env",
+      "./start-all.sh"
+    ],
+    "success_criteria": "すべてのサービスが起動し、Claudeに直接貼り付けられるワンライナーが出力され、パネル（http://localhost:8125）が開けること。"
+  },
+  "evidence_sections": [
+    "Installation",
+    "What is TencentDB Agent Memory?",
+    "Cold Start: Load the Save File, Then Get to Work",
+    "One Play Style: Build a Growing Agent Team for a One-Person Company",
+    "Technical Implementation"
+  ],
+  "unconfirmed": [
+    "プライベートリポジトリおよびSSH認証情報のCodeGraphサポートの完全な実装状況",
+    "完全自動化されたメモリルーティングの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "45ce2323fd316c737fdffa254a903bd67043b0b0",
+  "generated_at": "2026-08-15T06:51:14.225700+09:00"
+}
