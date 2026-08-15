@@ -1,0 +1,59 @@
+{
+  "summary_ja": "TencentDB-Agent-Memoryは、AIエージェント向けのチームレベルのメモリハブです。会話、ドキュメント、コードを再利用可能な4つのメモリ資産（チャットメモリ、スキル、LLM-Wiki、コードグラフ）に変換し、複数のエージェントやフレームワーク間で共有・管理できます。",
+  "capabilities": [
+    {
+      "text": "会話やタスクからチャットメモリやスキルを自動抽出し、ドキュメントやコードをWikiやCodeGraphに変換して管理・ルーティングします。",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "エージェントのベースURLをプロキシに向けるだけで、プロトコルを変更せずにゼロコードで統合できます。",
+      "evidence_section": "All Agents Share the Same Memory Server"
+    },
+    {
+      "text": "プライベート、チーム、ACLに基づくアクセス制御により、共有範囲や権限を管理できます。",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "既存のプロジェクトコンテキストを記憶させ、セッションごとに同じ説明を繰り返す手間を削減する。",
+      "basis": "README明記",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "トラブルシューティングやコードレビューなどのノウハウをスキルとして蓄積し、チーム全体で共有・再利用する。",
+      "basis": "README明記",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    },
+    {
+      "text": "プロダクトドキュメントや設計書を構造化されたWikiページに変換し、コード変更時の影響範囲を分析する。",
+      "basis": "README明記",
+      "evidence_section": "What is TencentDB Agent Memory?"
+    }
+  ],
+  "first_trial": {
+    "goal": "グローバルイメージを使用して全サービスを一括起動し、パネルにアクセスする",
+    "steps": [
+      "git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+      "cd TencentDB-Agent-Memory/deploy/global-images",
+      "cp .env.example .env",
+      "$EDITOR .env",
+      "./start-all.sh"
+    ],
+    "success_criteria": "http://localhost:8125 にアクセスしてパネルを開くことができること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "All Agents Share the Same Memory Server",
+    "What is TencentDB Agent Memory?"
+  ],
+  "unconfirmed": [
+    "プライベートリポジトリやSSH認証情報のCodeGraphサポートに関する具体的な実装詳細",
+    "完全自動化されたメモリルーティングの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "780664937b7b6d760ca9686df7817446567c8678",
+  "generated_at": "2026-08-16T06:47:43.355506+09:00"
+}

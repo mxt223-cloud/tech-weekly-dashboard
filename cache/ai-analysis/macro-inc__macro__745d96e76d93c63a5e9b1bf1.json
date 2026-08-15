@@ -1,0 +1,70 @@
+{
+  "summary_ja": "Macroは、メール、チャット、ドキュメント、タスク、AIエージェント、通話、CRMを双方向の@リンクとチーム全体の共有メモリで統合した、オープンソースのオールインワンワークスペースです。",
+  "capabilities": [
+    {
+      "text": "複数のGoogleアカウントに対応したマルチアカウント統合メール受信トレイ機能",
+      "evidence_section": "Multiple email inboxes w/ good AI tools, integrated CRM"
+    },
+    {
+      "text": "スレッドやフォーカスを重視したテクニカルな議論向けのチームチャット機能",
+      "evidence_section": "Team chat for focused technical discussions"
+    },
+    {
+      "text": "CRDTとCloudflare durable objectsを基盤としたリアルタイムのマークダウン共同編集ドキュメント機能",
+      "evidence_section": "@linked markdown docs powered by CRDTs"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "顧客からの問い合わせメールから直接エンジニア向けのチケット（タスク）をリンク付きで作成する",
+      "basis": "README明記",
+      "evidence_section": "Task management built around chat"
+    },
+    {
+      "text": "Claude CodeなどのMCPクライアントからワークスペースに接続し、コーディングエージェントにタスクやメモリを活用させる",
+      "basis": "README明記",
+      "evidence_section": "Agents and unified team-level memory"
+    },
+    {
+      "text": "チームの日々のチャットやメールのやり取りから、毎日の自動実行ジョブでチームメモリを自動更新・集約する",
+      "basis": "README明記",
+      "evidence_section": "Agents and unified team-level memory"
+    }
+  ],
+  "first_trial": {
+    "goal": "ホスト版アプリへのサインアップと初期セットアップを行う",
+    "steps": [
+      "https://macro.com/app からサインアップする",
+      "GmailまたはGoogle Workspaceアカウントを接続する"
+    ],
+    "success_criteria": "ホスト版アプリにサインインし、アカウントが接続された状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why Macro",
+    "Features",
+    "Multiple email inboxes w/ good AI tools, integrated CRM",
+    "Team chat for focused technical discussions",
+    "Task management built around chat",
+    "@linked markdown docs powered by CRDTs",
+    "CRM that keeps itself up to date",
+    "Agents and unified team-level memory",
+    "How it all works together",
+    "Using the hosted app",
+    "Running it locally",
+    "Layout",
+    "Security",
+    "License",
+    "Community",
+    "Star us on GitHub"
+  ],
+  "unconfirmed": [
+    "Androidアプリの具体的なリリース日",
+    "Git統合の詳細な実装時期や仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5c1f46495934b6a72e5e7479d059d8a7986491f0",
+  "generated_at": "2026-08-16T06:47:37.929298+09:00"
+}

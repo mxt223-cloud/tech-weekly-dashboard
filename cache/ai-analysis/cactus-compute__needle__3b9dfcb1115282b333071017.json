@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Needle 2は、ツール呼び出し、デバイス制御、構造化データ抽出に特化したオープンな45Mパラメータの軽量基盤モデルであり、14MBのバイナリで動作します。",
+  "capabilities": [
+    {
+      "text": "ツールの自動呼び出しとPythonからの実行ループ処理",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "Pydanticモデルを用いたテキストからの構造化データ抽出",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "LoRAファインチューニングとアダプターの統合・量子化エクスポート",
+      "evidence_section": "Fine-tuning"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "スマートデバイスやエッジ環境でのツール呼び出し",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "テキストからの請求書などの構造化データ抽出",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "ブラウザベースのプレイグラウンドによる対話やモデルのテスト",
+      "basis": "README明記",
+      "evidence_section": "Playground"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージをインストールし、Pythonでツール呼び出しを試す",
+    "steps": [
+      "pip install cactus-needle",
+      "Pythonスクリプト上で needle.tool デコレータを用いて関数を定義し、agent.run() を実行する"
+    ],
+    "success_criteria": "ツールの実行結果が辞書やリスト形式で返されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Simple Attention Network",
+    "Quickstart",
+    "Playground",
+    "Fine-tuning",
+    "Citation"
+  ],
+  "unconfirmed": [
+    "対応している具体的なデバイスの全リスト",
+    "オフラインセットアップの詳細手順 (doc/apis.mdの内容)"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "377100a8f84b3056a400bfe87bb958be9343a73e",
+  "generated_at": "2026-08-16T06:47:34.811240+09:00"
+}

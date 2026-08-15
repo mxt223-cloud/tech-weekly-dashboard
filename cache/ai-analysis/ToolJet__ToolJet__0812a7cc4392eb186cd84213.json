@@ -1,0 +1,55 @@
+{
+  "summary_ja": "ToolJetは、内部ツールやダッシュボード、ワークフローを構築するためのオープンソースのローコードフレームワークです。ドラッグ＆ドロップ可能なビジュアルビルダーや80以上のデータソース連携機能を備えています。",
+  "capabilities": [
+    {
+      "text": "60以上のレスポンシブコンポーネントを備えたビジュアルアプリビルダーを提供します。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "データベース、API、SaaSアプリ、オブジェクトストレージなど80以上のデータソースと接続できます。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "DockerやKubernetesなどを使用してセルフホストが可能です。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "タイムトラッカーアプリケーションの構築",
+      "basis": "README明記",
+      "evidence_section": "Tutorials and examples"
+    },
+    {
+      "text": "ローコードとMongoDBを使用したCMSの自作",
+      "basis": "README明記",
+      "evidence_section": "Tutorials and examples"
+    },
+    {
+      "text": "AWS S3ブラウザの作成",
+      "basis": "README明記",
+      "evidence_section": "Tutorials and examples"
+    }
+  ],
+  "first_trial": {
+    "goal": "Dockerを使用してローカル環境でToolJetを素早く起動する",
+    "steps": [
+      "ターミナルを開く",
+      "docker run --name tooljet --restart unless-stopped -p 80:80 --platform linux/amd64 -v tooljet_data:/var/lib/postgresql/13/main tooljet/try:ee-lts-latest コマンドを実行する"
+    ],
+    "success_criteria": "ToolJetがローカル環境で起動しアクセス可能になること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Quickstart",
+    "Tutorials and examples"
+  ],
+  "unconfirmed": [
+    "商用利用における詳細なライセンス適用の制限事項"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ef0f60704b78c40615da15f1a8e8eabd0cc04d39",
+  "generated_at": "2026-08-16T06:47:40.492384+09:00"
+}

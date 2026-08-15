@@ -1,0 +1,51 @@
+{
+  "summary_ja": "diagram-design は、Claude Code、Codex、Pi 向けの編集デザインされたダイアグラムを作成するエージェントスキルおよびテンプレート集です。外部の依存関係やビルドステップを必要とせず、スタンドアロンの HTML と SVG でミニマルなライト、ダーク、フルエディトリアルの各バリエーションを提供します。",
+  "capabilities": [
+    {
+      "text": "Claude Code、Codex、Pi 向けのエージェントスキルとして動作し、適切なダイアグラムタイプを選択して HTML を構築・保存する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "draw.io や Mermaid のソースを指定したフォーマット、サイズ、詳細レベルで再描画する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "静的出力のほか、順序付きの解説向けにオプションでアクセシブルなモーションを提供する",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アーキテクチャ図やフローチャートなどの編集品質なダイアグラムをウェブサイトのデザインに合わせて素早く作成する",
+      "basis": "README明記",
+      "evidence_section": "Why I built it"
+    },
+    {
+      "text": "テンプレートファイルをコピーして独自のダイアグラム作成のベースとして利用する",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    }
+  ],
+  "first_trial": {
+    "goal": "テンプレートファイルをコピーしてダイアグラム作成を開始する",
+    "steps": [
+      "cp skills/diagram-design/assets/template.html my-diagram.html"
+    ],
+    "success_criteria": "my-diagram.html ファイルが作成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why I built it",
+    "What it makes",
+    "Quickstart",
+    "About"
+  ],
+  "unconfirmed": [
+    "Quickstart セクションのコードブロック内に記載されているコメント以外の具体的な実行コマンドや、エージェントへの指示方法の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "bec7834e2075b592868581c72d34339deb70d301",
+  "generated_at": "2026-08-16T06:47:26.957767+09:00"
+}
