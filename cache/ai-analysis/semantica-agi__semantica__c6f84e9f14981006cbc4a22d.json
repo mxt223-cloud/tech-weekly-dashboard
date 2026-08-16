@@ -1,0 +1,45 @@
+{
+  "summary_ja": "semanticaは、コンテキストと説明可能なAIシステムのためのグラフネイティブなインフラストラクチャです。企業データの取り込み、ナレッジグラフやコンテキストグラフの構築、グラフ分析、因果推論などを、完全な決定の起源追跡とともに行うことができます。",
+  "capabilities": [
+    {
+      "text": "エンティティ、決定、関係性、因果リンク、クロスグラフナビゲーションを備えたクエリ可能なコンテキストグラフの構築",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "W3C PROV-O準拠のプロベナンス、ソースへの全ての事実の紐付け、JSON/CSV/RDF形式の監査ログのエクスポート",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "主要なLLMプロバイダーやベクトルストア、各種グラフデータベース（LPG）およびトリプルストア（RDF）への対応",
+      "evidence_section": "Features at a Glance"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "融資などの規制が厳しい高リスクなドメインにおいて、AIエージェントの承認プロセスや意思決定を監査・説明可能にする",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージをインストールし、最小限のコードを実行する",
+    "steps": [
+      "pip install semantica"
+    ],
+    "success_criteria": "エラーなくインストールが完了し、ContextGraphクラスがインポートできること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "Features at a Glance",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "コードスニペットのBiTemporalFactやdatetimeに関する詳細な実行例や、全体の完全な動作サンプル"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8b89fd5f6151247d5d7417e2a398c7017d5e7ff6",
+  "generated_at": "2026-08-17T06:46:43.372900+09:00"
+}

@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Code-Graph-RAGは、Tree-sitter等を用いてマルチ言語のコードベースを解析し、Memgraph上の知識グラフとして構造化することで、AIや自然言語を用いた検索・編集・最適化を可能にするRAGシステムです。",
+  "capabilities": [
+    {
+      "text": "Tree-sitter等のパーサーを利用し、マルチ言語のコードベースから関数、クラス、メソッド、モジュールとその関係性を抽出して知識グラフとして構築する",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "自然言語によるコードベースへの質問に対して、実際の構造に基づいた回答やソースコードの取得を行う",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "ast-grepを活用したASTパターンに基づく構造的検索や書き換え、およびランタイムの呼び出し追跡（Runtime Call Tracing）を提供する",
+      "evidence_section": "Latest News 🔥"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自然言語の質問を通じてコードベースを検索し、構造に裏付けられた正確な回答を得る",
+      "basis": "README明記",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "エントリポイントからの呼び出しや参照のエッジをたどることで、デッドコードを効率的に検出する",
+      "basis": "README明記",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "MCPサーバーとして動作させることで、Claude Code等のMCPクライアントから直接コードベースをクエリ・編集する",
+      "basis": "README明記",
+      "evidence_section": "MCP Server"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でMemgraph等のスタックを起動し、リポジトリをグラフに解析してクエリを実行する",
+    "steps": [
+      "cgr daemon up",
+      "cgr start --repo-path /path/to/repo --update-graph",
+      "cgr start --repo-path /path/to/repo"
+    ],
+    "success_criteria": "リポジトリが正しく解析され、グラフに対するクエリや検索が正常に行えること"
+  },
+  "evidence_sections": [
+    "Latest News 🔥",
+    "What It Does",
+    "How It Works",
+    "Installation",
+    "Quick Start",
+    "MCP Server"
+  ],
+  "unconfirmed": [
+    "エンタープライズ版のマネージドクラウドおよびオンプレミス展開における具体的な料金体系や導入サポートの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "76fb16b62fc3c14f2cd5d2168ba055ad7392cfb1",
+  "generated_at": "2026-08-17T06:46:48.077968+09:00"
+}
