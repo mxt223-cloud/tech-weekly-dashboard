@@ -1,0 +1,61 @@
+{
+  "summary_ja": "Code-Graph-RAGは、Tree-sitterとMemgraphを使用してマルチ言語のコードベースを解析し、知識グラフを構築することで、AIや自然言語によるコードの検索、理解、編集、最適化を可能にするRAGシステムです。",
+  "capabilities": [
+    {
+      "text": "Tree-sitterによるマルチ言語コードベースの解析とMemgraphへの構造グラフ構築",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "自然言語によるコードベースへの質問、コードの検索、ASTベースのパッチ適用による編集",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "cgr traceコマンドやeBPFプロファイラを利用した実行時コールトレースの統合",
+      "evidence_section": "Latest News 🔥"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コードベースの構造に基づいた自然言語による質問応答",
+      "basis": "README明記",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "エントリーポイントからの呼び出しや参照エッジをたどったデッドコードの検出",
+      "basis": "README明記",
+      "evidence_section": "What It Does"
+    },
+    {
+      "text": "Claude CodeなどのMCPクライアントからコードベースのクエリや編集を行う",
+      "basis": "README明記",
+      "evidence_section": "MCP Server"
+    }
+  ],
+  "first_trial": {
+    "goal": "MemgraphとQdrantのスタックを起動し、リポジトリをグラフに解析してクエリを実行する",
+    "steps": [
+      "cgr daemon up",
+      "cgr start --repo-path /path/to/repo --update-graph",
+      "cgr start --repo-path /path/to/repo"
+    ],
+    "success_criteria": "リポジトリがグラフにパースされ、クエリが実行できる状態になること"
+  },
+  "evidence_sections": [
+    "Latest News 🔥",
+    "What It Does",
+    "How It Works",
+    "Supported Languages",
+    "Installation",
+    "Quick Start",
+    "MCP Server",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "企業向けマネージドクラウドホスト型ソリューションやオンプレミス・エアギャップデプロイの詳細な価格や契約内容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "0de6159c011a56fdcff2e33d06c9ab25b5b4aac6",
+  "generated_at": "2026-08-18T06:51:40.487736+09:00"
+}

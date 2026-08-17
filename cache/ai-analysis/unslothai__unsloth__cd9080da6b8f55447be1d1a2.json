@@ -1,0 +1,55 @@
+{
+  "summary_ja": "Unslothは、ローカル環境でAIモデル（大規模言語モデル、拡散モデル、音声モデルなど）の実行、トレーニング、デプロイを行うためのデスクトップアプリケーションおよびツールです。",
+  "capabilities": [
+    {
+      "text": "大規模言語モデル、拡散モデル、音声モデルなどの実行とトレーニングが可能",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "Claude Code、Codex、MCPを活用したエージェント機能およびツール呼び出し、コード実行に対応",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "Cloudflareを利用した安全なHTTPSによるローカルモデルの外部リモートアクセス機能を提供",
+      "evidence_section": "⭐ Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ローカル環境でのプライベートなウェブ検索やRAGの実行",
+      "basis": "README明記",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "画像や動画の拡散モデルおよびマルチモーダルモデルのローカルでの実行と訓練",
+      "basis": "README明記",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "LoRAやQLoRAを用いた効率的なモデルのファインチューニング",
+      "basis": "README明記",
+      "evidence_section": "⭐ Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "Unslothデスクトップアプリをインストールして起動する",
+    "steps": [
+      "macOS、Linux、WSLの場合は「curl -fsSL https://unsloth.ai/install.sh | sh」を実行する",
+      "Windowsの場合はPowerShellで「irm https://unsloth.ai/install.ps1 | iex」を実行する"
+    ],
+    "success_criteria": "Unslothが正常にインストールされ、起動できるようになること"
+  },
+  "evidence_sections": [
+    "⚡ Get started",
+    "⭐ Features",
+    "📥 Advanced Installation"
+  ],
+  "unconfirmed": [
+    "デスクトップアプリ以外のCLI専用での詳細な内部アーキテクチャや独自実装の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6091ff224ad35af144a96aea6e16007885071ea9",
+  "generated_at": "2026-08-18T06:51:43.260621+09:00"
+}

@@ -1,0 +1,40 @@
+{
+  "summary_ja": "Omarchyは、DHHによって作成された美しくモダンで独自の思想を持つLinuxディストリビューションです。",
+  "capabilities": [
+    {
+      "text": "詳細なマニュアルを通じて、基礎からアプリケーション、設定方法まで学ぶことができます。",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "MITライセンスのもとで公開されています。",
+      "evidence_section": "License"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Omarchyを利用したモダンなLinux環境の構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "Omarchyについての情報を確認する",
+    "steps": [
+      "公式サイトやmanualディレクトリを確認する"
+    ],
+    "success_criteria": "マニュアルや詳細なドキュメントにアクセスできること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "The Omarchy Manual",
+    "License"
+  ],
+  "unconfirmed": [
+    "インストールのための具体的なコマンドやクイックスタート手順はREADMEに記載されていません。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c7e541a2d59ce796e48daa38bd9d74f2cc55705d",
+  "generated_at": "2026-08-18T06:51:47.638771+09:00"
+}

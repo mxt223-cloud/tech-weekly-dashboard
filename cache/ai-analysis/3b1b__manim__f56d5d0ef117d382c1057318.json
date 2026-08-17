@@ -1,0 +1,53 @@
+{
+  "summary_ja": "manimは、解説用数学動画を作成するために設計された、精密なプログラムによるアニメーションエンジンです。",
+  "capabilities": [
+    {
+      "text": "プログラムによる精密なアニメーションの生成",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "CLIを使用したシーンのファイル出力、最終フレームの保存、フルスクリーン再生などの操作",
+      "evidence_section": "Using manim"
+    },
+    {
+      "text": "custom_config.ymlを通じた出力先や画質などのカスタマイズ",
+      "evidence_section": "Using manim"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "数学の解説動画を作成するためのアニメーション制作",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "3Blue1Brownの動画のような数学的コンセプトの視覚化",
+      "basis": "README明記",
+      "evidence_section": "Installation"
+    }
+  ],
+  "first_trial": {
+    "goal": "サンプルシーンを実行して再生ウィンドウを表示させる",
+    "steps": [
+      "pip install manimgl",
+      "manimgl example_scenes.py OpeningManimExample"
+    ],
+    "success_criteria": "簡単なアニメーションシーンを再生するウィンドウがポップアップすること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Using manim",
+    "Documentation",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的な対応図形の全リストや詳細なAPI仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fdbcfd7d98b9a9d99a885a24c1f8755d9ef17898",
+  "generated_at": "2026-08-18T06:51:45.586976+09:00"
+}
