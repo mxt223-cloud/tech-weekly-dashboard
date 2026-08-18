@@ -1,0 +1,53 @@
+{
+  "summary_ja": "さまざまな無料の公開APIを収集・整理したリポジトリであり、コミュニティによって管理されています。また、APILayerによる統合APIスイートへのアクセスや、セキュリティ関連などの公開APIリストを提供しています。",
+  "capabilities": [
+    {
+      "text": "ワンアカウント・ワンダッシュボード・ワンAPIキーでプロダクション品質のREST APIを利用できる（APILayer統合スイート）",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "住所のジオコーディング、メール検証、フライト情報取得、株価データ、検索結果のスクレイピングなどのAPIをカバーしている",
+      "evidence_section": "APIs Covered Under APILayer Suite!"
+    },
+    {
+      "text": "セキュリティに関する様々なAPI（脆弱性データベース、DNS・WHOIS情報、マルウェア解析など）のリストを提供する",
+      "evidence_section": "Security"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自身のプロダクトに組み込むための公開APIを様々な分野から探す",
+      "basis": "README明記",
+      "evidence_section": "Try Public APIs for free"
+    },
+    {
+      "text": "APILayerのPostmanコレクションをフォークしてAPIのテストや導入を迅速に始める",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "APILayer Postman Collectionのフォークを通じてAPIの利用を開始する",
+    "steps": [
+      "公式のAPILayer Postman Collectionのリンクにアクセスする",
+      "コレクションをフォークする"
+    ],
+    "success_criteria": "60秒以内にPostman上でAPIの利用を開始できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "APIs Covered Under APILayer Suite!",
+    "Try Public APIs for free",
+    "APILayer APIs",
+    "Learn more about Public APIs",
+    "Security"
+  ],
+  "unconfirmed": [
+    "Pythonなどのプログラムを用いた具体的な実行コマンドやインストール手順の詳細はREADME内で確認できない"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "30c92bcc0913e1bc0ebb5dd966f8693147f83e05",
+  "generated_at": "2026-08-19T06:49:42.917269+09:00"
+}

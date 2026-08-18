@@ -1,0 +1,46 @@
+{
+  "summary_ja": "diagram-designは、Claude Code、Codex、PiなどのAIエージェント向けのスキルであり、Figmaなどのツールを使わずに、自己完結型のHTMLとSVGでエディトリアル品質の美しい図を生成します。",
+  "capabilities": [
+    {
+      "text": "28種類の視覚的タイプをサポートし、ミニマルなライト、ダーク、フルエディトリアルの3つの静的バリエーションで出力する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "draw.ioやMermaidのソースを指定したフォーマット、サイズ、詳細レベルで再描画する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "テンプレートを使用して手動で図を作成することができる。",
+      "evidence_section": "Quickstart"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アーキテクチャのスケッチやフローチャート、重要事項のピラミッドなどの図を作成する。",
+      "basis": "README明記",
+      "evidence_section": "Why I built it"
+    }
+  ],
+  "first_trial": {
+    "goal": "テンプレートファイルを使用して独自の図を作成する",
+    "steps": [
+      "cp skills/diagram-design/assets/template.html my-diagram.html"
+    ],
+    "success_criteria": "指定したファイル名でテンプレートのHTMLがコピーされ、ブラウザで開けること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why I built it",
+    "What it makes",
+    "Quickstart",
+    "About"
+  ],
+  "unconfirmed": [
+    "Quickstartセクションに記載されているAIエージェントの具体的な実行コマンドの完全な手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ab6987d0c8f3c456edb30f8d521e63b4e99e374d",
+  "generated_at": "2026-08-19T06:49:20.112229+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "summary_ja": "Modlyは、GPU上でローカルに動作するオープンソースのAIモデルを使用して、写真やプロンプトから3Dメッシュを生成するデスクトップアプリケーションです。",
+  "capabilities": [
+    {
+      "text": "Windows、Linux、Apple Silicon macOSに対応したデスクトップアプリケーションとして提供されている",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "外部モデルやプロセス拡張機能を追加するための拡張システムを備えている",
+      "evidence_section": "Extension system"
+    },
+    {
+      "text": "デスクトップアプリのUIを介さずに操作できる標準ライブラリのみのCLIツールを備えている",
+      "evidence_section": "Modly CLI"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "写真をローカルのGPU上でAIを使って3Dモデルに変換する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "外部の拡張機能リポジトリを追加して新しいモデルやプロセスを利用する",
+      "basis": "README明記",
+      "evidence_section": "Extension system"
+    },
+    {
+      "text": "エージェントやスクリプトからCLIを使用して自動で3D生成処理を行う",
+      "basis": "README明記",
+      "evidence_section": "Modly CLI"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして開発モードでアプリを起動する",
+    "steps": [
+      "npm install",
+      "cd api",
+      "python -m venv .venv",
+      ".venv\\Scripts\\activate または source .venv/bin/activate",
+      "pip install -r requirements.txt",
+      "npm run dev"
+    ],
+    "success_criteria": "開発用のアプリケーションが起動する"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Download",
+    "Getting started",
+    "Platform notes",
+    "Extension system",
+    "Workflows",
+    "Modly CLI",
+    "Community",
+    "Sponsors",
+    "License"
+  ],
+  "unconfirmed": [
+    "プロンプトからの3D生成の詳細な手順や動作仕様",
+    "拡張機能以外のデフォルトで内蔵されているモデルの詳細なリスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "11184ddc44ee6360bb5bb9bffb3731e690ca4bdd",
+  "generated_at": "2026-08-19T06:49:33.994084+09:00"
+}

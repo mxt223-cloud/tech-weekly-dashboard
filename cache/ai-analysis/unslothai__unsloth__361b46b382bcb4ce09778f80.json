@@ -1,0 +1,55 @@
+{
+  "summary_ja": "Unslothは、LLMや拡散モデルなどのAIモデルをローカル環境で実行、トレーニング、デプロイするためのデスクトップアプリです。",
+  "capabilities": [
+    {
+      "text": "Kimi K3、MiniMax-H3、Qwen3.8、Muse Glimmer、DeepSeek-V4、Gemma 4などのLLM、拡散モデル、埋め込みモデル、音声モデルの実行とトレーニング",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "Claude Code、Codex、MCPを活用したツール呼び出しやコード実行などのエージェント機能",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "Cloudflareを使用したセキュアなHTTPSによるローカルモデルの外部からのリモートアクセスと、OpenAI互換APIを通じた接続",
+      "evidence_section": "⭐ Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プライベートで無制限なウェブ検索、詳細なリサーチ、RAGの実行",
+      "basis": "README明記",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "画像やビデオの拡散モデル、またはマルチモーダルモデルのローカルでの実行とトレーニング",
+      "basis": "README明記",
+      "evidence_section": "⭐ Features"
+    },
+    {
+      "text": "LLMやその他のAIモデルをローカルで効率的にファインチューニングして開発に活用する",
+      "basis": "提案",
+      "evidence_section": "⭐ Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "macOS、Linux、WSL環境での手動インストールを行う",
+    "steps": [
+      "curl -fsSL https://unsloth.ai/install.sh | sh"
+    ],
+    "success_criteria": "インストールスクリプトが正常に実行され、Unslothがセットアップされること"
+  },
+  "evidence_sections": [
+    "⚡ Get started",
+    "⭐ Features",
+    "📥 Advanced Installation"
+  ],
+  "unconfirmed": [
+    "ファインチューニングの具体的な速度向上を示すベンチマークの詳細や手順",
+    "アプリの具体的な内部構造やアーキテクチャ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "af069ca749c3b0f7162fb3a870878de9918f0161",
+  "generated_at": "2026-08-19T06:49:31.344507+09:00"
+}

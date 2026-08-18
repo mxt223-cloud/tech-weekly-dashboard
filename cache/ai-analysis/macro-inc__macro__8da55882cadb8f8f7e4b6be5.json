@@ -1,0 +1,69 @@
+{
+  "summary_ja": "Macroは、メール、チャット、ドキュメント、タスク、エージェント、CRMなどを双方向のグラフ構造（@リンク）と共有AIメモリで統合したチーム向けオールインワンワークスペースです。",
+  "capabilities": [
+    {
+      "text": "マルチアカウント対応のメール受信トレイや、AIツールおよびMCP連携機能を提供します。",
+      "evidence_section": "Multiple email inboxes w/ good AI tools, integrated CRM"
+    },
+    {
+      "text": "リアルタイムの共同編集が可能なマークダウンエディタや、チームの全活動から集約されるAIメモリ機能を備えています。",
+      "evidence_section": "@linked markdown docs powered by CRDTs"
+    },
+    {
+      "text": "Claude Codeなどの外部MCPクライアントをワークスペースに接続し、エージェントを活用できます。",
+      "evidence_section": "Agents and unified team-level memory"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "受信したメールから直接タスクを作成し、エンジニア向けのチケットとして起票する。",
+      "basis": "README明記",
+      "evidence_section": "Multiple email inboxes w/ good AI tools, integrated CRM"
+    },
+    {
+      "text": "ドキュメントやメッセージ内で会社や取引先を@メンションして、CRMの取引情報と会話履歴を双方向で紐付ける。",
+      "basis": "README明記",
+      "evidence_section": "CRM that keeps itself up to date"
+    },
+    {
+      "text": "毎日の自動化処理によって、チームのチャットやファイルから情報を集約し、社内ドキュメントを自動更新する。",
+      "basis": "提案",
+      "evidence_section": "@linked markdown docs powered by CRDTs"
+    }
+  ],
+  "first_trial": {
+    "goal": "ホスト型アプリにサインアップしてセットアップを完了する",
+    "steps": [
+      "Macroのサインアップページにアクセスする",
+      "GmailまたはGoogle Workspaceアカウントを接続する"
+    ],
+    "success_criteria": "アカウントの初期設定が完了し、ワークスペースを利用できる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why Macro",
+    "Features",
+    "Multiple email inboxes w/ good AI tools, integrated CRM",
+    "Team chat for focused technical discussions",
+    "Task management built around chat",
+    "@linked markdown docs powered by CRDTs",
+    "CRM that keeps itself up to date",
+    "Agents and unified team-level memory",
+    "How it all works together",
+    "Using the hosted app",
+    "Running it locally",
+    "Layout",
+    "Security",
+    "License",
+    "Community",
+    "Star us on GitHub"
+  ],
+  "unconfirmed": [
+    "Androidアプリの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "865bf209c7265dcee78a81217e06cbf921d8f65a",
+  "generated_at": "2026-08-19T06:49:28.441577+09:00"
+}

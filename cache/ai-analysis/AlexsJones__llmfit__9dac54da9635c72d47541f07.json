@@ -1,0 +1,57 @@
+{
+  "summary_ja": "llmfitは、お使いのシステムのRAM、CPU、GPUに適合するLLMモデルを診断・推奨するためのターミナルツールです。ハードウェアを検出し、品質、速度、適合性、コンテキストの次元で各モデルをスコアリングします。",
+  "capabilities": [
+    {
+      "text": "システム固有のRAM、CPU、GPU/VRAM、バックエンドなどのハードウェア検出を行います。",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "対話型のTUI（デフォルト）およびクラシックなCLIモードを備えています。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Ollama、llama.cpp、MLX、Docker Model Runner、LM Studioなどのローカルランタイムプロバイダーをサポートしています。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "手元のハードウェアで実際に動作するLLMモデルを1つのコマンドで探す。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "スクリプトやエージェント向けに、推奨されるモデルのトップピックをJSON形式で取得する。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "実行中のプロバイダーに対して、実際のtok/sやTTFTを測定する。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "対話型TUIを起動して、ハードウェアとすべてのモデルのランキングを確認する",
+    "steps": [
+      "llmfit"
+    ],
+    "success_criteria": "検出されたスペックが上部に表示され、各モデルの適合性、速度、品質、コンテキストがスコア付けされたTUI画面が表示されること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Usage",
+    "How it works",
+    "Contributing",
+    "Alternatives",
+    "Code signing",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "74e3a49ccecc8c13790923bbd5800429fb85ec1c",
+  "generated_at": "2026-08-19T06:49:36.706921+09:00"
+}

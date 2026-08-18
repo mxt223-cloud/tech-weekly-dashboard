@@ -1,0 +1,51 @@
+{
+  "summary_ja": "semanticaは、コンテキストグラフと知識グラフを構築し、グラフ分析や因果推論、意思決定のトレーサビリティを提供するオープンソースのグラフネイティブインフラストラクチャです。",
+  "capabilities": [
+    {
+      "text": "エンティティ、決定、関係性を持つクエリ可能なコンテキストグラフの構築と因果リンクの提供",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "決定の記録、追跡、類似決定の検索、影響分析、ルール確認などの意思決定インテリジェンス機能",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "固有表現抽出(NER)、関係抽出、イベント検出、トリプレット生成などのセマンティック抽出機能",
+      "evidence_section": "Features at a Glance"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェント向けのコンテキスト管理および説明可能・追跡可能なAIシステムの構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "高リスクで規制のあるドメインにおける決定の透明性とガバナンスの確保",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージのインストールと基本的なコンテキストグラフの初期化確認",
+    "steps": [
+      "pip install semantica",
+      "python -c \"from semantica.context import ContextGraph; graph = ContextGraph(advanced_analytics=True)\""
+    ],
+    "success_criteria": "エラーなくパッケージがインストールされ、ContextGraphが初期化できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "Features at a Glance",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "Quick Startのコードスニペットの続きや完全な実行例"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "49a4c57c943fed6d5b87fd3b29b15f0252040d4f",
+  "generated_at": "2026-08-19T06:49:22.992591+09:00"
+}
