@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenVikingは、AIエージェント向けのオープンソースのコンテキストデータベースです。記憶、リソース、スキルを仮想ファイルシステムとして統合し、L0（要約）・L1（概要）・L2（詳細）の階層構造によってトークンコストを削減しつつ効率的な検索やエージェントの記憶管理を実現します。",
+  "capabilities": [
+    {
+      "text": "仮想ファイルシステムのプロトコル（viking://）により、メモリやリソース、スキルを統合して管理します。",
+      "evidence_section": "Why OpenViking"
+    },
+    {
+      "text": "コンテンツをL0（抽象）、L1（概要）、L2（詳細）の3つの階層に自動処理し、必要に応じて段階的に読み込みます。",
+      "evidence_section": "Why OpenViking"
+    },
+    {
+      "text": "セッション終了後に非同期でユーザーの好みやエージェントの経験を長期記憶として抽出します。",
+      "evidence_section": "Why OpenViking"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントの長期記憶や知識ベース、スキルを階層的なファイル構造として一元管理する",
+      "basis": "README明記",
+      "evidence_section": "What is OpenViking"
+    },
+    {
+      "text": "Claude CodeやCursorなどのAIエージェントツールと統合し、OpenVikingの記憶やリコール機能を連携させる",
+      "basis": "README明記",
+      "evidence_section": "Use it with your agent"
+    },
+    {
+      "text": "大規模なドキュメントやリポジトリの検索において、L0からL2までの階層的読み込みでトークン消費量を削減する",
+      "basis": "README明記",
+      "evidence_section": "Why OpenViking"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenVikingサーバーの初期化、セットアップ検証、およびサーバーの起動",
+    "steps": [
+      "pip install openviking --upgrade",
+      "openviking-server init",
+      "openviking-server doctor",
+      "openviking-server"
+    ],
+    "success_criteria": "サーバーが正常に初期化され、エラーなく起動すること"
+  },
+  "evidence_sections": [
+    "What is OpenViking",
+    "Why OpenViking",
+    "Quick start",
+    "Use it with your agent"
+  ],
+  "unconfirmed": [
+    "商用版（Managed SaaSおよびSelf-Managed）の詳細な料金プランや企業向けサポートの具体的な契約手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "405ee268d942980f61df0c6fcca7e98f394de5ea",
+  "generated_at": "2026-08-20T06:52:19.826619+09:00"
+}

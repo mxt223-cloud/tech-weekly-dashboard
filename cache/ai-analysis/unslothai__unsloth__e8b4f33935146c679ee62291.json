@@ -1,0 +1,55 @@
+{
+  "summary_ja": "unslothai/unslothは、ローカル環境でAIモデル（LLM、拡散モデル、音声モデルなど）の実行、トレーニング、デプロイを行うためのデスクトップアプリケーションおよびツールキットです。",
+  "capabilities": [
+    {
+      "text": "LLM、拡散モデル、埋め込みモデル、音声モデルなどの実行とトレーニングが可能",
+      "evidence_section": "Run & Build with AI"
+    },
+    {
+      "text": "ローカルモデルをClaude Code、Codex、MCPと組み合わせてツール呼び出しやコード実行に利用可能",
+      "evidence_section": "Run & Build with AI"
+    },
+    {
+      "text": "Cloudflareを利用した安全なHTTPSによるローカルモデルの外部リモートアクセス提供機能",
+      "evidence_section": "Run & Build with AI"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プライベートで無制限のウェブ検索やディープリサーチ、RAGの実行",
+      "basis": "README明記",
+      "evidence_section": "Run & Build with AI"
+    },
+    {
+      "text": "OpenAI互換APIを介したモデルのサービングおよびChatGPT/Codexサブスクリプションとの連携",
+      "basis": "README明記",
+      "evidence_section": "Run & Build with AI"
+    },
+    {
+      "text": "ローカル環境で独自のAIモデルのファインチューニングや学習・デプロイを行う開発作業",
+      "basis": "提案",
+      "evidence_section": "⚡ Get started"
+    }
+  ],
+  "first_trial": {
+    "goal": "macOS、Linux、WSL環境でのマニュアルインストールを実行する",
+    "steps": [
+      "curl -fsSL https://unsloth.ai/install.sh | sh"
+    ],
+    "success_criteria": "インストールスクリプトが正常に実行され、Unslothのセットアップが完了すること"
+  },
+  "evidence_sections": [
+    "⚡ Get started",
+    "⭐ Features",
+    "Run & Build with AI",
+    "📥 Advanced Installation"
+  ],
+  "unconfirmed": [
+    "Unsloth Studioの具体的な内部実装や、インストール時に自動構築される依存関係の詳細なバージョン情報"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "16e12a12fe93fb823047958f9ef05e0cef891367",
+  "generated_at": "2026-08-20T06:52:23.026285+09:00"
+}
