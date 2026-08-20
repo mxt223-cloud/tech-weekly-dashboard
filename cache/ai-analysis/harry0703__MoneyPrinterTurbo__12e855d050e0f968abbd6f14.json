@@ -1,0 +1,58 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、トピックやキーワードを入力するだけで、動画の台本作成から素材の選択、字幕や音楽の付与、そして高精細な短編動画の合成までを自動で行うオープンソースのAI短视频生成ツールです。",
+  "capabilities": [
+    {
+      "text": "AIによる自動動画スクリプト生成や、カスタムスクリプトの利用をサポートしています。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "縦画面（9:16、1080x1920）と横画面（16:9、1920x1080）の高解像度な動画サイズに対応しています。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "Edge TTS、Azure Speech、SiliconFlowなどの多様な音声合成プロバイダーを利用できます。",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "キーワードや主題から自動で短編動画を作成し、TikTokやYouTube ShortsなどのSNSへ投稿する。",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "複数またはバッチで動画を生成し、最適なものを選択してコンテンツ制作の効率を上げる。",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "ローカル素材や外部の無料素材プラットフォームを活用して、独自性の高い動画を組み立てる。",
+      "basis": "提案",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドライン（CLI）を使用して、最小限の手順で動画を生成する。",
+    "steps": [
+      "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "cd MoneyPrinterTurbo",
+      "uv python install 3.11",
+      "uv sync --frozen",
+      "uv run python cli.py --video-subject \"人工智能如何改变日常生活\""
+    ],
+    "success_criteria": "コマンドが正常に実行され、指定した主題に基づいて動画ファイルが生成されること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "功能特性 🎯",
+    "安装部署 📥"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのAIモデルの正確な動作状況やAPI制限の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2a4f649b84f69acdd0c2e1a4a2ecbadce474f602",
+  "generated_at": "2026-08-21T06:55:21.956157+09:00"
+}

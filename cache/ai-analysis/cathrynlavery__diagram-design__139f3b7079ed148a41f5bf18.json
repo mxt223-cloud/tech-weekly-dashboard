@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Claude CodeなどのAIアシスタント向けに、洗練された39種類のエディトリアル図を作成できるスキルセットです。HTMLとSVGで構成され、ビルドや外部依存なしでブラウザで直接表示できます。",
+  "capabilities": [
+    {
+      "text": "39種類のエディトリアル用ダイアグラムタイプを提供します。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "外部の画像依存やJavaScript、ビルドステップが不要な、自己完結型のHTMLおよびSVGを出力します。",
+      "evidence_section": "What it makes"
+    },
+    {
+      "text": "draw.ioやMermaidのソースを指定したフォーマット、サイズ、詳細レベルで再描画します。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIアシスタントを利用して、Webサイトのデザインやブランドに合った図を短時間で作成する。",
+      "basis": "README明記",
+      "evidence_section": "Why I built it"
+    },
+    {
+      "text": "静的なHTMLファイルを用いて、追加のツールやビルド手順なしでドキュメントやWebサイトに図表を表示する。",
+      "basis": "README明記",
+      "evidence_section": "What it makes"
+    },
+    {
+      "text": "既存のdraw.ioやMermaidで作成したソースを、よりデザイン性の高いエディトリアル図へ変換する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "テンプレートファイルをコピーして新しいダイアグラムを作成する",
+    "steps": [
+      "cp skills/diagram-design/assets/template.html my-diagram.html"
+    ],
+    "success_criteria": "指定したファイル名で最小構成のライトテーマのテンプレートがコピーされ、利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why I built it",
+    "What it makes",
+    "Quickstart",
+    "About"
+  ],
+  "unconfirmed": [
+    "AIエージェントに指示を与える際の具体的なプロンプトや実行コマンドの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "724529348b1589a69d2fc8fe54b7189050e5555d",
+  "generated_at": "2026-08-21T06:55:04.764618+09:00"
+}

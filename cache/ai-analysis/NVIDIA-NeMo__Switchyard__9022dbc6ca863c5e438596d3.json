@@ -1,0 +1,64 @@
+{
+  "summary_ja": "Switchyardは、OpenAIとAnthropicのAPI互換性を維持しながら、LLMのトラフィックを複数のモデルやプロバイダーへルーティングするためのRust製プロキシおよびライブラリです。",
+  "capabilities": [
+    {
+      "text": "OpenAI Chat、Anthropic Messages、OpenAI Responsesのフォーマット間のプロトコル変換を行います。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ランダムルーティング、LLM分類器、シグナル駆動型のステージルーターなど、複数のバックエンドへのルーティング機能を提供します。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "リクエスト、エラー、レイテンシ、トークン、ルーティングオーバーヘッドに関するPrometheusメトリクスを記録します。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントなどのクライアントがネイティブAPIを使い続けながら、vLLM、NVIDIA NIM、Ollamaなどのオープンソースモデルを利用できるようにします。",
+      "basis": "README明記",
+      "evidence_section": "Switchyard"
+    },
+    {
+      "text": "A/Bベンチマーク、コストとパフォーマンスの最適化のために、複数のモデル間でトラフィックを分散させます。",
+      "basis": "README明記",
+      "evidence_section": "Switchyard"
+    },
+    {
+      "text": "A/Bテストやベースライン、コスト実験のために固定のトラフィック分割を行います。",
+      "basis": "README明記",
+      "evidence_section": "Routing Strategies"
+    }
+  ],
+  "first_trial": {
+    "goal": "スタンドアロンのプロキシとしてSwitchyardサーバーをインストールし、動作確認を行う",
+    "steps": [
+      "cargo install --locked switchyard-server",
+      "switchyard-server --help",
+      "switchyard-server --config routes.toml --dry-run",
+      "switchyard-server --config routes.toml --host 127.0.0.1 --port 4000",
+      "curl http://localhost:4000/health"
+    ],
+    "success_criteria": "ヘルスチェック用のエンドポイントから応答が返ること"
+  },
+  "evidence_sections": [
+    "Switchyard",
+    "Features",
+    "Maturity",
+    "Quick Start",
+    "Routing Strategies",
+    "Architecture",
+    "Documentation",
+    "Community",
+    "License"
+  ],
+  "unconfirmed": [
+    "プレアルファ版ソフトウェアであり、v1.0に達するまでにAPIやアルゴリズムが大幅に変更される可能性があります。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "142f80ee7069f16ac66c91ce67d9cc1d296647d6",
+  "generated_at": "2026-08-21T06:55:15.957990+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "summary_ja": "無料のパブリックAPIをまとめたキュレーションリストおよびAPILayerの統合スイート情報を提供するリポジトリです。",
+  "capabilities": [
+    {
+      "text": "ワンアカウント、ワンダッシュボード、ワンAPIキーでプロダクション品質のREST APIを統合できるAPILayerスイートを提供する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コミュニティメンバーおよびAPILayerによって手動でキュレーションされた多数のパブリックAPIのリストを提供する。",
+      "evidence_section": "Try Public APIs for free"
+    },
+    {
+      "text": "セキュリティや脆弱性、脅威インテリジェンスなどに関する多様なAPIを一覧で紹介している。",
+      "evidence_section": "Security"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アドレスのジオコーディングやメールアドレスの検証、フライト情報の取得、株価データの取得などを実施する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自社製品の開発において、公開されている様々なパブリックAPIを探索して活用する。",
+      "basis": "README明記",
+      "evidence_section": "Try Public APIs for free"
+    },
+    {
+      "text": "公式のAPILayer Postman CollectionをフォークしてAPIの利用を素早く開始する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "公式のAPILayer Postman Collectionをフォークして利用を開始する",
+    "steps": [
+      "公式のAPILayer Postman Collectionへのリンクにアクセスする",
+      "コレクションをフォークする"
+    ],
+    "success_criteria": "60秒以内にPostman上でAPIの利用を開始できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Try Public APIs for free",
+    "APILayer APIs",
+    "Learn more about Public APIs",
+    "Security"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやローカルでのビルド手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5353762809d43476ba132ab74dde4b3e13e5f706",
+  "generated_at": "2026-08-21T06:55:24.966995+09:00"
+}

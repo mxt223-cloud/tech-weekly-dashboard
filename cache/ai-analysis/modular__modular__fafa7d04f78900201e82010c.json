@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Modular Platformは、AI開発と展開のための統合プラットフォームであり、MAX FrameworkとMojo言語のオープンソースコンポーネントが含まれています。",
+  "capabilities": [
+    {
+      "text": "Mojoコンパイラや標準ライブラリ、MAXアクセラレータライブラリ、推論サーバーなどのオープンソースコンポーネントを提供する。",
+      "evidence_section": "About the repo"
+    },
+    {
+      "text": "OpenAI互換のエンドポイントを持つMAX推論サーバーを提供する。",
+      "evidence_section": "About the repo"
+    },
+    {
+      "text": "PythonベースのグラフによるMAXモデルパイプラインを提供する。",
+      "evidence_section": "About the repo"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "MAX Frameworkを使用してモデルをサービングする。",
+      "basis": "README明記",
+      "evidence_section": "Get started"
+    },
+    {
+      "text": "Mojo言語を使用してプログラミングを行う。",
+      "basis": "README明記",
+      "evidence_section": "Get started"
+    }
+  ],
+  "first_trial": {
+    "goal": "MAXフレームワークまたはMojo言語のクイックスタートガイドにアクセスして開始する",
+    "steps": [
+      "MAX quickstart guideのWebサイトにアクセスする",
+      "Mojo quickstart guideのWebサイトにアクセスする"
+    ],
+    "success_criteria": "クイックスタートガイドを参照して利用を開始できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Get started",
+    "About the repo",
+    "Contribute",
+    "License",
+    "Third party licenses",
+    "Community & Events",
+    "Thanks to our contributors"
+  ],
+  "unconfirmed": [
+    "詳細なインストールや実行のためのコマンドライン手順",
+    "コードの具体的な記述方法やAPIの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e2876fc5ff7cd3f36ee2d9f4c19a20a752e86108",
+  "generated_at": "2026-08-21T06:55:18.644393+09:00"
+}

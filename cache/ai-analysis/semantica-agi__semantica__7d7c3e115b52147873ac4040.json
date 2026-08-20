@@ -1,0 +1,57 @@
+{
+  "summary_ja": "semanticaは、コンテキストや説明可能なAIシステム向けのグラフネイティブなインフラストラクチャです。企業データの取り込みからコンテキストグラフおよび知識グラフの構築、グラフ分析、因果推論、意思決定のトレーサビリティの確保までをサポートします。",
+  "capabilities": [
+    {
+      "text": "エンティティ、決定、関係性のクエリ可能なグラフ構築や因果リンクの提供",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "意思決定の記録、決定チェーンの追跡、類似決定の検索、影響分析",
+      "evidence_section": "Features at a Glance"
+    },
+    {
+      "text": "ポイントインタイムスナップショットやアレンの区間代数を含む時間的インテリジェンス",
+      "evidence_section": "Features at a Glance"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "高リスクで規制の厳しいドメインにおけるAIエージェントの文脈管理と説明可能な意思決定の構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "エンタープライズデータの取り込みによる知識グラフやコンテキストグラフの構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "グラフRAGやベクトルストアを活用したハイブリッドな検索と分析",
+      "basis": "提案",
+      "evidence_section": "Features at a Glance"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージをインストールし、基本的なコンテキストグラフを初期化する",
+    "steps": [
+      "pip install semantica",
+      "pythonスクリプト内で from semantica.context import ContextGraph をインポートし、graph = ContextGraph(advanced_analytics=True) を実行する"
+    ],
+    "success_criteria": "エラーなくパッケージがインストールされ、ContextGraphオブジェクトのインスタンス化が成功すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "Features at a Glance",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "詳細なデータセットを用いた推論結果の具体的な性能数値",
+    "外部連携における詳細な設定パラメータ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a2646bde5226539eb4d9bfe94f977cff81354489",
+  "generated_at": "2026-08-21T06:55:12.792381+09:00"
+}
