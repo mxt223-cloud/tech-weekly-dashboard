@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Cursor公式のプラグイン仕様と、開発ツール・フレームワーク・SaaS製品向けの公式プラグイン群を提供するリポジトリです。",
+  "capabilities": [
+    {
+      "text": "人気のある開発ツール、フレームワーク、SaaS製品向けの公式Cursorプラグインを提供する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "各プラグインはリポジトリのルートに独立したディレクトリとして存在し、.cursor-plugin/plugin.jsonマニフェストを持つ。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "リポジトリのルートにある.cursor-plugin/marketplace.jsonですべてのプラグインを一覧表示するマルチプラグインマーケットプレイス構造を持つ。",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "GmailやGoogle Drive、Google Calendarなどの生産性ツールと連携してメール管理やファイル共有を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "GitHubやPlaywright、Salesforceなどの外部サービスと連携し、リポジトリ管理やブラウザテスト、レコード操作を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "create-pluginを使用して新しいエージェントプラグインの作成や検証を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造やプラグイン一覧を確認する",
+    "steps": [
+      "リポジトリをクローンまたは閲覧し、ルートディレクトリの構成を確認する",
+      "plugins/.cursor-plugin/marketplace.jsonを確認して利用可能なプラグイン一覧を把握する"
+    ],
+    "success_criteria": "マーケットプレイスのマニフェストファイルや各プラグインのディレクトリ構造が確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやクイックスタートの手順",
+    "個々のプラグインの具体的な内部実装や詳細な利用方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d600b7c64422351e21195108a4f3522c736035a1",
+  "generated_at": "2026-08-22T06:51:31.158973+09:00"
+}

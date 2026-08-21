@@ -1,0 +1,57 @@
+{
+  "summary_ja": "OpenLogiは、Rustで書かれたLogitech Options+に代わるローカルファーストなネイティブアプリケーションです。アカウントやテレメトリーなしで、HID++やUVCを使用してロジクール製のマウス、キーボード、ウェブカメラの機能を活用できます。",
+  "capabilities": [
+    {
+      "text": "OSの入力フックを通じたボタンの再割り当てとTOML設定によるカスタムショートカット",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "アプリフォーカス時に自動切り替え可能なアプリケーションごとのプロファイルオーバーレイ",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Litraライトの電源、明るさ、色温度の制御",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Logitech Options+の代わりにアカウント不要でロジクール製デバイスの設定を管理する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "複数のマシン間でTOML設定ファイルを同期して利用する",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    },
+    {
+      "text": "Linux環境でロジクール製マウスやキーボードの高度な機能を利用する",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    }
+  ],
+  "first_trial": {
+    "goal": "Logi Options+を終了し、Homebrewを使用してmacOSにOpenLogiをインストールする",
+    "steps": [
+      "Logi Options+を終了する",
+      "brew install --cask openlogi を実行する"
+    ],
+    "success_criteria": "OpenLogiが正常にインストールされ起動できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Beyond Options+",
+    "Features",
+    "Install"
+  ],
+  "unconfirmed": [
+    "サポートされる全てのデバイスの完全なリスト",
+    "具体的な設定ファイルの全オプション詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fcba07cde4fcfbe1a1f0d077a98c4c3770553d68",
+  "generated_at": "2026-08-22T06:51:42.005706+09:00"
+}

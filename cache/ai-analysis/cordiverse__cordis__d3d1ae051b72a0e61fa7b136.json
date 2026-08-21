@@ -1,0 +1,30 @@
+{
+  "summary_ja": "Cordisは、時空間的構成可能性（Spatiotemporal Composability）のためのメタフレームワークであり、現在活発に開発が進められています。",
+  "capabilities": [
+    {
+      "text": "時空間的構成可能性（Spatiotemporal Composability）のメタフレームワークとしての機能",
+      "evidence_section": "satori"
+    }
+  ],
+  "use_cases": [],
+  "first_trial": {
+    "goal": "Cordisのドキュメントや論文を参照する",
+    "steps": [
+      "公開されているドキュメント（cordis-primer）や論文を読む"
+    ],
+    "success_criteria": "ドキュメントまたは論文にアクセスできること"
+  },
+  "evidence_sections": [
+    "satori"
+  ],
+  "unconfirmed": [
+    "具体的なインストール方法やクイックスタートのコマンド",
+    "APIの安定版のリリース時期",
+    "具体的な機能の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3d92410a9615d12b9a02733fdc914a1d58227e7f",
+  "generated_at": "2026-08-22T06:51:20.626063+09:00"
+}

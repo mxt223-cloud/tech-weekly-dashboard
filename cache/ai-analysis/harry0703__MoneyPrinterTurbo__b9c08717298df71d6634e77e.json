@@ -1,0 +1,56 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、AIの大規模言語模型と自動化ワークフローを利用して、トピックやキーワードから高精細なショート動画をワンストップで生成するオープンソースツールです。",
+  "capabilities": [
+    {
+      "text": "AIによる自動動画スクリプト生成、またはカスタムスクリプトの使用に対応しています。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "縦画面（9:16）および横画面（16:9）の高解像度な動画サイズをサポートしています。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "TikTok、Instagram、YouTube Shortsへの一括クロスプラットフォーム投稿をサポートしています。",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIを活用してトピックやキーワードから手軽にショート動画を量産したい。",
+      "basis": "README明記",
+      "evidence_section": "MoneyPrinterTurbo 💸"
+    },
+    {
+      "text": "作成した動画を自動で各SNSプラットフォームへ投稿し、コンテンツ配信の効率を上げたい。",
+      "basis": "提案",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "多様な音声合成やフォント・字幕のカスタマイズ機能を用いて、オリジナルの解説動画を作成したい。",
+      "basis": "提案",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドラインを使用して最小限の手順で動画を生成する",
+    "steps": [
+      "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "cd MoneyPrinterTurbo",
+      "uv run python cli.py --video-subject \"人工智能如何改变日常生活\""
+    ],
+    "success_criteria": "指定した主題に基づいた動画ファイルが正常に生成されること"
+  },
+  "evidence_sections": [
+    "MoneyPrinterTurbo 💸",
+    "功能特性 🎯",
+    "安装部署 📥"
+  ],
+  "unconfirmed": [
+    "API Keyを設定せずにクラウドサービスを利用する場合の制限事項の詳細は確認できていません。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9ef61cd67e6491ca7fbff4328e0db274e3c5025a",
+  "generated_at": "2026-08-22T06:51:38.314070+09:00"
+}

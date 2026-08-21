@@ -1,0 +1,51 @@
+{
+  "summary_ja": "OpenVikingは、AIエージェント向けのオープンソースのコンテキストデータベースです。記憶、リソース、スキルをviking://プロトコルによる仮想ファイルシステムとして統合し、L0・L1・L2の階層的ロードやディレクトリの再帰的検索によってトークン消費を抑えながら効率的なコンテキスト管理を実現します。",
+  "capabilities": [
+    {
+      "text": "viking://プロトコルを用いた仮想ファイルシステムとして、記憶、リソース、スキルを統一管理できます。",
+      "evidence_section": "Why OpenViking"
+    },
+    {
+      "text": "書き込み時にL0（概要）、L1（プレビュー）、L2（詳細）の3段階に処理し、タスクの要求度に応じて必要な深さだけロードすることでトークン消費を削減します。",
+      "evidence_section": "Why OpenViking"
+    },
+    {
+      "text": "セッションがコミットされた後、ユーザーの好みやエージェントの経験を非同期で長期記憶として抽出します。",
+      "evidence_section": "Why OpenViking"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントの長期記憶や知識ベース、スキルをファイルシステムのように扱って開発や運用を行う。",
+      "basis": "README明記",
+      "evidence_section": "What is OpenViking"
+    },
+    {
+      "text": "Claude CodeやCursor、LangChainなどの様々なエージェント統合と組み合わせてコンテキストの想起やセッションメモリの自動コミットを行う。",
+      "basis": "README明記",
+      "evidence_section": "Use it with your agent"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenVikingのサーバーをインストールして初期化し、動作確認を行う",
+    "steps": [
+      "pip install openviking --upgrade",
+      "openviking-server init",
+      "openviking-server doctor",
+      "openviking-server"
+    ],
+    "success_criteria": "サーバーが起動し、doctorコマンドで設定や接続の検証が正常に行われること"
+  },
+  "evidence_sections": [
+    "What is OpenViking",
+    "Why OpenViking",
+    "Quick start",
+    "Use it with your agent"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4d52d14eceac99f5bd042d436d26819ea0c8c357",
+  "generated_at": "2026-08-22T06:51:33.984477+09:00"
+}
