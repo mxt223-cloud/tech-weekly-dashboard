@@ -1,0 +1,56 @@
+{
+  "summary_ja": "ai-memoryは、AIコーディングエージェント向けに長期記憶を提供するツールです。異なるエージェント間での作業の引き継ぎを容易にし、プロジェクトごとの分離やクロスエージェントのワークストリーム、安全な認証機能を備えています。",
+  "capabilities": [
+    {
+      "text": "ゼロ摩擦のライフサイクルキャプチャにより、プロンプト、ツールライフサイクル、セッション境界の観察を記録します。",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "Claude CodeやCodexなどの複数のエージェント間でのクロスエージェントハンドオフをサポートします。",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "内蔵の/webブラウザにより、プロジェクトリストやツリー、FTS5検索、Markdownレンダリングを提供する読み取り専用のHTML UIを利用できます。",
+      "evidence_section": "Key features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeを途中で終了し、同じディレクトリでCodexを起動して、再説明なしで作業を継続する。",
+      "basis": "README明記",
+      "evidence_section": "Use cases"
+    },
+    {
+      "text": "以前決定した内容や失敗したアプローチを検索する。",
+      "basis": "README明記",
+      "evidence_section": "Use cases"
+    },
+    {
+      "text": "既存のプロジェクトのgit履歴やドキュメントを読み込ませて初期のwikiページを作成する。",
+      "basis": "README明記",
+      "evidence_section": "Use cases"
+    }
+  ],
+  "first_trial": {
+    "goal": "ai-memoryサーバーを起動し、Dockerコンテナ上で動作確認を行う。",
+    "steps": [
+      "TOKEN=$(ai-memory generate-auth-token)",
+      "docker run -d --name ai-memory --restart unless-stopped -p 0.0.0.0:49374:49374 -v ai-memory-data:/data -e AI_MEMORY_AUTH_TOKEN=\"$TOKEN\" -e AI_MEMORY_ALLOWED_HOSTS=\"<server-ip>,localhost,127.0.0.1\" akitaonrails/ai-memory:latest"
+    ],
+    "success_criteria": "Dockerコンテナが起動し、サーバーにアクセス可能な状態になること。"
+  },
+  "evidence_sections": [
+    "Support Matrix",
+    "Key features",
+    "Use cases",
+    "Security"
+  ],
+  "unconfirmed": [
+    "Topicsに関する詳細な情報"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b4681db336d2c6a40292ad3a4281f1b3006c1ffe",
+  "generated_at": "2026-08-23T06:48:33.675194+09:00"
+}

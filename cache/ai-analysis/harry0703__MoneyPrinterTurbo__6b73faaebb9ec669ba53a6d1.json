@@ -1,0 +1,57 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、動画の主題やキーワードを入力するだけで、AIモデルと自動ワークフローを活用して高品質な短編動画を自動生成できるオールインワンツールです。文案の作成、素材の選定、字幕や背景音楽の合成までを一貫して自動化します。",
+  "capabilities": [
+    {
+      "text": "AIによる自動動画スクリプト生成、カスタムスクリプトの利用、および多言語スクリプトの生成をサポートします。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "Edge TTS、Azure Speech、SiliconFlowなど多数の音声合成プロバイダーを利用し、音声のリアルタイム試聴が可能です。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "生成完了後にTikTok、Instagram、YouTube Shortsへ自動でクロスプラットフォーム投稿を行う機能を備えています。",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "トピックやキーワードから、TikTokやInstagram Reels、YouTube Shorts向けの縦型・横型ショート動画を自動作成する。",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "ローカル素材や外部の無料素材、AI生成素材を組み合わせて、動画編集の手間をかけずにコンテンツを量産する。",
+      "basis": "提案",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "音声の文字起こしやBGMの自動追加を行い、字幕付きの解説動画やプロモーション動画を手軽に作成する。",
+      "basis": "提案",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "first_trial": {
+    "goal": "純粋なコマンドライン環境で、指定した主題の動画生成を最小限の手順で試すこと",
+    "steps": [
+      "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "cd MoneyPrinterTurbo",
+      "uv run python cli.py --video-subject \"人工智能如何改变日常生活\""
+    ],
+    "success_criteria": "エラーなく処理が完了し、指定した主題に基づいた動画ファイルが生成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "功能特性 🎯",
+    "快速开始 🚀"
+  ],
+  "unconfirmed": [
+    "音声合成やLLMの各外部APIを使用する際の初期レスポンス速度や正確なコスト",
+    "商用利用における各AIプロバイダーの規約の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6099b70b3b693ad8e70d796e99726f68dde077b8",
+  "generated_at": "2026-08-23T06:48:27.764468+09:00"
+}
