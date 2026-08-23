@@ -1,0 +1,55 @@
+{
+  "summary_ja": "OpenLogiは、RustとGPUIで書かれたLogitech Options+のネイティブかつローカルファーストな代替ソフトウェアです。アカウントやテレメトリーなしで、HID++とUVCを介してLogitechのマウス、キーボード、Webカメラの機能を活用できます。",
+  "capabilities": [
+    {
+      "text": "Logi Bolt、Unifying、Bluetooth、または有線で接続されたデバイスのバッテリー残量や充電状態の確認",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "内蔵アクションカタログやTOML設定でのカスタムキーボードショートカットを使用したボタンの再割り当て",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "アプリフォーカス時に自動切り替え可能なアプリケーションごとのプロファイルオーバーレイ",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Logitech製マウスやキーボード、WebカメラをLogitech Options+なしでローカル環境で制御する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "TOMLファイルによるプレーンテキストの設定管理で、複数マシン間で設定を同期する",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    },
+    {
+      "text": "GUIと並行して動作するCLIを使用して操作をスクリプト化する",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    }
+  ],
+  "first_trial": {
+    "goal": "macOSでHomebrewを使用してOpenLogiをインストールする",
+    "steps": [
+      "brew install --cask openlogi"
+    ],
+    "success_criteria": "Homebrewを通じてOpenLogiが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Beyond Options+",
+    "Features",
+    "Install"
+  ],
+  "unconfirmed": [
+    "サポート対象外のデバイスにおける一部HID++機能の動作詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8feee7df5151e1f9378c43f0907a2959f8867c0b",
+  "generated_at": "2026-08-24T06:47:59.226966+09:00"
+}

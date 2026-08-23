@@ -1,0 +1,56 @@
+{
+  "summary_ja": "oMLXは、Apple Siliconを搭載したMac向けに最適化されたLLM推論サーバーであり、継続的バッチ処理やSSD階層化KVキャッシュを備え、macOSのメニューバーから直接管理できます。",
+  "capabilities": [
+    {
+      "text": "テキストLLM、VLM、OCRモデル、埋め込み、再ランク付けモデルのマルチモデルサービングに対応しています。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "RAMのホット層とSSDのコールド層間でKVキャッシュを維持し、サーバー再起動後もキャッシュを再利用可能です。",
+      "evidence_section": "Tiered KV Cache (Hot + Cold)"
+    },
+    {
+      "text": "macOSのメニューバーアプリやCLIを通じて、サーバーのライフサイクル管理や監視を行うことができます。",
+      "evidence_section": "macOS Menubar App"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeなどのツールと組み合わせて、ローカルLLMを実用的なコーディング作業に活用する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "管理画面のWeb UIやビルトインチャットを利用して、ブラウザ経由でモデルの動作確認やチャットを行う。",
+      "basis": "提案",
+      "evidence_section": "Admin Dashboard"
+    },
+    {
+      "text": "OpenAIやAnthropic互換のAPIエンドポイントとしてアプリケーションから呼び出す。",
+      "basis": "README明記",
+      "evidence_section": "API Compatibility"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIを使用してバックグラウンドサーバーを起動する",
+    "steps": [
+      "omlx start"
+    ],
+    "success_criteria": "サーバーがバックグラウンドで起動し、APIリクエストを受け付けられる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Quickstart",
+    "Features",
+    "Admin Dashboard",
+    "Tiered KV Cache (Hot + Cold)",
+    "API Compatibility"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "10c14359d4a9fa9c417d0849322999b48d0e4865",
+  "generated_at": "2026-08-24T06:48:03.835207+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "summary_ja": "anthropics/claude-plugins-communityは、Claude CoworkとClaude Code向けのコミュニティ製プラグインを提供するマーケットプレイスの読み取り専用ミラーです。",
+  "capabilities": [
+    {
+      "text": "Claude CoworkやClaude Codeで利用できるコミュニティ製プラグインのリスト（marketplace.json）を提供します。",
+      "evidence_section": "What this repo is"
+    },
+    {
+      "text": "Anthropicの内部レビューパイプラインと毎夜同期されます。",
+      "evidence_section": "What this repo is"
+    },
+    {
+      "text": "Claude Codeを使用してマーケットプレイスの追加やプラグインのインストールができます。",
+      "evidence_section": "Using this marketplace"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeの環境にコミュニティプラグインのマーケットプレイスを追加してプラグインを利用する。",
+      "basis": "README明記",
+      "evidence_section": "Using this marketplace"
+    },
+    {
+      "text": "自作のプラグインをclau.de/plugin-directory-submission経由で提出・公開する。",
+      "basis": "README明記",
+      "evidence_section": "Submitting a plugin"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeでコミュニティマーケットプレイスを追加してプラグインをインストールする",
+    "steps": [
+      "claude plugin marketplace add anthropics/claude-plugins-community",
+      "claude plugin install <plugin-name>@claude-community"
+    ],
+    "success_criteria": "指定したコミュニティプラグインがClaude Code環境にインストールされること"
+  },
+  "evidence_sections": [
+    "What this repo is",
+    "Using this marketplace",
+    "Submitting a plugin"
+  ],
+  "unconfirmed": [
+    "自動セキュリティスキャンや内部レビューパイプラインの具体的な処理内容や詳細な仕組み"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "abe78e5fbe9b97f3d32aed7fe526b3aabf82fe9a",
+  "generated_at": "2026-08-24T06:48:06.877337+09:00"
+}
