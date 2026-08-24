@@ -1,0 +1,57 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、利用者の提供する動画のテーマやキーワードを基に、AIが自動で脚本の作成、素材の選定、字幕や背景音楽の生成を行い、高解像度の短編動画をワンストップで合成するツールです。",
+  "capabilities": [
+    {
+      "text": "テーマやキーワードを基にしたAIによる自動動画脚本生成と高解像度短视频の合成",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Edge TTS、Azure Speech、SiliconFlow、Google Gemini、小米 MiMo、ElevenLabs、Chatterbox、Fish Audioなどの多様な音声合成に対応",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "TikTok、Instagram、YouTube Shortsへの一鍵跨平台发布（一括クロスカタログ投稿）機能",
+      "evidence_section": "功能特性"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自動ワークフローによるAIを活用した短尺動画コンテンツの制作",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "TikTokやYouTube Shorts向けの縦型・横型ショート動画の批量（バッチ）生成",
+      "basis": "README明記",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "字幕のフォント、位置、カラー、背景スタイルなどの詳細なカスタマイズ",
+      "basis": "README明記",
+      "evidence_section": "功能特性"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドラインを使って最小限の手順で動画を生成する",
+    "steps": [
+      "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "cd MoneyPrinterTurbo",
+      "uv run python cli.py --video-subject \"人工智能如何改变日常生活\""
+    ],
+    "success_criteria": "コマンドの実行により、指定したテーマに基づく動画ファイルが生成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "功能特性",
+    "纯命令行方式（无浏览器）"
+  ],
+  "unconfirmed": [
+    "音声合成サービスの具体的な無料枠の詳細や利用制限",
+    "サードパーティ製AIモデルの稼働状況や速度に関する正確なベンチマーク"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "54d138217aed3ad61b2f401f58f7c7a9324ec2bc",
+  "generated_at": "2026-08-25T06:54:47.332079+09:00"
+}

@@ -1,0 +1,58 @@
+{
+  "summary_ja": "ai-memoryは、AIコーディングエージェント向けに長期記憶を提供するRust製のツールです。異なるエージェント間で作業を引き継いだり、プロジェクトの知識を管理したりすることができます。",
+  "capabilities": [
+    {
+      "text": "Claude CodeやCodexなどの複数のAIコーディングエージェント間で、中断した作業の文脈や引き継ぎ情報を共有できる。",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "FTS5、エンティティ一致、グラフ近傍探索などを組み合わせた検索機能や、LLMによるウィキページへの統合機能を持つ。",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "プロジェクトごとに識別子で隔離されたストレージを持ち、機密ファイルなどを除外するキャプチャポリシーを設定できる。",
+      "evidence_section": "Key features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeで作業を途中で終了し、同じディレクトリでCodexを起動して作業を継続する。",
+      "basis": "README明記",
+      "evidence_section": "Use cases"
+    },
+    {
+      "text": "過去のセッションで決定した事項や設計上の判断について、エージェントにクエリを実行して確認する。",
+      "basis": "README明記",
+      "evidence_section": "Use cases"
+    },
+    {
+      "text": "長期間の履歴がない既存のプロジェクトに対してブートストラップを実行し、初期のウィキページを自動生成する。",
+      "basis": "README明記",
+      "evidence_section": "Use cases"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code向けにMCPとフックをインストールして接続する",
+    "steps": [
+      "TOKEN=$(ai-memory generate-auth-token)",
+      "ai-memory install-mcp --client claude-code --apply --server-url \"http://<server-ip>:49374/mcp\" --auth-token \"$TOKEN\"",
+      "ai-memory install-hooks --agent claude-code --apply --server-url \"http://<server-ip>:49374\" --auth-token \"$TOKEN\""
+    ],
+    "success_criteria": "指定したサーバーに対して認証トークンを用いたMCPとフックのインストールが完了すること。"
+  },
+  "evidence_sections": [
+    "Support Matrix",
+    "Key features",
+    "Use cases",
+    "Security"
+  ],
+  "unconfirmed": [
+    "Rust 1.95+以外の具体的なビルド手順の詳細",
+    "Docker以外の環境での手動によるサーバー起動コマンドの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "26766a140f70704c00fb0ab36867077a1e8421d6",
+  "generated_at": "2026-08-25T06:54:58.459800+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "summary_ja": "Omarchyは、美しくモダンで独自の方針を持つLinuxディストリビューションです。公式のマニュアルを通じて、基本操作やアプリケーション、設定方法など詳細な情報を提供しています。",
+  "capabilities": [
+    {
+      "text": "統合クリップボードや履歴機能、リマインダー、通知機能を提供します。",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "テキスト抽出や音声入力、スクリーンショットや画面録画機能を含んでいます。",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "ターミナル、Neovim、開発ツール、AI関連機能などのアプリケーションを利用できます。",
+      "evidence_section": "The Omarchy Manual"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "モダンで美しいデスクトップ環境を持つLinux環境を構築する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "付属の開発ツールやNeovim、ターミナルを使用して開発作業を行う。",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "WindowsやMacからの移行者が新しいLinux環境に慣れるための操作や設定を行う。",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    }
+  ],
+  "first_trial": {
+    "goal": "Omarchyのマニュアルや公式サイトを確認し、導入手順を把握する",
+    "steps": [
+      "omarchy.orgにアクセスする",
+      "manual/ディレクトリまたは公式オンラインマニュアルを読む"
+    ],
+    "success_criteria": "Omarchyの基本概念やドキュメントの所在が確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "The Omarchy Manual",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやQuick Startの手順がREADMEに記載されていないため不明です。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "96838a94f4074bad6b61e98b5f74287cf97fe8cb",
+  "generated_at": "2026-08-25T06:54:52.745058+09:00"
+}
