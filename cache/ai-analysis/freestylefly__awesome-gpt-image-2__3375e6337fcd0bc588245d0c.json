@@ -1,0 +1,64 @@
+{
+  "summary_ja": "awesome-gpt-image-2は、GPT-Image2向けの工業用プロンプトエンジンおよびテンプレートライブラリであり、530件以上の逆エンジニアリングされた事例やエージェント向けスキルを提供します。",
+  "capabilities": [
+    {
+      "text": "530件以上の逆エンジニアリングされた事例や工業用テンプレートの提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "UIやインフォグラフィック、ポスター、Eコマースなどのカテゴリ別ギャラリー",
+      "evidence_section": "🗂️ Category Overview"
+    },
+    {
+      "text": "エージェントや自動化ワークフロー向けのGPT-Image2スタイルライブラリスキルの提供",
+      "evidence_section": "🤖 Agent Skill"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "UIやWebサイト、ダッシュボードなどの製品インターフェース画像のプロンプト作成",
+      "basis": "README明記",
+      "evidence_section": "🗂️ Category Overview"
+    },
+    {
+      "text": "インフォグラフィックや知識マップなどの構造化された図解の生成",
+      "basis": "README明記",
+      "evidence_section": "🗂️ Category Overview"
+    },
+    {
+      "text": "AIエージェントを通じた自動化ワークフローでの画像生成プロンプトの再利用",
+      "basis": "README明記",
+      "evidence_section": "⚡️ Project Vision"
+    }
+  ],
+  "first_trial": {
+    "goal": "Agent skillのインストール",
+    "steps": [
+      "npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy"
+    ],
+    "success_criteria": "GPT-Image2スタイルライブラリスキルがローカルエージェントのフォルダに正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🌐 Visual Website",
+    "Community 交流群",
+    "❤️ Sponsors",
+    "⚡️ Project Vision",
+    "📖 Quick Links",
+    "🗂️ Category Overview",
+    "🤖 Agent Skill",
+    "🔐 Website Auth & Generation",
+    "🖼️ Featured Cases",
+    "🧩 Template Entry",
+    "🚀 How To Use This Repository",
+    "📄 Notes & Disclaimer"
+  ],
+  "unconfirmed": [
+    "Webサイト上で直接テスト生成を行う際の実際のAPI応答速度や生成品質の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6e96060e02197003ad9f5f583ecfe59f41404aa4",
+  "generated_at": "2026-08-26T06:54:51.407807+09:00"
+}

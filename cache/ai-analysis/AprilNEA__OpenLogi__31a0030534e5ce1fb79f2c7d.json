@@ -1,0 +1,55 @@
+{
+  "summary_ja": "OpenLogiは、Rustで記述されたロジクール製デバイス向けのネイティブかつローカルファーストな代替ソフトです。アカウントやテレメトリーなしで、HID++およびUVCを介してボタンの割り当て変更やDPI調整、スマートシフトなどを提供します。",
+  "capabilities": [
+    {
+      "text": "ログボルトレシーバー、Unifyingレシーバー、Bluetooth、有線接続されたデバイスの認識とバッテリー残量の表示",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "OSインプットフックを通じたボタンの再割り当て（短押し・長押しアクションやプッシュツートーク向けのホールド機能を含む）",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ロジクール製UVCウェブカメラのライブプレビューおよびズームや露出などのハードウェア画像制御",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ロジクール製マウスのボタンに独自のジェスチャーやショートカットを割り当てて操作性を高める",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "設定を単一のTOMLファイルで管理し、複数のマシン間で同期させる",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    },
+    {
+      "text": "Linux環境でロジクール製デバイスの機能をネイティブに制御する",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    }
+  ],
+  "first_trial": {
+    "goal": "macOS環境でHomebrewを使用してOpenLogiをインストールする",
+    "steps": [
+      "Logi Options+を終了する",
+      "ターミナルで brew install --cask openlogi を実行する"
+    ],
+    "success_criteria": "OpenLogiがシステムにインストールされ、利用可能になること"
+  },
+  "evidence_sections": [
+    "Beyond Options+",
+    "Features",
+    "Install"
+  ],
+  "unconfirmed": [
+    "詳細なCLIの使い方は Usage (CLI) を参照する必要があり、README本文には記載されていない"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "edffaf861807b4b927e45c60100ecea4feab0ae5",
+  "generated_at": "2026-08-26T06:54:40.102221+09:00"
+}

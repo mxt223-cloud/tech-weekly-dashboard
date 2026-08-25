@@ -1,0 +1,65 @@
+{
+  "summary_ja": "Apache MakaはローカルファーストのAIエージェントワークスペースです。モデルのメッセージやツールの実行結果、パーミッションの判断などを追記型ログとして記録します。",
+  "capabilities": [
+    {
+      "text": "複数のモデル接続、ストリーミング出力、思考過程、使用量、プロバイダエラーの表示に対応しています。",
+      "evidence_section": "Agent Runtime"
+    },
+    {
+      "text": "Read、Write、Edit、Bash、Glob、Grepの組み込みツールを提供しています。",
+      "evidence_section": "Agent Runtime"
+    },
+    {
+      "text": "デスクトップワークスペースでセッションの作成、アーカイブ、検索、リネーム、リトライ、分岐などが行えます。",
+      "evidence_section": "Desktop workspace"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日常的なインタラクションやファイル・アーティファクトのワークフロー、モデルとパーミッションの設定を行います。",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    },
+    {
+      "text": "現在のプロジェクトディレクトリでMakaを使用するか、非インタラクティブな1ターンの実行を行います。",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    },
+    {
+      "text": "複数のMakaおよび外部の被験体間で再現可能なベンチマーク実験を実行します。",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードからMakaのデスクトップ開発環境を起動する",
+    "steps": [
+      "git clone https://github.com/apache/maka.git",
+      "cd maka",
+      "npm ci",
+      "npm run dev"
+    ],
+    "success_criteria": "デスクトップ開発環境がHMR付きで起動すること"
+  },
+  "evidence_sections": [
+    "Why Maka",
+    "Surfaces",
+    "Current capabilities",
+    "Quick start",
+    "Terminal entry points",
+    "Architecture",
+    "Repository layout",
+    "Local data and recovery",
+    "Development and verification",
+    "Documentation",
+    "License"
+  ],
+  "unconfirmed": [
+    "正式なApacheリリース版の提供状況や詳細な商用サポートの仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "58fc692e35c137190e8146b48632c651817cf9f7",
+  "generated_at": "2026-08-26T06:54:47.822007+09:00"
+}

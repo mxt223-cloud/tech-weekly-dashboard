@@ -1,0 +1,52 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、トピックやキーワードを入力するだけで、動画のスクリプト作成、素材の選定、字幕や背景音の生成、および高清な短尺動画の合成を自動で行うオールインワンのAI短视频生成ツールです。",
+  "capabilities": [
+    {
+      "text": "AIが自動でビデオスクリプトを生成する機能や、カスタムスクリプトを使用する機能を提供します。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "縦画面（9:16、1080x1920）や横画面（16:9、1920x1080）など、複数のサイズでの高画質動画生成をサポートします。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "Edge TTS、Azure Speech、SiliconFlow、Google Gemini、ElevenLabsなどの音声合成プロバイダーを利用できます。",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "テーマやキーワードを指定して、TikTokやYouTube Shorts、Instagram Reels向けの短尺動画を自動作成する",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "AI AgentやWebUI、API、CLIなどの複数の利用方法から自分の環境に合わせた運用を行う",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドラインを使用して最小構成で動画を生成する",
+    "steps": [
+      "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "cd MoneyPrinterTurbo",
+      "uv run python cli.py --video-subject \"人工智能如何改变日常生活\""
+    ],
+    "success_criteria": "指定した主題に基づいた動画ファイルが正常に生成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "功能特性 🎯",
+    "安装部署 📥"
+  ],
+  "unconfirmed": [
+    "音声合成やLLMの各外部APIの具体的な無料枠や制限事項",
+    "一部のサードパーティ製プラットフォームや連携機能の動作詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "58a6e73c02f4814f11a0b390b40c17203a3d630d",
+  "generated_at": "2026-08-26T06:54:42.961623+09:00"
+}

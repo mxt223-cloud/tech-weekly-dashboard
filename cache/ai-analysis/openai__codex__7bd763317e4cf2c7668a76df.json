@@ -1,0 +1,50 @@
+{
+  "summary_ja": "Codex CLI は、お使いのパソコンのターミナル上で動作する、OpenAI製の軽量なコーディングエージェントです。",
+  "capabilities": [
+    {
+      "text": "ターミナル上で動作するコーディングエージェントとして利用できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ChatGPTプラン（Plus、Pro、Business、Edu、Enterprise）と連携してサインインし利用できる",
+      "evidence_section": "Using Codex with your ChatGPT plan"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ターミナルから直接コーディングエージェントを起動して作業を行う",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ChatGPTアカウントでサインインして、各種プランの特典としてCodexを利用する",
+      "basis": "README明記",
+      "evidence_section": "Using Codex with your ChatGPT plan"
+    }
+  ],
+  "first_trial": {
+    "goal": "Codex CLIをインストールして起動する",
+    "steps": [
+      "Mac または Linux の場合、curlコマンドを使用してインストールスクリプトを実行する",
+      "Windows の場合、PowerShellでインストールスクリプトを実行する",
+      "ターミナルで `codex` コマンドを実行する"
+    ],
+    "success_criteria": "Codexが起動し、ChatGPTでのサインイン画面が表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quickstart",
+    "Installing and running Codex CLI",
+    "Using Codex with your ChatGPT plan",
+    "Docs"
+  ],
+  "unconfirmed": [
+    "APIキーを使用したセットアップの詳細な手順",
+    "対応しているすべての機能やコマンドの詳細な仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "06b02fced7db972084bf0188cb03f60375b51c1c",
+  "generated_at": "2026-08-26T06:54:54.172029+09:00"
+}
