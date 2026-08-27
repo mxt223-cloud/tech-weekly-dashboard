@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Munder Difflin は、Claude Code や OpenAI Codex などのターミナル向けエージェントCLIをラップし、Pixi.jsで描画されるオフィスフロア上で2Dアバターとして視覚化しながら、ローカルで複数エージェントを協調動作させるデスクトップアプリです。",
+  "capabilities": [
+    {
+      "text": "複数のターミナルエージェント（Claude Code、Antigravity、OpenAI Codex、xAI Grok、Kimi Code、Gemini CLI、Qwen、OpenCode、Crush、pi.dev、GitHub Copilot CLI、Cursorなど）をnode-pty上で実行し統合管理する。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "マークダウンベースのメモリ層とセマンティック検索インデックスにより、エージェントがセッションを跨いで記憶を保持・素早く想起する。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "GODオーケストレータ（Michael）がタスクのルーティング、調停、および人間へのエスカレーションを自動で行う。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIコーディングエージェントを一つのオフィスフロア上で自律的に連携させ、開発作業を分担・進行させる。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Slackやウェブホック経由でメッセージを受け取り、エージェントを一時的に起動して自動対応させる。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして開発版のElectronアプリを起動する",
+    "steps": [
+      "git clone https://github.com/chaitanyagiri/munder-difflin.git",
+      "cd munder-difflin",
+      "npm install",
+      "npm run dev"
+    ],
+    "success_criteria": "オンボーディングウィザードを経てオフィスフロア画面が起動すること"
+  },
+  "evidence_sections": [
+    "What it is",
+    "How it works",
+    "Features",
+    "Getting started",
+    "Architecture",
+    "Project structure",
+    "Design system",
+    "Roadmap",
+    "Contributing",
+    "Telemetry",
+    "License",
+    "Acknowledgements"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ee2bf000ab7499b695002390328ddbd3444d9129",
+  "generated_at": "2026-08-27T09:59:17.364936+09:00"
+}

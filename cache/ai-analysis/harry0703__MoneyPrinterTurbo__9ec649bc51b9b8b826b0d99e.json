@@ -1,0 +1,52 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、動画のテーマやキーワードを入力するだけで、AIが自動でスクリプト作成、素材マッチング、字幕や背景音楽の生成を行い、高解像度のショート動画をワンストップで作成できるPythonツールです。",
+  "capabilities": [
+    {
+      "text": "AIによる自動動画スクリプト生成、またはカスタムスクリプトの使用をサポートしています。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "縦画面（9:16、1080x1920）および横画面（16:9、1920x1080）の高解像度動画サイズをサポートしています。",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "TikTok、Instagram、YouTube Shortsへの一言クロスプラットフォーム自動投稿をサポートしています。",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "YouTube ShortsやTikTok向けのショート動画を効率的に大量制作する",
+      "basis": "提案",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "AIモデルを活用して、特定のトピックから自動的に動画のナレーションや映像構成を作成する",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドラインを使って最小限のステップで動画を生成する",
+    "steps": [
+      "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+      "cd MoneyPrinterTurbo",
+      "uv run python cli.py --video-subject \"人工智能如何改变日常生活\""
+    ],
+    "success_criteria": "指定した主題に基づいた動画ファイルが正常に生成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "功能特性 🎯",
+    "快速开始 🚀",
+    "常见问题 🤔"
+  ],
+  "unconfirmed": [
+    "具体的な商用利用におけるライセンスの詳細な制限事項"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d85db5881a2bd63848e26902ffcddc3f545ff789",
+  "generated_at": "2026-08-27T09:59:14.297632+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Cursor用の公式プラグイン集およびプラグイン仕様を提供するリポジトリです。人気のある開発者向けツール、フレームワーク、SaaS製品向けのスタンドアロンなプラグインを含んでいます。",
+  "capabilities": [
+    {
+      "text": "各プラグインを独立したディレクトリとしてルートに持ち、.cursor-plugin/plugin.json マニフェストを備えています。",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "ルートの .cursor-plugin/marketplace.json にすべてのプラグインの一覧が記載されています。",
+      "evidence_section": "Repository structure"
+    },
+    {
+      "text": "エージェントスキル、Cursorルール、MCPサーバー定義などを含めることができるマルチプラグインマーケットプレイス構造を採用しています。",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発者ツール、フレームワーク、SaaS製品向けの公式Cursorプラグインを利用する。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "新規のエージェントプラグインの作成や検証を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "TypeScript SDKを使用してアプリ、スクリプト、自動化を構築する。",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構成やプラグイン一覧を確認する",
+    "steps": [
+      "リポジトリをクローンまたは閲覧して、ルートディレクトリの構成を確認する",
+      "Pluginsセクションおよび .cursor-plugin/marketplace.json を確認して利用可能なプラグインを把握する"
+    ],
+    "success_criteria": "マーケットプレイスおよび各プラグインのマニフェスト構造が確認できること"
+  },
+  "evidence_sections": [
+    "Plugins",
+    "Repository structure"
+  ],
+  "unconfirmed": [
+    "リポジトリの具体的なインストール手順やQuick StartコマンドはREADMEに記載されていません。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "bbe4867f6ab2d09cd75af57d9e7d5088fc54db10",
+  "generated_at": "2026-08-27T09:59:20.306405+09:00"
+}

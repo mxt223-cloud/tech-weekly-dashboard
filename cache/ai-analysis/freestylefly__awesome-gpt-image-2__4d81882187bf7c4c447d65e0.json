@@ -1,0 +1,50 @@
+{
+  "summary_ja": "GPT-Image2向けのプロンプト事例や産業用テンプレート、エージェント向けスキルを提供するリポジトリです。530件以上の逆向エンジニアリング事例やテンプレートを整理し、構造化されたプロトコルとして再利用できます。",
+  "capabilities": [
+    {
+      "text": "530件以上のコミュニティ事例と20セット以上の産業用テンプレートを提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "UI、インフォグラフィック、ポスター、プロダクトなど多彩なカテゴリのケースをギャラリーで閲覧可能",
+      "evidence_section": "🗂️ Category Overview"
+    },
+    {
+      "text": "Claude CodeやCursorなどで利用できるエージェント用スキル（gpt-image-2-style-library）を提供",
+      "evidence_section": "🤖 Agent Skill"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "UIや製品、ブランドなどのデザイン事例からプロンプトの構造を学習・再利用する",
+      "basis": "README明記",
+      "evidence_section": "🚀 How To Use This Repository"
+    },
+    {
+      "text": "エージェントツールや自動化ワークフローにスタイルライブラリを組み込んで画像を生成する",
+      "basis": "提案",
+      "evidence_section": "🤖 Agent Skill"
+    }
+  ],
+  "first_trial": {
+    "goal": "エージェント用スキルをグローバル環境にインストールする",
+    "steps": [
+      "npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy"
+    ],
+    "success_criteria": "エージェントスキルが指定のローカルフォルダにインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🗂️ Category Overview",
+    "🤖 Agent Skill",
+    "🚀 How To Use This Repository"
+  ],
+  "unconfirmed": [
+    "ViteおよびSupabase環境変数の詳細な設定値の全容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2b2aaa241b8f231911f90e0c4e8693dc90961993",
+  "generated_at": "2026-08-27T09:59:09.992948+09:00"
+}
