@@ -1,0 +1,46 @@
+{
+  "summary_ja": "MoneyPrinterTurboは、動画の主題やキーワードを入力するだけで、AIが自動でスクリプト作成、素材の選定、音声合成、字幕や背景音楽の付与を行い、高画質なショート動画をワンストップで生成するツールです。",
+  "capabilities": [
+    {
+      "text": "トピックやキーワードからAIが自動で動画スクリプトを生成する機能",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "Edge TTSやAzure Speechなど多様な音声合成プロバイダーに対応し、リアルタイムで試聴できる機能",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "生成完了後にTikTok、Instagram、YouTube Shortsへ自動でクロスプラットフォーム投稿を行う機能",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIによる自動化ワークフローを活用して、トレンドに合わせたショート動画を効率的に大量制作する",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    },
+    {
+      "text": "YouTube ShortsやTikTok向けに、字幕やBGM付きの高画質な縦長・横長動画を手軽に作成・公開する",
+      "basis": "README明記",
+      "evidence_section": "功能特性 🎯"
+    }
+  ],
+  "first_trial": {
+    "goal": "AI Agent機能を使用して、指定した主題のショート動画を自動生成する",
+    "steps": [
+      "AI AgentにSKILL.mdのドキュメントと生成したい主題（例：人工知能如何改变普通人的日常生活）を伝える"
+    ],
+    "success_criteria": "生成された動画ファイルへのパスが返却されること"
+  },
+  "evidence_sections": [
+    "功能特性 🎯",
+    "快速开始 🚀"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ccd6fba99c5f1ed5717248e41a6e214319cab69c",
+  "generated_at": "2026-08-28T14:33:17.453675+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "summary_ja": "FreeLLMAPIは、多数の無料LLMプロバイダーやカスタムエンドポイントを集約し、単一のOpenAI互換エンドポイントとして提供するTypeScript製ツールです。スマートルーティング、自動フェイルオーバー、暗号化されたキー管理などを備えています。",
+  "capabilities": [
+    {
+      "text": "複数のAIプロバイダーの無料枠を集約し、単一の/v1エンドポイントとして提供する",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "スマートルーティングと自動フェイルオーバーにより、レートリミットやエラー時に別モデルへ再試行する",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "プロバイダーのキーをSQLiteにAES-256-GCMで暗号化して保存し、統合された単一のベアラートークンを発行する",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数の無料AIプロバイダーを束ねて、単一のOpenAI互換APIとして既存のクライアントから利用する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "レート制限やプロバイダーの障害時に自動で別のモデルやプロバイダーに切り替えて処理を継続する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker環境を使用してFreeLLMAPIを起動し、ローカルでサーバーを動作させる",
+    "steps": [
+      "curl -fsSL https://freellmapi.co/install.sh | bash を実行する",
+      "ブラウザで http://localhost:3001 を開く",
+      "Keysページでプロバイダーキーを追加し、Fallback Chainを整えて統合APIキーを取得する"
+    ],
+    "success_criteria": "ブラウザでダッシュボード（http://localhost:3001）にアクセスでき、APIキーの設定と管理が行えるようになること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Quick start",
+    "Limitations"
+  ],
+  "unconfirmed": [
+    "個別の対応プロバイダーやモデルの最新の稼働状況"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3fa4530946cd50b10499e7a6e77461c1dabe8c95",
+  "generated_at": "2026-08-28T14:33:20.088196+09:00"
+}

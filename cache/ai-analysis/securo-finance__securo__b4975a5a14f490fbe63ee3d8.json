@@ -1,0 +1,62 @@
+{
+  "summary_ja": "Securoは、自分のインフラ上で実行できるオープンソースの個人向け財務管理ツールです。プライバシーを最優先に考え、アカウント、支出、習慣を完全に可視化しながら、データを外部の第三者に渡さない仕組みを提供します。",
+  "capabilities": [
+    {
+      "text": "複数アカウントの管理と残高の追跡",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "自動カテゴリ分けルールエンジンや予算管理機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "各種プロバイダを通じた銀行口座の同期機能",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数の銀行口座や資産を一箇所で管理し、純資産や収支のレポートを確認する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "セルフホスト環境で2段階認証やOIDCログインを利用して安全に財務データにアクセスする",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "オプションのAIエージェント機能を使用して、自身の財務データについてチャット形式で確認する",
+      "basis": "README明記",
+      "evidence_section": "AI Agents (Optional)"
+    }
+  ],
+  "first_trial": {
+    "goal": "LinuxまたはmacOS環境でSecuroを起動してアカウントを作成する",
+    "steps": [
+      "curl -fsSL https://usesecuro.com/install.sh | bash",
+      "http://localhost:3000 をブラウザで開き、アカウントを作成する"
+    ],
+    "success_criteria": "ローカルのブラウザでSecuroの画面が開き、アカウント作成画面が表示されること"
+  },
+  "evidence_sections": [
+    "Quick Start",
+    "Features",
+    "Bank Sync (Optional)",
+    "OIDC Login (Optional)",
+    "Passkeys (Optional)",
+    "Exchange Rates (Optional)",
+    "AI Agents (Optional)",
+    "Tech Stack",
+    "AI-Assisted Development",
+    "Development",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "22100294cafd1d8fb3fe90a6250d19a03750f24d",
+  "generated_at": "2026-08-28T14:33:22.945635+09:00"
+}

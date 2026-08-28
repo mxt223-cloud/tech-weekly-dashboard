@@ -1,0 +1,66 @@
+{
+  "summary_ja": "Apache Maka (Incubating) は、ローカルファーストのAIエージェントワークスペースです。モデルメッセージやツール呼び出し、結果などを追記型ログとして記録します。",
+  "capabilities": [
+    {
+      "text": "複数のモデル接続、ストリーミング出力、思考過程、使用量、プロバイダーエラーの表示に対応",
+      "evidence_section": "Agent Runtime"
+    },
+    {
+      "text": "Read、Write、Edit、Bash、Glob、Grepの組み込みツールを提供",
+      "evidence_section": "Agent Runtime"
+    },
+    {
+      "text": "セッションの作成、アーカイブ、検索、名前変更、再試行、再生成、分岐に対応",
+      "evidence_section": "Desktop workspace"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プロジェクトの調査やファイル、アーティファクトのワークフローをデスクトップ上で行う",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    },
+    {
+      "text": "現在のプロジェクトディレクトリでCLIやTUIを使用してエージェントを実行する",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    },
+    {
+      "text": "複数の実験対象やモデル間で再現可能なベンチマーク実験を実行する",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    }
+  ],
+  "first_trial": {
+    "goal": "デスクトップ開発環境をソースからビルドして起動する",
+    "steps": [
+      "git clone https://github.com/apache/maka.git",
+      "cd maka",
+      "npm ci",
+      "npm run dev"
+    ],
+    "success_criteria": "Electronを用いたデスクトップ開発環境がHMR付きで起動すること"
+  },
+  "evidence_sections": [
+    "Why Maka",
+    "Surfaces",
+    "Current capabilities",
+    "Quick start",
+    "Terminal entry points",
+    "Architecture",
+    "Repository layout",
+    "Local data and recovery",
+    "Development and verification",
+    "Documentation",
+    "License"
+  ],
+  "unconfirmed": [
+    "macOS Apple Silicon以外のプラットフォームにおける完全なサポート状況の詳細",
+    "外部APIやローカルモデルの具体的な接続設定手順の全貌"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5e96650fa3ebb50ce6b846a6f572c043616fbc04",
+  "generated_at": "2026-08-28T14:33:14.504973+09:00"
+}
