@@ -1,0 +1,52 @@
+{
+  "summary_ja": "anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。",
+  "capabilities": [
+    {
+      "text": "Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能",
+      "evidence_section": "Plugin Structure"
+    },
+    {
+      "text": "マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能",
+      "evidence_section": "Skill-bundle plugins"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する",
+      "basis": "README明記",
+      "evidence_section": "Claude Code Plugins Directory"
+    },
+    {
+      "text": "独自のプラグインを作成して公開・登録申請を行う",
+      "basis": "README明記",
+      "evidence_section": "Contributing"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code上でプラグインをインストールする",
+    "steps": [
+      "Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする"
+    ],
+    "success_criteria": "指定したプラグインがClaude Codeに正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Claude Code Plugins Directory",
+    "Installation",
+    "Contributing",
+    "Plugin Structure",
+    "Plugin names are immutable",
+    "Skill-bundle plugins"
+  ],
+  "unconfirmed": [
+    "具体的な個別のプラグインが何を提供するのかという機能詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
+  "generated_at": "2026-08-30T08:32:12.325450+09:00"
+}

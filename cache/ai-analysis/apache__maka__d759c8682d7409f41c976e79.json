@@ -1,0 +1,62 @@
+{
+  "summary_ja": "Apache Maka (Incubating) は、ローカルファーストのAIエージェントワークスペースです。モデルのメッセージやツール呼び出し、結果、権限の判断などを追記型ログとして安全に記録し、独自のRuntime Hostを介して動作します。",
+  "capabilities": [
+    {
+      "text": "複数のモデル接続をサポートし、ストリーミング出力や思考プロセスの表示、使用量の確認が可能です。",
+      "evidence_section": "Current capabilities"
+    },
+    {
+      "text": "Read、Write、Edit、Bash、Glob、Grepの組み込みツールを提供し、サンドボックス境界外へのアクセスには承認が必要です。",
+      "evidence_section": "Current capabilities"
+    },
+    {
+      "text": "デスクトップ環境で、セッションの作成やアーカイブ、検索、リネーム、リトライ、ブランチ作成などの操作が可能です。",
+      "evidence_section": "Current capabilities"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日常的なインタラクションやファイル・アーティファクトのワークフロー、モデルと権限の設定にデスクトップ環境を利用する。",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    },
+    {
+      "text": "現在のプロジェクトディレクトリでTUIやCLIを使い、非対話型の単一のタスクを実行する。",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    },
+    {
+      "text": "Makaや外部の対象を跨いで、再現可能なベンチマーク実験を実行する。",
+      "basis": "README明記",
+      "evidence_section": "Surfaces"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして依存関係をインストールし、デスクトップ開発環境を起動する。",
+    "steps": [
+      "git clone https://github.com/apache/maka.git",
+      "cd maka",
+      "npm ci",
+      "npm run dev"
+    ],
+    "success_criteria": "デスクトップ開発環境がHMR（Hot Module Replacement）付きで起動すること。"
+  },
+  "evidence_sections": [
+    "Why Maka",
+    "Surfaces",
+    "Current capabilities",
+    "Quick start",
+    "Terminal entry points",
+    "Local data and recovery",
+    "Development and verification"
+  ],
+  "unconfirmed": [
+    "インテル製CPU搭載のMacおよびLinux環境での正式サポート時期や詳細な動作状況",
+    "Windowsプレビュー版の正式リリーススケジュール"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a49eb3615f5f7e96b9d845489ddd090edb30291b",
+  "generated_at": "2026-08-30T08:32:06.358589+09:00"
+}

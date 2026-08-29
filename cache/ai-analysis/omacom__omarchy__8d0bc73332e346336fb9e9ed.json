@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Omarchyは、DHHによって作成された美しくモダンで独自の思想を持つLinuxディストリビューションです。マニュアルに沿って様々な機能や設定、アプリケーションを確認できます。",
+  "capabilities": [
+    {
+      "text": "統合されたクリップボードや履歴機能を提供する",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "テキスト抽出やディクテーション機能を持つ",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "スクリーンショットや画面録画機能を備える",
+      "evidence_section": "The Omarchy Manual"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "モダンなLinux環境を構築し利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "AI機能や開発ツールを活用して開発作業を行う",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "WindowsやMacから移行して違和感なくデスクトップ環境を使う",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    }
+  ],
+  "first_trial": {
+    "goal": "Omarchyのマニュアルを確認し、公式サイトや詳細な使い方を把握する",
+    "steps": [
+      "公式サイト (omarchy.org) にアクセスする",
+      "manual/ フォルダ内のドキュメントやマニュアルのミラーサイトを確認する"
+    ],
+    "success_criteria": "Omarchyのコンセプトや詳細なマニュアルの内容を閲覧できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "The Omarchy Manual",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやセットアップ手順",
+    "OSの具体的なシステム要件"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "96838a94f4074bad6b61e98b5f74287cf97fe8cb",
+  "generated_at": "2026-08-30T08:32:01.282562+09:00"
+}

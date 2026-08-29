@@ -1,0 +1,59 @@
+{
+  "summary_ja": "MadsLorentzen/ai-job-searchは、Claude Codeを基盤としたローカルで動作するAI駆動型の求職・応募フレームワークです。求人情報の評価、履歴書の調整、カバーレターの作成、面接の準備などを自動化します。",
+  "capabilities": [
+    {
+      "text": "Claude Codeを活用して求人情報の評価や履歴書の調整、カバーレターの作成、面接準備を行うことができる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "セットアップ、求人情報検索、応募のためのワークフローコマンド（/setup、/scrape、/applyなど）を提供する。",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "LaTeX（lualatexやxelatex）を使用して、調整された履歴書を生成できる。",
+      "evidence_section": "Prerequisites"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自身のプロフィールを登録し、求人ポータルからマッチする求人を探して評価する。",
+      "basis": "README明記",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "指定した求人URLに対して適合性を評価し、LaTeXを用いた最適化された履歴書やカバーレターを作成する。",
+      "basis": "README明記",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "求職活動における面接の準備やキャリアガイドラインに基づく評価を行う。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをフォークして自身のプロフィールを入力し、ワークフローの要件を満たす環境を準備する。",
+    "steps": [
+      "Claude Code (CLI) を用意する。",
+      "Python 3.10+ をインストールする。",
+      "Bun をインストールする。",
+      "lualatexまたはxelatexを含むLaTeXディストリビューションをインストールする。"
+    ],
+    "success_criteria": "前提条件となるツールおよび環境が手元に正しく揃っていること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Does it actually work?",
+    "What this is",
+    "Prerequisites",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやリポジトリのクローン手順、クイックスタートの具体的な実行手順（READMEの該当セクションが途中で切れているため不明）。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "770bdc71f0f49f94de9993b8394675894ba07b55",
+  "generated_at": "2026-08-30T08:32:09.337788+09:00"
+}

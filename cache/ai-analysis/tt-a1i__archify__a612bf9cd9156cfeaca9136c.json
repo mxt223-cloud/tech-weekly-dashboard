@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Archifyは、コードベースやシステム記述をチャット上で洗練されたインタラクティブなシステムマップに変換するためのNode.js製レンダリングおよび検証システムです。Cursor、Claude Code、Codex CLI、OpenCodeなどのAIエージェント向けスキルとして動作し、HTMLやSVGなどの様々な形式に出力できます。",
+  "capabilities": [
+    {
+      "text": "5種類の図（Architecture、Workflow、Sequence、Data Flow、Lifecycle）の生成、4種類のプリセット、ダーク/ライトテーマ、アニメーション機能に対応しています。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "バリデーション済みの2つのスナップショットをBefore / Delta / Afterとして比較し、追加・削除・変更・移動などの変更点を正確に把握できます。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "自己完結型のHTMLに加え、PNG、SVG、WebM、1200×630のシェアカード形式でのエクスポートが可能です。",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リポジトリやシステム記述から、チャット内で直接洗練されたインタラクティブなシステムマップを作成する。",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "マージ前にアーキテクチャの変更点をBefore / Delta / Afterのスナップショットで比較・レビューする。",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "AIエージェントに「このリポジトリのランタイムアーキテクチャをマップ化して」と指示して構成図を描かせる。",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    }
+  ],
+  "first_trial": {
+    "goal": "Archifyスキルをグローバルにインストールし、リポジトリのランタイムアーキテクチャのマップ化をエージェントに依頼する",
+    "steps": [
+      "npx skills add tt-a1i/archify -g",
+      "エージェントに「Use archify to map this repository's runtime architecture.」と質問する"
+    ],
+    "success_criteria": "Archifyスキルが追加され、エージェントがリポジトリのランタイムアーキテクチャのマップを作成できること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9edae19e987f493582e561bd9ab340b3e58939d3",
+  "generated_at": "2026-08-30T08:32:03.839333+09:00"
+}
