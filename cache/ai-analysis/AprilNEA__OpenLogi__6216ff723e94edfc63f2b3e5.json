@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenLogiは、Rustで記述されたロジクール製デバイス向けのオープンソースかつローカルファーストな設定ツールです。公式のLogitech Options+の代替として、アカウント不要、テレメトリなしでボタンの割り当て変更やDPI調整、SmartShift機能、カメラや照明の制御を行うことができます。",
+  "capabilities": [
+    {
+      "text": "Logi Bolt受信機、Unifying受信機、Bluetooth、有線接続されたデバイスのバッテリー残量や充電状態の表示",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "OSの入力フックを通じたボタンの再割り当て（カスタムキーボードショートカットや短押し・長押しの個別設定など）",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ロジクール製UVCウェブカメラのライブプレビューと、露出・フォーカス・ホワイトバランスなどの画像ハードウェア制御",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Logitech Options+を使わずに、ローカル完結かつ軽量な環境でロジクール製マウスやキーボードをカスタマイズしたい場合",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    },
+    {
+      "text": "Linux環境でロジクール製デバイスのボタン割り当てやSmartShift、バックライトなどを設定したい場合",
+      "basis": "README明記",
+      "evidence_section": "Beyond Options+"
+    },
+    {
+      "text": "TOML形式の設定ファイルを用いて、複数マシン間でマウスクリックやショートカットの設定を同期したい場合",
+      "basis": "提案",
+      "evidence_section": "Beyond Options+"
+    }
+  ],
+  "first_trial": {
+    "goal": "macOS環境でHomebrewを使用してOpenLogiをインストールする",
+    "steps": [
+      "brew install --cask openlogi"
+    ],
+    "success_criteria": "Homebrewを通じてOpenLogiのcask版が正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Beyond Options+",
+    "Features",
+    "Install",
+    "Usage (CLI)",
+    "Configuration",
+    "Developing"
+  ],
+  "unconfirmed": [
+    "公式リリース前の機能や設定の変更に関する詳細なロードマップ",
+    "一部のプラットフォーム固有の機能における完全な動作検証状況"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3e9f2458cd519fa61b550445a42563ab9a7cd7d5",
+  "generated_at": "2026-08-29T12:16:54.472391+09:00"
+}

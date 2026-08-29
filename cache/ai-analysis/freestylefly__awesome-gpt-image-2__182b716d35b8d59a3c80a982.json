@@ -1,0 +1,51 @@
+{
+  "summary_ja": "awesome-gpt-image-2は、GPT-Image2向けの工業用プロンプトエンジンおよびテンプレートライブラリです。500件以上のリバースエンジニアリングされたケースや20セット以上の工業用テンプレート、さらにエージェントやワークフローで再利用しやすい構造化されたプロンプトを提供します。",
+  "capabilities": [
+    {
+      "text": "UI、インフォグラフィック、ポスター、プロダクトなど多彩なカテゴリを含む500件以上のケースアルバムを提供",
+      "evidence_section": "🗂️ Category Overview"
+    },
+    {
+      "text": "エージェント向けのスタイル、テンプレート、カテゴリ、シーンタグを選択できるAgent Skillを同梱",
+      "evidence_section": "🤖 Agent Skill"
+    },
+    {
+      "text": "Supabase AuthとVercel Functionを利用したログイン認証および画像生成のWEBサイト機能を備える",
+      "evidence_section": "🔐 Website Auth & Generation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントや自動化システム向けに、散らばったコミュニティの例をPrompt-as-Codeの資産として再利用する",
+      "basis": "README明記",
+      "evidence_section": "⚡️ Project Vision"
+    },
+    {
+      "text": "UIやインフォグラフィックなどのカテゴリから事例を探索し、ビジネス変数をテンプレートに当てはめて画像を生成する",
+      "basis": "提案",
+      "evidence_section": "🚀 How To Use This Repository"
+    }
+  ],
+  "first_trial": {
+    "goal": "Agent Skillをグローバル環境にインストールする",
+    "steps": [
+      "npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy"
+    ],
+    "success_criteria": "Agent Skillが指定したエージェントのローカルフォルダに正しくインストールされること"
+  },
+  "evidence_sections": [
+    "⚡️ Project Vision",
+    "🗂️ Category Overview",
+    "🤖 Agent Skill",
+    "🔐 Website Auth & Generation",
+    "🚀 How To Use This Repository"
+  ],
+  "unconfirmed": [
+    "ローカル開発環境でのVercelおよびSupabase以外のバックエンド詳細な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "73da2cd743d0dd39ba7cdc464ec30452f0d734a4",
+  "generated_at": "2026-08-29T12:16:47.666425+09:00"
+}

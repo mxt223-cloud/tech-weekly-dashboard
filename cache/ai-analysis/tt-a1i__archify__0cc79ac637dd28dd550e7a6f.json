@@ -1,0 +1,53 @@
+{
+  "summary_ja": "Archifyは、コードベースやシステムの説明文を対話形式で洗練されたインタラクティブなシステムマップに変換するためのNode.js製レンダリングおよび検証システムです。AIエージェントが生成したJSON IRをHTMLやSVGなどに決定論的にコンパイルします。",
+  "capabilities": [
+    {
+      "text": "5種類のダイアグラムタイプ、4つのプリズム、ダーク/ライトテーマ、ビルトインのブランドマーク、有限のアニメーションを用いたプレビューが可能。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "検証済みの2つのスナップショットを「変更前/差分/変更後」として比較し、追加・削除・変更・移動・経路変更された事実を正確に表示。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "自己完結型のHTMLに加え、PNG、SVG、WebM、1200×630のシェアカードを出力可能。",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リポジトリのランタイムアーキテクチャをマップ化する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "ログインフロー（ブラウザからデータベースに至るキャッシュミスパスを含む流れ）を描画する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "CI/CDのチェック、承認、デプロイ、ロールバックなどのワークフローを視覚化する。",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    }
+  ],
+  "first_trial": {
+    "goal": "Archifyをグローバルインストールしてエージェントにリポジトリのランタイムアーキテクチャのマップを作成してもらう",
+    "steps": [
+      "npx skills add tt-a1i/archify -g",
+      "エージェントに「Use archify to map this repository's runtime architecture.」と依頼する"
+    ],
+    "success_criteria": "リポジトリのランタイムアーキテクチャを示すダイアグラムが生成されること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start",
+    "How it works"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "480afd4d0fcb4354b618e0ee5312a7da9385f573",
+  "generated_at": "2026-08-29T12:16:51.414065+09:00"
+}
