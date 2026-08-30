@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Archifyは、Cursor、Claude Code、Codex CLI、OpenCodeなどのエージェント向けに、コードベースやシステム説明から洗練されたインタラクティブなシステムマップをチャット上で直接生成・検証するためのNode.jsレンダリングおよび検証システムです。",
+  "capabilities": [
+    {
+      "text": "5種類の図、4種類のプリセット、ダーク・ライトテーマ、ブランドマーク、有限の動きを備え、オープンしてプレゼンテーションに利用できます。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "検証済みの2つのスナップショットを「Before / Delta / After」として比較し、追加、削除、変更、移動、リルートされた事実を正確に確認できます。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "ノードの検索、リビジョン検証済みソースのオープン、上流/下流の到達範囲と正確なルートの追跡、役割の比較、トポロジを捏造しないガイド付きストーリーの再生が可能です。",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リポジトリやコードベースを必要とせず、エージェントのチャット内でシステムを説明して図を作成する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "リポジトリを分析し、高レベルなランタイムアーキテクチャ図を作成して、コアコンポーネントやプライマリパス、外部依存関係、信頼境界を表示する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "設計やPRレビューのために、検証済みのBefore / Delta / Afterのスナップショットを機械的なレポート付きで比較する。",
+      "basis": "README明記",
+      "evidence_section": "Choose the right diagram"
+    }
+  ],
+  "first_trial": {
+    "goal": "Archifyスキルをグローバルにインストールする",
+    "steps": [
+      "npx skills add tt-a1i/archify -g"
+    ],
+    "success_criteria": "パッケージがグローバルに正常に追加されること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start",
+    "Choose the right diagram"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "94d05de679e5ce040d719a2a7e6541196e2e9a8e",
+  "generated_at": "2026-08-31T08:44:02.553993+09:00"
+}
