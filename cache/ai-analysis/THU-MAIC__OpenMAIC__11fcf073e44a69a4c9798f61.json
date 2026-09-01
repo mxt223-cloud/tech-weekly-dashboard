@@ -1,0 +1,59 @@
+{
+  "summary_ja": "OpenMAICは、1つのプロンプトやドキュメントから、複数エージェントによるインタラクティブな学習体験（スライド、クイズ、シミュレーションなど）を自動生成するオープンソースのAIプラットフォームです。",
+  "capabilities": [
+    {
+      "text": "エージェントワークスペースにより、カリキュラムの計画、ページの構築・修正をチャット形式で行うことができます。",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    },
+    {
+      "text": "文書、音声、動画のアップロード、またはウェブ検索からの資料取り込みに対応しています。",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    },
+    {
+      "text": "AI教師やAIクラスメートが音声やホワイトボードを使ってリアルタイムに議論や授業を行います。",
+      "evidence_section": "📖 Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Pythonプログラミングをゼロから短時間で学習する",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    },
+    {
+      "text": "ボードゲームのアバロンの遊び方を学ぶ",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    },
+    {
+      "text": "最新の論文や企業の株価などを分析する",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenMAICのデモやクイックスタートを確認する",
+    "steps": [
+      "ライブデモ（https://open.maic.chat/）にアクセスする",
+      "Vercel等へのワンクリックデプロイやQuick Startの記載を確認する"
+    ],
+    "success_criteria": "ブラウザまたは環境構築を通じてOpenMAICのインターフェースが利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🎉 OpenMAIC v1.0.0 — Build courses with an agent",
+    "🗞️ News",
+    "📖 Overview",
+    "🚀 Quick Start",
+    "✨ Features",
+    "💡 Use Cases"
+  ],
+  "unconfirmed": [
+    "Quick Startセクションの具体的なインストール・起動コマンドの詳細コード"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "99e10216fe85ab37229c9fb0b3e4b390dc487fb1",
+  "generated_at": "2026-09-02T08:29:36.094775+09:00"
+}

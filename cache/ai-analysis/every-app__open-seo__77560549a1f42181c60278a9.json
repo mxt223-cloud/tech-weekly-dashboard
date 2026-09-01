@@ -1,0 +1,56 @@
+{
+  "summary_ja": "OpenSEOは、SemrushやAhrefsのオープンソースかつ従量課金型の代替となるSEOツールです。AIエージェントと連携可能なMCPサーバーやスキルを備えており、キーワード調査や順位追跡、被リンク分析などのSEOワークフローを実行できます。",
+  "capabilities": [
+    {
+      "text": "キーワード調査や順位追跡、競合インサイト、被リンク、サイト監査、AIビジビリティなどの主要なSEOワークフローに対応しています。",
+      "evidence_section": "Main SEO Workflows"
+    },
+    {
+      "text": "MCPサーバーを公開しており、Claude Code、OpenClaw、HermesなどのAIエージェントからSEOデータを直接利用できます。",
+      "evidence_section": "OpenSEO MCP & Agent Skills"
+    },
+    {
+      "text": "DockerやCloudflareを使用したセルフホストに対応しています。",
+      "evidence_section": "Self-Hosting"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "高額な既存のSEOツールに代わり、従量課金制でコストを抑えながら自らコントロールできるSEO分析を行うこと。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude CodeなどのAIエージェントに事前構築済みのスキルやMCPを接続し、自動でSEOタスクを実行させること。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自身のマシンやCloudflare環境にDocker等でツールをセルフホストし、チームや個人で利用すること。",
+      "basis": "README明記",
+      "evidence_section": "Self-Hosting"
+    }
+  ],
+  "first_trial": {
+    "goal": "コントリビューション用のスキルを追加する",
+    "steps": [
+      "npx skills add every-app/open-seo --skill simple-issue-description コマンドを実行する"
+    ],
+    "success_criteria": "スキルが正常に追加され利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Main SEO Workflows",
+    "OpenSEO MCP & Agent Skills",
+    "Self-Hosting",
+    "Contributing"
+  ],
+  "unconfirmed": [
+    "具体的なDockerの起動コマンドやローカル開発のセットアップ手順の詳細なコードブロック"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9a874a272ea17aebb6bca0efe6d5552ee0fb677a",
+  "generated_at": "2026-09-02T08:29:44.368820+09:00"
+}

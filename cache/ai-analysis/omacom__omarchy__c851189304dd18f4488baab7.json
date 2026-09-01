@@ -1,0 +1,55 @@
+{
+  "summary_ja": "Omarchyは、DHHによって開発された、美しくモダンで独自性のあるLinuxディストリビューションです。",
+  "capabilities": [
+    {
+      "text": "統合クリップボードと履歴機能を提供する",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "テキスト抽出や音声入力機能を持つ",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "スクリーンショットや画面録画機能を含む",
+      "evidence_section": "The Omarchy Manual"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIを活用した機能を利用する",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "ゲーム環境として利用する",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    },
+    {
+      "text": "Windowsの仮想マシンを実行する",
+      "basis": "README明記",
+      "evidence_section": "The Omarchy Manual"
+    }
+  ],
+  "first_trial": {
+    "goal": "Omarchyのマニュアルや詳細情報を確認する",
+    "steps": [
+      "公式サイト（omarchy.org）にアクセスする",
+      "マニュアル（manual/）を参照する"
+    ],
+    "success_criteria": "Omarchyのマニュアルやドキュメントを閲覧できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "The Omarchy Manual",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやクイックスタート手順はREADMEに記載されていない"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5cedfc5ce656e67f36707d1af9be611a818ea073",
+  "generated_at": "2026-09-02T08:29:38.696624+09:00"
+}

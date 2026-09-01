@@ -1,0 +1,47 @@
+{
+  "summary_ja": "FreeLLMAPIは、34の無料AIプロバイダーと635のモデルエンドポイントを統合し、単一のOpenAI互換エンドポイントとして利用できるようにするTypeScript製ツールです。スマートルーティングや自動フェイルオーバー、暗号化されたキー管理機能を備えています。",
+  "capabilities": [
+    {
+      "text": "34の無料AIプロバイダーと635のエンドポイントを単一の/v1エンドポイント背後に集約",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "スマートルーティングと自動フェイルオーバーによるレートリミット対策",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "プロバイダーキーのAES-256-GCM暗号化と一元的な利用量追跡",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数の無料AIプロバイダーを統合し、単一のAPIクライアントから切り替えて利用する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "レートリミットに達した際に自動で別のプロバイダーへ切り替える冗長化構成",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "Dockerを使用してFreeLLMAPIを起動し、管理画面にアクセスする",
+    "steps": [
+      "curl -fsSL https://freellmapi.co/install.sh | bash",
+      "http://localhost:3001 をブラウザで開く"
+    ],
+    "success_criteria": "ローカルのダッシュボード画面が正常に表示されること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Quick start"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "379de98c717778bc4398b51e03cbd86508e6c1b9",
+  "generated_at": "2026-09-02T08:29:40.946083+09:00"
+}

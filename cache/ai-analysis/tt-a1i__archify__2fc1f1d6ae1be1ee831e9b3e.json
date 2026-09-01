@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Archifyは、CursorやClaude CodeなどのAIエージェントと連携し、コードベースやシステムの説明からインタラクティブなシステムマップや図を生成・検証するためのNode.js製レンダリング・検証システムです。",
+  "capabilities": [
+    {
+      "text": "5種類の図、4種類のプリズム、ダーク/ライトテーマ、ブランドマーク、有限のモーションに対応したHTML/SVG出力を生成します。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "2つの検証済みスナップショットをBefore / Delta / Afterとして比較し、変更点を正確に可視化します。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "ノードの検索、ソースの確認、上流/下流の到達範囲の追跡、役割の比較、ガイド付きストーリーの再生などを行えます。",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リポジトリを必要とせず、チャット内のシステム説明から直接ダイアグラムを生成します。",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "CI/CDチェック、承認、デプロイ、ロールバックなどのワークフロー図を作成します。",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "API呼び出し、キャッシュフォールバック、認証などのシーケンス図を作成します。",
+      "basis": "README明記",
+      "evidence_section": "Choose the right diagram"
+    }
+  ],
+  "first_trial": {
+    "goal": "グローバルにスキルを追加する",
+    "steps": [
+      "npx skills add tt-a1i/archify -g"
+    ],
+    "success_criteria": "スキルが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start",
+    "Choose the right diagram"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c4e24ae12a3595abc91857e5c2c7501708579b04",
+  "generated_at": "2026-09-02T08:29:32.865424+09:00"
+}
