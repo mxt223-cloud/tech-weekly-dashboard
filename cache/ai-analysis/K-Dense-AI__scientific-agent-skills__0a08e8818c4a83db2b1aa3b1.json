@@ -1,0 +1,50 @@
+{
+  "summary_ja": "Scientific Agent Skillsは、オープンなAgent Skills標準をサポートする任意のAIエージェントで利用できる、163種類以上のすぐに使える科学・研究用スキルの総合コレクションです。",
+  "capabilities": [
+    {
+      "text": "163種類以上の科学・研究用スキルおよび100種類以上の科学データベースへのアクセスを提供する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Cisco AI Defense Skill Scannerを使用したLLMベースのセキュリティスキャンが行われる。",
+      "evidence_section": "Security Scanning"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントに複雑な多段階の科学的ワークフローを実行させる。",
+      "basis": "README明記",
+      "evidence_section": "Quick Examples"
+    },
+    {
+      "text": "ローカルまたはポリシー管理されたサンドボックス環境でAI科学者としてのワークスペースを構築する。",
+      "basis": "README明記",
+      "evidence_section": "Security and safe deployment"
+    }
+  ],
+  "first_trial": {
+    "goal": "サードパーティ製スキルのローカルセキュリティスキャンを実行する",
+    "steps": [
+      "uv pip install cisco-ai-skill-scanner",
+      "skill-scanner scan /path/to/skill --use-behavioral"
+    ],
+    "success_criteria": "スキャンコマンドがエラーなく実行され、セキュリティスキャンの結果が出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Security Disclaimer",
+    "Quick Examples",
+    "Security and safe deployment",
+    "Security Scanning",
+    "Installation & Setup"
+  ],
+  "unconfirmed": [
+    "Quick StartやInstallationの具体的なセットアップ手順のコード（README内では省略されている部分が多い）",
+    "具体的な個別の163スキルの名称と詳細なパラメータ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "41b48dceab798b8f795a3efca6df7c34efa6900f",
+  "generated_at": "2026-09-01T09:44:54.640454+09:00"
+}

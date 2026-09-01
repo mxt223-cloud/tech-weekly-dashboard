@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenMAICは、任意のトピックや文書からマルチエージェントのオーケストレーションによって没入型のインタラクティブな学習体験を生成するオープンソースのAIプラットフォームです。",
+  "capabilities": [
+    {
+      "text": "1つのプロンプトや資料から、エージェントがカリキュラムを計画・構築・修正する機能",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    },
+    {
+      "text": "スライド、クイズ、インタラクティブ教材、PBL、画像、音声などを提供する20のビルトインスキル",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    },
+    {
+      "text": "AI教師やAIクラスメートが音声で話し、ホワイトボードに描き、リアルタイムで議論を行うマルチエージェントのインタラクティブな学習体験",
+      "evidence_section": "📖 Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ゼロから30分でPythonを学ぶ",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    },
+    {
+      "text": "ボードゲームのアバロンの遊び方を学ぶ",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    },
+    {
+      "text": "最新のDeepSeekの論文をブレイクダウンする",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenMAICのライブデモを確認するか、Vercel等を使用して環境構築を行う",
+    "steps": [
+      "ライブデモサイトにアクセスする",
+      "またはVercelのデプロイボタンからリポジトリをクローンして環境構築を行う"
+    ],
+    "success_criteria": "マルチエージェントによる学習体験プラットフォームにアクセスできること"
+  },
+  "evidence_sections": [
+    "🎉 OpenMAIC v1.0.0 — Build courses with an agent",
+    "🗞️ News",
+    "📖 Overview",
+    "🚀 Quick Start",
+    "✨ Features",
+    "💡 Use Cases"
+  ],
+  "unconfirmed": [
+    "Quick Startセクションに具体的なコマンドが記載されていないため、ローカルでの具体的なインストールや起動のコマンドライン手順は不明です。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "496f1dd765bea493f35b2b8f8ce9420e6b492332",
+  "generated_at": "2026-09-01T09:44:48.702848+09:00"
+}
