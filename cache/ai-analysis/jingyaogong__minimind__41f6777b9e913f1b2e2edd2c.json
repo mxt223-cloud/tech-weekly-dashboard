@@ -1,0 +1,54 @@
+{
+  "summary_ja": "jingyaogong/minimindは、完全なゼロから約64Mパラメータの超小型言語モデルを低コストかつ短時間でトレーニング・構築するためのオープンソースプロジェクトです。プリトレーニングからSFT、LoRA、RLHF、ツール使用、エージェント型RL、蒸馏に至るまでの全プロセスをPyTorch原著で実装しており、初心者でもLLMの仕組みを学んで実践できるよう設計されています。",
+  "capabilities": [
+    {
+      "text": "約64Mパラメータの超小型言語モデル（DenseおよびMoE構造）をゼロからトレーニング可能",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "プリトレーニング、SFT、LoRA、RLHF（DPO）、RLAIF、ツール使用、蒸留などの完全なトレーニングパイプラインを提供",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "OpenAI API互換の極簡服务端やStreamlitベースのチャットWebUIを提供し、思考プロセスやツール呼び出しをサポート",
+      "evidence_section": "📌 项目介绍"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "個人用のGPU環境で小規模な言語モデルを0から学習させ、大規模言語モデルの内部仕組みを深く理解する学習教材としての利用",
+      "basis": "README明記",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "カスタムデータセットや自前のTokenizerを用いた小規模言語モデルの事前学習・ファインチューニング実験",
+      "basis": "提案",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "OpenAI API互換サーバーやStreamlit WebUIを組み合わせた、軽量なチャットボットアプリケーションの構築",
+      "basis": "提案",
+      "evidence_section": "📌 项目介绍"
+    }
+  ],
+  "first_trial": {
+    "goal": "オンラインでのモデル体験や関連リソースへのアクセス確認",
+    "steps": [
+      "在线体验（ModelScope Studio）にアクセスしてブラウザ上でモデルを試す",
+      "Bilibiliの動画紹介を視聴してプロジェクトの概要を把握する"
+    ],
+    "success_criteria": "オンラインのデモ環境や動画解説にアクセスできること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "📌 项目介绍"
+  ],
+  "unconfirmed": [
+    "リポジトリのREADME内に具体的なQuick StartやInstallationのコマンド記載がないため、具体的なコマンド手順は不明"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "bba2b9de7da29fe915a801ebbb24e08880345804",
+  "generated_at": "2026-09-03T08:30:44.774320+09:00"
+}

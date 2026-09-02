@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenMAICは、任意のトピックやドキュメントから、マルチエージェントのオーケストレーションによって没入型のインタラクティブな教室体験を生成するオープンソースのAIプラットフォームです。",
+  "capabilities": [
+    {
+      "text": "エージェントワークベンチによる、カリキュラムの計画、ページの作成・修正を行うチャットファーストのワークスペース機能",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    },
+    {
+      "text": "サーバー側で実行状態を保持し、いつでもキャンセル、再開、指示の変更が可能な耐久性のあるセッション機能",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    },
+    {
+      "text": "ドキュメント、音声、動画のアップロードやWeb検索からの情報取得に対応したセッション資料機能",
+      "evidence_section": "🎉 OpenMAIC v1.0.0 — Build courses with an agent"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Pythonのプログラミングをゼロから30分で学ぶ",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    },
+    {
+      "text": "ボードゲームのアバロンの遊び方を学ぶ",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    },
+    {
+      "text": "最新のDeepSeekの論文をブレイクダウンして解説する",
+      "basis": "README明記",
+      "evidence_section": "💡 Use Cases"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenMAICのデモ環境やクイックスタートを利用して授業生成機能にアクセスする",
+    "steps": [
+      "ライブデモサイト（https://open.maic.chat/）にアクセスする",
+      "または、Vercelのワンクリックデプロイボタンから環境を構築する"
+    ],
+    "success_criteria": "OpenMAICのプラットフォーム上で授業生成の画面やエージェントワークベンチが利用できるようになること"
+  },
+  "evidence_sections": [
+    "🎉 OpenMAIC v1.0.0 — Build courses with an agent",
+    "🗞️ News",
+    "📖 Overview",
+    "🚀 Quick Start",
+    "✨ Features",
+    "💡 Use Cases"
+  ],
+  "unconfirmed": [
+    "Quick Startセクションの具体的なセットアップコマンドや手順が本文中に記載されていないため不明"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "dbf6d5e387d53a4d0ff0045ccff4517f7a2ffe27",
+  "generated_at": "2026-09-03T08:30:37.173908+09:00"
+}

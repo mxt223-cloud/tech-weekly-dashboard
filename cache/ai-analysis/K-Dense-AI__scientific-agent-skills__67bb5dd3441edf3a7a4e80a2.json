@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Scientific Agent Skillsは、AIエージェントを科学者として活用するための手続き型知識ライブラリです。163件のすぐに使える科学・研究スキルと100以上の科学データベースを含み、標準規格に準拠したAIエージェントで利用できます。",
+  "capabilities": [
+    {
+      "text": "163件のすぐに使える科学・研究スキル（がんゲノム解析やライブ病原体変異監視など）の提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "100以上の科学データベースへの対応",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "オープンなAgent Skills標準への互換性",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントに複雑な複数ステップの科学的ワークフローを実行させる",
+      "basis": "README明記",
+      "evidence_section": "💡 Quick Examples"
+    },
+    {
+      "text": "サンドボックス環境内でポリシーに則り安全に科学用スキルを実行する",
+      "basis": "README明記",
+      "evidence_section": "Security and safe deployment"
+    }
+  ],
+  "first_trial": {
+    "goal": "サードパーティ製スキルをインストールする前にローカル環境でスキャンを実行する",
+    "steps": [
+      "uv pip install cisco-ai-skill-scanner",
+      "skill-scanner scan /path/to/skill --use-behavioral"
+    ],
+    "success_criteria": "Cisco AI Defense Skill Scannerによるスキャンが実行されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🎯 Getting Started",
+    "⚠️ Security Disclaimer",
+    "💡 Quick Examples",
+    "🔬 Use Cases",
+    "Security and safe deployment",
+    "Security Scanning",
+    "Installation & Setup"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやセットアップの全手順の詳細",
+    "利用可能な個別の163件のスキルすべての詳細な機能一覧"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8ce09b450241568839fd2e3aa3f5a658f40f889a",
+  "generated_at": "2026-09-03T08:30:41.041102+09:00"
+}

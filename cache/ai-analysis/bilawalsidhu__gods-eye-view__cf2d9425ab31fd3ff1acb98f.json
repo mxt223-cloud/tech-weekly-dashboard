@@ -1,0 +1,57 @@
+{
+  "summary_ja": "gods-eye-view は、ブラウザ上で動作するリアルタイムの3D地球儀を用いたオープンソースの空間インテリジェンス・シミュレータです。航空機、船舶、衛星、地震、交通情報などの公開データをフォトリアルな3D地球上で視覚化します。",
+  "capabilities": [
+    {
+      "text": "フォトリアルな3D地球儀上で航空機や船舶、衛星などのライブデータを追跡できる。",
+      "evidence_section": "🎛️ What This Thing Does"
+    },
+    {
+      "text": "音声を用いたリアルタイムAIエージェントによるハンズフリーコントロールに対応している。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "CRT、NVG、FLIR/サーマルなどのGLSLセンサーによる視覚スタイルの切り替えができる。",
+      "evidence_section": "🎛️ What_This_Thing_Does"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リアルタイムのフライトや船舶、衛星の位置情報を3D地球儀上でモニタリングする。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "音声入力やAIエージェントを使用して地球上の境界やルートの注釈を行う。",
+      "basis": "README明記",
+      "evidence_section": "🎛️ What This Thing Does"
+    },
+    {
+      "text": "シネマティックなカメラツアーやクリップ・デモ用の映像をキャプチャする。",
+      "basis": "README明記",
+      "evidence_section": "🎛️ What This Thing Does"
+    }
+  ],
+  "first_trial": {
+    "goal": "アプリケーションを起動してライブ地球儀を表示する",
+    "steps": [
+      "npm install",
+      "OPENAI_API_KEY=\"…\" AISSTREAM_API_KEY=\"…\" npm run dev -- --host localhost --port 4173"
+    ],
+    "success_criteria": "ブラウザ上でキーレスの地球儀と各種データが起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🌍 Why This Exists",
+    "🎛️ What This Thing Does",
+    "⚡ Quick Start"
+  ],
+  "unconfirmed": [
+    "詳細な依存関係やNode.jsの必要バージョン",
+    "Pinokioを使用した際の詳細なセットアップ手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "96fec8077d34853ad94a060c845a82c3bef7ad26",
+  "generated_at": "2026-09-03T08:30:28.614286+09:00"
+}

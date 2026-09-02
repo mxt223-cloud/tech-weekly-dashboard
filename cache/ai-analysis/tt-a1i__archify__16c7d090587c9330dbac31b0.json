@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Archifyは、コードベースやシステムの記述からインタラクティブなシステムマップをチャット上で作成・検証するためのNode.jsレンダリングシステムおよびエージェントスキルです。HTML/SVGとして自己完結型のダイアグラムを出力します。",
+  "capabilities": [
+    {
+      "text": "5種類のダイアグラムタイプ、4種類のプリズム、ダーク/ライトテーマに対応しています。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "検証済みスナップショットの変更前・変更後・差分を比較できます。",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "自己完結型のHTMLに加え、PNG、SVG、WebM、シェアカード形式のエクスポートが可能です。",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "チャット上でのシステム記述からブラウザ、API、Redis、PostgreSQLの構成図を描画する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "リポジトリを分析し、高水準のランタイムアーキテクチャ図を作成する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "CI/CDチェック、承認、デプロイ、ロールバックの流れをガイド機能で表示する。",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    }
+  ],
+  "first_trial": {
+    "goal": "グローバル環境にスキルを追加してArchifyの利用を開始する",
+    "steps": [
+      "npx skills add tt-a1i/archify -g"
+    ],
+    "success_criteria": "スキルがグローバルに追加され、チャットやコマンドから利用可能になること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start",
+    "How it works"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5983178b956d2d31ec3229510cfe315108c8bafd",
+  "generated_at": "2026-09-03T08:30:31.298908+09:00"
+}

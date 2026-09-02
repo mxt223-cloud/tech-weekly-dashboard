@@ -1,0 +1,65 @@
+{
+  "summary_ja": "Nitterは、プライバシーとパフォーマンスに焦点を当てた、オープンソースのTwitter（X）の代替フロントエンドです。JavaScriptや広告を使用せず、IPアドレスやブラウザの指紋認証によるトラッキングを防ぎます。",
+  "capabilities": [
+    {
+      "text": "JavaScriptや広告を含まない軽量なフロントエンド",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "バックエンド経由ですべてのリクエストを処理し、クライアントから直接Twitterへ接続させないことでプライバシーを保護",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "RSSフィード、テーマ、モバイル対応（レスポンシブデザイン）のサポート",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "JavaScriptを無効にした状態でTwitterを閲覧し、プライバシーを保護する",
+      "basis": "README明記",
+      "evidence_section": "Why?"
+    },
+    {
+      "text": "広告ブロッカーやVPNをすり抜けるブラウザの指紋認証による追跡を防ぐ",
+      "basis": "README明記",
+      "evidence_section": "Why?"
+    },
+    {
+      "text": "Twitterの公式アカウントや開発者アカウントなしでタイムラインやコンテンツにアクセスする",
+      "basis": "提案",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードからビルドしてNitterの環境を構築する",
+    "steps": [
+      "git clone https://github.com/zedeus/nitter",
+      "cd nitter",
+      "nimble -l build -d:danger --mm:refc",
+      "nimble -l scss",
+      "nimble -l md",
+      "cp nitter.example.conf nitter.conf"
+    ],
+    "success_criteria": "設定ファイル（nitter.conf）が正しく配置され、ビルドが完了すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Donations",
+    "Features",
+    "Roadmap",
+    "Resources",
+    "Why?",
+    "Screenshot",
+    "Installation",
+    "Contact"
+  ],
+  "unconfirmed": [
+    "X Corp.からのテイクダウン要求やリポジトリ削除に関するその後の進展や法的措置の最終的な結末"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "86ebd475dd7c2fdf8c0c4ebe7544c020d00fd1f6",
+  "generated_at": "2026-09-03T08:30:34.291898+09:00"
+}
