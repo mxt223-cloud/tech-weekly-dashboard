@@ -1,0 +1,60 @@
+{
+  "summary_ja": "TimesFM (Time Series Foundation Model) は、Google Researchによって開発された時系列予測のための事前学習済み基盤モデルです。最新のTimesFM 3.0では、多変量時系列予測や共変量の柔軟なサポート、優れたベンチマーク性能を実現しています。",
+  "capabilities": [
+    {
+      "text": "ネイティブな多変量および単変量の時系列予測",
+      "evidence_section": "Update — August 2026"
+    },
+    {
+      "text": "過去のみ、および過去と将来の両方の動的共変量の柔軟なサポート",
+      "evidence_section": "Update — August 2026"
+    },
+    {
+      "text": "Hugging Face TransformersとPEFT (LoRA) を用いたファインチューニング機能",
+      "evidence_section": "Update - Apr. 9, 2026"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "多様な実世界データにおける大規模な時系列予測タスク",
+      "basis": "README明記",
+      "evidence_section": "Update — August 2026"
+    },
+    {
+      "text": "BigQuery MLやGoogle Sheetsを活用したエンタープライズレベルでのスケーラブルな予測",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Hugging Face上のチェックポイントを用いたカスタムデータに対する予測モデルの構築",
+      "basis": "提案",
+      "evidence_section": "Code Examples: TimesFM 3.0"
+    }
+  ],
+  "first_trial": {
+    "goal": "PyTorch版TimesFMのインストール",
+    "steps": [
+      "pip install timesfm[torch]"
+    ],
+    "success_criteria": "パッケージがエラーなくインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Update — August 2026",
+    "Update - July 2, 2026",
+    "Update - Apr. 9, 2026",
+    "Update - Mar. 19, 2026",
+    "Update - Oct. 29, 2025",
+    "Update - Sept. 15, 2025",
+    "Install",
+    "Code Examples: TimesFM 3.0"
+  ],
+  "unconfirmed": [
+    "商用利用に関するTimesFM 3.0の事前学習済み重みの将来的なライセンス変更予定"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fd47ea2f0e8575c90d892ea63d422c292b6fb40e",
+  "generated_at": "2026-09-04T08:27:43.697181+09:00"
+}

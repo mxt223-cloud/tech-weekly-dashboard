@@ -1,0 +1,59 @@
+{
+  "summary_ja": "JetBrains/go-modern-guidelinesは、AIコーディングエージェントがモダンなGoのコードを書くのを支援するためのガイドラインを提供するリポジトリです。プロジェクトのgo.modからGoのバージョンを検出し、そのバージョンに応じた最新の言語機能や標準ライブラリの追加機能を利用させます。",
+  "capabilities": [
+    {
+      "text": "プロジェクトのgo.modファイルからGoのバージョンを検出する機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "指定されたバージョンで利用可能な最新の言語機能や標準ライブラリの追加機能をエージェントに適用する機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "古いパターンよりもモダンなイディオムを優先させるよう導く機能",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングエージェントに最新のGoの書き方を指示し、古くなったコードの生成を防ぐ",
+      "basis": "README明記",
+      "evidence_section": "Motivation"
+    },
+    {
+      "text": "Junie、Claude Code、Codex、Cursorなどの対応エージェントにプラグインやマーケットプレイスとして導入する",
+      "basis": "README明記",
+      "evidence_section": "Instructions"
+    },
+    {
+      "text": "skills.shを通じてOpenCodeなどの他のエージェントにスキルを追加する",
+      "basis": "README明記",
+      "evidence_section": "Other Agents (via skills.sh)"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code環境にプラグインを追加し利用する",
+    "steps": [
+      "/plugin marketplace add JetBrains/go-modern-guidelines",
+      "/plugin install modern-go-guidelines@goland-claude-marketplace"
+    ],
+    "success_criteria": "Claude Codeのセッション内でプラグインがインストールされ、必要に応じてスキルが自動呼び出しされる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Motivation",
+    "Requirements",
+    "Instructions",
+    "Other Agents (via skills.sh)",
+    "Local development"
+  ],
+  "unconfirmed": [
+    "FEATURES.mdに記載されている具体的な機能リストの全容",
+    "CONTRIBUTING.mdの具体的な貢献手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "72adf4579a317c22ae98f8c625743aa85a477a08",
+  "generated_at": "2026-09-04T08:27:34.428571+09:00"
+}

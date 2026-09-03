@@ -1,0 +1,59 @@
+{
+  "summary_ja": "OpenClaudeは、クラウドおよびローカルの多様なモデルプロバイダーに対応した、オープンソースのコーディングエージェント向けCLIツールです。ターミナルファーストのワークフローを維持しながら、さまざまなAIバックエンドやツールを利用できます。",
+  "capabilities": [
+    {
+      "text": "クラウドおよびローカルの多様なモデルプロバイダー（OpenAI互換API、Gemini、GitHub Models、Ollamaなど）に対応",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Bash、ファイル操作、Grep、Glob、エージェント、タスク、MCP、Webツールなどのコーディングエージェントワークフローを統合",
+      "evidence_section": "Why OpenClaude"
+    },
+    {
+      "text": "プロンプト送信時にリアクションするピクセルアートのコンパニオン（バディ）機能を提供",
+      "evidence_section": "Meet Your Buddy"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "多様なAIプロバイダーを切り替えながら、ターミナル上で一貫したコーディングアシスタント作業を行う",
+      "basis": "README明記",
+      "evidence_section": "Why OpenClaude"
+    },
+    {
+      "text": "バックグラウンドセッションを利用して、長時間の非対話型プロンプトやテスト修復処理を実行する",
+      "basis": "README明記",
+      "evidence_section": "Background sessions"
+    },
+    {
+      "text": "ローカルのOllamaなどと組み合わせて、APIキー不要でローカル環境での推論やコード作成を行う",
+      "basis": "README明記",
+      "evidence_section": "Fastest local Ollama setup"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenClaudeをインストールして起動する",
+    "steps": [
+      "npm install -g @gitlawb/openclaude@latest",
+      "openclaude"
+    ],
+    "success_criteria": "ターミナル上でOpenClaudeが起動し、対話プロンプトまたはバディが表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why OpenClaude",
+    "Quick Start",
+    "Background sessions",
+    "Meet Your Buddy",
+    "Supported Providers"
+  ],
+  "unconfirmed": [
+    "ソースビルド以外の環境における詳細な依存関係の挙動",
+    "一部のサードパーティ製プロバイダーにおける個別制限の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a5e286186fb756e75c2c87c0bde2724193b1a193",
+  "generated_at": "2026-09-04T08:27:37.730025+09:00"
+}
