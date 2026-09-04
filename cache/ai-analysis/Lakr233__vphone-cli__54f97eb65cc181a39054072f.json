@@ -1,0 +1,58 @@
+{
+  "summary_ja": "vphone-cliは、AppleのVirtualization.frameworkを利用して、仮想的なiPhoneを起動・管理するためのコマンドラインツールです。",
+  "capabilities": [
+    {
+      "text": "仮想iPhoneの作成、起動、停止、クローン、インポート、エクスポートなどのライフサイクル管理",
+      "evidence_section": "Manage"
+    },
+    {
+      "text": "IPSWのダウンロードとマージ、ブートチェインのパッチ適用、CFWのインストール機能",
+      "evidence_section": "Build a VM manually (what vm create automates)"
+    },
+    {
+      "text": "ホスト制御ソケットを通じたプログラム制御（スクリーンショット、タッチ、スワイプ、ハードウェアキー、クリップボードなど）",
+      "evidence_section": "Automation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "iOSのセキュリティ研究や仮想環境での動作検証",
+      "basis": "README明記",
+      "evidence_section": "Firmware Variants"
+    },
+    {
+      "text": "AI駆動によるエンドツーエンドの自動テストや操作検証",
+      "basis": "README明記",
+      "evidence_section": "Automation"
+    }
+  ],
+  "first_trial": {
+    "goal": "仮想iPhoneをバリアント指定で作成し、起動する",
+    "steps": [
+      "vphone-cli vm create myphone -V jb",
+      "vphone-cli vm launch myphone"
+    ],
+    "success_criteria": "仮想iPhoneの作成と起動がエラーなく完了すること"
+  },
+  "evidence_sections": [
+    "Prerequisites",
+    "Install",
+    "Quick Start",
+    "Manage",
+    "Build a VM manually (what vm create automates)",
+    "Firmware Variants",
+    "Running & Connecting",
+    "Locations",
+    "SIP/AMFI Relaxation",
+    "Tested Environments",
+    "FAQ",
+    "Automation",
+    "Acknowledgements"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4a44e6e596ab25e76bfd47b675b7b20de3af7e21",
+  "generated_at": "2026-09-05T08:12:31.282139+09:00"
+}

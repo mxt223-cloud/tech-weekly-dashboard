@@ -1,0 +1,56 @@
+{
+  "summary_ja": "{fmt}は、CのstdioやC++のiostreamsの高速で安全な代替として作られたオープンソースのフォーマットライブラリです。高パフォーマンスかつ型安全で、Pythonのstr.formatに似た構文やC++20 std.formatなどをサポートしています。",
+  "capabilities": [
+    {
+      "text": "C++20 std.formatやC++23 std.printの実装、Pythonのformatに似た書式設定構文の提供。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "コンパイル時エラーチェックや自動メモリ管理によるバッファオーバーフロー防止など、完全な型安全性。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ユーザー定義型のサポート、コンテナの出力、色やテキストスタイルを適用した印刷などの多彩な拡張機能。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "標準出力への文字列や変数の簡単かつ高速な出力。",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    },
+    {
+      "text": "日付や時刻のフォーマット付き出力。",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    },
+    {
+      "text": "色やスタイルを指定したターミナルへのテキスト出力。",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    }
+  ],
+  "first_trial": {
+    "goal": "fmtライブラリを使って画面に文字列を出力する",
+    "steps": [
+      "#include <fmt/base.h>",
+      "int main() { fmt::print(\"Hello, world!\\n\"); }"
+    ],
+    "success_criteria": "コンパイル・実行して標準出力に Hello, world! と表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Features",
+    "Examples",
+    "Performance",
+    "Compile time and code bloat",
+    "Projects using {fmt}"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f6e0d9c3265b2871578acce9566ff7403d162104",
+  "generated_at": "2026-09-05T08:12:37.984864+09:00"
+}

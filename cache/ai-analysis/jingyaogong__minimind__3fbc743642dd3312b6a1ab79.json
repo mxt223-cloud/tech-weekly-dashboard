@@ -1,0 +1,53 @@
+{
+  "summary_ja": "jingyaogong/minimindは、約64Mパラメータの超小型言語モデルをゼロからトレーニングするためのオープンソースプロジェクトです。低コストと短時間での学習を実現し、事前学習から教師あり微調、RLHF、ツール利用、モデル蒸馏までの全プロセスをPyTorchで実装しています。",
+  "capabilities": [
+    {
+      "text": "約64Mパラメータの超小型言語模型（DenseおよびMoE構造）のゼロからの構築・トレーニング",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "事前学習、SFT、LoRA、RLHF-DPO、RLAIF、ツール利用、モデル蒸馏を含む完全なトレーニングプロセスの提供",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "OpenAI API互換の極简服务端やStreamlitベースのチャットWebUIの提供",
+      "evidence_section": "📌 项目介绍"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "個人のGPU環境を用いたLLMのゼロからの学習と仕組みの学習",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "カスタムデータセットを用いたTokenizerのトレーニングからモデルのファインチューニングまでの実践",
+      "basis": "提案",
+      "evidence_section": "📌 项目介绍"
+    },
+    {
+      "text": "OpenAI API互換サーバーやWebUIを利用したチャットアプリケーションへの組み込み",
+      "basis": "提案",
+      "evidence_section": "📌 项目介绍"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの概要と提供されているモデルのオンライン体験を確認する",
+    "steps": [
+      "オンライン体験リンク（ModelScope）にアクセスする"
+    ],
+    "success_criteria": "Webブラウザ上でMiniMindのチャットインターフェースが表示され、対話ができること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "📌 项目介绍"
+  ],
+  "unconfirmed": [
+    "具体的なローカル環境でのインストール手順や実行コマンド（README内にコードブロックとしての記載がないため）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "dadc82c4279fd9610f1492a58f16dcfead99f874",
+  "generated_at": "2026-09-05T08:12:27.611293+09:00"
+}
