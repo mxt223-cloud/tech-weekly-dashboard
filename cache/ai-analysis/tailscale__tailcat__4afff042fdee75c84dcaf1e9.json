@@ -1,0 +1,60 @@
+{
+  "summary_ja": "TailcatはTailscaleのコントロールプレーンを使わず、データプレーン（magicsockとDERP）を利用してWireGuardで暗号化されたエンドツーエンドのトンネルを構築するツールおよびGoライブラリです。netcatのようにファイル転送、ポートフォワード、SSHサーバーの公開などが可能です。",
+  "capabilities": [
+    {
+      "text": "WireGuardによるエンドツーエンドの暗号化された通信を提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "DERPリレーおよびmagicsockによるNAT越えとUDPの直接ピアツーピア接続を行う",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ローカルポートの公開やフォワード、ファイル送受信、SSHサーバーの動作など多彩なサービスを提供できる",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "2台の機械間で標準入出力（stdin/stdout）のパイプ通信を行う",
+      "basis": "README明記",
+      "evidence_section": "Pipe stdin/stdout between two machines"
+    },
+    {
+      "text": "ローカルのTCPポートやサービスをトンネル経由で公開する",
+      "basis": "README明記",
+      "evidence_section": "Expose local ports through the tunnel"
+    },
+    {
+      "text": "公開鍵認証や認証なしのSSHサーバーをTailcat経由で安全に実行する",
+      "basis": "README明記",
+      "evidence_section": "Public-key-authenticated SSH server"
+    }
+  ],
+  "first_trial": {
+    "goal": "サーバー側でtailcatを起動し、表示されたアドレスを使ってクライアントから接続テストを行う",
+    "steps": [
+      "サーバー側で `tailcat` を実行してアドレスを取得する",
+      "クライアント側で `echo hello | tailcat <取得したアドレス>` を実行する"
+    ],
+    "success_criteria": "サーバー側のコンソールに `hello` という文字列が表示され、通信が成功する"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Usage",
+    "Key Management",
+    "Examples",
+    "How it works",
+    "Security",
+    "Stability",
+    "Contact Sales?",
+    "History"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8a92a5ef4815cbabab456cbc47e1c0e22e839af7",
+  "generated_at": "2026-09-06T08:10:01.545031+09:00"
+}

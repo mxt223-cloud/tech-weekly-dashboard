@@ -1,0 +1,47 @@
+{
+  "summary_ja": "TimesFMは、Google Researchによって開発された時系列予測用の事前学習済み時系列基盤モデルであり、単変量および多変量の予測や共変量のサポートを提供します。",
+  "capabilities": [
+    {
+      "text": "ネイティブな多変量および単変量時系列予測を共変量サポートとともに実行可能",
+      "evidence_section": "Update — August 2026"
+    },
+    {
+      "text": "HuggingFace TransformersとPEFT（LoRA）を用いたファインチューニング例の提供",
+      "evidence_section": "Update - Apr. 9, 2026"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "可変長の単変量時系列データのバッチ予測",
+      "basis": "README明記",
+      "evidence_section": "Code Examples: TimesFM 3.0"
+    },
+    {
+      "text": "多変量ターゲットと過去および未来の共変量を組み合わせた結合予測",
+      "basis": "README明記",
+      "evidence_section": "Code Examples: TimesFM 3.0"
+    }
+  ],
+  "first_trial": {
+    "goal": "PyTorchを使用してTimesFMをインストールする",
+    "steps": [
+      "pip install timesfm[torch]"
+    ],
+    "success_criteria": "パッケージがエラーなくインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Update — August 2026",
+    "Update - Apr. 9, 2026",
+    "Install",
+    "Code Examples: TimesFM 3.0"
+  ],
+  "unconfirmed": [
+    "TimesFM 3.0の商用利用に関する将来的なライセンス変更の予定や詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1924b4abf83f68618b63b29597d5cba44a8ed64d",
+  "generated_at": "2026-09-06T08:09:56.146994+09:00"
+}
