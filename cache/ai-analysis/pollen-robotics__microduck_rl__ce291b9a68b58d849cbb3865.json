@@ -1,0 +1,62 @@
+{
+  "summary_ja": "microduck_rlは、約800g・高さ約25cmの二足歩行ロボットMicroduckのための強化学習（RL）トレーニング環境を提供するリポジトリです。mjlab（MuJoCo Warp）とPPOを用いて50Hzでポリシーを学習し、ONNX形式へのエクスポートや実機へのデプロイをサポートしています。",
+  "capabilities": [
+    {
+      "text": "BAMアクチュエータモデル、ドメインランダム化、バックラッシュシミュレーション、報酬設計などをエンコードしたシムズーリアル（sim2real）レシピを提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "歩行、起立、シット・スタンド、ボールキック、前転など多様なタスク環境およびバックラッシュ変種タスクの登録と訓練",
+      "evidence_section": "Tasks"
+    },
+    {
+      "text": "学習したポリシーのONNXエクスポート、およびHugging Face Hubへのポリシー公開機能",
+      "evidence_section": "Publishing a policy"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Microduckロボットのための歩行ポリシーの訓練と、実機デプロイに向けたONNX出力",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "エクスポートされたポリシーをCPU版MuJoCoとキーボード操作で推論・テストする",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "Hugging Face Hubに学習済みポリシーをアップロードし、ロボットのデーモンで読み込ませる",
+      "basis": "README明記",
+      "evidence_section": "Publishing a policy"
+    }
+  ],
+  "first_trial": {
+    "goal": "歩行ポリシーをローカルで訓練する",
+    "steps": [
+      "git clone https://github.com/pollen-robotics/microduck_rl",
+      "cd microduck_rl",
+      "uv run train Mjlab-Velocity-Flat-MicroDuck --env.scene.num-envs 4096"
+    ],
+    "success_criteria": "GPUを使用して歩行ポリシーの訓練が開始されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quickstart",
+    "Tasks",
+    "Backlash variants",
+    "Actuator model",
+    "Robot models",
+    "Project structure",
+    "Publishing a policy",
+    "Tests",
+    "Related projects",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7575f9baf33db3dd2bee7131e3b1e212d54ccac1",
+  "generated_at": "2026-09-07T08:01:17.713171+09:00"
+}

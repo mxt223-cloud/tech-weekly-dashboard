@@ -1,0 +1,58 @@
+{
+  "summary_ja": "Magnitudeは、お使いのハードウェアに最適なローカルモデルを実行し、既存のAIエージェントと連携できるオープンソースの推論サーバーです。マシンのプロファイルを作成し、最適なモデルの推薦、ダウンロード、調整、実行を無料かつオフラインで行います。",
+  "capabilities": [
+    {
+      "text": "マシンのハードウェア（チップ、メモリ、帯域幅）をプロファイルし、適合するモデルを推薦する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "モデルの自動ダウンロード、チューニング、実行を行い、アイドル時やメモリ圧迫時にはモデルを自動でアンロードする",
+      "evidence_section": "Why Magnitude?"
+    },
+    {
+      "text": "macOS、Linux、およびWSL経由のWindowsをサポートする",
+      "evidence_section": "Install manually"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "トークンコストやAPIキー、レート制限なしでローカルモデルを実行する",
+      "basis": "README明記",
+      "evidence_section": "Why Magnitude?"
+    },
+    {
+      "text": "プロンプトやファイル、モデルを自分のマシン内に留め、完全にプライベートかつオフラインで動作させる",
+      "basis": "README明記",
+      "evidence_section": "Why Magnitude?"
+    },
+    {
+      "text": "Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code、Oh My Pi、Clineなどのエージェントと接続して利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "Magnitude CLIをインストールし、対話型のセットアップを実行してハードウェアのプロファイルとモデルの選択を行う",
+    "steps": [
+      "npm i -g @magnitudedev/cli",
+      "magnitude setup"
+    ],
+    "success_criteria": "対話型セットアップが起動し、ハードウェアのプロファイルと推奨モデルの選択、ダウンロード、ハーネスへの接続が行われること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Get started",
+    "Install manually",
+    "Why Magnitude?",
+    "FAQ"
+  ],
+  "unconfirmed": [
+    "推奨モデルのカタログに含まれていないGGUFモデルをHugging Faceからダウンロードして使用する場合の詳細な手順や制約",
+    "組み込みハーネス（built-in harness）の詳細な機能と使い方"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "db75e99f20aa2a06557fcdcbbd78e027c1f42d47",
+  "generated_at": "2026-09-07T08:01:11.154748+09:00"
+}

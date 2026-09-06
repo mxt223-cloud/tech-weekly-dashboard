@@ -1,0 +1,57 @@
+{
+  "summary_ja": "VoiceStudioは、ElevenLabsのオープンソースで完全にローカルで動作する代替ソフトウェアです。音声クローン、音声デザイン、動画の吹き替え、ディクテーション、文字起こし、オーディオブック作成を自分のハードウェア上で実行できます。",
+  "capabilities": [
+    {
+      "text": "音声クローンおよび音声デザイン機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "動画の文字起こし、翻訳、スピーカー保持、音声合成、動画エクスポートを含む動画吹き替え機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "システムワイドなショートカット、ライブ文字起こし、ローカルLLMによるクリーンアップを提供するディクテーション機能",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プライベートでオフライン、セルフホストまたは大規模な音声生成作業",
+      "basis": "README明記",
+      "evidence_section": "Comparison"
+    },
+    {
+      "text": "マルチボイススクリプトやEPUB/PDFインポートを利用した物語やオーディオブックの制作",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ローカル環境で機密データを外部に送信せずに音声合成や文字起こしを行うワークフロー",
+      "basis": "提案",
+      "evidence_section": "Responsible use and safety"
+    }
+  ],
+  "first_trial": {
+    "goal": "Dockerを使用してVoiceStudioを起動する",
+    "steps": [
+      "Dockerコマンドを実行してコンテナを起動する"
+    ],
+    "success_criteria": "ローカルホストのポート3900でVoiceStudioが稼働しアクセスできること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "At a glance",
+    "Install",
+    "Features",
+    "Comparison",
+    "Responsible use and safety"
+  ],
+  "unconfirmed": [
+    "特定の商用利用における各モデルのライセンスの詳細な適用範囲"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a9213028caa55f7bdd244f911ab967265f5ea3c5",
+  "generated_at": "2026-09-07T08:01:24.728618+09:00"
+}

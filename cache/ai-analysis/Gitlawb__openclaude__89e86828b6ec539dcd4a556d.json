@@ -1,0 +1,55 @@
+{
+  "summary_ja": "OpenClaudeは、クラウドおよびローカルの多様なモデルプロバイダーに対応した、オープンソースのコーディングエージェントCLIです。",
+  "capabilities": [
+    {
+      "text": "OpenAI互換API、Gemini、GitHub Models、Ollamaなど多数のクラウドおよびローカルのモデルプロバイダーをサポート",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "bash、ファイル操作、grep、グロブ、エージェント、タスク、MCP、ウェブツールなどによるコーディングエージェントワークフロー",
+      "evidence_section": "Why OpenClaude"
+    },
+    {
+      "text": "リポジトリ構造のマップ（コードベースインテリジェンス）を文脈に自動注入する機能",
+      "evidence_section": "What Works"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "クラウド上のAIモデルとローカルモデルを単一のターミナルワークフローでシームレスに切り替えて利用する",
+      "basis": "README明記",
+      "evidence_section": "Why OpenClaude"
+    },
+    {
+      "text": "バックグラウンドセッションを利用して、長時間かかる非対話型プロンプトのテスト修正などを実行する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "チーム開発や個人開発において、対応する様々なAIプロバイダーをコマンドラインから一元的に操作する",
+      "basis": "提案",
+      "evidence_section": "Supported Providers"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenClaudeをグローバルインストールして起動する",
+    "steps": [
+      "npm install -g @gitlawb/openclaude@latest",
+      "openclaude"
+    ],
+    "success_criteria": "ターミナル上でOpenClaudeが起動し、入力待ち状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why OpenClaude",
+    "Quick Start",
+    "Supported Providers",
+    "What Works"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "88820f092b1b48a710792fa3c7cdf580899e08b8",
+  "generated_at": "2026-09-07T08:01:14.851765+09:00"
+}
