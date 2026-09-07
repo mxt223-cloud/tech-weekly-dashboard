@@ -1,0 +1,61 @@
+{
+  "summary_ja": "VoiceStudioは、ElevenLabsのオープンソースかつ完全ローカルな代替を目指す音声・動画処理プラットフォームです。音声クローン、音声デザイン、動画の吹き替え、音声入力、文字起こし、オーディオブック作成などを手元のハードウェアで実行できます。",
+  "capabilities": [
+    {
+      "text": "短いリポサンプルからゼロショットで音声を合成・クローンする機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "年齢、アクセント、ピッチ、スタイルなどの指示から新しい音声を作成する音声デザイン機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "音声や動画のジョブを処理するバッチキューやローカルフォルダ監視機能",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プライベートな環境やオフライン環境における音声クローンや動画の吹き替え作業",
+      "basis": "README明記",
+      "evidence_section": "Comparison"
+    },
+    {
+      "text": "EPUBやPDFからチャプターをレンダリングし、マルチボイスのオーディオブック(.m4b)を作成する用途",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ローカルLLMのクリーンアップ機能を伴うシステム全体のライブ音声入力（ディクテーション）",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "VoiceStudioをDocker環境で素早く起動する",
+    "steps": [
+      "ターミナルを開く",
+      "次のDockerコマンドを実行する: docker run -d -p 127.0.0.1:3900:3900 -v omnivoice-data:/app/omnivoice_data --name voicestudio palashdeb/omnivoice-studio:stable"
+    ],
+    "success_criteria": "コンテナがバックグラウンドで起動し、ローカルの指定ポートでVoiceStudioのサービスが利用可能になること"
+  },
+  "evidence_sections": [
+    "At a glance",
+    "Install",
+    "Features",
+    "Comparison",
+    "Requirements",
+    "Engines",
+    "Architecture",
+    "Local speech platform and OpenAI-compatible API"
+  ],
+  "unconfirmed": [
+    "Docker以外の環境における初回起動時の自動Python環境構築の詳細な挙動",
+    "商用利用時における各モデルやトークナイザーの具体的なライセンス適用の全詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "78021085dbe3e70fbcd0a21c642f28d00f119963",
+  "generated_at": "2026-09-08T08:41:46.615551+09:00"
+}

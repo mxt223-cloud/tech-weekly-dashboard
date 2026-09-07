@@ -1,0 +1,55 @@
+{
+  "summary_ja": "OpenClaudeは、クラウドモデルやローカルモデルのプロバイダに対応した、オープンソースのコーディングエージェントCLIです。1つのターミナルベースのワークフローで、bash、ファイルツール、grep、グロブ、エージェント、MCP、スラッシュコマンド、ストリーミング出力などを利用できます。",
+  "capabilities": [
+    {
+      "text": "OpenAI互換API、Gemini、GitHub Models、Codex OAuth、Ollamaなど多数のクラウドおよびローカルのモデルプロバイダに対応しています。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "bash、ファイルの読み書き・編集、grep、グロブ、エージェント、タスク、MCP、スラッシュコマンドなどのツール駆動型コーディングワークフローを提供します。",
+      "evidence_section": "What Works"
+    },
+    {
+      "text": "プロンプト送信時にアニメーションや演出を行うピクセルアートのヒーローコンパニオン（バディ）機能を備えています。",
+      "evidence_section": "Meet Your Buddy"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "1つのCLIツールで複数の異なるクラウドAPIやローカルモデルのバックエンドを横断して利用する。",
+      "basis": "README明記",
+      "evidence_section": "Why OpenClaude"
+    },
+    {
+      "text": "バックグラウンドセッション機能を利用して、長時間の非対話型プロンプト（テスト修正やリファクタリングなど）を現在のターミナルから切り離して実行する。",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "PageRankの重要度に基づいてランク付けされたコードベースの構造マップ（レポマップ）を活用し、コンテキストに自動注入する。",
+      "basis": "README明記",
+      "evidence_section": "What Works"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenClaudeをインストールして起動する",
+    "steps": [
+      "npm install -g @gitlawb/openclaude@latest",
+      "openclaude"
+    ],
+    "success_criteria": "OpenClaudeのCLIが起動し、対話セッションが開始されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why OpenClaude",
+    "Quick Start",
+    "What Works",
+    "Meet Your Buddy"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "12f07d065773d77b279a163949709b6f6c4d8860",
+  "generated_at": "2026-09-08T08:41:39.219516+09:00"
+}
