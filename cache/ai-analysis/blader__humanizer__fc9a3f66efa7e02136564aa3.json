@@ -1,0 +1,61 @@
+{
+  "summary_ja": "AI生成テキスト特有の表現を、事実を変更せずに自然な人間らしい文章に書き換えるためのエージェントスキルです。",
+  "capabilities": [
+    {
+      "text": "AIらしい不自然な表現やパターンを検出して書き直す",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "記述された文章の筆者の声や文体を一致させるためにサンプルを適用できる",
+      "evidence_section": "Match your voice"
+    },
+    {
+      "text": "ファイルパスを指定してドキュメント等のプロース部分のみを書き換える",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIが生成した文章の不自然さを取り除き、人間が書いたような自然な文章にする",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "自身の過去の文章のサンプルを与えてリズムや語彙の癖を似せた書き換えを行う",
+      "basis": "README明記",
+      "evidence_section": "Match your voice"
+    },
+    {
+      "text": "Markdownファイルやlaunch-post.mdなどのドキュメント内の文章を修正する",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "スキルを使用してテキストを人間らしく書き換える動作を確認する",
+    "steps": [
+      "npx skills add blader/humanizer --global を実行してインストールする",
+      "/humanizer コマンドを実行する",
+      "テキストを貼り付けて実行する"
+    ],
+    "success_criteria": "AI特有の表現が取り除かれた文章が出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Usage",
+    "Match your voice",
+    "How it works",
+    "The 25 patterns",
+    "Full example",
+    "Sources",
+    "Version history",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6ffe91a6ddcdaae4667f4a2195ff5f389593e935",
+  "generated_at": "2026-09-09T08:34:20.235055+09:00"
+}

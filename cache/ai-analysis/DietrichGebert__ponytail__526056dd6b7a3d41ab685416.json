@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Ponytailは、AIエージェントに「最も怠け者のシニア開発者」のように最小限のコードを書かせるためのプラグインおよびルールセットです。YAGNI原則や標準機能の活用を徹底し、セキュリティやアクセシビリティを維持しながらコード量やトークン数を削減します。",
+  "capabilities": [
+    {
+      "text": "Claude Code、Codex、GitHub Copilot CLIなどの様々なAIエージェント向けプラグインやコマンドを提供します。",
+      "evidence_section": "Install"
+    },
+    {
+      "text": "コード記述前に「必要か」「既存コードで代用できないか」「標準ライブラリやネイティブ機能を使えないか」などを順に検証する思考ラダーを備えています。",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "現在の差分やリポジトリ全体を対象とした過剰設計のレビュー、監査、遅延させたショートカットの管理機能を持つコマンド（/ponytail-review、/ponytail-auditなど）を提供します。",
+      "evidence_section": "Commands"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日付選択などのUI実装時に、不要な外部ライブラリのインストールを避け、ネイティブ要素（例: <input type=\"date\">）を活用してコード量を大幅に削減する。",
+      "basis": "README明記",
+      "evidence_section": "Before / after"
+    },
+    {
+      "text": "AIエージェントの出力するコードを最小限に抑えることで、トークン費用や処理時間を削減しながら、セキュリティやエラー処理の安全性を担保する。",
+      "basis": "README明記",
+      "evidence_section": "Numbers"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code環境にPonytailプラグインをインストールして動作を確認する",
+    "steps": [
+      "/plugin marketplace add DietrichGebert/ponytail",
+      "/plugin install ponytail@ponytail"
+    ],
+    "success_criteria": "2つのコマンドが正常に実行され、プラグインがインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Already built with Ponytail",
+    "Before / after",
+    "Numbers",
+    "How it works",
+    "Install",
+    "Commands",
+    "Development",
+    "FAQ",
+    "Sponsors",
+    "License",
+    "Star History"
+  ],
+  "unconfirmed": [
+    "サポートされている全エージェントの詳細な内部動作の差異"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "50b33a736986b43a8d1f666a6e3389fcab99997c",
+  "generated_at": "2026-09-09T08:34:17.236721+09:00"
+}

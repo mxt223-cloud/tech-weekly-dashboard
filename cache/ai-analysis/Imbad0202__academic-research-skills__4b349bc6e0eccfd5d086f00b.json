@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Claude Code向けの学術研究スキル群（academic-research-skills）であり、文献調査から論文執筆、査読、改訂までの全パイプラインを人間参加型（ヒューマン・イン・ザ・ループ）で支援します。",
+  "capabilities": [
+    {
+      "text": "ディープリサーチ: ソクラテス式ガイドモードやPRISMAシステマティックレビュー、Semantic Scholar API検証などを備えた13エージェントによる調査チーム",
+      "evidence_section": "Features at a glance"
+    },
+    {
+      "text": "学術論文執筆: スタイル校正、品質チェック、LaTeX整形、可視化、改訂コーチングなどを行う12エージェントによる執筆支援",
+      "evidence_section": "Features at a glance"
+    },
+    {
+      "text": "学術論文査読: 多視点からのピアレビューや証拠に基づいた判定を行う7エージェントによる査読システム",
+      "evidence_section": "Features at a glance"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ソクラテス式対話を通じて論文の構成を検討する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "AIが生成したような文体を避けて学術的な文章の品質をチェックする",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "引用元の文献が実際に主張を支持しているかどうかを検証する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "プラグインのインストールと構成の確認",
+    "steps": [
+      "/plugin marketplace add Imbad0202/academic-research-skills",
+      "/plugin install academic-research-skills",
+      "/ars-plan"
+    ],
+    "success_criteria": "/ars-planを実行してソクラテス式対話による論文構成の検討が開始できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Features at a glance"
+  ],
+  "unconfirmed": [
+    "実際の外部環境における動作検証結果",
+    "プラグイン以外の詳細な前提条件"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5e3235b0096aa08c6333cfe4e20fad296a08e5ee",
+  "generated_at": "2026-09-09T08:34:22.920111+09:00"
+}

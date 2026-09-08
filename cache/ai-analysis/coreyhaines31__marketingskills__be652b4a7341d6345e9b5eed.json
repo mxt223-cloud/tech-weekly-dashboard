@@ -1,0 +1,55 @@
+{
+  "summary_ja": "AIエージェントおよびClaude Code向けに構築されたマーケティングスキルのコレクションであり、CRO、コピーライティング、SEO、アナリティクス、グロースエンジニアリングなどのタスクをサポートします。",
+  "capabilities": [
+    {
+      "text": "Claude CodeやOpenAI Codex、CursorなどのAIエージェントに対応するマークダウン形式のマーケティングスキルを提供します。",
+      "evidence_section": "Marketing Skills for AI Agents"
+    },
+    {
+      "text": "product-marketingスキルを基盤とし、他の全てのスキルが共通の文脈や製品情報、ターゲット層を参照して動作します。",
+      "evidence_section": "How Skills Work Together"
+    },
+    {
+      "text": "CLIやClaude Codeプラグインなどを使って簡単にインストールおよび管理が行えます。",
+      "evidence_section": "Installation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ランディングページのコンバージョン最適化（CRO）を行いたい場合",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "SaaS向けのホームページのコピーを作成したい場合",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "サインアップのGA4トラッキングを設定したい場合",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "npx skillsを使用してマーケティングスキルをインストールする",
+    "steps": [
+      "npx skills add coreyhaines31/marketingskills"
+    ],
+    "success_criteria": "CLIによって検出されたエージェントのインストール先ディレクトリにスキルが追加されること"
+  },
+  "evidence_sections": [
+    "Marketing Skills for AI Agents",
+    "How Skills Work Together",
+    "Installation",
+    "Usage"
+  ],
+  "unconfirmed": [
+    "対応しているAIエージェントの完全なリストのうち、Agent Skills仕様をサポートする具体的な全プラットフォームの挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "92b3f28cabafc073c0dc810d4a3b434eba8d30c9",
+  "generated_at": "2026-09-09T08:34:28.000165+09:00"
+}

@@ -1,0 +1,53 @@
+{
+  "summary_ja": "{fmt}は、CのstdioやC++のiostreamに代わる、高速で安全なモダンなフォーマットライブラリです。",
+  "capabilities": [
+    {
+      "text": "C++20のstd::formatおよびC++23のstd::printを実装しています。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "型安全性を備え、フォーマット文字列のエラーをコンパイル時に検出し、自動メモリ管理によりバッファオーバーフローを防ぎます。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Pythonのformatに似たフォーマット文字列構文を持ち、位置引数をサポートしています。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "標準出力への文字や変数の出力",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    },
+    {
+      "text": "コンテナの中身をそのまま文字列として出力",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    },
+    {
+      "text": "ファイルへのデータ書き込み",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    }
+  ],
+  "first_trial": {
+    "goal": "標準出力へ「Hello, world!」の文字列を出力する",
+    "steps": [
+      "#include <fmt/core.h>",
+      "int main() { fmt::print(\"Hello, world!\\n\"); }"
+    ],
+    "success_criteria": "プログラムを実行した際に「Hello, world!」が標準出力に出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Features",
+    "Examples"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a8a56f17aca2a36d4805d37334fb9992fd130c81",
+  "generated_at": "2026-09-09T08:34:13.726537+09:00"
+}

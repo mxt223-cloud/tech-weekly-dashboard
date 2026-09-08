@@ -1,0 +1,49 @@
+{
+  "summary_ja": "LLVM Projectは、高度に最適化されたコンパイラ、オプティマイザ、ランタイム環境を構築するための、モジュール式で再利用可能なコンパイラおよびツールチェーン技術のコレクションです。",
+  "capabilities": [
+    {
+      "text": "中間表現を処理しオブジェクトファイルに変換するためのツール、ライブラリ、ヘッダーファイルを提供する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Clangフロントエンドを使用してC、C++、Objective-C、Objective-C++のコードをLLVMビットコードやオブジェクトファイルにコンパイルする。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "libc++ C++標準ライブラリやLLDリンカーなどのコンポーネントを含む。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "高度に最適化されたコンパイラやオプティマイザの構築に利用する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "C言語などのソースコードをLLVMビットコードを経由してオブジェクトファイルへコンパイルする。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "LLVMのビルドと実行に関する情報を取得する",
+    "steps": [
+      "Getting Started with LLVMのドキュメントページにアクセスする"
+    ],
+    "success_criteria": "ソースコードの取得方法とビルド手順を確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Getting the Source Code and Building LLVM",
+    "Getting in touch"
+  ],
+  "unconfirmed": [
+    "具体的なビルドコマンドやインストールコマンドはREADME内に記載されていない"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "55425f05c98792acdf614b685b8b60d725703b3e",
+  "generated_at": "2026-09-09T08:34:32.648016+09:00"
+}

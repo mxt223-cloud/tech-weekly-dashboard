@@ -1,0 +1,55 @@
+{
+  "summary_ja": "mattpocock/skillsは、コーディングエージェント（Claude Code、Codex等）の振る舞いを改善し、ソフトウェアエンジニアリングの基本原則に基づいた作業を行わせるための小さくモジュール化されたスキル集です。",
+  "capabilities": [
+    {
+      "text": "Claude Codeのプラグインまたはskills.shインストーラーを使用してスキルをプロジェクトに導入できる",
+      "evidence_section": "Installation (30-second setup)"
+    },
+    {
+      "text": "詳細な質問やドキュメント作成を通じてエージェントとの認識のズレを防ぐグリリングセッション機能を提供する",
+      "evidence_section": "Why These Skills Exist"
+    },
+    {
+      "text": "テスト駆動開発（TDD）のレッド・グリーン・リファクターループやバグ診断、コードベースのアーキテクチャ改善スキャンを実行できる",
+      "evidence_section": "Why These Skills Exist"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディング開始前にエージェントから詳細な質問を引き出し、要件の認識を合わせる",
+      "basis": "README明記",
+      "evidence_section": "Why These Skills Exist"
+    },
+    {
+      "text": "プロジェクト固有の専門用語や用語集を共有言語としてドキュメント化し、エージェントの冗長な出力を減らす",
+      "basis": "README明記",
+      "evidence_section": "Why These Skills Exist"
+    },
+    {
+      "text": "コードベースのアーキテクチャの改善機会をスキャンして視覚的なHTMLレポートとして確認する",
+      "basis": "README明記",
+      "evidence_section": "Why These Skills Exist"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリにスキルをインストールし、初期セットアップを実行する",
+    "steps": [
+      "npx skills@latest add mattpocock/skills を実行してスキルをインストールする",
+      "エージェント内で /setup-matt-pocock-skills を実行する"
+    ],
+    "success_criteria": "初期セットアップが完了し、課題トラッカーやトリアージラベルの設定が行われること"
+  },
+  "evidence_sections": [
+    "Installation (30-second setup)",
+    "Why These Skills Exist",
+    "Reference"
+  ],
+  "unconfirmed": [
+    "Codexのネイティブプラグインの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ff9b797a342d3a64b52f9f5a83d9fc4ce28709dc",
+  "generated_at": "2026-09-09T08:34:25.520232+09:00"
+}
