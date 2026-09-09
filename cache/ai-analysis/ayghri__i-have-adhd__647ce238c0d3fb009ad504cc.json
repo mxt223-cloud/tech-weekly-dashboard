@@ -1,0 +1,53 @@
+{
+  "summary_ja": "ayghri/i-have-adhdは、コーディングアシスタントの出力にADHDフレンドリーな形式を適用し、結論を先に述べて要点を分かりやすく整理するためのスキルです。",
+  "capabilities": [
+    {
+      "text": "最初のアクションを先頭に配置し、複数ステップの作業を番号付きリストで表示する",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "無駄な前置きや挨拶、お決まりの締めくくり文句を排除する",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "リスト項目を最大5つまでに制限し、具体的な時間見積もりや明確な次のステップを提示する",
+      "evidence_section": "The rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングアシスタントからの返答で、答えが長文や余計な解説の中に埋もれてしまうのを防ぎたいとき",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "作業手順を番号付きの手順と具体的なコマンドで簡潔に受け取りたいとき",
+      "basis": "README明記",
+      "evidence_section": "What changes"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIプロンプトを使用してスキルまたはプラグインをインストールする",
+    "steps": [
+      "CLIプロンプトにインストールコマンドをコピーして貼り付ける"
+    ],
+    "success_criteria": "インストールが完了し、リポジトリの指示やAGENTS.mdを参照できる状態になること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it",
+    "Credits"
+  ],
+  "unconfirmed": [
+    "正確な全詳細設定オプションの内容",
+    "対応しているすべてのLLMやエージェントの種類（Claude Code以外の動作可否）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a2cce3e393849742fd6ea0088bd185c2d918f9d6",
+  "generated_at": "2026-09-10T08:28:01.548486+09:00"
+}

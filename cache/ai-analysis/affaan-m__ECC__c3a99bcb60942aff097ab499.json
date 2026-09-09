@@ -1,0 +1,54 @@
+{
+  "summary_ja": "ECCは、Claude CodeなどのAIエージェントのパフォーマンス最適化、スキル、メモリ、セキュリティ管理を支援するシステムです。",
+  "capabilities": [
+    {
+      "text": "インタラクティブなインストールウィザードやセットアップを提供する（configure-ecc スキル）",
+      "evidence_section": "v1.4.0: Multi-Language Rules, Installation Wizard, and PM2 (Feb 2026)"
+    },
+    {
+      "text": "PM2およびマルチエージェントオーケストレーション用のコマンドを提供する",
+      "evidence_section": "v1.4.0: Multi-Language Rules, Installation Wizard, and PM2 (Feb 2026)"
+    },
+    {
+      "text": "AgentShieldによるプロジェクトのスキャンやセキュリティ監査、破壊的シェルコマンドのブロック機能を持つ",
+      "evidence_section": "Security"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Code向けにプラグインやスキルを導入し、エージェント環境を最適化する",
+      "basis": "README明記",
+      "evidence_section": "Install with Claude Code"
+    },
+    {
+      "text": "プロジェクト内のセキュリティリスクやエージェントの設定、秘密情報をスキャン・監査する",
+      "basis": "README明記",
+      "evidence_section": "Security"
+    },
+    {
+      "text": "マルチサービスや複数言語が混在する複雑な開発ワークフローを管理する",
+      "basis": "提案",
+      "evidence_section": "v1.4.0: Multi-Language Rules, Installation Wizard, and PM2 (Feb 2026)"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code向けにECCをセットアップする",
+    "steps": [
+      "npx ecc-universal setup"
+    ],
+    "success_criteria": "セットアップが正常に完了し、プラグインスコープやフックプロファイルが記録されること"
+  },
+  "evidence_sections": [
+    "Install with Claude Code",
+    "v1.4.0: Multi-Language Rules, Installation Wizard, and PM2 (Feb 2026)",
+    "Security"
+  ],
+  "unconfirmed": [
+    "Codex、Opencode、CursorなどClaude Code以外の具体的な統合手順の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "73b4aa7f285a63017ce8c3c7c02a0ddeb6dfb4b1",
+  "generated_at": "2026-09-10T08:27:49.904619+09:00"
+}

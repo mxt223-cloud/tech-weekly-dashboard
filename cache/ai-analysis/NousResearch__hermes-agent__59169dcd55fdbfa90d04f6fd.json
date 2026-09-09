@@ -1,0 +1,64 @@
+{
+  "summary_ja": "Hermes Agentは、自身で学習し改善機能を持つAIエージェントです。多様なLLMプロバイダーやメッセージングプラットフォームに対応し、柔軟な動作環境やスケジュール管理機能を提供します。",
+  "capabilities": [
+    {
+      "text": "Telegram、Discord、Slack、WhatsApp、Signalなどのメッセージングプラットフォームに対応するゲートウェイ機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "経験からのスキル作成、セッション検索、ユーザーモデル構築などの学習・記憶ループ機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "内蔵のcronスケジューラーによる、自然言語での定期タスクの自動実行",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日次レポートやナイトリーバックアップなどの自動化された定期タスクの実行",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Telegramなどのメッセージングアプリを介した、クラウドVM上でのエージェントの操作",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "複数プロバイダー（OpenRouter、OpenAIなど）のモデル切り替えや専用ポータルを利用した一元管理",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "Hermes Agentをインストールして対話を開始する",
+    "steps": [
+      "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+      "source ~/.bashrc",
+      "hermes"
+    ],
+    "success_criteria": "インタラクティブなCLIが起動し、対話を始められること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Install",
+    "Getting Started",
+    "Skip the API-key collection — Nous Portal",
+    "CLI vs Messaging Quick Reference",
+    "Documentation",
+    "Migrating from OpenClaw",
+    "Contributing",
+    "Community",
+    "License"
+  ],
+  "unconfirmed": [
+    "特定の独自環境におけるAPI制限の詳細",
+    "OpenClawからの移行における一部カスタム設定の挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c05112266746ff99a3326a62c38c33fbc08ecd23",
+  "generated_at": "2026-09-10T08:27:55.360839+09:00"
+}
