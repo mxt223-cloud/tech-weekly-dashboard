@@ -1,0 +1,52 @@
+{
+  "summary_ja": "openai/pluginsリポジトリは、Codexプラグインの厳選されたサンプル集を提供するプロジェクトです。各プラグインはmanifestや関連ファイルを同梱しています。",
+  "capabilities": [
+    {
+      "text": "プラグインの構成として必須のmanifestや、スキル、コマンド、フックなどの補助ファイルを配置できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "マーケットプレイス定義ファイルを通じて標準のプラグインディレクトリやAPIキーログインユーザー向けの設定を行える。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Figma、Notion、iOS/macOS/Webアプリ開発、Expo、Netlifyなどの多様なプラグインサンプルが含まれている。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Figmaプラグインを利用してデザインシステムやコード生成の連携を行う。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Notionプラグインを活用して計画立案やナレッジキャプチャを行う。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "iOSやmacOS向けのアプリ開発においてSwiftUIの実装やデバッグ支援を受ける。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造を確認する",
+    "steps": [
+      "リポジトリの内容をローカルにクローンまたは確認し、plugins/ディレクトリ以下の構成を眺める。"
+    ],
+    "success_criteria": "plugins/ディレクトリの中に各種プラグインのフォルダが存在することを確認できる。"
+  },
+  "evidence_sections": [
+    "README冒頭"
+  ],
+  "unconfirmed": [
+    "詳細なインストールコマンドや実行コマンドはREADMEに記載されていない。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e901b40b9d643a5f878157158759fa0a6d3e2909",
+  "generated_at": "2026-09-11T08:21:09.202737+09:00"
+}

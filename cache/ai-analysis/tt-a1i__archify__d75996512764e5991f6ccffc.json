@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Archifyは、CursorやClaude CodeなどのAIエージェントと連携し、コードベースやシステムの説明からインタラクティブなシステムマップや図を直接生成・検証するためのNode.jsレンダリングシステムです。",
+  "capabilities": [
+    {
+      "text": "5種類の図（アーキテクチャ、ワークフロー、シーケンス、データフロー、ライフサイクル）の生成と、HTML/SVGへのコンパイル",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "検証済みの2つのスナップショット（変更前・差分・変更後）を比較する機能",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "自己完結型のHTMLに加え、PNG、SVG、WebM、共有カード形式でのエクスポート",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コードベースやシステム説明から、チャット内で直接洗練されたインタラクティブなシステムマップを作成する",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "マージ前にアーキテクチャの変更点を検証・比較する",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "ノードの検索や上流・下流の到達可能性の追跡、ガイド付きストーリーの再生を行う",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    }
+  ],
+  "first_trial": {
+    "goal": "Archifyスキルをグローバルにインストールする",
+    "steps": [
+      "npx skills add tt-a1i/archify -g"
+    ],
+    "success_criteria": "スキルが正常にインストールされ、エージェント環境で使用可能になること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start",
+    "Choose the right diagram",
+    "Why Archify",
+    "How it works"
+  ],
+  "unconfirmed": [
+    "サポートされている環境やCLIツール以外の独自統合における詳細な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "431de2bd270eb98fcae83db3acfb4090e7bdf9a2",
+  "generated_at": "2026-09-11T08:21:05.045839+09:00"
+}

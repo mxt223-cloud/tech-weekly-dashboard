@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。",
+  "capabilities": [
+    {
+      "text": "ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する",
+      "evidence_section": "How Context Mode Solves It"
+    },
+    {
+      "text": "SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする",
+      "evidence_section": "How Context Mode Solves It"
+    },
+    {
+      "text": "LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える",
+      "evidence_section": "How Context Mode Solves It"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する",
+      "basis": "README明記",
+      "evidence_section": "The Problem"
+    },
+    {
+      "text": "コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる",
+      "basis": "README明記",
+      "evidence_section": "How Context Mode Solves It"
+    },
+    {
+      "text": "sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する",
+      "basis": "README明記",
+      "evidence_section": "Security"
+    }
+  ],
+  "first_trial": {
+    "goal": "セキュリティ権限設定を追加して権限ルールを適用する",
+    "steps": [
+      "プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する"
+    ],
+    "success_criteria": "設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "The Problem",
+    "How Context Mode Solves It",
+    "Security"
+  ],
+  "unconfirmed": [
+    "詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順",
+    "17のプラットフォームすべての個別設定方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b796169524473691594af24995d21ca94027f7c7",
+  "generated_at": "2026-09-11T08:21:13.273532+09:00"
+}

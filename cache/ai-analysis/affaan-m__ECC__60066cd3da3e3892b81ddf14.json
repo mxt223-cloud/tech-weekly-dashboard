@@ -1,0 +1,55 @@
+{
+  "summary_ja": "ECCは、Claude Code、Codex、Opencode、CursorなどのAIコーディングアシスタントやエージェントのパフォーマンス最適化を行うシステムです。スキル、本能、メモリ、セキュリティ、リサーチファーストの開発環境を提供します。",
+  "capabilities": [
+    {
+      "text": "OpenCodeのプラグインシステムにおける20種類以上のイベントやフックのサポート",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "GitHub Copilot Chatのネイティブな指示やプロンプトファイルシステムを活用したコーディング規約・セキュリティチェックの統合",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "破壊的なシェルコマンドを事前にブロックするGateGuardや、セキュリティ監査を行うAgentShieldなどの組み込みのガードレール",
+      "evidence_section": "Security"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "OpenCodeをリポジトリのルートディレクトリで実行し、プラグインや設定を利用する",
+      "basis": "README明記",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "VS CodeのGitHub Copilot Chat上で計画策定やTDD、セキュリティレビューなどのプロンプトを活用して開発効率を上げる",
+      "basis": "README明記",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "AgentShieldを用いてプロジェクトのセキュリティスキャンを実行する",
+      "basis": "README明記",
+      "evidence_section": "Security"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenCodeでのプラグインの利用確認",
+    "steps": [
+      "cd ECC",
+      "opencode"
+    ],
+    "success_criteria": "OpenCodeがリポジトリのルートで正常に起動し、設定が検出されること"
+  },
+  "evidence_sections": [
+    "GitHub Copilot support in depth",
+    "Security"
+  ],
+  "unconfirmed": [
+    "Claude Code以外の具体的な詳細な初期設定コマンド",
+    "詳細な前提条件や全環境共通のインストール手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9e4126dd3a969529aabef6620310affc082c8cf5",
+  "generated_at": "2026-09-11T08:20:58.355226+09:00"
+}

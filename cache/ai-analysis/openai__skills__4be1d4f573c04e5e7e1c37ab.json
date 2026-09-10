@@ -1,0 +1,42 @@
+{
+  "summary_ja": "Codex向けのスキル（手順やスクリプト、リソースのフォルダ）をカタログ化し、管理するためのリポジトリです。なお、このリポジトリは非推奨となっています。",
+  "capabilities": [
+    {
+      "text": "システムスキルはCodexの最新バージョンに自動的にインストールされます。",
+      "evidence_section": "Installing a skill"
+    },
+    {
+      "text": "厳選されたスキルや実験的スキルを `$skill-installer` を用いてインストールできます。",
+      "evidence_section": "Installing a skill"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "チームや個人が特定のタスクを再現可能な形で完了するための機能をパッケージ化して共有する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "Codex内でスキルインストラクターを使用して特定のスキルをインストールする",
+    "steps": [
+      "Codex内で $skill-installer gh-address-comments を実行する",
+      "Codexを再起動する"
+    ],
+    "success_criteria": "スキルがインストールされ、Codexで新しいスキルが有効になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installing a skill",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なスキルの詳細な内部実装やPythonコードの構造",
+    "リポジトリが非推奨になった正確な代替先プラグインの詳細手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c205d307226b98189c28cbcce6ff792cbb7b2d05",
+  "generated_at": "2026-09-11T08:21:20.022851+09:00"
+}

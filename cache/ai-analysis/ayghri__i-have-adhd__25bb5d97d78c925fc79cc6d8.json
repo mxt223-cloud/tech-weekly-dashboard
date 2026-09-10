@@ -1,0 +1,53 @@
+{
+  "summary_ja": "コーディングアシスタントの出力形式を改善し、結論や次に取るべきアクションを最初に提示することで、ADHDの特性を持つ人にも見やすく効率的な回答を作成するツールです。",
+  "capabilities": [
+    {
+      "text": "次に実行すべきアクションを最初に行う出力形式にする",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "マルチステップのタスクに番号を振って整理する",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "前置きや不要な挨拶、まとめの言葉を省略する",
+      "evidence_section": "The rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "長い前置きや解説を省き、すぐにコード修正やコマンド実行の手順を知りたいとき",
+      "basis": "README明記",
+      "evidence_section": "What changes"
+    },
+    {
+      "text": "手順を番号付きリストで段階的に分かりやすく提示させたいとき",
+      "basis": "README明記",
+      "evidence_section": "The rules"
+    }
+  ],
+  "first_trial": {
+    "goal": "i-have-adhdスキル/プラグインを導入して利用する",
+    "steps": [
+      "CLIプロンプトにインストール用の指示をコピーして貼り付けるか、INSTALL.mdを参照する",
+      "プラグインのインストール後、Claude Codeを再起動する",
+      "/i-have-adhdを再呼び出しする"
+    ],
+    "success_criteria": "スキルが正しくインストールされ、Claude Code上で呼び出し可能になること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it"
+  ],
+  "unconfirmed": [
+    "正確なインストールのためのCLIコマンド（リポジトリのAGENTS.mdやINSTALL.mdを確認する必要がある）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e56f9641bd903337197a5acd5e5422c3fa8055c0",
+  "generated_at": "2026-09-11T08:21:01.155657+09:00"
+}
