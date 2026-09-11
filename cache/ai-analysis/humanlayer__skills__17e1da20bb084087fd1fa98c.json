@@ -1,0 +1,51 @@
+{
+  "summary_ja": "HumanLayerが提供するClaude Code用のスキル集です。指示の遵守性を高めるためのCLAUDE.mdの書き換えや、Reactのプロパティ型の絞り込み、エージェント制御ループの構築など、様々な開発支援スキルを追加できます。",
+  "capabilities": [
+    {
+      "text": "改善された重要度ブロックを使用してCLAUDE.mdを書き換え、指示の遵守度を向上させる",
+      "evidence_section": "improve-claude-md"
+    },
+    {
+      "text": "Reactコンポーネントのプロパティ型を、テストやモックではなく実コードのパスに合わせて絞り込む",
+      "evidence_section": "narrow-react-prop-types"
+    },
+    {
+      "text": "図解やコードの形状スケッチ、HTML成果物を用いて現在のトピックを解説する",
+      "evidence_section": "show-me"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "CLAUDE.mdの指示に従わせやすくする",
+      "basis": "README明記",
+      "evidence_section": "improve-claude-md"
+    },
+    {
+      "text": "Storybookやテスト用のモックに依存しない正確なReactのプロパティ型定義にする",
+      "basis": "README明記",
+      "evidence_section": "narrow-react-prop-types"
+    }
+  ],
+  "first_trial": {
+    "goal": "npxコマンドを使用して特定のスキルをプロジェクトに追加する",
+    "steps": [
+      "npx skills add humanlayer/skills --skill SKILLNAME"
+    ],
+    "success_criteria": "指定したスキルが正常にプロジェクトに追加されること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "improve-claude-md",
+    "narrow-react-prop-types",
+    "show-me"
+  ],
+  "unconfirmed": [
+    "追加可能なスキルの全一覧や詳細な動作環境",
+    "各スキルを実行する際の前提条件や必要なAPIキー"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "09de722cc34687354845241da1f702409ae6e1a3",
+  "generated_at": "2026-09-12T08:29:38.494529+09:00"
+}

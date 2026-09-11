@@ -1,0 +1,51 @@
+{
+  "summary_ja": "Archifyは、コードベースやシステムの説明文をチャット上で洗練されたインタラクティブなシステム図へと変換する、Node.jsベースのレンダリングおよび検証システムです。",
+  "capabilities": [
+    {
+      "text": "5種類の図、4種類のプリセット、ダーク・ライトテーマ、ブランドマーク、有限アニメーションを備えたHTMLおよびSVGの生成",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "検証済みスナップショット2件のBefore / Delta / After比較による変更点のレビュー",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "自己完結型のHTMLに加え、PNG、SVG、WebM、1200×630のシェアカードのエクスポート",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ブラウザからAPI、Redisキャッシュ、PostgreSQLフォールバックの流れを描画する",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "リポジトリを分析し、8〜12個の主要コンポーネント、プライマリパス、外部依存関係、信頼境界を持つ上位のランタイムアーキテクチャ図を作成する",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "Redisの追加や認証の左側への移動など、チャット内で焦点を絞った修正を行う",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "Archifyスキルをグローバルにインストールする",
+    "steps": [
+      "npx skills add tt-a1i/archify -g"
+    ],
+    "success_criteria": "コマンドが正常に実行され、スキルが追加されること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "30100bc6d3724f04e0ee33d56b6f4caa2c8a9ddf",
+  "generated_at": "2026-09-12T08:29:42.178126+09:00"
+}
