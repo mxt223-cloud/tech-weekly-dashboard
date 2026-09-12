@@ -1,0 +1,52 @@
+{
+  "summary_ja": "gods-eye-view は、ブラウザ上で動作するフォトリアルな3D地球儀を用いたスパイ衛星シミュレータ風の空間情報ツールです。実際の公開データを用いて、航空機、船舶、衛星、地震、交通状況、ライブカメラなどをリアルタイムで追跡できます。",
+  "capabilities": [
+    {
+      "text": "フォトリアルな3D地球儀上で、航空機、船舶、衛星、地震、交通、公開カメラなどのライブデータを表示・追跡できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "リアルタイムAIエージェントによるハンズフリーの音声コントロールや、音声による世界へのアノテーション（境界ポリゴン、マーク、ルート）が可能。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コックピット視点、250km圏内の連絡先ロスター、クリックによる追跡、3D格納庫、GLSLセンサーによる現実のリスキン、検出オーバーレイ、ミリタリーHUDなどの機能を備える。",
+      "evidence_section": "🎛️ What This Thing Does"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "世界中の航空機、船舶、衛星、地震、ライブカメラなどの公開信号を1つの地球儀上で横断的に追跡・確認する。",
+      "basis": "README明記",
+      "evidence_section": "🌍 Why This Exists"
+    },
+    {
+      "text": "カスタムのデータソースやモジュールを追加して、独自の空間情報アプリケーションやシミュレーションに拡張する。",
+      "basis": "提案",
+      "evidence_section": "🌍 Why This Exists"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境で開発サーバーを起動し、アプリケーションを動作させる。",
+    "steps": [
+      "必要に応じて .env にキーを設定するか環境変数として渡す（OPENAI_API_KEY=\"…\" AISSTREAM_API_KEY=\"…\" など）。",
+      "npm run dev -- --host localhost --port 4173 を実行する。"
+    ],
+    "success_criteria": "ローカルの開発サーバーが指定のホストとポートで起動し、ブラウザでアプリケーションにアクセスできること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🌍 Why This Exists",
+    "🎛️ What This Thing Does",
+    "⚡ Quick Start"
+  ],
+  "unconfirmed": [
+    "READMEの途中で文章が切れている「Global Context」の詳細な機能",
+    "ローカル実行時に必要な正確なパッケージマネージャのインストール手順（npm install等の有無）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4135028b558cccca9a0a7b26c9f72735bbd3399d",
+  "generated_at": "2026-09-13T08:12:11.621099+09:00"
+}
