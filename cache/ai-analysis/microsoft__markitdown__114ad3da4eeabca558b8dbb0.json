@@ -1,0 +1,65 @@
+{
+  "summary_ja": "MarkItDownは、様々なファイルやオフィス文書をLLMやテキスト分析パイプライン向けのMarkdownに変換するための軽量なPythonユーティリティです。",
+  "capabilities": [
+    {
+      "text": "PDF、PowerPoint、Word、Excel、画像、音声、HTML、テキスト形式、ZIPファイル、YouTube URL、EPubなどの多様なファイル形式からMarkdownへの変換をサポートしています。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コマンドラインインターフェイス（CLI）を利用してファイルや標準入力から変換を実行できます。",
+      "evidence_section": "Command-Line"
+    },
+    {
+      "text": "Azure Document IntelligenceやAzure Content Understandingを利用した高度なクラウドベースの変換をサポートしています。",
+      "evidence_section": "Azure Content Understanding"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "LLMやテキスト分析パイプラインに入力するためのテキストとして、文書の構造を保持したままMarkdownに変換する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "音声や動画の文字起こしや解析結果をMarkdown形式で取得する。",
+      "basis": "README明記",
+      "evidence_section": "Azure Content Understanding"
+    },
+    {
+      "text": "Pythonスクリプトからライブラリとして呼び出し、自動化された処理フローに組み込む。",
+      "basis": "提案",
+      "evidence_section": "Python API"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドラインを使用してPDFファイルをMarkdownに変換する",
+    "steps": [
+      "pip install 'markitdown[all]'",
+      "markitdown path-to-file.pdf > document.md"
+    ],
+    "success_criteria": "指定したPDFファイルの内容がMarkdown形式でファイルに出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why Markdown?",
+    "Prerequisites",
+    "Installation",
+    "Usage",
+    "Command-Line",
+    "Optional Dependencies",
+    "Plugins",
+    "Azure Content Understanding",
+    "Azure Document Intelligence",
+    "Python API",
+    "Docker",
+    "Contributing",
+    "Security Considerations",
+    "Trademarks"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5c5a0ccaa51f8f4309f50f3394d75ab10232c1ac",
+  "generated_at": "2026-09-14T08:22:18.846961+09:00"
+}
