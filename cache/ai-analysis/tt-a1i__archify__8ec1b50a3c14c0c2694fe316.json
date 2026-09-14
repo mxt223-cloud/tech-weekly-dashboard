@@ -1,0 +1,53 @@
+{
+  "summary_ja": "Archifyは、コードベースやシステムの説明をブラウザ等でのチャットから直接、洗練されたインタラクティブなシステム図に変換するNode.jsのレンダリングおよび検証システムです。",
+  "capabilities": [
+    {
+      "text": "5種類の図、4つのプリセット、ダーク/ライトテーマ、ブランドマーク、有限なモーションに対応したHTML/SVG出力を提供する",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "検証済みスナップショットの変更前・差分・変更後の比較を通じて、追加・削除・変更・移動・経路変更された事実を正確にレビューできる",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "自己完結型のHTMLに加え、PNG、SVG、WebM、共有カード形式でのエクスポートが可能である",
+      "evidence_section": "Archify"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コードベースやシステム説明から、インタラクティブなシステムマップをチャット内で直接作成する",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "マージ前にアーキテクチャの変更点を比較・検証する",
+      "basis": "README明記",
+      "evidence_section": "Archify"
+    },
+    {
+      "text": "リポジトリがなくても、チャット上でシステムの説明からダイアグラムを描画する",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "Archifyをグローバルにインストールする",
+    "steps": [
+      "npx skills add tt-a1i/archify -g"
+    ],
+    "success_criteria": "パッケージが正しくインストールされ、エージェント環境で利用可能になること"
+  },
+  "evidence_sections": [
+    "Archify",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "自動Mermaid解析、汎用自動レイアウト、ホスト型共有、WYSIWYG編集の非対応に関する詳細な仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b1ef38e4552354d5562c74c26426aefd8c5edbe7",
+  "generated_at": "2026-09-15T08:57:55.540729+09:00"
+}

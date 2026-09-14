@@ -1,0 +1,53 @@
+{
+  "summary_ja": "ayghri/i-have-adhd は、コーディングアシスタントの出力から前置きや無駄な余談を排除し、結論と実行手順を最初から簡潔に提示するためのスキルです。",
+  "capabilities": [
+    {
+      "text": "最初のアクションを最優先で提示する。",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "複数ステップの作業に番号を振る。",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "余談や挨拶、まとめの言葉を抑制する。",
+      "evidence_section": "The rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングアシスタントからの長々とした回答や前置きを省き、すぐにコード修正やコマンド実行に取り掛かる。",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "手順を番号付きリストで整理し、次に何をすべきかを明確にする。",
+      "basis": "README明記",
+      "evidence_section": "The rules"
+    }
+  ],
+  "first_trial": {
+    "goal": "cliプロンプトにインストールコマンドをコピー＆ペーストする",
+    "steps": [
+      "Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions."
+    ],
+    "success_criteria": "スキルまたはプラグインが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it",
+    "Credits",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な前提条件や対応しているClaude以外のコーディングアシスタントの全リスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ade33c1c6ec46d8e45790e89dea567ec2618cbef",
+  "generated_at": "2026-09-15T08:57:44.301598+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "summary_ja": "ponytailは、AIエージェントのコード生成量を削減し、必要最小限で安全なコードを書かせるためのツールです。過剰な構築を防ぎ、コード量やコスト、レイテンシを削減します。",
+  "capabilities": [
+    {
+      "text": "AIエージェントの処理において、不要な過剰ビルドを避けてコード量を減らす",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "セキュリティ、エラー処理、アクセシビリティを維持したまま、効率的な最小限のコードを生成する",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "プラグインや拡張機能を通じて、Claude Code、Codex、GitHub Copilot CLIなどの各種エージェントに対応する",
+      "evidence_section": "Install"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIに日付選択ピッカーの実装を依頼した際、不要なライブラリのインストールやラッパーコンポーネントの作成をせず、ネイティブのinput要素を使うようにする",
+      "basis": "README明記",
+      "evidence_section": "Before / after"
+    },
+    {
+      "text": "差分のコードレビューを行い、過剰エンジニアリング部分の削除リストを提示させる",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "リポジトリ全体をスキャンし、過剰エンジニアリングの監査を行う",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeでponytailプラグインをインストールする",
+    "steps": [
+      "/plugin marketplace add DietrichGebert/ponytail",
+      "/plugin install ponytail@ponytail"
+    ],
+    "success_criteria": "プラグインがインストールされ、有効化されること"
+  },
+  "evidence_sections": [
+    "Before / after",
+    "How it works",
+    "Install",
+    "Commands"
+  ],
+  "unconfirmed": [
+    "サポートされている環境以外のカスタムAIエージェント環境での動作",
+    "特定の言語やフレームワークにおける個別の適用限界"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6b25e496dbb467bd4d8ed065ce10e13992790591",
+  "generated_at": "2026-09-15T08:57:51.632150+09:00"
+}

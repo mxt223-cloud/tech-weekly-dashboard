@@ -1,0 +1,57 @@
+{
+  "summary_ja": "bilawalsidhu/gods-eye-view は、ブラウザ上で動作するリアルタイムな空間インテリジェンスおよびフォトリアルな3D地球儀シミュレーターです。航空機、船舶、衛星、地震、交通、ライブカメラなどの公開データを統合し、音声によるハンズフリー操作やAIエージェントによる制御機能を備えています。",
+  "capabilities": [
+    {
+      "text": "フォトリアルな3D地球儀上でライブの航空機、船舶、衛星、地震、交通、公開カメラを追跡できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "リアルタイムAIエージェントによるハンズフリー音声コントロールに対応している",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コックピット視点、コンタクト一覧、クリック追跡、音声ホワイトボード、3D格納庫、GLSLセンサーの外観変更、検出オーバーレイ、ミリタリーHUDなどの機能を持つ",
+      "evidence_section": "🎛️ What This Thing Does"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "世界のリアルタイムな飛行機、船舶、衛星、地震、交通の動きを一つの地球儀上で俯瞰し、特定の対象を追跡する",
+      "basis": "README明記",
+      "evidence_section": "🌐 Why This Exists"
+    },
+    {
+      "text": "音声コマンドを使用して世界地図上に注釈、境界線ポリゴン、マーク、ルートを描き込む",
+      "basis": "README明記",
+      "evidence_section": "🎛️ What This Thing Does"
+    },
+    {
+      "text": "ブラウザ上でオープンソースの空間インテリジェンスツールやシミュレーターを構築・拡張する",
+      "basis": "README明記",
+      "evidence_section": "🌐 Why This Exists"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境で開発サーバーを起動してアプリケーションを動かす",
+    "steps": [
+      "必要に応じて .env ファイルを作成するか、環境変数として API キーを設定する",
+      "npm run dev -- --host localhost --port 4173 を実行する"
+    ],
+    "success_criteria": "ローカル環境でアプリケーションが起動し、ブラウザからアクセスできるようになること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "🌐 Why This Exists",
+    "🎛️ What This Thing Does",
+    "⚡ Quick Start"
+  ],
+  "unconfirmed": [
+    "詳細な依存関係のインストール手順（npm install 等の記載がREADMEの抜粋部分にないため）",
+    "具体的なAPIキー以外の詳細な環境構築手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "af5121e2c6370096679051c9608da7558d824b4b",
+  "generated_at": "2026-09-15T08:57:47.741211+09:00"
+}
