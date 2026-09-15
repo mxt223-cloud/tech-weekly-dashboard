@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Superpowersは、コーディングエージェント向けのソフトウェア開発方法論およびコンポーザブルなスキル群のフレームワークです。ブレインストーミングやテスト駆動開発（TDD）、サブエージェント駆動開発などのワークフローを自動的にトリガーし、エージェントの自律的な開発をサポートします。",
+  "capabilities": [
+    {
+      "text": "ブレインストーミングや設計の段階的検証、実装計画の作成、テスト駆動開発（TDD）などのスキルを提供します。",
+      "evidence_section": "What's Inside"
+    },
+    {
+      "text": "Claude CodeやAntigravity、Cursor、Devin CLIなど、多様なコーディングエージェントやハーネスに対応しています。",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "サブエージェントを用いた並行開発や二段階レビュー（仕様適合性とコード品質）を実行できます。",
+      "evidence_section": "The Basic Workflow"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントに実装を始める前にアイデアを質問やブレインストーミングで洗練させ、詳細な仕様書や実装計画を作成させる。",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "厳格なレッド・グリーン・リファクタリングのサイクル（TDD）に則ってテストファーストでコードを実装させる。",
+      "basis": "README明記",
+      "evidence_section": "The Basic Workflow"
+    },
+    {
+      "text": "サブエージェントをディスパッチしてタスクを実行させ、作業の検査やレビューを継続的に行いながら自律的に開発を進める。",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code向けにSuperpowersプラグインをインストールする",
+    "steps": [
+      "Anthropicの公式マーケットプレイスからプラグインをインストールするコマンドを実行する",
+      "あるいはSuperpowersマーケットプレイスを登録してプラグインをインストールする"
+    ],
+    "success_criteria": "Claude CodeでSuperpowersのプラグインが正常にインストールされ、セッション開始時に機能が有効化されること"
+  },
+  "evidence_sections": [
+    "How it works",
+    "Getting Started",
+    "The Basic Workflow",
+    "What's Inside"
+  ],
+  "unconfirmed": [
+    "商用サービス（Commercial Services）における具体的なサポート内容や料金体系の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "09a91c6d03cfa3d874c5c33b6f8cc3d0b2d89645",
+  "generated_at": "2026-09-16T08:36:49.047329+09:00"
+}

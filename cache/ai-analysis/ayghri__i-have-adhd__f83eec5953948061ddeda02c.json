@@ -1,0 +1,58 @@
+{
+  "summary_ja": "コーディングアシスタントの出力形式をADHDフレンドリーに調整し、結論ファーストで無駄な前置きや挨拶を省いた明確な指示を提供するためのスキルです。",
+  "capabilities": [
+    {
+      "text": "コーディングアシスタントの回答において、最初に結論や次のアクションを提示させる。",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "複数ステップのタスクに番号を振ってわかりやすく整理する。",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "挨拶や前置き、結びの言葉などの不要な冗長表現を抑制する。",
+      "evidence_section": "The rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングアシスタントからの長文の回答や無駄な挨拶を排除し、やるべきことをすぐに把握したいとき。",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "複数手順の修正内容やコマンド実行手順を番号付きリストで簡潔に受け取りたいとき。",
+      "basis": "README明記",
+      "evidence_section": "What changes"
+    },
+    {
+      "text": "独自にルールをカスタマイズして、自分好みの出力に調整したスキルを利用したいとき。",
+      "basis": "README明記",
+      "evidence_section": "Tune it"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIプロンプトを使ってi-have-adhdスキルをインストールする",
+    "steps": [
+      "CLIプロンプトにインストールコマンドをコピーして貼り付ける"
+    ],
+    "success_criteria": "i-have-adhdスキルが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it",
+    "Credits",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な対応AIモデルやプラットフォームの全一覧"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "31f5abfaf977119e15ae05230fd67b080e2f5748",
+  "generated_at": "2026-09-16T08:36:37.850218+09:00"
+}
