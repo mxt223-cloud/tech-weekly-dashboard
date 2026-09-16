@@ -1,0 +1,61 @@
+{
+  "summary_ja": "Tencent/WeKnoraは、エンタープライズ向けの文書理解、セマンティック検索、自律的な推論を実現するオープンソースのLLM知識基盤フレームワークです。RAGベースの迅速なQ&A、ReActエージェント、Wikiモードなどを備えています。",
+  "capabilities": [
+    {
+      "text": "RAGベースの迅速なQ&A機能による日々の情報検索",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "ReActエージェントを用いた自律的な検索、MCPツール、ウェブ検索のオーケストレーション",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "エージェントが未加工の文書を相互リンク付きのマークダウンWikiに変換するWikiモード",
+      "evidence_section": "📌 Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "企業内の膨大な文書を対象としたセマンティック検索とRAGベースのQ&A",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "複数ステップの複雑なタスクを自動実行するためのReActエージェントの活用",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "未加工の文書から自己維持型のインタラクティブなWiki知識ベースの自動構築",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker Composeを使用してローカル環境でWeKnoraを起動する",
+    "steps": [
+      "git clone https://github.com/Tencent/WeKnora.git",
+      "cd WeKnora",
+      "cp .env.example .env",
+      "docker compose pull",
+      "docker compose up -d"
+    ],
+    "success_criteria": "ブラウザで http://localhost にアクセスできること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "📌 Overview",
+    "🧩 Feature Overview",
+    "🚀 Getting Started",
+    "🔒 Security Notice"
+  ],
+  "unconfirmed": [
+    "商用利用における具体的なライセンス制限の詳細",
+    "将来追加予定のデータソースの具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7ffb788a430e7a657cddbaa15350e66f0b0dbb68",
+  "generated_at": "2026-09-17T08:45:17.159836+09:00"
+}

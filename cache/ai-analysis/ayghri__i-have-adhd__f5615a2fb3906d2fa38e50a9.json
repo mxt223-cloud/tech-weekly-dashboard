@@ -1,0 +1,58 @@
+{
+  "summary_ja": "コーディングアシスタントの出力形式を調整し、結論を先に述べて要点を分かりやすく整理するスキルです。",
+  "capabilities": [
+    {
+      "text": "結論や次のアクションを最初に出力する機能",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "複数ステップの作業を番号付きリストで整理する機能",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "余分な挨拶や回りくどい表現を省く機能",
+      "evidence_section": "What it does"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングアシスタントからの返答が長文化し、結論が見つけにくいときに要点をすばやく把握する",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "作業手順を番号付きの明確なステップで提示させ、次に実行すべきアクションを明確にする",
+      "basis": "README明記",
+      "evidence_section": "What changes"
+    },
+    {
+      "text": "スキルをカスタマイズして自分好みのルールに調整する",
+      "basis": "README明記",
+      "evidence_section": "Tune it"
+    }
+  ],
+  "first_trial": {
+    "goal": "i-have-adhdスキルをCLIプロンプトからインストールする",
+    "steps": [
+      "CLIプロンプトに「Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.」を入力して実行する"
+    ],
+    "success_criteria": "i-have-adhdスキルまたはプラグインがインストールされること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it",
+    "Credits",
+    "License"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのAIコーディングアシスタントの種類（Claude以外のツールで利用できるかどうか）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5cdc1973077d646995f0f600fbb1d4231a871330",
+  "generated_at": "2026-09-17T08:45:12.366884+09:00"
+}
