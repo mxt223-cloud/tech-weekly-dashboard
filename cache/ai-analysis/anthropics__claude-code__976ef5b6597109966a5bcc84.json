@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Claude Codeは、ターミナル上で動作するエージェント型のコーディングツールです。自然言語のコマンドを使って、コードベースの理解、ルーチン作業の実行、複雑なコードの解説、gitワークフローの処理を行い、より迅速なコーディングを支援します。",
+  "capabilities": [
+    {
+      "text": "ターミナル上で自然言語コマンドを用いてコードベースを理解し、コード作成を支援する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "プラグイン機能により、カスタムコマンドやエージェントで機能を拡張できる。",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "/bugコマンドを使用して、ツール内から直接不具合の報告を行える。",
+      "evidence_section": "Reporting Bugs"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ルーチンタスクの実行や複雑なコードの解説を自然言語で行わせる。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "gitワークフローの処理を自然言語の指示で自動化・効率化する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeのインストールと起動を確認する",
+    "steps": [
+      "MacOS/Linuxの場合は curl -fsSL https://claude.ai/install.sh | bash または brew install --cask claude-code を実行する",
+      "プロジェクトディレクトリに移動する",
+      "claude コマンドを実行する"
+    ],
+    "success_criteria": "プロジェクトディレクトリで claude コマンドが正常に起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Get started",
+    "Plugins",
+    "Reporting Bugs",
+    "Connect on Discord",
+    "Data collection, usage, and retention"
+  ],
+  "unconfirmed": [
+    "プラグインディレクトリ内の具体的なカスタムコマンドやエージェントの詳細内容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "80aa75edf74a5f9e1269811b4e8b5852be91e66e",
+  "generated_at": "2026-09-18T08:37:35.972253+09:00"
+}

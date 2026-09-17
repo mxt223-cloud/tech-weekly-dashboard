@@ -1,0 +1,62 @@
+{
+  "summary_ja": "AIコーディングエージェント向けに、シニアエンジニアが用いるワークフロー、品質ゲート、ベストプラクティスを構造化したプロダクション品質のエンジニアリングスキル集です。",
+  "capabilities": [
+    {
+      "text": "開発ライフサイクル全体に対応する9つのスラッシュコマンド（/spec、/plan、/build、/test、/constraints、/review、/webperf、/code-simplify、/ship）を提供します。",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "仕様策定やテスト駆動開発、セキュリティ、パフォーマンス最適化などを含む合計25のスキルが含まれています。",
+      "evidence_section": "All 24 Skills"
+    },
+    {
+      "text": "Claude Code、Cursor、Codex、GitHub Copilot、Clineなど70以上のエージェントへスキルCLIや各ツールのネイティブ統合を用いてインストールできます。",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントに仕様書作成からタスク分解、インクリメンタルな実装、テスト、レビュー、デプロイまでの開発ライフサイクルを厳格に実行させる。",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "要望が曖昧な場合に、1問ずつのインタビューを通じてユーザーの真の要件を約95%の確信度まで引き出す。",
+      "basis": "README明記",
+      "evidence_section": "All 24 Skills"
+    },
+    {
+      "text": "コードのマージ前にファイバー軸レビューや複雑性の削減、セキュリティ強化を行うことでコード品質を担保する。",
+      "basis": "README明記",
+      "evidence_section": "All 24 Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "スキルCLIを使用してすべてのスキルをインストールする",
+    "steps": [
+      "npx skills add addyosmani/agent-skills"
+    ],
+    "success_criteria": "すべての25スキルがエージェントにインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Commands",
+    "Quick Start",
+    "All 24 Skills",
+    "Agent Personas",
+    "Reference Checklists",
+    "How Skills Work",
+    "Project Structure",
+    "Why Agent Skills?",
+    "How it compares",
+    "Contributing",
+    "Team",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "aa6872d677ef7c8eab7d00a6fdca106ffa9502b0",
+  "generated_at": "2026-09-18T08:37:33.399044+09:00"
+}
