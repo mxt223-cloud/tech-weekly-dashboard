@@ -1,0 +1,53 @@
+{
+  "summary_ja": "addyosmani/agent-skillsは、AIコーディングエージェント向けに設計された本番グレードのエンジニアリングスキルおよび開発ライフサイクルに沿ったコマンドを提供するリポジトリです。シニアエンジニアのワークフローや品質ゲートをコード化し、エージェントが各開発フェーズで一貫して適用できるようにします。",
+  "capabilities": [
+    {
+      "text": "開発ライフサイクルに沿った9つのスラッシュコマンド（/spec, /plan, /build, /test, /constraints, /review, /webperf, /code-simplify, /ship）による適切なスキルの自動アクティベーション",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "要件定義、プランニング、実装、テスト、コードレビュー、セキュリティ、パフォーマンス最適化などを含む全25種類のスキルの提供",
+      "evidence_section": "All 25 Skills"
+    },
+    {
+      "text": "Claude Code、Cursor、Gemini CLI、Copilotなどの多様なエージェントやツール向けのネイティブ統合およびセットアップ手順のサポート",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングエージェントに仕様書やテスト駆動開発などの厳格なワークフローを強制させ、プロダクション品質のコードを安定して生成させる",
+      "basis": "README明記",
+      "evidence_section": "Why Agent Skills?"
+    },
+    {
+      "text": "/specなどのコマンドやinterview-meスキルを使用して、曖昧な要件を整理し高精度なPRD（製品要件文書）を作成する",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "コードマージ前に5軸レビューや複雑性の削減、セキュリティ脆弱性の防止などの品質ゲートを適用する",
+      "basis": "README明記",
+      "evidence_section": "All 25 Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "skills CLIを使用してリポジトリの全スキルをエージェントにインストールする",
+    "steps": [
+      "npx skills add addyosmani/agent-skills"
+    ],
+    "success_criteria": "全25スキルのインストールが正常に完了し、エージェントで利用可能になること"
+  },
+  "evidence_sections": [
+    "Commands",
+    "Quick Start",
+    "All 25 Skills",
+    "Why Agent Skills?"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6361def414ade46622e6cd527d1faeea2b234224",
+  "generated_at": "2026-09-19T08:30:29.293575+09:00"
+}

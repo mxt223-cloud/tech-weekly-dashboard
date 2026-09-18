@@ -1,0 +1,58 @@
+{
+  "summary_ja": "Worktrunkは、Gitのワークツリー管理を効率化し、複数のAIエージェントを並行して動かすワークフローを容易にするためのCLIツールです。",
+  "capabilities": [
+    {
+      "text": "ブランチ名を指定してワークツリーの切り替えや作成、削除、一覧表示などのコアコマンドを提供します。",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    },
+    {
+      "text": "作成時やマージ前後などに任意のコマンドを実行できるフック機能や、差分からのLLMコミットメッセージ生成機能を備えています。",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    },
+    {
+      "text": "対応するファイルシステム上で、ビルドキャッシュを複数のワークツリー間で共有できます。",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude CodeなどのAIエージェントを複数のワークツリーで同時に並行実行させ、効率的に開発を進める。",
+      "basis": "README明記",
+      "evidence_section": "Context: git worktrees"
+    },
+    {
+      "text": "プルリクエストのブランチへ直接ジャンプしてレビューや確認を行う。",
+      "basis": "README明記",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    },
+    {
+      "text": "ローカルでのマージやスクワッシュ、クリーンアップをワンコマンドでまとめて実行する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "新しい機能用のワークツリーを作成して切り替える",
+    "steps": [
+      "wt switch --create feature-auth"
+    ],
+    "success_criteria": "新しく作成されたブランチとワークツリーに切り替わり、成功メッセージが表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Context: git worktrees",
+    "Worktrunk makes git worktrees as easy as branches",
+    "Install",
+    "Quick start",
+    "Next steps",
+    "Contributing"
+  ],
+  "unconfirmed": [
+    "詳細な設定ファイルの詳細構文や全オプションの網羅的仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "578d36a7afdf0121a908833cca266b18a02ff462",
+  "generated_at": "2026-09-19T08:30:32.261827+09:00"
+}

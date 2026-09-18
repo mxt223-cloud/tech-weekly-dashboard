@@ -1,0 +1,57 @@
+{
+  "summary_ja": "anthropic/knowledge-work-pluginsは、Claudeを専門業務特化型のアシスタントに変えるためのオープンソースプラグイン集です。Claude CoworkおよびClaude Codeで利用でき、スキル、コネクター、スラッシュコマンド、サブエージェントをバンドルしてタスクを効率化します。",
+  "capabilities": [
+    {
+      "text": "ロール、チーム、企業に合わせた専門的なプラグイン（生産性向上、営業、カスタマーサポート、製品管理、マーケティング、法務、財務、データ分析、エンタープライズ検索、バイオ研究、プラグイン管理など11種類）を提供する。",
+      "evidence_section": "Plugin Marketplace"
+    },
+    {
+      "text": "MCPサーバーを介してSlack、Notion、Asana、Snowflakeなどの外部ツールやデータソースと接続する。",
+      "evidence_section": "How Plugins Work"
+    },
+    {
+      "text": "マークダウンとJSONによるファイルベースの構造を採用し、コードやインフラストラクチャなしでカスタムプラグインの作成や既存プラグインのカスタマイズができる。",
+      "evidence_section": "Making Them Yours"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "営業活動において、見込み客の調査、コールの準備、パイプラインの確認、アウトリーチの下書き、競合バトルカードの作成を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugin Marketplace"
+    },
+    {
+      "text": "財務業務において、仕訳の準備、勘定科目の消込、財務諸表の作成、差異分析、決算管理、監査支援を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugin Marketplace"
+    },
+    {
+      "text": "データ分析において、クエリの記述、可視化、データセットの解釈、統計分析、ダッシュボードの構築を行う。",
+      "basis": "README明記",
+      "evidence_section": "Plugin Marketplace"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeを使用してマーケットプレイスを追加し、特定のプラグインをインストールする",
+    "steps": [
+      "claude plugin marketplace add anthropics/knowledge-work-plugins",
+      "claude plugin install sales@knowledge-work-plugins"
+    ],
+    "success_criteria": "指定したプラグインがClaude Code環境に正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Why Plugins",
+    "Plugin Marketplace",
+    "Getting Started",
+    "How Plugins Work",
+    "Making Them Yours"
+  ],
+  "unconfirmed": [
+    "プラグインごとの詳細な内部実装コードや個別のコネクター設定の全詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
+  "generated_at": "2026-09-19T08:30:35.504890+09:00"
+}
