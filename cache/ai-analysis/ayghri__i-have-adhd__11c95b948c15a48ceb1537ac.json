@@ -1,0 +1,58 @@
+{
+  "summary_ja": "ayghri/i-have-adhdは、コーディングエージェントの出力形式を整理し、結論を先に述べるADHDフレンドリーな応答にするためのスキル・プラグインです。",
+  "capabilities": [
+    {
+      "text": "最初に行うべきアクションを先頭に配置する",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "複数の手順を番号付きリストで提示する",
+      "evidence_section": "The rules"
+    },
+    {
+      "text": "挨拶や無駄な前置き、まとめ、締めくくりの言葉を排除する",
+      "evidence_section": "The rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングアシスタントの回答から前置きや余計な解説を省き、すぐに実行すべき内容を知りたいとき",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "手順や修正内容を番号付きのステップで分かりやすく受け取りたいとき",
+      "basis": "README明記",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "ルールをカスタムするために独自のルールに変更・再インストールしたいとき",
+      "basis": "README明記",
+      "evidence_section": "Tune it"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIプロンプトを使用してスキルをインストールする",
+    "steps": [
+      "CLIプロンプトにインストールコマンドをコピー＆ペーストする"
+    ],
+    "success_criteria": "スキルが正しくインストールされること"
+  },
+  "evidence_sections": [
+    "Install",
+    "What it does",
+    "What changes",
+    "The rules",
+    "Tune it",
+    "Credits",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な内部実装の仕組みやコードの動作詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6acecf9600640c93503df0ed178a220d476e1197",
+  "generated_at": "2026-09-20T08:24:04.851390+09:00"
+}

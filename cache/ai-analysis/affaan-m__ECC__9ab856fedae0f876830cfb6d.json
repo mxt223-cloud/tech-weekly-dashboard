@@ -1,0 +1,54 @@
+{
+  "summary_ja": "ECCは、Claude CodeやOpenCode、GitHub Copilotなどの複数の開発支援AIエージェント向けに、スキルやメモリ、セキュリティなどのパフォーマンス最適化機能を提供するシステムです。",
+  "capabilities": [
+    {
+      "text": "OpenCodeのプラグインシステムによるフック対応（tool.execute.beforeやsession.createdなどのイベント処理）を提供します。",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "破壊的なシェルコマンド（rmや強制git checkoutなど）を実行前にブロックする組み込みのガードレール機能を備えています。",
+      "evidence_section": "Security"
+    },
+    {
+      "text": "VS CodeのGitHub Copilot Chat向けに、TDDやセキュリティレビュー、計画策定などの専用プロンプトや指示ファイルを提供します。",
+      "evidence_section": "GitHub Copilot support in depth"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "OpenCode環境にECCのプラグインをnpm経由でインストールし、フックやイベント処理を活用する。",
+      "basis": "README明記",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "VS CodeのCopilot Chat上でセキュリティレビュープロンプトを呼び出し、OWASPに沿った詳細なセキュリティ分析を行う。",
+      "basis": "README明記",
+      "evidence_section": "GitHub Copilot support in depth"
+    },
+    {
+      "text": "AgentShieldを使用してプロジェクトのセキュリティスキャンを実行し、エージェントやシークレットの安全性を監査する。",
+      "basis": "README明記",
+      "evidence_section": "Security"
+    }
+  ],
+  "first_trial": {
+    "goal": "AgentShieldを使用してプロジェクトのスキャンを実行する",
+    "steps": [
+      "agentshield scan --path ."
+    ],
+    "success_criteria": "スキャンが正常に実行され、セキュリティ監査結果が出力されること"
+  },
+  "evidence_sections": [
+    "GitHub Copilot support in depth",
+    "Security"
+  ],
+  "unconfirmed": [
+    "Claude Code環境における詳細なコマンドラインオプションや個別のエージェント設定の全容",
+    "HermesオペレーターやMCPインベントリの具体的な内部実装詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f9d202b28f3f5ae7e5f28bd7d3443f27fc804ad8",
+  "generated_at": "2026-09-20T08:24:00.768663+09:00"
+}
