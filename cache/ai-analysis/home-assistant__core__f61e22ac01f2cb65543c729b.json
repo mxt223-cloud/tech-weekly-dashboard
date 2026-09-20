@@ -1,0 +1,41 @@
+{
+  "summary_ja": "Home Assistantは、ローカル制御とプライバシーを最優先にしたオープンソースのホームオートメーションプラットフォームです。Raspberry Piやローカルサーバーでの実行に最適化されています。",
+  "capabilities": [
+    {
+      "text": "ローカル制御とプライバシーを優先したホームオートメーションを提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "モジュール式のアプローチにより、他のデバイスやアクションへのサポートを容易に実装できる",
+      "evidence_section": "Featured integrations"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Raspberry Piやローカルサーバー上でホームオートメーションシステムを実行する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "公式サイトの案内を確認してインストールを開始する",
+    "steps": [
+      "home-assistant.ioにアクセスする",
+      "インストール手順を確認する"
+    ],
+    "success_criteria": "公式サイトからインストール手順やデモを確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Featured integrations"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやソースコード上の詳細な機能",
+    "標準でサポートされている全デバイスやインテグレーションの一覧"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "85c632f7eb1d1861911c735077699c29840ff728",
+  "generated_at": "2026-09-21T08:23:19.498077+09:00"
+}
