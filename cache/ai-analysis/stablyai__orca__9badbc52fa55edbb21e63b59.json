@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Orcaは、複数の並行AIコーディングエージェントを管理・制御するためのAIオーケストレーター（ADE）です。デスクトップ、モバイル、リモート環境で動作し、独立したgitワークツリー上で様々なエージェントを並行して実行できます。",
+  "capabilities": [
+    {
+      "text": "複数のAIコーディングエージェントを、それぞれ独立したgitワークツリー上で並行実行し、結果を比較して勝者を選択できる。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "モバイルアプリ（iOS / Android）を介して、エージェントの完了通知の受け取りや、外出先からの指示出しが行える。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Claude Code、Codexをはじめとするターミナル上で動作する任意のCLIエージェントと連携できる。",
+      "evidence_section": "Supported Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "1つのプロンプトを複数のAIエージェントに同時に処理させ、それぞれの結果を比較して最適なものをマージする。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "外出先やデスクから離れた場所からでも、モバイル端末を使ってエージェントの作業進捗を確認し、フォローアップの指示を送る。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Chromiumウィンドウ上のUI要素をクリックし、HTML、CSS、トリミングされたスクリーンショットを直接エージェントのプロンプトに送信してデザインを調整する。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "Orcaをインストールして動作確認を行う",
+    "steps": [
+      "brew install --cask stablyai/orca/orca"
+    ],
+    "success_criteria": "Orcaがデスクトップ環境にインストールされ、起動できるようになること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Supported Agents",
+    "Install"
+  ],
+  "unconfirmed": [
+    "ソースコードからの具体的なビルド手順（CONTRIBUTING.mdを参照する必要がある）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7a0de45d42baeb573474761cc98b0b3ed7b50bf6",
+  "generated_at": "2026-09-22T09:14:21.682202+09:00"
+}

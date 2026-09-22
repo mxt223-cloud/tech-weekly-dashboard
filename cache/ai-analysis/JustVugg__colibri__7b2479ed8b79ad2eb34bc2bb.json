@@ -1,0 +1,49 @@
+{
+  "summary_ja": "Colibrìは、ストレージ、RAM、VRAMを単一のメモリ階層として扱い、手持ちのハードウェアで大規模なMoEモデルを実行するための純粋なC言語製推論エンジンです。",
+  "capabilities": [
+    {
+      "text": "744Bから2.8Tパラメータまでの最先端MoEモデルをサポート",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ストレージ、RAM、VRAMを単一の推論階層として管理するAIメモリマルチタイアリング",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "coli chat、coli serve、coli webという共通のフロントエンドを提供",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コンシューマー向けや異種混合ハードウェアでの大規模MoEモデルの実行",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "WebダッシュボードやBrioモードを通じたモデルの対話やプロファイリング",
+      "basis": "README明記",
+      "evidence_section": "See it running"
+    }
+  ],
+  "first_trial": {
+    "goal": "チャット機能の起動確認",
+    "steps": [
+      "./coli chat"
+    ],
+    "success_criteria": "モデルが読み込まれ、対話プロンプトが表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "See it running"
+  ],
+  "unconfirmed": [
+    "具体的なインストール手順やコンパイル方法の詳細なコマンド",
+    "対応モデルの完全な全リスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f23129938eb325d1d5a119adf125d573930759d9",
+  "generated_at": "2026-09-22T09:14:14.691595+09:00"
+}
