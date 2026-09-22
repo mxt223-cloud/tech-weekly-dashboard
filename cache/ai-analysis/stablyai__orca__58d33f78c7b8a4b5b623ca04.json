@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Orcaは、複数の並行エージェントを管理・操作するためのAIオーケストレーターおよび開発環境（ADE）です。独自のサブスクリプションを使用して、Codex、Claude Code、OpenCodeなどの様々なCLIエージェントを個別のワークツリーで並行実行できます。",
+  "capabilities": [
+    {
+      "text": "複数のAIエージェントをそれぞれ独立したGitワークツリーで並行実行し、結果を比較して選択できる",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "モバイル端末からエージェントの監視、通知の受信、指示の送信を行えるコンパニオン機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "ターミナルで動作するあらゆるCLIエージェントに対応し、統合された環境で操作できる",
+      "evidence_section": "Supported Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "1つのプロンプトを複数のAIエージェントに同時に処理させ、最も優れた成果物をマージする",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "外出先やデスクから離れた場所からスマートフォンを使ってAIエージェントの作業状況を監視し、フォローアップを行う",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "GitHubやLinearのプルリクエスト、タスクボードをアプリ内で直接確認しながら、コンテキストスイッチなしで作業を進める",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "デスクトップアプリまたはパッケージマネージャーを使用してOrcaをインストールする",
+    "steps": [
+      "公式サイト（onorca.dev/download）からインストーラーをダウンロードするか、 macOSの場合は Homebrew（brew install --cask stablyai/orca/orca）を使用してインストールする"
+    ],
+    "success_criteria": "Orcaデスクトップアプリが起動し、エージェントの管理画面が表示されること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Supported Agents",
+    "Install"
+  ],
+  "unconfirmed": [
+    "具体的なソースコードからのビルド手順や詳細な開発環境構築の手順はREADME本文には記載されていない（CONTRIBUTING.mdを参照する必要がある）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "db7bd4a80c845e0565a184799acdfd496c2935ad",
+  "generated_at": "2026-09-23T08:43:55.852048+09:00"
+}

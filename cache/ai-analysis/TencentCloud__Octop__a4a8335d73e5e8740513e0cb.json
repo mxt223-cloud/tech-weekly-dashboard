@@ -1,0 +1,57 @@
+{
+  "summary_ja": "TencentCloud/Octopは、複数のユーザーやエージェントに対応するオープンソースのセルフホスト型AIアシスタントプラットフォームです。WebダッシュボードやCLI、複数のIM連携機能を単一プロセスで実行し、データやプライバシーをローカル環境に保持したまま運用できます。",
+  "capabilities": [
+    {
+      "text": "マルチユーザー・マルチエージェント環境の構築と、16種類のMBTIパーソナリティテンプレートやカスタムプロンプトによるエージェントのカスタマイズ",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "FeishuやDingTalk、Discordなどの多彩なIMチャネルや、Webダッシュボード、CLI、プログラムからのアクセス（HTTP/SSE/WebSocket）への対応",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "プライベートコーパスに基づいたRAG検索によるドキュメントの知識ベース機能や、サードパーティ製プラグインの管理",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "週報の作成やノート整理、スケジュール管理を専用のエージェントに任せる個人アシスタントとしての利用",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Feishu、DingTalk、WeComなどのチャットツールをブリッジし、複数のエージェントが連携してグループチャットでタスクをルーティングするチームヘルパーとしての利用",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Browser AI+を活用したフォームの入力やスクリーンショットのキャプチャ、公開情報の収集といったウェブ自動化への活用",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "Octopの初期化とローカルでの実行",
+    "steps": [
+      "octop init",
+      "octop run"
+    ],
+    "success_criteria": "Webダッシュボード（http://127.0.0.1:8088）にアクセスできること"
+  },
+  "evidence_sections": [
+    "Highlights",
+    "Overview",
+    "Core Technology",
+    "Features",
+    "Roadmap",
+    "Quick Start",
+    "Contents"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a2dc451e541bf1f2115c19b404370536bebcf886",
+  "generated_at": "2026-09-23T08:43:49.678035+09:00"
+}

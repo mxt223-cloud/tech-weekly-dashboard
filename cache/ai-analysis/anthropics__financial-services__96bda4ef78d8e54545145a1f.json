@@ -1,0 +1,65 @@
+{
+  "summary_ja": "金融サービス向けのリファレンスエージェント、スキル、データコネクタのコレクションです。Claude CoworkプラグインまたはClaude Managed Agents APIを介して利用でき、投資銀行業務、株式調査、プライベート・エクイティ、ウェルス・マネジメントなどのワークフローを支援します。",
+  "capabilities": [
+    {
+      "text": "Claude Coworkのプラグインとしてインストールするか、Claude Managed Agents APIを介してデプロイすることができます。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Pitch Agent、Market Researcher、GL Reconcilerなどの名前付きのエンドツーエンドワークフローエージェントを提供しています。",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "財務分析、投資銀行業務、株式調査、プライベート・エクイティなどの垂直プラグイン（スキル、スラッシュコマンド、データコネクタのバンドル）を提供しています。",
+      "evidence_section": "Vertical Plugins"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "comps、DCF、LBOなどの手法を用いたブランド化されたピッチデックの作成",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "決算発表と提出書類に基づくモデルの更新とノートのドラフト作成",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "オンボーディング書類の解析、ルールエンジンの実行、およびギャップのフラグ付け",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeを使用してマーケットプレイスとプラグインを追加し、確認する",
+    "steps": [
+      "claude plugin marketplace add anthropics/financial-services",
+      "claude plugin install financial-analysis@claude-for-financial-services",
+      "claude plugin install pitch-agent@claude-for-financial-services"
+    ],
+    "success_criteria": "指定したプラグインがClaude Code環境に正常にインストールされ、セッション内で利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Agents",
+    "Repository Layout",
+    "Getting Started",
+    "How It Fits Together",
+    "Vertical Plugins",
+    "MCP Integrations",
+    "Claude for Microsoft 365 — Install Tooling",
+    "Making It Yours",
+    "Skill & Command Reference",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "プロバイダのサブスクリプションやAPIキーなしでMCP統合機能が動作するかどうか"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5c203c0ea8f19361b447c7f9592f4658b33b5fae",
+  "generated_at": "2026-09-23T08:43:52.794846+09:00"
+}

@@ -1,0 +1,60 @@
+{
+  "summary_ja": "WeKnoraは、生ドキュメントを検索可能なRAG、自律的推論エージェント、および自己メンテナンス型のWikiへと変換するためのオープンソースのLLMナレッジプラットフォームです。",
+  "capabilities": [
+    {
+      "text": "RAGを用いた高速な質問応答（Quick Q&A）機能による日常的な情報の検索",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "取得、MCPツール、サンドボックス、ウェブ検索を自律的にオーケストレーションするReActエージェント",
+      "evidence_section": "🧩 Feature Overview"
+    },
+    {
+      "text": "生ドキュメントから自動生成される双方向リンク付きの構造化Wikiモード",
+      "evidence_section": "🧩 Feature Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "企業内の膨大なドキュメントを理解し、セマンティック検索や自律的推論を活用したナレッジベース構築",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "FeishuやNotion、GitLabなどの外部データソースからの自動同期による情報の集約と管理",
+      "basis": "README明記",
+      "evidence_section": "🧩 Feature Overview"
+    },
+    {
+      "text": "WeComやSlack、TelegramなどのIMチャネルを通じたダイレクトなQ&Aサービスの提供",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker Composeを使用してWeKnoraのコアサービスをローカル環境で起動する",
+    "steps": [
+      "git clone https://github.com/Tencent/WeKnora.git",
+      "cd WeKnora",
+      "cp .env.example .env",
+      "docker compose pull",
+      "docker compose up -d"
+    ],
+    "success_criteria": "ブラウザから http://localhost にアクセスできること"
+  },
+  "evidence_sections": [
+    "📌 Overview",
+    "🧩 Feature Overview",
+    "🚀 Getting Started",
+    "🔒 Security Notice"
+  ],
+  "unconfirmed": [
+    "実際の動作環境における特定のLLMプロバイダのAPIレスポンス速度",
+    "カスタムMCPサーバーの導入手順の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "790a0b8092bde514a7995b09dcccabfe0869e635",
+  "generated_at": "2026-09-23T08:43:44.618196+09:00"
+}
