@@ -1,0 +1,60 @@
+{
+  "summary_ja": "WeKnoraは、生ドキュメントを検索可能なRAG、自律型推論エージェント、自己保守型Wikiに変換するオープンソースのLLMナレッジプラットフォームです。",
+  "capabilities": [
+    {
+      "text": "RAGベースの迅速なQ&Aや、リトリーバル・MCPツール・Web検索を自律的にオーケストレーションするReActエージェント",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "エージェントが未加工のドキュメントを自己保守型のMarkdownナレッジベースへと自動生成・変換するWikiモード",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "Feishu、GitLab、Notion、Yuqueなどの複数データソースからの自動同期、およびPDFやWordを含む10種類以上のドキュメントフォーマットへの対応",
+      "evidence_section": "📌 Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "企業内の膨大なドキュメントや外部ツールのデータを網羅した検索・Q&Aシステムの構築",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "アップロードされた生ドキュメントを相互リンクされたWikiページや知識グラフへ自動整理させるナレッジベース運用",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    },
+    {
+      "text": "WeComやSlackなどのIMチャンネルを通じたAIアシスタントやチャットボットによる問い合わせ対応",
+      "basis": "README明記",
+      "evidence_section": "📌 Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker Composeを使用してローカル環境でWeKnoraを起動し、アクセスする",
+    "steps": [
+      "git clone https://github.com/Tencent/WeKnora.git",
+      "cd WeKnora",
+      "cp .env.example .env",
+      "docker compose pull",
+      "docker compose up -d"
+    ],
+    "success_criteria": "ブラウザで http://localhost にアクセスできること"
+  },
+  "evidence_sections": [
+    "📌 Overview",
+    "🧩 Feature Overview",
+    "🚀 Getting Started",
+    "🔒 Security Notice"
+  ],
+  "unconfirmed": [
+    "詳細な環境変数ごとのパラメータ設定値",
+    "Docker以外の環境での詳細なビルド手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5a7822987471c9bc67459799ba38fa7e77c12b94",
+  "generated_at": "2026-09-24T08:54:21.420499+09:00"
+}

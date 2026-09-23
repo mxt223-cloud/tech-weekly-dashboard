@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Octopは、マルチユーザー・マルチエージェントに対応した、セルフホスト型のスマートなAIアシスタントプラットフォームです。Webダッシュボード、CLI、複数のチャットツール（Feishu、DingTalk、Telegramなど）を単一のプロセスで統合し、プライバシーを保護しながらローカル環境で動作します。",
+  "capabilities": [
+    {
+      "text": "マルチユーザーおよびマルチエージェントによる独立かつ共同作業の環境構築",
+      "evidence_section": "Highlights"
+    },
+    {
+      "text": "Webダッシュボード、CLI、複数IMチャンネル、プログラムからのHTTP/SSE/WebSocketによるアクセス",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "RAGを用いたドキュメントのナレッジベースおよびセマンティック検索による回答の裏付け",
+      "evidence_section": "Highlights"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日報の作成、ノートの整理、スケジュール管理などのパーソナルアシスタント業務",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Feishu、DingTalk、WeComなどのグループチャットへタスクをルーティングするチームヘルパーとしての利用",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Browser AI+を活用したWebフォームの入力、スクリーンショットの撮影、公開情報の収集などの自動化",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "Octopを初期化してローカルで起動し、Webダッシュボードにアクセスする",
+    "steps": [
+      "octop init",
+      "octop run"
+    ],
+    "success_criteria": "Webブラウザで http://127.0.0.1:8088 にアクセスし、ダッシュボードが表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Highlights",
+    "Overview",
+    "Quick Start"
+  ],
+  "unconfirmed": [
+    "harness-* ライブラリのオープンソース化状況や外部リポジトリの公開状態",
+    "一部のプラットフォーム固有の設定における詳細な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8e3a646f78a82e742d4e1571e4e56d9fed9e3f2a",
+  "generated_at": "2026-09-24T08:54:27.033690+09:00"
+}
