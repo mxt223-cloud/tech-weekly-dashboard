@@ -1,0 +1,54 @@
+{
+  "summary_ja": "WeKnoraは、企業のドキュメント理解、セマンティック検索、推論を行うためのオープンソースのLLM駆動型知識フレームワークです。RAGによる検索、マルチステップタスクのためのエージェント、知識を整理するためのWikiを提供します。",
+  "capabilities": [
+    {
+      "text": "RAGによる情報検索、マルチステップタスク向けの自律型推論エージェント、および知識を整理するWiki機能を提供します。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Feishu、Confluence、Notion、GitLabなどの外部データソースからの自動同期や、PDF、Word、画像などの10種類以上のドキュメント形式をサポートします。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "OpenAI、DeepSeek、Ollamaなど27のビルトインモデルベンダーに対応し、LLM、ベクトルデータベース、ストレージバックエンドを入れ替え可能です。",
+      "evidence_section": "Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "チームのドキュメントを統合して検索可能にし、最新の状態に維持する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "WeCom、Slack、TelegramなどのIMアプリ上でQ&Aボットとして利用する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "外部Webサイト向けに埋め込みウィジェットを利用してチャット機能を組み込む。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "オンラインプラットフォーム、クラウド、またはセルフホスト（Dockerなど）環境でWeKnoraを利用開始する。",
+    "steps": [
+      "WeChat Dialog Open Platformにアクセスするか、Tencent Cloud Lighthouseからアプリケーションテンプレートでデプロイします。",
+      "または、Docker Composeなどを使用して自身の環境にセルフホストします。"
+    ],
+    "success_criteria": "プラットフォームへのログインまたはDocker等によるデプロイが完了し、WeKnoraの環境が動作すること。"
+  },
+  "evidence_sections": [
+    "Overview",
+    "Quick Start"
+  ],
+  "unconfirmed": [
+    "Docker Composeを用いた具体的なコマンドや詳細な設定手順（READMEの途中で切れているため）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3e481029ac819c4d10e67687e527b856c4bcd296",
+  "generated_at": "2026-09-25T08:57:56.469938+09:00"
+}

@@ -1,0 +1,60 @@
+{
+  "summary_ja": "Orcaは、複数の並行AIエージェントを効率的に管理・実行するためのAIオーケストレーター（ADE）です。デスクトップやモバイル、リモート環境で様々なターミナルベースのコーディングエージェントを並行して動かし、1つの場所で追跡・制御することができます。",
+  "capabilities": [
+    {
+      "text": "複数のAIエージェントをそれぞれ独立したGitワークツリーで並行実行し、結果を比較して勝者を選んでマージできる",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "デスクトップアプリとペアリングして、モバイル端末（iOSおよびAndroid）からエージェントの監視、通知の受け取り、フォローアップの指示ができる",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Claude Code、Codex、OpenCodeをはじめとする、ターミナルで動作する任意のCLIコーージェントに対応している",
+      "evidence_section": "Supported Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "1つのプロンプトを複数のエージェントに同時に処理させ、それぞれの成果物を比較して最適なものを採用する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "外出先や離れた場所からスマートフォンを使ってAIエージェントの作業状況を監視し、完了通知を受け取る",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "GitHubやLinearのタスク管理画面から直接ワークツリーを開き、コンテキストを切り替えることなくコードレビューや作業を行う",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "Orcaをインストールして起動し、エージェントの利用を開始する",
+    "steps": [
+      "公式サイト（onOrca.dev）またはパッケージマネージャー（macOSの場合は `brew install --cask stablyai/orca/orca`、Arch Linuxの場合は `yay -S stably-orca-bin`）を使用してOrcaをインストールする",
+      "アプリを起動し、好みのターミナルエージェントを連携させて並行作業や管理を行う"
+    ],
+    "success_criteria": "Orcaがデスクトップ上で正常に起動し、対応するCLIエージェントを操作できる状態になること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Supported Agents",
+    "Install",
+    "Community & Support",
+    "Developing",
+    "Signed Builds",
+    "License"
+  ],
+  "unconfirmed": [
+    "初期設定時に必要なAPIキーやサブスクリプションの詳細な設定手順",
+    "具体的な開発者向けローカルビルド手順の詳細（CONTRIBUTING.mdの内容）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f0b3f1df6a348f52ea735e97e7f5047d93fb7086",
+  "generated_at": "2026-09-25T08:58:00.790745+09:00"
+}

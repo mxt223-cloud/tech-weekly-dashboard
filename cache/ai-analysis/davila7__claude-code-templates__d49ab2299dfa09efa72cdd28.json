@@ -1,0 +1,66 @@
+{
+  "summary_ja": "davila7/claude-code-templatesは、AnthropicのClaude Code向けの設定、AIエージェント、カスタムコマンド、フック、外部連携（MCP）、プロジェクトテンプレートなどを提供するCLIツールおよびコレクションです。",
+  "capabilities": [
+    {
+      "text": "エージェント、カスタムコマンド、MCP、設定、フック、スキルなどのコンポーネントやテンプレートをインストール・管理する",
+      "evidence_section": "🚀 Quick Installation"
+    },
+    {
+      "text": "リアルタイムの状態検出とパフォーマンス指標でAI開発セッションをモニタリングするアナリティクス機能を提供する",
+      "evidence_section": "📊 Claude Code Analytics"
+    },
+    {
+      "text": "Claudeの応答をリアルタイムで表示し、セキュアなリモートアクセスも可能な会話モニター機能を提供する",
+      "evidence_section": "💬 Conversation Monitor"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発ワークフローを向上させるためのAIエージェントやカスタムコマンド、プロジェクトテンプレートを手軽に導入する",
+      "basis": "README明記",
+      "evidence_section": "Claude Code Templates (aitmpl.com)"
+    },
+    {
+      "text": "Claude Codeのインストール状態が最適化されているかを包括的な診断機能で確認する",
+      "basis": "README明記",
+      "evidence_section": "🔍 Health Check"
+    },
+    {
+      "text": "プラグインのマーケットプレイス表示やインストール済みプラグインの管理、権限の制御を行う",
+      "basis": "README明記",
+      "evidence_section": "🔌 Plugin Dashboard"
+    }
+  ],
+  "first_trial": {
+    "goal": "対話的なブラウズとインストールインターフェースを起動して試す",
+    "steps": [
+      "npx claude-code-templates@latest"
+    ],
+    "success_criteria": "WebインターフェースやCLIを通じてテンプレートやコンポーネントの確認とインストールができること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Claude Code Templates (aitmpl.com)",
+    "Browse & Install Components and Templates",
+    "🚀 Quick Installation",
+    "What You Get",
+    "🛠️ Additional Tools",
+    "📊 Claude Code Analytics",
+    "💬 Conversation Monitor",
+    "🔍 Health Check",
+    "🔌 Plugin Dashboard",
+    "📖 Documentation",
+    "Contributing",
+    "Attribution",
+    "📄 License",
+    "🔗 Links"
+  ],
+  "unconfirmed": [
+    "Pythonプロジェクトとしての内部実装の詳細やモジュールのアーキテクチャ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ac7190181a68aa980d4b1521dac6fd332a4ab9bd",
+  "generated_at": "2026-09-25T08:58:04.089118+09:00"
+}
