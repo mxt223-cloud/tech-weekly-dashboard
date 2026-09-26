@@ -1,0 +1,71 @@
+{
+  "summary_ja": "Paperclipは、AIエージェントのチームを組織として管理・オーケストレーションするためのオープンソースのNode.jsサーバーおよびReact UIアプリケーションです。複数のAIエージェントの目標管理、予算管理、ガバナンス、タスク調整をダッシュボード上で行うことができます。",
+  "capabilities": [
+    {
+      "text": "OpenClaw、Claude Code、Codex、Cursor、Bash、HTTPなど、任意のランタイムを持つAIエージェントを組織のメンバーとして組み込むことができます。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "エージェントごとの月額予算を設定し、制限に達した際に自動停止させることでコストを制御できます。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "単一のデプロイで、完全なデータ分離を維持しながら複数の組織（マルチオーガニゼーション）を管理できます。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "OpenClawやClaude、Cursorなど、異なる多くのエージェントを共通の目標に向けて調整したい場合。",
+      "basis": "README明記",
+      "evidence_section": "Paperclip is right for you if"
+    },
+    {
+      "text": "エージェントを24時間365日自律的に稼働させつつ、必要に応じて作業を監査したり介入したりしたい場合。",
+      "basis": "README明記",
+      "evidence_section": "Paperclip is right for you if"
+    },
+    {
+      "text": "タスク管理ツールを使うような感覚で自律型ビジネスを管理したい場合。",
+      "basis": "README明記",
+      "evidence_section": "Paperclip is right for you if"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でテスト用インスタンスを起動し、初期セットアップを確認する",
+    "steps": [
+      "git clone https://github.com/paperclipai/paperclip.git",
+      "cd paperclip",
+      "pnpm install",
+      "pnpm dev"
+    ],
+    "success_criteria": "APIサーバーがhttp://localhost:3100で起動し、埋め込みPostgreSQLデータベースが自動作成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Paperclip is right for you if",
+    "The four pillars",
+    "Features",
+    "Problems Paperclip solves",
+    "Why Paperclip is special",
+    "What's Under the Hood",
+    "What Paperclip is not",
+    "Quickstart",
+    "FAQ",
+    "Development",
+    "Roadmap",
+    "Community & Plugins",
+    "Observability",
+    "Telemetry",
+    "Contributing",
+    "Community",
+    "License",
+    "Star History"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8096cf9bbcffcc258c18175f499648fb8f5a9c02",
+  "generated_at": "2026-09-27T08:46:23.592171+09:00"
+}
