@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Hindsightは、エージェントが時間をかけて学習し賢くなるための長期記憶システムです。会話履歴を記憶するだけでなく、世界に関する事実や経験を保持、検索、推論（リフレクト）することで、従来のRAGや知識グラフの限界を克服します。",
+  "capabilities": [
+    {
+      "text": "セマンティック、キーワード、グラフ、テンポラル（時間）の4つの検索戦略を並行して実行し、関連する記憶を高精度で取得できます。",
+      "evidence_section": "The Three Operations"
+    },
+    {
+      "text": "バックグラウンドで関連する事実を統合し、証拠や検証回数を伴う重複排除された「観察（observations）」を形成します。",
+      "evidence_section": "Observations"
+    },
+    {
+      "text": "マルチリンガルに対応しており、入力された言語や固有のスクリプトをそのまま保持します。",
+      "evidence_section": "Memory Banks"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ユーザーごとの記憶やチャット履歴を保存・取得し、AIチャットボットや対話型エージェントのパーソナライズを行います。",
+      "basis": "README明記",
+      "evidence_section": "Use Cases"
+    },
+    {
+      "text": "AIプロジェクトマネージャーとして、プロジェクトのどのリスクを軽減すべきかを振り返るために活用できます。",
+      "basis": "README明記",
+      "evidence_section": "The Three Operations"
+    },
+    {
+      "text": "コーディングエージェントにおいて、過去のセッションやgit履歴から長期的なプロジェクト記憶を構築・維持させます。",
+      "basis": "README明記",
+      "evidence_section": "Coding Agents"
+    }
+  ],
+  "first_trial": {
+    "goal": "サーバーをDockerで起動し、クライアントからメモリの保存と検索を行う",
+    "steps": [
+      "export OPENAI_API_KEY=sk-xxx",
+      "docker run -it --pull always --name hindsight --restart unless-stopped -p 8888:8888 -p 9999:9999 -e HINDSIGHT_API_LLM_API_KEY=$OPENAI_API_KEY -v hindsight-data:/home/hindsight/.pg0 ghcr.io/vectorize-io/hindsight:latest",
+      "pip install hindsight-client -U",
+      "python -c \"from hindsight_client import Hindsight; client = Hindsight(base_url='http://localhost:8888'); client.retain(bank_id='my-bank', content='Alice works at Google as a software engineer'); print(client.recall(bank_id='my-bank', query='What does Alice do?'))\""
+    ],
+    "success_criteria": "サーバーが起動し、Pythonクライアントを通じてメモリの保存および検索結果の取得ができること"
+  },
+  "evidence_sections": [
+    "What is Hindsight?",
+    "Memory Performance & Accuracy",
+    "Quick Start",
+    "Adding Hindsight to Your Agent",
+    "Core Concepts",
+    "Use Cases",
+    "Running in Production"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "50346aa10e74ac9ed3af6eebe525a748bb7ba6dc",
+  "generated_at": "2026-09-26T09:03:14.763153+09:00"
+}

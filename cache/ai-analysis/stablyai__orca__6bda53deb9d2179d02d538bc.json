@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Orcaは、複数の並行AIコーディングエージェントを管理・連携するためのADE（エージェント開発環境）です。デスクトップやモバイル、リモートランタイムから様々なCLIエージェントを独立したワークツリー上で同時に実行し、追跡や操作を行うことができます。",
+  "capabilities": [
+    {
+      "text": "独立したgitワークツリー上で複数のAIエージェントを並行して実行し、結果を比較してマージできる",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "モバイルアプリ（iOS / Android）をデスクトップアプリとペアリングし、外出先からエージェントの完了通知を受け取ったり指示を送ったりできる",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Claude CodeやCodexをはじめとする、ターミナルで動作する任意のCLIエージェントに対応している",
+      "evidence_section": "Supported Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "1つのプロンプトを複数のエージェントに同時に処理させ、それぞれの結果を比較して最適なものを採用する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "スマートフォンからエージェントの作業完了通知を受け取り、離れた場所からでも次の指示を送信する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Chromiumウィンドウ上のUI要素をクリックして、HTMLやCSS、切り抜いたスクリーンショットを直接エージェントのプロンプトに送信する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージマネージャーを使用してデスクトップ版のOrcaをインストールする",
+    "steps": [
+      "macOSの場合は「brew install --cask stablyai/orca/orca」を実行する",
+      "Arch Linuxの場合は「yay -S stably-orca-bin」を実行する"
+    ],
+    "success_criteria": "デスクトップ版Orcaがインストールされ、起動できるようになること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Supported Agents",
+    "Install",
+    "Community & Support",
+    "Developing",
+    "Signed Builds",
+    "License"
+  ],
+  "unconfirmed": [
+    "リポジトリのソースコードからの具体的なビルド手順や初期設定コマンドの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "98efc301c2f911a056e4cb28d249cf0381f996a4",
+  "generated_at": "2026-09-26T09:03:11.082678+09:00"
+}

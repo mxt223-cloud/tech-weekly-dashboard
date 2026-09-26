@@ -1,0 +1,57 @@
+{
+  "summary_ja": "WeKnoraは、企業のドキュメント理解、セマンティック検索、推論を行うためのオープンソースのLLM駆動型知識フレームワークです。RAGによる検索、エージェントによるマルチステップタスク実行、Wikiによる知識整理を同じ知識ベース上で実現します。",
+  "capabilities": [
+    {
+      "text": "RAG、マルチステップタスクを実行するエージェント、および知識を整理するWikiの3つのモードを同一の知識ベース上で提供します。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Feishu、Confluence、GitLab、Notion、Yuqueなどからの自動同期や、10種類以上のドキュメントフォーマット（PDF、Word、画像、Excel、XMindなど）に対応しています。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "OpenAI、DeepSeek、Qwen、Gemini、Ollamaなど27のビルトインベンダーのモデルカタログや、マルチワークスペースのRBAC、Langfuseによるトレーシング機能を備えています。",
+      "evidence_section": "Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "企業のドキュメントを集約して検索し、引用付きのQ&A回答やAIエージェントによる推論を行う",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "エージェントが自動生成する相互リンクされたWikiページと知識グラフを活用して組織の知識を整理する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "WeCom、Feishu、Slack、TelegramなどのIMアプリや外部Webサイトの埋め込みウィジェット経由でQ&Aを利用する",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "WeKnoraをオンラインプラットフォーム、クラウド、またはセルフホスト環境で起動・接続する",
+    "steps": [
+      "WeChat Dialog Open Platformにアクセスしてオンラインで管理・接続する",
+      "Tencent Cloud Lighthouseのアプリケーションテンプレートからデプロイする",
+      "Docker Composeを使用してセルフホスト環境で実行する"
+    ],
+    "success_criteria": "知識ベースが管理画面またはデプロイした環境上で正常に動作し、アクセスできるようになること"
+  },
+  "evidence_sections": [
+    "Overview",
+    "Quick Start",
+    "Features"
+  ],
+  "unconfirmed": [
+    "Docker Composeを用いた具体的な実行コマンドや環境変数設定の詳細",
+    "ソースコードのビルド手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4c97affaf8fc9959db05701ee43f2af61253ce2c",
+  "generated_at": "2026-09-26T09:03:07.550259+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "summary_ja": "cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。",
+  "capabilities": [
+    {
+      "text": "6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。",
+      "evidence_section": "What it does"
+    },
+    {
+      "text": "findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。",
+      "evidence_section": "Files"
+    },
+    {
+      "text": "同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。",
+      "evidence_section": "What it does"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コードベース全体のセキュリティ監査をエージェントに実行させる。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "Skills CLIを使用してsecurity-auditスキルをインストールする",
+    "steps": [
+      "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
+    ],
+    "success_criteria": "スキルが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "What it does",
+    "Files",
+    "Installation",
+    "Usage",
+    "Requirements",
+    "Design principles"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+  "generated_at": "2026-09-26T09:03:01.890303+09:00"
+}
