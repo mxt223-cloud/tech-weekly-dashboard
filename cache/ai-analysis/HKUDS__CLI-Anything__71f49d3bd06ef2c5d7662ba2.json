@@ -1,0 +1,36 @@
+{
+  "summary_ja": "CLI-Anythingは、あらゆるソフトウェアをAIエージェント対応のCLIに変換するためのフレームワークおよびハブです。",
+  "capabilities": [
+    {
+      "text": "cli-anything-hubパッケージマネージャーを介したコミュニティ製CLIのブラウジング、検索、インストール、管理。",
+      "evidence_section": "🚀 Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "既存のCLIエコシステムを利用して、公開されている便利なCLIをインストールして実行する。",
+      "basis": "README明記",
+      "evidence_section": "🚀 Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI-Hubパッケージマネージャーのインストール",
+    "steps": [
+      "pip install cli-anything-hub"
+    ],
+    "success_criteria": "cli-hubコマンドが利用可能になること"
+  },
+  "evidence_sections": [
+    "🚀 Quick Start",
+    "📦 Installation & Usage",
+    "📰 News"
+  ],
+  "unconfirmed": [
+    "7フェーズのハーネス生成の詳細なコマンドや手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8a78b5420911eff5e7cc219bf1ecb2a12b562874",
+  "generated_at": "2026-09-28T08:53:35.634589+09:00"
+}

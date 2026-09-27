@@ -1,0 +1,45 @@
+{
+  "summary_ja": "Next.jsは、最新のReact機能を拡張し、Rustベースの高速なJavaScriptツールを統合することで、フルスタックのWebアプリケーション開発を可能にするReactフレームワークです。",
+  "capabilities": [
+    {
+      "text": "Reactの最新機能を拡張したフルスタックWebアプリケーションの作成",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "RustベースのJavaScriptツールによる高速なビルドの統合",
+      "evidence_section": "Getting Started"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "大規模企業によるWebアプリケーションの構築",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    }
+  ],
+  "first_trial": {
+    "goal": "Next.jsの学習コースやドキュメントにアクセスして学習を開始する",
+    "steps": [
+      "Learn Next.jsコースにアクセスする",
+      "Next.js Showcaseを確認する",
+      "公式ドキュメントを読む"
+    ],
+    "success_criteria": "学習リソースや公式ドキュメントを閲覧できるようになること"
+  },
+  "evidence_sections": [
+    "Getting Started",
+    "Documentation",
+    "Community",
+    "Contributing",
+    "Security"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやQuick Startのコード",
+    "具体的なサンプルコードや実行手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "58e152b8b2f0a5b442f990e78ed791bceb23da3b",
+  "generated_at": "2026-09-28T08:53:33.692839+09:00"
+}

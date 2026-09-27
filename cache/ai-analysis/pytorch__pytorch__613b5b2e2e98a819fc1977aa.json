@@ -1,0 +1,63 @@
+{
+  "summary_ja": "PyTorchは、強力なGPUアクセラレーションを備えたPython向けのテンソル計算および動的ニューラルネットワークライブラリです。",
+  "capabilities": [
+    {
+      "text": "NumPyに似た強力なGPUサポート付きテンソルライブラリ（torch）",
+      "evidence_section": "More About PyTorch"
+    },
+    {
+      "text": "すべての微分可能なテンソル操作をサポートするテープベースの自動微分ライブラリ（torch.autograd）",
+      "evidence_section": "More About PyTorch"
+    },
+    {
+      "text": "PyTorchコードからシリアライズ可能で最適化されたモデルを作成するコンパイルスタックTorchScript（torch.jit）",
+      "evidence_section": "More About PyTorch"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "GPUのパワーを使用するためのNumPyの代替",
+      "basis": "README明記",
+      "evidence_section": "More About PyTorch"
+    },
+    {
+      "text": "最大の柔軟性とスピードを提供するディープラーニングの研究プラットフォーム",
+      "basis": "README明記",
+      "evidence_section": "More About PyTorch"
+    },
+    {
+      "text": "プロセス間でテンソルメモリを共有するデータローディングや分散学習",
+      "basis": "提案",
+      "evidence_section": "More About PyTorch"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードのクローンと依存関係のインストール",
+    "steps": [
+      "git clone https://github.com/pytorch/pytorch",
+      "cd pytorch",
+      "git submodule sync",
+      "git submodule update --init --recursive",
+      "pip install --group dev"
+    ],
+    "success_criteria": "エラーなくソースの取得と開発用依存関係のインストールが完了すること"
+  },
+  "evidence_sections": [
+    "More About PyTorch",
+    "Installation",
+    "Getting Started",
+    "Resources",
+    "Communication",
+    "Releases and Contributing",
+    "The Team",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なモデルの学習・推論スクリプトの実行結果"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "938c15dba315963266102bcfeaf935306b24a165",
+  "generated_at": "2026-09-28T08:53:38.451642+09:00"
+}
