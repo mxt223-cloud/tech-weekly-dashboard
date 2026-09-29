@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Orcaは、複数の並行AIエージェントを管理・操作するためのAIオーケストレーター（ADE）です。デスクトップ、モバイル、リモートランタイムに対応しており、複数のCLIエージェントを並行して実行、監視、制御できます。",
+  "capabilities": [
+    {
+      "text": "モバイルアプリを使用して外出先からエージェントの完了通知を受け取り、フォローアップを送信できるモバイルコンパニオン機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "1つのプロンプトを複数のエージェントへ同時に送り、それぞれ独立したGitワークツリーで実行して結果を比較できる機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Claude CodeやCodexをはじめとする任意のCLIエージェントを幅広くサポートしている点",
+      "evidence_section": "Supported Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIコーディングエージェントを独立したワークツリーで同時に動かし、生成された結果を比較して最適なものをマージする",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "スマートフォンからAIエージェントの作業状況を監視し、完了時に通知を受け取る",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "リモートのLinuxサーバー上でorca serveを実行し、ヘッドレス環境でエージェントを稼働させる",
+      "basis": "README明記",
+      "evidence_section": "Install"
+    }
+  ],
+  "first_trial": {
+    "goal": "パッケージマネージャーを使用してデスクトップ環境にOrcaをインストールする",
+    "steps": [
+      "macOSの場合は「brew install --cask stablyai/orca/orca」を実行する",
+      "またはArch Linuxの場合は「yay -S stably-orca-bin」を実行する"
+    ],
+    "success_criteria": "Orcaがシステムにインストールされ、デスクトップアプリとして起動できるようになること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Supported Agents",
+    "Install"
+  ],
+  "unconfirmed": [
+    "詳細な内部実装やコード構造に関する記述はありません。",
+    "無料版と有料サブスクリプションの詳細な機能制限については記載されていません。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "0f337f9e677eb7991199f3ae8b65d6340c3f5f87",
+  "generated_at": "2026-09-29T10:11:14.753739+09:00"
+}
