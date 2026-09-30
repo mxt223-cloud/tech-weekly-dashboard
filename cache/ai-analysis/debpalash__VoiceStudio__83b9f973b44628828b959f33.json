@@ -1,0 +1,55 @@
+{
+  "summary_ja": "VoiceStudioは、音声クローン、音声デザイン、動画の吹き替え、文字起こし、オーディオブック作成などをローカル環境で実行できるオープンソースの音声AIツールです。",
+  "capabilities": [
+    {
+      "text": "音声のクローン作成や独自の音声デザインができる。",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "タイミングに合わせた音声でビデオの吹き替えができる。",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "646言語でのディクテーション、文字起こし、オーディオブック作成に対応している。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自分の声やクローンした声を使ってオーディオブックやストーリーを作成する",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "ローカルAPIやMCPを使用してAIエージェントと音声機能を連携させる",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "フローティングウィジェットを使用して音声で文字入力を行う",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "first_trial": {
+    "goal": "macOSまたはLinux環境でVoiceStudioをインストールする",
+    "steps": [
+      "curl -fsSL https://voicestudio.sh/install | sh"
+    ],
+    "success_criteria": "インストールの実行スクリプトが正常に完了し、デスクトップアプリが導入されること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Your voice. Your workflow.",
+    "Get started",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "具体的な対応ハードウェア要件の詳細な数値"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "01b36d48a7e11675f82c2dcff53aa5774bfc050f",
+  "generated_at": "2026-09-30T09:41:55.408915+09:00"
+}

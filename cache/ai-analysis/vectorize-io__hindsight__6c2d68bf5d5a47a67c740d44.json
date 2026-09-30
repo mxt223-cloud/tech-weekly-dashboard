@@ -1,0 +1,55 @@
+{
+  "summary_ja": "Hindsightは、エージェントが時間をかけて学習し、より賢くなることを目的としたAIエージェント向けの長期記憶システムです。会話履歴を記憶するだけでなく、ワールドファクト、経験、観察結果、メンタルモデルなどの生体模倣データ構造を用いて情報を整理・統合します。",
+  "capabilities": [
+    {
+      "text": "保持（Retain）、想起（Recall）、リフレクト（Reflect）の3つの操作を通じて、エージェントの記憶の保存・検索・深い推論を行います。",
+      "evidence_section": "The Three Operations"
+    },
+    {
+      "text": "セマンティック検索、キーワード検索、グラフ検索、時間範囲フィルタリングの4つの検索戦略を並行して実行します。",
+      "evidence_section": "Recall"
+    },
+    {
+      "text": "機密情報やPII（個人特定情報）をスキャンしてマスクまたはブロックするメモリディフェンス機能を提供します。",
+      "evidence_section": "Memory Banks"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "個々のユーザーに関連する記憶を保存および想起することで、AIチャットボットや対話型エージェントのパーソナライズを行います。",
+      "basis": "README明記",
+      "evidence_section": "Use Cases"
+    },
+    {
+      "text": "AIプロジェクトマネージャーとして、プロジェクトで軽減すべきリスクについての深い考察を行います。",
+      "basis": "README明記",
+      "evidence_section": "Reflect"
+    },
+    {
+      "text": "セールスエージェントとして、どのようなアウトリーチメッセージが返信を得られたのか、その理由を分析します。",
+      "basis": "README明記",
+      "evidence_section": "Reflect"
+    }
+  ],
+  "first_trial": {
+    "goal": "Dockerを使用してHindsightサーバーを起動し、クライアントから接続して記憶の保存と検索を確認する。",
+    "steps": [
+      "export OPENAI_API_KEY=sk-xxx",
+      "docker run -it --pull always --name hindsight --restart unless-stopped -p 8888:8888 -p 9999:9999 -e HINDSIGHT_API_LLM_API_KEY=$OPENAI_API_KEY -v hindsight-data:/home/hindsight/.pg0 ghcr.io/vectorize-io/hindsight:latest",
+      "pip install hindsight-client -U"
+    ],
+    "success_criteria": "サーバーが正常に起動し、API（http://localhost:8888）およびUI（http://localhost:9999）にアクセスでき、クライアントからデータの保持と想起が行えること。"
+  },
+  "evidence_sections": [
+    "What is Hindsight?",
+    "Quick Start",
+    "Core Concepts",
+    "Use Cases"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "250a2e8eca4fccae242a9b7c90ba5d17fe8f8919",
+  "generated_at": "2026-09-30T09:41:52.492089+09:00"
+}

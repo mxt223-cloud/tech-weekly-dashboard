@@ -1,0 +1,56 @@
+{
+  "summary_ja": "ai-engineering-from-scratchは、AIエンジニアリングをゼロから学び、構築するためのオープンソースのカリキュラムです。多数のレッスンやフェーズを通じて、Python、TypeScript、Rust、Juliaなどを使いながら実践的なAIアプリケーションやエージェントなどを構築できます。",
+  "capabilities": [
+    {
+      "text": "プロンプト、スキル、エージェント、MCPサーバーなどの再利用可能な成果物を各レッスンで作成する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ターミナルや対応エージェントからnpxコマンドを使用して学習スキルを追加し、進捗を管理できる",
+      "evidence_section": "Getting started"
+    },
+    {
+      "text": "リポジトリをクローンして、各レッスンのコードを実行することができる",
+      "evidence_section": "Getting started"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "基礎からしっかりとAIの学習を進めて基礎固めをしたい場合",
+      "basis": "README明記",
+      "evidence_section": "Start here: choose what you want to build"
+    },
+    {
+      "text": "本番環境向けのLLMアプリケーションやAIエージェントを構築したい場合",
+      "basis": "README明記",
+      "evidence_section": "Start here: choose what you want to build"
+    },
+    {
+      "text": "モデルコンテキストプロトコル（MCP）を活用した開発を行いたい場合",
+      "basis": "README明記",
+      "evidence_section": "Start here: choose what you want to build"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてサンプルコードを実行する",
+    "steps": [
+      "git clone https://github.com/rohitg00/ai-engineering-from-scratch.git",
+      "cd ai-engineering-from-scratch",
+      "python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py"
+    ],
+    "success_criteria": "サンプルコードがエラーなく実行されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Start here: choose what you want to build",
+    "Getting started"
+  ],
+  "unconfirmed": [
+    "利用するすべての外部APIキーや具体的な事前要件の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fa3bdfe6f7161c0e8176a288443c7e528b0fb9be",
+  "generated_at": "2026-09-30T09:41:58.337418+09:00"
+}
