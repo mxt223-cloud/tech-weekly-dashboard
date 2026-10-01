@@ -1,0 +1,55 @@
+{
+  "summary_ja": "Paperclipは、仕事のためにAIエージェントのチームを管理・オーケストレーションするためのオープンソースのNode.jsサーバーおよびReact UIです。",
+  "capabilities": [
+    {
+      "text": "独自のエージェントを持ち込み、単一の組織図上で実行・管理できる。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "タスクやプロジェクトを組織の目標にリンクさせ、エージェントに背景コンテキストを共有できる。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "会社、エージェント、プロジェクトごとの予算管理やコスト追跡、利用制限の設定ができる。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIエージェントでチームを構成し、ビジネス上の目標を設定して実行・監視する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "GitHub、Notion、Railwayなどの外部サービスやMCPサーバーと接続してエージェントに作業を行わせる。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "定期的なルーティン作業をスケジュール、API、またはウェブフック経由で実行する。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "ガイド付きクイックスタートに沿って最初のエージェントを設定する",
+    "steps": [
+      "公式ドキュメントのガイド付きクイックスタート（https://docs.paperclip.ing/guides/getting-started/five-minute-path/）にアクセスする",
+      "ガイドの手順に従ってセルフホスト環境でセットアップを行う"
+    ],
+    "success_criteria": "最初のエージェントが設定され、管理画面から確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Features",
+    "Quickstart"
+  ],
+  "unconfirmed": [
+    "ローカル環境での具体的なビルドコマンドや起動コマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b3f130123d85371a78c7cbc37b52019158a1e3c2",
+  "generated_at": "2026-10-01T09:44:45.595664+09:00"
+}

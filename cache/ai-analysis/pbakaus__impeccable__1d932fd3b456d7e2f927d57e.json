@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Impeccableは、AIコーディングエージェントのためのデザインガイダンスツールです。1つのスキル、24のコマンド、ライブブラウザイテレーション、および61の決定論的な検出ルールを提供し、AIが生成するフロントエンドデザインの品質を向上させます。",
+  "capabilities": [
+    {
+      "text": "プロジェクトの要件や制約をPRODUCT.mdに記録するための/impeccable initセットアップフローを提供します。",
+      "evidence_section": "Why Impeccable?"
+    },
+    {
+      "text": "polish、audit、critique、animateなど、AIとデザインの共通語彙として使える24のコマンドを提供します。",
+      "evidence_section": "Why Impeccable?"
+    },
+    {
+      "text": "LLMやAPIキーを使用せず、CLIやブラウザ拡張機能で61の決定論的な検出ルールを実行できます。",
+      "evidence_section": "Why Impeccable?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ブログやランディングページなどのデザインやUXの品質チェック（audit、critique）を行います。",
+      "basis": "README明記",
+      "evidence_section": "24 Commands"
+    },
+    {
+      "text": "チェックアウト画面のエラーハンドリングやエッジケースの追加（harden）を行います。",
+      "basis": "README明記",
+      "evidence_section": "24 Commands"
+    },
+    {
+      "text": "AIコーディングツール内でプロジェクトの初期設定やプロダクトの前提条件の整理を行います。",
+      "basis": "提案",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトでImpeccableのインストールと初期化を行う",
+    "steps": [
+      "プロジェクトのルートディレクトリから npx impeccable install を実行する。",
+      "使用しているAIコーディングツール内で /impeccable init を実行する。"
+    ],
+    "success_criteria": "インストールが完了し、AIコーディングツール内でコマンドが利用できる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why Impeccable?",
+    "What's Included",
+    "Installation",
+    "Usage",
+    "CLI"
+  ],
+  "unconfirmed": [
+    "Topicsの内容",
+    "詳細な外部連携ツールのAPI仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2c52ab4374c914513fc1e3ad4857f63e8c56e468",
+  "generated_at": "2026-10-01T09:44:54.876077+09:00"
+}
