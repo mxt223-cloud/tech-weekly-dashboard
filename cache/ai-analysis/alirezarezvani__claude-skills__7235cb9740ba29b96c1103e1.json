@@ -1,0 +1,68 @@
+{
+  "summary_ja": "AIコーディングエージェント向けのオープンソーススキルとプラグインの包括的なライブラリであり、Claude Code、OpenAI Codex、Gemini CLI、Cursorなど複数のプラットフォームに対応しています。",
+  "capabilities": [
+    {
+      "text": "エンジニアリング、マーケティング、プロダクト管理、C-levelアドバイザリー、リポジトリ管理など、多数のドメインにわたるスキルとプラグインを提供します。",
+      "evidence_section": "Skills Overview"
+    },
+    {
+      "text": "標準ライブラリのみを使用し追加のpipインストールを必要としない多数のPython CLIツールを含みます。",
+      "evidence_section": "What Are Claude Code Skills & Agent Plugins?"
+    },
+    {
+      "text": "単一のスクリプトで複数ツール向けの形式へスキルを変換してプロジェクトに適用できます。",
+      "evidence_section": "Multi-Tool Support (New)"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発やアーキテクチャのレビュー、セキュリティ診断などにエージェントの専門知識を活用する。",
+      "basis": "README明記",
+      "evidence_section": "Usage Examples"
+    },
+    {
+      "text": "SEO対策やコンテンツ制作、マーケティング活動のためのスキルを活用する。",
+      "basis": "README明記",
+      "evidence_section": "Skills Overview"
+    },
+    {
+      "text": "SaaSメトリクスの計算や財務分析をPythonツールで実行する。",
+      "basis": "README明記",
+      "evidence_section": "Python Analysis Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてセットアップスクリプトを実行し、スキルを利用する。",
+    "steps": [
+      "git clone https://github.com/alirezarezvani/claude-skills.git",
+      "cd claude-skills",
+      "./scripts/gemini-install.sh"
+    ],
+    "success_criteria": "セットアップスクリプトが正常に実行され、指示通りに機能が利用可能になること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What Are Claude Code Skills & Agent Plugins?",
+    "Quick Install",
+    "Multi-Tool Support (New)",
+    "Skills Overview",
+    "Personas",
+    "Orchestration",
+    "POWERFUL Tier",
+    "Skill Security Auditor",
+    "Recently Enhanced Skills",
+    "Usage Examples",
+    "Python Analysis Tools",
+    "Related Projects",
+    "FAQ",
+    "Contributing",
+    "License",
+    "Star History"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c50f00b2a16dc17023368b070f0ffda8b12c0ba1",
+  "generated_at": "2026-10-02T10:02:09.524806+09:00"
+}
