@@ -1,0 +1,55 @@
+{
+  "summary_ja": "VoiceStudioは、音声クローン、音声デザイン、動画の吹き替え、音声入力、文字起こし、オーディオブック作成を646言語でサポートする、オープンソースの完全ローカル動作を目指したプラットフォームです。",
+  "capabilities": [
+    {
+      "text": "音声のクローン作成や独自の音声デザインが可能",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "タイミングの合った音声による動画の吹き替えが可能",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "ローカルAPIやエージェント向けのMCP機能を提供",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "音声クローンや音声デザインを用いた音声コンテンツ制作",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "動画の多言語吹き替えや音声同期",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "オーディオブックやストーリー作成、バッチ処理",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "first_trial": {
+    "goal": "macOSまたはLinux環境でOne-command installを用いてVoiceStudioをインストールする",
+    "steps": [
+      "curl -fsSL https://voicestudio.sh/install | sh"
+    ],
+    "success_criteria": "デスクトップアプリのインストールが完了し、Voice cloning機能を利用して音声生成が行える状態になること"
+  },
+  "evidence_sections": [
+    "Your voice. Your workflow.",
+    "Get started",
+    "Documentation",
+    "License & responsible use"
+  ],
+  "unconfirmed": [
+    "サポートされる646言語それぞれの具体的な精度や利用可能なモデルの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e5367fb91bc05c4c7ab8d816d2c6146f2fcaf0cd",
+  "generated_at": "2026-10-04T08:59:05.035145+09:00"
+}

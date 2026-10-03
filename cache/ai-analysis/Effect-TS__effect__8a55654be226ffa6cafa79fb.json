@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Effectは、TypeScriptで堅牢かつ保守しやすく、型安全なプロダクション品質のアプリケーションを構築するためのライブラリです。",
+  "capabilities": [
+    {
+      "text": "型付きのエラーハンドリング、依存性注入、構造化された並行処理を提供します。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "OpenTelemetryの統合やスケジューリング、統合されたスキーマ検証をサポートします。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ブラウザ、Bun、Deno、Node.js向けのプラットフォームサービスや、各種SQLクライアント、AIプロバイダー等の豊富な連携パッケージを含みます。",
+      "evidence_section": "Packages"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "TypeScriptを用いた、大規模でスケーラブルかつ本番運用可能なアプリケーションの構築。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "長期間にわたるシステム運用における、長期サポート（LTS）を活用した安定した開発。",
+      "basis": "README明記",
+      "evidence_section": "Long-term support"
+    },
+    {
+      "text": "ClickHouseやPostgreSQL、SQLiteなどの各種データベースや、OpenAI、AnthropicといったAIモジュールを統合したシステムの開発。",
+      "basis": "README明記",
+      "evidence_section": "Packages"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトにeffectパッケージをインストールする",
+    "steps": [
+      "npm install effect"
+    ],
+    "success_criteria": "パッケージが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Requirements",
+    "Long-term support",
+    "Packages"
+  ],
+  "unconfirmed": [
+    "具体的なコード例を用いた利用方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8df9d3431dfac899157b743eea8c0282d31ea16d",
+  "generated_at": "2026-10-04T08:59:10.091876+09:00"
+}
