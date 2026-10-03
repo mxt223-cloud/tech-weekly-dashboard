@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Octopは、プライバシーを保護しながらローカル環境で動作する、オープンソースのセルフホスト型AIアシスタントプラットフォームです。マルチユーザーおよびマルチエージェントのアーキテクチャを備え、Webダッシュボード、CLI、各種IMチャンネル（Feishu、DingTalk、Telegram、Discordなど）を単一のプロセスで統合して利用できます。",
+  "capabilities": [
+    {
+      "text": "Webダッシュボードや複数プラットフォームのIMチャンネルを単一プロセスで連携し、タスクの処理やチャットを行える。",
+      "evidence_section": "Highlights"
+    },
+    {
+      "text": "16種類のMBTIパーソナリティテンプレートやカスタムシステムプロンプトを使用して、エージェントに個性を与えることができる。",
+      "evidence_section": "Highlights"
+    },
+    {
+      "text": "JWTによるマルチユーザー分離、ツール承認、シェルコマンドのガードレール、個人情報の墨消し機能を備えている。",
+      "evidence_section": "Highlights"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "専用のエージェントを使用して定期的な週報の作成やスケジュールの管理を行わせる。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "FeishuやDingTalkなどのグループチャットにタスクをルーティングするチームヘルパーとして活用する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "ACPを介してOpenCodeやClaude Codeなどの外部コーディングエージェントにコーディングタスクを委任する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    }
+  ],
+  "first_trial": {
+    "goal": "Octopをインストールして初期化し、ローカルで起動する",
+    "steps": [
+      "curl -fsSL https://finnie-1258344699.cos.ap-guangzhou.myqcloud.com/octop/install.sh | bash",
+      "octop init",
+      "octop run"
+    ],
+    "success_criteria": "ブラウザから http://127.0.0.1:8088 にアクセスしてWebダッシュボードが表示されること"
+  },
+  "evidence_sections": [
+    "Highlights",
+    "Overview",
+    "Quick Start"
+  ],
+  "unconfirmed": [
+    "モバイル向けネイティブアプリの詳細な公開時期や機能の全容",
+    "一部の予定されているロードマップ機能の具体的な実装状況"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "07c4fb8185dbff664b143b2be82211a220c698b5",
+  "generated_at": "2026-10-03T09:39:36.012603+09:00"
+}

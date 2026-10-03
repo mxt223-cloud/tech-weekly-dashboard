@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。",
+  "capabilities": [
+    {
+      "text": "単一のコードベースからモバイル、ウェブ、デスクトップ向けのアプリを構築できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コードを変更してアプリを再起動することなく即座に結果を確認できるステートフルホットリロード機能を提供する。",
+      "evidence_section": "Productive development"
+    },
+    {
+      "text": "iOS用のCupertinoウィジェットやMaterialウィジェットなどの豊富なウィジェットセットを提供する。",
+      "evidence_section": "Beautiful user experiences"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "iOSやAndroid向けのモバイルアプリ開発",
+      "basis": "README明記",
+      "evidence_section": "About Flutter"
+    },
+    {
+      "text": "ウェブやデスクトップ（Windows, macOS, Linux）向けのアプリケーション開発",
+      "basis": "README明記",
+      "evidence_section": "About Flutter"
+    }
+  ],
+  "first_trial": {
+    "goal": "Flutterのドキュメントに沿ってインストールを開始する",
+    "steps": [
+      "https://docs.flutter.dev/get-started にアクセスする"
+    ],
+    "success_criteria": "インストール手順のドキュメントを確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Documentation",
+    "Terms of service",
+    "About Flutter",
+    "Beautiful user experiences",
+    "Fast results",
+    "Productive development",
+    "Extensible and open model"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b9e6bc763380cabef9330c92478816ff79dbcae7",
+  "generated_at": "2026-10-03T09:39:28.726944+09:00"
+}
