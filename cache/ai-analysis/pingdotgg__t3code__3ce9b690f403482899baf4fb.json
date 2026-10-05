@@ -1,0 +1,51 @@
+{
+  "summary_ja": "T3 Codeは、PC上の開発用AIエージェント（Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravityなど）をモバイルアプリ、ウェブアプリ、Electron製デスクトップアプリから一元的に制御するためのコントロールサーフェスです。",
+  "capabilities": [
+    {
+      "text": "iOS、Android、ウェブアプリ、デスクトップアプリを通じて、PC上で動作するAIエージェントを遠隔から制御する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravityといった複数のAIプロバイダーのサブスクリプションと連携する",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "コマンドラインでのインストールやバックグラウンドサービスとしての常駐、各OS向けのパッケージマネージャーによるデスクトップアプリの導入をサポートする",
+      "evidence_section": "Installation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "スマートフォンなどのモバイル端末から、PC上で実行中のAIエージェントによる開発作業を遠隔操作して確認・管理する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "複数のAIプロバイダー（Claude CodeやCodexなど）のサブスクリプション環境を組み合わせてエージェント機能を利用する",
+      "basis": "README明記",
+      "evidence_section": "Installation"
+    }
+  ],
+  "first_trial": {
+    "goal": "T3 Codeをローカル環境で一時的に起動して動作を確認する",
+    "steps": [
+      "プロバイダー（例: CodexやClaudeなど）のCLIをインストールしてログインを済ませる",
+      "ターミナルで `npx t3@latest` を実行してインストールなしで試行する"
+    ],
+    "success_criteria": "ローカルのウェブアプリが起動し、エージェントの制御画面が表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Some notes",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "プロジェクトが初期段階でありバグが多く含まれていること以外の、詳細な内部アーキテクチャや具体的な機能の挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f34c275516e5dc4c9106832a34a0e51ab2712bc2",
+  "generated_at": "2026-10-05T09:05:55.805126+09:00"
+}
