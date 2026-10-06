@@ -1,0 +1,54 @@
+{
+  "summary_ja": "TUIOSは、Go言語で開発されたモダンなターミナルマルチプレクサおよびウィンドウマネージャです。Vim風のモーダルインターフェースやバイナリ空間分割（BSP）タイリング、セッションの永続化、コーディングエージェントの状態管理機能を備えています。",
+  "capabilities": [
+    {
+      "text": "複数のターミナルペインを作成、リサイズ、配置できるタイリングウィンドウマネージャ機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "デーモンモードによるセッションの永続化とアタッチ・デタッチ機能",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "コーディングエージェントの状態を追跡するインボックスおよびエージェント連携機能",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のターミナルペインやワークスペースをタイル状に分割して効率的に操作する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "バックグラウンドでデーモンを動作させ、ターミナルを閉じてもセッションを維持・復元する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "複数のコーディングエージェントの状態を監視し、エージェントからの承認依頼やメッセージを管理する",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "TUIOSを起動して動作を確認する",
+    "steps": [
+      "tuios"
+    ],
+    "success_criteria": "TUIOSが起動し、ターミナル上でウィンドウマネージャインターフェースが表示されること"
+  },
+  "evidence_sections": [
+    "Features",
+    "Quick Start",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "詳細なエージェント連携の設定手順の網羅性"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "970836283c90e3b9639910c575e6518144bf6dac",
+  "generated_at": "2026-10-06T10:50:34.097345+09:00"
+}

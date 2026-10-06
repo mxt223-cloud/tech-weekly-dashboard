@@ -1,0 +1,46 @@
+{
+  "summary_ja": "Ponytailは、AIエージェントに過剰なコード生成を避けさせ、標準機能や既存のコードを再利用して最小限のコードで動作させるためのスキル・プロンプト集です。",
+  "capabilities": [
+    {
+      "text": "コード実装前にYAGNI原則や既存コード・標準ライブラリの活用を優先して過剰なビルドを防ぐ。",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "コマンドを使用してエージェントの動作強度を変更したり、差分やリポジトリ全体の過剰な実装をレビュー・監査できる。",
+      "evidence_section": "Commands"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "不要なライブラリやラッパーコンポーネントの追加を避け、標準のHTML要素などを活用してコード量を削減する。",
+      "basis": "README明記",
+      "evidence_section": "Before / after"
+    },
+    {
+      "text": "Claude CodeなどのAIエージェントに組み込んで、機能実装時のコード量、コスト、時間を削減する。",
+      "basis": "README明記",
+      "evidence_section": "Numbers"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code環境にPonytailプラグインをインストールして有効化する",
+    "steps": [
+      "/plugin marketplace add DietrichGebert/ponytail",
+      "/plugin install ponytail@ponytail"
+    ],
+    "success_criteria": "プラグインがインストールされ、AIセッションで有効な状態になること"
+  },
+  "evidence_sections": [
+    "Install",
+    "How it works",
+    "Commands",
+    "Before / after",
+    "Numbers"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b451b0d0e5bde893731071f31e096277416f7cd2",
+  "generated_at": "2026-10-06T10:50:31.579507+09:00"
+}

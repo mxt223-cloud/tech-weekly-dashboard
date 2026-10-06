@@ -1,0 +1,58 @@
+{
+  "summary_ja": "HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを決定論的なMP4動画に変換するためのオープンソースフレームワークです。CLIを用いたローカルでの利用のほか、AIコーディングエージェント向けのスキルやホスト型オーサリングワークフローのレンダリングコアとして機能するように設計されています。",
+  "capabilities": [
+    {
+      "text": "HTML、CSS、メディア、シーク可能なアニメーションを決定論的なMP4動画に変換する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "GSAP、CSSアニメーション、Lottie、Three.js、Anime.js、WAAPIなどのアニメーションランタイムに対応する",
+      "evidence_section": "How It Works"
+    },
+    {
+      "text": "ヘッドレスChromeを用いたフレームごとのシークとFFmpegによるエンコードにより、同じ入力から同じ動画を生成する",
+      "evidence_section": "How It Works"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "製品発表動画や機能紹介の作成",
+      "basis": "README明記",
+      "evidence_section": "What You Can Build"
+    },
+    {
+      "text": "アニメーション付きコード差分、ナレーション、字幕を含むPRウォークスルーの作成",
+      "basis": "README明記",
+      "evidence_section": "What You Can Build"
+    },
+    {
+      "text": "データビュジュアライゼーション、チャートレース、マップアニメーションの作成",
+      "basis": "README明記",
+      "evidence_section": "What You Can Build"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトの初期化、プレビュー、および動画のレンダリングを行う",
+    "steps": [
+      "npx hyperframes init my-video",
+      "cd my-video",
+      "npx hyperframes preview",
+      "npx hyperframes render"
+    ],
+    "success_criteria": "ブラウザでのライブリロードによるプレビュー確認、およびMP4へのレンダリング成功"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "How It Works",
+    "What You Can Build"
+  ],
+  "unconfirmed": [
+    "具体的な価格体系や商用利用における有料プランの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "41204b5d948f33e0e42fe4224f852385dec0f373",
+  "generated_at": "2026-10-06T10:50:25.437124+09:00"
+}

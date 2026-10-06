@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Agent Reachは、AIエージェントにインターネットへのアクセス能力を付与するためのCLIツールであり、Twitter、Reddit、YouTube、GitHub、Bilibili、小紅書などの多様なプラットフォームのデータ読み込みや検索をゼロAPI費用で統合します。",
+  "capabilities": [
+    {
+      "text": "複数の主要なインターネットプラットフォーム（YouTube、Twitter、Bilibili、GitHub、RSS、ウェブページ等）へのアクセスや検索をCLI経由で提供する。",
+      "evidence_section": "支持的平台"
+    },
+    {
+      "text": "環境の診断を行い、各チャンネルの状態や動作中のバックエンドを報告する `agent-reach doctor` コマンドを備える。",
+      "evidence_section": "为什么需要 Agent Reach？"
+    },
+    {
+      "text": "プライバシーを考慮し、Cookieやトークンなどの認証情報をローカル環境にのみ保存する。",
+      "evidence_section": "安全性"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントにYouTubeの字幕抽出や動画検索を行わせる。",
+      "basis": "README明記",
+      "evidence_section": "支持的平台"
+    },
+    {
+      "text": "AIエージェントを活用して、X（Twitter）やRedditなどのコミュニティから特定の製品評価や情報を収集する。",
+      "basis": "README明記",
+      "evidence_section": "为什么需要 Agent Reach？"
+    },
+    {
+      "text": "AIエージェントに公開されているウェブページやGitHubリポジトリの内容を読み込ませて解析する。",
+      "basis": "README明記",
+      "evidence_section": "支持的平台"
+    }
+  ],
+  "first_trial": {
+    "goal": "AIエージェントを通じてAgent Reachをインストールする",
+    "steps": [
+      "AIエージェントに以下のインストール指示文をコピーして渡す：\n帮我安装 Agent Reach：https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md"
+    ],
+    "success_criteria": "エージェントが自動的にインストールのための処理や確認を行うこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "为什么需要 Agent Reach？",
+    "支持的平台",
+    "快速上手",
+    "安全性"
+  ],
+  "unconfirmed": [
+    "インストールのためのPythonパッケージの正確なPyPI上のパッケージ名（READMEでは同名パッケージの直接インストールを非推奨としている）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5ef5446b64ae5a5c9931691e63566f0b3403ad2f",
+  "generated_at": "2026-10-06T10:50:28.852560+09:00"
+}
