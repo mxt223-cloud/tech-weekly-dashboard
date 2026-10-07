@@ -1,0 +1,68 @@
+{
+  "summary_ja": "claude-memは、エージェントのセッション間でコンテキストを継続的に保持するための永続的メモリ圧縮システムです。セッション中のツール使用状況を自動的にキャプチャし、AIによる圧縮を行って、次回のセッションへ関連するコンテキストを再注入します。",
+  "capabilities": [
+    {
+      "text": "セッション間のコンテキストの自動保持とセマンティックな要約生成",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "SQLiteデータベースとChromaベクトルデータベースを活用した検索機能",
+      "evidence_section": "Documentation"
+    },
+    {
+      "text": "効率的な3層ワークフローパターンを提供する4つのMCP検索ツール",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントが過去のセッションの作業内容やプロジェクトの履歴を記憶し、セッション終了後も一貫性を保つ",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自然言語クエリを使用してプロジェクトの履歴を効率的に検索し、関連する情報を呼び出す",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "複数セッションをまたぐ開発において、過去のバグ修正や決定事項のコンテキストを迅速に再利用する",
+      "basis": "提案",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールしてClaude Codeで使用を開始する",
+    "steps": [
+      "npx claude-mem install",
+      "/plugin marketplace add thedotmack/claude-mem",
+      "/plugin install claude-mem"
+    ],
+    "success_criteria": "Claude Codeを再起動した際に、前回のセッションからのコンテキストが自動的に新しいセッションに反映されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "Documentation",
+    "How It Works",
+    "MCP Search Tools",
+    "Release Branches",
+    "System Requirements",
+    "Configuration",
+    "Development",
+    "Troubleshooting",
+    "Bug Reports",
+    "Contributing",
+    "License",
+    "Support"
+  ],
+  "unconfirmed": [
+    "具体的なAIモデルの内部処理アルゴリズムの詳細",
+    "無料トライアル終了後の正確な料金体系"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a059f1e710047d84a661634b9a1dea3475347ede",
+  "generated_at": "2026-10-07T09:57:16.303789+09:00"
+}

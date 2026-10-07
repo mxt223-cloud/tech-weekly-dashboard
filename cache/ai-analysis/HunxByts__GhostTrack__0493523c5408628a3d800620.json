@@ -1,0 +1,59 @@
+{
+  "summary_ja": "GhostTrackは、位置情報、携帯電話番号、ソーシャルメディアのユーザー名を追跡・収集するためのOSINT・情報収集ツールです。",
+  "capabilities": [
+    {
+      "text": "IP TrackerメニューによりIPアドレスの追跡ができる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Phone Trackerメニューにより携帯電話番号の情報を検索できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Username Trackerメニューによりソーシャルメディアのユーザー名情報を検索できる",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ターゲットのIPアドレスや位置情報を追跡する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "携帯電話番号から関連情報を検索・収集する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "SNSのユーザー名からアカウント情報を調査する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "ツールをクローンして起動メニューを表示する",
+    "steps": [
+      "git clone https://github.com/HunxByts/GhostTrack.git",
+      "cd GhostTrack",
+      "pip3 install -r requirements.txt",
+      "python3 GhostTR.py"
+    ],
+    "success_criteria": "プログラムが実行されメニューが表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Instalation on Linux (deb)",
+    "Instalation on Termux",
+    "Usage Tool"
+  ],
+  "unconfirmed": [
+    "IP Trackerの具体的な精度や仕組み",
+    "Phone Trackerが対応している国や地域の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a5f4df0ff59621fbedce9ca2162058251643c6c2",
+  "generated_at": "2026-10-07T09:57:22.495022+09:00"
+}

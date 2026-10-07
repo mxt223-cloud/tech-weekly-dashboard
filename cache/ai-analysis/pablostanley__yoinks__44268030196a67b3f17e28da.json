@@ -1,0 +1,54 @@
+{
+  "summary_ja": "ターミナルから動画を手軽にダウンロードできるツールです。YouTubeやX（旧Twitter）、Instagramなどの1,800以上のサイトに対応しており、広告や怪しいポップアップを表示せずに、URLの入力と解像度の選択だけで動画を取得できます。",
+  "capabilities": [
+    {
+      "text": "YouTubeやX（旧Twitter）、Instagram、TikTokなど1,800以上のサイトから動画をダウンロードできる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ターミナル上で対話型のフルスクリーンUIを使用し、解像度や音声のみのMP3を選択できる",
+      "evidence_section": "Usage"
+    },
+    {
+      "text": "テーマの切り替え（auto、light、dark）に対応している",
+      "evidence_section": "Usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ブラウザの広告や偽のダウンロードボタンを避け、ターミナルから安全に動画を取得する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ダウンロードした動画や音声をローカルのダウンロードフォルダに保存する",
+      "basis": "README明記",
+      "evidence_section": "Usage"
+    }
+  ],
+  "first_trial": {
+    "goal": "インストールせずに一時的にツールを起動して動画URLを渡す",
+    "steps": [
+      "npx yoinks https://youtu.be/dQw4w9WgXcQ"
+    ],
+    "success_criteria": "ターミナル上にフォーマット選択画面が表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Usage",
+    "How it works",
+    "Development",
+    "Roadmap",
+    "A note on fair use",
+    "License"
+  ],
+  "unconfirmed": [
+    "将来のロードマップにある--bestや--mp3フラグ、出力フォルダの指定機能、プレイリスト対応、クリップボードからのURL自動検出などの未実装機能の動作詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5b8dfbfd99f3ab325db8a6f203f98c752ce0fd86",
+  "generated_at": "2026-10-07T09:57:19.231410+09:00"
+}

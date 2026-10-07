@@ -1,0 +1,57 @@
+{
+  "summary_ja": "OpenShellは、自律型AIエージェント向けの安全でプライベートなランタイムです。ファイルアクセス、システムコール、ネットワーク接続に対するポリシーをカーネルレベルで強制し、ポリシー変更に対しては形式手法による検証を行ってリスクを検出します。",
+  "capabilities": [
+    {
+      "text": "カーネルレベルの強制により、エージェントのファイルアクセス、システムコール、ネットワーク接続をサンドボックス内で制御する",
+      "evidence_section": "How It Works"
+    },
+    {
+      "text": "ポリシー変更を行う前に形式検証を用いてリスクのあるアクセスをフラグ付けし、人間によるレビューを待つ",
+      "evidence_section": "How It Works"
+    },
+    {
+      "text": "実際の資格情報をエージェントに直接見せず、承認されたエンドポイントへのリクエストに対してのみOpenShellが資格情報を追加する",
+      "evidence_section": "How It Works"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自律型AIエージェントにファイル読み込みやパッケージインストール、API呼び出しを行わせつつ、データや秘密情報、ネットワークへの無制限なアクセスを制限する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コーディングエージェントにOpenShellのスキルを追加し、CLIの操作やサンドボックスポリシーの記述を行わせる",
+      "basis": "README明記",
+      "evidence_section": "Agent Skills"
+    },
+    {
+      "text": "PythonやTypeScript、Go、RustなどのSDKを使用してアプリケーションをOpenShellゲートウェイに接続する",
+      "basis": "README明記",
+      "evidence_section": "SDKs"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIとローカルゲートウェイのセットアップを行い、デモ用のサンドボックスを作成する",
+    "steps": [
+      "curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh",
+      "openshell sandbox create --name demo"
+    ],
+    "success_criteria": "インストーラーによってCLIとローカルゲートウェイがセットアップされ、デモ用のサンドボックスが正常に作成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "How It Works",
+    "Quickstart",
+    "Agent Skills",
+    "SDKs"
+  ],
+  "unconfirmed": [
+    "サポート対象OSにおける具体的な内部仮想化技術の詳細動作や、すべての拡張機能の仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e0aaa43641b41a8e7cd4a2f8ffcb345a356e754b",
+  "generated_at": "2026-10-07T09:57:09.818013+09:00"
+}

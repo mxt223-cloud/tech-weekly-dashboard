@@ -1,0 +1,49 @@
+{
+  "summary_ja": "人気のある開発者向けツール、フレームワーク、SaaS製品向けの公式Cursorプラグインをまとめたリポジトリです。各プラグインは独立したディレクトリとして構成され、独自の`.cursor-plugin/plugin.json`マニフェストを持っています。",
+  "capabilities": [
+    {
+      "text": "人気のある開発者向けツール、フレームワーク、SaaS製品向けの公式Cursorプラグインの提供",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "各プラグインディレクトリに独立した .cursor-plugin/plugin.json マニフェストを配置",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "ルートディレクトリの .cursor-plugin/marketplace.json によるプラグインの一覧管理と、プラグインごとのスキル、ルール、MCPサーバー定義の保持",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントや開発ツール向けのプラグインを追加・活用して機能を拡張する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "新規のエージェントプラグインを構造化して検証する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造を確認する",
+    "steps": [
+      "リポジトリをクローンまたは閲覧し、プラグインのディレクトリ構成を確認する"
+    ],
+    "success_criteria": "各プラグインディレクトリや .cursor-plugin/marketplace.json の存在を確認できること"
+  },
+  "evidence_sections": [
+    "Plugins",
+    "Repository structure",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや利用開始のためのセットアップ手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "0ba8f6e95b5fc733402c08c59d26713e85c82712",
+  "generated_at": "2026-10-07T09:57:06.562437+09:00"
+}

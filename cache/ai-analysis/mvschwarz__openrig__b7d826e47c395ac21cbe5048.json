@@ -1,0 +1,52 @@
+{
+  "summary_ja": "OpenRigは、Claude CodeやCodexなどのAIコーディングエージェントをYAMLで定義し、単一のチームとして管理・実行するためのオープンソースのマルチエージェントオーケストレーションツールです。",
+  "capabilities": [
+    {
+      "text": "YAMLでエージェントチームを定義し、1つのコマンドで起動できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude CodeとCodexを同じリグ内で管理できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "TUIを使用して、エージェントの稼働状況やモデル、コンテキスト、状態をグラフやテーブルで確認できる。",
+      "evidence_section": "See it running"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIコーディングエージェントに役割を持たせ、共通のコンテキストでチームとして作業させる。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "リードエージェントに希望する成果を伝えて調整役を担わせ、専門家エージェントと連携して結果や判断事項を受け取る。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIツールのインストールとセットアップのドライランを実行する。",
+    "steps": [
+      "npm install -g @openrig/cli",
+      "rig setup --dry-run"
+    ],
+    "success_criteria": "エラーなくセットアップのプレビューが実行されること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "See it running",
+    "Install and first run",
+    "Requirements"
+  ],
+  "unconfirmed": [
+    "具体的なチーム設定用YAMLファイルの記述内容",
+    "実行時の詳細なインタラクション手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f4b0eada441ae1ebc1a020fac58160613f88ed96",
+  "generated_at": "2026-10-07T09:57:02.790324+09:00"
+}

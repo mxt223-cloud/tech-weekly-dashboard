@@ -1,0 +1,54 @@
+{
+  "summary_ja": "AnyPS5は、PS5の実行ファイルをLinuxやWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムprxライブラリの実装を行います。",
+  "capabilities": [
+    {
+      "text": "実行ファイルをターゲットシステムのネイティブ形式に変換するrelinkerを備えている",
+      "evidence_section": "About"
+    },
+    {
+      "text": "動的リンクに適したシステムprxライブラリの実装を含んでいる",
+      "evidence_section": "About"
+    },
+    {
+      "text": "シェーダー再コンパイラによりSPIR-Vを生成できる",
+      "evidence_section": "About"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "PS5のゲームや実行ファイルをLinuxやWindowsへ移植する",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "SDLマッピングされたゲームコントローラーを使用してゲームを操作する",
+      "basis": "README明記",
+      "evidence_section": "Input mapping"
+    }
+  ],
+  "first_trial": {
+    "goal": "ビルド手順や使用方法の確認を行う",
+    "steps": [
+      "docs/user/USAGE.md を参照して使用方法を確認する",
+      "docs/dev/BUILD.md を参照してビルド手順を確認する"
+    ],
+    "success_criteria": "USAGE.mdおよびBUILD.mdの内容が確認できること"
+  },
+  "evidence_sections": [
+    "About",
+    "Status",
+    "Compatibility",
+    "Input mapping",
+    "Disclaimer",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なビルドコマンド",
+    "具体的な実行コマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a06939e2b1e26abf1df8f6f5357cdafbd60e4555",
+  "generated_at": "2026-10-07T09:57:27.829999+09:00"
+}

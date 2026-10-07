@@ -1,0 +1,59 @@
+{
+  "summary_ja": "PageIndexは、ベクトルデータベースやチャンキングを使用せず、階層的なツリーインデックスとLLMによる推論を活用して文章を検索・参照する、新しいアプローチのRAGエンジンです。人間のように文書の必要な箇所をたどって文脈を理解し、追跡可能で説明性の高い情報抽出を実現します。",
+  "capabilities": [
+    {
+      "text": "ベクトルインデックスやチャンキングを行わず、階層的なツリー構造のインデックスを作成してLLMの推論によって検索を行う機能",
+      "evidence_section": "What is PageIndex?"
+    },
+    {
+      "text": "ローカルモード（pip install -U pageindex）でのインデックス作成、検索、チャットの実行機能",
+      "evidence_section": "Updates"
+    },
+    {
+      "text": "PageIndex Cloudを利用した、スキャン済み文書や画像を含む文書のパース、OCR、画像理解、マネージドストレージによるインデックス構築機能",
+      "evidence_section": "PageIndex Cloud"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "財務レポート、法務文書、規制当局への提出書類などの長くて複雑な専門文書の分析と情報抽出",
+      "basis": "README明記",
+      "evidence_section": "What is PageIndex?"
+    },
+    {
+      "text": "技術マニュアル、医学文献、学術教科書などにおける文脈を重視した質問応答",
+      "basis": "README明記",
+      "evidence_section": "What is PageIndex?"
+    },
+    {
+      "text": "OpenAI Agents SDKやClaude Agent SDKなどの外部エージェントフレームワークへのツールとしての統合",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    }
+  ],
+  "first_trial": {
+    "goal": "PageIndex SDKのローカルモードを使用して文書をインデックス化し、質問に対する回答を得る",
+    "steps": [
+      "pip install -U pageindex",
+      "Pythonスクリプト内で環境変数にOPENAI_API_KEYを設定する",
+      "PageIndexClientを初期化し、submit_documentメソッドでPDFファイルを送信してdoc_idを取得する",
+      "client.chatメソッドを使用して文書の内容に関する質問を行い、回答を出力する"
+    ],
+    "success_criteria": "PDFファイルから抽出された情報に基づいた回答が標準出力に表示されること"
+  },
+  "evidence_sections": [
+    "Updates",
+    "What is PageIndex?",
+    "Quickstart",
+    "Benchmarks",
+    "PageIndex Cloud"
+  ],
+  "unconfirmed": [
+    "ローカルモード以外の特定クラウドプロバイダー固有のデプロイ詳細（VPCやオンプレミスでの動作手順）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "05457ee57115bfffe5cec2ff1490d3f894e2240f",
+  "generated_at": "2026-10-07T09:57:13.251561+09:00"
+}
