@@ -1,0 +1,43 @@
+{
+  "summary_ja": "OpenRigは、複数のAIコーディングエージェント（Claude CodeやCodexなど）をYAMLで定義し、ひとつのチームとして組織・管理するためのオープンソースのネットワーク構築ツールです。",
+  "capabilities": [
+    {
+      "text": "YAMLファイルでエージェントチームを定義し、1つのコマンドで起動できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude CodeやCodexなどのモデルを同じリグ内でひとつのシステムとして管理できる",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リーダーエージェントに希望する成果を伝えて専門家チームを調整させ、結果や判断を収集する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "OpenRigのCLIツールをインストールし、セットアップの準備状態を確認する",
+    "steps": [
+      "npm install -g @openrig/cli",
+      "rig setup --dry-run"
+    ],
+    "success_criteria": "インストールとセットアップの計画がエラーなく表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "See it running",
+    "Install and first run",
+    "Requirements"
+  ],
+  "unconfirmed": [
+    "インストールの詳細手順におけるnpm 11以降の挙動の続き（READMEで文章が途切れているため）",
+    "利用可能なすべてのチーム定義パラメータの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6454359d529a65b41752670883027b64a6c72890",
+  "generated_at": "2026-10-08T10:12:56.898283+09:00"
+}

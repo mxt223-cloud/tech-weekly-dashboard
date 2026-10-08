@@ -1,0 +1,43 @@
+{
+  "summary_ja": "Cursor用の公式プラグイン群と仕様を提供するリポジトリです。人気のある開発者向けツール、フレームワーク、SaaS製品向けのプラグインが含まれており、各プラグインは独立したディレクトリとして管理されています。",
+  "capabilities": [
+    {
+      "text": "開発者ツールやSaaS製品向けの公式Cursorプラグインの提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "マルチプラグインのマーケットプレイス構造と個別プラグインごとのマニフェスト管理",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "人気のある開発者ツール、フレームワーク、SaaS製品向けの公式プラグインを利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造とプラグイン一覧を確認する",
+    "steps": [
+      "リポジトリのREADMEを開く",
+      "PluginsセクションおよびRepository structureセクションを参照する"
+    ],
+    "success_criteria": "提供されているプラグインの一覧とディレクトリ構造が把握できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure",
+    "License"
+  ],
+  "unconfirmed": [
+    "プラグインの具体的なインストール方法やセットアップコマンド",
+    "各プラグインの詳細な利用手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3ce5fb51a30697109023cdfb6702089d74f44397",
+  "generated_at": "2026-10-08T10:13:04.051496+09:00"
+}

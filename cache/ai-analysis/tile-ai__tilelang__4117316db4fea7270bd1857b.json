@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Tile Languageは、GPUやCPU、アクセラレータ向けの高性能カーネルの開発を効率化するためのドメイン固有言語です。Python風の構文とTVMをベースにしたコンパイラ基盤を採用しており、生産性を維持しながら最先端の低レベル最適化を行うことができます。",
+  "capabilities": [
+    {
+      "text": "Python風の構文とTVM上のコンパイラ基盤を用いた、GPU/CPU/NPU向け高性能カーネルの構築",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "@tilelang.jitによる入力形状やコンパイル時引数へのカーネル特殊化",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "T.Pipelinedによるグローバルメモリからシェアードメモリへの転送ステージング",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "GEMM、量子化GEMM、FlashAttention、LinearAttentionなどの高性能カーネルの開発",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "PyTorchのテンソルを入力とした、ReLUエピローグ付きFP16行列積（GEMM）の実行と検証",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "FlashAttentionやFlash Decodingなどのアテンション・配列モデル向けカーネルの実装",
+      "basis": "README明記",
+      "evidence_section": "Examples"
+    }
+  ],
+  "first_trial": {
+    "goal": "TileLangのインストール確認と、FP16行列積・ReLU融合カーネルの実行・検証を行うこと",
+    "steps": [
+      "pip install tilelang",
+      "python -c \"import tilelang; print(tilelang.__version__)\"",
+      "Quick StartセクションのPythonスクリプトを実行してGEMMとReLUの処理結果を検証する"
+    ],
+    "success_criteria": "「GEMM + ReLU passed.」とコンソールに出力され、エラーが発生しないこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Platform and Backend Support",
+    "Installation",
+    "Quick Start",
+    "Examples"
+  ],
+  "unconfirmed": [
+    "詳細なベンチマークの数値の再現手順",
+    "特定のハードウェア環境における追加のコンパイラフラグの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9e93a7d9c3b636dd68d3276587b88a282ed6f57f",
+  "generated_at": "2026-10-08T10:13:11.289262+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "summary_ja": "openGym は、セルフホスト可能なオープンソースのジムおよび自重トレーニングトラッカーです。パスキー認証による安全なログインに対応し、ルーティンの計画やトレーニングの記録、筋群の疲労度の可視化などをデバイス間で同期しながら利用できます。",
+  "capabilities": [
+    {
+      "text": "1,324種類のエクササイズ（アニメーション付きデモ、筋肉ごとの検索・部位マップ表示対応）を利用したルーティンの計画。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "Face ID、Touch ID、指紋認証などのパスキーによる、デバイス間で同期される安全なプロファイル管理。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "FitNotes、Strong、Hevy、Apple Health からのデータインポート機能。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自宅のサーバーやDocker環境にデプロイし、他社のクラウドサービスを利用せずに自身のワークアウトデータを管理する。",
+      "basis": "README明記",
+      "evidence_section": "Why openGym"
+    },
+    {
+      "text": "スマートフォンとノートパソコンなどの複数デバイス間でトレーニングデータを同期し、オフライン環境でも記録をつける。",
+      "basis": "README明記",
+      "evidence_section": "Why openGym"
+    },
+    {
+      "text": "既存のフィットネスアプリ（FitNotesやStrongなど）から過去のトレーニング履歴を移行して使い続ける。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker Compose を使用して openGym のローカルインスタンスを起動する",
+    "steps": [
+      "git clone https://github.com/DuarteSantos8/openGym",
+      "cd openGym",
+      "cp .env.example .env",
+      "docker compose pull",
+      "docker compose up -d"
+    ],
+    "success_criteria": "ブラウザで http://localhost:8080 にアクセスし、プロファイル作成画面が表示されること"
+  },
+  "evidence_sections": [
+    "Why openGym",
+    "Features",
+    "Quick start"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ce3394baf6dfd2dd16849ba87d6466f63ef82753",
+  "generated_at": "2026-10-08T10:13:08.470755+09:00"
+}

@@ -1,0 +1,53 @@
+{
+  "summary_ja": "AnyPS5は、PS5向け実行ファイルをLinuxやWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。",
+  "capabilities": [
+    {
+      "text": "実行ファイルをターゲットシステムのネイティブ形式に変換するrelinkerが含まれています。",
+      "evidence_section": "About"
+    },
+    {
+      "text": "動的リンクに適したシステムprxライブラリの実装が含まれています。",
+      "evidence_section": "About"
+    },
+    {
+      "text": "SDLマッピングされたゲームコントローラー、およびキーボードとマウスの入力設定をサポートしています。",
+      "evidence_section": "Input mapping"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "PS5向け実行ファイルをLinuxおよびWindowsへ自動移植する。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "相互運用性、研究、保存、互換性の目的で使用する。",
+      "basis": "README明記",
+      "evidence_section": "Disclaimer"
+    }
+  ],
+  "first_trial": {
+    "goal": "ビルド手順や使用方法を確認する",
+    "steps": [
+      "docs/dev/BUILD.mdを参照してビルド手順を確認する",
+      "docs/user/USAGE.mdを参照して使用方法を確認する"
+    ],
+    "success_criteria": "ビルド手順および使用方法に関するドキュメントにアクセスできること"
+  },
+  "evidence_sections": [
+    "About",
+    "Status",
+    "Compatibility",
+    "Input mapping",
+    "Disclaimer",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なビルドコマンドの記載がないため、手順の実行にはドキュメントの参照が必要である"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5e57cb94ff24c133317861bad76ac6b8dd83a55b",
+  "generated_at": "2026-10-08T10:12:59.082229+09:00"
+}
