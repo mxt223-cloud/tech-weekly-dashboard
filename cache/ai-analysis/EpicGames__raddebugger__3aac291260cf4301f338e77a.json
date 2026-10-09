@@ -1,0 +1,59 @@
+{
+  "summary_ja": "EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。",
+  "capabilities": [
+    {
+      "text": "ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する",
+      "evidence_section": "The RAD Debug Info (RDI) Format"
+    },
+    {
+      "text": "巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する",
+      "evidence_section": "The RAD Linker"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Windows x64環境におけるネイティブアプリケーションのデバッグ",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "巨大なリンクプロジェクトのビルド時間短縮",
+      "basis": "README明記",
+      "evidence_section": "The RAD Linker"
+    },
+    {
+      "text": "radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成",
+      "basis": "README明記",
+      "evidence_section": "The RAD Debug Info (RDI) Format"
+    }
+  ],
+  "first_trial": {
+    "goal": "Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する",
+    "steps": [
+      "Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする",
+      "x64 Native Tools Command Prompt for VS を起動する",
+      "コードベースのルートディレクトリに移動する",
+      "buildスクリプトを実行する"
+    ],
+    "success_criteria": "ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "The RAD Debug Info (RDI) Format",
+    "The RAD Linker",
+    "Windows x64"
+  ],
+  "unconfirmed": [
+    "LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）",
+    "リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "05403355908aa9765b226055831976999daa2db6",
+  "generated_at": "2026-10-09T10:20:37.601450+09:00"
+}

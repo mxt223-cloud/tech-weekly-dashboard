@@ -1,0 +1,62 @@
+{
+  "summary_ja": "claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。エージェントの行動を自動的にキャプチャし、AIで圧縮して次回のセッションに適切なコンテキストを注入します。",
+  "capabilities": [
+    {
+      "text": "セッション間でコンテキストを自動保存し、次回のセッションで利用可能にする",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "トークン効率の良い3レイヤーワークフロー（search、timeline、get_observations）によるメモリ検索",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "SQLiteデータベースとChromaベクトルデータベースを活用したハイブリッド検索と永続ストレージ",
+      "evidence_section": "How It Works"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントの過去のプロジェクト履歴やバグ修正の文脈を次のセッションに引き継ぐ",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自然言語クエリとスキルベース検索を使用してプロジェクトの履歴を照会する",
+      "basis": "README明記",
+      "evidence_section": "OpenClaw Gateway"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールして動作確認を行う",
+    "steps": [
+      "npx claude-mem install"
+    ],
+    "success_criteria": "インストーラーが正常にセットアップを完了し、ブラウザでのサインインまたはプロバイダーの選択が行えること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "OpenClaw Gateway",
+    "Documentation",
+    "How It Works",
+    "MCP Search Tools",
+    "Release Branches",
+    "System Requirements",
+    "Configuration",
+    "Development",
+    "Troubleshooting",
+    "Bug Reports",
+    "Contributing",
+    "License",
+    "Support"
+  ],
+  "unconfirmed": [
+    "具体的な無料トライアルの詳細な終了後の自動フォールバック動作の厳密な挙動",
+    "各IDE統合の詳細な内部処理フロー"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ab80dea28a465b023d54b777bfa0d75c9ba7aaf7",
+  "generated_at": "2026-10-09T10:20:40.755522+09:00"
+}

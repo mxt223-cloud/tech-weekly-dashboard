@@ -1,0 +1,54 @@
+{
+  "summary_ja": "text-to-cadは、AIエージェントにローカルでの3Dモデル生成や製造性チェック、エンジニアリング図面の作成機能などを追加するプラグインおよびスキル群です。",
+  "capabilities": [
+    {
+      "text": "STEP、GLB、STL、3MFファイル形式での3Dモデル生成",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "製造性のチェックおよびエンジニアリング図面の生成",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "3Dプリンティング、板金、CNC加工サービスへの接続",
+      "evidence_section": "text-to-cad"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントにCADの操作や3Dモデル生成の能力を持たせる",
+      "basis": "README明記",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "3DプリンターやCNC加工向けのデザインレビューや製造性検証を行う",
+      "basis": "README明記",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "ロボット構造ファイルやシミュレータモデルの作成",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "AIエージェントを通じてtext-to-cadをインストールする",
+    "steps": [
+      "AIエージェントに対して「Install text-to-cad from https://github.com/earthtojake/text-to-cad」というメッセージを送信する"
+    ],
+    "success_criteria": "AIエージェントによってtext-to-cadが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "text-to-cad",
+    "💻 Install",
+    "🧰 Skills"
+  ],
+  "unconfirmed": [
+    "具体的なAPIの内部実装詳細や、対応サービスの詳細な利用規約について"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "cef2020127d79e7fa0eacd0c313e7e538f246a42",
+  "generated_at": "2026-10-09T10:20:46.508153+09:00"
+}

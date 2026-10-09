@@ -1,0 +1,57 @@
+{
+  "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
+  "capabilities": [
+    {
+      "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
+      "evidence_section": "Installation (30-second setup)"
+    },
+    {
+      "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
+      "evidence_section": "Why These Skills Exist"
+    },
+    {
+      "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
+      "evidence_section": "Engineering"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
+      "basis": "README明記",
+      "evidence_section": "Why These Skills Exist"
+    },
+    {
+      "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
+      "basis": "README明記",
+      "evidence_section": "Why These Skills Exist"
+    },
+    {
+      "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
+      "basis": "README明記",
+      "evidence_section": "Why These Skills Exist"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
+    "steps": [
+      "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
+      "エージェント内で /setup-matt-pocock-skills を実行する"
+    ],
+    "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
+  },
+  "evidence_sections": [
+    "Installation (30-second setup)",
+    "Why These Skills Exist",
+    "Reference",
+    "Engineering",
+    "Productivity"
+  ],
+  "unconfirmed": [
+    "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+  "generated_at": "2026-10-09T10:20:43.679066+09:00"
+}
