@@ -1,0 +1,57 @@
+{
+  "summary_ja": "text-to-cadは、AIエージェントにローカルでのCADモデル生成や製造性チェック、エンジニアリング図面の作成、3DプリンタやCNC加工サービスとの連携機能を提供するプラグインおよびツールです。",
+  "capabilities": [
+    {
+      "text": "STEP、GLB、STL、3MFファイル形式での3Dモデル生成ワークフローの提供",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "製造性チェックやエンジニアリング図面の生成、3Dプリンティング・板金・CNC加工サービスへの接続",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "Claude Code、Claude Desktop、Codex、Cursor、Grok Build、GeminiなどのAIエージェントアプリへの対応",
+      "evidence_section": "text-to-cad"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自然言語や画像リクエストからのCADモデル作成および編集",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    },
+    {
+      "text": "既製のSTEPパーツ（ネジ、ベアリング、モーター、コネクタなど）の検索",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    },
+    {
+      "text": "3Dプリントや板金、CNC加工前の製造性（DfAM / DFM）のレビューおよびチェック",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeにtext-to-cadプラグインをインストールする",
+    "steps": [
+      "claude plugin marketplace add earthtojake/text-to-cad#latest",
+      "claude plugin install text-to-cad@earthtojake"
+    ],
+    "success_criteria": "Claude Codeにプラグインが追加され、利用可能になること"
+  },
+  "evidence_sections": [
+    "text-to-cad",
+    "💻 Install",
+    "Claude Code",
+    "🧰 Skills",
+    "🛠️ Contributing"
+  ],
+  "unconfirmed": [
+    "プラグイン導入以外の詳細な実行結果や、具体的なCAD生成のプロンプト出力例"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "aaf231260f25afa856a44f781a2abc2d3cb20ea2",
+  "generated_at": "2026-10-10T10:08:42.063796+09:00"
+}

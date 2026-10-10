@@ -1,0 +1,56 @@
+{
+  "summary_ja": "T3 Codeは、PC上の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元管理・制御するための「エージェント・コントロール・サーフェス」です。",
+  "capabilities": [
+    {
+      "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google AntigravityなどのAIエージェントと連携して制御できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "iOS、Android、Webアプリ、Electronベースのデスクトップアプリを通じて利用できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "コマンドラインや各種パッケージマネージャー（winget、Homebrew、APT、AUR）からインストール可能である。",
+      "evidence_section": "Installation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "スマートフォンなどのモバイル端末から、PC上で動作するAIエージェントを遠隔操作して開発を進める。",
+      "basis": "README明記",
+      "evidence_section": "Documentation"
+    },
+    {
+      "text": "複数のAIエージェント（Claude CodeやCodexなど）を一つのインターフェースから一元的に管理・コントロールする。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "デスクトップアプリやWebアプリを用いて、ローカル環境のコードエージェントの動作を快適に監視・操作する。",
+      "basis": "提案",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でサーバーを起動し、Webアプリを開く",
+    "steps": [
+      "curl -fsSL https://t3.codes/install.sh | sh",
+      "t3"
+    ],
+    "success_criteria": "サーバーが起動し、ローカルのWebアプリが開くこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "具体的なソースコードの内部構造や詳細な実装アルゴリズム",
+    "将来的なコントリビューション方針の変更予定"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ad6ef840314034b4dd77f1e0b2516130f70b99d9",
+  "generated_at": "2026-10-10T10:08:44.671373+09:00"
+}
