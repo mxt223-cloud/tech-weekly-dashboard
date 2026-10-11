@@ -1,6 +1,6 @@
-# Tech Daily — 2026-10-10
+# Tech Daily — 2026-10-11
 
-生成日時: 2026-10-10T10:08:45.623707+09:00  
+生成日時: 2026-10-11T09:22:36.931051+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** AnyPS5は、PS5向け実行ファイルをLinuxやWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。
 
 - 言語: C++
-- 今週のスター: 15539
+- 今週のスター: 21365
 - ライセンス: GPL-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -43,51 +43,12 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 未確認: 具体的なビルドコマンドの記載がないため、手順の実行にはドキュメントの参照が必要である
 
 
-## 2. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
-
-**概要:** OpenRigは、Claude CodeやCodexなどのAIコーディングエージェントをYAMLで定義し、チームとして組織的に管理・実行するためのオープンソースのツールです。
-
-- 言語: TypeScript
-- 今週のスター: 2338
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- YAMLファイルでエージェントのチームを定義し、1つのコマンドで起動できます。（根拠: README冒頭）
-
-- Claude CodeやCodexを同じリグ内で1つのシステムとして管理できます。（根拠: README冒頭）
-
-- TUIを使用して、エージェントの実行状態やモデル、コンテキストをグラフやテーブル形式で確認できます。（根拠: See it running）
-
-
-### 利用例
-
-- 複数のAIエージェントを組織的なチームとして連携させ、開発作業を行わせる。（README明記／根拠: README冒頭）
-
-- リーダーエージェントと対話して目的を伝え、専門家エージェントに作業を調整・実行させる。（README明記／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-OpenRigのCLIをインストールし、セットアップを実行する
-
-1. npm install -g @openrig/cli
-
-2. rig setup --dry-run
-
-
-成功の目安: セットアップの計画が表示され、エラーなくコマンドが完了すること
-
-未確認: 具体的なチーム構成YAMLの書き方や詳細な設定方法／各プロバイダのサインイン完了後の具体的な操作手順
-
-
-## 3. [mattpocock/skills](https://github.com/mattpocock/skills)
+## 2. [mattpocock/skills](https://github.com/mattpocock/skills)
 
 **概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
 
 - 言語: Shell
-- 今週のスター: 8156
+- 今週のスター: 9179
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -123,92 +84,12 @@ OpenRigのCLIをインストールし、セットアップを実行する
 未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
 
 
-## 4. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
-
-**概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。
-
-- 言語: TypeScript
-- 今週のスター: 4003
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- HTMLとCSS、シーク可能なアニメーションを使用して確定的なMP4動画を生成する（根拠: README冒頭）
-
-- GSAP、CSSアニメーション、Lottie、Three.js、Anime.js、WAAPIなどのアニメーションライブラリやランタイムに対応する（根拠: How It Works）
-
-- CLIやAWS Lambdaを用いたローカルおよび分散レンダリングに対応する（根拠: HyperFrames Stack）
-
-
-### 利用例
-
-- 製品発表動画や機能紹介動画の作成（README明記／根拠: What You Can Build）
-
-- アニメーション付きコード差分、ナレーション、字幕を含むPRウォークスルーの作成（README明記／根拠: What You Can Build）
-
-- データビュジュアライゼーション、チャートレース、マップアニメーションの制作（README明記／根拠: What You Can Build）
-
-
-### 最初に試すこと
-
-ローカル環境で動画プロジェクトを初期化し、プレビューおよびレンダリングを実行する
-
-1. npx hyperframes init my-video
-
-2. cd my-video
-
-3. npx hyperframes preview
-
-4. npx hyperframes render
-
-
-成功の目安: ブラウザでのライブリロードによるプレビュー確認と、MP4形式へのレンダリングが成功すること
-
-
-
-
-## 5. [cursor/plugins](https://github.com/cursor/plugins)
-
-**概要:** Cursor用の公式プラグイン群と仕様を提供するリポジトリです。人気のある開発者向けツール、フレームワーク、SaaS製品向けのプラグインが含まれており、各プラグインは独立したディレクトリとして管理されています。
-
-- 言語: TypeScript
-- 今週のスター: 1125
-- ライセンス: 不明
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 開発者ツールやSaaS製品向けの公式Cursorプラグインの提供（根拠: README冒頭）
-
-- マルチプラグインのマーケットプレイス構造と個別プラグインごとのマニフェスト管理（根拠: Repository structure）
-
-
-### 利用例
-
-- 人気のある開発者ツール、フレームワーク、SaaS製品向けの公式プラグインを利用する（README明記／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-リポジトリの構造とプラグイン一覧を確認する
-
-1. リポジトリのREADMEを開く
-
-2. PluginsセクションおよびRepository structureセクションを参照する
-
-
-成功の目安: 提供されているプラグインの一覧とディレクトリ構造が把握できること
-
-未確認: プラグインの具体的なインストール方法やセットアップコマンド／各プラグインの詳細な利用手順
-
-
-## 6. [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger)
+## 3. [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger)
 
 **概要:** EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。
 
 - 言語: C
-- 今週のスター: 654
+- 今週のスター: 740
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -248,14 +129,14 @@ Windows x64環境でデバッグモードのビルドを実行し、raddbg.exe�
 未確認: LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）／リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）
 
 
-## 7. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+## 4. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
 **概要:** claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで要約して、次回のセッションへ関連するコンテキストを自動的に注入します。
 
 - 言語: TypeScript
-- 今週のスター: 3850
+- 今週のスター: 4035
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -285,134 +166,252 @@ Claude-Memをインストールしてプラグインフックを登録する
 
 
 
-## 8. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+## 5. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
-**概要:** text-to-cadは、AIエージェントにローカルでのCADモデル生成や製造性チェック、エンジニアリング図面の作成、3DプリンタやCNC加工サービスとの連携機能を提供するプラグインおよびツールです。
-
-- 言語: Python
-- 今週のスター: 2125
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- STEP、GLB、STL、3MFファイル形式での3Dモデル生成ワークフローの提供（根拠: text-to-cad）
-
-- 製造性チェックやエンジニアリング図面の生成、3Dプリンティング・板金・CNC加工サービスへの接続（根拠: text-to-cad）
-
-- Claude Code、Claude Desktop、Codex、Cursor、Grok Build、GeminiなどのAIエージェントアプリへの対応（根拠: text-to-cad）
-
-
-### 利用例
-
-- 自然言語や画像リクエストからのCADモデル作成および編集（README明記／根拠: 🧰 Skills）
-
-- 既製のSTEPパーツ（ネジ、ベアリング、モーター、コネクタなど）の検索（README明記／根拠: 🧰 Skills）
-
-- 3Dプリントや板金、CNC加工前の製造性（DfAM / DFM）のレビューおよびチェック（README明記／根拠: 🧰 Skills）
-
-
-### 最初に試すこと
-
-Claude Codeにtext-to-cadプラグインをインストールする
-
-1. claude plugin marketplace add earthtojake/text-to-cad#latest
-
-2. claude plugin install text-to-cad@earthtojake
-
-
-成功の目安: Claude Codeにプラグインが追加され、利用可能になること
-
-未確認: プラグイン導入以外の詳細な実行結果や、具体的なCAD生成のプロンプト出力例
-
-
-## 9. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
-
-**概要:** T3 Codeは、PC上の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元管理・制御するための「エージェント・コントロール・サーフェス」です。
+**概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 2379
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google AntigravityなどのAIエージェントと連携して制御できる。（根拠: README冒頭）
-
-- iOS、Android、Webアプリ、Electronベースのデスクトップアプリを通じて利用できる。（根拠: README冒頭）
-
-- コマンドラインや各種パッケージマネージャー（winget、Homebrew、APT、AUR）からインストール可能である。（根拠: Installation）
-
-
-### 利用例
-
-- スマートフォンなどのモバイル端末から、PC上で動作するAIエージェントを遠隔操作して開発を進める。（README明記／根拠: Documentation）
-
-- 複数のAIエージェント（Claude CodeやCodexなど）を一つのインターフェースから一元的に管理・コントロールする。（README明記／根拠: README冒頭）
-
-- デスクトップアプリやWebアプリを用いて、ローカル環境のコードエージェントの動作を快適に監視・操作する。（提案／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-ローカル環境でサーバーを起動し、Webアプリを開く
-
-1. curl -fsSL https://t3.codes/install.sh | sh
-
-2. t3
-
-
-成功の目安: サーバーが起動し、ローカルのWebアプリが開くこと
-
-未確認: 具体的なソースコードの内部構造や詳細な実装アルゴリズム／将来的なコントリビューション方針の変更予定
-
-
-## 10. [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
-
-**概要:** Agent Reachは、AIエージェントにインターネットへのアクセス能力を付与するためのCLIツールであり、Twitter、Reddit、YouTube、GitHub、Bilibili、小紅書などの多様なプラットフォームのデータ読み込みや検索をゼロAPI費用で統合します。
-
-- 言語: Python
-- 今週のスター: 7084
-- ライセンス: MIT
+- 今週のスター: 4081
+- ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- 複数の主要なインターネットプラットフォーム（YouTube、Twitter、Bilibili、GitHub、RSS、ウェブページ等）へのアクセスや検索をCLI経由で提供する。（根拠: 支持的平台）
+- HTMLとCSS、シーク可能なアニメーションを使用して確定的なMP4動画を生成する（根拠: README冒頭）
 
-- 環境の診断を行い、各チャンネルの状態や動作中のバックエンドを報告する `agent-reach doctor` コマンドを備える。（根拠: 为什么需要 Agent Reach？）
+- GSAP、CSSアニメーション、Lottie、Three.js、Anime.js、WAAPIなどのアニメーションライブラリやランタイムに対応する（根拠: How It Works）
 
-- プライバシーを考慮し、Cookieやトークンなどの認証情報をローカル環境にのみ保存する。（根拠: 安全性）
+- CLIやAWS Lambdaを用いたローカルおよび分散レンダリングに対応する（根拠: HyperFrames Stack）
 
 
 ### 利用例
 
-- AIエージェントにYouTubeの字幕抽出や動画検索を行わせる。（README明記／根拠: 支持的平台）
+- 製品発表動画や機能紹介動画の作成（README明記／根拠: What You Can Build）
 
-- AIエージェントを活用して、X（Twitter）やRedditなどのコミュニティから特定の製品評価や情報を収集する。（README明記／根拠: 为什么需要 Agent Reach？）
+- アニメーション付きコード差分、ナレーション、字幕を含むPRウォークスルーの作成（README明記／根拠: What You Can Build）
 
-- AIエージェントに公開されているウェブページやGitHubリポジトリの内容を読み込ませて解析する。（README明記／根拠: 支持的平台）
+- データビュジュアライゼーション、チャートレース、マップアニメーションの制作（README明記／根拠: What You Can Build）
 
 
 ### 最初に試すこと
 
-AIエージェントを通じてAgent Reachをインストールする
+ローカル環境で動画プロジェクトを初期化し、プレビューおよびレンダリングを実行する
 
-1. AIエージェントに以下のインストール指示文をコピーして渡す：
-帮我安装 Agent Reach：https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+1. npx hyperframes init my-video
+
+2. cd my-video
+
+3. npx hyperframes preview
+
+4. npx hyperframes render
 
 
-成功の目安: エージェントが自動的にインストールのための処理や確認を行うこと
+成功の目安: ブラウザでのライブリロードによるプレビュー確認と、MP4形式へのレンダリングが成功すること
 
-未確認: インストールのためのPythonパッケージの正確なPyPI上のパッケージ名（READMEでは同名パッケージの直接インストールを非推奨としている）
+
+
+
+## 6. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
+
+**概要:** OpenRigは、Claude CodeやCodexなどのAIコーディングエージェントをYAMLで定義し、チームとして組織的に管理・実行するためのオープンソースのツールです。
+
+- 言語: TypeScript
+- 今週のスター: 2068
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- YAMLファイルでエージェントのチームを定義し、1つのコマンドで起動できます。（根拠: README冒頭）
+
+- Claude CodeやCodexを同じリグ内で1つのシステムとして管理できます。（根拠: README冒頭）
+
+- TUIを使用して、エージェントの実行状態やモデル、コンテキストをグラフやテーブル形式で確認できます。（根拠: See it running）
+
+
+### 利用例
+
+- 複数のAIエージェントを組織的なチームとして連携させ、開発作業を行わせる。（README明記／根拠: README冒頭）
+
+- リーダーエージェントと対話して目的を伝え、専門家エージェントに作業を調整・実行させる。（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+OpenRigのCLIをインストールし、セットアップを実行する
+
+1. npm install -g @openrig/cli
+
+2. rig setup --dry-run
+
+
+成功の目安: セットアップの計画が表示され、エラーなくコマンドが完了すること
+
+未確認: 具体的なチーム構成YAMLの書き方や詳細な設定方法／各プロバイダのサインイン完了後の具体的な操作手順
+
+
+## 7. [cursor/plugins](https://github.com/cursor/plugins)
+
+**概要:** Cursor公式のプラグインおよびサードパーティ製ツール、フレームワーク、SaaS製品向けプラグインを集めたマーケットプレイスリポジトリです。各プラグインはルートディレクトリに独立したフォルダとして配置され、マニフェストファイルを含んでいます。
+
+- 言語: TypeScript
+- 今週のスター: 1110
+- ライセンス: 不明
+- AI分析状態: ok
+
+### できること
+
+- 開発ツールやSaaS製品、フレームワーク向けの公式Cursorプラグインの提供（根拠: Plugins）
+
+- プラグインごとの独立したディレクトリ構成および `.cursor-plugin/plugin.json` マニフェストの保持（根拠: README冒頭）
+
+- マルチプラグインマーケットプレイスとしてのリポジトリ構造の管理（根拠: Repository structure）
+
+
+### 利用例
+
+- GmailやGoogle Driveなどの外部SaaS製品と連携して、メール管理やファイル操作を行う（README明記／根拠: Plugins）
+
+- GitHubやPlaywrightなどの開発者向けツールをCursor上で統合・活用する（README明記／根拠: Plugins）
+
+- TypeScript SDKなどを使用して独自のアプリやスクリプト、自動化機能をビルドする（README明記／根拠: Plugins）
+
+
+### 最初に試すこと
+
+リポジトリの構造を確認する
+
+1. リポジトリをクローンまたは閲覧する
+
+2. ルートディレクトリの .cursor-plugin/marketplace.json を確認する
+
+
+成功の目安: マーケットプレイスに登録されているプラグインの一覧を確認できること
+
+未確認: 具体的なインストールコマンドやセットアップ手順／各プラグインの詳細な利用方法
+
+
+## 8. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+
+**概要:** text-to-cadは、AIエージェントにCADの機能を持たせるためのプラグインやスキルを提供するツールです。STEP、GLB、STL、3MF形式の3Dモデル生成、製造性の設計チェック（DfAMやDFM）、エンジニアリング図面の作成、3DプリンターやCNC加工サービスとの連携を実現します。
+
+- 言語: Python
+- 今週のスター: 2369
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- STEP、GLB、STL、3MF形式での3Dモデル生成や、製造性の設計チェック、エンジニアリング図面の作成を行う（根拠: text-to-cad）
+
+- Claude Code、Claude Desktop、Codex、Cursor、Grok Build、GeminiなどのAIエージェントをサポートする（根拠: text-to-cad）
+
+- CADモデル、標準部品、図面、ロボット記述ファイル、シミュレーション、製造前チェックなどのスキルを提供する（根拠: 🧰 Skills）
+
+
+### 利用例
+
+- エージェントにテキストで指示して3Dモデルを生成し、STEPやSTLなどのファイルに出力する（README明記／根拠: text-to-cad）
+
+- 部品の製造性チェックや板金・CNC加工・射出成型のレビューを行う（README明記／根拠: 🧰 Skills）
+
+- ロボットの構造ファイルやシミュレーターモデルを作成する（README明記／根拠: 🧰 Skills）
+
+
+### 最初に試すこと
+
+AIエージェントにtext-to-cadのインストールを依頼する
+
+1. エージェントに対して「Install text-to-cad from https://github.com/earthtojake/text-to-cad」というメッセージを送信する
+
+
+成功の目安: エージェントによってtext-to-cadがインストールされること
+
+未確認: 具体的なAIエージェント以外のカスタム環境における動作の完全な詳細／Windows 11のSmart App Control以外の特定環境での例外的な挙動
+
+
+## 9. [flutter/flutter](https://github.com/flutter/flutter)
+
+**概要:** Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。
+
+- 言語: Dart
+- 今週のスター: 263
+- ライセンス: BSD-3-Clause
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 単一のコードベースからモバイル、ウェブ、デスクトップ向けのアプリを構築できる。（根拠: README冒頭）
+
+- コードを変更してアプリを再起動することなく即座に結果を確認できるステートフルホットリロード機能を提供する。（根拠: Productive development）
+
+- iOS用のCupertinoウィジェットやMaterialウィジェットなどの豊富なウィジェットセットを提供する。（根拠: Beautiful user experiences）
+
+
+### 利用例
+
+- iOSやAndroid向けのモバイルアプリ開発（README明記／根拠: About Flutter）
+
+- ウェブやデスクトップ（Windows, macOS, Linux）向けのアプリケーション開発（README明記／根拠: About Flutter）
+
+
+### 最初に試すこと
+
+Flutterのドキュメントに沿ってインストールを開始する
+
+1. https://docs.flutter.dev/get-started にアクセスする
+
+
+成功の目安: インストール手順のドキュメントを確認できること
+
+未確認: 具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）
+
+
+## 10. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+
+**概要:** T3 Codeは、モバイルアプリ、ウェブアプリ、Electronベースのデスクトップアプリから、PC上で動作するAIエージェント（Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravityなど）を制御するためのコントロールサーフェスです。
+
+- 言語: TypeScript
+- 今週のスター: 2367
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- モバイルアプリ、ウェブアプリ、Electron製デスクトップアプリを介してPC上のAIエージェントを制御できる。（根拠: T3 Code）
+
+- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravityなどのプロバイダーやサブスクリプションと連携して動作する。（根拠: T3 Code）
+
+- コマンドライン経由のインストール、バックグラウンドサービスとしての常駐、`npx`による一時的な実行に対応している。（根拠: Installation）
+
+
+### 利用例
+
+- スマートフォンなどのリモート端末から、PC上で動くAIエージェントの操作や開発作業を行う。（README明記／根拠: Documentation）
+
+- 対応する複数のAIエージェントのサブスクリプションを組み合わせて開発に活用する。（README明記／根拠: T3 Code）
+
+
+### 最初に試すこと
+
+インストールせずに一時的にT3 Codeを試す
+
+1. npx t3@latest
+
+
+成功の目安: サーバーが起動し、ローカルのウェブアプリが開くこと
+
+未確認: 詳細なエージェント制御の内部プロトコルやAPI仕様／モバイルアプリの具体的な画面操作手順
 
 
 
 ## Zenn
 
-- [約 0.5 GiB のダウンロードで SSD に 6 GiB 書いていた — Steam のゲーム更新 1 件を実測し、減らせる場所を探した](https://zenn.dev/berobero/articles/steam-update-ssd-writes) — beroru
+- [SQLite 本体にベクトル検索拡張 vec1 がやってきた](https://zenn.dev/mattn/articles/6e9996319ac099) — mattn
 
-- [Notion や Slack から AI に仕事を依頼できる仕組みを Claude Code Routines で作った](https://zenn.dev/terass_dev/articles/6e6562d54d5505) — homu_konamilk
+- [2025 年 10 月から 2026 年 10 月までの Mozc に対する主な変更](https://zenn.dev/komatsuh/articles/komatsuh_mozc_updates_from_2025_10) — Hiroyuki Komatsu
+
+- [Claude Code Routines で Notion や Slack から AI に仕事を依頼できる仕組みを作った](https://zenn.dev/terass_dev/articles/6e6562d54d5505) — homu_konamilk
 
 - [AIエージェントにMicrosoft Fabricを操作させる ― Fabric CLIとSkills for Fabric](https://zenn.dev/headwaters/articles/12175106cd8c79) — ササヤンマ
 
@@ -423,8 +422,6 @@ AIエージェントを通じてAgent Reachをインストールする
 - [若手エンジニアに必要だと感じた「AIを使う力」](https://zenn.dev/muit_techblog/articles/6ea28887c79457) — Goto
 
 - [CSSの`text-box`で文字を上下中央に揃えたい](https://zenn.dev/chot/articles/be424332489e7a) — hwld
-
-- [🔓2026年9〜10月の情報漏洩19件、公表文を全部読んで考えたこと](https://zenn.dev/bita/articles/1616afdb93c4a6) — シン
 
 - [【三次元再構成入門】多視点の画像から3D空間を復元する仕組み - カメラパラメータとSfM](https://zenn.dev/dalab/articles/9ba129c4647844) — fujita yuusaku
 

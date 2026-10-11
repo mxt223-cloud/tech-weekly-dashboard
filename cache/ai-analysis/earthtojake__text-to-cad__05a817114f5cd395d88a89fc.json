@@ -1,0 +1,55 @@
+{
+  "summary_ja": "text-to-cadは、AIエージェントにCADの機能を持たせるためのプラグインやスキルを提供するツールです。STEP、GLB、STL、3MF形式の3Dモデル生成、製造性の設計チェック（DfAMやDFM）、エンジニアリング図面の作成、3DプリンターやCNC加工サービスとの連携を実現します。",
+  "capabilities": [
+    {
+      "text": "STEP、GLB、STL、3MF形式での3Dモデル生成や、製造性の設計チェック、エンジニアリング図面の作成を行う",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "Claude Code、Claude Desktop、Codex、Cursor、Grok Build、GeminiなどのAIエージェントをサポートする",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "CADモデル、標準部品、図面、ロボット記述ファイル、シミュレーション、製造前チェックなどのスキルを提供する",
+      "evidence_section": "🧰 Skills"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントにテキストで指示して3Dモデルを生成し、STEPやSTLなどのファイルに出力する",
+      "basis": "README明記",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "部品の製造性チェックや板金・CNC加工・射出成型のレビューを行う",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    },
+    {
+      "text": "ロボットの構造ファイルやシミュレーターモデルを作成する",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "AIエージェントにtext-to-cadのインストールを依頼する",
+    "steps": [
+      "エージェントに対して「Install text-to-cad from https://github.com/earthtojake/text-to-cad」というメッセージを送信する"
+    ],
+    "success_criteria": "エージェントによってtext-to-cadがインストールされること"
+  },
+  "evidence_sections": [
+    "text-to-cad",
+    "💻 Install",
+    "🧰 Skills"
+  ],
+  "unconfirmed": [
+    "具体的なAIエージェント以外のカスタム環境における動作の完全な詳細",
+    "Windows 11のSmart App Control以外の特定環境での例外的な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "121ba22f6bb17d47a6007e1b5bc1a683895349d4",
+  "generated_at": "2026-10-11T09:22:34.054126+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Cursor公式のプラグインおよびサードパーティ製ツール、フレームワーク、SaaS製品向けプラグインを集めたマーケットプレイスリポジトリです。各プラグインはルートディレクトリに独立したフォルダとして配置され、マニフェストファイルを含んでいます。",
+  "capabilities": [
+    {
+      "text": "開発ツールやSaaS製品、フレームワーク向けの公式Cursorプラグインの提供",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "プラグインごとの独立したディレクトリ構成および `.cursor-plugin/plugin.json` マニフェストの保持",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "マルチプラグインマーケットプレイスとしてのリポジトリ構造の管理",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "GmailやGoogle Driveなどの外部SaaS製品と連携して、メール管理やファイル操作を行う",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "GitHubやPlaywrightなどの開発者向けツールをCursor上で統合・活用する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "TypeScript SDKなどを使用して独自のアプリやスクリプト、自動化機能をビルドする",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造を確認する",
+    "steps": [
+      "リポジトリをクローンまたは閲覧する",
+      "ルートディレクトリの .cursor-plugin/marketplace.json を確認する"
+    ],
+    "success_criteria": "マーケットプレイスに登録されているプラグインの一覧を確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやセットアップ手順",
+    "各プラグインの詳細な利用方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "680205da013ad6b736d2447581283dd1a3d40fe3",
+  "generated_at": "2026-10-11T09:22:31.417203+09:00"
+}

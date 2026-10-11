@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T10:08:45.623707+09:00",
-  "week": "2026-10-10",
+  "generated_at": "2026-10-11T09:22:36.931051+09:00",
+  "week": "2026-10-11",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars_total": 22417,
-      "forks_total": 1826,
-      "stars_period": 15539,
+      "stars_total": 26812,
+      "forks_total": 2249,
+      "stars_period": 21365,
       "api": {
         "default_branch": "main",
         "license": "GPL-2.0",
-        "updated_at": "2026-10-10T01:08:10Z",
-        "pushed_at": "2026-10-10T01:07:46Z",
-        "open_issues": 516,
+        "updated_at": "2026-10-11T00:22:06Z",
+        "pushed_at": "2026-10-11T00:13:34Z",
+        "open_issues": 321,
         "archived": false,
-        "size_kb": 13130,
+        "size_kb": 17987,
         "topics": [
           "anyps5",
           "dynamic-library",
@@ -94,111 +94,19 @@
     },
     {
       "rank": 2,
-      "full_name": "mvschwarz/openrig",
-      "url": "https://github.com/mvschwarz/openrig",
-      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
-      "language": "TypeScript",
-      "stars_total": 6461,
-      "forks_total": 473,
-      "stars_period": 2338,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-10-10T01:02:05Z",
-        "pushed_at": "2026-10-10T00:37:08Z",
-        "open_issues": 150,
-        "archived": false,
-        "size_kb": 37346,
-        "topics": [
-          "agent-harness",
-          "agent-orchestration",
-          "agent-skills",
-          "ai-coding",
-          "claude-code",
-          "cli",
-          "codex-cli",
-          "multi-agent",
-          "multi-agent-systems",
-          "tmux",
-          "typescript"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "47262e5b5c581c224e2be671bd2af2c1bdd5f26f",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 37441,
-        "used_chars": 4715
-      },
-      "analysis": {
-        "summary_ja": "OpenRigは、Claude CodeやCodexなどのAIコーディングエージェントをYAMLで定義し、チームとして組織的に管理・実行するためのオープンソースのツールです。",
-        "capabilities": [
-          {
-            "text": "YAMLファイルでエージェントのチームを定義し、1つのコマンドで起動できます。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "Claude CodeやCodexを同じリグ内で1つのシステムとして管理できます。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "TUIを使用して、エージェントの実行状態やモデル、コンテキストをグラフやテーブル形式で確認できます。",
-            "evidence_section": "See it running"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "複数のAIエージェントを組織的なチームとして連携させ、開発作業を行わせる。",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "リーダーエージェントと対話して目的を伝え、専門家エージェントに作業を調整・実行させる。",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          }
-        ],
-        "first_trial": {
-          "goal": "OpenRigのCLIをインストールし、セットアップを実行する",
-          "steps": [
-            "npm install -g @openrig/cli",
-            "rig setup --dry-run"
-          ],
-          "success_criteria": "セットアップの計画が表示され、エラーなくコマンドが完了すること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "See it running",
-          "Install and first run",
-          "Requirements"
-        ],
-        "unconfirmed": [
-          "具体的なチーム構成YAMLの書き方や詳細な設定方法",
-          "各プロバイダのサインイン完了後の具体的な操作手順"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "47262e5b5c581c224e2be671bd2af2c1bdd5f26f",
-        "generated_at": "2026-10-09T10:20:34.529666+09:00"
-      }
-    },
-    {
-      "rank": 3,
       "full_name": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars_total": 282724,
-      "forks_total": 23687,
-      "stars_period": 8156,
+      "stars_total": 284480,
+      "forks_total": 23811,
+      "stars_period": 9179,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-10T01:06:47Z",
+        "updated_at": "2026-10-11T00:21:20Z",
         "pushed_at": "2026-10-09T10:57:08Z",
-        "open_issues": 161,
+        "open_issues": 164,
         "archived": false,
         "size_kb": 1990,
         "topics": []
@@ -270,22 +178,206 @@
       }
     },
     {
+      "rank": 3,
+      "full_name": "EpicGames/raddebugger",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars_total": 8330,
+      "forks_total": 403,
+      "stars_period": 740,
+      "api": {
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-10-11T00:17:36Z",
+        "pushed_at": "2026-10-07T20:56:17Z",
+        "open_issues": 320,
+        "archived": false,
+        "size_kb": 29596,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "05403355908aa9765b226055831976999daa2db6",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 25518,
+        "used_chars": 25516
+      },
+      "analysis": {
+        "summary_ja": "EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。",
+        "capabilities": [
+          {
+            "text": "ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する",
+            "evidence_section": "The RAD Debug Info (RDI) Format"
+          },
+          {
+            "text": "巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する",
+            "evidence_section": "The RAD Linker"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "Windows x64環境におけるネイティブアプリケーションのデバッグ",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "巨大なリンクプロジェクトのビルド時間短縮",
+            "basis": "README明記",
+            "evidence_section": "The RAD Linker"
+          },
+          {
+            "text": "radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成",
+            "basis": "README明記",
+            "evidence_section": "The RAD Debug Info (RDI) Format"
+          }
+        ],
+        "first_trial": {
+          "goal": "Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する",
+          "steps": [
+            "Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする",
+            "x64 Native Tools Command Prompt for VS を起動する",
+            "コードベースのルートディレクトリに移動する",
+            "buildスクリプトを実行する"
+          ],
+          "success_criteria": "ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "The RAD Debug Info (RDI) Format",
+          "The RAD Linker",
+          "Windows x64"
+        ],
+        "unconfirmed": [
+          "LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）",
+          "リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "05403355908aa9765b226055831976999daa2db6",
+        "generated_at": "2026-10-09T10:20:37.601450+09:00"
+      }
+    },
+    {
       "rank": 4,
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars_total": 99244,
+      "forks_total": 8693,
+      "stars_period": 4035,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-11T00:21:41Z",
+        "pushed_at": "2026-10-09T10:23:45Z",
+        "open_issues": 189,
+        "archived": false,
+        "size_kb": 553358,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "2cb9e7eeae5c0139f024e336c179a930e9d99d8f",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 19551,
+        "used_chars": 18318
+      },
+      "analysis": {
+        "summary_ja": "claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで要約して、次回のセッションへ関連するコンテキストを自動的に注入します。",
+        "capabilities": [
+          {
+            "text": "セッション間でコンテキストを保持し、セッション終了後もプロジェクトの知識の連続性を維持する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "MCP検索ツールを使用した、トークン効率の良い3レイヤーワークフローによるメモリ検索機能",
+            "evidence_section": "MCP Search Tools"
+          },
+          {
+            "text": "SQLiteデータベースとChromaベクトルデータベースを使用したハイブリッド検索と永続ストレージ",
+            "evidence_section": "How It Works"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "過去のセッションで行ったやり取りやバグ修正の履歴をAIエージェントに再利用させる",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "プロジェクトの履歴を自然言語でクエリして必要な情報を見つけ出す",
+            "basis": "README明記",
+            "evidence_section": "MCP Search Tools"
+          }
+        ],
+        "first_trial": {
+          "goal": "Claude-Memをインストールしてプラグインフックを登録する",
+          "steps": [
+            "npx claude-mem install"
+          ],
+          "success_criteria": "インストーラーが正常にセットアップを完了し、ブラウザでのサインイン画面またはプロバイダー選択が行えること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick Start",
+          "How It Works",
+          "MCP Search Tools"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "2cb9e7eeae5c0139f024e336c179a930e9d99d8f",
+        "generated_at": "2026-10-10T10:08:39.226016+09:00"
+      }
+    },
+    {
+      "rank": 5,
       "full_name": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars_total": 59808,
-      "forks_total": 5337,
-      "stars_period": 4003,
+      "stars_total": 60361,
+      "forks_total": 5390,
+      "stars_period": 4081,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-10-10T01:04:00Z",
-        "pushed_at": "2026-10-10T01:08:26Z",
-        "open_issues": 225,
+        "updated_at": "2026-10-11T00:22:20Z",
+        "pushed_at": "2026-10-11T00:21:09Z",
+        "open_issues": 247,
         "archived": false,
-        "size_kb": 503240,
+        "size_kb": 503579,
         "topics": [
           "ai",
           "animation",
@@ -377,58 +469,164 @@
       }
     },
     {
-      "rank": 5,
-      "full_name": "cursor/plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
+      "rank": 6,
+      "full_name": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
       "language": "TypeScript",
-      "stars_total": 10591,
-      "forks_total": 1001,
-      "stars_period": 1125,
+      "stars_total": 6733,
+      "forks_total": 498,
+      "stars_period": 2068,
       "api": {
         "default_branch": "main",
-        "license": null,
-        "updated_at": "2026-10-10T01:07:07Z",
-        "pushed_at": "2026-10-08T00:45:15Z",
-        "open_issues": 196,
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-11T00:18:56Z",
+        "pushed_at": "2026-10-10T21:10:25Z",
+        "open_issues": 192,
         "archived": false,
-        "size_kb": 10315,
-        "topics": []
+        "size_kb": 37345,
+        "topics": [
+          "agent-harness",
+          "agent-orchestration",
+          "agent-skills",
+          "ai-coding",
+          "claude-code",
+          "cli",
+          "codex-cli",
+          "multi-agent",
+          "multi-agent-systems",
+          "tmux",
+          "typescript"
+        ]
       },
       "readme": {
         "status": "ok",
-        "sha": "3ce5fb51a30697109023cdfb6702089d74f44397",
+        "sha": "47262e5b5c581c224e2be671bd2af2c1bdd5f26f",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 14365,
-        "used_chars": 14364
+        "original_chars": 37441,
+        "used_chars": 4715
       },
       "analysis": {
-        "summary_ja": "Cursor用の公式プラグイン群と仕様を提供するリポジトリです。人気のある開発者向けツール、フレームワーク、SaaS製品向けのプラグインが含まれており、各プラグインは独立したディレクトリとして管理されています。",
+        "summary_ja": "OpenRigは、Claude CodeやCodexなどのAIコーディングエージェントをYAMLで定義し、チームとして組織的に管理・実行するためのオープンソースのツールです。",
         "capabilities": [
           {
-            "text": "開発者ツールやSaaS製品向けの公式Cursorプラグインの提供",
+            "text": "YAMLファイルでエージェントのチームを定義し、1つのコマンドで起動できます。",
             "evidence_section": "README冒頭"
           },
           {
-            "text": "マルチプラグインのマーケットプレイス構造と個別プラグインごとのマニフェスト管理",
-            "evidence_section": "Repository structure"
+            "text": "Claude CodeやCodexを同じリグ内で1つのシステムとして管理できます。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "TUIを使用して、エージェントの実行状態やモデル、コンテキストをグラフやテーブル形式で確認できます。",
+            "evidence_section": "See it running"
           }
         ],
         "use_cases": [
           {
-            "text": "人気のある開発者ツール、フレームワーク、SaaS製品向けの公式プラグインを利用する",
+            "text": "複数のAIエージェントを組織的なチームとして連携させ、開発作業を行わせる。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "リーダーエージェントと対話して目的を伝え、専門家エージェントに作業を調整・実行させる。",
             "basis": "README明記",
             "evidence_section": "README冒頭"
           }
         ],
         "first_trial": {
-          "goal": "リポジトリの構造とプラグイン一覧を確認する",
+          "goal": "OpenRigのCLIをインストールし、セットアップを実行する",
           "steps": [
-            "リポジトリのREADMEを開く",
-            "PluginsセクションおよびRepository structureセクションを参照する"
+            "npm install -g @openrig/cli",
+            "rig setup --dry-run"
           ],
-          "success_criteria": "提供されているプラグインの一覧とディレクトリ構造が把握できること"
+          "success_criteria": "セットアップの計画が表示され、エラーなくコマンドが完了すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "See it running",
+          "Install and first run",
+          "Requirements"
+        ],
+        "unconfirmed": [
+          "具体的なチーム構成YAMLの書き方や詳細な設定方法",
+          "各プロバイダのサインイン完了後の具体的な操作手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "47262e5b5c581c224e2be671bd2af2c1bdd5f26f",
+        "generated_at": "2026-10-09T10:20:34.529666+09:00"
+      }
+    },
+    {
+      "rank": 7,
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars_total": 10756,
+      "forks_total": 1026,
+      "stars_period": 1110,
+      "api": {
+        "default_branch": "main",
+        "license": null,
+        "updated_at": "2026-10-11T00:18:30Z",
+        "pushed_at": "2026-10-10T22:58:23Z",
+        "open_issues": 202,
+        "archived": false,
+        "size_kb": 10312,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "680205da013ad6b736d2447581283dd1a3d40fe3",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14498,
+        "used_chars": 14497
+      },
+      "analysis": {
+        "summary_ja": "Cursor公式のプラグインおよびサードパーティ製ツール、フレームワーク、SaaS製品向けプラグインを集めたマーケットプレイスリポジトリです。各プラグインはルートディレクトリに独立したフォルダとして配置され、マニフェストファイルを含んでいます。",
+        "capabilities": [
+          {
+            "text": "開発ツールやSaaS製品、フレームワーク向けの公式Cursorプラグインの提供",
+            "evidence_section": "Plugins"
+          },
+          {
+            "text": "プラグインごとの独立したディレクトリ構成および `.cursor-plugin/plugin.json` マニフェストの保持",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "マルチプラグインマーケットプレイスとしてのリポジトリ構造の管理",
+            "evidence_section": "Repository structure"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "GmailやGoogle Driveなどの外部SaaS製品と連携して、メール管理やファイル操作を行う",
+            "basis": "README明記",
+            "evidence_section": "Plugins"
+          },
+          {
+            "text": "GitHubやPlaywrightなどの開発者向けツールをCursor上で統合・活用する",
+            "basis": "README明記",
+            "evidence_section": "Plugins"
+          },
+          {
+            "text": "TypeScript SDKなどを使用して独自のアプリやスクリプト、自動化機能をビルドする",
+            "basis": "README明記",
+            "evidence_section": "Plugins"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリの構造を確認する",
+          "steps": [
+            "リポジトリをクローンまたは閲覧する",
+            "ルートディレクトリの .cursor-plugin/marketplace.json を確認する"
+          ],
+          "success_criteria": "マーケットプレイスに登録されているプラグインの一覧を確認できること"
         },
         "evidence_sections": [
           "README冒頭",
@@ -437,198 +635,14 @@
           "License"
         ],
         "unconfirmed": [
-          "プラグインの具体的なインストール方法やセットアップコマンド",
-          "各プラグインの詳細な利用手順"
+          "具体的なインストールコマンドやセットアップ手順",
+          "各プラグインの詳細な利用方法"
         ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "3ce5fb51a30697109023cdfb6702089d74f44397",
-        "generated_at": "2026-10-08T10:13:04.051496+09:00"
-      }
-    },
-    {
-      "rank": 6,
-      "full_name": "EpicGames/raddebugger",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "description": "A native, user-mode, multi-process, graphical debugger.",
-      "language": "C",
-      "stars_total": 8266,
-      "forks_total": 394,
-      "stars_period": 654,
-      "api": {
-        "default_branch": "master",
-        "license": "MIT",
-        "updated_at": "2026-10-10T01:03:33Z",
-        "pushed_at": "2026-10-07T20:56:17Z",
-        "open_issues": 316,
-        "archived": false,
-        "size_kb": 29596,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "05403355908aa9765b226055831976999daa2db6",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 25518,
-        "used_chars": 25516
-      },
-      "analysis": {
-        "summary_ja": "EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。",
-        "capabilities": [
-          {
-            "text": "ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する",
-            "evidence_section": "The RAD Debug Info (RDI) Format"
-          },
-          {
-            "text": "巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する",
-            "evidence_section": "The RAD Linker"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "Windows x64環境におけるネイティブアプリケーションのデバッグ",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "巨大なリンクプロジェクトのビルド時間短縮",
-            "basis": "README明記",
-            "evidence_section": "The RAD Linker"
-          },
-          {
-            "text": "radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成",
-            "basis": "README明記",
-            "evidence_section": "The RAD Debug Info (RDI) Format"
-          }
-        ],
-        "first_trial": {
-          "goal": "Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する",
-          "steps": [
-            "Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする",
-            "x64 Native Tools Command Prompt for VS を起動する",
-            "コードベースのルートディレクトリに移動する",
-            "buildスクリプトを実行する"
-          ],
-          "success_criteria": "ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "The RAD Debug Info (RDI) Format",
-          "The RAD Linker",
-          "Windows x64"
-        ],
-        "unconfirmed": [
-          "LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）",
-          "リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "05403355908aa9765b226055831976999daa2db6",
-        "generated_at": "2026-10-09T10:20:37.601450+09:00"
-      }
-    },
-    {
-      "rank": 7,
-      "full_name": "thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "language": "TypeScript",
-      "stars_total": 98994,
-      "forks_total": 8670,
-      "stars_period": 3850,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-10-10T01:03:14Z",
-        "pushed_at": "2026-10-09T10:23:45Z",
-        "open_issues": 138,
-        "archived": false,
-        "size_kb": 553358,
-        "topics": [
-          "ai",
-          "ai-agents",
-          "ai-memory",
-          "anthropic",
-          "artificial-intelligence",
-          "chromadb",
-          "claude",
-          "claude-agent-sdk",
-          "claude-agents",
-          "claude-code",
-          "claude-code-plugin",
-          "claude-skills",
-          "embeddings",
-          "long-term-memory",
-          "mem0",
-          "memory-engine",
-          "openmemory",
-          "rag",
-          "sqlite",
-          "supermemory"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "2cb9e7eeae5c0139f024e336c179a930e9d99d8f",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 19551,
-        "used_chars": 18318
-      },
-      "analysis": {
-        "summary_ja": "claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで要約して、次回のセッションへ関連するコンテキストを自動的に注入します。",
-        "capabilities": [
-          {
-            "text": "セッション間でコンテキストを保持し、セッション終了後もプロジェクトの知識の連続性を維持する",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "MCP検索ツールを使用した、トークン効率の良い3レイヤーワークフローによるメモリ検索機能",
-            "evidence_section": "MCP Search Tools"
-          },
-          {
-            "text": "SQLiteデータベースとChromaベクトルデータベースを使用したハイブリッド検索と永続ストレージ",
-            "evidence_section": "How It Works"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "過去のセッションで行ったやり取りやバグ修正の履歴をAIエージェントに再利用させる",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "プロジェクトの履歴を自然言語でクエリして必要な情報を見つけ出す",
-            "basis": "README明記",
-            "evidence_section": "MCP Search Tools"
-          }
-        ],
-        "first_trial": {
-          "goal": "Claude-Memをインストールしてプラグインフックを登録する",
-          "steps": [
-            "npx claude-mem install"
-          ],
-          "success_criteria": "インストーラーが正常にセットアップを完了し、ブラウザでのサインイン画面またはプロバイダー選択が行えること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Quick Start",
-          "How It Works",
-          "MCP Search Tools"
-        ],
-        "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "2cb9e7eeae5c0139f024e336c179a930e9d99d8f",
-        "generated_at": "2026-10-10T10:08:39.226016+09:00"
+        "readme_sha": "680205da013ad6b736d2447581283dd1a3d40fe3",
+        "generated_at": "2026-10-11T09:22:31.417203+09:00"
       }
     },
     {
@@ -637,17 +651,17 @@
       "url": "https://github.com/earthtojake/text-to-cad",
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
-      "stars_total": 18765,
-      "forks_total": 1857,
-      "stars_period": 2125,
+      "stars_total": 18989,
+      "forks_total": 1872,
+      "stars_period": 2369,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-10T01:08:18Z",
-        "pushed_at": "2026-10-10T00:26:12Z",
-        "open_issues": 28,
+        "updated_at": "2026-10-10T23:53:20Z",
+        "pushed_at": "2026-10-10T21:25:13Z",
+        "open_issues": 31,
         "archived": false,
-        "size_kb": 300050,
+        "size_kb": 302201,
         "topics": [
           "agents",
           "ai-agents",
@@ -662,267 +676,266 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "aaf231260f25afa856a44f781a2abc2d3cb20ea2",
+        "sha": "121ba22f6bb17d47a6007e1b5bc1a683895349d4",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 17718,
-        "used_chars": 17623
+        "original_chars": 18028,
+        "used_chars": 17933
       },
       "analysis": {
-        "summary_ja": "text-to-cadは、AIエージェントにローカルでのCADモデル生成や製造性チェック、エンジニアリング図面の作成、3DプリンタやCNC加工サービスとの連携機能を提供するプラグインおよびツールです。",
+        "summary_ja": "text-to-cadは、AIエージェントにCADの機能を持たせるためのプラグインやスキルを提供するツールです。STEP、GLB、STL、3MF形式の3Dモデル生成、製造性の設計チェック（DfAMやDFM）、エンジニアリング図面の作成、3DプリンターやCNC加工サービスとの連携を実現します。",
         "capabilities": [
           {
-            "text": "STEP、GLB、STL、3MFファイル形式での3Dモデル生成ワークフローの提供",
+            "text": "STEP、GLB、STL、3MF形式での3Dモデル生成や、製造性の設計チェック、エンジニアリング図面の作成を行う",
             "evidence_section": "text-to-cad"
           },
           {
-            "text": "製造性チェックやエンジニアリング図面の生成、3Dプリンティング・板金・CNC加工サービスへの接続",
+            "text": "Claude Code、Claude Desktop、Codex、Cursor、Grok Build、GeminiなどのAIエージェントをサポートする",
             "evidence_section": "text-to-cad"
           },
           {
-            "text": "Claude Code、Claude Desktop、Codex、Cursor、Grok Build、GeminiなどのAIエージェントアプリへの対応",
-            "evidence_section": "text-to-cad"
+            "text": "CADモデル、標準部品、図面、ロボット記述ファイル、シミュレーション、製造前チェックなどのスキルを提供する",
+            "evidence_section": "🧰 Skills"
           }
         ],
         "use_cases": [
           {
-            "text": "自然言語や画像リクエストからのCADモデル作成および編集",
+            "text": "エージェントにテキストで指示して3Dモデルを生成し、STEPやSTLなどのファイルに出力する",
+            "basis": "README明記",
+            "evidence_section": "text-to-cad"
+          },
+          {
+            "text": "部品の製造性チェックや板金・CNC加工・射出成型のレビューを行う",
             "basis": "README明記",
             "evidence_section": "🧰 Skills"
           },
           {
-            "text": "既製のSTEPパーツ（ネジ、ベアリング、モーター、コネクタなど）の検索",
-            "basis": "README明記",
-            "evidence_section": "🧰 Skills"
-          },
-          {
-            "text": "3Dプリントや板金、CNC加工前の製造性（DfAM / DFM）のレビューおよびチェック",
+            "text": "ロボットの構造ファイルやシミュレーターモデルを作成する",
             "basis": "README明記",
             "evidence_section": "🧰 Skills"
           }
         ],
         "first_trial": {
-          "goal": "Claude Codeにtext-to-cadプラグインをインストールする",
+          "goal": "AIエージェントにtext-to-cadのインストールを依頼する",
           "steps": [
-            "claude plugin marketplace add earthtojake/text-to-cad#latest",
-            "claude plugin install text-to-cad@earthtojake"
+            "エージェントに対して「Install text-to-cad from https://github.com/earthtojake/text-to-cad」というメッセージを送信する"
           ],
-          "success_criteria": "Claude Codeにプラグインが追加され、利用可能になること"
+          "success_criteria": "エージェントによってtext-to-cadがインストールされること"
         },
         "evidence_sections": [
           "text-to-cad",
           "💻 Install",
-          "Claude Code",
-          "🧰 Skills",
-          "🛠️ Contributing"
+          "🧰 Skills"
         ],
         "unconfirmed": [
-          "プラグイン導入以外の詳細な実行結果や、具体的なCAD生成のプロンプト出力例"
+          "具体的なAIエージェント以外のカスタム環境における動作の完全な詳細",
+          "Windows 11のSmart App Control以外の特定環境での例外的な挙動"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "aaf231260f25afa856a44f781a2abc2d3cb20ea2",
-        "generated_at": "2026-10-10T10:08:42.063796+09:00"
+        "readme_sha": "121ba22f6bb17d47a6007e1b5bc1a683895349d4",
+        "generated_at": "2026-10-11T09:22:34.054126+09:00"
       }
     },
     {
       "rank": 9,
+      "full_name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "language": "Dart",
+      "stars_total": 179515,
+      "forks_total": 33598,
+      "stars_period": 263,
+      "api": {
+        "default_branch": "master",
+        "license": "BSD-3-Clause",
+        "updated_at": "2026-10-11T00:22:32Z",
+        "pushed_at": "2026-10-11T00:14:58Z",
+        "open_issues": 13321,
+        "archived": false,
+        "size_kb": 478381,
+        "topics": [
+          "android",
+          "app-framework",
+          "cross-platform",
+          "dart",
+          "dart-platform",
+          "desktop",
+          "flutter",
+          "flutter-package",
+          "fuchsia",
+          "ios",
+          "linux-desktop",
+          "macos",
+          "material-design",
+          "mobile",
+          "mobile-development",
+          "skia",
+          "web",
+          "web-framework",
+          "windows"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b9e6bc763380cabef9330c92478816ff79dbcae7",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 6946,
+        "used_chars": 6576
+      },
+      "analysis": {
+        "summary_ja": "Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。",
+        "capabilities": [
+          {
+            "text": "単一のコードベースからモバイル、ウェブ、デスクトップ向けのアプリを構築できる。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "コードを変更してアプリを再起動することなく即座に結果を確認できるステートフルホットリロード機能を提供する。",
+            "evidence_section": "Productive development"
+          },
+          {
+            "text": "iOS用のCupertinoウィジェットやMaterialウィジェットなどの豊富なウィジェットセットを提供する。",
+            "evidence_section": "Beautiful user experiences"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "iOSやAndroid向けのモバイルアプリ開発",
+            "basis": "README明記",
+            "evidence_section": "About Flutter"
+          },
+          {
+            "text": "ウェブやデスクトップ（Windows, macOS, Linux）向けのアプリケーション開発",
+            "basis": "README明記",
+            "evidence_section": "About Flutter"
+          }
+        ],
+        "first_trial": {
+          "goal": "Flutterのドキュメントに沿ってインストールを開始する",
+          "steps": [
+            "https://docs.flutter.dev/get-started にアクセスする"
+          ],
+          "success_criteria": "インストール手順のドキュメントを確認できること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Documentation",
+          "Terms of service",
+          "About Flutter",
+          "Beautiful user experiences",
+          "Fast results",
+          "Productive development",
+          "Extensible and open model"
+        ],
+        "unconfirmed": [
+          "具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "b9e6bc763380cabef9330c92478816ff79dbcae7",
+        "generated_at": "2026-10-03T09:39:28.726944+09:00"
+      }
+    },
+    {
+      "rank": 10,
       "full_name": "pingdotgg/t3code",
       "url": "https://github.com/pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars_total": 26641,
-      "forks_total": 6956,
-      "stars_period": 2379,
+      "stars_total": 26814,
+      "forks_total": 7030,
+      "stars_period": 2367,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-10T01:05:36Z",
-        "pushed_at": "2026-10-10T01:04:59Z",
-        "open_issues": 2949,
+        "updated_at": "2026-10-11T00:15:26Z",
+        "pushed_at": "2026-10-11T00:17:28Z",
+        "open_issues": 2985,
         "archived": false,
-        "size_kb": 474001,
+        "size_kb": 477130,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "ad6ef840314034b4dd77f1e0b2516130f70b99d9",
+        "sha": "8aa78f81b9ad72753cde7a8d3106ef8c7a8f0697",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 4637,
-        "used_chars": 4636
+        "original_chars": 4702,
+        "used_chars": 4701
       },
       "analysis": {
-        "summary_ja": "T3 Codeは、PC上の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元管理・制御するための「エージェント・コントロール・サーフェス」です。",
+        "summary_ja": "T3 Codeは、モバイルアプリ、ウェブアプリ、Electronベースのデスクトップアプリから、PC上で動作するAIエージェント（Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravityなど）を制御するためのコントロールサーフェスです。",
         "capabilities": [
           {
-            "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google AntigravityなどのAIエージェントと連携して制御できる。",
-            "evidence_section": "README冒頭"
+            "text": "モバイルアプリ、ウェブアプリ、Electron製デスクトップアプリを介してPC上のAIエージェントを制御できる。",
+            "evidence_section": "T3 Code"
           },
           {
-            "text": "iOS、Android、Webアプリ、Electronベースのデスクトップアプリを通じて利用できる。",
-            "evidence_section": "README冒頭"
+            "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravityなどのプロバイダーやサブスクリプションと連携して動作する。",
+            "evidence_section": "T3 Code"
           },
           {
-            "text": "コマンドラインや各種パッケージマネージャー（winget、Homebrew、APT、AUR）からインストール可能である。",
+            "text": "コマンドライン経由のインストール、バックグラウンドサービスとしての常駐、`npx`による一時的な実行に対応している。",
             "evidence_section": "Installation"
           }
         ],
         "use_cases": [
           {
-            "text": "スマートフォンなどのモバイル端末から、PC上で動作するAIエージェントを遠隔操作して開発を進める。",
+            "text": "スマートフォンなどのリモート端末から、PC上で動くAIエージェントの操作や開発作業を行う。",
             "basis": "README明記",
             "evidence_section": "Documentation"
           },
           {
-            "text": "複数のAIエージェント（Claude CodeやCodexなど）を一つのインターフェースから一元的に管理・コントロールする。",
+            "text": "対応する複数のAIエージェントのサブスクリプションを組み合わせて開発に活用する。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "デスクトップアプリやWebアプリを用いて、ローカル環境のコードエージェントの動作を快適に監視・操作する。",
-            "basis": "提案",
-            "evidence_section": "README冒頭"
+            "evidence_section": "T3 Code"
           }
         ],
         "first_trial": {
-          "goal": "ローカル環境でサーバーを起動し、Webアプリを開く",
+          "goal": "インストールせずに一時的にT3 Codeを試す",
           "steps": [
-            "curl -fsSL https://t3.codes/install.sh | sh",
-            "t3"
+            "npx t3@latest"
           ],
-          "success_criteria": "サーバーが起動し、ローカルのWebアプリが開くこと"
+          "success_criteria": "サーバーが起動し、ローカルのウェブアプリが開くこと"
         },
         "evidence_sections": [
-          "README冒頭",
+          "T3 Code",
           "Installation",
           "Documentation"
         ],
         "unconfirmed": [
-          "具体的なソースコードの内部構造や詳細な実装アルゴリズム",
-          "将来的なコントリビューション方針の変更予定"
+          "詳細なエージェント制御の内部プロトコルやAPI仕様",
+          "モバイルアプリの具体的な画面操作手順"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "ad6ef840314034b4dd77f1e0b2516130f70b99d9",
-        "generated_at": "2026-10-10T10:08:44.671373+09:00"
-      }
-    },
-    {
-      "rank": 10,
-      "full_name": "Panniantong/Agent-Reach",
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "language": "Python",
-      "stars_total": 94908,
-      "forks_total": 8298,
-      "stars_period": 7084,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-10-10T01:05:59Z",
-        "pushed_at": "2026-10-08T08:31:08Z",
-        "open_issues": 203,
-        "archived": false,
-        "size_kb": 2548,
-        "topics": [
-          "agent-infrastructure",
-          "ai-agent",
-          "ai-search",
-          "automation",
-          "bilibili",
-          "claude-code",
-          "cli",
-          "cursor",
-          "free-api",
-          "llm-tools",
-          "mcp",
-          "python",
-          "reddit-scraper",
-          "twitter-scraper",
-          "web-scraper",
-          "xiaohongshu",
-          "youtube-transcript"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "5ef5446b64ae5a5c9931691e63566f0b3403ad2f",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 15038,
-        "used_chars": 13754
-      },
-      "analysis": {
-        "summary_ja": "Agent Reachは、AIエージェントにインターネットへのアクセス能力を付与するためのCLIツールであり、Twitter、Reddit、YouTube、GitHub、Bilibili、小紅書などの多様なプラットフォームのデータ読み込みや検索をゼロAPI費用で統合します。",
-        "capabilities": [
-          {
-            "text": "複数の主要なインターネットプラットフォーム（YouTube、Twitter、Bilibili、GitHub、RSS、ウェブページ等）へのアクセスや検索をCLI経由で提供する。",
-            "evidence_section": "支持的平台"
-          },
-          {
-            "text": "環境の診断を行い、各チャンネルの状態や動作中のバックエンドを報告する `agent-reach doctor` コマンドを備える。",
-            "evidence_section": "为什么需要 Agent Reach？"
-          },
-          {
-            "text": "プライバシーを考慮し、Cookieやトークンなどの認証情報をローカル環境にのみ保存する。",
-            "evidence_section": "安全性"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "AIエージェントにYouTubeの字幕抽出や動画検索を行わせる。",
-            "basis": "README明記",
-            "evidence_section": "支持的平台"
-          },
-          {
-            "text": "AIエージェントを活用して、X（Twitter）やRedditなどのコミュニティから特定の製品評価や情報を収集する。",
-            "basis": "README明記",
-            "evidence_section": "为什么需要 Agent Reach？"
-          },
-          {
-            "text": "AIエージェントに公開されているウェブページやGitHubリポジトリの内容を読み込ませて解析する。",
-            "basis": "README明記",
-            "evidence_section": "支持的平台"
-          }
-        ],
-        "first_trial": {
-          "goal": "AIエージェントを通じてAgent Reachをインストールする",
-          "steps": [
-            "AIエージェントに以下のインストール指示文をコピーして渡す：\n帮我安装 Agent Reach：https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md"
-          ],
-          "success_criteria": "エージェントが自動的にインストールのための処理や確認を行うこと"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "为什么需要 Agent Reach？",
-          "支持的平台",
-          "快速上手",
-          "安全性"
-        ],
-        "unconfirmed": [
-          "インストールのためのPythonパッケージの正確なPyPI上のパッケージ名（READMEでは同名パッケージの直接インストールを非推奨としている）"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "5ef5446b64ae5a5c9931691e63566f0b3403ad2f",
-        "generated_at": "2026-10-06T10:50:28.852560+09:00"
+        "readme_sha": "8aa78f81b9ad72753cde7a8d3106ef8c7a8f0697",
+        "generated_at": "2026-10-11T09:22:36.760748+09:00"
       }
     }
   ],
   "zenn": [
     {
-      "title": "約 0.5 GiB のダウンロードで SSD に 6 GiB 書いていた — Steam のゲーム更新 1 件を実測し、減らせる場所を探した",
-      "url": "https://zenn.dev/berobero/articles/steam-update-ssd-writes",
-      "author": "beroru",
-      "published": "Fri, 09 Oct 2026 03:32:28 GMT",
-      "summary": "!\n3 行まとめ\n\nSteam の実際の更新 1 件（『Rust』の専用サーバー版、開発版ブランチ間の差分、steamcmd で測定）で、ダウンロードは約 0.5 GiB だったのに、SSD には約 6 GiB が書かれた。ゲームを入れ直す量より 1 割ほど多い。\n主な原因は、大きなファイルの中身が少しずれるだけで、ファイルを丸ごと書き直すことと見られる。試した範囲では、ファイルシステムの機能（ReFS の block clone）で約 2 割減ったが、更新プログラム側の書き"
+      "title": "SQLite 本体にベクトル検索拡張 vec1 がやってきた",
+      "url": "https://zenn.dev/mattn/articles/6e9996319ac099",
+      "author": "mattn",
+      "published": "Sat, 10 Oct 2026 17:16:42 GMT",
+      "summary": "はじめに\n2026 年 9 月 30 日、SQLite のソースツリーに ext/vec1/ というディレクトリが追加されました。コミットしたのは FTS5 などでおなじみの Dan Kennedy 氏。コミットメッセージはたった 1 行です。\nImport vec1 sources into directory ext/vec1/ of this project.\nこれまで別の場所で開発されていた vec1 が、まるっと SQLite 本体のリポジトリに取り込まれました。本"
     },
     {
-      "title": "Notion や Slack から AI に仕事を依頼できる仕組みを Claude Code Routines で作った",
+      "title": "2025 年 10 月から 2026 年 10 月までの Mozc に対する主な変更",
+      "url": "https://zenn.dev/komatsuh/articles/komatsuh_mozc_updates_from_2025_10",
+      "author": "Hiroyuki Komatsu",
+      "published": "Sat, 10 Oct 2026 14:30:00 GMT",
+      "summary": "初稿: 2026-10-10\n小松弘幸 (@komatsuh:bsky, @komatsuh:twitter)\n2025 年 10 月以降の Mozc に対する主な変更をまとめました。ドキュメントやコミットログ、 Issues に書かれているものをまとめました。\nMozc の問題の報告や機能の要望等は、GitHub の Issues や Discussions へお願いしま\nす。\n\n 関連記事\n\n2024 年 10 月から 2025 年 10 月までの Mozc に対する主な"
+    },
+    {
+      "title": "Claude Code Routines で Notion や Slack から AI に仕事を依頼できる仕組みを作った",
       "url": "https://zenn.dev/terass_dev/articles/6e6562d54d5505",
       "author": "homu_konamilk",
       "published": "Fri, 09 Oct 2026 02:47:29 GMT",
@@ -962,13 +975,6 @@
       "author": "hwld",
       "published": "Thu, 08 Oct 2026 06:20:08 GMT",
       "summary": "ボタンの文字などを上下中央に配置するとき、CSSで中央揃えを指定しても、少しズレて見えることがあります。この記事では、文字がズレて見える理由と、上下中央に揃えるための考え方を、CSSとフォントの仕組みから解説します。\n\n 中央揃えなのにズレて見える理由\n次のボタンは、横書きで1行のラベルをFlexboxで上下中央に配置した例です。\n<button class=\"button\">\n  <span class=\"button-label\">Save</span>\n</button"
-    },
-    {
-      "title": "🔓2026年9〜10月の情報漏洩19件、公表文を全部読んで考えたこと",
-      "url": "https://zenn.dev/bita/articles/1616afdb93c4a6",
-      "author": "シン",
-      "published": "Thu, 08 Oct 2026 00:43:37 GMT",
-      "summary": "TL;DR\n\n9/11〜10/5に公表（続報を含む）された不正アクセス・情報漏洩19件の公表文をすべて読みました。侵入の手口まで公表された8件は、どれも脆弱性か不正ログインでした。AIへの言及は0件です\nただ、穴を見つけて突くコストはAIで下がりつつあります（AnthropicによるGLM-5.3の評価、警察庁の検挙事例）\n対策は、更新できる状態を保つこと、第三者による診断、侵入される前提の設計です\n\n\n はじめに\nタイムズカーの漏洩では、社内にも対象者がいました。そこから漏"
     },
     {
       "title": "【三次元再構成入門】多視点の画像から3D空間を復元する仕組み - カメラパラメータとSfM",
@@ -1057,14 +1063,14 @@
   ],
   "common_terms": [
     "claude",
-    "agent",
     "code",
+    "agent",
     "rag",
     "skills",
-    "cli",
-    "api",
+    "web",
+    "sqlite",
     "typescript",
-    "anthropic"
+    "cli"
   ],
   "ai_analysis": {
     "enabled": true,
