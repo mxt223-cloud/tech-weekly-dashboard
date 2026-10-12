@@ -1,0 +1,52 @@
+{
+  "summary_ja": "OpenRigは、複数のAIコーディングエージェント（Claude CodeやCodexなど）をチームとして組織し、共有コンテキストを持ちながら持続的に連携・実行するためのオープンソースのCLIおよびシステムです。",
+  "capabilities": [
+    {
+      "text": "YAMLファイルでエージェントチームを定義し、1つのコマンドで起動できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude CodeやCodexなどの異なるモデルを同じリグ内で管理できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "TUI（テキストユーザインタフェース）を使用して、エージェントの状態や実行状況を確認できる。",
+      "evidence_section": "See it running"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リードエージェントと対話して希望する成果を伝え、専門家エージェントチームに連携させて結果や判断を得る。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "リポジトリと1つの有用な変更から開始し、チームの作業やコンテキストを同じアドレスに維持する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIツールのインストールとセットアップの実行確認",
+    "steps": [
+      "curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh -s -- --dry-run",
+      "curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh"
+    ],
+    "success_criteria": "インストールスクリプトが正常に実行され、プロバイダーの設定やセットアップの案内が表示されること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "See it running",
+    "Install and first run",
+    "Requirements"
+  ],
+  "unconfirmed": [
+    "具体的なチーム構成YAMLファイルの構文や詳細な設定オプション",
+    "AI文明実験の詳細な仕組みや内部アーキテクチャ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "15dfd8e8500082f2b18f7175c09aa4eced2c490e",
+  "generated_at": "2026-10-12T09:41:55.595959+09:00"
+}

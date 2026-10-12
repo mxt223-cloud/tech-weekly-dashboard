@@ -1,0 +1,1088 @@
+{
+  "generated_at": "2026-10-12T09:41:55.784908+09:00",
+  "week": "2026-10-12",
+  "title": "Tech Daily",
+  "github": [
+    {
+      "rank": 1,
+      "full_name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars_total": 30114,
+      "forks_total": 2583,
+      "stars_period": 25151,
+      "api": {
+        "default_branch": "main",
+        "license": "GPL-2.0",
+        "updated_at": "2026-10-12T00:41:36Z",
+        "pushed_at": "2026-10-12T00:29:18Z",
+        "open_issues": 569,
+        "archived": false,
+        "size_kb": 21664,
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "5e57cb94ff24c133317861bad76ac6b8dd83a55b",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 2466,
+        "used_chars": 2465
+      },
+      "analysis": {
+        "summary_ja": "AnyPS5は、PS5向け実行ファイルをLinuxやWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。",
+        "capabilities": [
+          {
+            "text": "実行ファイルをターゲットシステムのネイティブ形式に変換するrelinkerが含まれています。",
+            "evidence_section": "About"
+          },
+          {
+            "text": "動的リンクに適したシステムprxライブラリの実装が含まれています。",
+            "evidence_section": "About"
+          },
+          {
+            "text": "SDLマッピングされたゲームコントローラー、およびキーボードとマウスの入力設定をサポートしています。",
+            "evidence_section": "Input mapping"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "PS5向け実行ファイルをLinuxおよびWindowsへ自動移植する。",
+            "basis": "README明記",
+            "evidence_section": "About"
+          },
+          {
+            "text": "相互運用性、研究、保存、互換性の目的で使用する。",
+            "basis": "README明記",
+            "evidence_section": "Disclaimer"
+          }
+        ],
+        "first_trial": {
+          "goal": "ビルド手順や使用方法を確認する",
+          "steps": [
+            "docs/dev/BUILD.mdを参照してビルド手順を確認する",
+            "docs/user/USAGE.mdを参照して使用方法を確認する"
+          ],
+          "success_criteria": "ビルド手順および使用方法に関するドキュメントにアクセスできること"
+        },
+        "evidence_sections": [
+          "About",
+          "Status",
+          "Compatibility",
+          "Input mapping",
+          "Disclaimer",
+          "License"
+        ],
+        "unconfirmed": [
+          "具体的なビルドコマンドの記載がないため、手順の実行にはドキュメントの参照が必要である"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "5e57cb94ff24c133317861bad76ac6b8dd83a55b",
+        "generated_at": "2026-10-08T10:12:59.082229+09:00"
+      }
+    },
+    {
+      "rank": 2,
+      "full_name": "tester-army/e2e",
+      "url": "https://github.com/tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "language": "TypeScript",
+      "stars_total": 9042,
+      "forks_total": 435,
+      "stars_period": 6440,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-12T00:39:16Z",
+        "pushed_at": "2026-10-10T12:56:13Z",
+        "open_issues": 105,
+        "archived": false,
+        "size_kb": 19121,
+        "topics": [
+          "e2e",
+          "e2e-testing",
+          "end-to-end-testing",
+          "mobile",
+          "mobile-testing",
+          "playwright",
+          "web"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "81c35b79d3931daf715d869415fa7819b1bd3e19",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 5028,
+        "used_chars": 4278
+      },
+      "analysis": {
+        "summary_ja": "e2eは、Webアプリおよびモバイルアプリ向けの次世代エンドツーエンドテストフレームワークです。自然言語で目標を記述すると、AIエージェントがアプリを操作してその目標を達成し、通常のロケーターやアサーションで結果を確認できます。",
+        "capabilities": [
+          {
+            "text": "自然言語によるエージェントの操作とアサーションの記述",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "エージェントの操作を記録し、アプリが変更されるまでモデル呼び出しなしで次回以降に再実行する機能",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Webアプリおよびモバイルアプリ向けの複数のエンジンやレポーターなどのパッケージ提供",
+            "evidence_section": "Packages"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "メンバーのProプランへのアップグレードなど、ユーザーの複雑なワークフローのテスト",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Webおよびモバイルアプリのエンドツーエンドテストの自動化",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "設定とテストの初期化を行う",
+          "steps": [
+            "npx e2e init"
+          ],
+          "success_criteria": "設定ファイルとサンプルテストが作成されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick start",
+          "Packages",
+          "Documentation",
+          "Contributing",
+          "Security",
+          "Telemetry",
+          "Status",
+          "Made by TesterArmy"
+        ],
+        "unconfirmed": [
+          "使用するAIモデルプロバイダーやAPIキーの詳細な設定方法",
+          "各パッケージの具体的な内部実装や詳細な利用手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "81c35b79d3931daf715d869415fa7819b1bd3e19",
+        "generated_at": "2026-10-12T09:41:46.306476+09:00"
+      }
+    },
+    {
+      "rank": 3,
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_total": 286206,
+      "forks_total": 24015,
+      "stars_period": 10330,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-12T00:41:39Z",
+        "pushed_at": "2026-10-09T10:57:08Z",
+        "open_issues": 167,
+        "archived": false,
+        "size_kb": 1990,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 16449,
+        "used_chars": 16319
+      },
+      "analysis": {
+        "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
+        "capabilities": [
+          {
+            "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
+            "evidence_section": "Installation (30-second setup)"
+          },
+          {
+            "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
+            "evidence_section": "Engineering"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
+          "steps": [
+            "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
+            "エージェント内で /setup-matt-pocock-skills を実行する"
+          ],
+          "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
+        },
+        "evidence_sections": [
+          "Installation (30-second setup)",
+          "Why These Skills Exist",
+          "Reference",
+          "Engineering",
+          "Productivity"
+        ],
+        "unconfirmed": [
+          "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "generated_at": "2026-10-09T10:20:43.679066+09:00"
+      }
+    },
+    {
+      "rank": 4,
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars_total": 99740,
+      "forks_total": 8745,
+      "stars_period": 3803,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-12T00:40:30Z",
+        "pushed_at": "2026-10-11T10:48:04Z",
+        "open_issues": 199,
+        "archived": false,
+        "size_kb": 551699,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "2cb9e7eeae5c0139f024e336c179a930e9d99d8f",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 19551,
+        "used_chars": 18318
+      },
+      "analysis": {
+        "summary_ja": "claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで要約して、次回のセッションへ関連するコンテキストを自動的に注入します。",
+        "capabilities": [
+          {
+            "text": "セッション間でコンテキストを保持し、セッション終了後もプロジェクトの知識の連続性を維持する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "MCP検索ツールを使用した、トークン効率の良い3レイヤーワークフローによるメモリ検索機能",
+            "evidence_section": "MCP Search Tools"
+          },
+          {
+            "text": "SQLiteデータベースとChromaベクトルデータベースを使用したハイブリッド検索と永続ストレージ",
+            "evidence_section": "How It Works"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "過去のセッションで行ったやり取りやバグ修正の履歴をAIエージェントに再利用させる",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "プロジェクトの履歴を自然言語でクエリして必要な情報を見つけ出す",
+            "basis": "README明記",
+            "evidence_section": "MCP Search Tools"
+          }
+        ],
+        "first_trial": {
+          "goal": "Claude-Memをインストールしてプラグインフックを登録する",
+          "steps": [
+            "npx claude-mem install"
+          ],
+          "success_criteria": "インストーラーが正常にセットアップを完了し、ブラウザでのサインイン画面またはプロバイダー選択が行えること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick Start",
+          "How It Works",
+          "MCP Search Tools"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "2cb9e7eeae5c0139f024e336c179a930e9d99d8f",
+        "generated_at": "2026-10-10T10:08:39.226016+09:00"
+      }
+    },
+    {
+      "rank": 5,
+      "full_name": "EpicGames/raddebugger",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars_total": 8396,
+      "forks_total": 405,
+      "stars_period": 794,
+      "api": {
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-10-12T00:31:29Z",
+        "pushed_at": "2026-10-07T20:56:17Z",
+        "open_issues": 320,
+        "archived": false,
+        "size_kb": 29596,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "05403355908aa9765b226055831976999daa2db6",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 25518,
+        "used_chars": 25516
+      },
+      "analysis": {
+        "summary_ja": "EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。",
+        "capabilities": [
+          {
+            "text": "ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する",
+            "evidence_section": "The RAD Debug Info (RDI) Format"
+          },
+          {
+            "text": "巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する",
+            "evidence_section": "The RAD Linker"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "Windows x64環境におけるネイティブアプリケーションのデバッグ",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "巨大なリンクプロジェクトのビルド時間短縮",
+            "basis": "README明記",
+            "evidence_section": "The RAD Linker"
+          },
+          {
+            "text": "radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成",
+            "basis": "README明記",
+            "evidence_section": "The RAD Debug Info (RDI) Format"
+          }
+        ],
+        "first_trial": {
+          "goal": "Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する",
+          "steps": [
+            "Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする",
+            "x64 Native Tools Command Prompt for VS を起動する",
+            "コードベースのルートディレクトリに移動する",
+            "buildスクリプトを実行する"
+          ],
+          "success_criteria": "ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "The RAD Debug Info (RDI) Format",
+          "The RAD Linker",
+          "Windows x64"
+        ],
+        "unconfirmed": [
+          "LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）",
+          "リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "05403355908aa9765b226055831976999daa2db6",
+        "generated_at": "2026-10-09T10:20:37.601450+09:00"
+      }
+    },
+    {
+      "rank": 6,
+      "full_name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars_total": 60968,
+      "forks_total": 5451,
+      "stars_period": 4223,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-12T00:40:38Z",
+        "pushed_at": "2026-10-12T00:32:33Z",
+        "open_issues": 260,
+        "archived": false,
+        "size_kb": 501301,
+        "topics": [
+          "ai",
+          "animation",
+          "ffmpeg",
+          "framework",
+          "gsap",
+          "html",
+          "mcp",
+          "puppeteer",
+          "rendering",
+          "typescript",
+          "video"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "4529ffdda7076e54a94d380009d3cd5be6cff30d",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 28880,
+        "used_chars": 26917
+      },
+      "analysis": {
+        "summary_ja": "HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。",
+        "capabilities": [
+          {
+            "text": "HTMLとCSS、シーク可能なアニメーションを使用して確定的なMP4動画を生成する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "GSAP、CSSアニメーション、Lottie、Three.js、Anime.js、WAAPIなどのアニメーションライブラリやランタイムに対応する",
+            "evidence_section": "How It Works"
+          },
+          {
+            "text": "CLIやAWS Lambdaを用いたローカルおよび分散レンダリングに対応する",
+            "evidence_section": "HyperFrames Stack"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "製品発表動画や機能紹介動画の作成",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          },
+          {
+            "text": "アニメーション付きコード差分、ナレーション、字幕を含むPRウォークスルーの作成",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          },
+          {
+            "text": "データビュジュアライゼーション、チャートレース、マップアニメーションの制作",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          }
+        ],
+        "first_trial": {
+          "goal": "ローカル環境で動画プロジェクトを初期化し、プレビューおよびレンダリングを実行する",
+          "steps": [
+            "npx hyperframes init my-video",
+            "cd my-video",
+            "npx hyperframes preview",
+            "npx hyperframes render"
+          ],
+          "success_criteria": "ブラウザでのライブリロードによるプレビュー確認と、MP4形式へのレンダリングが成功すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick Start",
+          "Skills",
+          "What You Can Build",
+          "Frame.md",
+          "How It Works",
+          "HyperFrames Stack",
+          "Catalog",
+          "Why HyperFrames?",
+          "HyperFrames vs Remotion",
+          "Documentation",
+          "Packages",
+          "Community",
+          "Development Note",
+          "License"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "4529ffdda7076e54a94d380009d3cd5be6cff30d",
+        "generated_at": "2026-10-08T10:13:02.023333+09:00"
+      }
+    },
+    {
+      "rank": 7,
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars_total": 10899,
+      "forks_total": 1047,
+      "stars_period": 1140,
+      "api": {
+        "default_branch": "main",
+        "license": null,
+        "updated_at": "2026-10-12T00:40:40Z",
+        "pushed_at": "2026-10-11T08:14:39Z",
+        "open_issues": 226,
+        "archived": false,
+        "size_kb": 10395,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "399900c9171af9452ad4df5e5e3291a5b25c663e",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14372,
+        "used_chars": 14371
+      },
+      "analysis": {
+        "summary_ja": "Cursor公式のプラグインおよびサードパーティ製ツールの仕様を集約したリポジトリです。各プラグインは独立したディレクトリとして構成され、マーケットプレイス用およびプラグインごとのマニフェストを含んでいます。",
+        "capabilities": [
+          {
+            "text": "各プラグインの独立したディレクトリ構成と .cursor-plugin/plugin.json マニフェストの保持",
+            "evidence_section": "Plugins"
+          },
+          {
+            "text": "ルートディレクトリにある .cursor-plugin/marketplace.json による全プラグインのリスト化",
+            "evidence_section": "Repository structure"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "人気のある開発者向けツール、フレームワーク、SaaS製品向けのCursor公式プラグインの利用",
+            "basis": "README明記",
+            "evidence_section": "Plugins"
+          },
+          {
+            "text": "エージェントのスキル、Cursorルール、MCPサーバー定義などを含むプラグイン構造の確認",
+            "basis": "README明記",
+            "evidence_section": "Repository structure"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリの構成やプラグイン一覧を確認する",
+          "steps": [
+            "リポジトリ内のプラグイン一覧やディレクトリ構造を確認する"
+          ],
+          "success_criteria": "マーケットプレイスおよびプラグインのマニフェスト構造が把握できること"
+        },
+        "evidence_sections": [
+          "Plugins",
+          "Repository structure",
+          "License"
+        ],
+        "unconfirmed": [
+          "具体的なインストールや実行のためのコマンド",
+          "各プラグインの詳細な利用手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "399900c9171af9452ad4df5e5e3291a5b25c663e",
+        "generated_at": "2026-10-12T09:41:50.230794+09:00"
+      }
+    },
+    {
+      "rank": 8,
+      "full_name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "language": "Dart",
+      "stars_total": 179801,
+      "forks_total": 33781,
+      "stars_period": 680,
+      "api": {
+        "default_branch": "master",
+        "license": "BSD-3-Clause",
+        "updated_at": "2026-10-12T00:41:23Z",
+        "pushed_at": "2026-10-11T17:34:14Z",
+        "open_issues": 13338,
+        "archived": false,
+        "size_kb": 478405,
+        "topics": [
+          "android",
+          "app-framework",
+          "cross-platform",
+          "dart",
+          "dart-platform",
+          "desktop",
+          "flutter",
+          "flutter-package",
+          "fuchsia",
+          "ios",
+          "linux-desktop",
+          "macos",
+          "material-design",
+          "mobile",
+          "mobile-development",
+          "skia",
+          "web",
+          "web-framework",
+          "windows"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b9e6bc763380cabef9330c92478816ff79dbcae7",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 6946,
+        "used_chars": 6576
+      },
+      "analysis": {
+        "summary_ja": "Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。",
+        "capabilities": [
+          {
+            "text": "単一のコードベースからモバイル、ウェブ、デスクトップ向けのアプリを構築できる。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "コードを変更してアプリを再起動することなく即座に結果を確認できるステートフルホットリロード機能を提供する。",
+            "evidence_section": "Productive development"
+          },
+          {
+            "text": "iOS用のCupertinoウィジェットやMaterialウィジェットなどの豊富なウィジェットセットを提供する。",
+            "evidence_section": "Beautiful user experiences"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "iOSやAndroid向けのモバイルアプリ開発",
+            "basis": "README明記",
+            "evidence_section": "About Flutter"
+          },
+          {
+            "text": "ウェブやデスクトップ（Windows, macOS, Linux）向けのアプリケーション開発",
+            "basis": "README明記",
+            "evidence_section": "About Flutter"
+          }
+        ],
+        "first_trial": {
+          "goal": "Flutterのドキュメントに沿ってインストールを開始する",
+          "steps": [
+            "https://docs.flutter.dev/get-started にアクセスする"
+          ],
+          "success_criteria": "インストール手順のドキュメントを確認できること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Documentation",
+          "Terms of service",
+          "About Flutter",
+          "Beautiful user experiences",
+          "Fast results",
+          "Productive development",
+          "Extensible and open model"
+        ],
+        "unconfirmed": [
+          "具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "b9e6bc763380cabef9330c92478816ff79dbcae7",
+        "generated_at": "2026-10-03T09:39:28.726944+09:00"
+      }
+    },
+    {
+      "rank": 9,
+      "full_name": "earthtojake/text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars_total": 19256,
+      "forks_total": 1897,
+      "stars_period": 2508,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-12T00:38:39Z",
+        "pushed_at": "2026-10-12T00:29:21Z",
+        "open_issues": 31,
+        "archived": false,
+        "size_kb": 303831,
+        "topics": [
+          "agents",
+          "ai-agents",
+          "cad",
+          "mechanical-engineering",
+          "robotics",
+          "step",
+          "stl",
+          "stp",
+          "text-to-cad"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "2cd09ec3c928459c1072a001bd3d62cfec25b27c",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 18028,
+        "used_chars": 17933
+      },
+      "analysis": {
+        "summary_ja": "earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。",
+        "capabilities": [
+          {
+            "text": "STEP、GLB、STL、3MFファイル形式での3Dモデル生成",
+            "evidence_section": "text-to-cad"
+          },
+          {
+            "text": "製造性のチェック（DfAMやDFMレビュー）やエンジニアリング図面の生成",
+            "evidence_section": "text-to-cad"
+          },
+          {
+            "text": "3Dプリンティング、板金、CNC加工サービスへの接続",
+            "evidence_section": "text-to-cad"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "プレーンテキストや画像のリクエストからCADモデルを作成・編集する",
+            "basis": "README明記",
+            "evidence_section": "🧰 Skills"
+          },
+          {
+            "text": "ネジや軸受け、モーターなどの既製STEPパーツを検索する",
+            "basis": "README明記",
+            "evidence_section": "🧰 Skills"
+          },
+          {
+            "text": "パーツから寸法付きのエンジニアリング図面をPDFとして作成する",
+            "basis": "README明記",
+            "evidence_section": "🧰 Skills"
+          }
+        ],
+        "first_trial": {
+          "goal": "エージェントにtext-to-cadをインストールする",
+          "steps": [
+            "エージェントに次のメッセージを送信する: Install text-to-cad from https://github.com/earthtojake/text-to-cad"
+          ],
+          "success_criteria": "エージェントがtext-to-cadのインストールを実行すること"
+        },
+        "evidence_sections": [
+          "text-to-cad",
+          "💻 Install",
+          "🧰 Skills",
+          "🛠️ Contributing"
+        ],
+        "unconfirmed": [
+          "エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "2cd09ec3c928459c1072a001bd3d62cfec25b27c",
+        "generated_at": "2026-10-12T09:41:53.200719+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+      "language": "TypeScript",
+      "stars_total": 6974,
+      "forks_total": 526,
+      "stars_period": 2028,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-12T00:34:05Z",
+        "pushed_at": "2026-10-11T22:33:07Z",
+        "open_issues": 160,
+        "archived": false,
+        "size_kb": 37717,
+        "topics": [
+          "agent-harness",
+          "agent-orchestration",
+          "agent-skills",
+          "ai-coding",
+          "claude-code",
+          "cli",
+          "codex-cli",
+          "multi-agent",
+          "multi-agent-systems",
+          "tmux",
+          "typescript"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "15dfd8e8500082f2b18f7175c09aa4eced2c490e",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 37926,
+        "used_chars": 4715
+      },
+      "analysis": {
+        "summary_ja": "OpenRigは、複数のAIコーディングエージェント（Claude CodeやCodexなど）をチームとして組織し、共有コンテキストを持ちながら持続的に連携・実行するためのオープンソースのCLIおよびシステムです。",
+        "capabilities": [
+          {
+            "text": "YAMLファイルでエージェントチームを定義し、1つのコマンドで起動できる。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Claude CodeやCodexなどの異なるモデルを同じリグ内で管理できる。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "TUI（テキストユーザインタフェース）を使用して、エージェントの状態や実行状況を確認できる。",
+            "evidence_section": "See it running"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "リードエージェントと対話して希望する成果を伝え、専門家エージェントチームに連携させて結果や判断を得る。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "リポジトリと1つの有用な変更から開始し、チームの作業やコンテキストを同じアドレスに維持する。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "CLIツールのインストールとセットアップの実行確認",
+          "steps": [
+            "curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh -s -- --dry-run",
+            "curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh"
+          ],
+          "success_criteria": "インストールスクリプトが正常に実行され、プロバイダーの設定やセットアップの案内が表示されること。"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "See it running",
+          "Install and first run",
+          "Requirements"
+        ],
+        "unconfirmed": [
+          "具体的なチーム構成YAMLファイルの構文や詳細な設定オプション",
+          "AI文明実験の詳細な仕組みや内部アーキテクチャ"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "15dfd8e8500082f2b18f7175c09aa4eced2c490e",
+        "generated_at": "2026-10-12T09:41:55.595959+09:00"
+      }
+    }
+  ],
+  "zenn": [
+    {
+      "title": "Besu ローカル環境構築ハンズオン",
+      "url": "https://zenn.dev/komlock_lab/articles/besu-local-network-handson",
+      "author": "Natsuki Yamaguchi",
+      "published": "Sun, 11 Oct 2026 14:28:19 GMT",
+      "summary": "こんにちは。ブロックチェーン×AI Agentで自律経済圏を創るKomlock lab（Pacific Meta Group）でCTOをしている山口夏生 @0x_natto です。\n前編の「Besu（旧Hyperledger Besu）解説」では、バリデータの3分の2以上の署名で取引が確定し（4台なら3台）、3分の1を超えるバリデータが止まるとネットワーク全体が止まる、と書きました。前編は解説だけで、手を動かす部分はありませんでした。今回は自分の Mac で4台のバリデータを"
+    },
+    {
+      "title": "AIの文章を読みやすくするskillを作る（文の難しさの点数化＋構造化）",
+      "url": "https://zenn.dev/netetahito/articles/a3539e541b179c",
+      "author": "おなさい",
+      "published": "Sun, 11 Oct 2026 00:56:36 GMT",
+      "summary": "AIの文章を読むことが、とても増えました。調べものの答え、コードレビューの指摘、作業の完了報告、設計の相談。人の書いた文章より、AIの文章を読んでいる時間のほうが長い日もあります。\nしかも時代はどんどん速くなっていて、情報が入ってくる速さも上がっています。読む量は増えているのに、読む時間は減っています。\n\n AIの言うことが難しい\nできれば、分かりやすく短く、スムーズにやり取りしたい。ところがAIの言うことは、ときどきとても長くて難しいです。間違ってはいないけれど、頭に入って"
+    },
+    {
+      "title": "SQLite 本体にベクトル検索拡張 vec1 がやってきた",
+      "url": "https://zenn.dev/mattn/articles/6e9996319ac099",
+      "author": "mattn",
+      "published": "Sat, 10 Oct 2026 17:16:42 GMT",
+      "summary": "はじめに\n2026 年 9 月 30 日、SQLite のソースツリーに ext/vec1/ というディレクトリが追加されました。コミットしたのは FTS5 などでおなじみの Dan Kennedy 氏。コミットメッセージはたった 1 行です。\nImport vec1 sources into directory ext/vec1/ of this project.\nこれまで別の場所で開発されていた vec1 が、まるっと SQLite 本体のリポジトリに取り込まれました。本"
+    },
+    {
+      "title": "React習熟度ベンチマークでHaiku 5.5が見せた底力",
+      "url": "https://zenn.dev/uhyo/articles/react-profession-bench-20",
+      "author": "uhyo",
+      "published": "Sat, 10 Oct 2026 14:35:53 GMT",
+      "summary": "皆さんこんにちは。React習熟度シリーズの20記事目です。今回は、Claude Haiku 5.5のReact習熟度ベンチマークの結果をお届けしようと思います。Claude Haiku 5.5は、Haikuシリーズで久しぶりに出たモデルです。HaikuはClaudeシリーズの中で最も廉価なモデルで、そこそこの性能の代わりに安いという位置づけです。そんなHaiku 5.5は、いったいどんな結果を出したのでしょうか。\n前回の記事はこちらです。\nhttps://zenn.dev/"
+    },
+    {
+      "title": "2025 年 10 月から 2026 年 10 月までの Mozc に対する主な変更",
+      "url": "https://zenn.dev/komatsuh/articles/komatsuh_mozc_updates_from_2025_10",
+      "author": "Hiroyuki Komatsu",
+      "published": "Sat, 10 Oct 2026 14:30:00 GMT",
+      "summary": "初稿: 2026-10-10\n小松弘幸 (@komatsuh:bsky, @komatsuh:twitter)\n2025 年 10 月以降の Mozc に対する主な変更をまとめました。ドキュメントやコミットログ、 Issues に書かれているものをまとめました。\nMozc の問題の報告や機能の要望等は、GitHub の Issues や Discussions へお願いしま\nす。\n\n 関連記事\n\n2024 年 10 月から 2025 年 10 月までの Mozc に対する主な"
+    },
+    {
+      "title": "【速報】Claude の新機能 Claude Motion 早速使ってみた",
+      "url": "https://zenn.dev/branbran/articles/047821d64590f0",
+      "author": "Atsuki02",
+      "published": "Sat, 10 Oct 2026 04:13:09 GMT",
+      "summary": "はじめに\n2026年10月8日、Anthropic が Claude の新機能 Claude Motion をベータで公開しました。同じ日に Claude Dashboards も出ています。\nClaude Motion は、プロンプトや手元のレポート・グラフ・画像から、短いアニメーション動画を作る機能です。さっそく触ってみたので、機能の概要・使い方・使ってみた所感をまとめます。\n公式Claude Motion のYoutube動画\nこの記事は 2026年10月時点のベータ版"
+    },
+    {
+      "title": "AIで浮いた時間を「もっと作る」に使っていませんか",
+      "url": "https://zenn.dev/idealog/articles/a3e9cf4299b1cf",
+      "author": "アイデアログ開発チーム",
+      "published": "Fri, 09 Oct 2026 10:40:07 GMT",
+      "summary": "はじめに\n株式会社アイデアログで取締役CTOをしている松川です。\n当社は法人・団体向けの会場検索サイト「会場ベストサーチ」や、レンタルスペース検索の「スペなび」などを運営しています。\n今回は「AIで効率化されて生まれた時間を、何に使うべきか」について、最近考えていることを書いてみます。\n!\n本記事は筆者個人の考えであり、正解を示すものではありません。また後半で「役割」の話にも触れますが、特定の職種や人を否定する意図はありません。\n\n\n 作るスピードと量は、確かに上がった\nAI"
+    },
+    {
+      "title": "暗号技術入門",
+      "url": "https://zenn.dev/loglass/articles/f00a7408b2cf0b",
+      "author": "beru-almeida",
+      "published": "Fri, 09 Oct 2026 08:39:02 GMT",
+      "summary": "!\nこの記事は毎週必ず記事がでるテックブログLoglass Tech Blog Sprintの164週目の記事です！\n4年間連続達成まで残り48週となりました！\n\n\n はじめに\nLoglassのようなエンタープライズ向けSaaS製品は、顧客の様々な機密情報を扱います。そのため、情報のセキュリティと完全性を保証するデジタルセキュリティの仕組みを導入することが不可欠です。このトピックに関連して、本記事では、現代のデジタルセキュリティ・エコシステムの礎である暗号技術の基本的な概念を"
+    },
+    {
+      "title": "Haiku 5.5 を機に Sonnet 以下で動かしていたサブエージェントを見直した",
+      "url": "https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles",
+      "author": "okkun0524",
+      "published": "Thu, 08 Oct 2026 11:42:21 GMT",
+      "summary": "はじめに\n株式会社GENDA 開発部エンジニアの奥山です。\nClaude Haiku 5.5 が出ました。\nhttps://www.anthropic.com/claude-haiku-5-5\nHaiku で effort を指定できるのは 5.5 が初めてで、単価は Haiku 4.5 のちょうど 1/10 になっています。\n\n\n\nモデル\ninput / output（per MTok）\nSonnet 5.5 比\n\n\n\n\nClaude Opus 5.5\n$4 / $20\n2"
+    },
+    {
+      "title": "若手エンジニアに必要だと感じた「AIを使う力」",
+      "url": "https://zenn.dev/muit_techblog/articles/6ea28887c79457",
+      "author": "Goto",
+      "published": "Thu, 08 Oct 2026 08:29:40 GMT",
+      "summary": "若手エンジニアに必要だと感じた「AIを使う力」\n\n はじめに\n私は現在、JavaやReactを使った金融系Webアプリの開発に携わっています。開発経験はまだ浅く、業務では分からないことに遭遇する場面も多くあります。そのため、調査、実装、文章作成、レビューなど、さまざまな場面でAIを使ってきました。私自身、AIを使うことで実装や調査を効率化できる場面が多くありました。一方で、使えば使うほど「若手エンジニアがAIを使う際に陥りやすい問題」もあると感じるようになりました。\n若手エン"
+    },
+    {
+      "title": "CSSの`text-box`で文字を上下中央に揃えたい",
+      "url": "https://zenn.dev/chot/articles/be424332489e7a",
+      "author": "hwld",
+      "published": "Thu, 08 Oct 2026 06:20:08 GMT",
+      "summary": "ボタンの文字などを上下中央に配置するとき、CSSで中央揃えを指定しても、少しズレて見えることがあります。この記事では、文字がズレて見える理由と、上下中央に揃えるための考え方を、CSSとフォントの仕組みから解説します。\n\n 中央揃えなのにズレて見える理由\n次のボタンは、横書きで1行のラベルをFlexboxで上下中央に配置した例です。\n<button class=\"button\">\n  <span class=\"button-label\">Save</span>\n</button"
+    },
+    {
+      "title": "レビューの口伝を40ルールに棚卸ししてAIレビューに載せた",
+      "url": "https://zenn.dev/edash_tech_blog/articles/c52409a3d6fa12",
+      "author": "dk",
+      "published": "Wed, 07 Oct 2026 02:38:08 GMT",
+      "summary": "はじめに\nこんにちは、e-dashでエンジニアをしている Kezuka です。\nレビューで口伝されていたバックエンドの作法を棚卸しして、AIレビュー用のスキルにしました。\n半年運用した結果を実測しています。期待と違う結果が出たので、その記録と次の課題を書きます。\n\n 書かれていないルールが、レビューで伝わっていた\nバックエンドは Go とクリーンアーキテクチャです。Go らしい書き方に加えて、会社固有のルールやリファクタリングの方針が積み上がっていました。\nそれがどこにも書か"
+    },
+    {
+      "title": "嫌われるデザインの歴史",
+      "url": "https://zenn.dev/blackmose/articles/de0170a13be930",
+      "author": "やかん",
+      "published": "Tue, 06 Oct 2026 04:17:02 GMT",
+      "summary": "はじめに\nどの時代にも「ああ、あの頃のやつね」と一目でバレるデザインがある。\n2000年前後ならワードアートの虹色文字、2010年代ならパワポのデフォルトテンプレート、そして2024年以降はAIが量産する紫グラデーションと角丸カード。\nただ、流行したデザインがそのまま嫌われるわけではない。スキューモーフィズムのように、当時は愛されていて今見ると懐かしいだけのものもある。\n嫌われるのは、流行が考えなしに量産されて手抜きの合図になったものと、作り手の都合を見る人に押し付けたものだ"
+    },
+    {
+      "title": "JevとClefを画像生成AIのプロダクトに組み込もう!",
+      "url": "https://zenn.dev/radius5/articles/20261004-j3v7cl3f",
+      "author": "Katsuyuki Karasawa",
+      "published": "Mon, 05 Oct 2026 08:26:58 GMT",
+      "summary": "こんにちは。株式会社ラディウス･ファイブでバックエンド、GPUインフラ、フロントエンド、あといろいろやってるだけのエンジニアではない人です。\nhttps://www.copainter.ai/\nウィルキンソンのジンジャ無糖は美味しいので買いましょう。\nhttps://amzn.asia/d/01vS9hzH\n\n Cloudflare Birthday Week\nみなさんはちゃんとCloudflare Birthday Weekの内容は全て見ましたか?\n見てない方は全て目を通し"
+    },
+    {
+      "title": "オートパイロットは外せる人間を前提にしている — AI時代のエンジニア技能維持を航空業界に学ぶ",
+      "url": "https://zenn.dev/shimitaro/articles/eb45d8d63c7bd1",
+      "author": "しみたろ",
+      "published": "Mon, 05 Oct 2026 08:06:00 GMT",
+      "summary": "AI にコードを書かせる時代に、エンジニアは何の技能を残しておけばいいのか。\n航空業界の制度を一次資料でたどると、答えは「自分で書く力」よりも「自動化から引き継ぐ力」のほうに寄っていきました。パイロットは普段から手で操縦しているわけではありません。それでも、自動操縦が外れたときに機体を立て直せる状態を、規制当局が訓練の仕組みとして維持させています。\nこの記事では、FAA（米国連邦航空局）、EASA（欧州航空安全機関）、ICAO（国際民間航空機関）がそれぞれ何を言っているかを区"
+    },
+    {
+      "title": "オブジェクト指向UIデザインをAgent Skillにして、Claudeが作るUIはどう変わるかの検証",
+      "url": "https://zenn.dev/emuni/articles/ooui-agent-skill",
+      "author": "mkurokaw",
+      "published": "Mon, 05 Oct 2026 06:09:20 GMT",
+      "summary": "こんにちは、株式会社エムニの黒川です。\n普段は業務用Webアプリケーションの開発に携わっており、主に実装を担当しています。\n昨今、UIの実装においてもClaude CodeなどのAIエージェントを活用する場面が増えています。\nプロンプトから画面のプロトタイプが生成される開発のスピード感は魅力ですが、生成されたUIを改善する際、エージェントへの修正指示が「もっと見やすく」のような感覚的な表現になりがちだという課題を感じていました。\nそこで、設計理論に基づいてUIを評価する「判断"
+    },
+    {
+      "title": "俺のAIプログラミング手法(2026/10/05)",
+      "url": "https://zenn.dev/mizchi/articles/ai-coding-loop-formal",
+      "author": "mizchi",
+      "published": "Mon, 05 Oct 2026 04:59:07 GMT",
+      "summary": "棚卸し的な記事です。\n\n 人間の役割を定義する\n\nモデルの性能を評価する\n\n無茶振りしてどこまで出来るか観察\n何ができて、何ができなかったことがドメイン知識になる\n\n\nループを構築する\n\n自動化して得られた時間で、評価指標を改善する\n\n\n評価指標を作る\n\nどの数値を改善すべきか、トレードオフは何を優先すべきか\n\n\nループのイテレーションを評価する\n\nAI の行動ログを観察して、評価指標を正しく終えているか、\n\n\nテストとCIをチューニングする(その優先度を与える)\n\n評価指標"
+    },
+    {
+      "title": "技術ブログはゆるやかに衰退している",
+      "url": "https://zenn.dev/northward/articles/decline-of-tech-blogs",
+      "author": "Northward",
+      "published": "Mon, 05 Oct 2026 00:40:05 GMT",
+      "summary": "この記事では、Zennのデータを見て技術ブログが衰退していることを確認し、技術ブログがこれからどうなるかについて考えます。\n!\n星影(@unsoluble_sugar)さんから指摘していただいたこの記事の問題点や、それについての私の考えについて、Discussionのコメントで書いています。\n記事を読んだ後などに以下の記事やコメントを読んでいただくと、この記事の正確性や主張についてより理解できると思います。\n\n\n\n Zennのデータを見て分かること\n2026年にZennに投稿"
+    },
+    {
+      "title": "GraphRAGをゼロから詳しく解説する【ナレッジグラフ・オントロジー】",
+      "url": "https://zenn.dev/tetsuro731/articles/6efe77a20b8c1c",
+      "author": "テッツォ",
+      "published": "Mon, 05 Oct 2026 00:19:09 GMT",
+      "summary": "はじめに\n生成AIが盛り上がり続けて数年、どんどん新しい言葉が出てくる。\nRAGという概念が出てきたと思ったら、最近はナレッジグラフ、オントロジー、GraphRAGなど聞き慣れない言葉が次々出てきた。\nしかし、これらのトレンドを時系列で整理して追ってみると、意外と一つの線となって繋がることがわかる。\n今回は、最近注目されているGraphRAGに焦点をあて、ゼロから理解することを目指す。\n詳しくは後ほど説明するが、GraphRAGには以下の二つの意味が存在する。\n\n一般に言われ"
+    },
+    {
+      "title": "本当に「判断」していますか？",
+      "url": "https://zenn.dev/dyoshikawa/articles/do-you-desicion",
+      "author": "dyoshikawa",
+      "published": "Sun, 04 Oct 2026 22:00:05 GMT",
+      "summary": "はじめに\n@dyoshikawaです。\n昨今、\n「AI時代はタスクはAIにやらせ、人間は判断に集中する」\nといったことをよく聞きますが、個人的にはモヤモヤがあります。\nひとつは、対象への理解なしに妥当な判断ができるのか、という点です。\nもうひとつは、自分自身もですし、身の回りやSNSで見かける投稿などからも感じることですが、その判断でさえAIへの丸投げに近づいていっているのではないかということです。\n\n 理解できないものは判断できない\n「AI時代、人間の役割は判断になる」とよ"
+    }
+  ],
+  "common_terms": [
+    "claude",
+    "agent",
+    "code",
+    "rag",
+    "web",
+    "sqlite",
+    "anthropic"
+  ],
+  "ai_analysis": {
+    "enabled": true,
+    "model": "gemini-3.5-flash-lite",
+    "successful": 10,
+    "total": 10
+  },
+  "verification": {
+    "mode": "metadata-and-readme-analysis",
+    "completed": 0,
+    "pending": 10,
+    "note": "AI分析はREADMEの要約であり、実行検証や安全性保証ではありません。"
+  }
+}

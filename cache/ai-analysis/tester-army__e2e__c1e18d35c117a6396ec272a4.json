@@ -1,0 +1,56 @@
+{
+  "summary_ja": "e2eは、Webアプリおよびモバイルアプリ向けの次世代エンドツーエンドテストフレームワークです。自然言語で目標を記述すると、AIエージェントがアプリを操作してその目標を達成し、通常のロケーターやアサーションで結果を確認できます。",
+  "capabilities": [
+    {
+      "text": "自然言語によるエージェントの操作とアサーションの記述",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "エージェントの操作を記録し、アプリが変更されるまでモデル呼び出しなしで次回以降に再実行する機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Webアプリおよびモバイルアプリ向けの複数のエンジンやレポーターなどのパッケージ提供",
+      "evidence_section": "Packages"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "メンバーのProプランへのアップグレードなど、ユーザーの複雑なワークフローのテスト",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Webおよびモバイルアプリのエンドツーエンドテストの自動化",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "設定とテストの初期化を行う",
+    "steps": [
+      "npx e2e init"
+    ],
+    "success_criteria": "設定ファイルとサンプルテストが作成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "Packages",
+    "Documentation",
+    "Contributing",
+    "Security",
+    "Telemetry",
+    "Status",
+    "Made by TesterArmy"
+  ],
+  "unconfirmed": [
+    "使用するAIモデルプロバイダーやAPIキーの詳細な設定方法",
+    "各パッケージの具体的な内部実装や詳細な利用手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "81c35b79d3931daf715d869415fa7819b1bd3e19",
+  "generated_at": "2026-10-12T09:41:46.306476+09:00"
+}

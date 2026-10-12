@@ -1,0 +1,55 @@
+{
+  "summary_ja": "earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。",
+  "capabilities": [
+    {
+      "text": "STEP、GLB、STL、3MFファイル形式での3Dモデル生成",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "製造性のチェック（DfAMやDFMレビュー）やエンジニアリング図面の生成",
+      "evidence_section": "text-to-cad"
+    },
+    {
+      "text": "3Dプリンティング、板金、CNC加工サービスへの接続",
+      "evidence_section": "text-to-cad"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プレーンテキストや画像のリクエストからCADモデルを作成・編集する",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    },
+    {
+      "text": "ネジや軸受け、モーターなどの既製STEPパーツを検索する",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    },
+    {
+      "text": "パーツから寸法付きのエンジニアリング図面をPDFとして作成する",
+      "basis": "README明記",
+      "evidence_section": "🧰 Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "エージェントにtext-to-cadをインストールする",
+    "steps": [
+      "エージェントに次のメッセージを送信する: Install text-to-cad from https://github.com/earthtojake/text-to-cad"
+    ],
+    "success_criteria": "エージェントがtext-to-cadのインストールを実行すること"
+  },
+  "evidence_sections": [
+    "text-to-cad",
+    "💻 Install",
+    "🧰 Skills",
+    "🛠️ Contributing"
+  ],
+  "unconfirmed": [
+    "エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2cd09ec3c928459c1072a001bd3d62cfec25b27c",
+  "generated_at": "2026-10-12T09:41:53.200719+09:00"
+}
