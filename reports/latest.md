@@ -1,17 +1,17 @@
-# Tech Daily — 2026-10-12
+# Tech Daily — 2026-10-13
 
-生成日時: 2026-10-12T09:41:55.784908+09:00  
+生成日時: 2026-10-13T11:41:12.661995+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
 
-**概要:** AnyPS5は、PS5向け実行ファイルをLinuxやWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。
+**概要:** AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動移植するためのツールです。エミュレーションや別プロセスの実行を伴わず、ネイティブ形式への変換や動的リンク用のシステムprxライブラリの実装が含まれています。
 
 - 言語: C++
-- 今週のスター: 25151
+- 今週のスター: 27263
 - ライセンス: GPL-2.0
-- AI分析状態: ok（キャッシュ）
+- AI分析状態: ok
 
 ### できること
 
@@ -19,65 +19,67 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 - 動的リンクに適したシステムprxライブラリの実装が含まれています。（根拠: About）
 
-- SDLマッピングされたゲームコントローラー、およびキーボードとマウスの入力設定をサポートしています。（根拠: Input mapping）
+- シェーダー再コンパイラによってSPIR-Vを生成できます。（根拠: About）
 
 
 ### 利用例
 
-- PS5向け実行ファイルをLinuxおよびWindowsへ自動移植する。（README明記／根拠: About）
+- PS5の実行ファイルをLinuxやWindowsへ自動移植する（README明記／根拠: About）
 
-- 相互運用性、研究、保存、互換性の目的で使用する。（README明記／根拠: Disclaimer）
+- SDLマッピングされたゲームコントローラーを使用した入力操作を行う（README明記／根拠: Input mapping）
 
 
 ### 最初に試すこと
 
-ビルド手順や使用方法を確認する
+ビルド手順や使用方法のドキュメントを確認する
 
-1. docs/dev/BUILD.mdを参照してビルド手順を確認する
+1. Usageリンクを参照して使用方法を確認する
 
-2. docs/user/USAGE.mdを参照して使用方法を確認する
+2. Build instructionsを参照してビルド手順を確認する
 
 
-成功の目安: ビルド手順および使用方法に関するドキュメントにアクセスできること
+成功の目安: ドキュメントに記載された手順や使用方法が把握できること
 
-未確認: 具体的なビルドコマンドの記載がないため、手順の実行にはドキュメントの参照が必要である
+未確認: 具体的なビルドコマンドの記載がないため、手順の実行にはBUILD.mdを参照する必要がある。
 
 
 ## 2. [tester-army/e2e](https://github.com/tester-army/e2e)
 
-**概要:** e2eは、Webアプリおよびモバイルアプリ向けの次世代エンドツーエンドテストフレームワークです。自然言語で目標を記述すると、AIエージェントがアプリを操作してその目標を達成し、通常のロケーターやアサーションで結果を確認できます。
+**概要:** e2eは、自然言語で指示した目標をAIエージェントが実行し、従来のロケーターやアサーションを組み合わせてWebおよびモバイルアプリのテストを行える、次世代のエンドツーエンドテストフレームワークです。
 
 - 言語: TypeScript
-- 今週のスター: 6440
+- 今週のスター: 5582
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- 自然言語によるエージェントの操作とアサーションの記述（根拠: README冒頭）
+- 自然言語を用いた目標の記述と、エージェントによるアプリの操作・アサーションの実行（根拠: README冒頭）
 
-- エージェントの操作を記録し、アプリが変更されるまでモデル呼び出しなしで次回以降に再実行する機能（根拠: README冒頭）
+- エージェントのステップを記録し、アプリに変更がない限り次回の実行時にモデル呼び出しなしでリプレイする機能（根拠: README冒頭）
 
-- Webアプリおよびモバイルアプリ向けの複数のエンジンやレポーターなどのパッケージ提供（根拠: Packages）
+- Webおよびモバイルアプリに対応したエンジンや、結果をプルリクエストのコメントに投稿するレポーターなどのパッケージ提供（根拠: Packages）
 
 
 ### 利用例
 
-- メンバーのProプランへのアップグレードなど、ユーザーの複雑なワークフローのテスト（README明記／根拠: README冒頭）
-
 - Webおよびモバイルアプリのエンドツーエンドテストの自動化（README明記／根拠: README冒頭）
+
+- メンバーのプランアップグレードなど、ユーザーの操作フローを自然言語で記述したテスト（README明記／根拠: README冒頭）
+
+- CI/CDやプルリクエストのレビュープロセスでのテスト結果の共有（提案／根拠: Packages）
 
 
 ### 最初に試すこと
 
-設定とテストの初期化を行う
+初期設定を行い、設定ファイルとサンプルテストを作成する
 
 1. npx e2e init
 
 
-成功の目安: 設定ファイルとサンプルテストが作成されること
+成功の目安: 設定ファイルとサンプルテストが書き込まれること
 
-未確認: 使用するAIモデルプロバイダーやAPIキーの詳細な設定方法／各パッケージの具体的な内部実装や詳細な利用手順
+未確認: 詳細な設定ファイルの構造や、対応している全てのAIモデルプロバイダーのリスト
 
 
 ## 3. [mattpocock/skills](https://github.com/mattpocock/skills)
@@ -85,7 +87,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
 
 - 言語: Shell
-- 今週のスター: 10330
+- 今週のスター: 11139
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -121,94 +123,12 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
 
 
-## 4. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
-
-**概要:** claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで要約して、次回のセッションへ関連するコンテキストを自動的に注入します。
-
-- 言語: TypeScript
-- 今週のスター: 3803
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- セッション間でコンテキストを保持し、セッション終了後もプロジェクトの知識の連続性を維持する（根拠: README冒頭）
-
-- MCP検索ツールを使用した、トークン効率の良い3レイヤーワークフローによるメモリ検索機能（根拠: MCP Search Tools）
-
-- SQLiteデータベースとChromaベクトルデータベースを使用したハイブリッド検索と永続ストレージ（根拠: How It Works）
-
-
-### 利用例
-
-- 過去のセッションで行ったやり取りやバグ修正の履歴をAIエージェントに再利用させる（README明記／根拠: README冒頭）
-
-- プロジェクトの履歴を自然言語でクエリして必要な情報を見つけ出す（README明記／根拠: MCP Search Tools）
-
-
-### 最初に試すこと
-
-Claude-Memをインストールしてプラグインフックを登録する
-
-1. npx claude-mem install
-
-
-成功の目安: インストーラーが正常にセットアップを完了し、ブラウザでのサインイン画面またはプロバイダー選択が行えること
-
-
-
-
-## 5. [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger)
-
-**概要:** EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。
-
-- 言語: C
-- 今週のスター: 794
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする（根拠: README冒頭）
-
-- ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する（根拠: The RAD Debug Info (RDI) Format）
-
-- 巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する（根拠: The RAD Linker）
-
-
-### 利用例
-
-- Windows x64環境におけるネイティブアプリケーションのデバッグ（README明記／根拠: README冒頭）
-
-- 巨大なリンクプロジェクトのビルド時間短縮（README明記／根拠: The RAD Linker）
-
-- radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成（README明記／根拠: The RAD Debug Info (RDI) Format）
-
-
-### 最初に試すこと
-
-Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する
-
-1. Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする
-
-2. x64 Native Tools Command Prompt for VS を起動する
-
-3. コードベースのルートディレクトリに移動する
-
-4. buildスクリプトを実行する
-
-
-成功の目安: ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること
-
-未確認: LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）／リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）
-
-
-## 6. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
+## 4. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
 **概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 4223
+- 今週のスター: 4482
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -248,47 +168,51 @@ Windows x64環境でデバッグモードのビルドを実行し、raddbg.exe�
 
 
 
-## 7. [cursor/plugins](https://github.com/cursor/plugins)
+## 5. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
-**概要:** Cursor公式のプラグインおよびサードパーティ製ツールの仕様を集約したリポジトリです。各プラグインは独立したディレクトリとして構成され、マーケットプレイス用およびプラグインごとのマニフェストを含んでいます。
+**概要:** claude-memは、エージェントセッション間で永続的なコンテキストを維持するためのメモリ圧縮システムであり、セッション中の操作を自動的にキャプチャし、AIで圧縮して今後のセッションに適切なコンテキストを注入します。
 
 - 言語: TypeScript
-- 今週のスター: 1140
-- ライセンス: 不明
+- 今週のスター: 3762
+- ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- 各プラグインの独立したディレクトリ構成と .cursor-plugin/plugin.json マニフェストの保持（根拠: Plugins）
+- セッションを跨いでコンテキストを自動的に保存し、将来のセッションで利用可能にする（根拠: README冒頭）
 
-- ルートディレクトリにある .cursor-plugin/marketplace.json による全プラグインのリスト化（根拠: Repository structure）
+- トークン効率の良い3層ワークフロー（検索、タイムライン、詳細取得）を用いたMCP検索ツールを提供する（根拠: MCP Search Tools）
+
+- 複数のワークフローモードと言語設定（日本語モードなど）に対応する（根拠: Configuration）
 
 
 ### 利用例
 
-- 人気のある開発者向けツール、フレームワーク、SaaS製品向けのCursor公式プラグインの利用（README明記／根拠: Plugins）
+- 過去のセッションの履歴やバグ修正の文脈を失わずに開発作業を継続する（README明記／根拠: Quick Start）
 
-- エージェントのスキル、Cursorルール、MCPサーバー定義などを含むプラグイン構造の確認（README明記／根拠: Repository structure）
+- 自然言語とMCP検索ツールを使用してプロジェクトの履歴を照会する（README明記／根拠: MCP Search Tools）
 
 
 ### 最初に試すこと
 
-リポジトリの構成やプラグイン一覧を確認する
+Claude Code環境にclaude-memをインストールして動作確認する
 
-1. リポジトリ内のプラグイン一覧やディレクトリ構造を確認する
+1. npx claude-mem install
 
-
-成功の目安: マーケットプレイスおよびプラグインのマニフェスト構造が把握できること
-
-未確認: 具体的なインストールや実行のためのコマンド／各プラグインの詳細な利用手順
+2. ブラウザでサインインしてメモリキーを有効化する（またはフラグでスキップする）
 
 
-## 8. [flutter/flutter](https://github.com/flutter/flutter)
+成功の目安: インストーラが正常に完了し、プラグインフックやワーサービスが設定されること
+
+未確認: 無料トライアル終了後の自動フォールバックの詳細な挙動／対応しているすべての外部サービスとの詳細な連携テスト結果
+
+
+## 6. [flutter/flutter](https://github.com/flutter/flutter)
 
 **概要:** Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。
 
 - 言語: Dart
-- 今週のスター: 680
+- 今週のスター: 806
 - ライセンス: BSD-3-Clause
 - AI分析状態: ok（キャッシュ）
 
@@ -320,14 +244,51 @@ Flutterのドキュメントに沿ってインストールを開始する
 未確認: 具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）
 
 
-## 9. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+## 7. [cursor/plugins](https://github.com/cursor/plugins)
+
+**概要:** Cursor用の公式プラグイン集およびプラグイン仕様を提供するリポジトリです。人気のある開発ツール、フレームワーク、SaaS製品向けのスタンドアロンなプラグインが多数含まれています。
+
+- 言語: TypeScript
+- 今週のスター: 1144
+- ライセンス: 不明
+- AI分析状態: ok
+
+### できること
+
+- 各プラグインの独立したディレクトリ構成および `.cursor-plugin/plugin.json` マニフェストの提供（根拠: README冒頭）
+
+- ルートにある `.cursor-plugin/marketplace.json` によるマーケットプレイスとしての全プラグイン管理（根拠: Repository structure）
+
+
+### 利用例
+
+- 開発ツールやSaaS製品（GitHub、Google Drive、Slack等）向けの公式プラグインの利用（README明記／根拠: Plugins）
+
+- 新規のエージェントプラグインの作成や検証（README明記／根拠: Plugins）
+
+
+### 最初に試すこと
+
+リポジトリの構造を確認する
+
+1. リポジトリをクローンする
+
+2. ルートディレクトリの `.cursor-plugin/marketplace.json` や各プラグインの構造を確認する
+
+
+成功の目安: マーケットプレイスマニフェストと各プラグインの構成が存在していることを確認できる
+
+未確認: Quick Startや具体的なインストールコマンドの記載がないため、セットアップ手順は不明です
+
+
+## 8. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
 
 **概要:** earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。
 
 - 言語: Python
-- 今週のスター: 2508
+- 今週のスター: 2441
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -359,14 +320,14 @@ Flutterのドキュメントに沿ってインストールを開始する
 未確認: エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅
 
 
-## 10. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
+## 9. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
 
 **概要:** OpenRigは、複数のAIコーディングエージェント（Claude CodeやCodexなど）をチームとして組織し、共有コンテキストを持ちながら持続的に連携・実行するためのオープンソースのCLIおよびシステムです。
 
 - 言語: TypeScript
-- 今週のスター: 2028
+- 今週のスター: 2056
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -398,16 +359,73 @@ CLIツールのインストールとセットアップの実行確認
 未確認: 具体的なチーム構成YAMLファイルの構文や詳細な設定オプション／AI文明実験の詳細な仕組みや内部アーキテクチャ
 
 
+## 10. [morluto/rea](https://github.com/morluto/rea)
+
+**概要:** REAは、バイナリ、アプリケーション、実行時の動作など、あらゆるものをリバースエンジニアリングするためのMCPサーバーおよびツールです。AIエージェントと連携して動作を調査し、コードや証拠を提示させることができます。
+
+- 言語: TypeScript
+- 今週のスター: 130471
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールへAIエージェントを接続します。（根拠: README冒頭）
+
+- Hopper、Ghidra、IDAなどのネイティブ解析エンジンを利用して疑似コード、アセンブリ、文字列、シンボル、参照を取得できます。（根拠: What you can analyze）
+
+- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARを検査し、モジュール、インポート、Electronの境界とその証拠を取得できます。（根拠: Quick start）
+
+
+### 利用例
+
+- アプリ内の機能がどのように動作しているかをバイナリレベルで理解し、独自のプロジェクト向けに同様の機能を構築する。（README明記／根拠: README冒頭）
+
+- サウンドのパン計算やクリップボードブリッジなどの仕組みを調査し、再現コードや実装の参考に活用する。（README明記／根拠: Showcases）
+
+- 抽出されたJavaScriptアプリケーションのモジュール構成やインポート関係を分析し、構造を把握する。（README明記／根拠: Quick start）
+
+
+### 最初に試すこと
+
+REAのセットアップを行い、AIエージェントから利用できるようにする
+
+1. npx rea-agents setup
+
+
+成功の目安: セットアップコマンドが実行され、エージェントの選択や変更の確認、承認を行ってMCPサーバーとワークフロー手順が追加されること
+
+
+
+
 
 ## Zenn
 
-- [Besu ローカル環境構築ハンズオン](https://zenn.dev/komlock_lab/articles/besu-local-network-handson) — Natsuki Yamaguchi
+- [dbt Docs v2で何ができるか、実際に触ってみた【dbt v2】](https://zenn.dev/ryatora/articles/dbt-docs-v2-guide) — rnm
 
-- [AIの文章を読みやすくするskillを作る（文の難しさの点数化＋構造化）](https://zenn.dev/netetahito/articles/a3539e541b179c) — おなさい
+- [PRコメントからKubernetesに訊く ~GitHub ActionsからA2Aエージェントをシークレットレスで繋ぐ~](https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja) — らん
+
+- [Canton Network ローカル環境構築ハンズオン](https://zenn.dev/komlock_lab/articles/canton-localnet-handson) — Natsuki Yamaguchi
+
+- [【2026年版】Fateで理解するローカルLLMの選び方](https://zenn.dev/akari1106/articles/3a050fde72159d) — 灯里(akari)
+
+- [WSL Containerのsettings.yaml他、基本的な挙動をみていく](https://zenn.dev/eien_syogakusya/articles/a34040c33e63d2) — 永遠ノ初学者
+
+- [whisperの文字起こしにJevで話者ラベルを付けようとしたら、Jevは要らなかった](https://zenn.dev/ik11235/articles/whisper-jev-speaker-label) — ik-fib
+
+- [【C++言語入門STL編】 第2回 文字列操作](https://zenn.dev/yoshia/articles/cpp2-section2-string-operations-0bc4a0ca4858) — yoshia
+
+- [Amazon Bedrock の利用料金をユーザーごとに確認するダッシュボードを CUR 2.0 と Amazon Quick で作る](https://zenn.dev/aws_japan/articles/aws-bedrock-cur2-user-cost-dashboard) — sugimount
+
+- [スロップ表現100連発](https://zenn.dev/todesking/articles/5bc43f449ecdf6) — todesking
+
+- [Reservoir Computing で公開ベンチマークの異常検知をやってみる](https://zenn.dev/kotton_mas/articles/rc-basics-05-anomaly-detection) — kotton
+
+- [Microsoft-Decision-1でAI-OCRの品質ゲートを作ってみた](https://zenn.dev/headwaters/articles/6e889f79ee9f2e) — takekawa tomoki
+
+- [GitLabを月500円で自社運用する 退役PCと「出島サーバ」の構成](https://zenn.dev/miyanaga/articles/zenn-2026-10-11) — miyanaga
 
 - [SQLite 本体にベクトル検索拡張 vec1 がやってきた](https://zenn.dev/mattn/articles/6e9996319ac099) — mattn
-
-- [React習熟度ベンチマークでHaiku 5.5が見せた底力](https://zenn.dev/uhyo/articles/react-profession-bench-20) — uhyo
 
 - [2025 年 10 月から 2026 年 10 月までの Mozc に対する主な変更](https://zenn.dev/komatsuh/articles/komatsuh_mozc_updates_from_2025_10) — Hiroyuki Komatsu
 
@@ -415,31 +433,13 @@ CLIツールのインストールとセットアップの実行確認
 
 - [AIで浮いた時間を「もっと作る」に使っていませんか](https://zenn.dev/idealog/articles/a3e9cf4299b1cf) — アイデアログ開発チーム
 
-- [暗号技術入門](https://zenn.dev/loglass/articles/f00a7408b2cf0b) — beru-almeida
-
 - [Haiku 5.5 を機に Sonnet 以下で動かしていたサブエージェントを見直した](https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles) — okkun0524
 
 - [若手エンジニアに必要だと感じた「AIを使う力」](https://zenn.dev/muit_techblog/articles/6ea28887c79457) — Goto
 
 - [CSSの`text-box`で文字を上下中央に揃えたい](https://zenn.dev/chot/articles/be424332489e7a) — hwld
 
-- [レビューの口伝を40ルールに棚卸ししてAIレビューに載せた](https://zenn.dev/edash_tech_blog/articles/c52409a3d6fa12) — dk
-
 - [嫌われるデザインの歴史](https://zenn.dev/blackmose/articles/de0170a13be930) — やかん
-
-- [JevとClefを画像生成AIのプロダクトに組み込もう!](https://zenn.dev/radius5/articles/20261004-j3v7cl3f) — Katsuyuki Karasawa
-
-- [オートパイロットは外せる人間を前提にしている — AI時代のエンジニア技能維持を航空業界に学ぶ](https://zenn.dev/shimitaro/articles/eb45d8d63c7bd1) — しみたろ
-
-- [オブジェクト指向UIデザインをAgent Skillにして、Claudeが作るUIはどう変わるかの検証](https://zenn.dev/emuni/articles/ooui-agent-skill) — mkurokaw
-
-- [俺のAIプログラミング手法(2026/10/05)](https://zenn.dev/mizchi/articles/ai-coding-loop-formal) — mizchi
-
-- [技術ブログはゆるやかに衰退している](https://zenn.dev/northward/articles/decline-of-tech-blogs) — Northward
-
-- [GraphRAGをゼロから詳しく解説する【ナレッジグラフ・オントロジー】](https://zenn.dev/tetsuro731/articles/6efe77a20b8c1c) — テッツォ
-
-- [本当に「判断」していますか？](https://zenn.dev/dyoshikawa/articles/do-you-desicion) — dyoshikawa
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

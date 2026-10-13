@@ -1,0 +1,52 @@
+{
+  "summary_ja": "claude-memは、エージェントセッション間で永続的なコンテキストを維持するためのメモリ圧縮システムであり、セッション中の操作を自動的にキャプチャし、AIで圧縮して今後のセッションに適切なコンテキストを注入します。",
+  "capabilities": [
+    {
+      "text": "セッションを跨いでコンテキストを自動的に保存し、将来のセッションで利用可能にする",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "トークン効率の良い3層ワークフロー（検索、タイムライン、詳細取得）を用いたMCP検索ツールを提供する",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "複数のワークフローモードと言語設定（日本語モードなど）に対応する",
+      "evidence_section": "Configuration"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "過去のセッションの履歴やバグ修正の文脈を失わずに開発作業を継続する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "自然言語とMCP検索ツールを使用してプロジェクトの履歴を照会する",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code環境にclaude-memをインストールして動作確認する",
+    "steps": [
+      "npx claude-mem install",
+      "ブラウザでサインインしてメモリキーを有効化する（またはフラグでスキップする）"
+    ],
+    "success_criteria": "インストーラが正常に完了し、プラグインフックやワーサービスが設定されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "MCP Search Tools",
+    "Configuration"
+  ],
+  "unconfirmed": [
+    "無料トライアル終了後の自動フォールバックの詳細な挙動",
+    "対応しているすべての外部サービスとの詳細な連携テスト結果"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "418eddee6adfde36b10aafbc0382863ed14c1265",
+  "generated_at": "2026-10-13T11:41:04.553189+09:00"
+}

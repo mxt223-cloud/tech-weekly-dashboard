@@ -1,0 +1,47 @@
+{
+  "summary_ja": "Cursor用の公式プラグイン集およびプラグイン仕様を提供するリポジトリです。人気のある開発ツール、フレームワーク、SaaS製品向けのスタンドアロンなプラグインが多数含まれています。",
+  "capabilities": [
+    {
+      "text": "各プラグインの独立したディレクトリ構成および `.cursor-plugin/plugin.json` マニフェストの提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ルートにある `.cursor-plugin/marketplace.json` によるマーケットプレイスとしての全プラグイン管理",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発ツールやSaaS製品（GitHub、Google Drive、Slack等）向けの公式プラグインの利用",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "新規のエージェントプラグインの作成や検証",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造を確認する",
+    "steps": [
+      "リポジトリをクローンする",
+      "ルートディレクトリの `.cursor-plugin/marketplace.json` や各プラグインの構造を確認する"
+    ],
+    "success_criteria": "マーケットプレイスマニフェストと各プラグインの構成が存在していることを確認できる"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure",
+    "License"
+  ],
+  "unconfirmed": [
+    "Quick Startや具体的なインストールコマンドの記載がないため、セットアップ手順は不明です"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "106f7973f61909ab2dcaab975eae75e4b85262f0",
+  "generated_at": "2026-10-13T11:41:08.449189+09:00"
+}

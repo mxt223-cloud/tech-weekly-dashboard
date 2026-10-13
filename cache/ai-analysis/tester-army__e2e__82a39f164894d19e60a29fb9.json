@@ -1,0 +1,60 @@
+{
+  "summary_ja": "e2eは、自然言語で指示した目標をAIエージェントが実行し、従来のロケーターやアサーションを組み合わせてWebおよびモバイルアプリのテストを行える、次世代のエンドツーエンドテストフレームワークです。",
+  "capabilities": [
+    {
+      "text": "自然言語を用いた目標の記述と、エージェントによるアプリの操作・アサーションの実行",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "エージェントのステップを記録し、アプリに変更がない限り次回の実行時にモデル呼び出しなしでリプレイする機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Webおよびモバイルアプリに対応したエンジンや、結果をプルリクエストのコメントに投稿するレポーターなどのパッケージ提供",
+      "evidence_section": "Packages"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Webおよびモバイルアプリのエンドツーエンドテストの自動化",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "メンバーのプランアップグレードなど、ユーザーの操作フローを自然言語で記述したテスト",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "CI/CDやプルリクエストのレビュープロセスでのテスト結果の共有",
+      "basis": "提案",
+      "evidence_section": "Packages"
+    }
+  ],
+  "first_trial": {
+    "goal": "初期設定を行い、設定ファイルとサンプルテストを作成する",
+    "steps": [
+      "npx e2e init"
+    ],
+    "success_criteria": "設定ファイルとサンプルテストが書き込まれること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "Packages",
+    "Documentation",
+    "Contributing",
+    "Security",
+    "Telemetry",
+    "Status",
+    "Made by TesterArmy"
+  ],
+  "unconfirmed": [
+    "詳細な設定ファイルの構造や、対応している全てのAIモデルプロバイダーのリスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a2a3190fdb33650989a5670af6dedf56bfc693e3",
+  "generated_at": "2026-10-13T11:41:00.527604+09:00"
+}

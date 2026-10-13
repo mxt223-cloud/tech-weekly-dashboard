@@ -1,0 +1,53 @@
+{
+  "summary_ja": "REAは、バイナリ、アプリケーション、実行時の動作など、あらゆるものをリバースエンジニアリングするためのMCPサーバーおよびツールです。AIエージェントと連携して動作を調査し、コードや証拠を提示させることができます。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールへAIエージェントを接続します。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンを利用して疑似コード、アセンブリ、文字列、シンボル、参照を取得できます。",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARを検査し、モジュール、インポート、Electronの境界とその証拠を取得できます。",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内の機能がどのように動作しているかをバイナリレベルで理解し、独自のプロジェクト向けに同様の機能を構築する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "サウンドのパン計算やクリップボードブリッジなどの仕組みを調査し、再現コードや実装の参考に活用する。",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    },
+    {
+      "text": "抽出されたJavaScriptアプリケーションのモジュール構成やインポート関係を分析し、構造を把握する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "REAのセットアップを行い、AIエージェントから利用できるようにする",
+    "steps": [
+      "npx rea-agents setup"
+    ],
+    "success_criteria": "セットアップコマンドが実行され、エージェントの選択や変更の確認、承認を行ってMCPサーバーとワークフロー手順が追加されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "What you can analyze",
+    "Showcases"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1e14f3a2d63278870863f026adcd749235daa1fa",
+  "generated_at": "2026-10-13T11:41:12.513933+09:00"
+}
