@@ -1,0 +1,53 @@
+{
+  "summary_ja": "AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。",
+  "capabilities": [
+    {
+      "text": "実行ファイルをターゲットシステムのネイティブ形式に変換するrelinkerが含まれています。",
+      "evidence_section": "About"
+    },
+    {
+      "text": "動的リンクに適したシステムprxライブラリの実装が含まれています。",
+      "evidence_section": "About"
+    },
+    {
+      "text": "シェーダー再コンパイラにより、SPIR-Vを生成することができます。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "PS5の実行ファイルをLinuxおよびWindowsへ自動的に移植する。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "SDLマッピングされたゲームコントローラーを使用して入力を行う。",
+      "basis": "README明記",
+      "evidence_section": "Input mapping"
+    }
+  ],
+  "first_trial": {
+    "goal": "Web converterを使用してファイルを変換する",
+    "steps": [
+      "Web converterのページ（https://boykopovar.github.io/AnyPS5/）にアクセスする"
+    ],
+    "success_criteria": "Web上でファイルの変換処理が行えること"
+  },
+  "evidence_sections": [
+    "About",
+    "Status",
+    "Compatibility",
+    "Input mapping",
+    "Disclaimer",
+    "License",
+    "README冒頭"
+  ],
+  "unconfirmed": [
+    "具体的なビルドコマンドやインストール手順の記載がREADME内に直接ないため、詳細なコマンドライン手順は不明です。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b07e1abc67749b3c49772ca84e05a6a2c7e81e66",
+  "generated_at": "2026-10-14T09:30:41.568282+09:00"
+}

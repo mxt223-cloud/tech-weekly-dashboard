@@ -1,15 +1,15 @@
-# Tech Daily — 2026-10-13
+# Tech Daily — 2026-10-14
 
-生成日時: 2026-10-13T11:41:12.661995+09:00  
+生成日時: 2026-10-14T09:30:51.026642+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
 
-**概要:** AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動移植するためのツールです。エミュレーションや別プロセスの実行を伴わず、ネイティブ形式への変換や動的リンク用のシステムprxライブラリの実装が含まれています。
+**概要:** AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。
 
 - 言語: C++
-- 今週のスター: 27263
+- 今週のスター: 28663
 - ライセンス: GPL-2.0
 - AI分析状態: ok
 
@@ -19,75 +19,34 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 - 動的リンクに適したシステムprxライブラリの実装が含まれています。（根拠: About）
 
-- シェーダー再コンパイラによってSPIR-Vを生成できます。（根拠: About）
+- シェーダー再コンパイラにより、SPIR-Vを生成することができます。（根拠: README冒頭）
 
 
 ### 利用例
 
-- PS5の実行ファイルをLinuxやWindowsへ自動移植する（README明記／根拠: About）
+- PS5の実行ファイルをLinuxおよびWindowsへ自動的に移植する。（README明記／根拠: About）
 
-- SDLマッピングされたゲームコントローラーを使用した入力操作を行う（README明記／根拠: Input mapping）
-
-
-### 最初に試すこと
-
-ビルド手順や使用方法のドキュメントを確認する
-
-1. Usageリンクを参照して使用方法を確認する
-
-2. Build instructionsを参照してビルド手順を確認する
-
-
-成功の目安: ドキュメントに記載された手順や使用方法が把握できること
-
-未確認: 具体的なビルドコマンドの記載がないため、手順の実行にはBUILD.mdを参照する必要がある。
-
-
-## 2. [tester-army/e2e](https://github.com/tester-army/e2e)
-
-**概要:** e2eは、自然言語で指示した目標をAIエージェントが実行し、従来のロケーターやアサーションを組み合わせてWebおよびモバイルアプリのテストを行える、次世代のエンドツーエンドテストフレームワークです。
-
-- 言語: TypeScript
-- 今週のスター: 5582
-- ライセンス: Apache-2.0
-- AI分析状態: ok
-
-### できること
-
-- 自然言語を用いた目標の記述と、エージェントによるアプリの操作・アサーションの実行（根拠: README冒頭）
-
-- エージェントのステップを記録し、アプリに変更がない限り次回の実行時にモデル呼び出しなしでリプレイする機能（根拠: README冒頭）
-
-- Webおよびモバイルアプリに対応したエンジンや、結果をプルリクエストのコメントに投稿するレポーターなどのパッケージ提供（根拠: Packages）
-
-
-### 利用例
-
-- Webおよびモバイルアプリのエンドツーエンドテストの自動化（README明記／根拠: README冒頭）
-
-- メンバーのプランアップグレードなど、ユーザーの操作フローを自然言語で記述したテスト（README明記／根拠: README冒頭）
-
-- CI/CDやプルリクエストのレビュープロセスでのテスト結果の共有（提案／根拠: Packages）
+- SDLマッピングされたゲームコントローラーを使用して入力を行う。（README明記／根拠: Input mapping）
 
 
 ### 最初に試すこと
 
-初期設定を行い、設定ファイルとサンプルテストを作成する
+Web converterを使用してファイルを変換する
 
-1. npx e2e init
-
-
-成功の目安: 設定ファイルとサンプルテストが書き込まれること
-
-未確認: 詳細な設定ファイルの構造や、対応している全てのAIモデルプロバイダーのリスト
+1. Web converterのページ（https://boykopovar.github.io/AnyPS5/）にアクセスする
 
 
-## 3. [mattpocock/skills](https://github.com/mattpocock/skills)
+成功の目安: Web上でファイルの変換処理が行えること
+
+未確認: 具体的なビルドコマンドやインストール手順の記載がREADME内に直接ないため、詳細なコマンドライン手順は不明です。
+
+
+## 2. [mattpocock/skills](https://github.com/mattpocock/skills)
 
 **概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
 
 - 言語: Shell
-- 今週のスター: 11139
+- 今週のスター: 11955
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -123,12 +82,96 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
 
 
-## 4. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
+## 3. [tester-army/e2e](https://github.com/tester-army/e2e)
+
+**概要:** e2eは、自然言語で指示した目標をAIエージェントが実行し、従来のロケーターやアサーションを組み合わせてWebおよびモバイルアプリのテストを行える、次世代のエンドツーエンドテストフレームワークです。
+
+- 言語: TypeScript
+- 今週のスター: 4426
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 自然言語を用いた目標の記述と、エージェントによるアプリの操作・アサーションの実行（根拠: README冒頭）
+
+- エージェントのステップを記録し、アプリに変更がない限り次回の実行時にモデル呼び出しなしでリプレイする機能（根拠: README冒頭）
+
+- Webおよびモバイルアプリに対応したエンジンや、結果をプルリクエストのコメントに投稿するレポーターなどのパッケージ提供（根拠: Packages）
+
+
+### 利用例
+
+- Webおよびモバイルアプリのエンドツーエンドテストの自動化（README明記／根拠: README冒頭）
+
+- メンバーのプランアップグレードなど、ユーザーの操作フローを自然言語で記述したテスト（README明記／根拠: README冒頭）
+
+- CI/CDやプルリクエストのレビュープロセスでのテスト結果の共有（提案／根拠: Packages）
+
+
+### 最初に試すこと
+
+初期設定を行い、設定ファイルとサンプルテストを作成する
+
+1. npx e2e init
+
+
+成功の目安: 設定ファイルとサンプルテストが書き込まれること
+
+未確認: 詳細な設定ファイルの構造や、対応している全てのAIモデルプロバイダーのリスト
+
+
+## 4. [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger)
+
+**概要:** EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。
+
+- 言語: C
+- 今週のスター: 857
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする（根拠: README冒頭）
+
+- ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する（根拠: The RAD Debug Info (RDI) Format）
+
+- 巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する（根拠: The RAD Linker）
+
+
+### 利用例
+
+- Windows x64環境におけるネイティブアプリケーションのデバッグ（README明記／根拠: README冒頭）
+
+- 巨大なリンクプロジェクトのビルド時間短縮（README明記／根拠: The RAD Linker）
+
+- radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成（README明記／根拠: The RAD Debug Info (RDI) Format）
+
+
+### 最初に試すこと
+
+Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する
+
+1. Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする
+
+2. x64 Native Tools Command Prompt for VS を起動する
+
+3. コードベースのルートディレクトリに移動する
+
+4. buildスクリプトを実行する
+
+
+成功の目安: ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること
+
+未確認: LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）／リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）
+
+
+## 5. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
 **概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 4482
+- 今週のスター: 4732
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -168,80 +211,41 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 
-## 5. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+## 6. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
-**概要:** claude-memは、エージェントセッション間で永続的なコンテキストを維持するためのメモリ圧縮システムであり、セッション中の操作を自動的にキャプチャし、AIで圧縮して今後のセッションに適切なコンテキストを注入します。
+**概要:** claude-memは、AIエージェントのセッション間で文脈を継続的に保持するためのメモリ圧縮システムです。エージェントのセッション中の活動を自動でキャプチャし、AIで圧縮したうえで、次回のセッションへ関連する文脈を自動注入します。
 
 - 言語: TypeScript
-- 今週のスター: 3762
+- 今週のスター: 3587
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- セッションを跨いでコンテキストを自動的に保存し、将来のセッションで利用可能にする（根拠: README冒頭）
+- セッション間で永続的なメモリを保持し、コンテキストを自動的に引き継ぐ（根拠: README冒頭）
 
-- トークン効率の良い3層ワークフロー（検索、タイムライン、詳細取得）を用いたMCP検索ツールを提供する（根拠: MCP Search Tools）
+- プログレッシブ・ディスクロージャー（段階的開示）を取り入れたトークン効率の高い検索ツールを提供（根拠: MCP Search Tools）
 
-- 複数のワークフローモードと言語設定（日本語モードなど）に対応する（根拠: Configuration）
+- SQLiteデータベースとChromaベクトルデータベースを活用したハイブリッド検索機能（根拠: Documentation）
 
 
 ### 利用例
 
-- 過去のセッションの履歴やバグ修正の文脈を失わずに開発作業を継続する（README明記／根拠: Quick Start）
+- エージェントが過去のセッションの作業内容や修正履歴を忘れることなく、継続的な開発を行う（README明記／根拠: README冒頭）
 
-- 自然言語とMCP検索ツールを使用してプロジェクトの履歴を照会する（README明記／根拠: MCP Search Tools）
+- 自然言語クエリを用いたプロジェクト履歴の検索による過去情報の素早い確認（README明記／根拠: MCP Search Tools）
 
 
 ### 最初に試すこと
 
-Claude Code環境にclaude-memをインストールして動作確認する
+Claude Codeにclaude-memプラグインをインストールして動作を確認する
 
 1. npx claude-mem install
 
-2. ブラウザでサインインしてメモリキーを有効化する（またはフラグでスキップする）
 
+成功の目安: インストーラーの指示に沿ってサインインまたはセットアップが完了し、プラグインが有効になること
 
-成功の目安: インストーラが正常に完了し、プラグインフックやワーサービスが設定されること
-
-未確認: 無料トライアル終了後の自動フォールバックの詳細な挙動／対応しているすべての外部サービスとの詳細な連携テスト結果
-
-
-## 6. [flutter/flutter](https://github.com/flutter/flutter)
-
-**概要:** Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。
-
-- 言語: Dart
-- 今週のスター: 806
-- ライセンス: BSD-3-Clause
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 単一のコードベースからモバイル、ウェブ、デスクトップ向けのアプリを構築できる。（根拠: README冒頭）
-
-- コードを変更してアプリを再起動することなく即座に結果を確認できるステートフルホットリロード機能を提供する。（根拠: Productive development）
-
-- iOS用のCupertinoウィジェットやMaterialウィジェットなどの豊富なウィジェットセットを提供する。（根拠: Beautiful user experiences）
-
-
-### 利用例
-
-- iOSやAndroid向けのモバイルアプリ開発（README明記／根拠: About Flutter）
-
-- ウェブやデスクトップ（Windows, macOS, Linux）向けのアプリケーション開発（README明記／根拠: About Flutter）
-
-
-### 最初に試すこと
-
-Flutterのドキュメントに沿ってインストールを開始する
-
-1. https://docs.flutter.dev/get-started にアクセスする
-
-
-成功の目安: インストール手順のドキュメントを確認できること
-
-未確認: 具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）
+未確認: 無料トライアル終了後の具体的な料金プランの詳細
 
 
 ## 7. [cursor/plugins](https://github.com/cursor/plugins)
@@ -249,9 +253,9 @@ Flutterのドキュメントに沿ってインストールを開始する
 **概要:** Cursor用の公式プラグイン集およびプラグイン仕様を提供するリポジトリです。人気のある開発ツール、フレームワーク、SaaS製品向けのスタンドアロンなプラグインが多数含まれています。
 
 - 言語: TypeScript
-- 今週のスター: 1144
+- 今週のスター: 1141
 - ライセンス: 不明
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -286,7 +290,7 @@ Flutterのドキュメントに沿ってインストールを開始する
 **概要:** earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。
 
 - 言語: Python
-- 今週のスター: 2441
+- 今週のスター: 2173
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -320,126 +324,122 @@ Flutterのドキュメントに沿ってインストールを開始する
 未確認: エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅
 
 
-## 9. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
+## 9. [flutter/flutter](https://github.com/flutter/flutter)
 
-**概要:** OpenRigは、複数のAIコーディングエージェント（Claude CodeやCodexなど）をチームとして組織し、共有コンテキストを持ちながら持続的に連携・実行するためのオープンソースのCLIおよびシステムです。
+**概要:** Flutterは、単一のコードベースからモバイル、ウェブ、デスクトップ向けの美しく高速なユーザー体験を構築するためのGoogle製SDKです。
 
-- 言語: TypeScript
-- 今週のスター: 2056
-- ライセンス: Apache-2.0
+- 言語: Dart
+- 今週のスター: 967
+- ライセンス: BSD-3-Clause
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- YAMLファイルでエージェントチームを定義し、1つのコマンドで起動できる。（根拠: README冒頭）
+- 単一のコードベースからモバイル、ウェブ、デスクトップ向けのアプリを構築できる。（根拠: README冒頭）
 
-- Claude CodeやCodexなどの異なるモデルを同じリグ内で管理できる。（根拠: README冒頭）
+- コードを変更してアプリを再起動することなく即座に結果を確認できるステートフルホットリロード機能を提供する。（根拠: Productive development）
 
-- TUI（テキストユーザインタフェース）を使用して、エージェントの状態や実行状況を確認できる。（根拠: See it running）
+- iOS用のCupertinoウィジェットやMaterialウィジェットなどの豊富なウィジェットセットを提供する。（根拠: Beautiful user experiences）
 
 
 ### 利用例
 
-- リードエージェントと対話して希望する成果を伝え、専門家エージェントチームに連携させて結果や判断を得る。（README明記／根拠: README冒頭）
+- iOSやAndroid向けのモバイルアプリ開発（README明記／根拠: About Flutter）
 
-- リポジトリと1つの有用な変更から開始し、チームの作業やコンテキストを同じアドレスに維持する。（README明記／根拠: README冒頭）
+- ウェブやデスクトップ（Windows, macOS, Linux）向けのアプリケーション開発（README明記／根拠: About Flutter）
 
 
 ### 最初に試すこと
 
-CLIツールのインストールとセットアップの実行確認
+Flutterのドキュメントに沿ってインストールを開始する
 
-1. curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh -s -- --dry-run
-
-2. curl -fsSL https://raw.githubusercontent.com/mvschwarz/openrig/v0.6.8/scripts/install.sh | sh
+1. https://docs.flutter.dev/get-started にアクセスする
 
 
-成功の目安: インストールスクリプトが正常に実行され、プロバイダーの設定やセットアップの案内が表示されること。
+成功の目安: インストール手順のドキュメントを確認できること
 
-未確認: 具体的なチーム構成YAMLファイルの構文や詳細な設定オプション／AI文明実験の詳細な仕組みや内部アーキテクチャ
+未確認: 具体的なインストールコマンドやサンプルコードの実行手順（README内にコードブロックによる手順の記載がないため）
 
 
-## 10. [morluto/rea](https://github.com/morluto/rea)
+## 10. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
 
-**概要:** REAは、バイナリ、アプリケーション、実行時の動作など、あらゆるものをリバースエンジニアリングするためのMCPサーバーおよびツールです。AIエージェントと連携して動作を調査し、コードや証拠を提示させることができます。
+**概要:** diagram-design は、AIエージェント向けのスキルであり、ブランドに合わせたHTMLとSVGの自己完結型の図を作成します。
 
-- 言語: TypeScript
-- 今週のスター: 130471
+- 言語: HTML
+- 今週のスター: 9867
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールへAIエージェントを接続します。（根拠: README冒頭）
+- 45種類の図の作成をサポートする。（根拠: README冒頭）
 
-- Hopper、Ghidra、IDAなどのネイティブ解析エンジンを利用して疑似コード、アセンブリ、文字列、シンボル、参照を取得できます。（根拠: What you can analyze）
-
-- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARを検査し、モジュール、インポート、Electronの境界とその証拠を取得できます。（根拠: Quick start）
+- 自己完結型の HTML + SVG ファイルとして図を描画する。（根拠: README冒頭）
 
 
 ### 利用例
 
-- アプリ内の機能がどのように動作しているかをバイナリレベルで理解し、独自のプロジェクト向けに同様の機能を構築する。（README明記／根拠: README冒頭）
+- アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する。（README明記／根拠: README冒頭）
 
-- サウンドのパン計算やクリップボードブリッジなどの仕組みを調査し、再現コードや実装の参考に活用する。（README明記／根拠: Showcases）
+- 影響度と工数を軸にしたQ2プロジェクトの四象限図を作成する。（README明記／根拠: README冒頭）
 
-- 抽出されたJavaScriptアプリケーションのモジュール構成やインポート関係を分析し、構造を把握する。（README明記／根拠: Quick start）
+- 401エラー時のトークンリフレッシュを含むBearer呼び出しのシーケンス図を作成する。（README明記／根拠: README冒頭）
 
 
 ### 最初に試すこと
 
-REAのセットアップを行い、AIエージェントから利用できるようにする
+diagram-design スキルをインストールする
 
-1. npx rea-agents setup
-
-
-成功の目安: セットアップコマンドが実行され、エージェントの選択や変更の確認、承認を行ってMCPサーバーとワークフロー手順が追加されること
+1. npx skills add cathrynlavery/diagram-design を実行する
 
 
+成功の目安: スキルがエージェントホストに正常にインストールされること
+
+未確認: Quickstart セクションの本文が途中で切れているため、インストール後の具体的なエージェントへの指示方法の詳細はREADMEから完全に読み取れない部分がある。
 
 
 
 ## Zenn
 
-- [dbt Docs v2で何ができるか、実際に触ってみた【dbt v2】](https://zenn.dev/ryatora/articles/dbt-docs-v2-guide) — rnm
+- [画像は「言葉だけ」でどこまで送れるか――中間特徴とプロンプト再生成を比較した小規模検証](https://zenn.dev/lube8163/articles/594bea1c0f8397) — アジサシ
 
-- [PRコメントからKubernetesに訊く ~GitHub ActionsからA2Aエージェントをシークレットレスで繋ぐ~](https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja) — らん
+- [話題の逆解析 MCP「REA」を Claude Code に隔離してつないだ——静的解析の A/B 試験と安全設計](https://zenn.dev/keigoly/articles/8738d8d241b5a1) — keigoly
 
-- [Canton Network ローカル環境構築ハンズオン](https://zenn.dev/komlock_lab/articles/canton-localnet-handson) — Natsuki Yamaguchi
+- [【Crackmes.one】x64dbgでパスワード解析](https://zenn.dev/otinpan/articles/8557e9c3930540) — otinpan
 
-- [【2026年版】Fateで理解するローカルLLMの選び方](https://zenn.dev/akari1106/articles/3a050fde72159d) — 灯里(akari)
+- [EmDash を pnpm の 7 日ルールで入れ直したら、つまずいたところ](https://zenn.dev/n_tong/articles/5ea0a290d8923d) — 海老のしっぽ
 
-- [WSL Containerのsettings.yaml他、基本的な挙動をみていく](https://zenn.dev/eien_syogakusya/articles/a34040c33e63d2) — 永遠ノ初学者
+- [SwiftDataのrollback()、iOS 27で黙って挙動が変わっていた](https://zenn.dev/kzq/articles/swiftdata-rollback-ios27) — kzq
 
-- [whisperの文字起こしにJevで話者ラベルを付けようとしたら、Jevは要らなかった](https://zenn.dev/ik11235/articles/whisper-jev-speaker-label) — ik-fib
+- [AI-DLC富山合宿に参加してみた](https://zenn.dev/nuance/articles/ai-dlc-toyama-camp-2026) — ルサンチマン
 
-- [【C++言語入門STL編】 第2回 文字列操作](https://zenn.dev/yoshia/articles/cpp2-section2-string-operations-0bc4a0ca4858) — yoshia
+- [Azure SRE Agent から Azure SRE Agent を呼ぶときに認証エラーになる件](https://zenn.dev/maaya8585/articles/b1160260c86805) — まーや
+
+- [見えない原因に、統計学は何を言えるようになったか：交絡の歴史](https://zenn.dev/takyas/articles/dd6bef15d2d5f0) — tak-nya
+
+- [良いテストを書き、良いテストを見分ける ─『単体テストの考え方/使い方』のエッセンス](https://zenn.dev/nexta_/articles/unit-testing-principles-essence) — tetsu.k
+
+- [Next.js（Pages Router）+ react-i18next で多言語化を実装する](https://zenn.dev/socialplus/articles/f363cdf24340cf) — koyablue
+
+- [Flutter の in_app_purchase で買い切りの Pro を作る。iOS の復元は購入が無いと何も流れてこない](https://zenn.dev/hk_work/articles/flutter-in-app-purchase-non-consumable) — HIROKI KUROGI
+
+- [dbtの「4層品質モデル」をTypeScript+クリーンアーキテクチャで例えてみる](https://zenn.dev/ronnabyte/articles/c6a53615a9df56) — すずきさん
+
+- [LLM-jp-4 の公開CPT・SFTデータを読んでみた](https://zenn.dev/yukito_lmlab/articles/llmjp4-public-data) — 日本語言語モデル開発ノート
+
+- [GitHub Pages の証明書失効で Error 526 になったので Cloudflare Pages へ移行した](https://zenn.dev/unsoluble_sugar/articles/6a3fd085a60ec6) — 星影
 
 - [Amazon Bedrock の利用料金をユーザーごとに確認するダッシュボードを CUR 2.0 と Amazon Quick で作る](https://zenn.dev/aws_japan/articles/aws-bedrock-cur2-user-cost-dashboard) — sugimount
 
-- [スロップ表現100連発](https://zenn.dev/todesking/articles/5bc43f449ecdf6) — todesking
+- [モバイルアプリ開発でノートPCを持ち歩かなくなった話](https://zenn.dev/yasi/articles/mobile-dev-from-phone-with-claude) — yasi
 
-- [Reservoir Computing で公開ベンチマークの異常検知をやってみる](https://zenn.dev/kotton_mas/articles/rc-basics-05-anomaly-detection) — kotton
-
-- [Microsoft-Decision-1でAI-OCRの品質ゲートを作ってみた](https://zenn.dev/headwaters/articles/6e889f79ee9f2e) — takekawa tomoki
+- [Raspberry Pi 4でMCPサーバを構築する(3)](https://zenn.dev/drbobt1122/articles/blog26101101) — Dr. BobT
 
 - [GitLabを月500円で自社運用する 退役PCと「出島サーバ」の構成](https://zenn.dev/miyanaga/articles/zenn-2026-10-11) — miyanaga
 
 - [SQLite 本体にベクトル検索拡張 vec1 がやってきた](https://zenn.dev/mattn/articles/6e9996319ac099) — mattn
 
-- [2025 年 10 月から 2026 年 10 月までの Mozc に対する主な変更](https://zenn.dev/komatsuh/articles/komatsuh_mozc_updates_from_2025_10) — Hiroyuki Komatsu
-
-- [【速報】Claude の新機能 Claude Motion 早速使ってみた](https://zenn.dev/branbran/articles/047821d64590f0) — Atsuki02
-
-- [AIで浮いた時間を「もっと作る」に使っていませんか](https://zenn.dev/idealog/articles/a3e9cf4299b1cf) — アイデアログ開発チーム
-
-- [Haiku 5.5 を機に Sonnet 以下で動かしていたサブエージェントを見直した](https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles) — okkun0524
-
-- [若手エンジニアに必要だと感じた「AIを使う力」](https://zenn.dev/muit_techblog/articles/6ea28887c79457) — Goto
-
-- [CSSの`text-box`で文字を上下中央に揃えたい](https://zenn.dev/chot/articles/be424332489e7a) — hwld
-
-- [嫌われるデザインの歴史](https://zenn.dev/blackmose/articles/de0170a13be930) — やかん
+- [検証 TinyGoでOpenTelemetryは使えるのか（2026年10月版）](https://zenn.dev/ymotongpoo/books/tinygo-otel-esp32) — Yoshi Yamaguchi
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

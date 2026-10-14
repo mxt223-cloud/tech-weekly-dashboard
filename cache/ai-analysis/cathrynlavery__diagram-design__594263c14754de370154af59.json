@@ -1,0 +1,51 @@
+{
+  "summary_ja": "diagram-design は、AIエージェント向けのスキルであり、ブランドに合わせたHTMLとSVGの自己完結型の図を作成します。",
+  "capabilities": [
+    {
+      "text": "45種類の図の作成をサポートする。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自己完結型の HTML + SVG ファイルとして図を描画する。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "影響度と工数を軸にしたQ2プロジェクトの四象限図を作成する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "401エラー時のトークンリフレッシュを含むBearer呼び出しのシーケンス図を作成する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "diagram-design スキルをインストールする",
+    "steps": [
+      "npx skills add cathrynlavery/diagram-design を実行する"
+    ],
+    "success_criteria": "スキルがエージェントホストに正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Quickstart",
+    "About"
+  ],
+  "unconfirmed": [
+    "Quickstart セクションの本文が途中で切れているため、インストール後の具体的なエージェントへの指示方法の詳細はREADMEから完全に読み取れない部分がある。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "73827f81db9b7c1364c23410cc08d0898234a228",
+  "generated_at": "2026-10-14T09:30:50.849475+09:00"
+}

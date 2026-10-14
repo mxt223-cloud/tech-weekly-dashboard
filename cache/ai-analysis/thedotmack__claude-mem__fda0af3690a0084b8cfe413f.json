@@ -1,0 +1,50 @@
+{
+  "summary_ja": "claude-memは、AIエージェントのセッション間で文脈を継続的に保持するためのメモリ圧縮システムです。エージェントのセッション中の活動を自動でキャプチャし、AIで圧縮したうえで、次回のセッションへ関連する文脈を自動注入します。",
+  "capabilities": [
+    {
+      "text": "セッション間で永続的なメモリを保持し、コンテキストを自動的に引き継ぐ",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "プログレッシブ・ディスクロージャー（段階的開示）を取り入れたトークン効率の高い検索ツールを提供",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "SQLiteデータベースとChromaベクトルデータベースを活用したハイブリッド検索機能",
+      "evidence_section": "Documentation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントが過去のセッションの作業内容や修正履歴を忘れることなく、継続的な開発を行う",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自然言語クエリを用いたプロジェクト履歴の検索による過去情報の素早い確認",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeにclaude-memプラグインをインストールして動作を確認する",
+    "steps": [
+      "npx claude-mem install"
+    ],
+    "success_criteria": "インストーラーの指示に沿ってサインインまたはセットアップが完了し、プラグインが有効になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "MCP Search Tools",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "無料トライアル終了後の具体的な料金プランの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f732d3864f79cfb263694afaafa8e305e379c0dd",
+  "generated_at": "2026-10-14T09:30:46.537900+09:00"
+}
