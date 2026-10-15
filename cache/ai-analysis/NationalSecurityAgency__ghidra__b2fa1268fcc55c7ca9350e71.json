@@ -1,0 +1,60 @@
+{
+  "summary_ja": "Ghidraは、アメリカ国家安全保障局（NSA）が開発したソフトウェアリバースエンジニアリング（SRE）フレームワークです。コンパイルされたコードの解析を行うための逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの高度なツールを備えています。",
+  "capabilities": [
+    {
+      "text": "逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "多様なプロセッサ命令セットや実行ファイルフォーマットのサポート",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ユーザーインタラクティブモードおよび自動化モードでの実行",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複雑なSRE作業におけるスケーリングやチーム作業の問題解決",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "マルウェアのコード分析とネットワークやシステムの脆弱性理解のための洞察生成",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "JavaやPythonを使用した独自の拡張コンポーネントやスクリプトの開発",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "公式の事前ビルド版をインストールして起動する",
+    "steps": [
+      "JDK 25 64-bitをインストールする",
+      "Ghidraのリリースファイルをダウンロードして解凍する",
+      "./ghidraRun (Windowsの場合はghidraRun.bat)を実行して起動する"
+    ],
+    "success_criteria": "Ghidraが正常に起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Security Warning",
+    "Install",
+    "Build",
+    "Develop",
+    "Contribute"
+  ],
+  "unconfirmed": [
+    "具体的な対応プロセッサ命令セットや実行ファイルフォーマットの全リスト",
+    "セキュリティアドバイザリの詳細な脆弱性内容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+  "generated_at": "2026-10-16T08:46:32.418395+09:00"
+}

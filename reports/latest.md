@@ -1,12 +1,12 @@
-# Tech Daily — 2026-10-15
+# Tech Daily — 2026-10-16
 
-生成日時: 2026-10-15T09:01:56.751995+09:00  
+生成日時: 2026-10-16T08:46:38.840618+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [morluto/rea](https://github.com/morluto/rea)
 
-**概要:** REAは、ネイティブバイナリ、アプリ、実行時動作など、あらゆるものをリバースエンジニアリングするためのModel Context Protocol（MCP）およびコマンドラインツールです。AIエージェントと連携してローカルで解析を行い、証拠とともに結果を提供します。
+**概要:** REAは、ネイティブバイナリ、アプリ、ランタイム動作などをエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）ツールです。ソースコードがないアプリの調査、仕組みの解説、証拠の提示、プロジェクトへの機能実装支援などをローカル環境で実行できます。
 
 - 言語: TypeScript
 - 今週のスター: 214837
@@ -15,32 +15,38 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 ### できること
 
-- ネイティブバイナリの疑似コード、アセンブリ、文字列、シンボル、呼び出し、参照の解析（根拠: What you can analyze）
+- ネイティブバイナリの擬似コード、アセンブリ、文字列、シンボル、呼び出し、参照の検査（根拠: What you can analyze）
 
-- JavaScriptおよびElectronアプリケーションのモジュール、インポート、ソースマップ、ルート、IPC、ネイティブアドオン関係の抽出（根拠: What you can analyze）
+- JavaScriptやElectronアプリケーションのモジュール、インポート、ソースマップ、ルート、IPC、ネイティブアドオン関係の復元（根拠: What you can analyze）
 
-- .NETアセンブリのメタデータ、CIL命令、宣言されたネイティブ依存関係、ビルド比較の静的解析（根拠: What you can analyze）
+- Claude Code、Codex、Cursor、Gemini CLI、Grok BuildなどのエージェントへのMCPサーバー登録とワークフローインストールのセットアップ（根拠: Quick start）
 
 
 ### 利用例
 
-- アプリ内の特定の機能をAIエージェントに調査させ、ソースコードなしで仕組みを理解して自身のプロジェクト用に再構築する（README明記／根拠: README冒頭）
+- アプリに見つけた機能の仕組みをエージェントに調査させ、根拠となる証拠を確認した上で、自分のプロジェクト向けに同様の機能を構築する（README明記／根拠: README冒頭）
 
-- 抽出されたJavaScriptやElectronアプリのディレクトリ、ASARファイルをターミナルから検査してモジュールやインポート情報を得る（README明記／根拠: Quick start）
+- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを対象に、モジュールやインポート、Electronの境界などの情報をJSON形式で取得する（README明記／根拠: Quick start）
 
-- レトロゲームや既存ソフトウェアの動作ロジックを解析し、独自のコード実装に置き換える（提案／根拠: Showcases）
+- 対応する逆アセンブラや解析エンジンと連携し、バイナリの内部構造や難解な処理のロジックを静的解析してコードの再構築に役立てる（提案／根拠: What you can analyze）
 
 
 ### 最初に試すこと
 
-AIエージェントのセットアップを行う
+エージェントにREAの初期セットアップを行い、機能調査の指示を出すこと
 
-1. npx rea-agents setup
+1. Node.jsとnpmがインストールされた環境で `npx rea-agents setup` を実行する
+
+2. 使用するエージェントを選択し、変更内容を確認して承認する
+
+3. エージェントを再起動する
+
+4. 「Notesアプリの検索機能の仕組みを理解し、証拠を示し、私のプロジェクト用に似た機能をビルドしてください」のようにエージェントに依頼する
 
 
-成功の目安: エージェントにREAのMCPサーバーとワークフロー手順が追加されること
+成功の目安: エージェントがREAのMCPサーバー経由でターゲットアプリの調査を行い、その仕組みの解説や証拠、実装の提案を返すこと
 
-未確認: 対応しているすべてのプラットフォームにおける具体的な依存関係の動作詳細／有料ツールのライセンス認証の具体的な内部処理
+未確認: 対応しているすべてのエージェントの詳細な内部動作仕様／サポートされるサードパーティ製逆アセンブラのすべてのライセンス検証メカニズムの詳細
 
 
 ## 2. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
@@ -50,7 +56,7 @@ AIエージェントのセットアップを行う
 - 言語: C++
 - 今週のスター: 28240
 - ライセンス: GPL-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -166,204 +172,124 @@ Webコンバーターを使用してファイルを変換する
 
 
 
-## 5. [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger)
+## 5. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
 
-**概要:** EpicGames/raddebugger は、ネイティブ、ユーザーモード、マルチプロセス対応のグラフィカルデバッガープロジェクトです。独自のカスタムデバッグ情報フォーマットである RAD Debug Info (RDI) や、巨大なプロジェクトの高速なリンク処理を目的とした RAD Linker を含んでいます。
-
-- 言語: C
-- 今週のスター: 814
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- ローカルマシンのWindows x64環境におけるPDBを用いたデバッグをサポートする（根拠: README冒頭）
-
-- ネイティブのデバッグ情報フォーマットをオンデマンドでRDIフォーマットへ変換する（根拠: The RAD Debug Info (RDI) Format）
-
-- 巨大なx64 PE/COFFバイナリの生成を高速に行うパフォーマンスリンカーを提供する（根拠: The RAD Linker）
-
-
-### 利用例
-
-- Windows x64環境におけるネイティブアプリケーションのデバッグ（README明記／根拠: README冒頭）
-
-- 巨大なリンクプロジェクトのビルド時間短縮（README明記／根拠: The RAD Linker）
-
-- radbinユーティリティを用いたデバッグ情報の変換やテキストダンプの作成（README明記／根拠: The RAD Debug Info (RDI) Format）
-
-
-### 最初に試すこと
-
-Windows x64環境でデバッグモードのビルドを実行し、raddbg.exeを作成する
-
-1. Microsoft C/C++ Build Tools v15 (2017) またはそれ以降のツールをインストールする
-
-2. x64 Native Tools Command Prompt for VS を起動する
-
-3. コードベースのルートディレクトリに移動する
-
-4. buildスクリプトを実行する
-
-
-成功の目安: ルートレベルにbuildフォルダが作成され、その中にraddbg.exeが存在すること
-
-未確認: LinuxにおけるネイティブデバッグおよびDWARFデバッグ情報のサポート状況（将来の計画段階）／リンクタイムオプティマイゼーション（LTO）のサポート状況（ロードマップ段階）
-
-
-## 6. [tester-army/e2e](https://github.com/tester-army/e2e)
-
-**概要:** e2eは、自然言語で指示した目標をAIエージェントが実行し、従来のロケーターやアサーションを組み合わせてWebおよびモバイルアプリのテストを行える、次世代のエンドツーエンドテストフレームワークです。
-
-- 言語: TypeScript
-- 今週のスター: 3505
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 自然言語を用いた目標の記述と、エージェントによるアプリの操作・アサーションの実行（根拠: README冒頭）
-
-- エージェントのステップを記録し、アプリに変更がない限り次回の実行時にモデル呼び出しなしでリプレイする機能（根拠: README冒頭）
-
-- Webおよびモバイルアプリに対応したエンジンや、結果をプルリクエストのコメントに投稿するレポーターなどのパッケージ提供（根拠: Packages）
-
-
-### 利用例
-
-- Webおよびモバイルアプリのエンドツーエンドテストの自動化（README明記／根拠: README冒頭）
-
-- メンバーのプランアップグレードなど、ユーザーの操作フローを自然言語で記述したテスト（README明記／根拠: README冒頭）
-
-- CI/CDやプルリクエストのレビュープロセスでのテスト結果の共有（提案／根拠: Packages）
-
-
-### 最初に試すこと
-
-初期設定を行い、設定ファイルとサンプルテストを作成する
-
-1. npx e2e init
-
-
-成功の目安: 設定ファイルとサンプルテストが書き込まれること
-
-未確認: 詳細な設定ファイルの構造や、対応している全てのAIモデルプロバイダーのリスト
-
-
-## 7. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
-
-**概要:** claude-memは、AIエージェントのセッション間で文脈を継続的に保持するためのメモリ圧縮システムです。エージェントのセッション中の活動を自動でキャプチャし、AIで圧縮したうえで、次回のセッションへ関連する文脈を自動注入します。
-
-- 言語: TypeScript
-- 今週のスター: 3371
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- セッション間で永続的なメモリを保持し、コンテキストを自動的に引き継ぐ（根拠: README冒頭）
-
-- プログレッシブ・ディスクロージャー（段階的開示）を取り入れたトークン効率の高い検索ツールを提供（根拠: MCP Search Tools）
-
-- SQLiteデータベースとChromaベクトルデータベースを活用したハイブリッド検索機能（根拠: Documentation）
-
-
-### 利用例
-
-- エージェントが過去のセッションの作業内容や修正履歴を忘れることなく、継続的な開発を行う（README明記／根拠: README冒頭）
-
-- 自然言語クエリを用いたプロジェクト履歴の検索による過去情報の素早い確認（README明記／根拠: MCP Search Tools）
-
-
-### 最初に試すこと
-
-Claude Codeにclaude-memプラグインをインストールして動作を確認する
-
-1. npx claude-mem install
-
-
-成功の目安: インストーラーの指示に沿ってサインインまたはセットアップが完了し、プラグインが有効になること
-
-未確認: 無料トライアル終了後の具体的な料金プランの詳細
-
-
-## 8. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
-
-**概要:** diagram-design は、AIエージェント向けのスキルであり、ブランドに合わせたHTMLとSVGの自己完結型の図を作成します。
+**概要:** diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。
 
 - 言語: HTML
 - 今週のスター: 10706
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 45種類の図の作成をサポートする。（根拠: README冒頭）
-
-- 自己完結型の HTML + SVG ファイルとして図を描画する。（根拠: README冒頭）
-
-
-### 利用例
-
-- アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する。（README明記／根拠: README冒頭）
-
-- 影響度と工数を軸にしたQ2プロジェクトの四象限図を作成する。（README明記／根拠: README冒頭）
-
-- 401エラー時のトークンリフレッシュを含むBearer呼び出しのシーケンス図を作成する。（README明記／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-diagram-design スキルをインストールする
-
-1. npx skills add cathrynlavery/diagram-design を実行する
-
-
-成功の目安: スキルがエージェントホストに正常にインストールされること
-
-未確認: Quickstart セクションの本文が途中で切れているため、インストール後の具体的なエージェントへの指示方法の詳細はREADMEから完全に読み取れない部分がある。
-
-
-## 9. [twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill)
-
-**概要:** SwiftUI-Agent-Skillは、Claude CodeやCodexなどのAIコーディングアシスタントが、よりシンプルでモダンなSwiftUIコードを書くためのスキルを提供するツールです。
-
-- 言語: 不明
-- 今週のスター: 930
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- APIの使用方法、デザイン、パフォーマンス、アクセシビリティに関するガイダンスを提供する（根拠: README冒頭）
+- 独立したHTMLおよびSVGファイル形式でダイアグラムを描画する（根拠: README冒頭）
 
-- ナビゲーション、レイアウト、アニメーション、状態管理、VoiceOver、非推奨APIなどに対応する（根拠: README冒頭）
+- 45種類のダイアグラムタイプをサポートする（根拠: README冒頭）
 
-- Claude CodeやCodex、Gemini、CursorなどのAIツールにnpxコマンドやプラグイン等でインストールできる（根拠: Installing SwiftUI Pro）
+- npx skills add cathrynlavery/diagram-design を使ってインストールできる（根拠: Install）
 
 
 ### 利用例
 
-- AIコーディングアシスタントを使ってモダンで効率的なSwiftUIコードを作成する（README明記／根拠: README冒頭）
+- アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する（README明記／根拠: README冒頭）
 
-- プロジェクト内の非推奨APIの使用箇所をチェックする（README明記／根拠: Using SwiftUI Pro）
+- 影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する（README明記／根拠: README冒頭）
 
-- プロジェクトのパフォーマンス問題やアクセシビリティを検証する（README明記／根拠: Using SwiftUI Pro）
+- 401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する（README明記／根拠: README冒頭）
 
 
 ### 最初に試すこと
 
-npxを使用してSwiftUI Proスキルをインストールする
+diagram-designスキルをインストールして使い始める
 
-1. npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro
-
-
-成功の目安: エラーなくインストールが完了し、対象のエージェントやプロジェクトでスキルが選択・利用可能になること
-
-未確認: 詳細な内部実装やサポートされているすべてのチェック項目の完全なリスト
+1. npx skills add cathrynlavery/diagram-design を実行してインストールする
 
 
-## 10. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+成功の目安: エージェントスキルホストにdiagram-designがインストールされること
+
+未確認: Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明
+
+
+## 6. [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)
+
+**概要:** Ghidraは、アメリカ国家安全保障局（NSA）が開発したソフトウェアリバースエンジニアリング（SRE）フレームワークです。コンパイルされたコードの解析を行うための逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの高度なツールを備えています。
+
+- 言語: Java
+- 今週のスター: 5613
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- 逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの機能（根拠: README冒頭）
+
+- 多様なプロセッサ命令セットや実行ファイルフォーマットのサポート（根拠: README冒頭）
+
+- ユーザーインタラクティブモードおよび自動化モードでの実行（根拠: README冒頭）
+
+
+### 利用例
+
+- 複雑なSRE作業におけるスケーリングやチーム作業の問題解決（README明記／根拠: README冒頭）
+
+- マルウェアのコード分析とネットワークやシステムの脆弱性理解のための洞察生成（README明記／根拠: README冒頭）
+
+- JavaやPythonを使用した独自の拡張コンポーネントやスクリプトの開発（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+公式の事前ビルド版をインストールして起動する
+
+1. JDK 25 64-bitをインストールする
+
+2. Ghidraのリリースファイルをダウンロードして解凍する
+
+3. ./ghidraRun (Windowsの場合はghidraRun.bat)を実行して起動する
+
+
+成功の目安: Ghidraが正常に起動すること
+
+未確認: 具体的な対応プロセッサ命令セットや実行ファイルフォーマットの全リスト／セキュリティアドバイザリの詳細な脆弱性内容
+
+
+## 7. [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context)
+
+**概要:** billion-contextは、小さなコンテキストウィンドウでも動作し、トークン消費量を削減して長時間のセッションを可能にするコンテキスト圧縮プラグインです。
+
+- 言語: TypeScript
+- 今週のスター: 628
+- ライセンス: NOASSERTION
+- AI分析状態: ok
+
+### できること
+
+- コンテキストの圧縮を行い、トークン数を約5分の1に削減する。（根拠: README冒頭）
+
+- 数か月にわたる数十億トークンの単一セッションを維持する。（根拠: README冒頭）
+
+
+### 利用例
+
+- 小さなコンテキストウィンドウ環境で長時間のAIセッションを実行する（README明記／根拠: README冒頭）
+
+- AIコーディングエージェントのトークン消費を抑えてコストを削減する（提案／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+billion-contextをインストールする
+
+1. npm install -g billion-context --prefix=~/.local
+
+
+成功の目安: グローバル環境にパッケージがインストールされること
+
+未確認: プラグインの詳細な設定方法や対応している全てのクライアントの詳細なリスト／プロキシの動作に関する詳細な内部仕様
+
+
+## 8. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
 
 **概要:** earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。
 
@@ -402,48 +328,134 @@ npxを使用してSwiftUI Proスキルをインストールする
 未確認: エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅
 
 
+## 9. [twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill)
+
+**概要:** SwiftUI-Agent-Skillは、Claude CodeやCodexなどのAIコーディングアシスタントが、よりシンプルでモダンなSwiftUIコードを書くためのスキルを提供するツールです。
+
+- 言語: 不明
+- 今週のスター: 930
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- APIの使用方法、デザイン、パフォーマンス、アクセシビリティに関するガイダンスを提供する（根拠: README冒頭）
+
+- ナビゲーション、レイアウト、アニメーション、状態管理、VoiceOver、非推奨APIなどに対応する（根拠: README冒頭）
+
+- Claude CodeやCodex、Gemini、CursorなどのAIツールにnpxコマンドやプラグイン等でインストールできる（根拠: Installing SwiftUI Pro）
+
+
+### 利用例
+
+- AIコーディングアシスタントを使ってモダンで効率的なSwiftUIコードを作成する（README明記／根拠: README冒頭）
+
+- プロジェクト内の非推奨APIの使用箇所をチェックする（README明記／根拠: Using SwiftUI Pro）
+
+- プロジェクトのパフォーマンス問題やアクセシビリティを検証する（README明記／根拠: Using SwiftUI Pro）
+
+
+### 最初に試すこと
+
+npxを使用してSwiftUI Proスキルをインストールする
+
+1. npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro
+
+
+成功の目安: エラーなくインストールが完了し、対象のエージェントやプロジェクトでスキルが選択・利用可能になること
+
+未確認: 詳細な内部実装やサポートされているすべてのチェック項目の完全なリスト
+
+
+## 10. [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym)
+
+**概要:** openGym は、パスキー認証に対応し、自身のサーバーや端末でデータを管理できるセルフホスト型のジムおよび体重管理トラッカーです。ルーティンの計画やワークアウトの記録、筋肉の疲労度・回復状況の確認が行えます。
+
+- 言語: JavaScript
+- 今週のスター: 5132
+- ライセンス: AGPL-3.0
+- AI分析状態: ok
+
+### できること
+
+- 5,600種類以上の演目から曜日ごとのルーティンを計画したり、ボディマップや機器で絞り込みを行える。（根拠: Features）
+
+- パスキー（Face ID、Touch ID、指紋認証）を利用した安全なログインや、デバイス間のデータ同期ができる。（根拠: Features）
+
+- FitNotes、Strong、Hevyからのインポートや、全データのJSON形式でのエクスポートが可能。（根拠: Features）
+
+
+### 利用例
+
+- 自身のサーバーにDockerを用いて環境を構築し、外部のクラウドサービスに依存せずプライベートにワークアウトデータを管理したい。（README明記／根拠: Why openGym）
+
+- FitNotesなどの他のフィットネスアプリからこれまでの履歴を移行し、openGym上で一元管理したい。（README明記／根拠: Features）
+
+- スマートフォンの生体認証を使って手軽かつセキュアにログインし、複数のデバイス間で記録を同期させたい。（README明記／根拠: Features）
+
+
+### 最初に試すこと
+
+Docker Composeを使用してローカル環境でアプリケーションを起動し、プロファイルを作成する
+
+1. git clone https://github.com/DuarteSantos8/openGym
+
+2. cd openGym
+
+3. cp .env.example .env
+
+4. docker compose pull
+
+5. docker compose up -d
+
+
+成功の目安: ブラウザで http://localhost:8080 にアクセスし、Create profileをタップして利用を開始できること
+
+
+
+
 
 ## Zenn
 
-- [【2026/10/8 アップデート】GuardDuty RDS Protectionのデータ流出・破壊の検出について調べた](https://zenn.dev/aki42/articles/aws-20261008-guardduty-rds-data-activity) — aki
+- [ICFPC2026 参加記](https://zenn.dev/algoartis/articles/b5dd3c401d5dd4) — がんぽん
+
+- [【Salesforce】Agent Script入門｜Agentforceの従業員エージェントを作ってみた](https://zenn.dev/actbe_tech/articles/57561ffebaf9ed) — 福西
+
+- [xcrun xcodeproj で .xcodeproj をコマンドラインから編集する（Xcode 27.2）](https://zenn.dev/d_date/articles/xcrun-xcodeproj-xcode27-2) — Daiki Matsudate
+
+- [国産モデル sarashina3-mini は日本語の推敲で何を変えるのか？](https://zenn.dev/algoartis/articles/03ca12150ccbee) — 大賀愛一郎（oga_aiichiro）
+
+- [FFRI × NFLabs. Cybersecurity Challenge 2026 ゆるWriteup](https://zenn.dev/juck28/articles/74c43f18838188) — JUCK
+
+- [AIを使えばドキュメント整備はいらない？いやいや、今こそ人間が動くときだ](https://zenn.dev/atamaplus/articles/2c9538a721c613) — yuki nomura
+
+- [OpenTelemetryでStep Functions越しにtraceparentを引き回し、複数Lambdaを一つのトレースにつなぐ](https://zenn.dev/boy_techblog/articles/connecting-trace-serverless) — watariryo
+
+- [jpstatで始めるe-Stat API入門](https://zenn.dev/tyasuakwa/articles/3f6a1394323275) — tya-guin
+
+- [Akinatorで始めるAgentic RL ー タスク設計と初期検証  ー](https://zenn.dev/mkj/articles/8e1da67da67f98) — クリリン
+
+- [レポ：mixi2のインターンに参加しました！](https://zenn.dev/riochin/articles/mixi2-intern-2026) — Riochin
+
+- [改めて考える、AIエンジニアリングの今](https://zenn.dev/r_kaga/articles/2fd185c50cea7c) — r.kagaya
 
 - [【セキュリティ】お客さんからの「うちは大丈夫？」に答えるため、IPAの点検項目をレガシーPHPのECサイトで上から順にやってみた](https://zenn.dev/subara3/articles/b90ff538d87aa6) — Subara3
 
-- [【Node.js性能検証 #2】：Workerは増やすほど速くなるのか？ QPS・P99・キュー待ちから考える](https://zenn.dev/jsonfoo/articles/aeb53698ef0a1a) — JSON FU
-
-- [【SWTT 2026】Snowflake Well-Architected Frameworkで実現する実践的なデータマネジメント](https://zenn.dev/finatext/articles/swtt2026-snow-waf-datamanagement) — Takaki Ihara
-
 - [Gemini 4 Argonの日本語性能を検証してみた](https://zenn.dev/algoartis/articles/19bb1705ea4b16) — 大賀愛一郎（oga_aiichiro）
-
-- [就活用DirectX12アクションゲーム作成 第三十三回](https://zenn.dev/seisei89628/articles/cd976e4c7d78c7) — しまだせいや＠プログラマ
 
 - [【備忘録】CSSのstickyで作る、せり上がりながら背景が見える演出](https://zenn.dev/crayfisher_zari/articles/75619d5860f885) — にしはら
 
-- [決定モデルの分類精度をKaggleの過去NLPコンペで検証する](https://zenn.dev/trtd56/articles/a3a65631b5e773) — t.toda
-
-- [mobile_scanner で本の ISBN を読む。裏表紙の2段バーコードは両方 EAN-13 だった](https://zenn.dev/hk_work/articles/mobile-scanner-isbn-barcode) — HIROKI KUROGI
-
 - [開発しながら同じPCでローカルLLMを動かしてみた話](https://zenn.dev/sumasate_tec/articles/test-local-llm) — スマサテ株式会社
-
-- [Unityで立体物の衣装が変わるプロジェクションマッピングを試作した](https://zenn.dev/m_tk/articles/e39b61a8136a29) — m-tk
-
-- [Amazon BedrockとSageMakerのAIエージェントでOpenTelemetryの自動計装が行われる範囲](https://zenn.dev/ymotongpoo/articles/20261014-bedrock-sagemaker-otel) — Yoshi Yamaguchi
-
-- [Nimの引数パーサーにconfutilsを採用してみた](https://zenn.dev/attakei/articles/introduce-nim-confutils) — Takei Kazuya
-
-- [Rustのstrumでenumの管理が簡単になる【備忘】](https://zenn.dev/echigo/articles/c527aaedfd021b) — EndBear
 
 - [『現場で役立つシステム設計の原則』を読んで学んだこと、実践したこと、これからやりたいこと](https://zenn.dev/wwwave/articles/38b8284f96bd9e) — 塚本
 
 - [話題の逆解析 MCP「REA」を Claude Code に隔離してつないだ——静的解析の A/B 試験と安全設計](https://zenn.dev/keigoly/articles/8738d8d241b5a1) — keigoly
 
-- [Lambda Web FunctionsでNext.jsアプリを爆速ホストしよう！](https://zenn.dev/tosuri13/articles/64f17d8c75e147) — とすり
-
 - [良いテストを書き、良いテストを見分ける ─『単体テストの考え方/使い方』のエッセンス](https://zenn.dev/nexta_/articles/unit-testing-principles-essence) — tetsu.k
 
-- [モバイルアプリ開発でノートPCを持ち歩かなくなった話](https://zenn.dev/yasi/articles/mobile-dev-from-phone-with-claude) — yasi
-
 - [SQLite 本体にベクトル検索拡張 vec1 がやってきた](https://zenn.dev/mattn/articles/6e9996319ac099) — mattn
+
+- [WAF でブロックする前に確かめていること](https://zenn.dev/azunyan/articles/7a105969d7d16c) — えみり〜
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

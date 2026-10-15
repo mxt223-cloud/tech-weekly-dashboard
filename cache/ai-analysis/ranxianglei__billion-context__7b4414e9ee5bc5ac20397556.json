@@ -1,0 +1,47 @@
+{
+  "summary_ja": "billion-contextは、小さなコンテキストウィンドウでも動作し、トークン消費量を削減して長時間のセッションを可能にするコンテキスト圧縮プラグインです。",
+  "capabilities": [
+    {
+      "text": "コンテキストの圧縮を行い、トークン数を約5分の1に削減する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "数か月にわたる数十億トークンの単一セッションを維持する。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "小さなコンテキストウィンドウ環境で長時間のAIセッションを実行する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "AIコーディングエージェントのトークン消費を抑えてコストを削減する",
+      "basis": "提案",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "billion-contextをインストールする",
+    "steps": [
+      "npm install -g billion-context --prefix=~/.local"
+    ],
+    "success_criteria": "グローバル環境にパッケージがインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Community",
+    "📄 Paper / Preprint",
+    "Quickstart"
+  ],
+  "unconfirmed": [
+    "プラグインの詳細な設定方法や対応している全てのクライアントの詳細なリスト",
+    "プロキシの動作に関する詳細な内部仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d0aef5889b9b0b626dc39b681fd00bfadb01cee4",
+  "generated_at": "2026-10-16T08:46:34.846778+09:00"
+}

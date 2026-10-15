@@ -1,0 +1,55 @@
+{
+  "summary_ja": "diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。",
+  "capabilities": [
+    {
+      "text": "独立したHTMLおよびSVGファイル形式でダイアグラムを描画する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "45種類のダイアグラムタイプをサポートする",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "npx skills add cathrynlavery/diagram-design を使ってインストールできる",
+      "evidence_section": "Install"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "diagram-designスキルをインストールして使い始める",
+    "steps": [
+      "npx skills add cathrynlavery/diagram-design を実行してインストールする"
+    ],
+    "success_criteria": "エージェントスキルホストにdiagram-designがインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Quickstart",
+    "About"
+  ],
+  "unconfirmed": [
+    "Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
+  "generated_at": "2026-10-16T08:46:29.731590+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリ、ランタイム動作などをエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）ツールです。ソースコードがないアプリの調査、仕組みの解説、証拠の提示、プロジェクトへの機能実装支援などをローカル環境で実行できます。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリの擬似コード、アセンブリ、文字列、シンボル、呼び出し、参照の検査",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "JavaScriptやElectronアプリケーションのモジュール、インポート、ソースマップ、ルート、IPC、ネイティブアドオン関係の復元",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "Claude Code、Codex、Cursor、Gemini CLI、Grok BuildなどのエージェントへのMCPサーバー登録とワークフローインストールのセットアップ",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリに見つけた機能の仕組みをエージェントに調査させ、根拠となる証拠を確認した上で、自分のプロジェクト向けに同様の機能を構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを対象に、モジュールやインポート、Electronの境界などの情報をJSON形式で取得する",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "対応する逆アセンブラや解析エンジンと連携し、バイナリの内部構造や難解な処理のロジックを静的解析してコードの再構築に役立てる",
+      "basis": "提案",
+      "evidence_section": "What you can analyze"
+    }
+  ],
+  "first_trial": {
+    "goal": "エージェントにREAの初期セットアップを行い、機能調査の指示を出すこと",
+    "steps": [
+      "Node.jsとnpmがインストールされた環境で `npx rea-agents setup` を実行する",
+      "使用するエージェントを選択し、変更内容を確認して承認する",
+      "エージェントを再起動する",
+      "「Notesアプリの検索機能の仕組みを理解し、証拠を示し、私のプロジェクト用に似た機能をビルドしてください」のようにエージェントに依頼する"
+    ],
+    "success_criteria": "エージェントがREAのMCPサーバー経由でターゲットアプリの調査を行い、その仕組みの解説や証拠、実装の提案を返すこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "How REA works",
+    "What you can analyze",
+    "Showcases",
+    "FAQ",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのエージェントの詳細な内部動作仕様",
+    "サポートされるサードパーティ製逆アセンブラのすべてのライセンス検証メカニズムの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "89a53ff75546ede74869ea85faee0b769cb48ea2",
+  "generated_at": "2026-10-16T08:46:25.304552+09:00"
+}
