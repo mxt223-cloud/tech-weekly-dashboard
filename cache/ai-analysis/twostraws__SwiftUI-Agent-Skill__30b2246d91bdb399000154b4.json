@@ -1,0 +1,57 @@
+{
+  "summary_ja": "SwiftUI-Agent-Skillは、Claude CodeやCodexなどのAIコーディングアシスタントが、よりシンプルでモダンなSwiftUIコードを書くためのスキルを提供するツールです。",
+  "capabilities": [
+    {
+      "text": "APIの使用方法、デザイン、パフォーマンス、アクセシビリティに関するガイダンスを提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ナビゲーション、レイアウト、アニメーション、状態管理、VoiceOver、非推奨APIなどに対応する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude CodeやCodex、Gemini、CursorなどのAIツールにnpxコマンドやプラグイン等でインストールできる",
+      "evidence_section": "Installing SwiftUI Pro"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングアシスタントを使ってモダンで効率的なSwiftUIコードを作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "プロジェクト内の非推奨APIの使用箇所をチェックする",
+      "basis": "README明記",
+      "evidence_section": "Using SwiftUI Pro"
+    },
+    {
+      "text": "プロジェクトのパフォーマンス問題やアクセシビリティを検証する",
+      "basis": "README明記",
+      "evidence_section": "Using SwiftUI Pro"
+    }
+  ],
+  "first_trial": {
+    "goal": "npxを使用してSwiftUI Proスキルをインストールする",
+    "steps": [
+      "npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro"
+    ],
+    "success_criteria": "エラーなくインストールが完了し、対象のエージェントやプロジェクトでスキルが選択・利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installing SwiftUI Pro",
+    "Using SwiftUI Pro",
+    "Why Use an Agent Skill for SwiftUI?",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な内部実装やサポートされているすべてのチェック項目の完全なリスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "12e282c9336a10d31c23d53a586d2049e2b77525",
+  "generated_at": "2026-10-15T09:01:56.160180+09:00"
+}

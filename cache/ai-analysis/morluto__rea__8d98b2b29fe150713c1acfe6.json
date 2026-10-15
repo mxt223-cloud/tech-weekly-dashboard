@@ -1,0 +1,57 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリ、実行時動作など、あらゆるものをリバースエンジニアリングするためのModel Context Protocol（MCP）およびコマンドラインツールです。AIエージェントと連携してローカルで解析を行い、証拠とともに結果を提供します。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリの疑似コード、アセンブリ、文字列、シンボル、呼び出し、参照の解析",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "JavaScriptおよびElectronアプリケーションのモジュール、インポート、ソースマップ、ルート、IPC、ネイティブアドオン関係の抽出",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": ".NETアセンブリのメタデータ、CIL命令、宣言されたネイティブ依存関係、ビルド比較の静的解析",
+      "evidence_section": "What you can analyze"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内の特定の機能をAIエージェントに調査させ、ソースコードなしで仕組みを理解して自身のプロジェクト用に再構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "抽出されたJavaScriptやElectronアプリのディレクトリ、ASARファイルをターミナルから検査してモジュールやインポート情報を得る",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "レトロゲームや既存ソフトウェアの動作ロジックを解析し、独自のコード実装に置き換える",
+      "basis": "提案",
+      "evidence_section": "Showcases"
+    }
+  ],
+  "first_trial": {
+    "goal": "AIエージェントのセットアップを行う",
+    "steps": [
+      "npx rea-agents setup"
+    ],
+    "success_criteria": "エージェントにREAのMCPサーバーとワークフロー手順が追加されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "What you can analyze",
+    "Showcases",
+    "FAQ"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのプラットフォームにおける具体的な依存関係の動作詳細",
+    "有料ツールのライセンス認証の具体的な内部処理"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2be1774fc0e7229028fcaa99d367cb3e26633e6f",
+  "generated_at": "2026-10-15T09:01:47.852285+09:00"
+}
