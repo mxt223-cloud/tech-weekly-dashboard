@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T08:46:38.840618+09:00",
-  "week": "2026-10-16",
+  "generated_at": "2026-10-17T08:47:03.392463+09:00",
+  "week": "2026-10-17",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars_total": 269266,
-      "forks_total": 67495,
-      "stars_period": 214837,
+      "stars_total": 290677,
+      "forks_total": 73122,
+      "stars_period": 239477,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-15T23:46:11Z",
-        "pushed_at": "2026-10-15T23:25:56Z",
-        "open_issues": 1004,
+        "updated_at": "2026-10-16T23:46:55Z",
+        "pushed_at": "2026-10-16T23:25:01Z",
+        "open_issues": 1128,
         "archived": false,
-        "size_kb": 79188,
+        "size_kb": 81506,
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -109,28 +109,120 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "89a53ff75546ede74869ea85faee0b769cb48ea2",
         "generated_at": "2026-10-16T08:46:25.304552+09:00"
       }
     },
     {
       "rank": 2,
+      "full_name": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars_total": 30584,
+      "forks_total": 4859,
+      "stars_period": 22319,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-16T23:45:53Z",
+        "pushed_at": "2026-10-15T02:48:37Z",
+        "open_issues": 436,
+        "archived": false,
+        "size_kb": 1374701,
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "26fe9590761d4bf763efd25b9daf3918c8dd12dc",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14842,
+        "used_chars": 12081
+      },
+      "analysis": {
+        "summary_ja": "ArtCraftは、アーティスト、デザイナー、映画制作のためのインタラクティブなAI画像および動画制作IDEです。2Dでの構成、3Dでのシーン配置、多彩なAIモデルの選択を組み合わせ、プロンプト入力を視覚的なクラフト作業へと変化させます。",
+        "capabilities": [
+          {
+            "text": "3D空間内での背景、前景、プロップのレイヤー合成による奥行きのある構成",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "画像を3Dメッシュオブジェクトへ変換し、正確な位置調整や回転、フレーミングが可能",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "テキストプロンプトからの画像生成および、描画・マスク・インペインティングを活用したキャンバス画像編集",
+            "evidence_section": "Quick and Easy Prompting"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "仮想の登場人物を一定の環境に配置し、同一の部屋で複数ショットを計画する",
+            "basis": "README明記",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "3Dアセットキットを組み合わせて、カメラアングルやオブジェクト配置、奥行きを制御するシーンブロッキングを行う",
+            "basis": "README明記",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "選択した動画モデルと生成コントロールを使用して画像をアニメーション化し、動画を作成する",
+            "basis": "README明記",
+            "evidence_section": "Quick and Easy Prompting"
+          }
+        ],
+        "first_trial": {
+          "goal": "アプリケーションのダウンロードまたはソースからのビルドを行い、ArtCraftを起動して使い始める",
+          "steps": [
+            "公式サイトやGitHub ReleasesからWindowsおよびmacOS向けの安定版をダウンロードしてインストールするか、_docs/dev_setup.mdを参照してソースからビルドする"
+          ],
+          "success_criteria": "ArtCraftが手元の環境で起動し、IDEインターフェースを利用できるようになること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Show, Don't Tell: Advanced Crafting Features",
+          "Quick and Easy Prompting",
+          "Models and Providers Supported within ArtCraft",
+          "Downloads",
+          "Documentation",
+          "License"
+        ],
+        "unconfirmed": [
+          "具体的なインストールコマンドや実行コマンドがREADME内に記載されていないため、CLI上での操作手順は不明です。"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "26fe9590761d4bf763efd25b9daf3918c8dd12dc",
+        "generated_at": "2026-10-17T08:46:59.287067+09:00"
+      }
+    },
+    {
+      "rank": 3,
       "full_name": "boykopovar/AnyPS5",
       "url": "https://github.com/boykopovar/AnyPS5",
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
-      "stars_total": 38630,
-      "forks_total": 3436,
-      "stars_period": 28240,
+      "stars_total": 39892,
+      "forks_total": 3566,
+      "stars_period": 25174,
       "api": {
         "default_branch": "main",
         "license": "GPL-2.0",
-        "updated_at": "2026-10-15T23:45:12Z",
-        "pushed_at": "2026-10-15T21:58:29Z",
-        "open_issues": 834,
+        "updated_at": "2026-10-16T23:42:26Z",
+        "pushed_at": "2026-10-16T23:35:40Z",
+        "open_issues": 983,
         "archived": false,
-        "size_kb": 39445,
+        "size_kb": 41270,
         "topics": [
           "anyps5",
           "dynamic-library",
@@ -203,107 +295,114 @@
       }
     },
     {
-      "rank": 3,
-      "full_name": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars_total": 292813,
-      "forks_total": 24541,
-      "stars_period": 12292,
+      "rank": 4,
+      "full_name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars_total": 56424,
+      "forks_total": 3577,
+      "stars_period": 10237,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-15T23:44:58Z",
-        "pushed_at": "2026-10-13T08:46:40Z",
-        "open_issues": 187,
+        "updated_at": "2026-10-16T23:43:21Z",
+        "pushed_at": "2026-10-16T19:42:46Z",
+        "open_issues": 41,
         "archived": false,
-        "size_kb": 2016,
-        "topics": []
+        "size_kb": 37010,
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ]
       },
       "readme": {
         "status": "ok",
-        "sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 16449,
-        "used_chars": 16319
+        "original_chars": 51655,
+        "used_chars": 4839
       },
       "analysis": {
-        "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
+        "summary_ja": "diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。",
         "capabilities": [
           {
-            "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
-            "evidence_section": "Installation (30-second setup)"
+            "text": "独立したHTMLおよびSVGファイル形式でダイアグラムを描画する",
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
-            "evidence_section": "Why These Skills Exist"
+            "text": "45種類のダイアグラムタイプをサポートする",
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
-            "evidence_section": "Engineering"
+            "text": "npx skills add cathrynlavery/diagram-design を使ってインストールできる",
+            "evidence_section": "Install"
           }
         ],
         "use_cases": [
           {
-            "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
+            "text": "アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する",
             "basis": "README明記",
-            "evidence_section": "Why These Skills Exist"
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
+            "text": "影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する",
             "basis": "README明記",
-            "evidence_section": "Why These Skills Exist"
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
+            "text": "401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する",
             "basis": "README明記",
-            "evidence_section": "Why These Skills Exist"
+            "evidence_section": "README冒頭"
           }
         ],
         "first_trial": {
-          "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
+          "goal": "diagram-designスキルをインストールして使い始める",
           "steps": [
-            "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
-            "エージェント内で /setup-matt-pocock-skills を実行する"
+            "npx skills add cathrynlavery/diagram-design を実行してインストールする"
           ],
-          "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
+          "success_criteria": "エージェントスキルホストにdiagram-designがインストールされること"
         },
         "evidence_sections": [
-          "Installation (30-second setup)",
-          "Why These Skills Exist",
-          "Reference",
-          "Engineering",
-          "Productivity"
+          "README冒頭",
+          "Install",
+          "Quickstart",
+          "About"
         ],
         "unconfirmed": [
-          "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
+          "Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": true,
-        "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
-        "generated_at": "2026-10-09T10:20:43.679066+09:00"
+        "readme_sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
+        "generated_at": "2026-10-16T08:46:29.731590+09:00"
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
       "full_name": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars_total": 64524,
-      "forks_total": 5797,
-      "stars_period": 5123,
+      "stars_total": 65305,
+      "forks_total": 5883,
+      "stars_period": 5318,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-10-15T23:44:33Z",
-        "pushed_at": "2026-10-15T23:46:13Z",
-        "open_issues": 297,
+        "updated_at": "2026-10-16T23:42:33Z",
+        "pushed_at": "2026-10-16T23:46:57Z",
+        "open_issues": 328,
         "archived": false,
-        "size_kb": 505569,
+        "size_kb": 506763,
         "topics": [
           "ai",
           "animation",
@@ -395,114 +494,107 @@
       }
     },
     {
-      "rank": 5,
-      "full_name": "cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "stars_total": 55897,
-      "forks_total": 3530,
-      "stars_period": 10706,
+      "rank": 6,
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_total": 294065,
+      "forks_total": 24653,
+      "stars_period": 12147,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-15T23:46:14Z",
-        "pushed_at": "2026-10-15T20:04:11Z",
-        "open_issues": 44,
+        "updated_at": "2026-10-16T23:46:02Z",
+        "pushed_at": "2026-10-13T08:46:40Z",
+        "open_issues": 188,
         "archived": false,
-        "size_kb": 36976,
-        "topics": [
-          "agent-skills",
-          "claude-code",
-          "codex",
-          "data-visualization",
-          "diagrams",
-          "drawio",
-          "mermaid",
-          "svg"
-        ]
+        "size_kb": 2016,
+        "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
+        "sha": "f7038f139299985eea6c3e18398dbafb379a0010",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 51655,
-        "used_chars": 4839
+        "original_chars": 16449,
+        "used_chars": 16319
       },
       "analysis": {
-        "summary_ja": "diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。",
+        "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
         "capabilities": [
           {
-            "text": "独立したHTMLおよびSVGファイル形式でダイアグラムを描画する",
-            "evidence_section": "README冒頭"
+            "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
+            "evidence_section": "Installation (30-second setup)"
           },
           {
-            "text": "45種類のダイアグラムタイプをサポートする",
-            "evidence_section": "README冒頭"
+            "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
+            "evidence_section": "Why These Skills Exist"
           },
           {
-            "text": "npx skills add cathrynlavery/diagram-design を使ってインストールできる",
-            "evidence_section": "Install"
+            "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
+            "evidence_section": "Engineering"
           }
         ],
         "use_cases": [
           {
-            "text": "アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する",
+            "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Why These Skills Exist"
           },
           {
-            "text": "影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する",
+            "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Why These Skills Exist"
           },
           {
-            "text": "401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する",
+            "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Why These Skills Exist"
           }
         ],
         "first_trial": {
-          "goal": "diagram-designスキルをインストールして使い始める",
+          "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
           "steps": [
-            "npx skills add cathrynlavery/diagram-design を実行してインストールする"
+            "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
+            "エージェント内で /setup-matt-pocock-skills を実行する"
           ],
-          "success_criteria": "エージェントスキルホストにdiagram-designがインストールされること"
+          "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
         },
         "evidence_sections": [
-          "README冒頭",
-          "Install",
-          "Quickstart",
-          "About"
+          "Installation (30-second setup)",
+          "Why These Skills Exist",
+          "Reference",
+          "Engineering",
+          "Productivity"
         ],
         "unconfirmed": [
-          "Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明"
+          "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
-        "generated_at": "2026-10-16T08:46:29.731590+09:00"
+        "cached": true,
+        "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "generated_at": "2026-10-09T10:20:43.679066+09:00"
       }
     },
     {
-      "rank": 6,
+      "rank": 7,
       "full_name": "NationalSecurityAgency/ghidra",
       "url": "https://github.com/NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
-      "stars_total": 88713,
-      "forks_total": 9900,
-      "stars_period": 5613,
+      "stars_total": 89608,
+      "forks_total": 10020,
+      "stars_period": 6614,
       "api": {
         "default_branch": "master",
         "license": "Apache-2.0",
-        "updated_at": "2026-10-15T23:45:22Z",
-        "pushed_at": "2026-10-15T12:02:03Z",
-        "open_issues": 2112,
+        "updated_at": "2026-10-16T23:45:56Z",
+        "pushed_at": "2026-10-16T16:52:06Z",
+        "open_issues": 2102,
         "archived": false,
-        "size_kb": 415450,
+        "size_kb": 415543,
         "topics": [
           "disassembler",
           "reverse-engineering",
@@ -573,28 +665,133 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
         "generated_at": "2026-10-16T08:46:32.418395+09:00"
       }
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "full_name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars_total": 30220,
+      "forks_total": 2125,
+      "stars_period": 4038,
+      "api": {
+        "default_branch": "main",
+        "license": "NOASSERTION",
+        "updated_at": "2026-10-16T23:46:00Z",
+        "pushed_at": "2026-10-16T23:44:18Z",
+        "open_issues": 358,
+        "archived": false,
+        "size_kb": 34205,
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b796169524473691594af24995d21ca94027f7c7",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 94434,
+        "used_chars": 5257
+      },
+      "analysis": {
+        "summary_ja": "Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。",
+        "capabilities": [
+          {
+            "text": "ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える",
+            "evidence_section": "How Context Mode Solves It"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する",
+            "basis": "README明記",
+            "evidence_section": "The Problem"
+          },
+          {
+            "text": "コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる",
+            "basis": "README明記",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する",
+            "basis": "README明記",
+            "evidence_section": "Security"
+          }
+        ],
+        "first_trial": {
+          "goal": "セキュリティ権限設定を追加して権限ルールを適用する",
+          "steps": [
+            "プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する"
+          ],
+          "success_criteria": "設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "The Problem",
+          "How Context Mode Solves It",
+          "Security"
+        ],
+        "unconfirmed": [
+          "詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順",
+          "17のプラットフォームすべての個別設定方法"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "b796169524473691594af24995d21ca94027f7c7",
+        "generated_at": "2026-09-11T08:21:13.273532+09:00"
+      }
+    },
+    {
+      "rank": 9,
       "full_name": "ranxianglei/billion-context",
       "url": "https://github.com/ranxianglei/billion-context",
       "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
       "language": "TypeScript",
-      "stars_total": 1373,
-      "forks_total": 115,
-      "stars_period": 628,
+      "stars_total": 1541,
+      "forks_total": 121,
+      "stars_period": 659,
       "api": {
         "default_branch": "master",
         "license": "NOASSERTION",
-        "updated_at": "2026-10-15T23:09:05Z",
-        "pushed_at": "2026-10-15T21:47:25Z",
-        "open_issues": 248,
+        "updated_at": "2026-10-16T23:40:51Z",
+        "pushed_at": "2026-10-16T23:19:53Z",
+        "open_issues": 315,
         "archived": false,
-        "size_kb": 33405,
+        "size_kb": 34459,
         "topics": [
           "dsh-plugin"
         ]
@@ -650,295 +847,139 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "d0aef5889b9b0b626dc39b681fd00bfadb01cee4",
         "generated_at": "2026-10-16T08:46:34.846778+09:00"
       }
     },
     {
-      "rank": 8,
-      "full_name": "earthtojake/text-to-cad",
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "description": "Give your agent CAD superpowers.",
-      "language": "Python",
-      "stars_total": 20698,
-      "forks_total": 2049,
-      "stars_period": 1994,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-10-15T23:46:19Z",
-        "pushed_at": "2026-10-15T21:12:54Z",
-        "open_issues": 42,
-        "archived": false,
-        "size_kb": 379377,
-        "topics": [
-          "agents",
-          "ai-agents",
-          "cad",
-          "mechanical-engineering",
-          "robotics",
-          "step",
-          "stl",
-          "stp",
-          "text-to-cad"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "2cd09ec3c928459c1072a001bd3d62cfec25b27c",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 18028,
-        "used_chars": 17933
-      },
-      "analysis": {
-        "summary_ja": "earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。",
-        "capabilities": [
-          {
-            "text": "STEP、GLB、STL、3MFファイル形式での3Dモデル生成",
-            "evidence_section": "text-to-cad"
-          },
-          {
-            "text": "製造性のチェック（DfAMやDFMレビュー）やエンジニアリング図面の生成",
-            "evidence_section": "text-to-cad"
-          },
-          {
-            "text": "3Dプリンティング、板金、CNC加工サービスへの接続",
-            "evidence_section": "text-to-cad"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "プレーンテキストや画像のリクエストからCADモデルを作成・編集する",
-            "basis": "README明記",
-            "evidence_section": "🧰 Skills"
-          },
-          {
-            "text": "ネジや軸受け、モーターなどの既製STEPパーツを検索する",
-            "basis": "README明記",
-            "evidence_section": "🧰 Skills"
-          },
-          {
-            "text": "パーツから寸法付きのエンジニアリング図面をPDFとして作成する",
-            "basis": "README明記",
-            "evidence_section": "🧰 Skills"
-          }
-        ],
-        "first_trial": {
-          "goal": "エージェントにtext-to-cadをインストールする",
-          "steps": [
-            "エージェントに次のメッセージを送信する: Install text-to-cad from https://github.com/earthtojake/text-to-cad"
-          ],
-          "success_criteria": "エージェントがtext-to-cadのインストールを実行すること"
-        },
-        "evidence_sections": [
-          "text-to-cad",
-          "💻 Install",
-          "🧰 Skills",
-          "🛠️ Contributing"
-        ],
-        "unconfirmed": [
-          "エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "2cd09ec3c928459c1072a001bd3d62cfec25b27c",
-        "generated_at": "2026-10-12T09:41:53.200719+09:00"
-      }
-    },
-    {
-      "rank": 9,
-      "full_name": "twostraws/SwiftUI-Agent-Skill",
-      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
-      "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
-      "language": "不明",
-      "stars_total": 6093,
-      "forks_total": 221,
-      "stars_period": 930,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-10-15T23:45:11Z",
-        "pushed_at": "2026-10-07T13:39:28Z",
-        "open_issues": 15,
-        "archived": false,
-        "size_kb": 59,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "12e282c9336a10d31c23d53a586d2049e2b77525",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 5475,
-        "used_chars": 4798
-      },
-      "analysis": {
-        "summary_ja": "SwiftUI-Agent-Skillは、Claude CodeやCodexなどのAIコーディングアシスタントが、よりシンプルでモダンなSwiftUIコードを書くためのスキルを提供するツールです。",
-        "capabilities": [
-          {
-            "text": "APIの使用方法、デザイン、パフォーマンス、アクセシビリティに関するガイダンスを提供する",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "ナビゲーション、レイアウト、アニメーション、状態管理、VoiceOver、非推奨APIなどに対応する",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "Claude CodeやCodex、Gemini、CursorなどのAIツールにnpxコマンドやプラグイン等でインストールできる",
-            "evidence_section": "Installing SwiftUI Pro"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "AIコーディングアシスタントを使ってモダンで効率的なSwiftUIコードを作成する",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "プロジェクト内の非推奨APIの使用箇所をチェックする",
-            "basis": "README明記",
-            "evidence_section": "Using SwiftUI Pro"
-          },
-          {
-            "text": "プロジェクトのパフォーマンス問題やアクセシビリティを検証する",
-            "basis": "README明記",
-            "evidence_section": "Using SwiftUI Pro"
-          }
-        ],
-        "first_trial": {
-          "goal": "npxを使用してSwiftUI Proスキルをインストールする",
-          "steps": [
-            "npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro"
-          ],
-          "success_criteria": "エラーなくインストールが完了し、対象のエージェントやプロジェクトでスキルが選択・利用可能になること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Installing SwiftUI Pro",
-          "Using SwiftUI Pro",
-          "Why Use an Agent Skill for SwiftUI?",
-          "Contributing",
-          "License"
-        ],
-        "unconfirmed": [
-          "詳細な内部実装やサポートされているすべてのチェック項目の完全なリスト"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "12e282c9336a10d31c23d53a586d2049e2b77525",
-        "generated_at": "2026-10-15T09:01:56.160180+09:00"
-      }
-    },
-    {
       "rank": 10,
-      "full_name": "DuarteSantos8/openGym",
-      "url": "https://github.com/DuarteSantos8/openGym",
-      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
-      "language": "JavaScript",
-      "stars_total": 12337,
-      "forks_total": 1511,
-      "stars_period": 5132,
+      "full_name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars_total": 40512,
+      "forks_total": 4401,
+      "stars_period": 2217,
       "api": {
         "default_branch": "main",
-        "license": "AGPL-3.0",
-        "updated_at": "2026-10-15T23:38:07Z",
-        "pushed_at": "2026-10-15T19:31:37Z",
-        "open_issues": 179,
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-16T23:44:33Z",
+        "pushed_at": "2026-10-16T16:36:46Z",
+        "open_issues": 1141,
         "archived": false,
-        "size_kb": 305594,
+        "size_kb": 17117,
         "topics": [
-          "bodyweight",
-          "docker",
-          "fitness",
-          "fitness-tracker",
-          "gym",
-          "health",
+          "claude-code",
           "mcp",
-          "nodejs",
-          "passkeys",
-          "progressive-web-applications",
-          "pwa",
-          "react",
-          "self-hosted",
-          "self-hosting",
-          "vite",
-          "webauthn",
-          "weightlifting",
-          "workout-tracker"
+          "skills"
         ]
       },
       "readme": {
         "status": "ok",
-        "sha": "87eeacfa4f97d40cf8f341548aba0e5fd0d42560",
+        "sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 21022,
-        "used_chars": 19520
+        "original_chars": 3807,
+        "used_chars": 3806
       },
       "analysis": {
-        "summary_ja": "openGym は、パスキー認証に対応し、自身のサーバーや端末でデータを管理できるセルフホスト型のジムおよび体重管理トラッカーです。ルーティンの計画やワークアウトの記録、筋肉の疲労度・回復状況の確認が行えます。",
+        "summary_ja": "anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。",
         "capabilities": [
           {
-            "text": "5,600種類以上の演目から曜日ごとのルーティンを計画したり、ボディマップや機器で絞り込みを行える。",
-            "evidence_section": "Features"
+            "text": "Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能",
+            "evidence_section": "Installation"
           },
           {
-            "text": "パスキー（Face ID、Touch ID、指紋認証）を利用した安全なログインや、デバイス間のデータ同期ができる。",
-            "evidence_section": "Features"
+            "text": "プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能",
+            "evidence_section": "Plugin Structure"
           },
           {
-            "text": "FitNotes、Strong、Hevyからのインポートや、全データのJSON形式でのエクスポートが可能。",
-            "evidence_section": "Features"
+            "text": "マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能",
+            "evidence_section": "Skill-bundle plugins"
           }
         ],
         "use_cases": [
           {
-            "text": "自身のサーバーにDockerを用いて環境を構築し、外部のクラウドサービスに依存せずプライベートにワークアウトデータを管理したい。",
+            "text": "Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する",
             "basis": "README明記",
-            "evidence_section": "Why openGym"
+            "evidence_section": "Claude Code Plugins Directory"
           },
           {
-            "text": "FitNotesなどの他のフィットネスアプリからこれまでの履歴を移行し、openGym上で一元管理したい。",
+            "text": "独自のプラグインを作成して公開・登録申請を行う",
             "basis": "README明記",
-            "evidence_section": "Features"
-          },
-          {
-            "text": "スマートフォンの生体認証を使って手軽かつセキュアにログインし、複数のデバイス間で記録を同期させたい。",
-            "basis": "README明記",
-            "evidence_section": "Features"
+            "evidence_section": "Contributing"
           }
         ],
         "first_trial": {
-          "goal": "Docker Composeを使用してローカル環境でアプリケーションを起動し、プロファイルを作成する",
+          "goal": "Claude Code上でプラグインをインストールする",
           "steps": [
-            "git clone https://github.com/DuarteSantos8/openGym",
-            "cd openGym",
-            "cp .env.example .env",
-            "docker compose pull",
-            "docker compose up -d"
+            "Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする"
           ],
-          "success_criteria": "ブラウザで http://localhost:8080 にアクセスし、Create profileをタップして利用を開始できること"
+          "success_criteria": "指定したプラグインがClaude Codeに正常にインストールされること"
         },
         "evidence_sections": [
-          "README冒頭",
-          "Why openGym",
-          "Features",
-          "Quick start"
+          "Claude Code Plugins Directory",
+          "Installation",
+          "Contributing",
+          "Plugin Structure",
+          "Plugin names are immutable",
+          "Skill-bundle plugins"
         ],
-        "unconfirmed": [],
+        "unconfirmed": [
+          "具体的な個別のプラグインが何を提供するのかという機能詳細"
+        ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "87eeacfa4f97d40cf8f341548aba0e5fd0d42560",
-        "generated_at": "2026-10-16T08:46:38.665233+09:00"
+        "cached": true,
+        "readme_sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
+        "generated_at": "2026-08-30T08:32:12.325450+09:00"
       }
     }
   ],
   "zenn": [
+    {
+      "title": "HTTP 402は29年「予約済み」のまま — x402をNext.jsで動かす",
+      "url": "https://zenn.dev/suzuki_tech/articles/x402-01-http-402-nextjs",
+      "author": "SuzukiTech",
+      "published": "Fri, 16 Oct 2026 07:58:00 GMT",
+      "summary": "HTTP のステータスコードに 402 Payment Required がある。使ったことはあるか。\nおそらくない。仕様に載ってから 29 年、標準としての使い方は決まらないままだ。Stripe のように決済失敗の合図として 402 を返す API はある（Stripe API のエラー一覧）。だが、HTTP 全体で通じる意味は誰も決めなかった。それを決済の入口にそのまま使うのが x402 である。\nこの回で動かすのは次の流れだ。Next.js の API を有料にして、c"
+    },
+    {
+      "title": "[フィジカルAI]LLM によるテレオペデータで VLA を学習して Strands Robots に組み込んでみた",
+      "url": "https://zenn.dev/aws_japan/articles/strands-robots-llm-teleop",
+      "author": "Hikotty / Hikoto Iseda",
+      "published": "Fri, 16 Oct 2026 04:43:37 GMT",
+      "summary": "はじめに\n前回の記事[1]では、strands-robots で SO-100 というロボットアームのシミュレーションを動かし、強化学習で作った把持の Policy を Agent に登録して、日本語の指示から赤い球を掴ませました。ただ、その Policy は球を掴むという 1 つの動作だけを強化学習で覚えたもので、指示文を受け取っても動作のために使われませんでした。言葉と動作が結び付いていないので、Agent がどんな指示文を渡しても Policy の動きは変わりません。赤"
+    },
+    {
+      "title": "技術書を年に数冊しか買わない自分に、O'Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）",
+      "url": "https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm",
+      "author": "m.okamura",
+      "published": "Fri, 16 Oct 2026 02:53:28 GMT",
+      "summary": "はじめに\nオライリーの本は、技術書として信頼できるので、これまでも必要なものを買って読んでいました。\n自分は紙の本のほうが読みやすいタイプです。ただ、オライリーの本は分厚いものが多く、持ち歩くと重いのが難点でした。そんなとき、オライリーの本がオンラインのサブスクで読み放題になると知って、魅力を感じました。1冊数千円すると、気になっても買うまでには至らない本がけっこうあります。そういう本も気軽に開けるなら、お得に入れる方法があるなら入ってもいいかな、と考えました。\nそこで、まず"
+    },
+    {
+      "title": "ベクトルDBを使わない「階層ナビゲーション型RAG」を作って、ベクトルDB版RAGと比較してみた",
+      "url": "https://zenn.dev/aiforall/articles/8e1803396534de",
+      "author": "nishina",
+      "published": "Fri, 16 Oct 2026 02:30:05 GMT",
+      "summary": "階層ナビゲーション型RAGとは\n「階層ナビゲーション型RAG」は、ベクトルDBを使わずに文書を探すRAGです。準備段階で文書の山から階層的な目次を自動で作っておき、質問が来たらLLMがその目次を上から順に辿って、答えが書かれていそうな文書を選びます。質問のたびにベクトル検索をしない点が、一般的なベクトルDB版RAGとの違いです。\nこの記事では、この仕組みを論文の手法(Corpus2Skill)を参考に自作し、ベクトルDB版RAGと同じデータ・同じ質問で比較しました。\n\n 結論"
+    },
+    {
+      "title": "有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか",
+      "url": "https://zenn.dev/hand_dot/articles/ecb391d4322330",
+      "author": "Kyohei Fukuda",
+      "published": "Thu, 15 Oct 2026 23:00:05 GMT",
+      "summary": "2026年に入ってから、有名な OSS が次々と PR を閉じはじめているなぁと感じています。OSS のエコシステムには個人的に興味があるので、少し調べてみました。メモがてら残しておきます。\n\n Hono が外部からの PR を閉じた\n10月5日、Hono の yusukebe さんがこう投稿していました。\nhttps://x.com/yusukebe/status/2107027870019445007\n\nBut PRs don't work in this era. Co"
+    },
+    {
+      "title": "2026年に自作Swingコンポーネントを紹介する",
+      "url": "https://zenn.dev/desktopgame/articles/372d43b8e0777b",
+      "author": "desktopgame",
+      "published": "Thu, 15 Oct 2026 10:30:05 GMT",
+      "summary": "先日、こんなものを見つけました。\nhttps://inside.java/2026/05/03/jdk-client-desktop/\n以下Google翻訳：\n\nSwingは2026年でもまだ通用するだろうか？ もちろん！\nJava2Dを基盤とし、AWTと深く統合されたSwing UIツールキットは、JDKの中核を成す要素であり続けています。JDKクライアントライブラリは決して旧式ではなく、最新のデスクトップ環境をサポートするために、活発なアップデートと機能強化が行われ、進化"
+    },
     {
       "title": "ICFPC2026 参加記",
       "url": "https://zenn.dev/algoartis/articles/b5dd3c401d5dd4",
@@ -947,39 +988,11 @@
       "summary": "ICFPCとは？\nICFPC（International Conference on Functional Programming Contest）は、国際会議 ICFP が主催するプログラミングコンテストです。毎年 7 月頃に開催されており、今年で 29 回目。前世紀から続く、非常に歴史のあるコンテストです。\n特徴としては、\n\n人数制限なしのチーム戦\nコンテスト時間は 72 時間。マラソン系のコンテストとしては中間的な長さ\n問題の形式やジャンルが毎年大きく変わる\n\n特に問題"
     },
     {
-      "title": "【Salesforce】Agent Script入門｜Agentforceの従業員エージェントを作ってみた",
-      "url": "https://zenn.dev/actbe_tech/articles/57561ffebaf9ed",
-      "author": "福西",
-      "published": "Thu, 15 Oct 2026 09:00:14 GMT",
-      "summary": "はじめに\nAgentforceの指示文に「必ず取引先を確認してから回答してください」と書いたのに、確認が飛ばされて、そのまま回答されてしまった。\nAgentforceでエージェントを作っていると、こんな場面に出会うことがあります。\nLLMは賢いですが、少し気まぐれなところがあります。\n「必ず」と書いても、必ず動くとは限りません。業務で使うとなると、「ここだけは毎回同じ動きをしてほしい」という部分が出てきます。\nそこで使えるのが Agent Script です。\n気まぐれでもよ"
-    },
-    {
-      "title": "xcrun xcodeproj で .xcodeproj をコマンドラインから編集する（Xcode 27.2）",
-      "url": "https://zenn.dev/d_date/articles/xcrun-xcodeproj-xcode27-2",
-      "author": "Daiki Matsudate",
-      "published": "Thu, 15 Oct 2026 08:38:00 GMT",
-      "summary": "はじめに\nXcode 27.2 には、xcrun xcodeproj というコマンドラインツールが同梱されています。Beta 2 の時点では setting / target / group の 3 つのサブコマンドだけでしたが、Beta 3 では init / config / pkg などが加わり、プロジェクトの作成からパッケージ依存の管理までできるようになりました。\n$ xcrun xcodeproj --help\nOVERVIEW: Inspect and modif"
-    },
-    {
       "title": "国産モデル sarashina3-mini は日本語の推敲で何を変えるのか？",
       "url": "https://zenn.dev/algoartis/articles/03ca12150ccbee",
       "author": "大賀愛一郎（oga_aiichiro）",
       "published": "Thu, 15 Oct 2026 08:30:03 GMT",
       "summary": "こんにちは。ALGO ARTISの大賀 愛一郎です。yomiyasuの開発者でもあります。\n最近、日本語性能が高いモデルが相次いで公開されていますね。\n2026年10月13日、SB Intuitions は、国産LLM「Sarashina」のAPIを利用できる「Sarashinaサービス」の無償ベータを提供しはじめました。\nhttps://www.sbintuitions.co.jp/news/press/20261013_01/\nというわけで、標準の対話モデル sarash"
-    },
-    {
-      "title": "FFRI × NFLabs. Cybersecurity Challenge 2026 ゆるWriteup",
-      "url": "https://zenn.dev/juck28/articles/74c43f18838188",
-      "author": "JUCK",
-      "published": "Thu, 15 Oct 2026 07:47:43 GMT",
-      "summary": "JUCKです。\nFFRI × NFLabs. Cybersecurity Challenge 2026という学生向けCTFに参加し2100pt/26thでした。\n\nここでは\n\nCopy(pentest)\nThe Hidden Layer(pentest)\nUnearthed(pentest)\ndo_you_know_buf?(BinaryExploitation)\nView Source(Web Exploitation)\nSmile(Web Exploitation)\nkn"
-    },
-    {
-      "title": "AIを使えばドキュメント整備はいらない？いやいや、今こそ人間が動くときだ",
-      "url": "https://zenn.dev/atamaplus/articles/2c9538a721c613",
-      "author": "yuki nomura",
-      "published": "Thu, 15 Oct 2026 06:00:23 GMT",
-      "summary": "こんにちは、atama plusでエンジニアをしているyuki_nomuraです。\n最近はAIに社内の情報を探してもらう場面も増えてきたのではないでしょうか。\nそれなら、ドキュメントの整理や見直しもAIに任せて、みんな幸せになりそうです。\nでも、ドキュメントの内容が今も正しいかどうかは、誰がどうやって確認すればいいでしょう？\n…そうです、この記事で私が主張したいことは、AIを使うようになっても、ドキュメントを人間が見直す仕事は残るということです。\n嬉しいですね、まだ仕事があり"
     },
     {
       "title": "OpenTelemetryでStep Functions越しにtraceparentを引き回し、複数Lambdaを一つのトレースにつなぐ",
@@ -994,6 +1007,13 @@
       "author": "tya-guin",
       "published": "Thu, 15 Oct 2026 03:10:05 GMT",
       "summary": "日本の公的統計を横断的に検索できるポータルサイトが、e-Stat（政府統計の総合窓口）である。e-Statでは、統計表をWebページで閲覧するだけでなく、API（Application Programming Interface、他のプログラムから機能を呼び出すための窓口）を通じて数値データを直接取得できる。\nこの記事は、Rで公的統計データを扱いたい人のうち、e-Stat APIとRパッケージjpstatをこれから使う人に向けて書いたものである。APIキーの取得から、統計表の"
+    },
+    {
+      "title": "【LocalLLM】Claude Codeの代わりになる？精度・同時人数・費用を検証",
+      "url": "https://zenn.dev/solvio/articles/6d374a9224327a",
+      "author": "okawa2929",
+      "published": "Thu, 15 Oct 2026 02:56:38 GMT",
+      "summary": "はじめに\n今や、Claude Codeは開発の現場に欠かせないツールになりつつあります。\n一方で、「社内のコードや資料を社外のサービスに送れない」「利用者が増えたときの費用が読めない」という理由で踏み切れずにいる方も多いと感じています。\nそうした組織でよく挙がるのが、公開されているAIモデルを社内のGPUサーバーで動かすLocalLLMという案ではないでしょうか。\nそこで今回はデータセンター向けのGPUであるNVIDIA B200を1枚借りて、業務で使う前提で次の3点を検証し"
     },
     {
       "title": "Akinatorで始めるAgentic RL ー タスク設計と初期検証  ー",
@@ -1031,20 +1051,6 @@
       "summary": "本日 2026年10月14日、Gemini 4 Argon が公開されました。\nこの記事では、Gemini 3.8 Flash と並べて日本語を書かせ、その能力を検証しています。\nAIの日本語を推敲するスキル「yomiyasu」を開発している知見をもとにしつつ、よく見られるような「点数でモデルを順位づけるベンチマーク形式」ではなく、推敲を任せたときにそれぞれのモデルが何を変えて何を残したか を、原文と出力を並べて見た報告となっております。\n\n TL;DR\n\n指示書を渡さずに一"
     },
     {
-      "title": "【備忘録】CSSのstickyで作る、せり上がりながら背景が見える演出",
-      "url": "https://zenn.dev/crayfisher_zari/articles/75619d5860f885",
-      "author": "にしはら",
-      "published": "Wed, 14 Oct 2026 05:59:58 GMT",
-      "summary": "時々作っては作り方を忘れるので備忘録も兼ねて記事にします。正式名称を知らないのですが、スクロールしていくと前景のコンテンツがカーテンみたいにせり上がって背景が見えてくる演出のやつです。\n▼こういうやつ\n\n\n position: stickyを使うメリット\nposition: fixedで背景に固定するのもいいですが、全体のレイアウトに影響があり関係ない要素まで副作用に巻き込まれるおそれがあります。position: stickyを使うとこの演出前後のみに影響を抑えられるのでコ"
-    },
-    {
-      "title": "開発しながら同じPCでローカルLLMを動かしてみた話",
-      "url": "https://zenn.dev/sumasate_tec/articles/test-local-llm",
-      "author": "スマサテ株式会社",
-      "published": "Wed, 14 Oct 2026 01:31:20 GMT",
-      "summary": "はじめに\nスマサテでWebアプリケーション開発を担当している上田です。\n普段の開発では Claude Code を使っていますが、便利な反面使っていると気になってくるのが使用量です。調査で大量のファイルを読ませたり、同じ作業を何度もやり直させたりすると、それなりに消費します。\nそんなときに知ったのが MiniCPM5 という軽量なモデルです。2B クラスと小さく、手元のPCで動かすことを前提にコーディングエージェントやツール呼び出しにも使えると紹介されていました。\n手元のPC"
-    },
-    {
       "title": "『現場で役立つシステム設計の原則』を読んで学んだこと、実践したこと、これからやりたいこと",
       "url": "https://zenn.dev/wwwave/articles/38b8284f96bd9e",
       "author": "塚本",
@@ -1071,24 +1077,15 @@
       "author": "mattn",
       "published": "Sat, 10 Oct 2026 17:16:42 GMT",
       "summary": "はじめに\n2026 年 9 月 30 日、SQLite のソースツリーに ext/vec1/ というディレクトリが追加されました。コミットしたのは FTS5 などでおなじみの Dan Kennedy 氏。コミットメッセージはたった 1 行です。\nImport vec1 sources into directory ext/vec1/ of this project.\nこれまで別の場所で開発されていた vec1 が、まるっと SQLite 本体のリポジトリに取り込まれました。本"
-    },
-    {
-      "title": "WAF でブロックする前に確かめていること",
-      "url": "https://zenn.dev/azunyan/articles/7a105969d7d16c",
-      "author": "えみり〜",
-      "published": "Sat, 10 Oct 2026 03:17:20 GMT",
-      "summary": "🧱 はじめに\nWAF の運用で、既知の攻撃を止めるルールをすり抜けてくる迷惑なアクセスや、攻撃ばかりを送ってくるアクセスを調べ、その送信元をブロックしています。\nこの記事では、そのときに気をつけていることと、前提になる基礎知識をまとめます。ポイントは次の 3 つです。\n\n止める前に、巻き添えになる正規の利用者がいないかを確かめる\n国や一般的なブラウザの JA4 のように広く当たる条件は、自動化や攻撃を示す条件と組み合わせる\n決め手がなければ止めずに保留し、その判断も記録に残す"
     }
   ],
   "common_terms": [
-    "agent",
     "code",
-    "rea",
     "claude",
-    "llm",
     "mcp",
-    "step",
-    "import"
+    "llm",
+    "rea",
+    "directory"
   ],
   "ai_analysis": {
     "enabled": true,

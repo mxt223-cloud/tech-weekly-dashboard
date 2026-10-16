@@ -1,6 +1,6 @@
-# Tech Daily — 2026-10-16
+# Tech Daily — 2026-10-17
 
-生成日時: 2026-10-16T08:46:38.840618+09:00  
+生成日時: 2026-10-17T08:47:03.392463+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,9 +9,9 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** REAは、ネイティブバイナリ、アプリ、ランタイム動作などをエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）ツールです。ソースコードがないアプリの調査、仕組みの解説、証拠の提示、プロジェクトへの機能実装支援などをローカル環境で実行できます。
 
 - 言語: TypeScript
-- 今週のスター: 214837
+- 今週のスター: 239477
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -49,12 +49,51 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 未確認: 対応しているすべてのエージェントの詳細な内部動作仕様／サポートされるサードパーティ製逆アセンブラのすべてのライセンス検証メカニズムの詳細
 
 
-## 2. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
+## 2. [storytold/artcraft](https://github.com/storytold/artcraft)
+
+**概要:** ArtCraftは、アーティスト、デザイナー、映画制作のためのインタラクティブなAI画像および動画制作IDEです。2Dでの構成、3Dでのシーン配置、多彩なAIモデルの選択を組み合わせ、プロンプト入力を視覚的なクラフト作業へと変化させます。
+
+- 言語: Rust
+- 今週のスター: 22319
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- 3D空間内での背景、前景、プロップのレイヤー合成による奥行きのある構成（根拠: Show, Don't Tell: Advanced Crafting Features）
+
+- 画像を3Dメッシュオブジェクトへ変換し、正確な位置調整や回転、フレーミングが可能（根拠: Show, Don't Tell: Advanced Crafting Features）
+
+- テキストプロンプトからの画像生成および、描画・マスク・インペインティングを活用したキャンバス画像編集（根拠: Quick and Easy Prompting）
+
+
+### 利用例
+
+- 仮想の登場人物を一定の環境に配置し、同一の部屋で複数ショットを計画する（README明記／根拠: Show, Don't Tell: Advanced Crafting Features）
+
+- 3Dアセットキットを組み合わせて、カメラアングルやオブジェクト配置、奥行きを制御するシーンブロッキングを行う（README明記／根拠: Show, Don't Tell: Advanced Crafting Features）
+
+- 選択した動画モデルと生成コントロールを使用して画像をアニメーション化し、動画を作成する（README明記／根拠: Quick and Easy Prompting）
+
+
+### 最初に試すこと
+
+アプリケーションのダウンロードまたはソースからのビルドを行い、ArtCraftを起動して使い始める
+
+1. 公式サイトやGitHub ReleasesからWindowsおよびmacOS向けの安定版をダウンロードしてインストールするか、_docs/dev_setup.mdを参照してソースからビルドする
+
+
+成功の目安: ArtCraftが手元の環境で起動し、IDEインターフェースを利用できるようになること
+
+未確認: 具体的なインストールコマンドや実行コマンドがREADME内に記載されていないため、CLI上での操作手順は不明です。
+
+
+## 3. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
 
 **概要:** AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動移植するためのツールです。エミュレーションや別プロセスの実行を行わず、ネイティブ形式への変換やシステムライブラリの実装を提供します。
 
 - 言語: C++
-- 今週のスター: 28240
+- 今週のスター: 25174
 - ライセンス: GPL-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -86,53 +125,51 @@ Webコンバーターを使用してファイルを変換する
 未確認: 具体的なビルドコマンドやインストール手順のコードブロックはREADMEに含まれていないため不明
 
 
-## 3. [mattpocock/skills](https://github.com/mattpocock/skills)
+## 4. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
 
-**概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
+**概要:** diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。
 
-- 言語: Shell
-- 今週のスター: 12292
+- 言語: HTML
+- 今週のスター: 10237
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。（根拠: Installation (30-second setup)）
+- 独立したHTMLおよびSVGファイル形式でダイアグラムを描画する（根拠: README冒頭）
 
-- エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。（根拠: Why These Skills Exist）
+- 45種類のダイアグラムタイプをサポートする（根拠: README冒頭）
 
-- コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。（根拠: Engineering）
+- npx skills add cathrynlavery/diagram-design を使ってインストールできる（根拠: Install）
 
 
 ### 利用例
 
-- 実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。（README明記／根拠: Why These Skills Exist）
+- アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する（README明記／根拠: README冒頭）
 
-- テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。（README明記／根拠: Why These Skills Exist）
+- 影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する（README明記／根拠: README冒頭）
 
-- プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。（README明記／根拠: Why These Skills Exist）
+- 401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する（README明記／根拠: README冒頭）
 
 
 ### 最初に試すこと
 
-リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする
+diagram-designスキルをインストールして使い始める
 
-1. エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）
-
-2. エージェント内で /setup-matt-pocock-skills を実行する
+1. npx skills add cathrynlavery/diagram-design を実行してインストールする
 
 
-成功の目安: イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること
+成功の目安: エージェントスキルホストにdiagram-designがインストールされること
 
-未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
+未確認: Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明
 
 
-## 4. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
+## 5. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
 **概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 5123
+- 今週のスター: 5318
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -172,53 +209,55 @@ Webコンバーターを使用してファイルを変換する
 
 
 
-## 5. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
+## 6. [mattpocock/skills](https://github.com/mattpocock/skills)
 
-**概要:** diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。
+**概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
 
-- 言語: HTML
-- 今週のスター: 10706
+- 言語: Shell
+- 今週のスター: 12147
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- 独立したHTMLおよびSVGファイル形式でダイアグラムを描画する（根拠: README冒頭）
+- Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。（根拠: Installation (30-second setup)）
 
-- 45種類のダイアグラムタイプをサポートする（根拠: README冒頭）
+- エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。（根拠: Why These Skills Exist）
 
-- npx skills add cathrynlavery/diagram-design を使ってインストールできる（根拠: Install）
+- コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。（根拠: Engineering）
 
 
 ### 利用例
 
-- アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する（README明記／根拠: README冒頭）
+- 実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。（README明記／根拠: Why These Skills Exist）
 
-- 影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する（README明記／根拠: README冒頭）
+- テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。（README明記／根拠: Why These Skills Exist）
 
-- 401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する（README明記／根拠: README冒頭）
+- プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。（README明記／根拠: Why These Skills Exist）
 
 
 ### 最初に試すこと
 
-diagram-designスキルをインストールして使い始める
+リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする
 
-1. npx skills add cathrynlavery/diagram-design を実行してインストールする
+1. エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）
 
-
-成功の目安: エージェントスキルホストにdiagram-designがインストールされること
-
-未確認: Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明
+2. エージェント内で /setup-matt-pocock-skills を実行する
 
 
-## 6. [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)
+成功の目安: イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること
+
+未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
+
+
+## 7. [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)
 
 **概要:** Ghidraは、アメリカ国家安全保障局（NSA）が開発したソフトウェアリバースエンジニアリング（SRE）フレームワークです。コンパイルされたコードの解析を行うための逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの高度なツールを備えています。
 
 - 言語: Java
-- 今週のスター: 5613
+- 今週のスター: 6614
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -254,14 +293,53 @@ diagram-designスキルをインストールして使い始める
 未確認: 具体的な対応プロセッサ命令セットや実行ファイルフォーマットの全リスト／セキュリティアドバイザリの詳細な脆弱性内容
 
 
-## 7. [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context)
+## 8. [mksglu/context-mode](https://github.com/mksglu/context-mode)
+
+**概要:** Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。
+
+- 言語: TypeScript
+- 今週のスター: 4038
+- ライセンス: NOASSERTION
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する（根拠: How Context Mode Solves It）
+
+- SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする（根拠: How Context Mode Solves It）
+
+- LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える（根拠: How Context Mode Solves It）
+
+
+### 利用例
+
+- PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する（README明記／根拠: The Problem）
+
+- コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる（README明記／根拠: How Context Mode Solves It）
+
+- sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する（README明記／根拠: Security）
+
+
+### 最初に試すこと
+
+セキュリティ権限設定を追加して権限ルールを適用する
+
+1. プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する
+
+
+成功の目安: 設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること
+
+未確認: 詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順／17のプラットフォームすべての個別設定方法
+
+
+## 9. [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context)
 
 **概要:** billion-contextは、小さなコンテキストウィンドウでも動作し、トークン消費量を削減して長時間のセッションを可能にするコンテキスト圧縮プラグインです。
 
 - 言語: TypeScript
-- 今週のスター: 628
+- 今週のスター: 659
 - ライセンス: NOASSERTION
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -289,149 +367,67 @@ billion-contextをインストールする
 未確認: プラグインの詳細な設定方法や対応している全てのクライアントの詳細なリスト／プロキシの動作に関する詳細な内部仕様
 
 
-## 8. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+## 10. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
 
-**概要:** earthtojake/text-to-cad は、AIエージェントにCADの機能や3Dモデル生成、製造性チェック、エンジニアリング図面の作成機能などを追加するためのプラグインおよびスキル集です。
+**概要:** anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。
 
 - 言語: Python
-- 今週のスター: 1994
-- ライセンス: MIT
+- 今週のスター: 2217
+- ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- STEP、GLB、STL、3MFファイル形式での3Dモデル生成（根拠: text-to-cad）
+- Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能（根拠: Installation）
 
-- 製造性のチェック（DfAMやDFMレビュー）やエンジニアリング図面の生成（根拠: text-to-cad）
+- プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能（根拠: Plugin Structure）
 
-- 3Dプリンティング、板金、CNC加工サービスへの接続（根拠: text-to-cad）
-
-
-### 利用例
-
-- プレーンテキストや画像のリクエストからCADモデルを作成・編集する（README明記／根拠: 🧰 Skills）
-
-- ネジや軸受け、モーターなどの既製STEPパーツを検索する（README明記／根拠: 🧰 Skills）
-
-- パーツから寸法付きのエンジニアリング図面をPDFとして作成する（README明記／根拠: 🧰 Skills）
-
-
-### 最初に試すこと
-
-エージェントにtext-to-cadをインストールする
-
-1. エージェントに次のメッセージを送信する: Install text-to-cad from https://github.com/earthtojake/text-to-cad
-
-
-成功の目安: エージェントがtext-to-cadのインストールを実行すること
-
-未確認: エージェントごとの個別の詳細な内部動作や最新のAPI仕様の完全な網羅
-
-
-## 9. [twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill)
-
-**概要:** SwiftUI-Agent-Skillは、Claude CodeやCodexなどのAIコーディングアシスタントが、よりシンプルでモダンなSwiftUIコードを書くためのスキルを提供するツールです。
-
-- 言語: 不明
-- 今週のスター: 930
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- APIの使用方法、デザイン、パフォーマンス、アクセシビリティに関するガイダンスを提供する（根拠: README冒頭）
-
-- ナビゲーション、レイアウト、アニメーション、状態管理、VoiceOver、非推奨APIなどに対応する（根拠: README冒頭）
-
-- Claude CodeやCodex、Gemini、CursorなどのAIツールにnpxコマンドやプラグイン等でインストールできる（根拠: Installing SwiftUI Pro）
+- マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能（根拠: Skill-bundle plugins）
 
 
 ### 利用例
 
-- AIコーディングアシスタントを使ってモダンで効率的なSwiftUIコードを作成する（README明記／根拠: README冒頭）
+- Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する（README明記／根拠: Claude Code Plugins Directory）
 
-- プロジェクト内の非推奨APIの使用箇所をチェックする（README明記／根拠: Using SwiftUI Pro）
-
-- プロジェクトのパフォーマンス問題やアクセシビリティを検証する（README明記／根拠: Using SwiftUI Pro）
+- 独自のプラグインを作成して公開・登録申請を行う（README明記／根拠: Contributing）
 
 
 ### 最初に試すこと
 
-npxを使用してSwiftUI Proスキルをインストールする
+Claude Code上でプラグインをインストールする
 
-1. npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro
-
-
-成功の目安: エラーなくインストールが完了し、対象のエージェントやプロジェクトでスキルが選択・利用可能になること
-
-未確認: 詳細な内部実装やサポートされているすべてのチェック項目の完全なリスト
+1. Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする
 
 
-## 10. [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym)
+成功の目安: 指定したプラグインがClaude Codeに正常にインストールされること
 
-**概要:** openGym は、パスキー認証に対応し、自身のサーバーや端末でデータを管理できるセルフホスト型のジムおよび体重管理トラッカーです。ルーティンの計画やワークアウトの記録、筋肉の疲労度・回復状況の確認が行えます。
-
-- 言語: JavaScript
-- 今週のスター: 5132
-- ライセンス: AGPL-3.0
-- AI分析状態: ok
-
-### できること
-
-- 5,600種類以上の演目から曜日ごとのルーティンを計画したり、ボディマップや機器で絞り込みを行える。（根拠: Features）
-
-- パスキー（Face ID、Touch ID、指紋認証）を利用した安全なログインや、デバイス間のデータ同期ができる。（根拠: Features）
-
-- FitNotes、Strong、Hevyからのインポートや、全データのJSON形式でのエクスポートが可能。（根拠: Features）
-
-
-### 利用例
-
-- 自身のサーバーにDockerを用いて環境を構築し、外部のクラウドサービスに依存せずプライベートにワークアウトデータを管理したい。（README明記／根拠: Why openGym）
-
-- FitNotesなどの他のフィットネスアプリからこれまでの履歴を移行し、openGym上で一元管理したい。（README明記／根拠: Features）
-
-- スマートフォンの生体認証を使って手軽かつセキュアにログインし、複数のデバイス間で記録を同期させたい。（README明記／根拠: Features）
-
-
-### 最初に試すこと
-
-Docker Composeを使用してローカル環境でアプリケーションを起動し、プロファイルを作成する
-
-1. git clone https://github.com/DuarteSantos8/openGym
-
-2. cd openGym
-
-3. cp .env.example .env
-
-4. docker compose pull
-
-5. docker compose up -d
-
-
-成功の目安: ブラウザで http://localhost:8080 にアクセスし、Create profileをタップして利用を開始できること
-
-
+未確認: 具体的な個別のプラグインが何を提供するのかという機能詳細
 
 
 
 ## Zenn
 
+- [HTTP 402は29年「予約済み」のまま — x402をNext.jsで動かす](https://zenn.dev/suzuki_tech/articles/x402-01-http-402-nextjs) — SuzukiTech
+
+- [[フィジカルAI]LLM によるテレオペデータで VLA を学習して Strands Robots に組み込んでみた](https://zenn.dev/aws_japan/articles/strands-robots-llm-teleop) — Hikotty / Hikoto Iseda
+
+- [技術書を年に数冊しか買わない自分に、O'Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）](https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm) — m.okamura
+
+- [ベクトルDBを使わない「階層ナビゲーション型RAG」を作って、ベクトルDB版RAGと比較してみた](https://zenn.dev/aiforall/articles/8e1803396534de) — nishina
+
+- [有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか](https://zenn.dev/hand_dot/articles/ecb391d4322330) — Kyohei Fukuda
+
+- [2026年に自作Swingコンポーネントを紹介する](https://zenn.dev/desktopgame/articles/372d43b8e0777b) — desktopgame
+
 - [ICFPC2026 参加記](https://zenn.dev/algoartis/articles/b5dd3c401d5dd4) — がんぽん
 
-- [【Salesforce】Agent Script入門｜Agentforceの従業員エージェントを作ってみた](https://zenn.dev/actbe_tech/articles/57561ffebaf9ed) — 福西
-
-- [xcrun xcodeproj で .xcodeproj をコマンドラインから編集する（Xcode 27.2）](https://zenn.dev/d_date/articles/xcrun-xcodeproj-xcode27-2) — Daiki Matsudate
-
 - [国産モデル sarashina3-mini は日本語の推敲で何を変えるのか？](https://zenn.dev/algoartis/articles/03ca12150ccbee) — 大賀愛一郎（oga_aiichiro）
-
-- [FFRI × NFLabs. Cybersecurity Challenge 2026 ゆるWriteup](https://zenn.dev/juck28/articles/74c43f18838188) — JUCK
-
-- [AIを使えばドキュメント整備はいらない？いやいや、今こそ人間が動くときだ](https://zenn.dev/atamaplus/articles/2c9538a721c613) — yuki nomura
 
 - [OpenTelemetryでStep Functions越しにtraceparentを引き回し、複数Lambdaを一つのトレースにつなぐ](https://zenn.dev/boy_techblog/articles/connecting-trace-serverless) — watariryo
 
 - [jpstatで始めるe-Stat API入門](https://zenn.dev/tyasuakwa/articles/3f6a1394323275) — tya-guin
+
+- [【LocalLLM】Claude Codeの代わりになる？精度・同時人数・費用を検証](https://zenn.dev/solvio/articles/6d374a9224327a) — okawa2929
 
 - [Akinatorで始めるAgentic RL ー タスク設計と初期検証  ー](https://zenn.dev/mkj/articles/8e1da67da67f98) — クリリン
 
@@ -443,10 +439,6 @@ Docker Composeを使用してローカル環境でアプリケーションを起
 
 - [Gemini 4 Argonの日本語性能を検証してみた](https://zenn.dev/algoartis/articles/19bb1705ea4b16) — 大賀愛一郎（oga_aiichiro）
 
-- [【備忘録】CSSのstickyで作る、せり上がりながら背景が見える演出](https://zenn.dev/crayfisher_zari/articles/75619d5860f885) — にしはら
-
-- [開発しながら同じPCでローカルLLMを動かしてみた話](https://zenn.dev/sumasate_tec/articles/test-local-llm) — スマサテ株式会社
-
 - [『現場で役立つシステム設計の原則』を読んで学んだこと、実践したこと、これからやりたいこと](https://zenn.dev/wwwave/articles/38b8284f96bd9e) — 塚本
 
 - [話題の逆解析 MCP「REA」を Claude Code に隔離してつないだ——静的解析の A/B 試験と安全設計](https://zenn.dev/keigoly/articles/8738d8d241b5a1) — keigoly
@@ -454,8 +446,6 @@ Docker Composeを使用してローカル環境でアプリケーションを起
 - [良いテストを書き、良いテストを見分ける ─『単体テストの考え方/使い方』のエッセンス](https://zenn.dev/nexta_/articles/unit-testing-principles-essence) — tetsu.k
 
 - [SQLite 本体にベクトル検索拡張 vec1 がやってきた](https://zenn.dev/mattn/articles/6e9996319ac099) — mattn
-
-- [WAF でブロックする前に確かめていること](https://zenn.dev/azunyan/articles/7a105969d7d16c) — えみり〜
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

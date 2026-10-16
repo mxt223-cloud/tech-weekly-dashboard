@@ -1,0 +1,58 @@
+{
+  "summary_ja": "ArtCraftは、アーティスト、デザイナー、映画制作のためのインタラクティブなAI画像および動画制作IDEです。2Dでの構成、3Dでのシーン配置、多彩なAIモデルの選択を組み合わせ、プロンプト入力を視覚的なクラフト作業へと変化させます。",
+  "capabilities": [
+    {
+      "text": "3D空間内での背景、前景、プロップのレイヤー合成による奥行きのある構成",
+      "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+    },
+    {
+      "text": "画像を3Dメッシュオブジェクトへ変換し、正確な位置調整や回転、フレーミングが可能",
+      "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+    },
+    {
+      "text": "テキストプロンプトからの画像生成および、描画・マスク・インペインティングを活用したキャンバス画像編集",
+      "evidence_section": "Quick and Easy Prompting"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "仮想の登場人物を一定の環境に配置し、同一の部屋で複数ショットを計画する",
+      "basis": "README明記",
+      "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+    },
+    {
+      "text": "3Dアセットキットを組み合わせて、カメラアングルやオブジェクト配置、奥行きを制御するシーンブロッキングを行う",
+      "basis": "README明記",
+      "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+    },
+    {
+      "text": "選択した動画モデルと生成コントロールを使用して画像をアニメーション化し、動画を作成する",
+      "basis": "README明記",
+      "evidence_section": "Quick and Easy Prompting"
+    }
+  ],
+  "first_trial": {
+    "goal": "アプリケーションのダウンロードまたはソースからのビルドを行い、ArtCraftを起動して使い始める",
+    "steps": [
+      "公式サイトやGitHub ReleasesからWindowsおよびmacOS向けの安定版をダウンロードしてインストールするか、_docs/dev_setup.mdを参照してソースからビルドする"
+    ],
+    "success_criteria": "ArtCraftが手元の環境で起動し、IDEインターフェースを利用できるようになること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Show, Don't Tell: Advanced Crafting Features",
+    "Quick and Easy Prompting",
+    "Models and Providers Supported within ArtCraft",
+    "Downloads",
+    "Documentation",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや実行コマンドがREADME内に記載されていないため、CLI上での操作手順は不明です。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "26fe9590761d4bf763efd25b9daf3918c8dd12dc",
+  "generated_at": "2026-10-17T08:46:59.287067+09:00"
+}
