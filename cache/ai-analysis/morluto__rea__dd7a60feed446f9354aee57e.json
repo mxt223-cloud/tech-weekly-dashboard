@@ -1,0 +1,60 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリ、実行時の振る舞いなどをAIエージェントと連携してリバースエンジニアリングするためのModel Context Protocol（MCP）ツールです。ソースコードがない状態でもアプリを調査し、仕組みを解析して証拠とともに提示します。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで取得できます。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、擬似コードやアセンブリ、文字列などを取得できます。",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARを対象に、モジュール、インポート、Electron境界などの情報をJSON形式で取得できます。",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリに見つけた機能の仕組みを調査し、自分のプロジェクト用に同様の機能を構築する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "抽出したJavaScript/Electronアプリのファイルパスを指定して、モジュールやインポート、Electron境界の情報を確認する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "対応するバイナリやアプリケーションをローカル環境で安全に静的・動的解析し、ソフトウェアの相互運用性や構造を調査する。",
+      "basis": "提案",
+      "evidence_section": "Disclaimer"
+    }
+  ],
+  "first_trial": {
+    "goal": "REAのエージェント設定と最小限の動作確認を行うこと",
+    "steps": [
+      "npx rea-agents setup"
+    ],
+    "success_criteria": "エージェントを選択し、変更内容を確認して承認することで、REAのMCPサーバとワークフロー指示が登録されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "How REA works",
+    "What you can analyze",
+    "Showcases",
+    "FAQ",
+    "Documentation",
+    "Disclaimer"
+  ],
+  "unconfirmed": [
+    "サポートされている全ての外部解析ツールの詳細なライセンス要件",
+    "特定の環境における例外的なエラーハンドリングの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "31238bae529b49f6068361e6efa3c120bcc28d80",
+  "generated_at": "2026-10-18T08:19:38.122666+09:00"
+}
