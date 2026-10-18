@@ -1,0 +1,58 @@
+{
+  "summary_ja": "AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動で移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。",
+  "capabilities": [
+    {
+      "text": "PS5の実行ファイルをLinuxおよびWindows向けに自動移植するリリンカーを含みます。",
+      "evidence_section": "About"
+    },
+    {
+      "text": "macOS（Appleシリコンを含む）でリリンカーのみのビルドを実行可能です。",
+      "evidence_section": "About"
+    },
+    {
+      "text": "SDLマッピングされたゲームコントローラー（アナログスティックやトリガーを含む）をサポートし、キーボードとマウスは設定ファイルで構成可能です。",
+      "evidence_section": "Input mapping"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "PS5の実行ファイルをLinuxやWindowsのネイティブ形式に変換する。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "デバイス上でファイルを処理できるWebコンバーターを使用する。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "ゲームコントローラーやキーボード・マウスの入力マッピングを設定して操作する。",
+      "basis": "README明記",
+      "evidence_section": "Input mapping"
+    }
+  ],
+  "first_trial": {
+    "goal": "Webコンバーターを利用してファイルを処理する",
+    "steps": [
+      "Webコンバーターのページにアクセスする",
+      "ファイルがデバイス内に留まることを確認して変換作業を行う"
+    ],
+    "success_criteria": "ブラウザ上でコンバーター機能を利用できること"
+  },
+  "evidence_sections": [
+    "About",
+    "Status",
+    "Compatibility",
+    "Input mapping",
+    "Disclaimer",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なコマンドライン引数やインストールコマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "5777022fb41aa3fea1a973924110ac4e86a5aa01",
+  "generated_at": "2026-10-19T08:33:25.842826+09:00"
+}

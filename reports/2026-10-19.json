@@ -1,0 +1,1086 @@
+{
+  "generated_at": "2026-10-19T08:33:38.847463+09:00",
+  "week": "2026-10-19",
+  "title": "Tech Daily",
+  "github": [
+    {
+      "rank": 1,
+      "full_name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars_total": 321785,
+      "forks_total": 81544,
+      "stars_period": 239923,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-18T23:33:07Z",
+        "pushed_at": "2026-10-18T23:22:49Z",
+        "open_issues": 1198,
+        "archived": false,
+        "size_kb": 86148,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "decompiler",
+          "developer-tools",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "rea",
+          "reverse-engineering",
+          "static-analysis",
+          "touhou"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "31238bae529b49f6068361e6efa3c120bcc28d80",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 22542,
+        "used_chars": 22097
+      },
+      "analysis": {
+        "summary_ja": "REAは、ネイティブバイナリ、アプリ、実行時の振る舞いなどをAIエージェントと連携してリバースエンジニアリングするためのModel Context Protocol（MCP）ツールです。ソースコードがない状態でもアプリを調査し、仕組みを解析して証拠とともに提示します。",
+        "capabilities": [
+          {
+            "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで取得できます。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、擬似コードやアセンブリ、文字列などを取得できます。",
+            "evidence_section": "What you can analyze"
+          },
+          {
+            "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARを対象に、モジュール、インポート、Electron境界などの情報をJSON形式で取得できます。",
+            "evidence_section": "Quick start"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "アプリに見つけた機能の仕組みを調査し、自分のプロジェクト用に同様の機能を構築する。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "抽出したJavaScript/Electronアプリのファイルパスを指定して、モジュールやインポート、Electron境界の情報を確認する。",
+            "basis": "README明記",
+            "evidence_section": "Quick start"
+          },
+          {
+            "text": "対応するバイナリやアプリケーションをローカル環境で安全に静的・動的解析し、ソフトウェアの相互運用性や構造を調査する。",
+            "basis": "提案",
+            "evidence_section": "Disclaimer"
+          }
+        ],
+        "first_trial": {
+          "goal": "REAのエージェント設定と最小限の動作確認を行うこと",
+          "steps": [
+            "npx rea-agents setup"
+          ],
+          "success_criteria": "エージェントを選択し、変更内容を確認して承認することで、REAのMCPサーバとワークフロー指示が登録されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick start",
+          "How REA works",
+          "What you can analyze",
+          "Showcases",
+          "FAQ",
+          "Documentation",
+          "Disclaimer"
+        ],
+        "unconfirmed": [
+          "サポートされている全ての外部解析ツールの詳細なライセンス要件",
+          "特定の環境における例外的なエラーハンドリングの詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "31238bae529b49f6068361e6efa3c120bcc28d80",
+        "generated_at": "2026-10-18T08:19:38.122666+09:00"
+      }
+    },
+    {
+      "rank": 2,
+      "full_name": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars_total": 32689,
+      "forks_total": 5182,
+      "stars_period": 18479,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-18T23:32:10Z",
+        "pushed_at": "2026-10-18T19:26:55Z",
+        "open_issues": 450,
+        "archived": false,
+        "size_kb": 1374630,
+        "topics": [
+          "3d-graphics",
+          "ai",
+          "aivideo",
+          "filmmaking",
+          "imagegeneration"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "26fe9590761d4bf763efd25b9daf3918c8dd12dc",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14842,
+        "used_chars": 12081
+      },
+      "analysis": {
+        "summary_ja": "ArtCraftは、アーティスト、デザイナー、映画制作のためのインタラクティブなAI画像および動画制作IDEです。2Dでの構成、3Dでのシーン配置、多彩なAIモデルの選択を組み合わせ、プロンプト入力を視覚的なクラフト作業へと変化させます。",
+        "capabilities": [
+          {
+            "text": "3D空間内での背景、前景、プロップのレイヤー合成による奥行きのある構成",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "画像を3Dメッシュオブジェクトへ変換し、正確な位置調整や回転、フレーミングが可能",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "テキストプロンプトからの画像生成および、描画・マスク・インペインティングを活用したキャンバス画像編集",
+            "evidence_section": "Quick and Easy Prompting"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "仮想の登場人物を一定の環境に配置し、同一の部屋で複数ショットを計画する",
+            "basis": "README明記",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "3Dアセットキットを組み合わせて、カメラアングルやオブジェクト配置、奥行きを制御するシーンブロッキングを行う",
+            "basis": "README明記",
+            "evidence_section": "Show, Don't Tell: Advanced Crafting Features"
+          },
+          {
+            "text": "選択した動画モデルと生成コントロールを使用して画像をアニメーション化し、動画を作成する",
+            "basis": "README明記",
+            "evidence_section": "Quick and Easy Prompting"
+          }
+        ],
+        "first_trial": {
+          "goal": "アプリケーションのダウンロードまたはソースからのビルドを行い、ArtCraftを起動して使い始める",
+          "steps": [
+            "公式サイトやGitHub ReleasesからWindowsおよびmacOS向けの安定版をダウンロードしてインストールするか、_docs/dev_setup.mdを参照してソースからビルドする"
+          ],
+          "success_criteria": "ArtCraftが手元の環境で起動し、IDEインターフェースを利用できるようになること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Show, Don't Tell: Advanced Crafting Features",
+          "Quick and Easy Prompting",
+          "Models and Providers Supported within ArtCraft",
+          "Downloads",
+          "Documentation",
+          "License"
+        ],
+        "unconfirmed": [
+          "具体的なインストールコマンドや実行コマンドがREADME内に記載されていないため、CLI上での操作手順は不明です。"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "26fe9590761d4bf763efd25b9daf3918c8dd12dc",
+        "generated_at": "2026-10-17T08:46:59.287067+09:00"
+      }
+    },
+    {
+      "rank": 3,
+      "full_name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars_total": 43169,
+      "forks_total": 3917,
+      "stars_period": 16250,
+      "api": {
+        "default_branch": "main",
+        "license": "GPL-2.0",
+        "updated_at": "2026-10-18T23:32:43Z",
+        "pushed_at": "2026-10-18T23:32:37Z",
+        "open_issues": 967,
+        "archived": false,
+        "size_kb": 48913,
+        "topics": [
+          "anyps5",
+          "dynamic-library",
+          "game-porting",
+          "ps5",
+          "ps5-tools",
+          "spir-v",
+          "vulkan"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "5777022fb41aa3fea1a973924110ac4e86a5aa01",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 3039,
+        "used_chars": 3038
+      },
+      "analysis": {
+        "summary_ja": "AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動で移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。",
+        "capabilities": [
+          {
+            "text": "PS5の実行ファイルをLinuxおよびWindows向けに自動移植するリリンカーを含みます。",
+            "evidence_section": "About"
+          },
+          {
+            "text": "macOS（Appleシリコンを含む）でリリンカーのみのビルドを実行可能です。",
+            "evidence_section": "About"
+          },
+          {
+            "text": "SDLマッピングされたゲームコントローラー（アナログスティックやトリガーを含む）をサポートし、キーボードとマウスは設定ファイルで構成可能です。",
+            "evidence_section": "Input mapping"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "PS5の実行ファイルをLinuxやWindowsのネイティブ形式に変換する。",
+            "basis": "README明記",
+            "evidence_section": "About"
+          },
+          {
+            "text": "デバイス上でファイルを処理できるWebコンバーターを使用する。",
+            "basis": "README明記",
+            "evidence_section": "About"
+          },
+          {
+            "text": "ゲームコントローラーやキーボード・マウスの入力マッピングを設定して操作する。",
+            "basis": "README明記",
+            "evidence_section": "Input mapping"
+          }
+        ],
+        "first_trial": {
+          "goal": "Webコンバーターを利用してファイルを処理する",
+          "steps": [
+            "Webコンバーターのページにアクセスする",
+            "ファイルがデバイス内に留まることを確認して変換作業を行う"
+          ],
+          "success_criteria": "ブラウザ上でコンバーター機能を利用できること"
+        },
+        "evidence_sections": [
+          "About",
+          "Status",
+          "Compatibility",
+          "Input mapping",
+          "Disclaimer",
+          "License"
+        ],
+        "unconfirmed": [
+          "具体的なコマンドライン引数やインストールコマンド"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "5777022fb41aa3fea1a973924110ac4e86a5aa01",
+        "generated_at": "2026-10-19T08:33:25.842826+09:00"
+      }
+    },
+    {
+      "rank": 4,
+      "full_name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars_total": 42653,
+      "forks_total": 4528,
+      "stars_period": 3581,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-18T23:32:53Z",
+        "pushed_at": "2026-10-18T17:04:56Z",
+        "open_issues": 1198,
+        "archived": false,
+        "size_kb": 17357,
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 3807,
+        "used_chars": 3806
+      },
+      "analysis": {
+        "summary_ja": "anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。",
+        "capabilities": [
+          {
+            "text": "Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能",
+            "evidence_section": "Installation"
+          },
+          {
+            "text": "プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能",
+            "evidence_section": "Plugin Structure"
+          },
+          {
+            "text": "マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能",
+            "evidence_section": "Skill-bundle plugins"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する",
+            "basis": "README明記",
+            "evidence_section": "Claude Code Plugins Directory"
+          },
+          {
+            "text": "独自のプラグインを作成して公開・登録申請を行う",
+            "basis": "README明記",
+            "evidence_section": "Contributing"
+          }
+        ],
+        "first_trial": {
+          "goal": "Claude Code上でプラグインをインストールする",
+          "steps": [
+            "Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする"
+          ],
+          "success_criteria": "指定したプラグインがClaude Codeに正常にインストールされること"
+        },
+        "evidence_sections": [
+          "Claude Code Plugins Directory",
+          "Installation",
+          "Contributing",
+          "Plugin Structure",
+          "Plugin names are immutable",
+          "Skill-bundle plugins"
+        ],
+        "unconfirmed": [
+          "具体的な個別のプラグインが何を提供するのかという機能詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
+        "generated_at": "2026-08-30T08:32:12.325450+09:00"
+      }
+    },
+    {
+      "rank": 5,
+      "full_name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars_total": 30745,
+      "forks_total": 2276,
+      "stars_period": 4438,
+      "api": {
+        "default_branch": "main",
+        "license": "NOASSERTION",
+        "updated_at": "2026-10-18T23:28:01Z",
+        "pushed_at": "2026-10-18T23:30:25Z",
+        "open_issues": 356,
+        "archived": false,
+        "size_kb": 35839,
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b796169524473691594af24995d21ca94027f7c7",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 94434,
+        "used_chars": 5257
+      },
+      "analysis": {
+        "summary_ja": "Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。",
+        "capabilities": [
+          {
+            "text": "ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える",
+            "evidence_section": "How Context Mode Solves It"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する",
+            "basis": "README明記",
+            "evidence_section": "The Problem"
+          },
+          {
+            "text": "コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる",
+            "basis": "README明記",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する",
+            "basis": "README明記",
+            "evidence_section": "Security"
+          }
+        ],
+        "first_trial": {
+          "goal": "セキュリティ権限設定を追加して権限ルールを適用する",
+          "steps": [
+            "プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する"
+          ],
+          "success_criteria": "設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "The Problem",
+          "How Context Mode Solves It",
+          "Security"
+        ],
+        "unconfirmed": [
+          "詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順",
+          "17のプラットフォームすべての個別設定方法"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "b796169524473691594af24995d21ca94027f7c7",
+        "generated_at": "2026-09-11T08:21:13.273532+09:00"
+      }
+    },
+    {
+      "rank": 6,
+      "full_name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars_total": 57663,
+      "forks_total": 3688,
+      "stars_period": 8382,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-18T23:27:44Z",
+        "pushed_at": "2026-10-16T19:42:46Z",
+        "open_issues": 47,
+        "archived": false,
+        "size_kb": 37010,
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "data-visualization",
+          "diagrams",
+          "drawio",
+          "mermaid",
+          "svg"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 51655,
+        "used_chars": 4839
+      },
+      "analysis": {
+        "summary_ja": "diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。",
+        "capabilities": [
+          {
+            "text": "独立したHTMLおよびSVGファイル形式でダイアグラムを描画する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "45種類のダイアグラムタイプをサポートする",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "npx skills add cathrynlavery/diagram-design を使ってインストールできる",
+            "evidence_section": "Install"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "diagram-designスキルをインストールして使い始める",
+          "steps": [
+            "npx skills add cathrynlavery/diagram-design を実行してインストールする"
+          ],
+          "success_criteria": "エージェントスキルホストにdiagram-designがインストールされること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Install",
+          "Quickstart",
+          "About"
+        ],
+        "unconfirmed": [
+          "Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "974bba8513dba31a11581c6e111c7f7de26a3632",
+        "generated_at": "2026-10-16T08:46:29.731590+09:00"
+      }
+    },
+    {
+      "rank": 7,
+      "full_name": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars_total": 90872,
+      "forks_total": 10173,
+      "stars_period": 7608,
+      "api": {
+        "default_branch": "master",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-18T23:33:09Z",
+        "pushed_at": "2026-10-16T16:52:06Z",
+        "open_issues": 2106,
+        "archived": false,
+        "size_kb": 415543,
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 7205,
+        "used_chars": 7119
+      },
+      "analysis": {
+        "summary_ja": "Ghidraは、アメリカ国家安全保障局（NSA）が開発したソフトウェアリバースエンジニアリング（SRE）フレームワークです。コンパイルされたコードの解析を行うための逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの高度なツールを備えています。",
+        "capabilities": [
+          {
+            "text": "逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの機能",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "多様なプロセッサ命令セットや実行ファイルフォーマットのサポート",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ユーザーインタラクティブモードおよび自動化モードでの実行",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "複雑なSRE作業におけるスケーリングやチーム作業の問題解決",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "マルウェアのコード分析とネットワークやシステムの脆弱性理解のための洞察生成",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "JavaやPythonを使用した独自の拡張コンポーネントやスクリプトの開発",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "公式の事前ビルド版をインストールして起動する",
+          "steps": [
+            "JDK 25 64-bitをインストールする",
+            "Ghidraのリリースファイルをダウンロードして解凍する",
+            "./ghidraRun (Windowsの場合はghidraRun.bat)を実行して起動する"
+          ],
+          "success_criteria": "Ghidraが正常に起動すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Security Warning",
+          "Install",
+          "Build",
+          "Develop",
+          "Contribute"
+        ],
+        "unconfirmed": [
+          "具体的な対応プロセッサ命令セットや実行ファイルフォーマットの全リスト",
+          "セキュリティアドバイザリの詳細な脆弱性内容"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+        "generated_at": "2026-10-16T08:46:32.418395+09:00"
+      }
+    },
+    {
+      "rank": 8,
+      "full_name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars_total": 66710,
+      "forks_total": 6046,
+      "stars_period": 5639,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-18T23:32:41Z",
+        "pushed_at": "2026-10-18T23:33:16Z",
+        "open_issues": 365,
+        "archived": false,
+        "size_kb": 507844,
+        "topics": [
+          "ai",
+          "animation",
+          "ffmpeg",
+          "framework",
+          "gsap",
+          "html",
+          "mcp",
+          "puppeteer",
+          "rendering",
+          "typescript",
+          "video"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "4529ffdda7076e54a94d380009d3cd5be6cff30d",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 28880,
+        "used_chars": 26917
+      },
+      "analysis": {
+        "summary_ja": "HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。",
+        "capabilities": [
+          {
+            "text": "HTMLとCSS、シーク可能なアニメーションを使用して確定的なMP4動画を生成する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "GSAP、CSSアニメーション、Lottie、Three.js、Anime.js、WAAPIなどのアニメーションライブラリやランタイムに対応する",
+            "evidence_section": "How It Works"
+          },
+          {
+            "text": "CLIやAWS Lambdaを用いたローカルおよび分散レンダリングに対応する",
+            "evidence_section": "HyperFrames Stack"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "製品発表動画や機能紹介動画の作成",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          },
+          {
+            "text": "アニメーション付きコード差分、ナレーション、字幕を含むPRウォークスルーの作成",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          },
+          {
+            "text": "データビュジュアライゼーション、チャートレース、マップアニメーションの制作",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          }
+        ],
+        "first_trial": {
+          "goal": "ローカル環境で動画プロジェクトを初期化し、プレビューおよびレンダリングを実行する",
+          "steps": [
+            "npx hyperframes init my-video",
+            "cd my-video",
+            "npx hyperframes preview",
+            "npx hyperframes render"
+          ],
+          "success_criteria": "ブラウザでのライブリロードによるプレビュー確認と、MP4形式へのレンダリングが成功すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick Start",
+          "Skills",
+          "What You Can Build",
+          "Frame.md",
+          "How It Works",
+          "HyperFrames Stack",
+          "Catalog",
+          "Why HyperFrames?",
+          "HyperFrames vs Remotion",
+          "Documentation",
+          "Packages",
+          "Community",
+          "Development Note",
+          "License"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "4529ffdda7076e54a94d380009d3cd5be6cff30d",
+        "generated_at": "2026-10-08T10:13:02.023333+09:00"
+      }
+    },
+    {
+      "rank": 9,
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars_total": 12721,
+      "forks_total": 1253,
+      "stars_period": 1536,
+      "api": {
+        "default_branch": "main",
+        "license": null,
+        "updated_at": "2026-10-18T23:33:16Z",
+        "pushed_at": "2026-10-18T22:43:53Z",
+        "open_issues": 281,
+        "archived": false,
+        "size_kb": 10900,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "7a286ba9d22be7e8f09e1ac65e0db338229ecef4",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 16453,
+        "used_chars": 16452
+      },
+      "analysis": {
+        "status": "api_error",
+        "summary_ja": "Cursor plugin specification and official plugins",
+        "capabilities": [],
+        "use_cases": [],
+        "first_trial": {
+          "goal": "未確認",
+          "steps": [],
+          "success_criteria": "未確認"
+        },
+        "evidence_sections": [],
+        "unconfirmed": [
+          "Gemini API HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+        ],
+        "model": null,
+        "cached": false
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars_total": 53036,
+      "forks_total": 17340,
+      "stars_period": 4200,
+      "api": {
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-10-18T23:33:28Z",
+        "pushed_at": "2026-10-18T19:38:41Z",
+        "open_issues": 44,
+        "archived": false,
+        "size_kb": 5137,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "career",
+          "claude-code",
+          "cover-letter",
+          "cv",
+          "interview-preparation",
+          "job-application",
+          "job-hunting",
+          "job-search",
+          "latex",
+          "resume"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "c41999477105cbd924bef07412cb5eb0d6d62a9a",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 33476,
+        "used_chars": 4288
+      },
+      "analysis": {
+        "summary_ja": "ai-job-searchは、Claude Codeをベースにしたローカル実行型のAI求職・応募フレームワークです。求人情報の評価、履歴書の調整、カバーレターの作成、面接対策を自動化します。",
+        "capabilities": [
+          {
+            "text": "求人情報の検索や評価、適合度のスコアリングを行う",
+            "evidence_section": "What this is"
+          },
+          {
+            "text": "LaTeXなどを用いて履歴書やカバーレターをカスタマイズして作成する",
+            "evidence_section": "What this is"
+          },
+          {
+            "text": "レビュアーエージェントによる批判的検証と修正を行う",
+            "evidence_section": "What this is"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "自身のプロフィールを設定して求人情報を効率よく探索する",
+            "basis": "README明記",
+            "evidence_section": "What this is"
+          },
+          {
+            "text": "特定の求人URLに対して応募書類のドラフトを作成する",
+            "basis": "README明記",
+            "evidence_section": "What this is"
+          },
+          {
+            "text": "面接に向けた準備や対策を行う",
+            "basis": "README明記",
+            "evidence_section": "AI Job Search"
+          }
+        ],
+        "first_trial": {
+          "goal": "前提条件を確認し、セットアップの準備をする",
+          "steps": [
+            "Claude Code CLI、Python 3.10+、Bun、LaTeX環境がインストールされていることを確認する"
+          ],
+          "success_criteria": "必要な前提ソフトウェアとツールがすべて用意されていること"
+        },
+        "evidence_sections": [
+          "AI Job Search",
+          "Does it actually work?",
+          "What this is",
+          "Prerequisites",
+          "Quick start"
+        ],
+        "unconfirmed": [
+          "Quick startセクションの具体的なインストール・実行コマンドのコードブロックが途中で途切れているため詳細なコマンド不明"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "c41999477105cbd924bef07412cb5eb0d6d62a9a",
+        "generated_at": "2026-10-19T08:33:38.772412+09:00"
+      }
+    }
+  ],
+  "zenn": [
+    {
+      "title": "インライン編集UIを拡張性が高い形で実装した",
+      "url": "https://zenn.dev/numa_san/articles/50b847c58f0854",
+      "author": "ぬまさん",
+      "published": "Sun, 18 Oct 2026 15:13:54 GMT",
+      "summary": "始めに\n編集を気軽に行えるように、対象のフィールドのみ編集ボタンを押すことでその場で編集状態になって編集ができる、いわゆるインライン編集と呼ばれるものがあります。\n具体的には以下のようなGifアニメのようなもので、編集アイコンを押してテキストフィールドが出て、入力後保存を押すことで編集結果が表示されます。\n\n簡単な編集においては便利なUIである一方で、実装面では以下のような細かいケアを考えると結構面倒です。\n\n編集直後にAPIから取得した古いデータを表示しないようにする\n配置"
+    },
+    {
+      "title": "アプリケーションの自動テストとデプロイをCircleCIからGitHub Actionsに移行した",
+      "url": "https://zenn.dev/tsukulink/articles/fea41a6e4113cf",
+      "author": "oieioi",
+      "published": "Sun, 18 Oct 2026 15:00:05 GMT",
+      "summary": "こんにちは！ツクリンクでエンジニアをしている oieioi です。\nツクリンクは開発用の CI を CircleCI から GitHub Actions に移行しました。移行してから半年間障害なく運用できているので、移行時にしたことを書いてみます。\n\n 移行したもの\n移行対象は3つあった。\n\nプルリクエストに対する継続的なテスト\n検証環境(AWS)へのデプロイ\n\nインフラのデプロイ\nアプリケーションのデプロイ\n\n\n商用環境(AWS)へのデプロイ\n\nインフラのデプロイ\nアプリケ"
+    },
+    {
+      "title": "読書メモ『入門 継続的デリバリー』",
+      "url": "https://zenn.dev/95nm/articles/article_reading_cd",
+      "author": "ブルハツ",
+      "published": "Sun, 18 Oct 2026 10:16:10 GMT",
+      "summary": "オライリー・ジャパンの『入門 継続的デリバリー』を読んだ。内容をまとめていく。\nhttps://www.amazon.co.jp/dp/4814400691?ref=cm_sw_r_ffobk_cp_ud_dp_4RN97N4D1PRM9WFJGFR4&ref_=cm_sw_r_ffobk_cp_ud_dp_4RN97N4D1PRM9WFJGFR4&social_share=cm_sw_r_ffobk_cp_ud_dp_4RN97N4D1PRM9WFJGFR4&bestFor"
+    },
+    {
+      "title": "リトルの法則で考える障害時のキャパシティプランニング",
+      "url": "https://zenn.dev/rea9r/articles/littles-law-capacity-planning",
+      "author": "rea9r",
+      "published": "Sun, 18 Oct 2026 09:54:19 GMT",
+      "summary": "はじめに\nサーバーサイドの開発や運用をしていると、こんな場面に出会うことがあります。\n\n呼び出し元のメトリクスで、このサービスへのリクエストのタイムアウトが、ほとんどのエンドポイントで増えている\nサーバーの負荷状況を確認しても、CPU もメモリも余っていて、サーバー側のエラー率もほとんど上がっていない\nコンテナが再起動を繰り返していて、Kubernetes のイベントでは liveness probe がタイムアウトしている\n\nデプロイも設定の変更もしておらず、トラフィックも"
+    },
+    {
+      "title": "AI エージェントに個人の記憶を任せるときの、書かせない・漏らさない仕組み",
+      "url": "https://zenn.dev/ketoranger/articles/agent-memory-security",
+      "author": "K-etoranger",
+      "published": "Sun, 18 Oct 2026 05:06:44 GMT",
+      "summary": "1台の Mac の上に「Workspace」という1つのフォルダを作り、その中で Claude Code・Codex と定時処理に、自分の記憶・タスク・道具の手入れを任せています。仕組みの全体は前の記事に書きました。\nhttps://zenn.dev/ketoranger/articles/workspace-ai-agents-memory\nエージェントは、メールやチャットの本文、会話の記録、ブラウザの履歴まで読みます。読んだ物を記憶のファイルに書き、タスクを作ります。便利"
+    },
+    {
+      "title": "ClaudeにiOSシミュレーターのスクリーンショットを読ませるのをやめて、操作で増えるコンテキストを43%削減した",
+      "url": "https://zenn.dev/eai/articles/dont-let-agents-see-the-ios-sim-screen",
+      "author": "y.takahashi",
+      "published": "Sun, 18 Oct 2026 02:56:18 GMT",
+      "summary": "Claude CodeのデスクトップアプリにはiOSシミュレーターを操作するツールがある。個人で作っているiOS向けのMastodonクライアントでは、このツールで実装のたびに画面を確かめさせていた。\nしかし、Claudeのコンテキストの大半がスクリーンショットで埋まっているような気がしていた。\nそこで、過去のセッションのログ99件を集計して非効率な操作を洗い出し、画面を画像ではなく文字で読む道具を足した。\n同じ4つの作業を旧来のやり方と新しいやり方で3回ずつClaudeにや"
+    },
+    {
+      "title": "AFM（Apple Foundation Models）を活用したテキストアドベンチャーゲームの開発【第2回】自由入力を台本の選択肢につなぐ",
+      "url": "https://zenn.dev/gritchbreed/articles/ced633f449178f",
+      "author": "Hiroshi Arakane",
+      "published": "Sun, 18 Oct 2026 02:35:56 GMT",
+      "summary": "はじめに\n※この記事は、筆者のQiitaアカウントからの転載（マルチポスト）です。\nApple Foundation Models（以下AFM）のオンデバイスモデルを使って、自由入力のテキストアドベンチャーゲームを開発しています。\n第1回では、デモ「血の池の夜」と、AFMに入力の解釈・自由会話・記憶の取り出しを任せ、物語の進行は台本とルールエンジンで制御する全体設計を紹介しました。\n今回は、その中の「入力の解釈」を扱います。プレイヤーの自由な言葉を、ゲームが処理できる話題や移"
+    },
+    {
+      "title": "MPC（モデル予測制御）専用ソルバーの歴史 ― プラントの分単位からマイクロ秒の組込み制御まで",
+      "url": "https://zenn.dev/takuya_fukatsu/articles/d66e570b929d19",
+      "author": "株式会社 Proxima Technology",
+      "published": "Sun, 18 Oct 2026 01:54:50 GMT",
+      "summary": "はじめに\nモデル予測制御（Model Predictive Control, MPC）は、「制御周期ごとに最適化問題を解き、得られた入力系列の最初の1ステップだけを適用する」制御方式です。したがってMPCの実用性は、ほぼそのまま 「最適化問題をどれだけ速く・確実に解けるか」 に依存します。\nMPCが解く問題（線形MPCなら二次計画問題 QP、非線形MPCなら非線形計画問題 NLP）は、汎用ソルバーでも解けます。にもかかわらず、過去40年以上にわたり「MPC専用」のソルバーが数"
+    },
+    {
+      "title": "日本語の個人情報を Bedrock Guardrails, SDP, Presidio でマスキングして比較する",
+      "url": "https://zenn.dev/fusic/articles/a77ba348115364",
+      "author": "omiya",
+      "published": "Sat, 17 Oct 2026 23:00:05 GMT",
+      "summary": "はじめに\nこんにちは、Fusicの大宮です。\n問い合わせメールや通話記録を外部に渡したり、生成AIで分析したりする前には、個人情報を消したい（マスキングしたい）、という場面があるかと思います。\nただ、日本語の文章には、全角の数字や和暦、話し言葉など、英語にはない書き方が多くあります。\n2026年10月、クラウドのサービスとオープンソースのツールで、日本語の個人情報をどこまでマスキングできるのか気になり、試しました!\n比べたのは次の3つです。\n\n\nSensitive Data "
+    },
+    {
+      "title": "生産計画を手を動かして学ぶ ― OSS の frePPLe で MRP・需要予測・CP-SAT まで",
+      "url": "https://zenn.dev/rkawajiri/books/frepple-tutorial-ja",
+      "author": "Ryoma Kawajiri",
+      "published": "Sat, 17 Oct 2026 21:06:40 GMT",
+      "summary": "受注から購買・製造・配送の計画がどう作られるかを、OSS の生産計画ソフト frePPLe を Docker で動かして体験する無料ハンズオンです。MRP（所要量計算）と有限能力の制約あり計画の違い、遅れの原因をたどる方法、What-if、在庫・拠点間の配送、需要予測、OR-Tools CP-SAT による最適化まで、小さなモデルから順に学べます。業務知識は不要で、最初の3章はインストールなしで読めます。非公式ガイドです。"
+    },
+    {
+      "title": "LLMエージェント基盤のシステム設計 #1 エージェントランタイム（Harness）",
+      "url": "https://zenn.dev/acntechjp/articles/2246165a4098c5",
+      "author": "Yuuichi Eguchi",
+      "published": "Sat, 17 Oct 2026 00:00:05 GMT",
+      "summary": "!\nこの記事は連載「LLMエージェント基盤のシステム設計」（全5回）の第1回です。\n\n\nエージェントランタイム（Harness） ← この記事\nコンテキスト管理\nツール実行\n信頼性\n評価と可観測性\n\n各回とも「要件 → 規模の見積もり → 全体設計 → 詳細設計 → 運用と発展」の順に説明します。文中の規模や性能の数値は、設計を検討するための仮の値です。実測値ではありません。\n\n\n はじめに\nコーディング支援、カスタマーサポート、調査エージェントなど、プロダクトの形は違っても"
+    },
+    {
+      "title": "ポートフォリオをVoidで作り直したので、Voidの来歴と中身を整理する",
+      "url": "https://zenn.dev/nkzn/articles/my-first-void",
+      "author": "Nkzn",
+      "published": "Fri, 16 Oct 2026 14:10:37 GMT",
+      "summary": "筆者のポートフォリオサイトnkzn.netは、これまで何度か作り直してきました。最初はNext.jsとExpo(react-native-web)を組み合わせた構成、2代目はExpo Router、3代目はAstroと、その上で動くCMSのEmDashで作り始めたものの、完成しないまま止まっていました。\nそこへ2026年10月15日、Cloudflareのブログに「Deploy with Void」という記事が公開されました。\nhttps://blog.cloudflare."
+    },
+    {
+      "title": "コネクタも API も無いサービスを、Claude Code に操作させる",
+      "url": "https://zenn.dev/edash_tech_blog/articles/6250fc61ccf009",
+      "author": "じょーじ",
+      "published": "Fri, 16 Oct 2026 09:19:08 GMT",
+      "summary": "こんにちは、e-dash の中島です。\nSRE として認証基盤やインフラを見ています。\nClaude Code から外部サービスを操作するときは、MCP のコネクタを使います。\nNotion や GitHub のように広く使われているサービスなら、だいたい用意されています。\n自動化を進めていくと、コネクタも API も無いサービスがどうしても残ります。\n業務に合わせて選んだ小さな SaaS や、社内向けの管理コンソールです。\n設定を変えるにも状態を見るにも、人が画面を開くしか"
+    },
+    {
+      "title": "LLMにとって書きやすい構文とは何か：`end` と `end func foo` を1,000回以上比べてみた",
+      "url": "https://zenn.dev/nextbeat/articles/2026-10-syntax-locality-llm",
+      "author": "kmizu",
+      "published": "Fri, 16 Oct 2026 03:00:24 GMT",
+      "summary": "はじめに\nこんにちは！株式会社ネクストビートでテクノロジー・エバンジェリストなる肩書きでお仕事をしている水島です。\n今回は「LLMにとって書きやすい構文とはどういうものか」を、小さな実験で確かめてみた話です。\n対象にしたのは、既存のプログラミング言語ではなく、 プロンプトの中で初めて文法を説明される未知の言語 です。学習データに大量に含まれる言語だと「その言語を知っているから書ける」のか「構文の設計が良いから書ける」のかを切り分けられません。そこで、スコープだけを持つ小さな言"
+    },
+    {
+      "title": "技術書を年に数冊しか買わない自分に、O'Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）",
+      "url": "https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm",
+      "author": "m.okamura",
+      "published": "Fri, 16 Oct 2026 02:53:28 GMT",
+      "summary": "はじめに\nオライリーの本は、技術書として信頼できるので、これまでも必要なものを買って読んでいました。\n自分は紙の本のほうが読みやすいタイプです。ただ、オライリーの本は分厚いものが多く、持ち歩くと重いのが難点でした。そんなとき、オライリーの本がオンラインのサブスクで読み放題になると知って、魅力を感じました。1冊数千円すると、気になっても買うまでには至らない本がけっこうあります。そういう本も気軽に開けるなら、お得に入れる方法があるなら入ってもいいかな、と考えました。\nそこで、まず"
+    },
+    {
+      "title": "ベクトルDBを使わない「階層ナビゲーション型RAG」を作って、ベクトルDB版RAGと比較してみた",
+      "url": "https://zenn.dev/aiforall/articles/8e1803396534de",
+      "author": "nishina",
+      "published": "Fri, 16 Oct 2026 02:30:05 GMT",
+      "summary": "階層ナビゲーション型RAGとは\n「階層ナビゲーション型RAG」は、ベクトルDBを使わずに文書を探すRAGです。準備段階で文書の山から階層的な目次を自動で作っておき、質問が来たらLLMがその目次を上から順に辿って、答えが書かれていそうな文書を選びます。質問のたびにベクトル検索をしない点が、一般的なベクトルDB版RAGとの違いです。\nこの記事では、この仕組みを論文の手法(Corpus2Skill)を参考に自作し、ベクトルDB版RAGと同じデータ・同じ質問で比較しました。\n\n 結論"
+    },
+    {
+      "title": "有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか",
+      "url": "https://zenn.dev/hand_dot/articles/ecb391d4322330",
+      "author": "Kyohei Fukuda",
+      "published": "Thu, 15 Oct 2026 23:00:05 GMT",
+      "summary": "2026年に入ってから、有名な OSS が次々と PR を閉じはじめているなぁと感じています。OSS のエコシステムには個人的に興味があるので、少し調べてみました。メモがてら残しておきます。\n\n Hono が外部からの PR を閉じた\n10月5日、Hono の yusukebe さんがこう投稿していました。\nhttps://x.com/yusukebe/status/2107027870019445007\n\nBut PRs don't work in this era. Co"
+    },
+    {
+      "title": "国産モデル sarashina3-mini は日本語の推敲で何を変えるのか？",
+      "url": "https://zenn.dev/algoartis/articles/03ca12150ccbee",
+      "author": "大賀愛一郎（oga_aiichiro）",
+      "published": "Thu, 15 Oct 2026 08:30:03 GMT",
+      "summary": "こんにちは。ALGO ARTISの大賀 愛一郎です。yomiyasuの開発者でもあります。\n最近、日本語性能が高いモデルが相次いで公開されていますね。\n2026年10月13日、SB Intuitions は、国産LLM「Sarashina」のAPIを利用できる「Sarashinaサービス」の無償ベータを提供しはじめました。\nhttps://www.sbintuitions.co.jp/news/press/20261013_01/\nというわけで、標準の対話モデル sarash"
+    },
+    {
+      "title": "改めて考える、AIエンジニアリングの今",
+      "url": "https://zenn.dev/r_kaga/articles/2fd185c50cea7c",
+      "author": "r.kagaya",
+      "published": "Wed, 14 Oct 2026 23:08:33 GMT",
+      "summary": "昨年11月、翻訳を担当したオライリーの『AIエンジニアリング』の発売に合わせて、Zennで「AIエンジニアリング、始めませんか？」という記事を書きました。\n\nそれから1年近くが経ち、AIエンジニアリングを取り巻く環境も変わったので、改めて書き直してみます。\n!\n\nAIエンジニアリングのロードマップはいくつもあるが、主に共通するのは評価\nAIエンジニアリングはAIプロダクトの外、AIを使ってソフトウェアを作る開発の現場にも広がった\n人のいない間にAIが動くようになり、インターフ"
+    },
+    {
+      "title": "『現場で役立つシステム設計の原則』を読んで学んだこと、実践したこと、これからやりたいこと",
+      "url": "https://zenn.dev/wwwave/articles/38b8284f96bd9e",
+      "author": "塚本",
+      "published": "Tue, 13 Oct 2026 22:00:06 GMT",
+      "summary": "はじめに\nこんにちは、塚本です。\n私が担当している業務では、長年運用されてきたシステムを少しずつ改善する取り組みを続けています。これまでに、『レガシーコードからの脱却』を読んでRSpecを導入した話や、Access VBAのシステムを撤退させるための技術選定の話を書いてきました。\nどちらも、変更したときに「何が壊れるか」を検知できる状態、つまりテストをどう整えるか、という話でした。一方で、テストを整えるほど、もう1つの課題が気になるようになりました。ロジックの置き場所やクラス"
+    }
+  ],
+  "common_terms": [
+    "code",
+    "claude",
+    "mcp",
+    "llm",
+    "codex",
+    "sre"
+  ],
+  "ai_analysis": {
+    "enabled": true,
+    "model": "gemini-3.5-flash-lite",
+    "successful": 9,
+    "total": 10
+  },
+  "verification": {
+    "mode": "metadata-and-readme-analysis",
+    "completed": 0,
+    "pending": 10,
+    "note": "AI分析はREADMEの要約であり、実行検証や安全性保証ではありません。"
+  }
+}

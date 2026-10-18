@@ -1,0 +1,56 @@
+{
+  "summary_ja": "ai-job-searchは、Claude Codeをベースにしたローカル実行型のAI求職・応募フレームワークです。求人情報の評価、履歴書の調整、カバーレターの作成、面接対策を自動化します。",
+  "capabilities": [
+    {
+      "text": "求人情報の検索や評価、適合度のスコアリングを行う",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "LaTeXなどを用いて履歴書やカバーレターをカスタマイズして作成する",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "レビュアーエージェントによる批判的検証と修正を行う",
+      "evidence_section": "What this is"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自身のプロフィールを設定して求人情報を効率よく探索する",
+      "basis": "README明記",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "特定の求人URLに対して応募書類のドラフトを作成する",
+      "basis": "README明記",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "面接に向けた準備や対策を行う",
+      "basis": "README明記",
+      "evidence_section": "AI Job Search"
+    }
+  ],
+  "first_trial": {
+    "goal": "前提条件を確認し、セットアップの準備をする",
+    "steps": [
+      "Claude Code CLI、Python 3.10+、Bun、LaTeX環境がインストールされていることを確認する"
+    ],
+    "success_criteria": "必要な前提ソフトウェアとツールがすべて用意されていること"
+  },
+  "evidence_sections": [
+    "AI Job Search",
+    "Does it actually work?",
+    "What this is",
+    "Prerequisites",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "Quick startセクションの具体的なインストール・実行コマンドのコードブロックが途中で途切れているため詳細なコマンド不明"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c41999477105cbd924bef07412cb5eb0d6d62a9a",
+  "generated_at": "2026-10-19T08:33:38.772412+09:00"
+}
