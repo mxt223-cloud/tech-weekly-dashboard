@@ -1,0 +1,57 @@
+{
+  "summary_ja": "ai-job-searchは、Claude Codeを基盤として自身のPC上で動作するAI求職・応募フレームワークです。求人情報の評価、CV（履歴書）の最適化、カバーレターの作成、面接対策を自動化します。",
+  "capabilities": [
+    {
+      "text": "Claude Codeを活用して、求人広告の評価や適合度のスコアリング、CVのカスタマイズ、カバーレターの作成を行います。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自身のプロフィールを設定し、ドラフターとレビューアーによるアプリケーションパイプラインを実行します。",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "求人ポータルサイトの検索やセットアップのためのコマンド（/setup、/scrape、/applyなど）を提供します。",
+      "evidence_section": "What this is"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自分のPC上で求職活動を自動化し、求人の適合度評価やCVの作成、面接対策を行う。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "LaTeXなどを使用して、応募先企業や職務に合わせたカスタムCVやカバーレターを自動生成する。",
+      "basis": "README明記",
+      "evidence_section": "What this is"
+    },
+    {
+      "text": "デンマーク市場向けの求人ポータル検索機能を利用して求人を探す。",
+      "basis": "README明記",
+      "evidence_section": "What this is"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをフォークし、前提条件を確認してセットアップを開始する",
+    "steps": [
+      "リポジトリをフォークして自身の環境にクローンする",
+      "Claude CodeやPython 3.10+、Bun、LaTeXディストリビューションなどの前提条件を準備する"
+    ],
+    "success_criteria": "前提条件が整い、ドキュメントの指示に従ってプロフィール設定の準備ができること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Does it actually work?",
+    "What this is",
+    "Prerequisites",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "Quick startセクションの具体的なインストール・実行コマンド（READMEが途中で切れているため詳細なコマンドライン手順は不明）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c46aae58b9f645dc2dd31338c46c6836459c5070",
+  "generated_at": "2026-10-20T09:33:01.661718+09:00"
+}

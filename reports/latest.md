@@ -1,54 +1,91 @@
-# Tech Daily — 2026-10-19
+# Tech Daily — 2026-10-20
 
-生成日時: 2026-10-19T08:33:38.847463+09:00  
-AI分析: 9/10件成功（gemini-3.5-flash-lite）
+生成日時: 2026-10-20T09:33:09.000781+09:00  
+AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [morluto/rea](https://github.com/morluto/rea)
 
-**概要:** REAは、ネイティブバイナリ、アプリ、実行時の振る舞いなどをAIエージェントと連携してリバースエンジニアリングするためのModel Context Protocol（MCP）ツールです。ソースコードがない状態でもアプリを調査し、仕組みを解析して証拠とともに提示します。
+**概要:** REAは、ネイティブバイナリ、アプリ、実行時の振る舞いなど、あらゆるものをAIエージェントとMCP（Model Context Protocol）を活用してリバースエンジニアリングするためのツールです。
 
 - 言語: TypeScript
-- 今週のスター: 239923
+- 今週のスター: 201065
 - ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
+- AI分析状態: ok
 
 ### できること
 
-- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで取得できます。（根拠: README冒頭）
+- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールにAIエージェントを接続します。（根拠: REA: Reverse Engineer Anything）
 
-- Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、擬似コードやアセンブリ、文字列などを取得できます。（根拠: What you can analyze）
+- Hopper、Ghidra、IDAなどのネイティブ解析エンジンや、内蔵の静的解析ツールを利用してコードを調査できます。（根拠: What you can analyze）
 
-- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARを対象に、モジュール、インポート、Electron境界などの情報をJSON形式で取得できます。（根拠: Quick start）
+- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARを対象に、モジュール、インポート、Electron境界とその証拠をJSON形式で取得できます。（根拠: Quick start）
 
 
 ### 利用例
 
-- アプリに見つけた機能の仕組みを調査し、自分のプロジェクト用に同様の機能を構築する。（README明記／根拠: README冒頭）
+- アプリ内の特定の機能がどのように動作しているかを調査し、その証拠を表示した上で、自分のプロジェクト向けに同様の機能を構築する。（README明記／根拠: REA: Reverse Engineer Anything）
 
-- 抽出したJavaScript/Electronアプリのファイルパスを指定して、モジュールやインポート、Electron境界の情報を確認する。（README明記／根拠: Quick start）
+- DX-Ballのサウンドパン計算処理を再構築し、元のx86のケースを通過させてコンパイルされた関数バイトを再現する。（README明記／根拠: Showcases）
 
-- 対応するバイナリやアプリケーションをローカル環境で安全に静的・動的解析し、ソフトウェアの相互運用性や構造を調査する。（提案／根拠: Disclaimer）
+- NotionのElectronクリップボードブリッジをトレースし、レンダラーのAPIからプリロードやIPCを経由してメインプロセスに至る流れを調査する。（README明記／根拠: Showcases）
 
 
 ### 最初に試すこと
 
-REAのエージェント設定と最小限の動作確認を行うこと
+エージェントのセットアップを行い、REAを利用可能にする
 
 1. npx rea-agents setup
 
 
-成功の目安: エージェントを選択し、変更内容を確認して承認することで、REAのMCPサーバとワークフロー指示が登録されること
-
-未確認: サポートされている全ての外部解析ツールの詳細なライセンス要件／特定の環境における例外的なエラーハンドリングの詳細
+成功の目安: エージェントを選択し、提案された変更を確認して承認することで、REAのMCPサーバーと対応するワークフロー手順が追加されること
 
 
-## 2. [storytold/artcraft](https://github.com/storytold/artcraft)
+
+
+## 2. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
+
+**概要:** anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。
+
+- 言語: Python
+- 今週のスター: 5441
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能（根拠: Installation）
+
+- プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能（根拠: Plugin Structure）
+
+- マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能（根拠: Skill-bundle plugins）
+
+
+### 利用例
+
+- Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する（README明記／根拠: Claude Code Plugins Directory）
+
+- 独自のプラグインを作成して公開・登録申請を行う（README明記／根拠: Contributing）
+
+
+### 最初に試すこと
+
+Claude Code上でプラグインをインストールする
+
+1. Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする
+
+
+成功の目安: 指定したプラグインがClaude Codeに正常にインストールされること
+
+未確認: 具体的な個別のプラグインが何を提供するのかという機能詳細
+
+
+## 3. [storytold/artcraft](https://github.com/storytold/artcraft)
 
 **概要:** ArtCraftは、アーティスト、デザイナー、映画制作のためのインタラクティブなAI画像および動画制作IDEです。2Dでの構成、3Dでのシーン配置、多彩なAIモデルの選択を組み合わせ、プロンプト入力を視覚的なクラフト作業へと変化させます。
 
 - 言語: Rust
-- 今週のスター: 18479
+- 今週のスター: 13572
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -82,14 +119,55 @@ REAのエージェント設定と最小限の動作確認を行うこと
 未確認: 具体的なインストールコマンドや実行コマンドがREADME内に記載されていないため、CLI上での操作手順は不明です。
 
 
-## 3. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
+## 4. [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search)
+
+**概要:** ai-job-searchは、Claude Codeを基盤として自身のPC上で動作するAI求職・応募フレームワークです。求人情報の評価、CV（履歴書）の最適化、カバーレターの作成、面接対策を自動化します。
+
+- 言語: Python
+- 今週のスター: 9073
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- Claude Codeを活用して、求人広告の評価や適合度のスコアリング、CVのカスタマイズ、カバーレターの作成を行います。（根拠: README冒頭）
+
+- 自身のプロフィールを設定し、ドラフターとレビューアーによるアプリケーションパイプラインを実行します。（根拠: What this is）
+
+- 求人ポータルサイトの検索やセットアップのためのコマンド（/setup、/scrape、/applyなど）を提供します。（根拠: What this is）
+
+
+### 利用例
+
+- 自分のPC上で求職活動を自動化し、求人の適合度評価やCVの作成、面接対策を行う。（README明記／根拠: README冒頭）
+
+- LaTeXなどを使用して、応募先企業や職務に合わせたカスタムCVやカバーレターを自動生成する。（README明記／根拠: What this is）
+
+- デンマーク市場向けの求人ポータル検索機能を利用して求人を探す。（README明記／根拠: What this is）
+
+
+### 最初に試すこと
+
+リポジトリをフォークし、前提条件を確認してセットアップを開始する
+
+1. リポジトリをフォークして自身の環境にクローンする
+
+2. Claude CodeやPython 3.10+、Bun、LaTeXディストリビューションなどの前提条件を準備する
+
+
+成功の目安: 前提条件が整い、ドキュメントの指示に従ってプロフィール設定の準備ができること
+
+未確認: Quick startセクションの具体的なインストール・実行コマンド（READMEが途中で切れているため詳細なコマンドライン手順は不明）
+
+
+## 5. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
 
 **概要:** AnyPS5は、PS5の実行ファイルをLinuxおよびWindows向けに自動で移植するためのツールです。エミュレーションや独立したランタイムプロセスを使用せず、ネイティブ形式への変換やシステムライブラリの実装を行います。
 
 - 言語: C++
-- 今週のスター: 16250
+- 今週のスター: 12389
 - ライセンス: GPL-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -123,127 +201,12 @@ Webコンバーターを利用してファイルを処理する
 未確認: 具体的なコマンドライン引数やインストールコマンド
 
 
-## 4. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
-
-**概要:** anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。
-
-- 言語: Python
-- 今週のスター: 3581
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能（根拠: Installation）
-
-- プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能（根拠: Plugin Structure）
-
-- マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能（根拠: Skill-bundle plugins）
-
-
-### 利用例
-
-- Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する（README明記／根拠: Claude Code Plugins Directory）
-
-- 独自のプラグインを作成して公開・登録申請を行う（README明記／根拠: Contributing）
-
-
-### 最初に試すこと
-
-Claude Code上でプラグインをインストールする
-
-1. Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする
-
-
-成功の目安: 指定したプラグインがClaude Codeに正常にインストールされること
-
-未確認: 具体的な個別のプラグインが何を提供するのかという機能詳細
-
-
-## 5. [mksglu/context-mode](https://github.com/mksglu/context-mode)
-
-**概要:** Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。
-
-- 言語: TypeScript
-- 今週のスター: 4438
-- ライセンス: NOASSERTION
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する（根拠: How Context Mode Solves It）
-
-- SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする（根拠: How Context Mode Solves It）
-
-- LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える（根拠: How Context Mode Solves It）
-
-
-### 利用例
-
-- PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する（README明記／根拠: The Problem）
-
-- コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる（README明記／根拠: How Context Mode Solves It）
-
-- sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する（README明記／根拠: Security）
-
-
-### 最初に試すこと
-
-セキュリティ権限設定を追加して権限ルールを適用する
-
-1. プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する
-
-
-成功の目安: 設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること
-
-未確認: 詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順／17のプラットフォームすべての個別設定方法
-
-
-## 6. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
-
-**概要:** diagram-designは、独立したHTMLおよびSVGファイルとしてブランドに合わせたダイアグラムを作成できるAIエージェント向けのスキルです。Claude Code、Cursor、GitHub Copilotなどの様々なエージェントスキルホストに対応し、多数のダイアグラムタイプを生成できます。
-
-- 言語: HTML
-- 今週のスター: 8382
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 独立したHTMLおよびSVGファイル形式でダイアグラムを描画する（根拠: README冒頭）
-
-- 45種類のダイアグラムタイプをサポートする（根拠: README冒頭）
-
-- npx skills add cathrynlavery/diagram-design を使ってインストールできる（根拠: Install）
-
-
-### 利用例
-
-- アプリのアーキテクチャ図（フロントエンド、バックエンド、データベース、Redisキャッシュ）を作成する（README明記／根拠: README冒頭）
-
-- 影響度と労力を軸にしたQ2プロジェクトの四象限図を作成する（README明記／根拠: README冒頭）
-
-- 401エラー時のトークンリフレッシュを含むベアラーコールのシーケンス図を作成する（README明記／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-diagram-designスキルをインストールして使い始める
-
-1. npx skills add cathrynlavery/diagram-design を実行してインストールする
-
-
-成功の目安: エージェントスキルホストにdiagram-designがインストールされること
-
-未確認: Quickstartセクションの具体的な手順やコードブロックがREADMEの途中で途切れており詳細が不明
-
-
-## 7. [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)
+## 6. [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)
 
 **概要:** Ghidraは、アメリカ国家安全保障局（NSA）が開発したソフトウェアリバースエンジニアリング（SRE）フレームワークです。コンパイルされたコードの解析を行うための逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの高度なツールを備えています。
 
 - 言語: Java
-- 今週のスター: 7608
+- 今週のスター: 7152
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -281,12 +244,51 @@ diagram-designスキルをインストールして使い始める
 未確認: 具体的な対応プロセッサ命令セットや実行ファイルフォーマットの全リスト／セキュリティアドバイザリの詳細な脆弱性内容
 
 
+## 7. [mksglu/context-mode](https://github.com/mksglu/context-mode)
+
+**概要:** Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。
+
+- 言語: TypeScript
+- 今週のスター: 4224
+- ライセンス: NOASSERTION
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する（根拠: How Context Mode Solves It）
+
+- SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする（根拠: How Context Mode Solves It）
+
+- LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える（根拠: How Context Mode Solves It）
+
+
+### 利用例
+
+- PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する（README明記／根拠: The Problem）
+
+- コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる（README明記／根拠: How Context Mode Solves It）
+
+- sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する（README明記／根拠: Security）
+
+
+### 最初に試すこと
+
+セキュリティ権限設定を追加して権限ルールを適用する
+
+1. プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する
+
+
+成功の目安: 設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること
+
+未確認: 詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順／17のプラットフォームすべての個別設定方法
+
+
 ## 8. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
 **概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 5639
+- 今週のスター: 5945
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -326,123 +328,124 @@ diagram-designスキルをインストールして使い始める
 
 
 
-## 9. [cursor/plugins](https://github.com/cursor/plugins)
+## 9. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
 
-**概要:** Cursor plugin specification and official plugins
+**概要:** cathrynlavery/diagram-design は、AIエージェント向けのエディトリアルな図解作成スキルです。影のない、HTMLとSVGが一体化したファイルとして、ブランドに合わせた45種類の図を出力します。
 
-- 言語: TypeScript
-- 今週のスター: 1536
-- ライセンス: 不明
-- AI分析状態: api_error
-
-### できること
-
-- READMEから確認できませんでした。
-
-
-### 利用例
-
-- READMEから確認できませんでした。
-
-
-### 最初に試すこと
-
-未確認
-
-
-成功の目安: 未確認
-
-未確認: Gemini API HTTP 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-
-
-## 10. [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search)
-
-**概要:** ai-job-searchは、Claude Codeをベースにしたローカル実行型のAI求職・応募フレームワークです。求人情報の評価、履歴書の調整、カバーレターの作成、面接対策を自動化します。
-
-- 言語: Python
-- 今週のスター: 4200
+- 言語: HTML
+- 今週のスター: 6638
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- 求人情報の検索や評価、適合度のスコアリングを行う（根拠: What this is）
+- 1つの自己完結型HTMLおよびSVGファイルとして図を描画する（根拠: README冒頭）
 
-- LaTeXなどを用いて履歴書やカバーレターをカスタマイズして作成する（根拠: What this is）
+- 45種類の図に対応している（根拠: README冒頭）
 
-- レビュアーエージェントによる批判的検証と修正を行う（根拠: What this is）
+- ブランドのカラーパレットやフォントに合わせたデザインを作成できる（根拠: README冒頭）
 
 
 ### 利用例
 
-- 自身のプロフィールを設定して求人情報を効率よく探索する（README明記／根拠: What this is）
+- フロントエンド、バックエンド、データベース、Redisキャッシュを含むアプリの構成図を作成する（README明記／根拠: README冒頭）
 
-- 特定の求人URLに対して応募書類のドラフトを作成する（README明記／根拠: What this is）
+- インパクトと工数を軸にしたQ2プロジェクトの象限図を作成する（README明記／根拠: README冒頭）
 
-- 面接に向けた準備や対策を行う（README明記／根拠: AI Job Search）
+- 401エラー時のトークンリフレッシュを伴うベアラーコールのシーケンス図を作成する（README明記／根拠: README冒頭）
 
 
 ### 最初に試すこと
 
-前提条件を確認し、セットアップの準備をする
+diagram-design スキルをインストールする
 
-1. Claude Code CLI、Python 3.10+、Bun、LaTeX環境がインストールされていることを確認する
+1. npx skills add cathrynlavery/diagram-design
 
 
-成功の目安: 必要な前提ソフトウェアとツールがすべて用意されていること
+成功の目安: スキルがエージェントホストに正常にインストールされること
 
-未確認: Quick startセクションの具体的なインストール・実行コマンドのコードブロックが途中で途切れているため詳細なコマンド不明
+未確認: Quickstartセクションのコードブロック以降の詳細な手順がREADME内で途切れているため確認できない
+
+
+## 10. [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
+
+**概要:** Scientific Agent Skillsは、AIエージェントに生物学、化学、医学などの科学的タスクを実行させるための177件の検証済みスキルと100以上の科学データベースを提供するライブラリです。
+
+- 言語: Python
+- 今週のスター: 4355
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 177件の科学・研究スキルと100以上の科学データベースへの対応（根拠: README冒頭）
+
+- Cisco AI Defense Skill Scannerを用いたLLMベースのセキュリティスキャン（根拠: ⚠️ Security Disclaimer）
+
+
+### 利用例
+
+- AIエージェントに複雑な多段階の科学的ワークフローを実行させること（README明記／根拠: 💡 Quick Examples）
+
+- NVIDIA OpenShellなどのポリシー制御されたサンドボックス環境内でスキルを実行すること（README明記／根拠: 🔬 Use Cases）
+
+
+### 最初に試すこと
+
+サードパーティ製スキルのローカルセキュリティスキャンを実行する
+
+1. uv pip install cisco-ai-skill-scanner
+
+2. skill-scanner scan /path/to/skill --use-behavioral
+
+
+成功の目安: スキャンコマンドがエラーなく実行され、結果が出力されること
+
+未確認: Getting Startedセクションの具体的なインストールコマンドの記述／Quick Examplesセクションの具体的なプロンプト例の記述
 
 
 
 ## Zenn
 
-- [インライン編集UIを拡張性が高い形で実装した](https://zenn.dev/numa_san/articles/50b847c58f0854) — ぬまさん
+- [対象が広い事業・プロダクトが刺さる気がしない](https://zenn.dev/fusa_bp/articles/broad-target-reaches-no-one) — fusa_bp
 
-- [アプリケーションの自動テストとデプロイをCircleCIからGitHub Actionsに移行した](https://zenn.dev/tsukulink/articles/fea41a6e4113cf) — oieioi
+- [AIとコンテストに参加する](https://zenn.dev/attgm/articles/d28df25b88254a) — a2
 
-- [読書メモ『入門 継続的デリバリー』](https://zenn.dev/95nm/articles/article_reading_cd) — ブルハツ
+- [普段使いのWindows PCでNodeのサーバーを常駐させて踏んだ罠](https://zenn.dev/matasuke_t/articles/bf784b79b29e86) — またすけ
 
-- [リトルの法則で考える障害時のキャパシティプランニング](https://zenn.dev/rea9r/articles/littles-law-capacity-planning) — rea9r
+- [Claude Codeの会話を55分放っておいたら、272,422トークンが13,522に圧縮されていました ― アイドル圧縮の観測](https://zenn.dev/ojisan_ai_lab/articles/claude-code-idle-compaction-20261019) — おじさんAIラボ
 
-- [AI エージェントに個人の記憶を任せるときの、書かせない・漏らさない仕組み](https://zenn.dev/ketoranger/articles/agent-memory-security) — K-etoranger
+- [Kaigi on Rails 2026 感想 ＆ OSTで「ファットモデル」の議論をしたよ！](https://zenn.dev/progate/articles/b49c75fc6ab1ff) — 横江（よこえ）
 
-- [ClaudeにiOSシミュレーターのスクリーンショットを読ませるのをやめて、操作で増えるコンテキストを43%削減した](https://zenn.dev/eai/articles/dont-let-agents-see-the-ios-sim-screen) — y.takahashi
+- [AWS Lambda Web FunctionsでImpossible Location検知の課題をまとめて解決！ + 昨今の攻撃への有効性](https://zenn.dev/cscloud_blog/articles/f4ce99ffeb8ee3) — nishikawa
 
-- [AFM（Apple Foundation Models）を活用したテキストアドベンチャーゲームの開発【第2回】自由入力を台本の選択肢につなぐ](https://zenn.dev/gritchbreed/articles/ced633f449178f) — Hiroshi Arakane
+- [AI時代、配布するPythonコードをどう守るか: 難読化の実験と判断軸](https://zenn.dev/pksha/articles/0f9c11d1daea2e) — 山本隼輔
 
-- [MPC（モデル予測制御）専用ソルバーの歴史 ― プラントの分単位からマイクロ秒の組込み制御まで](https://zenn.dev/takuya_fukatsu/articles/d66e570b929d19) — 株式会社 Proxima Technology
+- [Claude Codeでプロンプトインジェクションに備える](https://zenn.dev/luxiar/articles/a341a2df29dcfe) — Suzu
 
-- [日本語の個人情報を Bedrock Guardrails, SDP, Presidio でマスキングして比較する](https://zenn.dev/fusic/articles/a77ba348115364) — omiya
+- [クエリキーも型安全に変換するユーティリティを作った](https://zenn.dev/castingone_dev/articles/typesafe_query_key_converter) — ぬまさん
+
+- [Claude Codeのステップごとのレビューを既定から外した理由](https://zenn.dev/ara_jlu/articles/per-task-review-dropped) — Ara;
+
+- [【UMP】同意を外部SDKに反映する【Tenjinを例に】](https://zenn.dev/gameshitai/articles/f65544c1e5a7ea) — スナギモ
+
+- [ドメインの境界を引くだけでは、業務はつながらない](https://zenn.dev/dress_code/articles/4a76f1b88e360d) — かわうそ
+
+- [個人で使うClaude Codeの権限設定についてざっくり見直してみた](https://zenn.dev/takyshu98/articles/915702cf8c84f3) — takyshu98
+
+- [「止まっている案件はどれ?」にSQLで答える。Snowflake Cortex AIで議事録を自動分類する](https://zenn.dev/fusic/articles/snowflake-ai-parse-document-minutes) — Y_uuu
+
+- [リトルの法則で考える障害時のキャパシティプランニング](https://zenn.dev/rea9r/articles/littles-law-capacity-planning) — Takuya Akamatsu
 
 - [生産計画を手を動かして学ぶ ― OSS の frePPLe で MRP・需要予測・CP-SAT まで](https://zenn.dev/rkawajiri/books/frepple-tutorial-ja) — Ryoma Kawajiri
 
-- [LLMエージェント基盤のシステム設計 #1 エージェントランタイム（Harness）](https://zenn.dev/acntechjp/articles/2246165a4098c5) — Yuuichi Eguchi
-
 - [ポートフォリオをVoidで作り直したので、Voidの来歴と中身を整理する](https://zenn.dev/nkzn/articles/my-first-void) — Nkzn
-
-- [コネクタも API も無いサービスを、Claude Code に操作させる](https://zenn.dev/edash_tech_blog/articles/6250fc61ccf009) — じょーじ
-
-- [LLMにとって書きやすい構文とは何か：`end` と `end func foo` を1,000回以上比べてみた](https://zenn.dev/nextbeat/articles/2026-10-syntax-locality-llm) — kmizu
 
 - [技術書を年に数冊しか買わない自分に、O'Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）](https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm) — m.okamura
 
 - [ベクトルDBを使わない「階層ナビゲーション型RAG」を作って、ベクトルDB版RAGと比較してみた](https://zenn.dev/aiforall/articles/8e1803396534de) — nishina
 
 - [有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか](https://zenn.dev/hand_dot/articles/ecb391d4322330) — Kyohei Fukuda
-
-- [国産モデル sarashina3-mini は日本語の推敲で何を変えるのか？](https://zenn.dev/algoartis/articles/03ca12150ccbee) — 大賀愛一郎（oga_aiichiro）
-
-- [改めて考える、AIエンジニアリングの今](https://zenn.dev/r_kaga/articles/2fd185c50cea7c) — r.kagaya
-
-- [『現場で役立つシステム設計の原則』を読んで学んだこと、実践したこと、これからやりたいこと](https://zenn.dev/wwwave/articles/38b8284f96bd9e) — 塚本
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

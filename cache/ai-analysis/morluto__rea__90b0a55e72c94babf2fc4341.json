@@ -1,0 +1,53 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリ、実行時の振る舞いなど、あらゆるものをAIエージェントとMCP（Model Context Protocol）を活用してリバースエンジニアリングするためのツールです。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールにAIエージェントを接続します。",
+      "evidence_section": "REA: Reverse Engineer Anything"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンや、内蔵の静的解析ツールを利用してコードを調査できます。",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARを対象に、モジュール、インポート、Electron境界とその証拠をJSON形式で取得できます。",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内の特定の機能がどのように動作しているかを調査し、その証拠を表示した上で、自分のプロジェクト向けに同様の機能を構築する。",
+      "basis": "README明記",
+      "evidence_section": "REA: Reverse Engineer Anything"
+    },
+    {
+      "text": "DX-Ballのサウンドパン計算処理を再構築し、元のx86のケースを通過させてコンパイルされた関数バイトを再現する。",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    },
+    {
+      "text": "NotionのElectronクリップボードブリッジをトレースし、レンダラーのAPIからプリロードやIPCを経由してメインプロセスに至る流れを調査する。",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    }
+  ],
+  "first_trial": {
+    "goal": "エージェントのセットアップを行い、REAを利用可能にする",
+    "steps": [
+      "npx rea-agents setup"
+    ],
+    "success_criteria": "エージェントを選択し、提案された変更を確認して承認することで、REAのMCPサーバーと対応するワークフロー手順が追加されること"
+  },
+  "evidence_sections": [
+    "REA: Reverse Engineer Anything",
+    "Quick start",
+    "What you can analyze",
+    "Showcases"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4d92860baa45c5b564d18a8d1eb874faed31b211",
+  "generated_at": "2026-10-20T09:32:57.588423+09:00"
+}

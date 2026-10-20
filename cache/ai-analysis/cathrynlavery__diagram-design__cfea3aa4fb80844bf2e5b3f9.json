@@ -1,0 +1,55 @@
+{
+  "summary_ja": "cathrynlavery/diagram-design は、AIエージェント向けのエディトリアルな図解作成スキルです。影のない、HTMLとSVGが一体化したファイルとして、ブランドに合わせた45種類の図を出力します。",
+  "capabilities": [
+    {
+      "text": "1つの自己完結型HTMLおよびSVGファイルとして図を描画する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "45種類の図に対応している",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ブランドのカラーパレットやフォントに合わせたデザインを作成できる",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "フロントエンド、バックエンド、データベース、Redisキャッシュを含むアプリの構成図を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "インパクトと工数を軸にしたQ2プロジェクトの象限図を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "401エラー時のトークンリフレッシュを伴うベアラーコールのシーケンス図を作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "diagram-design スキルをインストールする",
+    "steps": [
+      "npx skills add cathrynlavery/diagram-design"
+    ],
+    "success_criteria": "スキルがエージェントホストに正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Quickstart",
+    "About"
+  ],
+  "unconfirmed": [
+    "Quickstartセクションのコードブロック以降の詳細な手順がREADME内で途切れているため確認できない"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "70a2f5bdf367e083b55ed64ea2fbdb0bed574b63",
+  "generated_at": "2026-10-20T09:33:06.604542+09:00"
+}
