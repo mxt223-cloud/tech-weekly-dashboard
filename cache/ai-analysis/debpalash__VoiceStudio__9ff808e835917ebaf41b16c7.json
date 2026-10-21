@@ -1,0 +1,58 @@
+{
+  "summary_ja": "VoiceStudioは、音声クローン、音声デザイン、ビデオの吹き替え、ディクテーション、音声文字起こし、オーディオブック作成を646言語で提供するオープンソースのローカル完全対応アプリケーションです。",
+  "capabilities": [
+    {
+      "text": "音声のクローン作成や独自の音声デザインができる",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "タイミングの合った音声でビデオの吹き替えができる",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "ローカルAPIやMCP（Model Context Protocol）をエージェント向けに提供する",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自分の声や他者の声をクローンして、テキストから音声を生成する",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "動画ファイルに対してタイミングを合わせた吹き替え音声を作成する",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "ストーリーテリングやオーディオブック、バッチ処理による音声コンテンツの大量生成を行う",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "first_trial": {
+    "goal": "macOSまたはLinux環境でワンコマンドインストールスクリプトを実行してデスクトップアプリを導入する",
+    "steps": [
+      "端末（ターミナル）を開く",
+      "curl -fsSL https://voicestudio.sh/install | sh を実行する"
+    ],
+    "success_criteria": "VoiceStudioのデスクトップアプリが正常にインストールされ、起動できる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Your voice. Your workflow.",
+    "Get started",
+    "Documentation",
+    "License & responsible use"
+  ],
+  "unconfirmed": [
+    "対応している646言語それぞれの詳細な品質や個別エンジンの挙動",
+    "各モデルウェイトの商用利用に関する具体的な権利範囲"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9f5b7e01370e672810bd9b33fe3b19cd1862fd37",
+  "generated_at": "2026-10-21T09:02:50.186182+09:00"
+}

@@ -1,0 +1,1159 @@
+{
+  "generated_at": "2026-10-21T09:02:56.491768+09:00",
+  "week": "2026-10-21",
+  "title": "Tech Daily",
+  "github": [
+    {
+      "rank": 1,
+      "full_name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars_total": 347762,
+      "forks_total": 87496,
+      "stars_period": 157631,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-21T00:02:25Z",
+        "pushed_at": "2026-10-20T23:49:12Z",
+        "open_issues": 1500,
+        "archived": false,
+        "size_kb": 92148,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "binary-analysis",
+          "claude-code",
+          "cli",
+          "codex",
+          "cordis",
+          "decompiler",
+          "developer-tools",
+          "dsh",
+          "dsh-plugin",
+          "ghidra",
+          "hopper",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "rea",
+          "reverse-engineering",
+          "static-analysis",
+          "touhou"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "a4da4bb8184998aace2812de66e5a077789e7a3e",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 23919,
+        "used_chars": 23474
+      },
+      "analysis": {
+        "summary_ja": "REAは、ネイティブバイナリ、アプリ、ランタイム動作などをAIエージェントと組み合わせてリバースエンジニアリングするためのMCPサーバーおよびCLIツールです。",
+        "capabilities": [
+          {
+            "text": "ネイティブバイナリの擬似コード、アセンブリ、文字列、シンボル、呼び出し、参照の検査",
+            "evidence_section": "What you can analyze"
+          },
+          {
+            "text": "JavaScriptやElectronアプリケーションのモジュール、インポート、ソースマップ、ルート、IPC関係の解析",
+            "evidence_section": "What you can analyze"
+          },
+          {
+            "text": ".NETアセンブリのメタデータ、CIL命令、宣言されたネイティブ依存関係、ビルド比較の静的検査",
+            "evidence_section": "What you can analyze"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "アプリ内の特定の機能がどのように動作しているかを調査し、同じような機能を自分のプロジェクト用に構築する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ゲーム内の古い計算処理やサウンドの仕組みを解析してC言語やC++として再構築する",
+            "basis": "README明記",
+            "evidence_section": "Showcases"
+          },
+          {
+            "text": "Electronアプリのレンダラーからメインプロセスへ至るクリップボード連携やAPIの挙動を追跡する",
+            "basis": "README明記",
+            "evidence_section": "Showcases"
+          }
+        ],
+        "first_trial": {
+          "goal": "REAのエージェント連携セットアップを行う",
+          "steps": [
+            "Node.jsとnpmがインストールされた環境で端末を開く",
+            "npx rea-agents setup を実行する",
+            "使用するエージェントを選択し、変更内容を確認して承認する",
+            "エージェントを再起動する"
+          ],
+          "success_criteria": "REAのMCPサーバーとワークフロー手順がエージェントに正しく登録され、利用可能になること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick start",
+          "How REA works",
+          "What you can analyze",
+          "Showcases",
+          "FAQ",
+          "Documentation"
+        ],
+        "unconfirmed": [
+          "ネイティブ解析プロバイダとしてHopper、Ghidra、IDA以外の未記載ツールに対応しているかどうか",
+          "対応しているすべてのプラットフォームにおける具体的な依存関係の詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "a4da4bb8184998aace2812de66e5a077789e7a3e",
+        "generated_at": "2026-10-21T09:02:41.815943+09:00"
+      }
+    },
+    {
+      "rank": 2,
+      "full_name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars_total": 60500,
+      "forks_total": 18875,
+      "stars_period": 12848,
+      "api": {
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-10-21T00:02:21Z",
+        "pushed_at": "2026-10-20T19:02:25Z",
+        "open_issues": 31,
+        "archived": false,
+        "size_kb": 5239,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "career",
+          "claude-code",
+          "cover-letter",
+          "cv",
+          "interview-preparation",
+          "job-application",
+          "job-hunting",
+          "job-search",
+          "latex",
+          "resume"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "c46aae58b9f645dc2dd31338c46c6836459c5070",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 33919,
+        "used_chars": 4288
+      },
+      "analysis": {
+        "summary_ja": "ai-job-searchは、Claude Codeを基盤として自身のPC上で動作するAI求職・応募フレームワークです。求人情報の評価、CV（履歴書）の最適化、カバーレターの作成、面接対策を自動化します。",
+        "capabilities": [
+          {
+            "text": "Claude Codeを活用して、求人広告の評価や適合度のスコアリング、CVのカスタマイズ、カバーレターの作成を行います。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "自身のプロフィールを設定し、ドラフターとレビューアーによるアプリケーションパイプラインを実行します。",
+            "evidence_section": "What this is"
+          },
+          {
+            "text": "求人ポータルサイトの検索やセットアップのためのコマンド（/setup、/scrape、/applyなど）を提供します。",
+            "evidence_section": "What this is"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "自分のPC上で求職活動を自動化し、求人の適合度評価やCVの作成、面接対策を行う。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "LaTeXなどを使用して、応募先企業や職務に合わせたカスタムCVやカバーレターを自動生成する。",
+            "basis": "README明記",
+            "evidence_section": "What this is"
+          },
+          {
+            "text": "デンマーク市場向けの求人ポータル検索機能を利用して求人を探す。",
+            "basis": "README明記",
+            "evidence_section": "What this is"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをフォークし、前提条件を確認してセットアップを開始する",
+          "steps": [
+            "リポジトリをフォークして自身の環境にクローンする",
+            "Claude CodeやPython 3.10+、Bun、LaTeXディストリビューションなどの前提条件を準備する"
+          ],
+          "success_criteria": "前提条件が整い、ドキュメントの指示に従ってプロフィール設定の準備ができること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Does it actually work?",
+          "What this is",
+          "Prerequisites",
+          "Quick start"
+        ],
+        "unconfirmed": [
+          "Quick startセクションの具体的なインストール・実行コマンド（READMEが途中で切れているため詳細なコマンドライン手順は不明）"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "c46aae58b9f645dc2dd31338c46c6836459c5070",
+        "generated_at": "2026-10-20T09:33:01.661718+09:00"
+      }
+    },
+    {
+      "rank": 3,
+      "full_name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars_total": 43406,
+      "forks_total": 4584,
+      "stars_period": 5650,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-20T23:57:07Z",
+        "pushed_at": "2026-10-20T23:56:29Z",
+        "open_issues": 1175,
+        "archived": false,
+        "size_kb": 18286,
+        "topics": [
+          "claude-code",
+          "mcp",
+          "skills"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 3807,
+        "used_chars": 3806
+      },
+      "analysis": {
+        "summary_ja": "anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。",
+        "capabilities": [
+          {
+            "text": "Claude Codeのプラグインシステムを使用して、マーケットプレイスからプラグインを直接インストールできる機能",
+            "evidence_section": "Installation"
+          },
+          {
+            "text": "プラグインのメタデータ、MCPサーバー設定、スラッシュコマンド、エージェント、スキルなどを定義する標準構造を提供する機能",
+            "evidence_section": "Plugin Structure"
+          },
+          {
+            "text": "マニフェストファイルを持たないスキルバンドルリポジトリのスキル群を明示的な配列で宣言して公開できる機能",
+            "evidence_section": "Skill-bundle plugins"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "Claude Codeに公式またはサードパーティの高品質なプラグインを追加して機能を拡張する",
+            "basis": "README明記",
+            "evidence_section": "Claude Code Plugins Directory"
+          },
+          {
+            "text": "独自のプラグインを作成して公開・登録申請を行う",
+            "basis": "README明記",
+            "evidence_section": "Contributing"
+          }
+        ],
+        "first_trial": {
+          "goal": "Claude Code上でプラグインをインストールする",
+          "steps": [
+            "Claude Code内で /plugin install {plugin-name}@claude-plugins-official を実行する、または /plugin > Discover からプラグインを探してインストールする"
+          ],
+          "success_criteria": "指定したプラグインがClaude Codeに正常にインストールされること"
+        },
+        "evidence_sections": [
+          "Claude Code Plugins Directory",
+          "Installation",
+          "Contributing",
+          "Plugin Structure",
+          "Plugin names are immutable",
+          "Skill-bundle plugins"
+        ],
+        "unconfirmed": [
+          "具体的な個別のプラグインが何を提供するのかという機能詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd",
+        "generated_at": "2026-08-30T08:32:12.325450+09:00"
+      }
+    },
+    {
+      "rank": 4,
+      "full_name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars_total": 31354,
+      "forks_total": 2206,
+      "stars_period": 3556,
+      "api": {
+        "default_branch": "main",
+        "license": "NOASSERTION",
+        "updated_at": "2026-10-21T00:02:04Z",
+        "pushed_at": "2026-10-20T23:59:42Z",
+        "open_issues": 356,
+        "archived": false,
+        "size_kb": 37355,
+        "topics": [
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-hooks",
+          "claude-code-plugins",
+          "claude-code-skill",
+          "codex",
+          "codex-cli",
+          "context-mode",
+          "copilot",
+          "cursor-plugin",
+          "kiro",
+          "mcp",
+          "mcp-server",
+          "mcp-tools",
+          "openclaw",
+          "opencode",
+          "pi-agent",
+          "skills",
+          "zed-extension"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b796169524473691594af24995d21ca94027f7c7",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 94434,
+        "used_chars": 5257
+      },
+      "analysis": {
+        "summary_ja": "Context Modeは、AIコーディングエージェントのコンテキストウィンドウを最適化するためのMCPサーバーです。ツール出力をサンドボックス化して削減し、SQLiteによるセッションメモリの永続化、コード実行によるコンテキスト節約、そして17のプラットフォームにわたるセキュリティ権限の強制を行います。",
+        "capabilities": [
+          {
+            "text": "ツール出力をサンドボックス化し、コンテキストウィンドウの生データを削減する",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "SQLiteを使用してファイル編集やgit操作などのセッション情報を追跡し、会話の圧縮後も関連情報を取得できるようにする",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "LLMにスクリプトを書かせて実行させることで、大量のツール呼び出しによるコンテキスト消費を抑える",
+            "evidence_section": "How Context Mode Solves It"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "PlaywrightのスナップショットやGitHubのIssue、アクセスログなどの大量の生データがコンテキストを圧迫する問題を解決する",
+            "basis": "README明記",
+            "evidence_section": "The Problem"
+          },
+          {
+            "text": "コードベースの解析や集計を行う際、ファイル群を直接読み込ませる代わりにスクリプトで処理して結果のみを出力させる",
+            "basis": "README明記",
+            "evidence_section": "How Context Mode Solves It"
+          },
+          {
+            "text": "sudoや機密ファイルへのアクセスなどの危険な操作をMCPサンドボックス内で制限する",
+            "basis": "README明記",
+            "evidence_section": "Security"
+          }
+        ],
+        "first_trial": {
+          "goal": "セキュリティ権限設定を追加して権限ルールを適用する",
+          "steps": [
+            "プロジェクトの .claude/settings.json（またはグローバルの ~/.claude/settings.json）に権限設定のJSONを追加する"
+          ],
+          "success_criteria": "設定ファイルにdenyやallowのルールが正しく記述され、セキュリティポリシーとして読み込まれる状態になること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "The Problem",
+          "How Context Mode Solves It",
+          "Security"
+        ],
+        "unconfirmed": [
+          "詳細なインストール手順や具体的なnpmコマンド等のクイックスタート手順",
+          "17のプラットフォームすべての個別設定方法"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "b796169524473691594af24995d21ca94027f7c7",
+        "generated_at": "2026-09-11T08:21:13.273532+09:00"
+      }
+    },
+    {
+      "rank": 5,
+      "full_name": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars_total": 92131,
+      "forks_total": 10317,
+      "stars_period": 6184,
+      "api": {
+        "default_branch": "master",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-21T00:02:38Z",
+        "pushed_at": "2026-10-20T12:16:20Z",
+        "open_issues": 2134,
+        "archived": false,
+        "size_kb": 415574,
+        "topics": [
+          "disassembler",
+          "reverse-engineering",
+          "software-analysis"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 7205,
+        "used_chars": 7119
+      },
+      "analysis": {
+        "summary_ja": "Ghidraは、アメリカ国家安全保障局（NSA）が開発したソフトウェアリバースエンジニアリング（SRE）フレームワークです。コンパイルされたコードの解析を行うための逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの高度なツールを備えています。",
+        "capabilities": [
+          {
+            "text": "逆アセンブル、アセンブル、逆コンパイル、グラフ化、スクリプト実行などの機能",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "多様なプロセッサ命令セットや実行ファイルフォーマットのサポート",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ユーザーインタラクティブモードおよび自動化モードでの実行",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "複雑なSRE作業におけるスケーリングやチーム作業の問題解決",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "マルウェアのコード分析とネットワークやシステムの脆弱性理解のための洞察生成",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "JavaやPythonを使用した独自の拡張コンポーネントやスクリプトの開発",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "公式の事前ビルド版をインストールして起動する",
+          "steps": [
+            "JDK 25 64-bitをインストールする",
+            "Ghidraのリリースファイルをダウンロードして解凍する",
+            "./ghidraRun (Windowsの場合はghidraRun.bat)を実行して起動する"
+          ],
+          "success_criteria": "Ghidraが正常に起動すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Security Warning",
+          "Install",
+          "Build",
+          "Develop",
+          "Contribute"
+        ],
+        "unconfirmed": [
+          "具体的な対応プロセッサ命令セットや実行ファイルフォーマットの全リスト",
+          "セキュリティアドバイザリの詳細な脆弱性内容"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+        "generated_at": "2026-10-16T08:46:32.418395+09:00"
+      }
+    },
+    {
+      "rank": 6,
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "stars_total": 53262,
+      "forks_total": 4705,
+      "stars_period": 4549,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-20T23:59:58Z",
+        "pushed_at": "2026-10-19T09:33:57Z",
+        "open_issues": 50,
+        "archived": false,
+        "size_kb": 471270,
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "3fcebf5c0e49e39dc87e5b577d0368d313124862",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 83659,
+        "used_chars": 8893
+      },
+      "analysis": {
+        "summary_ja": "Scientific Agent Skillsは、AIエージェントに生物学、化学、医学などの科学的タスクを実行させるための177件の検証済みスキルと100以上の科学データベースを提供するライブラリです。",
+        "capabilities": [
+          {
+            "text": "177件の科学・研究スキルと100以上の科学データベースへの対応",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Cisco AI Defense Skill Scannerを用いたLLMベースのセキュリティスキャン",
+            "evidence_section": "⚠️ Security Disclaimer"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "AIエージェントに複雑な多段階の科学的ワークフローを実行させること",
+            "basis": "README明記",
+            "evidence_section": "💡 Quick Examples"
+          },
+          {
+            "text": "NVIDIA OpenShellなどのポリシー制御されたサンドボックス環境内でスキルを実行すること",
+            "basis": "README明記",
+            "evidence_section": "🔬 Use Cases"
+          }
+        ],
+        "first_trial": {
+          "goal": "サードパーティ製スキルのローカルセキュリティスキャンを実行する",
+          "steps": [
+            "uv pip install cisco-ai-skill-scanner",
+            "skill-scanner scan /path/to/skill --use-behavioral"
+          ],
+          "success_criteria": "スキャンコマンドがエラーなく実行され、結果が出力されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "🎯 Getting Started",
+          "⚠️ Security Disclaimer",
+          "💡 Quick Examples",
+          "🔬 Use Cases"
+        ],
+        "unconfirmed": [
+          "Getting Startedセクションの具体的なインストールコマンドの記述",
+          "Quick Examplesセクションの具体的なプロンプト例の記述"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "3fcebf5c0e49e39dc87e5b577d0368d313124862",
+        "generated_at": "2026-10-20T09:33:08.799817+09:00"
+      }
+    },
+    {
+      "rank": 7,
+      "full_name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars_total": 68484,
+      "forks_total": 6190,
+      "stars_period": 5994,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-21T00:02:33Z",
+        "pushed_at": "2026-10-21T00:02:17Z",
+        "open_issues": 395,
+        "archived": false,
+        "size_kb": 510338,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "animation",
+          "claude-code",
+          "ffmpeg",
+          "framework",
+          "gsap",
+          "html",
+          "html-to-video",
+          "mcp",
+          "motion-graphics",
+          "puppeteer",
+          "rendering",
+          "typescript",
+          "video-editor"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "4529ffdda7076e54a94d380009d3cd5be6cff30d",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 28880,
+        "used_chars": 26917
+      },
+      "analysis": {
+        "summary_ja": "HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを確定的なMP4動画に変換するためのオープンソースフレームワークです。AIコーディングエージェントとの統合や、CLI、ホスト型オーサリングのレンダリングコアとしての利用を想定して設計されています。",
+        "capabilities": [
+          {
+            "text": "HTMLとCSS、シーク可能なアニメーションを使用して確定的なMP4動画を生成する",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "GSAP、CSSアニメーション、Lottie、Three.js、Anime.js、WAAPIなどのアニメーションライブラリやランタイムに対応する",
+            "evidence_section": "How It Works"
+          },
+          {
+            "text": "CLIやAWS Lambdaを用いたローカルおよび分散レンダリングに対応する",
+            "evidence_section": "HyperFrames Stack"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "製品発表動画や機能紹介動画の作成",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          },
+          {
+            "text": "アニメーション付きコード差分、ナレーション、字幕を含むPRウォークスルーの作成",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          },
+          {
+            "text": "データビュジュアライゼーション、チャートレース、マップアニメーションの制作",
+            "basis": "README明記",
+            "evidence_section": "What You Can Build"
+          }
+        ],
+        "first_trial": {
+          "goal": "ローカル環境で動画プロジェクトを初期化し、プレビューおよびレンダリングを実行する",
+          "steps": [
+            "npx hyperframes init my-video",
+            "cd my-video",
+            "npx hyperframes preview",
+            "npx hyperframes render"
+          ],
+          "success_criteria": "ブラウザでのライブリロードによるプレビュー確認と、MP4形式へのレンダリングが成功すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quick Start",
+          "Skills",
+          "What You Can Build",
+          "Frame.md",
+          "How It Works",
+          "HyperFrames Stack",
+          "Catalog",
+          "Why HyperFrames?",
+          "HyperFrames vs Remotion",
+          "Documentation",
+          "Packages",
+          "Community",
+          "Development Note",
+          "License"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "4529ffdda7076e54a94d380009d3cd5be6cff30d",
+        "generated_at": "2026-10-08T10:13:02.023333+09:00"
+      }
+    },
+    {
+      "rank": 8,
+      "full_name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars_total": 78942,
+      "forks_total": 8676,
+      "stars_period": 17057,
+      "api": {
+        "default_branch": "main",
+        "license": "AGPL-3.0",
+        "updated_at": "2026-10-21T00:01:46Z",
+        "pushed_at": "2026-10-20T20:04:00Z",
+        "open_issues": 279,
+        "archived": false,
+        "size_kb": 139494,
+        "topics": [
+          "ai",
+          "audiobook",
+          "cuda",
+          "dubbing",
+          "elevenlabs-alternative",
+          "huggingface",
+          "local-first",
+          "mlx",
+          "omnivoice-studio",
+          "speech-to-text",
+          "text-to-speech",
+          "transcription",
+          "translate",
+          "tts",
+          "voice-ai",
+          "voice-cloning",
+          "voice-generation",
+          "voicestudio",
+          "workflow"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "9f5b7e01370e672810bd9b33fe3b19cd1862fd37",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 8783,
+        "used_chars": 7475
+      },
+      "analysis": {
+        "summary_ja": "VoiceStudioは、音声クローン、音声デザイン、ビデオの吹き替え、ディクテーション、音声文字起こし、オーディオブック作成を646言語で提供するオープンソースのローカル完全対応アプリケーションです。",
+        "capabilities": [
+          {
+            "text": "音声のクローン作成や独自の音声デザインができる",
+            "evidence_section": "Your voice. Your workflow."
+          },
+          {
+            "text": "タイミングの合った音声でビデオの吹き替えができる",
+            "evidence_section": "Your voice. Your workflow."
+          },
+          {
+            "text": "ローカルAPIやMCP（Model Context Protocol）をエージェント向けに提供する",
+            "evidence_section": "Your voice. Your workflow."
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "自分の声や他者の声をクローンして、テキストから音声を生成する",
+            "basis": "README明記",
+            "evidence_section": "Your voice. Your workflow."
+          },
+          {
+            "text": "動画ファイルに対してタイミングを合わせた吹き替え音声を作成する",
+            "basis": "README明記",
+            "evidence_section": "Your voice. Your workflow."
+          },
+          {
+            "text": "ストーリーテリングやオーディオブック、バッチ処理による音声コンテンツの大量生成を行う",
+            "basis": "README明記",
+            "evidence_section": "Your voice. Your workflow."
+          }
+        ],
+        "first_trial": {
+          "goal": "macOSまたはLinux環境でワンコマンドインストールスクリプトを実行してデスクトップアプリを導入する",
+          "steps": [
+            "端末（ターミナル）を開く",
+            "curl -fsSL https://voicestudio.sh/install | sh を実行する"
+          ],
+          "success_criteria": "VoiceStudioのデスクトップアプリが正常にインストールされ、起動できる状態になること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Your voice. Your workflow.",
+          "Get started",
+          "Documentation",
+          "License & responsible use"
+        ],
+        "unconfirmed": [
+          "対応している646言語それぞれの詳細な品質や個別エンジンの挙動",
+          "各モデルウェイトの商用利用に関する具体的な権利範囲"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "9f5b7e01370e672810bd9b33fe3b19cd1862fd37",
+        "generated_at": "2026-10-21T09:02:50.186182+09:00"
+      }
+    },
+    {
+      "rank": 9,
+      "full_name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars_total": 77827,
+      "forks_total": 9157,
+      "stars_period": 3143,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-10-21T00:01:44Z",
+        "pushed_at": "2026-10-20T17:26:15Z",
+        "open_issues": 982,
+        "archived": false,
+        "size_kb": 657402,
+        "topics": [
+          "agentic-ai",
+          "agentic-framework",
+          "agentic-workflow",
+          "agents",
+          "ai-agents",
+          "ai-assistant",
+          "ai-skills",
+          "autonomous-agents",
+          "claude",
+          "codex",
+          "dsh-plugin",
+          "harness",
+          "mcp-server",
+          "multi-agent",
+          "multi-agent-systems",
+          "npm",
+          "skills",
+          "swarm",
+          "swarm-intelligence",
+          "typescript"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "f17904bd1a41b5236d64d16240f10ad806d46c9a",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 34518,
+        "used_chars": 28524
+      },
+      "analysis": {
+        "summary_ja": "Rufloは、Claude CodeやCodexなどのモデル上で動作するエージェントメタハーネスであり、多人数エージェントのスウォーム協調、自律ワークフロー、アダプティブメモリ、ベクトルRAG統合などの機能を提供します。",
+        "capabilities": [
+          {
+            "text": "100以上の専門エージェントによるコーディング、テスト、セキュリティ、ドキュメント作成、アーキテクチャ設計のサポート",
+            "evidence_section": "What You Get"
+          },
+          {
+            "text": "HNSWインデックス付きのベクトルメモリとエージェントDBによる高速な検索機能",
+            "evidence_section": "What You Get"
+          },
+          {
+            "text": "ゼロトラストなエージェントフェデレーションによる、異なるマシンや組織間の安全な協調作業",
+            "evidence_section": "What You Get"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "Claude Code環境内でプラグインやコンソール機能を用いて、複数の自律エージェントやスウォームを統括する。",
+            "basis": "README明記",
+            "evidence_section": "Get started with Ruflo"
+          },
+          {
+            "text": "エージェント間でのベクトル検索やRAG統合を活用し、過去の成功パターンから自己学習する開発支援環境を構築する。",
+            "basis": "README明記",
+            "evidence_section": "What You Get"
+          },
+          {
+            "text": "複数マシン間でのセキュアなエージェント連携（フェデレーション）により、機密データを保護しながらタスクを分散処理する。",
+            "basis": "README明記",
+            "evidence_section": "Agent Federation — Slack for Agents"
+          }
+        ],
+        "first_trial": {
+          "goal": "CLIインストールによるプロジェクトセットアップとウィザードの実行",
+          "steps": [
+            "npx ruflo@latest init wizard"
+          ],
+          "success_criteria": "プロジェクトのセットアップウィザードが正常に起動すること"
+        },
+        "evidence_sections": [
+          "Get started with Ruflo",
+          "What You Get",
+          "Agent Federation — Slack for Agents",
+          "Quick Start"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "f17904bd1a41b5236d64d16240f10ad806d46c9a",
+        "generated_at": "2026-10-21T09:02:52.915914+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "android/skills",
+      "url": "https://github.com/android/skills",
+      "description": "",
+      "language": "Kotlin",
+      "stars_total": 9051,
+      "forks_total": 586,
+      "stars_period": 1255,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-20T22:48:08Z",
+        "pushed_at": "2026-10-20T15:20:03Z",
+        "open_issues": 38,
+        "archived": false,
+        "size_kb": 1695,
+        "topics": [
+          "skills"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "6636206616de644079b8b1d3334f4da22c8b379a",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 3019,
+        "used_chars": 3017
+      },
+      "analysis": {
+        "summary_ja": "Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。",
+        "capabilities": [
+          {
+            "text": "Android CLIを使用して特定のスキルをカレントディレクトリにインストールする",
+            "evidence_section": "Install Android skills"
+          },
+          {
+            "text": "Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする",
+            "evidence_section": "Install Android skills"
+          },
+          {
+            "text": "プラグインとしてClaude CodeやCodexにインストールする",
+            "evidence_section": "Install as an agent plugin"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる",
+            "basis": "README明記",
+            "evidence_section": "Android skills"
+          },
+          {
+            "text": "エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる",
+            "basis": "README明記",
+            "evidence_section": "Activate skills"
+          }
+        ],
+        "first_trial": {
+          "goal": "Android CLIを使用して特定のスキルをインストールする",
+          "steps": [
+            "android skills add r8-analyzer --project=."
+          ],
+          "success_criteria": "指定したスキルがプロジェクトにインストールされること"
+        },
+        "evidence_sections": [
+          "Android skills",
+          "Install Android skills",
+          "Install as an agent plugin",
+          "Activate skills"
+        ],
+        "unconfirmed": [
+          "リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "6636206616de644079b8b1d3334f4da22c8b379a",
+        "generated_at": "2026-10-21T09:02:56.267313+09:00"
+      }
+    }
+  ],
+  "zenn": [
+    {
+      "title": "テストの前提を「実際に遊んで撮ったセーブ」に替えたら、撮影ボットがソフトロックを見つけた",
+      "url": "https://zenn.dev/gzer0/articles/real-play-save-fixtures-for-ai-tests",
+      "author": "gzer0",
+      "published": "Tue, 20 Oct 2026 06:50:12 GMT",
+      "summary": "AIエージェントに書かせたE2Eテストの前提状態を、値の直接書き換えから「実際に遊んで撮ったセーブ」に替えました。対象はWebのターン制ゲーム、Godotのゲーム、量産用のWebゲームテンプレートの3つです。入れたその日に、半年近く止まっていたセーブ形式の移行を実データで確かめられました。Godotのほうでは、撮影用のボットが抜けられない状態（ソフトロック）に突き当たりました。テスト用のボットが毎回状態を初期値に戻していたせいで、これまでのテストには出ていなかったものです。\n"
+    },
+    {
+      "title": "AI にリバースエンジニアリングさせる REA を触って、持ち帰ったのは「証拠付きで進める」考え方でした",
+      "url": "https://zenn.dev/flinters_blog/articles/3b377ce568d676",
+      "author": "Takashi Kawachi",
+      "published": "Tue, 20 Oct 2026 03:00:05 GMT",
+      "summary": "はじめに\nこんにちは。FLINTERSの河内です。\n社内で毎週開いている AI 活用の勉強会で、今回（2026-10-19）は REA（Reverse Engineer Anything）を取り上げました。担当は川上さんです。AI エージェントにバイナリやアプリを解析させるためのツールで、10月に入ってから GitHub のスターが急に伸びています。\n結論から書くと、REA を使いこなすところまでは行けませんでした。題材選びでつまずき、コマンドの引数でつまずき、最後は別のスキ"
+    },
+    {
+      "title": "Oxlint + Oxfmt で規約をコード化するモノレポ運用",
+      "url": "https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006",
+      "author": "Toshiki Okazaki",
+      "published": "Tue, 20 Oct 2026 02:00:05 GMT",
+      "summary": "長らく ESLint + Prettier を使ってきました。大きな不満はなかったものの、実行時間が少し気になっていました。そこで、Biome と Oxc を実際のモノレポで検証して、最終的に Oxlint + Oxfmt に移行しました。\nこの記事では、Biome と Oxc を比較・検証した過程と、Oxlint + Oxfmt を使ってコーディング規約をコードとして強制する運用を紹介します。\n\n 導入の経緯とモチベーション\n\n lint / format の待ち時間が気に"
+    },
+    {
+      "title": "Chromium(V8)のArray.prototype.fillを最大約7倍高速化した",
+      "url": "https://zenn.dev/dinii/articles/5b8edc7856c25b",
+      "author": "Riya Amemiya",
+      "published": "Tue, 20 Oct 2026 01:00:05 GMT",
+      "summary": "はじめに\n!\n修正や追加等はコメントまたはGitHubで編集リクエストをお待ちしております。\n\nダイニーで一番若いエンジニアのriya amemiya(21歳)です。\n(V8の配列系メソッド高速化職人をそろそろ名乗っても怒られないんじゃないか？と最近思い始めました🧐)\n今回は Array.prototype.fill（以下 fill）をSmiとdouble向けに最大約7倍高速化しました。\nV8の配列系メソッドのfast path実装に取り組む人は世界で見てもほとんどいないので"
+    },
+    {
+      "title": "Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】",
+      "url": "https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49",
+      "author": "iakito",
+      "published": "Mon, 19 Oct 2026 23:00:05 GMT",
+      "summary": "はじめに\nこんにちは。e-dash でエンジニアをしている iakito です。\nAI コーディングエージェントを使って開発していると、実装と一緒にテストも増えていき、気づいたときには膨大な量になっていることがあります。私が担当しているプロダクトも例外ではなく、PR CI の待ち時間は長いときで 18 分を超え、日々の開発で地味なストレスになっていました。\n本記事では、Claude Code を使ってこの待ち時間を 4 分台まで短縮した取り組みを紹介します。\n\n 背景\nCI "
+    },
+    {
+      "title": "npm と比べて分かった Go の依存管理の「一番の違い」── go get の中身を 6 ステップで追う",
+      "url": "https://zenn.dev/shiro_kuma_san/articles/8abfbdacfeaa59",
+      "author": "shiro_kuma_san",
+      "published": "Mon, 19 Oct 2026 22:15:05 GMT",
+      "summary": "2026 年 9 月 30 日の Go Bash vol.3 で「npm との違いを手がかりに Go の依存管理を理解したい」というタイトルで登壇しました。この記事はその内容を、登壇では時間の都合で省いた実測ログも足して書き直したものです。\n\n\n この記事で扱うこと\n普段 Go を書いていると、go get を打てば依存が入り、go.sum も勝手に増えていきます。それで困ったこともありません。ただ、次の質問に即答できるでしょうか。\n\n\ngo.sum は package-lo"
+    },
+    {
+      "title": "対象が広い事業・プロダクトが刺さる気がしない",
+      "url": "https://zenn.dev/fusa_bp/articles/broad-target-reaches-no-one",
+      "author": "fusa_bp",
+      "published": "Mon, 19 Oct 2026 17:05:28 GMT",
+      "summary": "対象が広いと、課題が「なんとなく困っている」レベルのまま止まってしまい、効果的な解決策にたどり着けないからだと考えています。逆に言えば、具体的なペルソナとは、課題を深掘りした先にいる人の姿なのだと思います。\n\n きっかけ\n先日、友人と事業の方向性について話していました。もともとは、ある習い事を始めた初心者を支援するアプリを作りたい、というところから始まった事業です。\n類似したサービスがすでにあるという事情もありましたが、それ以上に、僕は「初心者なら誰でも使えるアプリを作る」と"
+    },
+    {
+      "title": "macOSで特定のビューをスクリーンキャプチャから隠す",
+      "url": "https://zenn.dev/d_date/articles/macos-capture-protection-preventscapture",
+      "author": "Daiki Matsudate",
+      "published": "Mon, 19 Oct 2026 15:20:47 GMT",
+      "summary": "はじめに\nmacOSのSwiftUI・AppKitアプリで、特定のビューを画面に表示しながら、スクリーンショットや画面収録から除外する方法を調べました。結論は、AVSampleBufferDisplayLayer.preventsCaptureを設定したレイヤーを、対象ビューのマスクに使う方法です。\niOSDC Japan 2025の発表“SwiftUI時代のスクショ保護〜セキュアなViewの作り方〜”（ビスターさん）では、カメラで画面を撮られれば防げないことを踏まえ、一般的"
+    },
+    {
+      "title": "AIを利用したレガシーコード改善",
+      "url": "https://zenn.dev/naoyuki1212/articles/20261019-legacy-code-with-ai",
+      "author": "Naoyuki",
+      "published": "Mon, 19 Oct 2026 14:53:36 GMT",
+      "summary": "以前作ったExcelの差分比較ツールが、テストがなく、依存関係も古いままになっていました。\n今回、Claude Codeに3つのゴールを渡して、レガシーコードの改善を進めてもらいました。\n今回のアプローチは、『レガシーコード改善ガイド』（マイケル・C・フェザーズ著）の帯に書かれているように、テストがないコードはレガシーコードだ という理解を前提にしています。\nそのため、まずテストを用意することを最初のゴールにしました。\nこの記事では、どんな順番で何を依頼し、AIがどう進め、人"
+    },
+    {
+      "title": "Cloudflare + EmDash の自サイトを点検したら Server-Timing から内部情報が見えていた話",
+      "url": "https://zenn.dev/masaru21/articles/2100616bb5110d",
+      "author": "lonely_creator_m",
+      "published": "Mon, 19 Oct 2026 14:42:30 GMT",
+      "summary": "Webサイトのセキュリティについて勉強するため、まずは自分で管理しているサイトを実際に点検してみることにしました。\n対象は、Cloudflare上で動かしている自分のWebサイトです。\n構成は大まかに、\n\nCloudflare Workers\nAstro\nEmDash CMS\nCloudflare D1\nCloudflare KV\nCloudflare R2\n\nなどを利用しています。\n今回は、いきなり広範囲な脆弱性スキャンを行うのではなく、\n\nNucleiで低負荷な技術判定\n"
+    },
+    {
+      "title": "AIとコンテストに参加する",
+      "url": "https://zenn.dev/attgm/articles/d28df25b88254a",
+      "author": "a2",
+      "published": "Mon, 19 Oct 2026 13:42:44 GMT",
+      "summary": "はじめに\nAHC GenAI Rules Trial Contest 2026 が開催されていることに気づきました。長期の AtCoder Heuristic Contest（AHC）向けに検討されている、生成AI利用ルールを評価するための試験コンテストです。レーティングの更新対象ではないので、気軽に参加してみました。\n\n ルールの設定\n公式の生成AI利用ルールには、AIに与えるための指示も Markdown 形式で用意されています。基本方針は、解法の考案・改善に関する判断は"
+    },
+    {
+      "title": "個人情報入りの PDF を AI に渡さない：Drive の前に「関所」を置いて突き合わせを自動化した話",
+      "url": "https://zenn.dev/hisa_tech_2973/articles/9cb4aee5b999fa",
+      "author": "HISA",
+      "published": "Mon, 19 Oct 2026 11:55:13 GMT",
+      "summary": "個人の売上管理で、毎月「売上明細（PDF）」と「納品書（xlsx）」を目で突き合わせる作業がありました。\nこれを Slack から一言で頼めるようにしたいと考え、今回ツールを作成しました。\n\nSlack に「照会お願いします」と送る\nGoogle Drive にある最新の売上明細 PDF を読む\n納品書から作った商品テーブルと照合する\n売れた商品（品番や名称、単価）をスレッドに返信する\n\n難しいのは、どちらのファイルにも住所や氏名などの個人情報が載っていることです。\nこの記事"
+    },
+    {
+      "title": "普段使いのWindows PCでNodeのサーバーを常駐させて踏んだ罠",
+      "url": "https://zenn.dev/matasuke_t/articles/bf784b79b29e86",
+      "author": "またすけ",
+      "published": "Mon, 19 Oct 2026 11:13:05 GMT",
+      "summary": "業務用のツールを、専用サーバーではなく普段使っている Windows PC で24時間動かしています。Node.js のバックエンドと、Vite の開発サーバーと、Puppeteer で動かすブラウザが10個ほど。\n作ったものが動くかより、「動き続けるか」のほうで何度も詰まったので、そのとき分かったことを書いておきます。\n\n 「起動時」トリガーが一度も発火していなかった\nサーバーが35時間止まっていて、原因を調べたらタスクスケジューラのトリガーが「起動時」だけでした。\nこのP"
+    },
+    {
+      "title": "Progate git自作インターン参加記〜AIとチーム開発との付き合い方〜",
+      "url": "https://zenn.dev/yurapii/articles/2622d98d641acc",
+      "author": "ゆらぴー",
+      "published": "Mon, 19 Oct 2026 10:49:53 GMT",
+      "summary": "はじめに\nProgateさんの5Daysインターンに参加してきました。\n\n期間：2026年9月7〜11日\n課題：チームでTypeScriptを用いてgit log, add, commitを実装すること\n\n夏休み中に何か経験を積みたいと思い、調べていく中でこのインターンを見つけました。5Daysなら初めての経験として程よい長さだし、Progateさんはプログラミングの勉強やハッカソンでお世話になっているし、なによりgit作るなんて面白そう！ということで応募してみることにしまし"
+    },
+    {
+      "title": "Claude Codeの会話を55分放っておいたら、272,422トークンが13,522に圧縮されていました ― アイドル圧縮の観測",
+      "url": "https://zenn.dev/ojisan_ai_lab/articles/claude-code-idle-compaction-20261019",
+      "author": "おじさんAIラボ",
+      "published": "Mon, 19 Oct 2026 09:29:39 GMT",
+      "summary": "Claude Code のターミナルで27万トークンの会話を claude --resume で開いて1行だけ送り、あとは何も打たずに置いておきました。55.6分後、その会話は13,522トークンまで圧縮されていました。\n前々回の記事で、同じ会話でも1時間あけて戻ると、キャッシュから読める割合が6.1%まで落ちると書きました。その1時間が切れる少し前に、放置された会話を要約しておく「アイドル圧縮」が、10月14日の Claude Code v2.1.299 のリリースノートに"
+    },
+    {
+      "title": "AI時代、配布するPythonコードをどう守るか: 難読化の実験と判断軸",
+      "url": "https://zenn.dev/pksha/articles/0f9c11d1daea2e",
+      "author": "山本隼輔",
+      "published": "Mon, 19 Oct 2026 03:19:32 GMT",
+      "summary": "はじめに\nこんにちは。PKSHA Technology でソフトウェアエンジニアをしている山本です。\n2026 年 8 月 22 日に広島で開催された PyCon JP 2026 にて、「AI 時代、配布する Python コードをどう守るか: 難読化の実験と判断軸」というタイトルで発表しました。本記事は、その発表内容をもとに、発表時間の都合で触れられなかった内容も加えて文章にまとめ直したものです。\n\n発表ページ: https://2026.pycon.jp/ja/talks"
+    },
+    {
+      "title": "生産計画を手を動かして学ぶ ― OSS の frePPLe で MRP・需要予測・CP-SAT まで",
+      "url": "https://zenn.dev/rkawajiri/books/frepple-tutorial-ja",
+      "author": "Ryoma Kawajiri",
+      "published": "Sat, 17 Oct 2026 21:06:40 GMT",
+      "summary": "受注から購買・製造・配送の計画がどう作られるかを、OSS の生産計画ソフト frePPLe を Docker で動かして体験する無料ハンズオンです。MRP（所要量計算）と有限能力の制約あり計画の違い、遅れの原因をたどる方法、What-if、在庫・拠点間の配送、需要予測、OR-Tools CP-SAT による最適化まで、小さなモデルから順に学べます。業務知識は不要で、最初の3章はインストールなしで読めます。非公式ガイドです。"
+    },
+    {
+      "title": "ポートフォリオをVoidで作り直したので、Voidの来歴と中身を整理する",
+      "url": "https://zenn.dev/nkzn/articles/my-first-void",
+      "author": "Nkzn",
+      "published": "Fri, 16 Oct 2026 14:10:37 GMT",
+      "summary": "筆者のポートフォリオサイトnkzn.netは、これまで何度か作り直してきました。最初はNext.jsとExpo(react-native-web)を組み合わせた構成、2代目はExpo Router、3代目はAstroと、その上で動くCMSのEmDashで作り始めたものの、完成しないまま止まっていました。\nそこへ2026年10月15日、Cloudflareのブログに「Deploy with Void」という記事が公開されました。\nhttps://blog.cloudflare."
+    },
+    {
+      "title": "技術書を年に数冊しか買わない自分に、O'Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）",
+      "url": "https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm",
+      "author": "m.okamura",
+      "published": "Fri, 16 Oct 2026 02:53:28 GMT",
+      "summary": "はじめに\nオライリーの本は、技術書として信頼できるので、これまでも必要なものを買って読んでいました。\n自分は紙の本のほうが読みやすいタイプです。ただ、オライリーの本は分厚いものが多く、持ち歩くと重いのが難点でした。そんなとき、オライリーの本がオンラインのサブスクで読み放題になると知って、魅力を感じました。1冊数千円すると、気になっても買うまでには至らない本がけっこうあります。そういう本も気軽に開けるなら、お得に入れる方法があるなら入ってもいいかな、と考えました。\nそこで、まず"
+    },
+    {
+      "title": "有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか",
+      "url": "https://zenn.dev/hand_dot/articles/ecb391d4322330",
+      "author": "Kyohei Fukuda",
+      "published": "Thu, 15 Oct 2026 23:00:05 GMT",
+      "summary": "2026年に入ってから、有名な OSS が次々と PR を閉じはじめているなぁと感じています。OSS のエコシステムには個人的に興味があるので、少し調べてみました。メモがてら残しておきます。\n\n Hono が外部からの PR を閉じた\n10月5日、Hono の yusukebe さんがこう投稿していました。\nhttps://x.com/yusukebe/status/2107027870019445007\n\nBut PRs don't work in this era. Co"
+    }
+  ],
+  "common_terms": [
+    "code",
+    "claude",
+    "mcp",
+    "rea",
+    "reverse",
+    "engineer",
+    "npm",
+    "typescript",
+    "anything",
+    "puppeteer",
+    "deploy",
+    "resume"
+  ],
+  "ai_analysis": {
+    "enabled": true,
+    "model": "gemini-3.5-flash-lite",
+    "successful": 10,
+    "total": 10
+  },
+  "verification": {
+    "mode": "metadata-and-readme-analysis",
+    "completed": 0,
+    "pending": 10,
+    "note": "AI分析はREADMEの要約であり、実行検証や安全性保証ではありません。"
+  }
+}

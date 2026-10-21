@@ -1,0 +1,62 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリ、ランタイム動作などをAIエージェントと組み合わせてリバースエンジニアリングするためのMCPサーバーおよびCLIツールです。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリの擬似コード、アセンブリ、文字列、シンボル、呼び出し、参照の検査",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "JavaScriptやElectronアプリケーションのモジュール、インポート、ソースマップ、ルート、IPC関係の解析",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": ".NETアセンブリのメタデータ、CIL命令、宣言されたネイティブ依存関係、ビルド比較の静的検査",
+      "evidence_section": "What you can analyze"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内の特定の機能がどのように動作しているかを調査し、同じような機能を自分のプロジェクト用に構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ゲーム内の古い計算処理やサウンドの仕組みを解析してC言語やC++として再構築する",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    },
+    {
+      "text": "Electronアプリのレンダラーからメインプロセスへ至るクリップボード連携やAPIの挙動を追跡する",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    }
+  ],
+  "first_trial": {
+    "goal": "REAのエージェント連携セットアップを行う",
+    "steps": [
+      "Node.jsとnpmがインストールされた環境で端末を開く",
+      "npx rea-agents setup を実行する",
+      "使用するエージェントを選択し、変更内容を確認して承認する",
+      "エージェントを再起動する"
+    ],
+    "success_criteria": "REAのMCPサーバーとワークフロー手順がエージェントに正しく登録され、利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "How REA works",
+    "What you can analyze",
+    "Showcases",
+    "FAQ",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "ネイティブ解析プロバイダとしてHopper、Ghidra、IDA以外の未記載ツールに対応しているかどうか",
+    "対応しているすべてのプラットフォームにおける具体的な依存関係の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a4da4bb8184998aace2812de66e5a077789e7a3e",
+  "generated_at": "2026-10-21T09:02:41.815943+09:00"
+}

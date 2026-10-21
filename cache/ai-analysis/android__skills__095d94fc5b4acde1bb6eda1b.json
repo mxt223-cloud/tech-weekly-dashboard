@@ -1,0 +1,50 @@
+{
+  "summary_ja": "Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。",
+  "capabilities": [
+    {
+      "text": "Android CLIを使用して特定のスキルをカレントディレクトリにインストールする",
+      "evidence_section": "Install Android skills"
+    },
+    {
+      "text": "Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする",
+      "evidence_section": "Install Android skills"
+    },
+    {
+      "text": "プラグインとしてClaude CodeやCodexにインストールする",
+      "evidence_section": "Install as an agent plugin"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる",
+      "basis": "README明記",
+      "evidence_section": "Android skills"
+    },
+    {
+      "text": "エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる",
+      "basis": "README明記",
+      "evidence_section": "Activate skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "Android CLIを使用して特定のスキルをインストールする",
+    "steps": [
+      "android skills add r8-analyzer --project=."
+    ],
+    "success_criteria": "指定したスキルがプロジェクトにインストールされること"
+  },
+  "evidence_sections": [
+    "Android skills",
+    "Install Android skills",
+    "Install as an agent plugin",
+    "Activate skills"
+  ],
+  "unconfirmed": [
+    "リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "6636206616de644079b8b1d3334f4da22c8b379a",
+  "generated_at": "2026-10-21T09:02:56.267313+09:00"
+}
