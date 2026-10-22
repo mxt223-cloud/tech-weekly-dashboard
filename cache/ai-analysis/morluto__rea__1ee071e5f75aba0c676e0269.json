@@ -1,0 +1,48 @@
+{
+  "summary_ja": "REAは、バイナリ、アプリケーション、ランタイムの動作などをAIエージェントと連携してリバースエンジニアリングするためのModel Context Protocol (MCP) ツールです。ソースコードがない状態でもアプリの動作調査や検証、証拠の提示を行うことができます。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript、Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査をエージェントのツールに接続します。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ分析エンジンを用いた疑似コードやアセンブリの取得が可能です。",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "ローカル環境で分析を実行し、各結論の裏付けとなる証拠や制限事項を含めた結果を返します。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内の機能がどのように動いているかを調査し、自分のプロジェクト向けの類似機能を構築する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリ、ASARファイルを分析し、モジュールやインポート関係を把握する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "REAのエージェント設定をセットアップする",
+    "steps": [
+      "npx rea-agents setup を実行する",
+      "エージェントを選択して変更内容を確認し、承認して再起動する"
+    ],
+    "success_criteria": "REAのMCPサーバーとワークフロー手順がエージェントに追加されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "What you can analyze"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b0d470e45ea2ab1cf309724c6b44512b76e79bd4",
+  "generated_at": "2026-10-22T09:08:17.527960+09:00"
+}

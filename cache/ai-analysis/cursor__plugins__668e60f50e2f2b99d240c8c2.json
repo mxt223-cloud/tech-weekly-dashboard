@@ -1,0 +1,51 @@
+{
+  "summary_ja": "Cursor用の公式プラグインおよび仕様をまとめたマルチプラグインリポジトリです。開発ツール、生産性向上ツール、各種SaaS連携などのプラグインが含まれており、それぞれが独立したディレクトリとプラグインマニフェストを持っています。",
+  "capabilities": [
+    {
+      "text": "人気のある開発ツール、フレームワーク、SaaS製品向けの公式Cursorプラグインを提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "各プラグインをリポジトリのルートに独立したディレクトリとして配置し、plugin.jsonマニフェストを持たせる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ルートの.cursor-plugin/marketplace.jsonですべてのプラグインを一覧化する",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コードレビューやCI、デプロイなどの開発チーム向けワークフローをCursorプラグインで自動化する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "Gmail、Google Drive、GitHub、Slackなどの外部サービスやSaaSと連携してデータを操作する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造やプラグイン一覧を確認する",
+    "steps": [
+      "リポジトリのREADMEを開き、提供されているプラグインの一覧を確認する",
+      "plugins/ ディレクトリ以下の構造を確認する"
+    ],
+    "success_criteria": "プラグイン一覧やリポジトリのディレクトリ構成が確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure"
+  ],
+  "unconfirmed": [
+    "各プラグインの具体的なインストール方法やセットアップコマンド",
+    "クイックスタートの詳細手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "22823d7b992b33e2c408ff06771b8caa5d7df621",
+  "generated_at": "2026-10-22T09:08:26.420218+09:00"
+}
