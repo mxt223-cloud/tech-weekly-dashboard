@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T09:05:54.824979+09:00",
-  "week": "2026-10-23",
+  "generated_at": "2026-10-24T08:56:38.361459+09:00",
+  "week": "2026-10-24",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars_total": 366104,
-      "forks_total": 91729,
+      "stars_total": 373096,
+      "forks_total": 93337,
       "stars_period": 106341,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-23T00:05:25Z",
-        "pushed_at": "2026-10-22T23:59:37Z",
-        "open_issues": 1568,
+        "updated_at": "2026-10-23T23:56:16Z",
+        "pushed_at": "2026-10-23T23:52:49Z",
+        "open_issues": 1549,
         "archived": false,
-        "size_kb": 98878,
+        "size_kb": 108779,
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -45,52 +45,53 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "d590878a68f9b754d526c84340bfb29f8451500f",
+        "sha": "13ccf9f28eb977c5c4e45f3af97f7b61d21aed0c",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 25885,
-        "used_chars": 25440
+        "original_chars": 26109,
+        "used_chars": 25519
       },
       "analysis": {
-        "summary_ja": "REAは、ネイティブバイナリ、アプリ、ランタイム動作の逆アセンブルや調査をAIエージェントとMCP経由で行うためのツールです。ソースコードがない状態でもアプリの仕組みを解析し、証拠とともに提示します。",
+        "summary_ja": "REAは、ネイティブバイナリ、アプリケーション、実行時の振る舞いをAIエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）およびCLIツールです。",
         "capabilities": [
           {
-            "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールをエージェントに接続する",
+            "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで提供する",
             "evidence_section": "README冒頭"
           },
           {
-            "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携して、疑似コードやアセンブリ、文字列、シンボルを解析する",
-            "evidence_section": "What you can analyze"
+            "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを分析し、モジュール、インポート、Electron境界などの情報を出力する",
+            "evidence_section": "Use the terminal"
           },
           {
-            "text": "抽出したJavaScriptやElectronアプリのディレクトリ、ASARファイルを対象にモジュールやインポート、Electron境界をJSON形式で検査する",
-            "evidence_section": "Use the terminal"
+            "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、疑似コード、アセンブリ、文字列、シンボルなどを取得する",
+            "evidence_section": "What you can analyze"
           }
         ],
         "use_cases": [
           {
-            "text": "アプリに見つけた機能の仕組みをAIエージェントに調査させ、プロジェクト用のバージョンを構築する",
+            "text": "アプリ内の機能をエージェントに調査させ、仕組みを理解して自身のプロジェクト向けの機能を構築する",
             "basis": "README明記",
             "evidence_section": "README冒頭"
           },
           {
-            "text": "ノートアプリの検索機能の仕組みを理解し、証拠を表示させ、プロジェクト用に同様の機能を自作する",
+            "text": "ネイティブゲーム内のサウンド処理や弾幕計算の仕組みを逆コンパイル結果から再構築する",
             "basis": "README明記",
-            "evidence_section": "Ask your agent"
+            "evidence_section": "Showcases"
           },
           {
-            "text": "デスクトップアプリやゲームのバイナリ解析を行い、サウンド計算やクリップボード連携、弾幕計算などのアルゴリズムを再構築する",
+            "text": "Electron製アプリのクリップボード連携などの内部実装を追跡する",
             "basis": "README明記",
             "evidence_section": "Showcases"
           }
         ],
         "first_trial": {
-          "goal": "REAのエージェント設定と最小限のターミナル動作確認を行う",
+          "goal": "エージェントにREAのMCPサーバーとワークフロー指示を追加し、動作確認を行う",
           "steps": [
-            "npx rea-agents setup",
-            "npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json"
+            "npx rea-agents setup コマンドを実行してエージェントを設定する",
+            "エージェントを再起動する",
+            "エージェントに対して対象アプリの調査を依頼する"
           ],
-          "success_criteria": "エージェント設定のセットアップ画面が起動し、ターミナルでJavaScript/Electronアプリケーションの解析結果が出力されること"
+          "success_criteria": "エージェントを通じてREAの機能が呼び出され、ターゲットアプリの調査結果や証拠が表示されること"
         },
         "evidence_sections": [
           "README冒頭",
@@ -101,13 +102,13 @@
           "FAQ"
         ],
         "unconfirmed": [
-          "対応しているすべてのプラットフォームにおける依存ツールの詳細な導入手順やパス設定の仕様"
+          "具体的な対応OSごとの詳細な依存関係エラーの回避策の網羅性"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "d590878a68f9b754d526c84340bfb29f8451500f",
-        "generated_at": "2026-10-23T09:05:31.145670+09:00"
+        "readme_sha": "13ccf9f28eb977c5c4e45f3af97f7b61d21aed0c",
+        "generated_at": "2026-10-24T08:56:22.594153+09:00"
       }
     },
     {
@@ -116,17 +117,17 @@
       "url": "https://github.com/anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "stars_total": 43886,
-      "forks_total": 4623,
+      "stars_total": 44114,
+      "forks_total": 4640,
       "stars_period": 5649,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-10-22T23:58:46Z",
-        "pushed_at": "2026-10-22T21:09:04Z",
-        "open_issues": 1188,
+        "updated_at": "2026-10-23T23:38:03Z",
+        "pushed_at": "2026-10-23T18:21:27Z",
+        "open_issues": 1203,
         "archived": false,
-        "size_kb": 17885,
+        "size_kb": 17978,
         "topics": [
           "claude-code",
           "mcp",
@@ -200,17 +201,17 @@
       "url": "https://github.com/ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars_total": 78483,
-      "forks_total": 9226,
+      "stars_total": 78777,
+      "forks_total": 9250,
       "stars_period": 3708,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-22T23:51:49Z",
-        "pushed_at": "2026-10-22T23:39:49Z",
-        "open_issues": 963,
+        "updated_at": "2026-10-23T23:51:56Z",
+        "pushed_at": "2026-10-23T22:49:04Z",
+        "open_issues": 972,
         "archived": false,
-        "size_kb": 657694,
+        "size_kb": 658821,
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -236,68 +237,72 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "320c9bf934a68dde923a5899c2d27471d43a6922",
+        "sha": "d7a5c4a67963e7e11bd92703221144a80c6b538f",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 34651,
-        "used_chars": 28657
+        "original_chars": 34855,
+        "used_chars": 28749
       },
       "analysis": {
-        "summary_ja": "rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントメタハーネスです。100以上の専門エージェント、協調スウォーム、アダプティブメモリ、マルチプロバイダー対応、ゼロトラストなエージェント間フェデレーション機能などを提供し、AIエージェントのチーム運用をサポートします。",
+        "summary_ja": "ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントのメタハーネスであり、100以上の専門エージェント、協調スウォーム、自己学習メモリ、ゼロトラストなエージェント間フェデレーション機能を提供します。",
         "capabilities": [
           {
-            "text": "Claude CodeやCodexなどのモデルにツール、メモリ、ループ、サンドボックス、制御レイヤーを提供するハーネス機能",
-            "evidence_section": "Ruflo"
-          },
-          {
-            "text": "コーディング、テスト、セキュリティ、ドキュメントなどに対応する100以上の専門エージェントとスウォーム協調機能",
+            "text": "100種類以上のコーディング、テスト、セキュリティ、ドキュメント作成向け専門エージェント",
             "evidence_section": "What You Get"
           },
           {
-            "text": "mTLSとed25519によるゼロトラスト検証やPII保護パイプラインを備えたエージェントフェデレーション機能",
+            "text": "複数マシン間での安全な情報交換やピア認証を行うゼロトラストフェデレーション機能",
             "evidence_section": "Agent Federation — Slack for Agents"
+          },
+          {
+            "text": "HNSWインデックスによる高速なベクトルメモリ（AgentDB）",
+            "evidence_section": "What You Get"
           }
         ],
         "use_cases": [
           {
-            "text": "複数マシーンや組織間でエージェント同士が安全にワークスペースを共有し、タスクを協調して実行する",
+            "text": "複数エージェントによる協調的なワークフローの自動化とタスク調整",
             "basis": "README明記",
-            "evidence_section": "Agent Federation — Slack for Agents"
+            "evidence_section": "README"
           },
           {
-            "text": "HNSWインデックス付きのベクターメモリを活用した高速なエージェントの記憶検索と学習を行う",
+            "text": "過去の成功パターンやフィードバックから学習する自己学習型プロセスの実行",
             "basis": "README明記",
             "evidence_section": "What You Get"
           },
           {
-            "text": "Claude Code上でプラグインやコンソールを用いてエージェントのワークフローやコストを管理する",
+            "text": "脆弱性やCVEスキャン、プロンプトインジェクションのブロックといったセキュリティ監査",
             "basis": "README明記",
-            "evidence_section": "Get started with Ruflo"
+            "evidence_section": "What You Get"
           }
         ],
         "first_trial": {
-          "goal": "Rufloの初期化ウィザードを実行してプロジェクトのセットアップを行う",
+          "goal": "Claude Code環境でプラグインマーケットプレイスからrufloをインストールして初期化する",
           "steps": [
-            "npx ruflo@latest init wizard"
+            "/plugin marketplace add ruvnet/ruflo",
+            "/plugin install ruflo-core@ruflo",
+            "/plugin install ruflo-console@ruflo",
+            "/plugin install ruflo-mods@ruflo",
+            "/reload-plugins",
+            "/ruflo"
           ],
-          "success_criteria": "プロジェクトのセットアップウィザードが正常に起動し、ホストサーフェス等の設定が行われること"
+          "success_criteria": "Claude Code上でプラグインが有効化され、/rufloコマンドを実行してコンソールやツールを利用できること"
         },
         "evidence_sections": [
           "Get started with Ruflo",
-          "Ruflo",
           "Quick Start",
           "What You Get",
           "Agent Federation — Slack for Agents",
-          "Documentation",
-          "Support",
-          "License"
+          "Documentation"
         ],
-        "unconfirmed": [],
+        "unconfirmed": [
+          "具体的な商用利用におけるスケーラビリティや実運用での詳細なパフォーマンス数値"
+        ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "320c9bf934a68dde923a5899c2d27471d43a6922",
-        "generated_at": "2026-10-23T09:05:42.569869+09:00"
+        "readme_sha": "d7a5c4a67963e7e11bd92703221144a80c6b538f",
+        "generated_at": "2026-10-24T08:56:26.145613+09:00"
       }
     },
     {
@@ -306,17 +311,17 @@
       "url": "https://github.com/android/skills",
       "description": "",
       "language": "Kotlin",
-      "stars_total": 9245,
-      "forks_total": 593,
+      "stars_total": 9415,
+      "forks_total": 605,
       "stars_period": 1384,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-10-23T00:04:58Z",
-        "pushed_at": "2026-10-21T13:55:04Z",
+        "updated_at": "2026-10-23T23:51:47Z",
+        "pushed_at": "2026-10-23T14:35:29Z",
         "open_issues": 33,
         "archived": false,
-        "size_kb": 1759,
+        "size_kb": 1802,
         "topics": [
           "skills"
         ]
@@ -382,338 +387,290 @@
     },
     {
       "rank": 5,
-      "full_name": "K-Dense-AI/scientific-agent-skills",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-      "language": "Python",
-      "stars_total": 53887,
-      "forks_total": 4754,
-      "stars_period": 3967,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-10-23T00:04:27Z",
-        "pushed_at": "2026-10-19T09:33:57Z",
-        "open_issues": 57,
-        "archived": false,
-        "size_kb": 471270,
-        "topics": [
-          "agent-skills",
-          "ai-scientist",
-          "bioinformatics",
-          "chemoinformatics",
-          "claude",
-          "claude-skills",
-          "claudecode",
-          "clinical-research",
-          "computational-biology",
-          "data-analysis",
-          "drug-discovery",
-          "genomics",
-          "materials-science",
-          "metabolomics",
-          "proteomics",
-          "scientific-computing",
-          "scientific-visualization"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "3fcebf5c0e49e39dc87e5b577d0368d313124862",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 83659,
-        "used_chars": 8893
-      },
-      "analysis": {
-        "summary_ja": "Scientific Agent Skillsは、AIエージェントに生物学、化学、医学などの科学的タスクを実行させるための177件の検証済みスキルと100以上の科学データベースを提供するライブラリです。",
-        "capabilities": [
-          {
-            "text": "177件の科学・研究スキルと100以上の科学データベースへの対応",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "Cisco AI Defense Skill Scannerを用いたLLMベースのセキュリティスキャン",
-            "evidence_section": "⚠️ Security Disclaimer"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "AIエージェントに複雑な多段階の科学的ワークフローを実行させること",
-            "basis": "README明記",
-            "evidence_section": "💡 Quick Examples"
-          },
-          {
-            "text": "NVIDIA OpenShellなどのポリシー制御されたサンドボックス環境内でスキルを実行すること",
-            "basis": "README明記",
-            "evidence_section": "🔬 Use Cases"
-          }
-        ],
-        "first_trial": {
-          "goal": "サードパーティ製スキルのローカルセキュリティスキャンを実行する",
-          "steps": [
-            "uv pip install cisco-ai-skill-scanner",
-            "skill-scanner scan /path/to/skill --use-behavioral"
-          ],
-          "success_criteria": "スキャンコマンドがエラーなく実行され、結果が出力されること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "🎯 Getting Started",
-          "⚠️ Security Disclaimer",
-          "💡 Quick Examples",
-          "🔬 Use Cases"
-        ],
-        "unconfirmed": [
-          "Getting Startedセクションの具体的なインストールコマンドの記述",
-          "Quick Examplesセクションの具体的なプロンプト例の記述"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "3fcebf5c0e49e39dc87e5b577d0368d313124862",
-        "generated_at": "2026-10-20T09:33:08.799817+09:00"
-      }
-    },
-    {
-      "rank": 6,
       "full_name": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars_total": 220202,
-      "forks_total": 29430,
+      "stars_total": 220614,
+      "forks_total": 29503,
       "stars_period": 6750,
       "api": {
         "default_branch": "dev",
         "license": "MIT",
-        "updated_at": "2026-10-23T00:05:21Z",
-        "pushed_at": "2026-10-23T00:04:01Z",
-        "open_issues": 3637,
+        "updated_at": "2026-10-23T23:56:05Z",
+        "pushed_at": "2026-10-23T23:00:01Z",
+        "open_issues": 3671,
         "archived": false,
-        "size_kb": 593255,
+        "size_kb": 596359,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "9dee6ddc05449c3969072dfb6ec4edb3ec59d107",
+        "sha": "a8551f97c57f9140c4c2ce9f7c004dc4bc21954b",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 5038,
-        "used_chars": 4613
+        "original_chars": 4583,
+        "used_chars": 4158
       },
       "analysis": {
-        "summary_ja": "opencode は、開発作業を支援するオープンソースの AI コーディングエージェントです。",
+        "summary_ja": "anomalyco/opencodeは、オープンソースのAIコーディングエージェントであり、ターミナルUIやデスクトップアプリを通じて開発作業やコードの探索を支援します。",
         "capabilities": [
           {
-            "text": "開発作業向けのフルアクセスなビルドエージェント（build）を利用できます。",
+            "text": "buildエージェントによる開発向けのフルアクセスなコーディング作業",
             "evidence_section": "Agents"
           },
           {
-            "text": "分析やコード探索用の読み取り専用プランエージェント（plan）を利用できます。",
+            "text": "planエージェントによるコードの分析や読み取り専用の探索",
             "evidence_section": "Agents"
           },
           {
-            "text": "複雑な検索や複数ステップのタスク向けの一般的なサブエージェント（general）を利用できます。",
+            "text": "Tabキーによるエージェント間の切り替え",
             "evidence_section": "Agents"
           }
         ],
         "use_cases": [
           {
-            "text": "見慣れないコードベースの探索や変更の計画に活用できます。",
+            "text": "不慣れなコードベースの探索や変更の計画",
+            "basis": "README明記",
+            "evidence_section": "Agents"
+          },
+          {
+            "text": "開発作業におけるフルアクセスなコーディング支援の利用",
+            "basis": "README明記",
+            "evidence_section": "Agents"
+          },
+          {
+            "text": "@generalを使用した複雑な検索や複数ステップのタスクの実行",
             "basis": "README明記",
             "evidence_section": "Agents"
           }
         ],
         "first_trial": {
-          "goal": "CLIツールをインストールして利用を開始する",
+          "goal": "CLI環境でopencodeをインストールして使い始める",
           "steps": [
             "curl -fsSL https://opencode.ai/v2/install | bash"
           ],
-          "success_criteria": "opencodeがインストールされ、利用可能になること"
+          "success_criteria": "インストールスクリプトが正常に実行され、opencodeが利用可能になること"
         },
         "evidence_sections": [
           "README冒頭",
           "Installation",
           "Desktop App (BETA)",
-          "Agents"
+          "Agents",
+          "Documentation",
+          "Contributing",
+          "Building on OpenCode"
         ],
         "unconfirmed": [
-          "詳細な内部プロンプトの仕組みや対応しているすべてのAIモデルの種類"
+          "詳細な設定方法やAIモデルのバックエンドに関する具体的な仕様",
+          "コントリビューション手順の細かいルール"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "9dee6ddc05449c3969072dfb6ec4edb3ec59d107",
-        "generated_at": "2026-10-23T09:05:45.977952+09:00"
+        "readme_sha": "a8551f97c57f9140c4c2ce9f7c004dc4bc21954b",
+        "generated_at": "2026-10-24T08:56:29.102225+09:00"
       }
     },
     {
-      "rank": 7,
-      "full_name": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars_total": 56231,
-      "forks_total": 5065,
-      "stars_period": 3275,
+      "rank": 6,
+      "full_name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars_total": 103844,
+      "forks_total": 6557,
+      "stars_period": 9401,
       "api": {
         "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-10-23T00:05:18Z",
-        "pushed_at": "2026-09-22T02:01:29Z",
-        "open_issues": 215,
+        "license": "MIT",
+        "updated_at": "2026-10-23T23:56:03Z",
+        "pushed_at": "2026-10-23T23:55:52Z",
+        "open_issues": 8760,
         "archived": false,
-        "size_kb": 42270,
-        "topics": []
+        "size_kb": 1627101,
+        "topics": [
+          "ade",
+          "agent-ide",
+          "ai-agents",
+          "automation",
+          "bot",
+          "claude-code",
+          "codex",
+          "ghostty",
+          "grok-bot",
+          "hermes-agent",
+          "mobile-app",
+          "muse",
+          "openclaw",
+          "opencode",
+          "orchestration",
+          "pi",
+          "runtime",
+          "terminal",
+          "worktrees",
+          "yc-backed"
+        ]
       },
       "readme": {
         "status": "ok",
-        "sha": "8a78b5420911eff5e7cc219bf1ecb2a12b562874",
+        "sha": "dc6b13791676eaf8b8896ba2896d34eb1139e701",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 80335,
-        "used_chars": 6201
+        "original_chars": 17389,
+        "used_chars": 11270
       },
       "analysis": {
-        "summary_ja": "CLI-Anythingは、あらゆるソフトウェアをAIエージェント対応のCLIに変換するためのフレームワークおよびハブです。",
+        "summary_ja": "Orcaは、複数のコーディングエージェント（Claude Code、Codexなど）を並行して実行・管理するためのAIオーケストレーターです。デスクトップ、モバイル、リモートランタイムに対応しており、複数のエージェントを独立したワークツリーで同時に動かすことができます。",
         "capabilities": [
           {
-            "text": "cli-anything-hubパッケージマネージャーを介したコミュニティ製CLIのブラウジング、検索、インストール、管理。",
-            "evidence_section": "🚀 Quick Start"
+            "text": "独立したgitワークツリー上で複数のAIエージェントを並行して実行し、結果を比較してマージできる",
+            "evidence_section": "Features"
+          },
+          {
+            "text": "モバイルアプリを使用して、エージェントの作業完了の通知受け取りやスマホからのフォローアップ指示ができる",
+            "evidence_section": "Features"
+          },
+          {
+            "text": "Chromiumウィンドウ上のUI要素をクリックして、HTMLやCSS、切り抜きスクリーンショットをエージェントのプロンプトに送信できる",
+            "evidence_section": "Features"
           }
         ],
         "use_cases": [
           {
-            "text": "既存のCLIエコシステムを利用して、公開されている便利なCLIをインストールして実行する。",
+            "text": "1つのプロンプトを複数のエージェントに同時に処理させ、最も優れた結果をマージする",
             "basis": "README明記",
-            "evidence_section": "🚀 Quick Start"
+            "evidence_section": "Features"
+          },
+          {
+            "text": "外出先やデスクから離れた場所からでも、モバイル端末でAIエージェントの進捗監視や指示出しを行う",
+            "basis": "README明記",
+            "evidence_section": "Features"
+          },
+          {
+            "text": "アプリ内でGitHubのプルリクエストやIssue、プロジェクトボードを確認し、文脈を切り替えることなくワークツリーを開いてレビューする",
+            "basis": "README明記",
+            "evidence_section": "Features"
           }
         ],
         "first_trial": {
-          "goal": "CLI-Hubパッケージマネージャーのインストール",
+          "goal": "Orcaデスクトップアプリをインストールして起動する",
           "steps": [
-            "pip install cli-anything-hub"
+            "公式サイト（onorca.dev/download）またはHomebrew（brew install --cask stablyai/orca/orca）などのパッケージマネージャーを使用してインストールする"
           ],
-          "success_criteria": "cli-hubコマンドが利用可能になること"
+          "success_criteria": "Orcaデスクトップアプリが正常に起動すること"
         },
         "evidence_sections": [
-          "🚀 Quick Start",
-          "📦 Installation & Usage",
-          "📰 News"
+          "Features",
+          "Supported Agents",
+          "Install",
+          "Community & Support",
+          "Developing",
+          "Signed Builds",
+          "License"
         ],
         "unconfirmed": [
-          "7フェーズのハーネス生成の詳細なコマンドや手順"
+          "CONTRIBUTING.mdの詳細な開発手順",
+          "cloud/ディレクトリにあるリレーサーバーの具体的なセットアップ手順"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "8a78b5420911eff5e7cc219bf1ecb2a12b562874",
-        "generated_at": "2026-09-28T08:53:35.634589+09:00"
+        "cached": false,
+        "readme_sha": "dc6b13791676eaf8b8896ba2896d34eb1139e701",
+        "generated_at": "2026-10-24T08:56:31.905656+09:00"
       }
     },
     {
-      "rank": 8,
+      "rank": 7,
       "full_name": "cursor/plugins",
       "url": "https://github.com/cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars_total": 13606,
-      "forks_total": 1350,
+      "stars_total": 13780,
+      "forks_total": 1361,
       "stars_period": 2046,
       "api": {
         "default_branch": "main",
         "license": null,
-        "updated_at": "2026-10-22T23:50:18Z",
-        "pushed_at": "2026-10-22T19:11:22Z",
-        "open_issues": 318,
+        "updated_at": "2026-10-23T23:56:10Z",
+        "pushed_at": "2026-10-23T23:39:32Z",
+        "open_issues": 317,
         "archived": false,
-        "size_kb": 11132,
+        "size_kb": 11361,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "08ab4f44dee2e1fea6b6b7afd18404fe73fb76c4",
+        "sha": "a5304b61edc2e7d744fc4761620a2abdd7dec997",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 17730,
-        "used_chars": 17729
+        "original_chars": 18638,
+        "used_chars": 18637
       },
       "analysis": {
-        "summary_ja": "Cursorプラグインの仕様と、開発者ツール、フレームワーク、SaaS製品向けの公式プラグイン群を提供するリポジトリです。",
+        "summary_ja": "Cursor向け公式プラグインおよび仕様をまとめたリポジトリであり、開発者向けツール、生産性向上ツール、外部サービス連携など多様なプラグインを提供しています。",
         "capabilities": [
           {
-            "text": "人気のある開発者ツールやSaaS製品向けの公式Cursorプラグイン集を提供する",
-            "evidence_section": "README冒頭"
+            "text": "各プラグインはリポジトリのルートに独立したディレクトリとして配置され、専用の `.cursor-plugin/plugin.json` マニフェストを持っています。",
+            "evidence_section": "Cursor plugins"
           },
           {
-            "text": "各プラグインがリポジトリのルートに独立したディレクトリとして配置され、プラグイン用マニフェストを持つ構造にする",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "マーケットプレイス用マニフェスト（marketplace.json）と、各プラグインのマニフェスト（plugin.json）で構成されるマルチプラグインのマーケットプレイスリポジトリである",
+            "text": "リポジトリのルートにある `.cursor-plugin/marketplace.json` にすべてのプラグインがリストされています。",
             "evidence_section": "Repository structure"
           }
         ],
         "use_cases": [
           {
-            "text": "GitHubやGoogle Drive、Slack等のSaaS製品やツールと連携するプラグインを探して利用する",
+            "text": "人気のある開発者向けツール、フレームワーク、SaaS製品向けの公式Cursorプラグインを利用する。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Cursor plugins"
           },
           {
-            "text": "独自のエージェントプラグインを新しく作成して検証する",
-            "basis": "README明記",
-            "evidence_section": "Plugins"
-          },
-          {
-            "text": "TypeScript SDKを使用してアプリやスクリプト、自動化機能を構築する",
+            "text": "新規のエージェントプラグインの作成や検証を行う。",
             "basis": "README明記",
             "evidence_section": "Plugins"
           }
         ],
         "first_trial": {
-          "goal": "リポジトリのプラグイン構成や一覧を確認する",
+          "goal": "リポジトリ構造とプラグイン一覧を確認する",
           "steps": [
-            "リポジトリのREADMEを開き、提供されているプラグインの一覧を確認する",
-            "Repository structureのセクションでディレクトリ構成を確認する"
+            "リポジトリのREADMEを開き、プラグイン一覧のテーブルやリポジトリ構造のツリー表示を確認する。"
           ],
-          "success_criteria": "プラグインの一覧と各ディレクトリの構造が確認できていること"
+          "success_criteria": "提供されているプラグインのリストとディレクトリ構成を把握できること。"
         },
         "evidence_sections": [
-          "README冒頭",
+          "Cursor plugins",
           "Plugins",
           "Repository structure",
           "License"
         ],
         "unconfirmed": [
-          "具体的なインストールコマンドやセットアップ手順",
-          "各プラグインの詳細な利用方法やコード例"
+          "具体的なインストールコマンドやQuick Startの手順"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "08ab4f44dee2e1fea6b6b7afd18404fe73fb76c4",
-        "generated_at": "2026-10-23T09:05:49.280434+09:00"
+        "readme_sha": "a5304b61edc2e7d744fc4761620a2abdd7dec997",
+        "generated_at": "2026-10-24T08:56:34.328616+09:00"
       }
     },
     {
-      "rank": 9,
+      "rank": 8,
       "full_name": "akitaonrails/ai-memory",
       "url": "https://github.com/akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars_total": 12773,
-      "forks_total": 897,
+      "stars_total": 13035,
+      "forks_total": 909,
       "stars_period": 3322,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-22T23:58:38Z",
-        "pushed_at": "2026-10-22T23:58:43Z",
-        "open_issues": 18,
+        "updated_at": "2026-10-23T23:51:01Z",
+        "pushed_at": "2026-10-23T01:47:40Z",
+        "open_issues": 46,
         "archived": false,
-        "size_kb": 39634,
+        "size_kb": 40104,
         "topics": []
       },
       "readme": {
@@ -773,121 +730,226 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "1f0fbbf09fe41e6e0a7d891889e01c3576e27823",
         "generated_at": "2026-10-23T09:05:52.135606+09:00"
       }
     },
     {
-      "rank": 10,
-      "full_name": "debpalash/VoiceStudio",
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "rank": 9,
+      "full_name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars_total": 81737,
-      "forks_total": 9029,
-      "stars_period": 13581,
+      "stars_total": 56590,
+      "forks_total": 5080,
+      "stars_period": 3275,
       "api": {
         "default_branch": "main",
-        "license": "AGPL-3.0",
-        "updated_at": "2026-10-23T00:01:36Z",
-        "pushed_at": "2026-10-22T22:44:28Z",
-        "open_issues": 315,
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-23T23:41:30Z",
+        "pushed_at": "2026-09-22T02:01:29Z",
+        "open_issues": 218,
         "archived": false,
-        "size_kb": 138357,
-        "topics": [
-          "ai",
-          "audiobook",
-          "cuda",
-          "dubbing",
-          "elevenlabs-alternative",
-          "huggingface",
-          "local-first",
-          "mlx",
-          "omnivoice-studio",
-          "speech-to-text",
-          "text-to-speech",
-          "transcription",
-          "translate",
-          "tts",
-          "voice-ai",
-          "voice-cloning",
-          "voice-generation",
-          "voicestudio",
-          "workflow"
-        ]
+        "size_kb": 42270,
+        "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "2d8056075ec75150d75cc292920d295dfdc12851",
+        "sha": "8a78b5420911eff5e7cc219bf1ecb2a12b562874",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 8682,
-        "used_chars": 7492
+        "original_chars": 80335,
+        "used_chars": 6201
       },
       "analysis": {
-        "summary_ja": "VoiceStudioは、音声クローン、音声デザイン、動画の吹き替え、ディクテーション、文字起こし、オーディオブック作成を646言語でサポートするオープンソースのローカル音声AIアプリケーションです。",
+        "summary_ja": "CLI-Anythingは、あらゆるソフトウェアをAIエージェント対応のCLIに変換するためのフレームワークおよびハブです。",
         "capabilities": [
           {
-            "text": "音声クローン作成および独自の音声デザイン",
-            "evidence_section": "Your voice. Your workflow."
-          },
-          {
-            "text": "タイミングの合った音声による動画の吹き替え",
-            "evidence_section": "Your voice. Your workflow."
-          },
-          {
-            "text": "ローカルAPIおよびエージェント向けMCPの提供",
-            "evidence_section": "Your voice. Your workflow."
+            "text": "cli-anything-hubパッケージマネージャーを介したコミュニティ製CLIのブラウジング、検索、インストール、管理。",
+            "evidence_section": "🚀 Quick Start"
           }
         ],
         "use_cases": [
           {
-            "text": "自分の声をクローンしたり、新しい音声デザインを作成して音声生成を行う",
+            "text": "既存のCLIエコシステムを利用して、公開されている便利なCLIをインストールして実行する。",
             "basis": "README明記",
-            "evidence_section": "Your voice. Your workflow."
-          },
-          {
-            "text": "浮動ウィジェットを使用してディクテーションを行う",
-            "basis": "README明記",
-            "evidence_section": "Your voice. Your workflow."
-          },
-          {
-            "text": "物語やオーディオブック、バッチジョブの生産",
-            "basis": "README明記",
-            "evidence_section": "Your voice. Your workflow."
+            "evidence_section": "🚀 Quick Start"
           }
         ],
         "first_trial": {
-          "goal": "macOSまたはLinux環境でワンコマンドインストールスクリプトを実行してデスクトップアプリをインストールする",
+          "goal": "CLI-Hubパッケージマネージャーのインストール",
           "steps": [
-            "ターミナルを開く",
-            "以下のコマンドを実行する: curl -fsSL https://voicestudio.sh/install | sh"
+            "pip install cli-anything-hub"
           ],
-          "success_criteria": "VoiceStudioのElectronデスクトップアプリが正常にインストールされること"
+          "success_criteria": "cli-hubコマンドが利用可能になること"
         },
         "evidence_sections": [
-          "Your voice. Your workflow.",
-          "Get started",
-          "Documentation",
-          "Sponsors",
-          "License & responsible use"
+          "🚀 Quick Start",
+          "📦 Installation & Usage",
+          "📰 News"
         ],
         "unconfirmed": [
-          "対応している646言語の具体的な言語リスト",
-          "デフォルト以外の全エンジンの詳細な動作要件"
+          "7フェーズのハーネス生成の詳細なコマンドや手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "8a78b5420911eff5e7cc219bf1ecb2a12b562874",
+        "generated_at": "2026-09-28T08:53:35.634589+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "stars_total": 142342,
+      "forks_total": 16785,
+      "stars_period": 4375,
+      "api": {
+        "default_branch": "master",
+        "license": "GPL-3.0",
+        "updated_at": "2026-10-23T23:45:32Z",
+        "pushed_at": "2026-10-23T23:37:20Z",
+        "open_issues": 5335,
+        "archived": false,
+        "size_kb": 105303,
+        "topics": [
+          "ai",
+          "comfy",
+          "comfyui",
+          "python",
+          "pytorch",
+          "stable-diffusion"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "99eed6176e91673783620b93f6f5e430b22d9dce",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 29298,
+        "used_chars": 29028
+      },
+      "analysis": {
+        "summary_ja": "ComfyUIは、グラフおよびノードインターフェースを備えた、強力でモジュール式の拡散モデル向けGUI、API、バックエンドです。",
+        "capabilities": [
+          {
+            "text": "画像、動画、3Dモデル、音声などの生成や編集を行うための視覚的なノードグラフインターフェースを提供します。",
+            "evidence_section": "Features"
+          },
+          {
+            "text": "非同期の重みストリーミング技術を使用して、一般的なコンシューマーハードウェア上で大規模なオープンソースモデルを実行できます。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "生成されたメディアのファイルから、使用されたシードや完全なワークフローを復元または読み込むことができます。",
+            "evidence_section": "Features"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "ビジュアルプロフェッショナルがモデルやパラメーターを細部まで制御しながら画像や動画などのコンテンツを生成する。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "APIエンドポイントを使用して本番パイプラインへワークフローをシームレスに統合する。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "カスタムノードを導入して機能を拡張する。",
+            "basis": "README明記",
+            "evidence_section": "Features"
+          }
+        ],
+        "first_trial": {
+          "goal": "ComfyUIの依存関係をインストールして起動する",
+          "steps": [
+            "リポジトリをクローンする",
+            "ComfyUIフォルダ内でターミナルを開き、依存関係をインストールする: pip install -r requirements.txt",
+            "ComfyUIを起動する: python main.py"
+          ],
+          "success_criteria": "ComfyUIが正常に起動し、Webブラウザ等からアクセスできる状態になること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Get Started",
+          "Examples",
+          "Features",
+          "Release Process",
+          "Shortcuts",
+          "Installing",
+          "Running",
+          "Notes",
+          "QA"
+        ],
+        "unconfirmed": [
+          "詳細なパフォーマンス数値や具体的な動作速度の保証範囲"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "2d8056075ec75150d75cc292920d295dfdc12851",
-        "generated_at": "2026-10-23T09:05:54.678385+09:00"
+        "readme_sha": "99eed6176e91673783620b93f6f5e430b22d9dce",
+        "generated_at": "2026-10-24T08:56:38.171123+09:00"
       }
     }
   ],
   "zenn": [
     {
-      "title": "Node.jsの2026年10月セキュリティリリースに、手元の50リポジトリとVercel・Cloud Runで対応した",
+      "title": "Better AuthをMCPの認可サーバーにして、AI Agent からOAuthでアプリを操作させる",
+      "url": "https://zenn.dev/sakagi/articles/8caa896e649005",
+      "author": "Akagi",
+      "published": "Fri, 23 Oct 2026 07:45:06 GMT",
+      "summary": "はじめに\nWebアプリにMCPサーバーを追加し、Claudeから利用者本人としてデータを読み書きできるようにしました。アプリのログインは Microsoft Entra ID の SSO を使用し、AIに渡すトークンはBetter Authの@better-auth/mcpでアプリ自身が発行します。\nプラグインを入れるだけで、認可サーバーに要るエンドポイントはひととおり揃います。\nただ、既定のままでは困る点がいくつかありました。\nこの記事では、認可の流れを追ったうえで、Bet"
+    },
+    {
+      "title": "Excel読込をcalamineで19秒→5秒にしたら、別名パッケージ経由のimportだけ壊れた【Python】",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/calamine-excel-read-alias-package-import",
+      "author": "とんのかつ",
+      "published": "Fri, 23 Oct 2026 06:59:26 GMT",
+      "summary": "import=FAIL ModuleNotFoundError No module named 'src.core'\nsys_path_changed True\nAI に任せた実装の受け入れ検査で、この 2 行が出た。実装した側の報告では、テストは 204 件全部通っていた。\n\n 何をしていたか\n社内の生産管理システムから落とした進捗一覧の Excel を、pandas で読んで絞り込むスクリプトがある。22,267 行 × 88 列。この read_excel が 20 秒"
+    },
+    {
+      "title": "AlphaEngine : 最適化編①",
+      "url": "https://zenn.dev/reu/articles/f79a89bd44b541",
+      "author": "みぞれに",
+      "published": "Fri, 23 Oct 2026 06:27:00 GMT",
+      "summary": "はじめに\n今回は、Static/Skeletalメッシュの分離による頂点処理およびAcceleration Structure更新処理の改善をどうしたかを書いていきたいと思います。\n\n 以前の実装と問題点\nStatic/Skeletalを区別せず、全頂点をCompute Shaderで処理してBLASを更新していました。\n理由としては、AlphaEngineのレンダリングの設計思想としてあった\n「全ての処理を一元化したい」\nという部分を強く見すぎた結果でした。\nその結果、本来"
+    },
+    {
+      "title": "そのProvider、どこから更新する？ FlutterとRiverpodで考える操作完了通知",
+      "url": "https://zenn.dev/simplex/articles/dc17c45b57af0e",
+      "author": "Simplex テックブログ運営",
+      "published": "Fri, 23 Oct 2026 03:26:05 GMT",
+      "summary": "シンプレクスでエンジニアをしている岡沢です。\n今回は、Flutterアプリの開発で実践している、ユーザ操作の完了後に行うデータ更新の設計について書きます。\n私のチームでは、FlutterとRiverpodを使ってアプリケーションを開発しています。その中で、一つの操作に合わせて、複数の画面で使うデータを更新する場面があります。こうした処理をどこに持たせるかは、画面とデータの関係を考えるうえで悩ましいところです。\n本記事では、チームで採用している設計を例に、操作を実行する側とデー"
+    },
+    {
+      "title": "2年間放置していたPwnagotchiをクリーンインストールして使えるようにするまで",
+      "url": "https://zenn.dev/kuroikotech/articles/pwnagotchi-zero2w-clean-install",
+      "author": "kuroiko",
+      "published": "Fri, 23 Oct 2026 03:24:22 GMT",
+      "summary": "はじめに\n2年ほど放置していたPwnagotchiを、久しぶりに動かすことにした。\n古い環境をそのまま直すのではなく、microSDを焼き直してクリーンインストールする。画面を動かして、SSHで入れて、バッテリーで持ち運べる状態に戻すのが今回の目標。\nイメージを書き込めばすぐ終わるかと思ったら、USB接続でかなりハマった。最終的にはディスプレイとPiSugarの認識、SSHの鍵認証、PCからのインターネット共有までできたので、その記録を残す。\n!\nPwnagotchiは無線ネ"
+    },
+    {
+      "title": "[Flutter]main()を通らない起動ルートで初期化漏れした話（Android着信のヒヤリハット）",
+      "url": "https://zenn.dev/lincwell_inc/articles/ab2a642ea8f6f0",
+      "author": "Take",
+      "published": "Fri, 23 Oct 2026 01:30:05 GMT",
+      "summary": "はじめに\nFlutterアプリの初期化はmain()に書いておけばOK……と思っていたら、実はmain()を通らない起動ルートがありました。\n気づいたきっかけは、APIリクエストにUser-Agentを付与するという小さな改修で、Androidの着信機能が鳴らなくなった現象が発生してしまいました。 リリース前に気づけたので本番影響はありませんでしたが、見落としやすいポイントだったので今回記事にしてみました。\n\n 起きた問題\nリリース予定のバージョンで、Androidのクリフォ"
+    },
+    {
+      "title": "301 リダイレクトの変更が一部の利用者に反映されない",
+      "url": "https://zenn.dev/shinagawa_web/articles/cached-301-stale-redirect",
+      "author": "shinagawa",
+      "published": "Thu, 22 Oct 2026 23:10:47 GMT",
+      "summary": "ドキュメントサイトの /docs は最新版のページへのリダイレクトにしている。製品サイトなど、ほかのサイトに貼るリンクは /docs に向けている。v4 のリリースで、nginx の設定を書き換え、行き先を /docs/v3/ から /docs/v4/ に変えた。\nlocation = /docs { return 301 /docs/v4/; }\n301 は、リクエストされた URL が恒久的に別の URL に移ったことを表すステータスコードだ。/docs という URL "
+    },
+    {
+      "title": "Node.jsの2026年10月セキュリティリリースでやること（Claude Code用チェックリスト付き）",
       "url": "https://zenn.dev/yoshinani_dev/articles/0e6513a56eb629",
       "author": "ひょうどう",
       "published": "Thu, 22 Oct 2026 17:52:59 GMT",
@@ -915,18 +977,11 @@
       "summary": "!\nこの記事の作成にあたって、図の生成、調査、校正に生成AIを使用していますが、本文は人の手で書かれたものです。\n\n\n 環境\n\nRocky Linux 10.2\n\n\n あらすじ\n私の自宅サーバーでは、/var/composeにDocker Composeのファイル一式を格納し、composeユーザーでRootless Dockerを動かしています。\nRocky Linux（というかRHEL）ではデフォルトでrootで動作する常駐プロセスがありますが、これらからのアクセス制限が"
     },
     {
-      "title": "テニス解析をピックルボールに使ってみた：四隅の指定でコートの俯瞰表示を補う①",
-      "url": "https://zenn.dev/nauh_blog/articles/7f19a2f193d15d",
-      "author": "Ryuji Fujisawa",
-      "published": "Thu, 22 Oct 2026 06:31:34 GMT",
-      "summary": "やってみたこと\nテニス映像を解析するTennisProjectを、ピックルボールの試合映像に適用しました。ボール追跡に加えて、コートの検出と人物位置の俯瞰表示を試しています。\nテニス用の自動コート推定をそのまま使うと、実際のコート形状とずれが生じました。そこで固定カメラを前提に、コートの四隅を手動指定し、ピックルボール用の俯瞰図に変換する処理を追加しました。\n\n テニス用の構成をそのまま使うとどうなるか\n今回使った構成は次のとおりです。\n\n\n\n処理\n使用しているもの\n\n\n\n\n"
-    },
-    {
-      "title": "KMPデスクトップはAIエージェントに速いのか？検証してみる",
-      "url": "https://zenn.dev/shogo/articles/f847c35ea8dccb",
-      "author": "shogo.yamada",
-      "published": "Thu, 22 Oct 2026 05:46:57 GMT",
-      "summary": "はじめに\nこの記事 を読みました。\nAI エージェントにアプリを操作させて動作を確認するとき、Android エミュレータではなく Kotlin Multiplatform のデスクトップ版を使った方が速い、という内容です。記事には実測値も載っています。\n\n\n\nエージェントがアプリを操作する方式\n1 件あたり\n\n\n\n\nAndroid エミュレータ（Android CLI の layout + adb）\n5.68 秒\n\n\nAndroid エミュレータ（生の UIAutomato"
+      "title": "厳選・セキュリティが心配ならClaude Codeにこの問いかけをコピペするべし20",
+      "url": "https://zenn.dev/yuiseki/articles/54b01670841898",
+      "author": "yuiseki",
+      "published": "Thu, 22 Oct 2026 11:28:13 GMT",
+      "summary": "TL;DR\n\nこの記事のURLをコーディングAIエージェントに伝えてください。\n\n\n 認証\n\nこのリポジトリのサインアップ、ログイン、メール確認、パスワードリセットの実装を調べてください。UI の CAPTCHA や入力チェックを通さず API を直接呼べないか、メール確認前に使える機能がないか確認してください。問題があれば実装箇所と根拠を示してください。\nこのリポジトリのセッション、JWT、OAuth/OIDC の検証処理を調べてください。署名、issuer、audienc"
     },
     {
       "title": "脆弱性管理の仕組みを整えた",
@@ -936,13 +991,6 @@
       "summary": "はじめに\nこんにちは、Dress Code 株式会社でプロダクトエンジニアをやっている津田です。\n以前、SOC2 Type1 取得に向けてやったことを整理した記事を投稿しました。\nhttps://zenn.dev/dress_code/articles/1823b6c22c2534\n引き続き、プロダクトセキュリティを見ており、社内の協力もあって SOC2 Type2 の継続審査も終えることができました。\n今回は、今後の継続審査に向けて、脆弱性を管理する仕組みを整えたので書いて"
     },
     {
-      "title": "エージェント用 IDE を3つ試して、今さら cmux を使い始めた",
-      "url": "https://zenn.dev/yoshi47/articles/cmux-after-agent-ides",
-      "author": "yoshi47",
-      "published": "Thu, 22 Oct 2026 00:00:15 GMT",
-      "summary": "cmux は少し前に話題になっていたターミナルで、自分もそのとき一度試してみました。ただ、乗り換えるどころか使い始めるところまでも行きませんでした。通知が来たワークスペースがサイドバーの一番上に勝手に並び替わるのが合わなかったですし、当時 tmux で悩んでいた通知まわりのことも cmux にしたからといって解決しませんでした。サイドバーの表示をすっきりさせられることも知らなかったので、そのままやめています。\nそれから数か月たって、Claude Code を並列に回す道具をあ"
-    },
-    {
       "title": "【速報：2026/10/22 04:00】PHP2Shellの対応状況まとめ：PHP本体、Linux、レンタルサーバ、KUSANAGI",
       "url": "https://zenn.dev/tyamadadd/articles/c02a27af771dd2",
       "author": "tyamadadd",
@@ -950,32 +998,11 @@
       "summary": "PHPerの皆様、お疲れさまでした。\n少し体力が残っているので、現在の対応状況をまとめてみました。\n生成AIでまとめたものを当方で確認しております。\nまた気になる追加情報を補足に追加しました。\n2026年10月21日、PHP の重大な脆弱性2件（CVE-2026-109618 / CVE-2026-109619、通称「PHP2Shell」）の修正版が公開されました。\nPHP 本体の修正版がリリースされても、実際に自分のサーバへ届くかどうかは、利用している OS のパッケージ、"
     },
     {
-      "title": "「PHPのドカ脆弱性」=「今すぐDynmap止めろ」ではなかった話",
-      "url": "https://zenn.dev/56drich/articles/f52bd4a1dae988",
-      "author": "ゴロードリヒ",
-      "published": "Wed, 21 Oct 2026 18:52:44 GMT",
-      "summary": "「PHPのドカ脆弱性」=「今すぐDynmap止めろ」ではなかった話\n\n 1. はじめに\n2026/10/21、PHPに関してCVSS v4.0で9.2の重大な脆弱性（CVE-2026-109618・CVE-2026-109619）が2件出たと大騒ぎになった。日本時間21日23時に修正版（8.5.12 / 8.4.27 / 8.3.36 / 8.2.35）が公開されている。\nhttps://www.php.net/archive/2026.php#2026-10-21-5\n私の"
-    },
-    {
       "title": "10月21日、PHP2Shell対応の後片付けが終わらない",
       "url": "https://zenn.dev/subara3/articles/1165119ef70e75",
       "author": "Subara3",
       "published": "Wed, 21 Oct 2026 16:17:09 GMT",
       "summary": "10月21日の22時ちょいに、PHPので～っかい修正版が出ました。\nこれが結構やばい修正＆攻撃が来るからすぐ手当てして、というもののようで、今日はもうひっきりなしの対応に追われている方も多いんじゃないでしょうか。\n私も緊急対応を一通り終えて、ようやく帰れるところです。やれやれ。\n今回報告されたのは、PHP本体の脆弱性2件（CVE-2026-109618、CVE-2026-109619）で、通称は「PHP2Shell」です。\n深刻度はどちらもCVSS v4.0で9.2です。9."
-    },
-    {
-      "title": "セキュアな実装をするために意識したいこと",
-      "url": "https://zenn.dev/dress_code/articles/unauthorized-access-secure-implementation",
-      "author": "山田 哲也 / Tetsuya Yamada",
-      "published": "Wed, 21 Oct 2026 06:00:05 GMT",
-      "summary": "こんにちは、Dress Code でプロダクトエンジニアをしているてちです！\n最近、「不正アクセスにより個人情報が流出した可能性があります」というニュースを本当によく見かけます。しかも数万件ではなく、数百万件から数千万件規模のものが続いています。\nニュースではどれも「不正アクセス」の一言でまとめられてしまいますが、公表資料を読んでいくと、侵入の入口はかなりバラバラでした。そこで今回は、2025〜2026 年の国内事例と統計を整理しながら、Web アプリを作る側として意識したい"
-    },
-    {
-      "title": "Next.js の脆弱性に Dependabot が反応しなかったので、GitHub Advisory Database までの流れを追った",
-      "url": "https://zenn.dev/rakko_inc/articles/dependabot-cve-to-pr-flow",
-      "author": "katsu",
-      "published": "Wed, 21 Oct 2026 04:55:56 GMT",
-      "summary": "最近のセキュリティ被害を見て、ウェブアプリのセキュリティを見直している人や、とりあえず Dependabot を入れている人向けの記事です。\nNext.js の脆弱性が公表されたのに、うちのリポジトリには Dependabot から alert も PR も来ない。そういえばどういう流れで検知してるんだろう？と思い調査してみました。\n\n TL;DR\n\n今回の Next.js の脆弱性は、メンテナ側では 2026-10-14 に公表済みでしたが、GitHub Advisory "
     },
     {
       "title": "仕組みを理解する動画を、Claude Codeに作らせると便利すぎる",
@@ -992,25 +1019,11 @@
       "summary": "Mac が落ちました。\nファイルまわりの負荷がじわじわ溜まって、最後は反応しなくなって、落ちた。そこまではまあ、たまにあります。問題はそのあとでした。\n起動しないのです。\n電源を入れて、FileVault のパスワードを入れる。進捗バーが出る。2割くらいまで進む。そこで止まる。5分待っても、10分待っても動かない。\nMac が壊れた、と思いました。\n電源ボタンを長押しして、強制的に切りました。\nしばらくしてから、もう一度だけ電源を入れました。また2割で止まります。今度は何もせ"
     },
     {
-      "title": "AI にリバースエンジニアリングさせる REA を触って、持ち帰ったのは「証拠付きで進める」考え方でした",
-      "url": "https://zenn.dev/flinters_blog/articles/3b377ce568d676",
-      "author": "Takashi Kawachi",
-      "published": "Tue, 20 Oct 2026 03:00:05 GMT",
-      "summary": "はじめに\nこんにちは。FLINTERSの河内です。\n社内で毎週開いている AI 活用の勉強会で、今回（2026-10-19）は REA（Reverse Engineer Anything）を取り上げました。担当は川上さんです。AI エージェントにバイナリやアプリを解析させるためのツールで、10月に入ってから GitHub のスターが急に伸びています。\n結論から書くと、REA を使いこなすところまでは行けませんでした。題材選びでつまずき、コマンドの引数でつまずき、最後は別のスキ"
-    },
-    {
       "title": "Oxlint + Oxfmt で規約をコード化するモノレポ運用",
       "url": "https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006",
       "author": "Toshiki Okazaki",
       "published": "Tue, 20 Oct 2026 02:00:05 GMT",
       "summary": "長らく ESLint + Prettier を使ってきました。大きな不満はなかったものの、実行時間が少し気になっていました。そこで、Biome と Oxc を実際のモノレポで検証して、最終的に Oxlint + Oxfmt に移行しました。\nこの記事では、Biome と Oxc を比較・検証した過程と、Oxlint + Oxfmt を使ってコーディング規約をコードとして強制する運用を紹介します。\n\n 導入の経緯とモチベーション\n\n lint / format の待ち時間が気に"
-    },
-    {
-      "title": "Chromium(V8)のArray.prototype.fillを最大約7倍高速化した",
-      "url": "https://zenn.dev/dinii/articles/5b8edc7856c25b",
-      "author": "Riya Amemiya",
-      "published": "Tue, 20 Oct 2026 01:00:05 GMT",
-      "summary": "はじめに\n!\n修正や追加等はコメントまたはGitHubで編集リクエストをお待ちしております。\n\nダイニーで一番若いエンジニアのriya amemiya(21歳)です。\n(V8の配列系メソッド高速化職人をそろそろ名乗っても怒られないんじゃないか？と最近思い始めました🧐)\n今回は Array.prototype.fill（以下 fill）をSmiとdouble向けに最大約7倍高速化しました。\nV8の配列系メソッドのfast path実装に取り組む人は世界で見てもほとんどいないので"
     },
     {
       "title": "Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】",
@@ -1029,15 +1042,14 @@
   ],
   "common_terms": [
     "code",
+    "agent",
     "claude",
-    "cli",
-    "rea",
-    "https",
+    "mcp",
     "codex",
-    "anything",
+    "https",
+    "python",
     "android",
-    "engineer",
-    "reverse",
+    "api",
     "high"
   ],
   "ai_analysis": {

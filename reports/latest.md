@@ -1,12 +1,12 @@
-# Tech Daily — 2026-10-23
+# Tech Daily — 2026-10-24
 
-生成日時: 2026-10-23T09:05:54.824979+09:00  
+生成日時: 2026-10-24T08:56:38.361459+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [morluto/rea](https://github.com/morluto/rea)
 
-**概要:** REAは、ネイティブバイナリ、アプリ、ランタイム動作の逆アセンブルや調査をAIエージェントとMCP経由で行うためのツールです。ソースコードがない状態でもアプリの仕組みを解析し、証拠とともに提示します。
+**概要:** REAは、ネイティブバイナリ、アプリケーション、実行時の振る舞いをAIエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）およびCLIツールです。
 
 - 言語: TypeScript
 - 今週のスター: 106341
@@ -15,34 +15,36 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 ### できること
 
-- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールをエージェントに接続する（根拠: README冒頭）
+- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで提供する（根拠: README冒頭）
 
-- Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携して、疑似コードやアセンブリ、文字列、シンボルを解析する（根拠: What you can analyze）
+- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを分析し、モジュール、インポート、Electron境界などの情報を出力する（根拠: Use the terminal）
 
-- 抽出したJavaScriptやElectronアプリのディレクトリ、ASARファイルを対象にモジュールやインポート、Electron境界をJSON形式で検査する（根拠: Use the terminal）
+- Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、疑似コード、アセンブリ、文字列、シンボルなどを取得する（根拠: What you can analyze）
 
 
 ### 利用例
 
-- アプリに見つけた機能の仕組みをAIエージェントに調査させ、プロジェクト用のバージョンを構築する（README明記／根拠: README冒頭）
+- アプリ内の機能をエージェントに調査させ、仕組みを理解して自身のプロジェクト向けの機能を構築する（README明記／根拠: README冒頭）
 
-- ノートアプリの検索機能の仕組みを理解し、証拠を表示させ、プロジェクト用に同様の機能を自作する（README明記／根拠: Ask your agent）
+- ネイティブゲーム内のサウンド処理や弾幕計算の仕組みを逆コンパイル結果から再構築する（README明記／根拠: Showcases）
 
-- デスクトップアプリやゲームのバイナリ解析を行い、サウンド計算やクリップボード連携、弾幕計算などのアルゴリズムを再構築する（README明記／根拠: Showcases）
+- Electron製アプリのクリップボード連携などの内部実装を追跡する（README明記／根拠: Showcases）
 
 
 ### 最初に試すこと
 
-REAのエージェント設定と最小限のターミナル動作確認を行う
+エージェントにREAのMCPサーバーとワークフロー指示を追加し、動作確認を行う
 
-1. npx rea-agents setup
+1. npx rea-agents setup コマンドを実行してエージェントを設定する
 
-2. npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json
+2. エージェントを再起動する
+
+3. エージェントに対して対象アプリの調査を依頼する
 
 
-成功の目安: エージェント設定のセットアップ画面が起動し、ターミナルでJavaScript/Electronアプリケーションの解析結果が出力されること
+成功の目安: エージェントを通じてREAの機能が呼び出され、ターゲットアプリの調査結果や証拠が表示されること
 
-未確認: 対応しているすべてのプラットフォームにおける依存ツールの詳細な導入手順やパス設定の仕様
+未確認: 具体的な対応OSごとの詳細な依存関係エラーの回避策の網羅性
 
 
 ## 2. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
@@ -84,7 +86,7 @@ Claude Code上でプラグインをインストールする
 
 ## 3. [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
 
-**概要:** rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントメタハーネスです。100以上の専門エージェント、協調スウォーム、アダプティブメモリ、マルチプロバイダー対応、ゼロトラストなエージェント間フェデレーション機能などを提供し、AIエージェントのチーム運用をサポートします。
+**概要:** ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントのメタハーネスであり、100以上の専門エージェント、協調スウォーム、自己学習メモリ、ゼロトラストなエージェント間フェデレーション機能を提供します。
 
 - 言語: TypeScript
 - 今週のスター: 3708
@@ -93,32 +95,42 @@ Claude Code上でプラグインをインストールする
 
 ### できること
 
-- Claude CodeやCodexなどのモデルにツール、メモリ、ループ、サンドボックス、制御レイヤーを提供するハーネス機能（根拠: Ruflo）
+- 100種類以上のコーディング、テスト、セキュリティ、ドキュメント作成向け専門エージェント（根拠: What You Get）
 
-- コーディング、テスト、セキュリティ、ドキュメントなどに対応する100以上の専門エージェントとスウォーム協調機能（根拠: What You Get）
+- 複数マシン間での安全な情報交換やピア認証を行うゼロトラストフェデレーション機能（根拠: Agent Federation — Slack for Agents）
 
-- mTLSとed25519によるゼロトラスト検証やPII保護パイプラインを備えたエージェントフェデレーション機能（根拠: Agent Federation — Slack for Agents）
+- HNSWインデックスによる高速なベクトルメモリ（AgentDB）（根拠: What You Get）
 
 
 ### 利用例
 
-- 複数マシーンや組織間でエージェント同士が安全にワークスペースを共有し、タスクを協調して実行する（README明記／根拠: Agent Federation — Slack for Agents）
+- 複数エージェントによる協調的なワークフローの自動化とタスク調整（README明記／根拠: README）
 
-- HNSWインデックス付きのベクターメモリを活用した高速なエージェントの記憶検索と学習を行う（README明記／根拠: What You Get）
+- 過去の成功パターンやフィードバックから学習する自己学習型プロセスの実行（README明記／根拠: What You Get）
 
-- Claude Code上でプラグインやコンソールを用いてエージェントのワークフローやコストを管理する（README明記／根拠: Get started with Ruflo）
+- 脆弱性やCVEスキャン、プロンプトインジェクションのブロックといったセキュリティ監査（README明記／根拠: What You Get）
 
 
 ### 最初に試すこと
 
-Rufloの初期化ウィザードを実行してプロジェクトのセットアップを行う
+Claude Code環境でプラグインマーケットプレイスからrufloをインストールして初期化する
 
-1. npx ruflo@latest init wizard
+1. /plugin marketplace add ruvnet/ruflo
+
+2. /plugin install ruflo-core@ruflo
+
+3. /plugin install ruflo-console@ruflo
+
+4. /plugin install ruflo-mods@ruflo
+
+5. /reload-plugins
+
+6. /ruflo
 
 
-成功の目安: プロジェクトのセットアップウィザードが正常に起動し、ホストサーフェス等の設定が行われること
+成功の目安: Claude Code上でプラグインが有効化され、/rufloコマンドを実行してコンソールやツールを利用できること
 
-
+未確認: 具体的な商用利用におけるスケーラビリティや実運用での詳細なパフォーマンス数値
 
 
 ## 4. [android/skills](https://github.com/android/skills)
@@ -158,46 +170,9 @@ Android CLIを使用して特定のスキルをインストールする
 未確認: リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類
 
 
-## 5. [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
+## 5. [anomalyco/opencode](https://github.com/anomalyco/opencode)
 
-**概要:** Scientific Agent Skillsは、AIエージェントに生物学、化学、医学などの科学的タスクを実行させるための177件の検証済みスキルと100以上の科学データベースを提供するライブラリです。
-
-- 言語: Python
-- 今週のスター: 3967
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 177件の科学・研究スキルと100以上の科学データベースへの対応（根拠: README冒頭）
-
-- Cisco AI Defense Skill Scannerを用いたLLMベースのセキュリティスキャン（根拠: ⚠️ Security Disclaimer）
-
-
-### 利用例
-
-- AIエージェントに複雑な多段階の科学的ワークフローを実行させること（README明記／根拠: 💡 Quick Examples）
-
-- NVIDIA OpenShellなどのポリシー制御されたサンドボックス環境内でスキルを実行すること（README明記／根拠: 🔬 Use Cases）
-
-
-### 最初に試すこと
-
-サードパーティ製スキルのローカルセキュリティスキャンを実行する
-
-1. uv pip install cisco-ai-skill-scanner
-
-2. skill-scanner scan /path/to/skill --use-behavioral
-
-
-成功の目安: スキャンコマンドがエラーなく実行され、結果が出力されること
-
-未確認: Getting Startedセクションの具体的なインストールコマンドの記述／Quick Examplesセクションの具体的なプロンプト例の記述
-
-
-## 6. [anomalyco/opencode](https://github.com/anomalyco/opencode)
-
-**概要:** opencode は、開発作業を支援するオープンソースの AI コーディングエージェントです。
+**概要:** anomalyco/opencodeは、オープンソースのAIコーディングエージェントであり、ターミナルUIやデスクトップアプリを通じて開発作業やコードの探索を支援します。
 
 - 言語: TypeScript
 - 今週のスター: 6750
@@ -206,31 +181,146 @@ Android CLIを使用して特定のスキルをインストールする
 
 ### できること
 
-- 開発作業向けのフルアクセスなビルドエージェント（build）を利用できます。（根拠: Agents）
+- buildエージェントによる開発向けのフルアクセスなコーディング作業（根拠: Agents）
 
-- 分析やコード探索用の読み取り専用プランエージェント（plan）を利用できます。（根拠: Agents）
+- planエージェントによるコードの分析や読み取り専用の探索（根拠: Agents）
 
-- 複雑な検索や複数ステップのタスク向けの一般的なサブエージェント（general）を利用できます。（根拠: Agents）
+- Tabキーによるエージェント間の切り替え（根拠: Agents）
 
 
 ### 利用例
 
-- 見慣れないコードベースの探索や変更の計画に活用できます。（README明記／根拠: Agents）
+- 不慣れなコードベースの探索や変更の計画（README明記／根拠: Agents）
+
+- 開発作業におけるフルアクセスなコーディング支援の利用（README明記／根拠: Agents）
+
+- @generalを使用した複雑な検索や複数ステップのタスクの実行（README明記／根拠: Agents）
 
 
 ### 最初に試すこと
 
-CLIツールをインストールして利用を開始する
+CLI環境でopencodeをインストールして使い始める
 
 1. curl -fsSL https://opencode.ai/v2/install | bash
 
 
-成功の目安: opencodeがインストールされ、利用可能になること
+成功の目安: インストールスクリプトが正常に実行され、opencodeが利用可能になること
 
-未確認: 詳細な内部プロンプトの仕組みや対応しているすべてのAIモデルの種類
+未確認: 詳細な設定方法やAIモデルのバックエンドに関する具体的な仕様／コントリビューション手順の細かいルール
 
 
-## 7. [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
+## 6. [stablyai/orca](https://github.com/stablyai/orca)
+
+**概要:** Orcaは、複数のコーディングエージェント（Claude Code、Codexなど）を並行して実行・管理するためのAIオーケストレーターです。デスクトップ、モバイル、リモートランタイムに対応しており、複数のエージェントを独立したワークツリーで同時に動かすことができます。
+
+- 言語: TypeScript
+- 今週のスター: 9401
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 独立したgitワークツリー上で複数のAIエージェントを並行して実行し、結果を比較してマージできる（根拠: Features）
+
+- モバイルアプリを使用して、エージェントの作業完了の通知受け取りやスマホからのフォローアップ指示ができる（根拠: Features）
+
+- Chromiumウィンドウ上のUI要素をクリックして、HTMLやCSS、切り抜きスクリーンショットをエージェントのプロンプトに送信できる（根拠: Features）
+
+
+### 利用例
+
+- 1つのプロンプトを複数のエージェントに同時に処理させ、最も優れた結果をマージする（README明記／根拠: Features）
+
+- 外出先やデスクから離れた場所からでも、モバイル端末でAIエージェントの進捗監視や指示出しを行う（README明記／根拠: Features）
+
+- アプリ内でGitHubのプルリクエストやIssue、プロジェクトボードを確認し、文脈を切り替えることなくワークツリーを開いてレビューする（README明記／根拠: Features）
+
+
+### 最初に試すこと
+
+Orcaデスクトップアプリをインストールして起動する
+
+1. 公式サイト（onorca.dev/download）またはHomebrew（brew install --cask stablyai/orca/orca）などのパッケージマネージャーを使用してインストールする
+
+
+成功の目安: Orcaデスクトップアプリが正常に起動すること
+
+未確認: CONTRIBUTING.mdの詳細な開発手順／cloud/ディレクトリにあるリレーサーバーの具体的なセットアップ手順
+
+
+## 7. [cursor/plugins](https://github.com/cursor/plugins)
+
+**概要:** Cursor向け公式プラグインおよび仕様をまとめたリポジトリであり、開発者向けツール、生産性向上ツール、外部サービス連携など多様なプラグインを提供しています。
+
+- 言語: TypeScript
+- 今週のスター: 2046
+- ライセンス: 不明
+- AI分析状態: ok
+
+### できること
+
+- 各プラグインはリポジトリのルートに独立したディレクトリとして配置され、専用の `.cursor-plugin/plugin.json` マニフェストを持っています。（根拠: Cursor plugins）
+
+- リポジトリのルートにある `.cursor-plugin/marketplace.json` にすべてのプラグインがリストされています。（根拠: Repository structure）
+
+
+### 利用例
+
+- 人気のある開発者向けツール、フレームワーク、SaaS製品向けの公式Cursorプラグインを利用する。（README明記／根拠: Cursor plugins）
+
+- 新規のエージェントプラグインの作成や検証を行う。（README明記／根拠: Plugins）
+
+
+### 最初に試すこと
+
+リポジトリ構造とプラグイン一覧を確認する
+
+1. リポジトリのREADMEを開き、プラグイン一覧のテーブルやリポジトリ構造のツリー表示を確認する。
+
+
+成功の目安: 提供されているプラグインのリストとディレクトリ構成を把握できること。
+
+未確認: 具体的なインストールコマンドやQuick Startの手順
+
+
+## 8. [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory)
+
+**概要:** ai-memoryは、複数のAIコーディングエージェント（Claude Code、Codex、Cursorなど）の間で長期的なコンテキストや作業の引き継ぎを共有するためのRust製ソリューションです。
+
+- 言語: Rust
+- 今週のスター: 3322
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 複数のAIエージェント間で共有メモリと引き継ぎプロトコルを利用できる。（根拠: Why ai-memory）
+
+- 保存されるデータはプレーンなMarkdownのGitバックアップwikiであり、検索や手動編集が可能。（根拠: Why ai-memory）
+
+- ライフサイクルHookによって作業内容を自動で静かに記録し、デフォルトではLLMの呼び出しを必要としない。（根拠: Why ai-memory）
+
+
+### 利用例
+
+- Claude Codeで作業を途中で中断し、同じディレクトリでOpenAI Codexを起動して説明なしに作業を引き継ぐ。（README明記／根拠: Why ai-memory）
+
+- パッケージマネージャやテストレイアウトなど、自身の開発スタイルに関するプロファイルを新しいリポジトリでのセッション開始時に反映させる。（README明記／根拠: Why ai-memory）
+
+- チームメンバー全員で1つのサーバーを参照し、ある人のセッションから得た知識を他のメンバーのAIエージェントで共有する。（README明記／根拠: Why ai-memory）
+
+
+### 最初に試すこと
+
+クイックスタートの実施
+
+
+成功の目安: クイックスタート手順の完了
+
+未確認: 具体的なインストールコマンドや実行コマンドの詳細な手順はREADMEのQuick startセクションが空のため不明です。
+
+
+## 9. [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
 
 **概要:** CLI-Anythingは、あらゆるソフトウェアをAIエージェント対応のCLIに変換するためのフレームワークおよびハブです。
 
@@ -261,129 +351,67 @@ CLI-Hubパッケージマネージャーのインストール
 未確認: 7フェーズのハーネス生成の詳細なコマンドや手順
 
 
-## 8. [cursor/plugins](https://github.com/cursor/plugins)
+## 10. [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
 
-**概要:** Cursorプラグインの仕様と、開発者ツール、フレームワーク、SaaS製品向けの公式プラグイン群を提供するリポジトリです。
-
-- 言語: TypeScript
-- 今週のスター: 2046
-- ライセンス: 不明
-- AI分析状態: ok
-
-### できること
-
-- 人気のある開発者ツールやSaaS製品向けの公式Cursorプラグイン集を提供する（根拠: README冒頭）
-
-- 各プラグインがリポジトリのルートに独立したディレクトリとして配置され、プラグイン用マニフェストを持つ構造にする（根拠: README冒頭）
-
-- マーケットプレイス用マニフェスト（marketplace.json）と、各プラグインのマニフェスト（plugin.json）で構成されるマルチプラグインのマーケットプレイスリポジトリである（根拠: Repository structure）
-
-
-### 利用例
-
-- GitHubやGoogle Drive、Slack等のSaaS製品やツールと連携するプラグインを探して利用する（README明記／根拠: README冒頭）
-
-- 独自のエージェントプラグインを新しく作成して検証する（README明記／根拠: Plugins）
-
-- TypeScript SDKを使用してアプリやスクリプト、自動化機能を構築する（README明記／根拠: Plugins）
-
-
-### 最初に試すこと
-
-リポジトリのプラグイン構成や一覧を確認する
-
-1. リポジトリのREADMEを開き、提供されているプラグインの一覧を確認する
-
-2. Repository structureのセクションでディレクトリ構成を確認する
-
-
-成功の目安: プラグインの一覧と各ディレクトリの構造が確認できていること
-
-未確認: 具体的なインストールコマンドやセットアップ手順／各プラグインの詳細な利用方法やコード例
-
-
-## 9. [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory)
-
-**概要:** ai-memoryは、複数のAIコーディングエージェント（Claude Code、Codex、Cursorなど）の間で長期的なコンテキストや作業の引き継ぎを共有するためのRust製ソリューションです。
-
-- 言語: Rust
-- 今週のスター: 3322
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- 複数のAIエージェント間で共有メモリと引き継ぎプロトコルを利用できる。（根拠: Why ai-memory）
-
-- 保存されるデータはプレーンなMarkdownのGitバックアップwikiであり、検索や手動編集が可能。（根拠: Why ai-memory）
-
-- ライフサイクルHookによって作業内容を自動で静かに記録し、デフォルトではLLMの呼び出しを必要としない。（根拠: Why ai-memory）
-
-
-### 利用例
-
-- Claude Codeで作業を途中で中断し、同じディレクトリでOpenAI Codexを起動して説明なしに作業を引き継ぐ。（README明記／根拠: Why ai-memory）
-
-- パッケージマネージャやテストレイアウトなど、自身の開発スタイルに関するプロファイルを新しいリポジトリでのセッション開始時に反映させる。（README明記／根拠: Why ai-memory）
-
-- チームメンバー全員で1つのサーバーを参照し、ある人のセッションから得た知識を他のメンバーのAIエージェントで共有する。（README明記／根拠: Why ai-memory）
-
-
-### 最初に試すこと
-
-クイックスタートの実施
-
-
-成功の目安: クイックスタート手順の完了
-
-未確認: 具体的なインストールコマンドや実行コマンドの詳細な手順はREADMEのQuick startセクションが空のため不明です。
-
-
-## 10. [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)
-
-**概要:** VoiceStudioは、音声クローン、音声デザイン、動画の吹き替え、ディクテーション、文字起こし、オーディオブック作成を646言語でサポートするオープンソースのローカル音声AIアプリケーションです。
+**概要:** ComfyUIは、グラフおよびノードインターフェースを備えた、強力でモジュール式の拡散モデル向けGUI、API、バックエンドです。
 
 - 言語: Python
-- 今週のスター: 13581
-- ライセンス: AGPL-3.0
+- 今週のスター: 4375
+- ライセンス: GPL-3.0
 - AI分析状態: ok
 
 ### できること
 
-- 音声クローン作成および独自の音声デザイン（根拠: Your voice. Your workflow.）
+- 画像、動画、3Dモデル、音声などの生成や編集を行うための視覚的なノードグラフインターフェースを提供します。（根拠: Features）
 
-- タイミングの合った音声による動画の吹き替え（根拠: Your voice. Your workflow.）
+- 非同期の重みストリーミング技術を使用して、一般的なコンシューマーハードウェア上で大規模なオープンソースモデルを実行できます。（根拠: README冒頭）
 
-- ローカルAPIおよびエージェント向けMCPの提供（根拠: Your voice. Your workflow.）
+- 生成されたメディアのファイルから、使用されたシードや完全なワークフローを復元または読み込むことができます。（根拠: Features）
 
 
 ### 利用例
 
-- 自分の声をクローンしたり、新しい音声デザインを作成して音声生成を行う（README明記／根拠: Your voice. Your workflow.）
+- ビジュアルプロフェッショナルがモデルやパラメーターを細部まで制御しながら画像や動画などのコンテンツを生成する。（README明記／根拠: README冒頭）
 
-- 浮動ウィジェットを使用してディクテーションを行う（README明記／根拠: Your voice. Your workflow.）
+- APIエンドポイントを使用して本番パイプラインへワークフローをシームレスに統合する。（README明記／根拠: README冒頭）
 
-- 物語やオーディオブック、バッチジョブの生産（README明記／根拠: Your voice. Your workflow.）
+- カスタムノードを導入して機能を拡張する。（README明記／根拠: Features）
 
 
 ### 最初に試すこと
 
-macOSまたはLinux環境でワンコマンドインストールスクリプトを実行してデスクトップアプリをインストールする
+ComfyUIの依存関係をインストールして起動する
 
-1. ターミナルを開く
+1. リポジトリをクローンする
 
-2. 以下のコマンドを実行する: curl -fsSL https://voicestudio.sh/install | sh
+2. ComfyUIフォルダ内でターミナルを開き、依存関係をインストールする: pip install -r requirements.txt
+
+3. ComfyUIを起動する: python main.py
 
 
-成功の目安: VoiceStudioのElectronデスクトップアプリが正常にインストールされること
+成功の目安: ComfyUIが正常に起動し、Webブラウザ等からアクセスできる状態になること
 
-未確認: 対応している646言語の具体的な言語リスト／デフォルト以外の全エンジンの詳細な動作要件
+未確認: 詳細なパフォーマンス数値や具体的な動作速度の保証範囲
 
 
 
 ## Zenn
 
-- [Node.jsの2026年10月セキュリティリリースに、手元の50リポジトリとVercel・Cloud Runで対応した](https://zenn.dev/yoshinani_dev/articles/0e6513a56eb629) — ひょうどう
+- [Better AuthをMCPの認可サーバーにして、AI Agent からOAuthでアプリを操作させる](https://zenn.dev/sakagi/articles/8caa896e649005) — Akagi
+
+- [Excel読込をcalamineで19秒→5秒にしたら、別名パッケージ経由のimportだけ壊れた【Python】](https://zenn.dev/cutlet_of_pork/articles/calamine-excel-read-alias-package-import) — とんのかつ
+
+- [AlphaEngine : 最適化編①](https://zenn.dev/reu/articles/f79a89bd44b541) — みぞれに
+
+- [そのProvider、どこから更新する？ FlutterとRiverpodで考える操作完了通知](https://zenn.dev/simplex/articles/dc17c45b57af0e) — Simplex テックブログ運営
+
+- [2年間放置していたPwnagotchiをクリーンインストールして使えるようにするまで](https://zenn.dev/kuroikotech/articles/pwnagotchi-zero2w-clean-install) — kuroiko
+
+- [[Flutter]main()を通らない起動ルートで初期化漏れした話（Android着信のヒヤリハット）](https://zenn.dev/lincwell_inc/articles/ab2a642ea8f6f0) — Take
+
+- [301 リダイレクトの変更が一部の利用者に反映されない](https://zenn.dev/shinagawa_web/articles/cached-301-stale-redirect) — shinagawa
+
+- [Node.jsの2026年10月セキュリティリリースでやること（Claude Code用チェックリスト付き）](https://zenn.dev/yoshinani_dev/articles/0e6513a56eb629) — ひょうどう
 
 - [Claude CodeやCodexで並列開発していたら、Macのストレージが残り8GBになったので掃除した](https://zenn.dev/yoshinani_dev/articles/0c17dec1c082a1) — ひょうどう
 
@@ -391,33 +419,19 @@ macOSまたはLinux環境でワンコマンドインストールスクリプト�
 
 - [Rootless Dockerと学ぶSELinux【初心者向け】](https://zenn.dev/nexryai/articles/afb828d7dda6b7) — nexryai
 
-- [テニス解析をピックルボールに使ってみた：四隅の指定でコートの俯瞰表示を補う①](https://zenn.dev/nauh_blog/articles/7f19a2f193d15d) — Ryuji Fujisawa
-
-- [KMPデスクトップはAIエージェントに速いのか？検証してみる](https://zenn.dev/shogo/articles/f847c35ea8dccb) — shogo.yamada
+- [厳選・セキュリティが心配ならClaude Codeにこの問いかけをコピペするべし20](https://zenn.dev/yuiseki/articles/54b01670841898) — yuiseki
 
 - [脆弱性管理の仕組みを整えた](https://zenn.dev/dress_code/articles/be5550254695cd) — anizozina
 
-- [エージェント用 IDE を3つ試して、今さら cmux を使い始めた](https://zenn.dev/yoshi47/articles/cmux-after-agent-ides) — yoshi47
-
 - [【速報：2026/10/22 04:00】PHP2Shellの対応状況まとめ：PHP本体、Linux、レンタルサーバ、KUSANAGI](https://zenn.dev/tyamadadd/articles/c02a27af771dd2) — tyamadadd
 
-- [「PHPのドカ脆弱性」=「今すぐDynmap止めろ」ではなかった話](https://zenn.dev/56drich/articles/f52bd4a1dae988) — ゴロードリヒ
-
 - [10月21日、PHP2Shell対応の後片付けが終わらない](https://zenn.dev/subara3/articles/1165119ef70e75) — Subara3
-
-- [セキュアな実装をするために意識したいこと](https://zenn.dev/dress_code/articles/unauthorized-access-secure-implementation) — 山田 哲也 / Tetsuya Yamada
-
-- [Next.js の脆弱性に Dependabot が反応しなかったので、GitHub Advisory Database までの流れを追った](https://zenn.dev/rakko_inc/articles/dependabot-cve-to-pr-flow) — katsu
 
 - [仕組みを理解する動画を、Claude Codeに作らせると便利すぎる](https://zenn.dev/explaza/articles/c749042ecbe232) — musoukun
 
 - [バイブコーディングを6週間続けたら、Mac の起動が20分かかるようになった](https://zenn.dev/singularity/articles/vibe-coding-mac-boot-20min) — Isamu
 
-- [AI にリバースエンジニアリングさせる REA を触って、持ち帰ったのは「証拠付きで進める」考え方でした](https://zenn.dev/flinters_blog/articles/3b377ce568d676) — Takashi Kawachi
-
 - [Oxlint + Oxfmt で規約をコード化するモノレポ運用](https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006) — Toshiki Okazaki
-
-- [Chromium(V8)のArray.prototype.fillを最大約7倍高速化した](https://zenn.dev/dinii/articles/5b8edc7856c25b) — Riya Amemiya
 
 - [Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】](https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49) — iakito
 

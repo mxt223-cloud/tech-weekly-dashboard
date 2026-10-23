@@ -1,0 +1,63 @@
+{
+  "summary_ja": "ComfyUIは、グラフおよびノードインターフェースを備えた、強力でモジュール式の拡散モデル向けGUI、API、バックエンドです。",
+  "capabilities": [
+    {
+      "text": "画像、動画、3Dモデル、音声などの生成や編集を行うための視覚的なノードグラフインターフェースを提供します。",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "非同期の重みストリーミング技術を使用して、一般的なコンシューマーハードウェア上で大規模なオープンソースモデルを実行できます。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "生成されたメディアのファイルから、使用されたシードや完全なワークフローを復元または読み込むことができます。",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ビジュアルプロフェッショナルがモデルやパラメーターを細部まで制御しながら画像や動画などのコンテンツを生成する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "APIエンドポイントを使用して本番パイプラインへワークフローをシームレスに統合する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "カスタムノードを導入して機能を拡張する。",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "ComfyUIの依存関係をインストールして起動する",
+    "steps": [
+      "リポジトリをクローンする",
+      "ComfyUIフォルダ内でターミナルを開き、依存関係をインストールする: pip install -r requirements.txt",
+      "ComfyUIを起動する: python main.py"
+    ],
+    "success_criteria": "ComfyUIが正常に起動し、Webブラウザ等からアクセスできる状態になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Get Started",
+    "Examples",
+    "Features",
+    "Release Process",
+    "Shortcuts",
+    "Installing",
+    "Running",
+    "Notes",
+    "QA"
+  ],
+  "unconfirmed": [
+    "詳細なパフォーマンス数値や具体的な動作速度の保証範囲"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "99eed6176e91673783620b93f6f5e430b22d9dce",
+  "generated_at": "2026-10-24T08:56:38.171123+09:00"
+}

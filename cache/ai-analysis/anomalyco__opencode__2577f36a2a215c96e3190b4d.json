@@ -1,0 +1,59 @@
+{
+  "summary_ja": "anomalyco/opencodeは、オープンソースのAIコーディングエージェントであり、ターミナルUIやデスクトップアプリを通じて開発作業やコードの探索を支援します。",
+  "capabilities": [
+    {
+      "text": "buildエージェントによる開発向けのフルアクセスなコーディング作業",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "planエージェントによるコードの分析や読み取り専用の探索",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "Tabキーによるエージェント間の切り替え",
+      "evidence_section": "Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "不慣れなコードベースの探索や変更の計画",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "開発作業におけるフルアクセスなコーディング支援の利用",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "@generalを使用した複雑な検索や複数ステップのタスクの実行",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI環境でopencodeをインストールして使い始める",
+    "steps": [
+      "curl -fsSL https://opencode.ai/v2/install | bash"
+    ],
+    "success_criteria": "インストールスクリプトが正常に実行され、opencodeが利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Desktop App (BETA)",
+    "Agents",
+    "Documentation",
+    "Contributing",
+    "Building on OpenCode"
+  ],
+  "unconfirmed": [
+    "詳細な設定方法やAIモデルのバックエンドに関する具体的な仕様",
+    "コントリビューション手順の細かいルール"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a8551f97c57f9140c4c2ce9f7c004dc4bc21954b",
+  "generated_at": "2026-10-24T08:56:29.102225+09:00"
+}

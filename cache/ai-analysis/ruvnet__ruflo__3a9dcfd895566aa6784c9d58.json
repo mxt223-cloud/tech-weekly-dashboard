@@ -1,0 +1,61 @@
+{
+  "summary_ja": "ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントのメタハーネスであり、100以上の専門エージェント、協調スウォーム、自己学習メモリ、ゼロトラストなエージェント間フェデレーション機能を提供します。",
+  "capabilities": [
+    {
+      "text": "100種類以上のコーディング、テスト、セキュリティ、ドキュメント作成向け専門エージェント",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "複数マシン間での安全な情報交換やピア認証を行うゼロトラストフェデレーション機能",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    },
+    {
+      "text": "HNSWインデックスによる高速なベクトルメモリ（AgentDB）",
+      "evidence_section": "What You Get"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数エージェントによる協調的なワークフローの自動化とタスク調整",
+      "basis": "README明記",
+      "evidence_section": "README"
+    },
+    {
+      "text": "過去の成功パターンやフィードバックから学習する自己学習型プロセスの実行",
+      "basis": "README明記",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "脆弱性やCVEスキャン、プロンプトインジェクションのブロックといったセキュリティ監査",
+      "basis": "README明記",
+      "evidence_section": "What You Get"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code環境でプラグインマーケットプレイスからrufloをインストールして初期化する",
+    "steps": [
+      "/plugin marketplace add ruvnet/ruflo",
+      "/plugin install ruflo-core@ruflo",
+      "/plugin install ruflo-console@ruflo",
+      "/plugin install ruflo-mods@ruflo",
+      "/reload-plugins",
+      "/ruflo"
+    ],
+    "success_criteria": "Claude Code上でプラグインが有効化され、/rufloコマンドを実行してコンソールやツールを利用できること"
+  },
+  "evidence_sections": [
+    "Get started with Ruflo",
+    "Quick Start",
+    "What You Get",
+    "Agent Federation — Slack for Agents",
+    "Documentation"
+  ],
+  "unconfirmed": [
+    "具体的な商用利用におけるスケーラビリティや実運用での詳細なパフォーマンス数値"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d7a5c4a67963e7e11bd92703221144a80c6b538f",
+  "generated_at": "2026-10-24T08:56:26.145613+09:00"
+}

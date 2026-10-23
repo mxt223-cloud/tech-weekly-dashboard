@@ -1,0 +1,59 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリケーション、実行時の振る舞いをAIエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）およびCLIツールです。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを分析し、モジュール、インポート、Electron境界などの情報を出力する",
+      "evidence_section": "Use the terminal"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、疑似コード、アセンブリ、文字列、シンボルなどを取得する",
+      "evidence_section": "What you can analyze"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内の機能をエージェントに調査させ、仕組みを理解して自身のプロジェクト向けの機能を構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ネイティブゲーム内のサウンド処理や弾幕計算の仕組みを逆コンパイル結果から再構築する",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    },
+    {
+      "text": "Electron製アプリのクリップボード連携などの内部実装を追跡する",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    }
+  ],
+  "first_trial": {
+    "goal": "エージェントにREAのMCPサーバーとワークフロー指示を追加し、動作確認を行う",
+    "steps": [
+      "npx rea-agents setup コマンドを実行してエージェントを設定する",
+      "エージェントを再起動する",
+      "エージェントに対して対象アプリの調査を依頼する"
+    ],
+    "success_criteria": "エージェントを通じてREAの機能が呼び出され、ターゲットアプリの調査結果や証拠が表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "How REA works",
+    "What you can analyze",
+    "Showcases",
+    "FAQ"
+  ],
+  "unconfirmed": [
+    "具体的な対応OSごとの詳細な依存関係エラーの回避策の網羅性"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "13ccf9f28eb977c5c4e45f3af97f7b61d21aed0c",
+  "generated_at": "2026-10-24T08:56:22.594153+09:00"
+}
