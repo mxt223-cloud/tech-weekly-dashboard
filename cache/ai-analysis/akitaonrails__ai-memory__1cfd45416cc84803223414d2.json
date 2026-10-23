@@ -1,0 +1,53 @@
+{
+  "summary_ja": "ai-memoryは、複数のAIコーディングエージェント（Claude Code、Codex、Cursorなど）の間で長期的なコンテキストや作業の引き継ぎを共有するためのRust製ソリューションです。",
+  "capabilities": [
+    {
+      "text": "複数のAIエージェント間で共有メモリと引き継ぎプロトコルを利用できる。",
+      "evidence_section": "Why ai-memory"
+    },
+    {
+      "text": "保存されるデータはプレーンなMarkdownのGitバックアップwikiであり、検索や手動編集が可能。",
+      "evidence_section": "Why ai-memory"
+    },
+    {
+      "text": "ライフサイクルHookによって作業内容を自動で静かに記録し、デフォルトではLLMの呼び出しを必要としない。",
+      "evidence_section": "Why ai-memory"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeで作業を途中で中断し、同じディレクトリでOpenAI Codexを起動して説明なしに作業を引き継ぐ。",
+      "basis": "README明記",
+      "evidence_section": "Why ai-memory"
+    },
+    {
+      "text": "パッケージマネージャやテストレイアウトなど、自身の開発スタイルに関するプロファイルを新しいリポジトリでのセッション開始時に反映させる。",
+      "basis": "README明記",
+      "evidence_section": "Why ai-memory"
+    },
+    {
+      "text": "チームメンバー全員で1つのサーバーを参照し、ある人のセッションから得た知識を他のメンバーのAIエージェントで共有する。",
+      "basis": "README明記",
+      "evidence_section": "Why ai-memory"
+    }
+  ],
+  "first_trial": {
+    "goal": "クイックスタートの実施",
+    "steps": [],
+    "success_criteria": "クイックスタート手順の完了"
+  },
+  "evidence_sections": [
+    "Why ai-memory",
+    "Quick start",
+    "Security",
+    "README冒頭"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや実行コマンドの詳細な手順はREADMEのQuick startセクションが空のため不明です。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1f0fbbf09fe41e6e0a7d891889e01c3576e27823",
+  "generated_at": "2026-10-23T09:05:52.135606+09:00"
+}

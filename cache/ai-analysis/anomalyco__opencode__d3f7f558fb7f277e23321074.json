@@ -1,0 +1,45 @@
+{
+  "summary_ja": "opencode は、開発作業を支援するオープンソースの AI コーディングエージェントです。",
+  "capabilities": [
+    {
+      "text": "開発作業向けのフルアクセスなビルドエージェント（build）を利用できます。",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "分析やコード探索用の読み取り専用プランエージェント（plan）を利用できます。",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "複雑な検索や複数ステップのタスク向けの一般的なサブエージェント（general）を利用できます。",
+      "evidence_section": "Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "見慣れないコードベースの探索や変更の計画に活用できます。",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIツールをインストールして利用を開始する",
+    "steps": [
+      "curl -fsSL https://opencode.ai/v2/install | bash"
+    ],
+    "success_criteria": "opencodeがインストールされ、利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Desktop App (BETA)",
+    "Agents"
+  ],
+  "unconfirmed": [
+    "詳細な内部プロンプトの仕組みや対応しているすべてのAIモデルの種類"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9dee6ddc05449c3969072dfb6ec4edb3ec59d107",
+  "generated_at": "2026-10-23T09:05:45.977952+09:00"
+}

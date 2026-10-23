@@ -1,0 +1,58 @@
+{
+  "summary_ja": "REAは、ネイティブバイナリ、アプリ、ランタイム動作の逆アセンブルや調査をAIエージェントとMCP経由で行うためのツールです。ソースコードがない状態でもアプリの仕組みを解析し、証拠とともに提示します。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどの検査ツールをエージェントに接続する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携して、疑似コードやアセンブリ、文字列、シンボルを解析する",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリ、ASARファイルを対象にモジュールやインポート、Electron境界をJSON形式で検査する",
+      "evidence_section": "Use the terminal"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリに見つけた機能の仕組みをAIエージェントに調査させ、プロジェクト用のバージョンを構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ノートアプリの検索機能の仕組みを理解し、証拠を表示させ、プロジェクト用に同様の機能を自作する",
+      "basis": "README明記",
+      "evidence_section": "Ask your agent"
+    },
+    {
+      "text": "デスクトップアプリやゲームのバイナリ解析を行い、サウンド計算やクリップボード連携、弾幕計算などのアルゴリズムを再構築する",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    }
+  ],
+  "first_trial": {
+    "goal": "REAのエージェント設定と最小限のターミナル動作確認を行う",
+    "steps": [
+      "npx rea-agents setup",
+      "npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json"
+    ],
+    "success_criteria": "エージェント設定のセットアップ画面が起動し、ターミナルでJavaScript/Electronアプリケーションの解析結果が出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "How REA works",
+    "What you can analyze",
+    "Showcases",
+    "FAQ"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのプラットフォームにおける依存ツールの詳細な導入手順やパス設定の仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d590878a68f9b754d526c84340bfb29f8451500f",
+  "generated_at": "2026-10-23T09:05:31.145670+09:00"
+}

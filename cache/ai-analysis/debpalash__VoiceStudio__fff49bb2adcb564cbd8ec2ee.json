@@ -1,0 +1,58 @@
+{
+  "summary_ja": "VoiceStudioは、音声クローン、音声デザイン、動画の吹き替え、ディクテーション、文字起こし、オーディオブック作成を646言語でサポートするオープンソースのローカル音声AIアプリケーションです。",
+  "capabilities": [
+    {
+      "text": "音声クローン作成および独自の音声デザイン",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "タイミングの合った音声による動画の吹き替え",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "ローカルAPIおよびエージェント向けMCPの提供",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "自分の声をクローンしたり、新しい音声デザインを作成して音声生成を行う",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "浮動ウィジェットを使用してディクテーションを行う",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    },
+    {
+      "text": "物語やオーディオブック、バッチジョブの生産",
+      "basis": "README明記",
+      "evidence_section": "Your voice. Your workflow."
+    }
+  ],
+  "first_trial": {
+    "goal": "macOSまたはLinux環境でワンコマンドインストールスクリプトを実行してデスクトップアプリをインストールする",
+    "steps": [
+      "ターミナルを開く",
+      "以下のコマンドを実行する: curl -fsSL https://voicestudio.sh/install | sh"
+    ],
+    "success_criteria": "VoiceStudioのElectronデスクトップアプリが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "Your voice. Your workflow.",
+    "Get started",
+    "Documentation",
+    "Sponsors",
+    "License & responsible use"
+  ],
+  "unconfirmed": [
+    "対応している646言語の具体的な言語リスト",
+    "デフォルト以外の全エンジンの詳細な動作要件"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2d8056075ec75150d75cc292920d295dfdc12851",
+  "generated_at": "2026-10-23T09:05:54.678385+09:00"
+}

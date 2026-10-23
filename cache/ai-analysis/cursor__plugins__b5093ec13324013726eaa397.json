@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Cursorプラグインの仕様と、開発者ツール、フレームワーク、SaaS製品向けの公式プラグイン群を提供するリポジトリです。",
+  "capabilities": [
+    {
+      "text": "人気のある開発者ツールやSaaS製品向けの公式Cursorプラグイン集を提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "各プラグインがリポジトリのルートに独立したディレクトリとして配置され、プラグイン用マニフェストを持つ構造にする",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "マーケットプレイス用マニフェスト（marketplace.json）と、各プラグインのマニフェスト（plugin.json）で構成されるマルチプラグインのマーケットプレイスリポジトリである",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "GitHubやGoogle Drive、Slack等のSaaS製品やツールと連携するプラグインを探して利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "独自のエージェントプラグインを新しく作成して検証する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "TypeScript SDKを使用してアプリやスクリプト、自動化機能を構築する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリのプラグイン構成や一覧を確認する",
+    "steps": [
+      "リポジトリのREADMEを開き、提供されているプラグインの一覧を確認する",
+      "Repository structureのセクションでディレクトリ構成を確認する"
+    ],
+    "success_criteria": "プラグインの一覧と各ディレクトリの構造が確認できていること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドやセットアップ手順",
+    "各プラグインの詳細な利用方法やコード例"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "08ab4f44dee2e1fea6b6b7afd18404fe73fb76c4",
+  "generated_at": "2026-10-23T09:05:49.280434+09:00"
+}

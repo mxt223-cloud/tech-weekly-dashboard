@@ -1,0 +1,57 @@
+{
+  "summary_ja": "rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントメタハーネスです。100以上の専門エージェント、協調スウォーム、アダプティブメモリ、マルチプロバイダー対応、ゼロトラストなエージェント間フェデレーション機能などを提供し、AIエージェントのチーム運用をサポートします。",
+  "capabilities": [
+    {
+      "text": "Claude CodeやCodexなどのモデルにツール、メモリ、ループ、サンドボックス、制御レイヤーを提供するハーネス機能",
+      "evidence_section": "Ruflo"
+    },
+    {
+      "text": "コーディング、テスト、セキュリティ、ドキュメントなどに対応する100以上の専門エージェントとスウォーム協調機能",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "mTLSとed25519によるゼロトラスト検証やPII保護パイプラインを備えたエージェントフェデレーション機能",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数マシーンや組織間でエージェント同士が安全にワークスペースを共有し、タスクを協調して実行する",
+      "basis": "README明記",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    },
+    {
+      "text": "HNSWインデックス付きのベクターメモリを活用した高速なエージェントの記憶検索と学習を行う",
+      "basis": "README明記",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "Claude Code上でプラグインやコンソールを用いてエージェントのワークフローやコストを管理する",
+      "basis": "README明記",
+      "evidence_section": "Get started with Ruflo"
+    }
+  ],
+  "first_trial": {
+    "goal": "Rufloの初期化ウィザードを実行してプロジェクトのセットアップを行う",
+    "steps": [
+      "npx ruflo@latest init wizard"
+    ],
+    "success_criteria": "プロジェクトのセットアップウィザードが正常に起動し、ホストサーフェス等の設定が行われること"
+  },
+  "evidence_sections": [
+    "Get started with Ruflo",
+    "Ruflo",
+    "Quick Start",
+    "What You Get",
+    "Agent Federation — Slack for Agents",
+    "Documentation",
+    "Support",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "320c9bf934a68dde923a5899c2d27471d43a6922",
+  "generated_at": "2026-10-23T09:05:42.569869+09:00"
+}
