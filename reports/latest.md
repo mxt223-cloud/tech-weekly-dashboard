@@ -1,58 +1,93 @@
-# Tech Daily — 2026-10-24
+# Tech Daily — 2026-10-25
 
-生成日時: 2026-10-24T08:56:38.361459+09:00  
+生成日時: 2026-10-25T08:33:43.323746+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
-## 1. [morluto/rea](https://github.com/morluto/rea)
+## 1. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
 
-**概要:** REAは、ネイティブバイナリ、アプリケーション、実行時の振る舞いをAIエージェント経由でリバースエンジニアリングするためのModel Context Protocol（MCP）およびCLIツールです。
+**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
+
+- 言語: JavaScript
+- 今週のスター: 11223
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
+
+- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
+
+- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
+
+
+### 利用例
+
+- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
+
+- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
+
+- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
+
+
+### 最初に試すこと
+
+Skills CLIを使用してsecurity-auditスキルをインストールする
+
+1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
+
+
+成功の目安: スキルが正常にインストールされること
+
+
+
+
+## 2. [morluto/rea](https://github.com/morluto/rea)
+
+**概要:** REAは、バイナリやアプリケーション、実行時の振る舞いをAIエージェントと連携してリバースエンジニアリングするためのMCPサーバーおよびCLIツールです。
 
 - 言語: TypeScript
-- 今週のスター: 106341
+- 今週のスター: 88243
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなどをエージェントのツールで検査し、解析結果を証拠付きで提供する（根拠: README冒頭）
+- ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなど多様なターゲットの調査に対応しています。（根拠: What you can analyze）
 
-- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを分析し、モジュール、インポート、Electron境界などの情報を出力する（根拠: Use the terminal）
+- Hopper、Ghidra、IDAなどのネイティブ解析エンジンや静的解析ツールと連携し、擬似コードやアセンブリ、文字列などを取得します。（根拠: What you can analyze）
 
-- Hopper、Ghidra、IDAなどのネイティブ解析エンジンと連携し、疑似コード、アセンブリ、文字列、シンボルなどを取得する（根拠: What you can analyze）
+- ローカルでの分析を実行し、結論の背後にある証拠や制限事項を含めた結果を返します。（根拠: README冒頭）
 
 
 ### 利用例
 
-- アプリ内の機能をエージェントに調査させ、仕組みを理解して自身のプロジェクト向けの機能を構築する（README明記／根拠: README冒頭）
+- アプリ内で使われている機能をAIエージェントに調査させ、ソースコードなしで仕組みを理解して自分のプロジェクト用に再構築する。（README明記／根拠: README冒頭）
 
-- ネイティブゲーム内のサウンド処理や弾幕計算の仕組みを逆コンパイル結果から再構築する（README明記／根拠: Showcases）
+- 抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを対象に、モジュールやインポート情報を検査する。（README明記／根拠: Quick start）
 
-- Electron製アプリのクリップボード連携などの内部実装を追跡する（README明記／根拠: Showcases）
+- ゲームなどのバイナリの動作や計算処理を解析し、当時の実装をC/C++などで再現する。（README明記／根拠: Showcases）
 
 
 ### 最初に試すこと
 
-エージェントにREAのMCPサーバーとワークフロー指示を追加し、動作確認を行う
+エージェントにREAをセットアップし、動作確認を行う
 
-1. npx rea-agents setup コマンドを実行してエージェントを設定する
-
-2. エージェントを再起動する
-
-3. エージェントに対して対象アプリの調査を依頼する
+1. npx rea-agents setup
 
 
-成功の目安: エージェントを通じてREAの機能が呼び出され、ターゲットアプリの調査結果や証拠が表示されること
+成功の目安: エージェントにMCPサーバーとワークフロー手順が追加され、設定が完了すること
 
-未確認: 具体的な対応OSごとの詳細な依存関係エラーの回避策の網羅性
+未確認: サポートされているすべてのエージェントの詳細な動作仕様／外部ネイティブ解析ツールのライセンス認証の個別手順
 
 
-## 2. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
+## 3. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
 
 **概要:** anthropic/claude-plugins-official は、Claude Code向けの高品質なプラグインを集めた公式ディレクトリです。Anthropicが管理する内部プラグインと、コミュニティやパートナーによる外部プラグインを提供しています。
 
 - 言語: Python
-- 今週のスター: 5649
+- 今週のスター: 4250
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -84,14 +119,14 @@ Claude Code上でプラグインをインストールする
 未確認: 具体的な個別のプラグインが何を提供するのかという機能詳細
 
 
-## 3. [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
+## 4. [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
 
 **概要:** ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントのメタハーネスであり、100以上の専門エージェント、協調スウォーム、自己学習メモリ、ゼロトラストなエージェント間フェデレーション機能を提供します。
 
 - 言語: TypeScript
-- 今週のスター: 3708
+- 今週のスター: 3349
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -133,90 +168,14 @@ Claude Code環境でプラグインマーケットプレイスからrufloをイ�
 未確認: 具体的な商用利用におけるスケーラビリティや実運用での詳細なパフォーマンス数値
 
 
-## 4. [android/skills](https://github.com/android/skills)
-
-**概要:** Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。
-
-- 言語: Kotlin
-- 今週のスター: 1384
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- Android CLIを使用して特定のスキルをカレントディレクトリにインストールする（根拠: Install Android skills）
-
-- Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする（根拠: Install Android skills）
-
-- プラグインとしてClaude CodeやCodexにインストールする（根拠: Install as an agent plugin）
-
-
-### 利用例
-
-- LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる（README明記／根拠: Android skills）
-
-- エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる（README明記／根拠: Activate skills）
-
-
-### 最初に試すこと
-
-Android CLIを使用して特定のスキルをインストールする
-
-1. android skills add r8-analyzer --project=.
-
-
-成功の目安: 指定したスキルがプロジェクトにインストールされること
-
-未確認: リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類
-
-
-## 5. [anomalyco/opencode](https://github.com/anomalyco/opencode)
-
-**概要:** anomalyco/opencodeは、オープンソースのAIコーディングエージェントであり、ターミナルUIやデスクトップアプリを通じて開発作業やコードの探索を支援します。
-
-- 言語: TypeScript
-- 今週のスター: 6750
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- buildエージェントによる開発向けのフルアクセスなコーディング作業（根拠: Agents）
-
-- planエージェントによるコードの分析や読み取り専用の探索（根拠: Agents）
-
-- Tabキーによるエージェント間の切り替え（根拠: Agents）
-
-
-### 利用例
-
-- 不慣れなコードベースの探索や変更の計画（README明記／根拠: Agents）
-
-- 開発作業におけるフルアクセスなコーディング支援の利用（README明記／根拠: Agents）
-
-- @generalを使用した複雑な検索や複数ステップのタスクの実行（README明記／根拠: Agents）
-
-
-### 最初に試すこと
-
-CLI環境でopencodeをインストールして使い始める
-
-1. curl -fsSL https://opencode.ai/v2/install | bash
-
-
-成功の目安: インストールスクリプトが正常に実行され、opencodeが利用可能になること
-
-未確認: 詳細な設定方法やAIモデルのバックエンドに関する具体的な仕様／コントリビューション手順の細かいルール
-
-
-## 6. [stablyai/orca](https://github.com/stablyai/orca)
+## 5. [stablyai/orca](https://github.com/stablyai/orca)
 
 **概要:** Orcaは、複数のコーディングエージェント（Claude Code、Codexなど）を並行して実行・管理するためのAIオーケストレーターです。デスクトップ、モバイル、リモートランタイムに対応しており、複数のエージェントを独立したワークツリーで同時に動かすことができます。
 
 - 言語: TypeScript
-- 今週のスター: 9401
+- 今週のスター: 9545
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -248,174 +207,233 @@ Orcaデスクトップアプリをインストールして起動する
 未確認: CONTRIBUTING.mdの詳細な開発手順／cloud/ディレクトリにあるリレーサーバーの具体的なセットアップ手順
 
 
-## 7. [cursor/plugins](https://github.com/cursor/plugins)
+## 6. [anomalyco/opencode](https://github.com/anomalyco/opencode)
 
-**概要:** Cursor向け公式プラグインおよび仕様をまとめたリポジトリであり、開発者向けツール、生産性向上ツール、外部サービス連携など多様なプラグインを提供しています。
+**概要:** anomalyco/opencodeは、オープンソースのAIコーディングエージェントであり、ターミナルUIやデスクトップアプリを通じて開発作業やコードの探索を支援します。
 
 - 言語: TypeScript
-- 今週のスター: 2046
-- ライセンス: 不明
-- AI分析状態: ok
-
-### できること
-
-- 各プラグインはリポジトリのルートに独立したディレクトリとして配置され、専用の `.cursor-plugin/plugin.json` マニフェストを持っています。（根拠: Cursor plugins）
-
-- リポジトリのルートにある `.cursor-plugin/marketplace.json` にすべてのプラグインがリストされています。（根拠: Repository structure）
-
-
-### 利用例
-
-- 人気のある開発者向けツール、フレームワーク、SaaS製品向けの公式Cursorプラグインを利用する。（README明記／根拠: Cursor plugins）
-
-- 新規のエージェントプラグインの作成や検証を行う。（README明記／根拠: Plugins）
-
-
-### 最初に試すこと
-
-リポジトリ構造とプラグイン一覧を確認する
-
-1. リポジトリのREADMEを開き、プラグイン一覧のテーブルやリポジトリ構造のツリー表示を確認する。
-
-
-成功の目安: 提供されているプラグインのリストとディレクトリ構成を把握できること。
-
-未確認: 具体的なインストールコマンドやQuick Startの手順
-
-
-## 8. [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory)
-
-**概要:** ai-memoryは、複数のAIコーディングエージェント（Claude Code、Codex、Cursorなど）の間で長期的なコンテキストや作業の引き継ぎを共有するためのRust製ソリューションです。
-
-- 言語: Rust
-- 今週のスター: 3322
+- 今週のスター: 6765
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- 複数のAIエージェント間で共有メモリと引き継ぎプロトコルを利用できる。（根拠: Why ai-memory）
+- buildエージェントによる開発向けのフルアクセスなコーディング作業（根拠: Agents）
 
-- 保存されるデータはプレーンなMarkdownのGitバックアップwikiであり、検索や手動編集が可能。（根拠: Why ai-memory）
+- planエージェントによるコードの分析や読み取り専用の探索（根拠: Agents）
 
-- ライフサイクルHookによって作業内容を自動で静かに記録し、デフォルトではLLMの呼び出しを必要としない。（根拠: Why ai-memory）
+- Tabキーによるエージェント間の切り替え（根拠: Agents）
 
 
 ### 利用例
 
-- Claude Codeで作業を途中で中断し、同じディレクトリでOpenAI Codexを起動して説明なしに作業を引き継ぐ。（README明記／根拠: Why ai-memory）
+- 不慣れなコードベースの探索や変更の計画（README明記／根拠: Agents）
 
-- パッケージマネージャやテストレイアウトなど、自身の開発スタイルに関するプロファイルを新しいリポジトリでのセッション開始時に反映させる。（README明記／根拠: Why ai-memory）
+- 開発作業におけるフルアクセスなコーディング支援の利用（README明記／根拠: Agents）
 
-- チームメンバー全員で1つのサーバーを参照し、ある人のセッションから得た知識を他のメンバーのAIエージェントで共有する。（README明記／根拠: Why ai-memory）
+- @generalを使用した複雑な検索や複数ステップのタスクの実行（README明記／根拠: Agents）
 
 
 ### 最初に試すこと
 
-クイックスタートの実施
+CLI環境でopencodeをインストールして使い始める
+
+1. curl -fsSL https://opencode.ai/v2/install | bash
 
 
-成功の目安: クイックスタート手順の完了
+成功の目安: インストールスクリプトが正常に実行され、opencodeが利用可能になること
 
-未確認: 具体的なインストールコマンドや実行コマンドの詳細な手順はREADMEのQuick startセクションが空のため不明です。
+未確認: 詳細な設定方法やAIモデルのバックエンドに関する具体的な仕様／コントリビューション手順の細かいルール
 
 
-## 9. [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
+## 7. [cursor/plugins](https://github.com/cursor/plugins)
 
-**概要:** CLI-Anythingは、あらゆるソフトウェアをAIエージェント対応のCLIに変換するためのフレームワークおよびハブです。
+**概要:** Cursor公式のプラグインおよびサードパーティ製プラグインを多数収録しているリポジトリです。各プラグインは独立したディレクトリとして管理され、それぞれにマニフェストファイルを含んでいます。
 
-- 言語: Python
-- 今週のスター: 3275
+- 言語: TypeScript
+- 今週のスター: 1946
+- ライセンス: 不明
+- AI分析状態: ok
+
+### できること
+
+- 開発ツール、生産性向上ツール、外部SaaS製品向けの公式Cursorプラグイン集を提供する（根拠: README冒頭）
+
+- プラグインごとに個別のディレクトリと .cursor-plugin/plugin.json マニフェストを持つ（根拠: README冒頭）
+
+- ルートディレクトリの .cursor-plugin/marketplace.json でプラグインのリストを管理する（根拠: Repository structure）
+
+
+### 利用例
+
+- 開発ツールやSaaS製品向けのプラグインを利用する（README明記／根拠: README冒頭）
+
+- 新しいエージェントプラグインを構築および検証する（README明記／根拠: Plugins）
+
+- リポジトリ構造に沿って独自のエージェントスキルやルールを追加・管理する（提案／根拠: Repository structure）
+
+
+### 最初に試すこと
+
+リポジトリの構造やプラグイン一覧を確認する
+
+1. リポジトリのREADMEを開き、一覧から興味のあるプラグインを確認する
+
+2. リポジトリ内の .cursor-plugin/marketplace.json および各プラグインディレクトリの構成を確認する
+
+
+成功の目安: プラグインの一覧とリポジトリ構造が確認できること
+
+未確認: 各プラグインの詳細なインストール手順や具体的なコマンド
+
+
+## 8. [android/skills](https://github.com/android/skills)
+
+**概要:** Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。
+
+- 言語: Kotlin
+- 今週のスター: 1471
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- cli-anything-hubパッケージマネージャーを介したコミュニティ製CLIのブラウジング、検索、インストール、管理。（根拠: 🚀 Quick Start）
+- Android CLIを使用して特定のスキルをカレントディレクトリにインストールする（根拠: Install Android skills）
+
+- Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする（根拠: Install Android skills）
+
+- プラグインとしてClaude CodeやCodexにインストールする（根拠: Install as an agent plugin）
 
 
 ### 利用例
 
-- 既存のCLIエコシステムを利用して、公開されている便利なCLIをインストールして実行する。（README明記／根拠: 🚀 Quick Start）
+- LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる（README明記／根拠: Android skills）
+
+- エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる（README明記／根拠: Activate skills）
 
 
 ### 最初に試すこと
 
-CLI-Hubパッケージマネージャーのインストール
+Android CLIを使用して特定のスキルをインストールする
 
-1. pip install cli-anything-hub
-
-
-成功の目安: cli-hubコマンドが利用可能になること
-
-未確認: 7フェーズのハーネス生成の詳細なコマンドや手順
+1. android skills add r8-analyzer --project=.
 
 
-## 10. [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
+成功の目安: 指定したスキルがプロジェクトにインストールされること
 
-**概要:** ComfyUIは、グラフおよびノードインターフェースを備えた、強力でモジュール式の拡散モデル向けGUI、API、バックエンドです。
+未確認: リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類
+
+
+## 9. [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
+
+**概要:** anthropic/knowledge-work-pluginsは、Claudeを専門業務特化型のアシスタントに変えるためのオープンソースプラグイン集です。Claude CoworkおよびClaude Codeで利用でき、スキル、コネクター、スラッシュコマンド、サブエージェントをバンドルしてタスクを効率化します。
 
 - 言語: Python
-- 今週のスター: 4375
-- ライセンス: GPL-3.0
+- 今週のスター: 2625
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- ロール、チーム、企業に合わせた専門的なプラグイン（生産性向上、営業、カスタマーサポート、製品管理、マーケティング、法務、財務、データ分析、エンタープライズ検索、バイオ研究、プラグイン管理など11種類）を提供する。（根拠: Plugin Marketplace）
+
+- MCPサーバーを介してSlack、Notion、Asana、Snowflakeなどの外部ツールやデータソースと接続する。（根拠: How Plugins Work）
+
+- マークダウンとJSONによるファイルベースの構造を採用し、コードやインフラストラクチャなしでカスタムプラグインの作成や既存プラグインのカスタマイズができる。（根拠: Making Them Yours）
+
+
+### 利用例
+
+- 営業活動において、見込み客の調査、コールの準備、パイプラインの確認、アウトリーチの下書き、競合バトルカードの作成を行う。（README明記／根拠: Plugin Marketplace）
+
+- 財務業務において、仕訳の準備、勘定科目の消込、財務諸表の作成、差異分析、決算管理、監査支援を行う。（README明記／根拠: Plugin Marketplace）
+
+- データ分析において、クエリの記述、可視化、データセットの解釈、統計分析、ダッシュボードの構築を行う。（README明記／根拠: Plugin Marketplace）
+
+
+### 最初に試すこと
+
+Claude Codeを使用してマーケットプレイスを追加し、特定のプラグインをインストールする
+
+1. claude plugin marketplace add anthropics/knowledge-work-plugins
+
+2. claude plugin install sales@knowledge-work-plugins
+
+
+成功の目安: 指定したプラグインがClaude Code環境に正常にインストールされること
+
+未確認: プラグインごとの詳細な内部実装コードや個別のコネクター設定の全詳細
+
+
+## 10. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
+
+**概要:** HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを決定論的なMP4ビデオに変換するためのオープンソースフレームワークです。CLIを通じてローカルで使用できるほか、AIコーディングエージェントのスキルとしても活用できます。
+
+- 言語: TypeScript
+- 今週のスター: 5553
+- ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- 画像、動画、3Dモデル、音声などの生成や編集を行うための視覚的なノードグラフインターフェースを提供します。（根拠: Features）
+- HTMLとCSS、シーク可能なアニメーションを定義して決定論的なMP4ビデオにレンダリングする（根拠: How It Works）
 
-- 非同期の重みストリーミング技術を使用して、一般的なコンシューマーハードウェア上で大規模なオープンソースモデルを実行できます。（根拠: README冒頭）
+- Claude CodeなどのAIコーディングエージェント向けにスキルを導入し、エージェント経由で動画制作を行える（根拠: Quick Start）
 
-- 生成されたメディアのファイルから、使用されたシードや完全なワークフローを復元または読み込むことができます。（根拠: Features）
+- CLIやカタログ機能を通じて、プレビュー、ローカル・クラウドレンダリング、再利用可能なブロックの追加ができる（根拠: HyperFrames Stack）
 
 
 ### 利用例
 
-- ビジュアルプロフェッショナルがモデルやパラメーターを細部まで制御しながら画像や動画などのコンテンツを生成する。（README明記／根拠: README冒頭）
+- 製品のローンチ動画や機能紹介アニメーションの作成（README明記／根拠: What You Can Build）
 
-- APIエンドポイントを使用して本番パイプラインへワークフローをシームレスに統合する。（README明記／根拠: README冒頭）
+- アニメーション付きのコード差分やナレーション、字幕を含むPRウォークスルーの作成（README明記／根拠: What You Can Build）
 
-- カスタムノードを導入して機能を拡張する。（README明記／根拠: Features）
+- データビュジュアライゼーションやマップアニメーション、チャートレースの制作（README明記／根拠: What You Can Build）
 
 
 ### 最初に試すこと
 
-ComfyUIの依存関係をインストールして起動する
+CLIを使用して新しいビデオプロジェクトを初期化し、プレビューおよびレンダリングを行う
 
-1. リポジトリをクローンする
+1. npx hyperframes init my-video
 
-2. ComfyUIフォルダ内でターミナルを開き、依存関係をインストールする: pip install -r requirements.txt
+2. cd my-video
 
-3. ComfyUIを起動する: python main.py
+3. npx hyperframes preview
+
+4. npx hyperframes render
 
 
-成功の目安: ComfyUIが正常に起動し、Webブラウザ等からアクセスできる状態になること
+成功の目安: ブラウザでのライブリロードによるプレビュー確認、およびMP4へのレンダリングが完了すること
 
-未確認: 詳細なパフォーマンス数値や具体的な動作速度の保証範囲
+
 
 
 
 ## Zenn
 
-- [Better AuthをMCPの認可サーバーにして、AI Agent からOAuthでアプリを操作させる](https://zenn.dev/sakagi/articles/8caa896e649005) — Akagi
+- [MultiheadAttentionの高速経路がVRAMを18GB食っていた話](https://zenn.dev/genelab_999/articles/387bf151caf716) — GeneLab
 
-- [Excel読込をcalamineで19秒→5秒にしたら、別名パッケージ経由のimportだけ壊れた【Python】](https://zenn.dev/cutlet_of_pork/articles/calamine-excel-read-alias-package-import) — とんのかつ
+- [リンクで確認した SNS のメール購読に、作り直さずに「解除の保護」を付ける](https://zenn.dev/sk8jp/articles/260e3c0fa07ed9) — YAZ
 
-- [AlphaEngine : 最適化編①](https://zenn.dev/reu/articles/f79a89bd44b541) — みぞれに
+- [Laravel を IdP にして Ory Hydra で SSO を組み、PHP 5.6 のレガシーアプリも認証ブローカーで乗せる](https://zenn.dev/sprix_it/articles/464d97d1ebdbfd) — いけ
 
-- [そのProvider、どこから更新する？ FlutterとRiverpodで考える操作完了通知](https://zenn.dev/simplex/articles/dc17c45b57af0e) — Simplex テックブログ運営
+- [Gowin FPGAの配置配線オプションを実測比較 — ビルド時間とFmaxのバランス](https://zenn.dev/akiyukiokayasu/articles/66be017200e64e) — Akiyuki Okayasu
 
-- [2年間放置していたPwnagotchiをクリーンインストールして使えるようにするまで](https://zenn.dev/kuroikotech/articles/pwnagotchi-zero2w-clean-install) — kuroiko
+- [AIコードレビューの不合格率が51%→13%に。3モデル中2つは判定していなかった](https://zenn.dev/taka8823/articles/2df36d66844c15) — yuki takamura
+
+- [webauthn-ruby をもう一回覗いてみた](https://zenn.dev/smartcamp/articles/22bde5829493e5) — 職人
+
+- [「分担を見直したい」では動かなかった。チーム間の議論を変えた1枚の図](https://zenn.dev/shun0530/articles/32946ce85a536d) — shun
+
+- [AI隆盛期に考える、情シス的セキュリティのあれこれ](https://zenn.dev/kinasato_mochi/articles/db662a5909ea19) — 鬼無里 餅衛門
+
+- [eMudhraの中間CA証明書の秘密鍵を求めてみる](https://zenn.dev/herumi/articles/search_bad_emudhra_key) — herumi
 
 - [[Flutter]main()を通らない起動ルートで初期化漏れした話（Android着信のヒヤリハット）](https://zenn.dev/lincwell_inc/articles/ab2a642ea8f6f0) — Take
 
-- [301 リダイレクトの変更が一部の利用者に反映されない](https://zenn.dev/shinagawa_web/articles/cached-301-stale-redirect) — shinagawa
-
-- [Node.jsの2026年10月セキュリティリリースでやること（Claude Code用チェックリスト付き）](https://zenn.dev/yoshinani_dev/articles/0e6513a56eb629) — ひょうどう
-
 - [Claude CodeやCodexで並列開発していたら、Macのストレージが残り8GBになったので掃除した](https://zenn.dev/yoshinani_dev/articles/0c17dec1c082a1) — ひょうどう
-
-- [自宅サーバーの定期バックアップの失敗に気付かなかった話](https://zenn.dev/komorebi_note/articles/d9df64e7e1da82) — こもれび｜インフラ勉強中
 
 - [Rootless Dockerと学ぶSELinux【初心者向け】](https://zenn.dev/nexryai/articles/afb828d7dda6b7) — nexryai
 
@@ -424,8 +442,6 @@ ComfyUIの依存関係をインストールして起動する
 - [脆弱性管理の仕組みを整えた](https://zenn.dev/dress_code/articles/be5550254695cd) — anizozina
 
 - [【速報：2026/10/22 04:00】PHP2Shellの対応状況まとめ：PHP本体、Linux、レンタルサーバ、KUSANAGI](https://zenn.dev/tyamadadd/articles/c02a27af771dd2) — tyamadadd
-
-- [10月21日、PHP2Shell対応の後片付けが終わらない](https://zenn.dev/subara3/articles/1165119ef70e75) — Subara3
 
 - [仕組みを理解する動画を、Claude Codeに作らせると便利すぎる](https://zenn.dev/explaza/articles/c749042ecbe232) — musoukun
 

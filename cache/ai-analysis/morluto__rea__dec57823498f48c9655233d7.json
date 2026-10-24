@@ -1,0 +1,56 @@
+{
+  "summary_ja": "REAは、バイナリやアプリケーション、実行時の振る舞いをAIエージェントと連携してリバースエンジニアリングするためのMCPサーバーおよびCLIツールです。",
+  "capabilities": [
+    {
+      "text": "ネイティブバイナリ、JavaScript/Electronアプリ、.NETアセンブリ、ウェブサイトなど多様なターゲットの調査に対応しています。",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "Hopper、Ghidra、IDAなどのネイティブ解析エンジンや静的解析ツールと連携し、擬似コードやアセンブリ、文字列などを取得します。",
+      "evidence_section": "What you can analyze"
+    },
+    {
+      "text": "ローカルでの分析を実行し、結論の背後にある証拠や制限事項を含めた結果を返します。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "アプリ内で使われている機能をAIエージェントに調査させ、ソースコードなしで仕組みを理解して自分のプロジェクト用に再構築する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "抽出したJavaScriptやElectronアプリのディレクトリまたはASARファイルを対象に、モジュールやインポート情報を検査する。",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "ゲームなどのバイナリの動作や計算処理を解析し、当時の実装をC/C++などで再現する。",
+      "basis": "README明記",
+      "evidence_section": "Showcases"
+    }
+  ],
+  "first_trial": {
+    "goal": "エージェントにREAをセットアップし、動作確認を行う",
+    "steps": [
+      "npx rea-agents setup"
+    ],
+    "success_criteria": "エージェントにMCPサーバーとワークフロー手順が追加され、設定が完了すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "What you can analyze",
+    "Showcases"
+  ],
+  "unconfirmed": [
+    "サポートされているすべてのエージェントの詳細な動作仕様",
+    "外部ネイティブ解析ツールのライセンス認証の個別手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "28ce8b2448b71472a2f65596d677c9a61dc61404",
+  "generated_at": "2026-10-25T08:33:34.995699+09:00"
+}

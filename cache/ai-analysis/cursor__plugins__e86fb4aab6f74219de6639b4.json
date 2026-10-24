@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Cursor公式のプラグインおよびサードパーティ製プラグインを多数収録しているリポジトリです。各プラグインは独立したディレクトリとして管理され、それぞれにマニフェストファイルを含んでいます。",
+  "capabilities": [
+    {
+      "text": "開発ツール、生産性向上ツール、外部SaaS製品向けの公式Cursorプラグイン集を提供する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "プラグインごとに個別のディレクトリと .cursor-plugin/plugin.json マニフェストを持つ",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ルートディレクトリの .cursor-plugin/marketplace.json でプラグインのリストを管理する",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発ツールやSaaS製品向けのプラグインを利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "新しいエージェントプラグインを構築および検証する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "リポジトリ構造に沿って独自のエージェントスキルやルールを追加・管理する",
+      "basis": "提案",
+      "evidence_section": "Repository structure"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリの構造やプラグイン一覧を確認する",
+    "steps": [
+      "リポジトリのREADMEを開き、一覧から興味のあるプラグインを確認する",
+      "リポジトリ内の .cursor-plugin/marketplace.json および各プラグインディレクトリの構成を確認する"
+    ],
+    "success_criteria": "プラグインの一覧とリポジトリ構造が確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plugins",
+    "Repository structure",
+    "License"
+  ],
+  "unconfirmed": [
+    "各プラグインの詳細なインストール手順や具体的なコマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "24682d0aaa74fad0f6cd8be54686b258210f4d9a",
+  "generated_at": "2026-10-25T08:33:39.660122+09:00"
+}
