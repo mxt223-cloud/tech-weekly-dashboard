@@ -1,0 +1,44 @@
+{
+  "summary_ja": "Graphify-Labs/graphifyは、コードベースやドキュメント、SQLスキーマ、設定、PDFなどを検索可能なナレッジグラフに変換するツールです。Claude Code、Cursor、Codex、Gemini CLIなどのAIコーディングアシスタントで/graphifyスキルとして利用でき、ローカルでの決定論的なAST解析とベクトルストアを使わないグラフ構造を提供します。",
+  "capabilities": [
+    {
+      "text": "コードベースをtree-sitter ASTによりローカルで決定論的に解析し、完全ローカルでコードマップを作成する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ドキュメント、PDF、画像、ビデオをアシスタントのモデルや設定済みAPIキーを使用してセマンティックパスとして処理する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "各接続（エッジ）をソースに明示された「EXTRACTED」とgraphifyによって解決された「INFERRED」にタグ付けして説明する",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングアシスタント内で/graphifyと入力し、プロジェクト全体をファイル内検索（grep）の代わりにクエリ可能なナレッジグラフとしてマッピングする",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "/graphifyスキルをAIコーディングアシスタントで実行してプロジェクトのマッピングを開始する",
+    "steps": [
+      "Claude Code、Cursor、Codex、またはGemini CLIなどの対応するAIコーディングアシスタントを開く",
+      "チャット欄やプロンプトに「/graphify」と入力して実行する"
+    ],
+    "success_criteria": "プロジェクトがナレッジグラフとしてマッピングされ、ファイル検索の代わりにクエリできるようになること"
+  },
+  "evidence_sections": [
+    "README冒頭"
+  ],
+  "unconfirmed": [
+    "詳細なインストールコマンドやQuick Startの具体的な実行手順コード",
+    "ローカル実行以外のGraphify Cloudの具体的な連携機能の全容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a2240fea8f624fe86467911821cb9a55cede4e26",
+  "generated_at": "2026-10-26T08:28:34.993479+09:00"
+}

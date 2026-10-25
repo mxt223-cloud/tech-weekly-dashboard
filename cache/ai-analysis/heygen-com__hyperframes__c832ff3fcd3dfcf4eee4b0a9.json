@@ -1,0 +1,57 @@
+{
+  "summary_ja": "HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを決定論的なMP4動画に変換するためのオープンソースフレームワークです。CLIを用いたローカルでの操作や、AIコーディングエージェントからのスキル利用、ホスト型オーサリングワークフローのレンダリングコアとして機能します。",
+  "capabilities": [
+    {
+      "text": "HTMLとCSS、シーク可能なアニメーションを使用して動画を定義し、決定論的なMP4動画としてレンダリングする",
+      "evidence_section": "How It Works"
+    },
+    {
+      "text": "AIコーディングエージェント向けにスキルを提供し、エージェントから動画作成のワークループを実行できる",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "CLIを使用して、ローカルでのプロジェクトの初期化、ブラウザでのプレビュー、およびMP4へのレンダリングを行える",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "製品のローンチ動画や機能紹介アニメーションの作成",
+      "basis": "README明記",
+      "evidence_section": "What You Can Build"
+    },
+    {
+      "text": "アニメーション付きのコード差分やナレーション、字幕を含むPRウォークスルーの作成",
+      "basis": "README明記",
+      "evidence_section": "What You Can Build"
+    },
+    {
+      "text": "データビジュアライゼーションやチャートレース、マップアニメーションの制作",
+      "basis": "README明記",
+      "evidence_section": "What You Can Build"
+    }
+  ],
+  "first_trial": {
+    "goal": "HyperFramesを使用して新規プロジェクトを初期化し、ブラウザでプレビューした上でMP4にレンダリングする",
+    "steps": [
+      "npx hyperframes init my-video",
+      "cd my-video",
+      "npx hyperframes preview",
+      "npx hyperframes render"
+    ],
+    "success_criteria": "ブラウザでのライブリロードによるプレビュー確認と、MP4ファイルへのローカルレンダリングが成功すること"
+  },
+  "evidence_sections": [
+    "Quick Start",
+    "How It Works",
+    "What You Can Build"
+  ],
+  "unconfirmed": [
+    "AWS Lambdaレンダリングの詳細な設定手順と内部アーキテクチャの具体的なコード実装"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9090da4ac27bb90d21c93d2db2b95215a952619e",
+  "generated_at": "2026-10-26T08:28:24.853437+09:00"
+}

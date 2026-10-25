@@ -1,0 +1,52 @@
+{
+  "summary_ja": "ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントメタハーネスです。100種類以上の専門エージェント、協調スウォーム、自己学習メモリ、ゼロトラスト型のエージェント間フェデレーション機能などを提供し、複数エージェントによる自律的なワークフローの構築や会話型AIシステムの開発を支援します。",
+  "capabilities": [
+    {
+      "text": "100種類以上の専門的なエージェントによるコーディング、テスト、セキュリティ、ドキュメント作成のサポート",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "HNSWインデックス付きAgentDBやベクターRAG統合によるエージェントメモリと学習機能",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "mTLSとed25519を用いたゼロトラスト型のエージェント間フェデレーションとPIIフィルタリング機能",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数エージェントを連携させた自律的な開発ワークフローの構築と協調処理",
+      "basis": "README明記",
+      "evidence_section": "Get started with Ruflo"
+    },
+    {
+      "text": "ベクトルメモリやRAGを活用した、コードベース全体の効率的な検索と知識管理",
+      "basis": "README明記",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "異なるマシンや組織間で機密情報を保護しながらエージェント同士でタスクを共有する協業",
+      "basis": "README明記",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトの初期設定ウィザードを実行する",
+    "steps": [
+      "プロジェクトのターミナルでセットアップウィザードを実行する"
+    ],
+    "success_criteria": "npx ruflo@latest init wizard コマンドが正常に実行され、初期設定が完了すること"
+  },
+  "evidence_sections": [
+    "Get started with Ruflo",
+    "What You Get",
+    "Agent Federation — Slack for Agents"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "56654bc4da60150973301a18f6c826236898869e",
+  "generated_at": "2026-10-26T08:28:15.199730+09:00"
+}
