@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T08:28:36.450746+09:00",
-  "week": "2026-10-26",
+  "generated_at": "2026-10-27T09:42:09.152570+09:00",
+  "week": "2026-10-27",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,15 +9,15 @@
       "url": "https://github.com/cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars_total": 46808,
-      "forks_total": 2902,
-      "stars_period": 12680,
+      "stars_total": 48563,
+      "forks_total": 3026,
+      "stars_period": 16593,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-25T23:27:01Z",
+        "updated_at": "2026-10-27T00:39:54Z",
         "pushed_at": "2026-09-14T19:29:02Z",
-        "open_issues": 96,
+        "open_issues": 99,
         "archived": false,
         "size_kb": 143,
         "topics": []
@@ -88,21 +88,106 @@
     },
     {
       "rank": 2,
+      "full_name": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars_total": 33211,
+      "forks_total": 3659,
+      "stars_period": 2822,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-27T00:37:44Z",
+        "pushed_at": "2026-10-27T00:24:08Z",
+        "open_issues": 144,
+        "archived": false,
+        "size_kb": 6673,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 6059,
+        "used_chars": 6058
+      },
+      "analysis": {
+        "summary_ja": "anthropic/knowledge-work-pluginsは、Claudeを専門業務特化型のアシスタントに変えるためのオープンソースプラグイン集です。Claude CoworkおよびClaude Codeで利用でき、スキル、コネクター、スラッシュコマンド、サブエージェントをバンドルしてタスクを効率化します。",
+        "capabilities": [
+          {
+            "text": "ロール、チーム、企業に合わせた専門的なプラグイン（生産性向上、営業、カスタマーサポート、製品管理、マーケティング、法務、財務、データ分析、エンタープライズ検索、バイオ研究、プラグイン管理など11種類）を提供する。",
+            "evidence_section": "Plugin Marketplace"
+          },
+          {
+            "text": "MCPサーバーを介してSlack、Notion、Asana、Snowflakeなどの外部ツールやデータソースと接続する。",
+            "evidence_section": "How Plugins Work"
+          },
+          {
+            "text": "マークダウンとJSONによるファイルベースの構造を採用し、コードやインフラストラクチャなしでカスタムプラグインの作成や既存プラグインのカスタマイズができる。",
+            "evidence_section": "Making Them Yours"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "営業活動において、見込み客の調査、コールの準備、パイプラインの確認、アウトリーチの下書き、競合バトルカードの作成を行う。",
+            "basis": "README明記",
+            "evidence_section": "Plugin Marketplace"
+          },
+          {
+            "text": "財務業務において、仕訳の準備、勘定科目の消込、財務諸表の作成、差異分析、決算管理、監査支援を行う。",
+            "basis": "README明記",
+            "evidence_section": "Plugin Marketplace"
+          },
+          {
+            "text": "データ分析において、クエリの記述、可視化、データセットの解釈、統計分析、ダッシュボードの構築を行う。",
+            "basis": "README明記",
+            "evidence_section": "Plugin Marketplace"
+          }
+        ],
+        "first_trial": {
+          "goal": "Claude Codeを使用してマーケットプレイスを追加し、特定のプラグインをインストールする",
+          "steps": [
+            "claude plugin marketplace add anthropics/knowledge-work-plugins",
+            "claude plugin install sales@knowledge-work-plugins"
+          ],
+          "success_criteria": "指定したプラグインがClaude Code環境に正常にインストールされること"
+        },
+        "evidence_sections": [
+          "Why Plugins",
+          "Plugin Marketplace",
+          "Getting Started",
+          "How Plugins Work",
+          "Making Them Yours"
+        ],
+        "unconfirmed": [
+          "プラグインごとの詳細な内部実装コードや個別のコネクター設定の全詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
+        "generated_at": "2026-09-19T08:30:35.504890+09:00"
+      }
+    },
+    {
+      "rank": 3,
       "full_name": "ruvnet/ruflo",
       "url": "https://github.com/ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars_total": 79275,
-      "forks_total": 9304,
-      "stars_period": 3241,
+      "stars_total": 79540,
+      "forks_total": 9340,
+      "stars_period": 2683,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-25T23:23:01Z",
-        "pushed_at": "2026-10-25T23:12:50Z",
+        "updated_at": "2026-10-27T00:39:32Z",
+        "pushed_at": "2026-10-27T00:39:20Z",
         "open_issues": 986,
         "archived": false,
-        "size_kb": 660622,
+        "size_kb": 660892,
         "topics": [
           "agentic-ai",
           "agentic-framework",
@@ -182,94 +267,9 @@
         "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "56654bc4da60150973301a18f6c826236898869e",
         "generated_at": "2026-10-26T08:28:15.199730+09:00"
-      }
-    },
-    {
-      "rank": 3,
-      "full_name": "anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "stars_total": 32970,
-      "forks_total": 3633,
-      "stars_period": 2631,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-10-25T23:22:49Z",
-        "pushed_at": "2026-10-24T07:31:47Z",
-        "open_issues": 141,
-        "archived": false,
-        "size_kb": 6672,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 6059,
-        "used_chars": 6058
-      },
-      "analysis": {
-        "summary_ja": "anthropic/knowledge-work-pluginsは、Claudeを専門業務特化型のアシスタントに変えるためのオープンソースプラグイン集です。Claude CoworkおよびClaude Codeで利用でき、スキル、コネクター、スラッシュコマンド、サブエージェントをバンドルしてタスクを効率化します。",
-        "capabilities": [
-          {
-            "text": "ロール、チーム、企業に合わせた専門的なプラグイン（生産性向上、営業、カスタマーサポート、製品管理、マーケティング、法務、財務、データ分析、エンタープライズ検索、バイオ研究、プラグイン管理など11種類）を提供する。",
-            "evidence_section": "Plugin Marketplace"
-          },
-          {
-            "text": "MCPサーバーを介してSlack、Notion、Asana、Snowflakeなどの外部ツールやデータソースと接続する。",
-            "evidence_section": "How Plugins Work"
-          },
-          {
-            "text": "マークダウンとJSONによるファイルベースの構造を採用し、コードやインフラストラクチャなしでカスタムプラグインの作成や既存プラグインのカスタマイズができる。",
-            "evidence_section": "Making Them Yours"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "営業活動において、見込み客の調査、コールの準備、パイプラインの確認、アウトリーチの下書き、競合バトルカードの作成を行う。",
-            "basis": "README明記",
-            "evidence_section": "Plugin Marketplace"
-          },
-          {
-            "text": "財務業務において、仕訳の準備、勘定科目の消込、財務諸表の作成、差異分析、決算管理、監査支援を行う。",
-            "basis": "README明記",
-            "evidence_section": "Plugin Marketplace"
-          },
-          {
-            "text": "データ分析において、クエリの記述、可視化、データセットの解釈、統計分析、ダッシュボードの構築を行う。",
-            "basis": "README明記",
-            "evidence_section": "Plugin Marketplace"
-          }
-        ],
-        "first_trial": {
-          "goal": "Claude Codeを使用してマーケットプレイスを追加し、特定のプラグインをインストールする",
-          "steps": [
-            "claude plugin marketplace add anthropics/knowledge-work-plugins",
-            "claude plugin install sales@knowledge-work-plugins"
-          ],
-          "success_criteria": "指定したプラグインがClaude Code環境に正常にインストールされること"
-        },
-        "evidence_sections": [
-          "Why Plugins",
-          "Plugin Marketplace",
-          "Getting Started",
-          "How Plugins Work",
-          "Making Them Yours"
-        ],
-        "unconfirmed": [
-          "プラグインごとの詳細な内部実装コードや個別のコネクター設定の全詳細"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
-        "generated_at": "2026-09-19T08:30:35.504890+09:00"
       }
     },
     {
@@ -278,66 +278,66 @@
       "url": "https://github.com/anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars_total": 221506,
-      "forks_total": 29615,
-      "stars_period": 6857,
+      "stars_total": 221960,
+      "forks_total": 29689,
+      "stars_period": 5070,
       "api": {
         "default_branch": "dev",
         "license": "MIT",
-        "updated_at": "2026-10-25T23:22:11Z",
-        "pushed_at": "2026-10-25T23:26:55Z",
-        "open_issues": 3805,
+        "updated_at": "2026-10-27T00:41:00Z",
+        "pushed_at": "2026-10-27T00:27:16Z",
+        "open_issues": 3865,
         "archived": false,
-        "size_kb": 602388,
+        "size_kb": 604601,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "a8551f97c57f9140c4c2ce9f7c004dc4bc21954b",
+        "sha": "60adea0e397cd675f01b1cf5f6dac9550ef5b377",
         "path": "README.md",
         "truncated": true,
         "original_chars": 4583,
         "used_chars": 4158
       },
       "analysis": {
-        "summary_ja": "anomalyco/opencodeは、オープンソースのAIコーディングエージェントであり、ターミナルUIやデスクトップアプリを通じて開発作業やコードの探索を支援します。",
+        "summary_ja": "opencodeは、オープンソースのAIコーディングエージェントです。CLIやデスクトップアプリとして利用でき、開発向けのbuildエージェントや読み取り専用のplanエージェントなどを切り替えてコードの作成や探索が行えます。",
         "capabilities": [
           {
-            "text": "buildエージェントによる開発向けのフルアクセスなコーディング作業",
+            "text": "buildエージェントによる開発作業向けの高権限な処理",
             "evidence_section": "Agents"
           },
           {
-            "text": "planエージェントによるコードの分析や読み取り専用の探索",
+            "text": "planエージェントによるファイル編集の拒否や確認を伴う安全なコード探索",
             "evidence_section": "Agents"
           },
           {
-            "text": "Tabキーによるエージェント間の切り替え",
+            "text": "Tabキーによるエージェント間の切り替え機能",
             "evidence_section": "Agents"
           }
         ],
         "use_cases": [
           {
-            "text": "不慣れなコードベースの探索や変更の計画",
+            "text": "開発作業におけるコード作成やエージェントを活用した実装",
             "basis": "README明記",
             "evidence_section": "Agents"
           },
           {
-            "text": "開発作業におけるフルアクセスなコーディング支援の利用",
+            "text": "不慣れなコードベースの探索や変更計画の立案",
             "basis": "README明記",
             "evidence_section": "Agents"
           },
           {
-            "text": "@generalを使用した複雑な検索や複数ステップのタスクの実行",
+            "text": "デスクトップアプリケーションを利用したAIコーディング作業",
             "basis": "README明記",
-            "evidence_section": "Agents"
+            "evidence_section": "Desktop App (BETA)"
           }
         ],
         "first_trial": {
-          "goal": "CLI環境でopencodeをインストールして使い始める",
+          "goal": "CLI環境でopencodeをインストールする",
           "steps": [
             "curl -fsSL https://opencode.ai/v2/install | bash"
           ],
-          "success_criteria": "インストールスクリプトが正常に実行され、opencodeが利用可能になること"
+          "success_criteria": "opencodeがインストールされ、利用可能になること"
         },
         "evidence_sections": [
           "README冒頭",
@@ -349,14 +349,13 @@
           "Building on OpenCode"
         ],
         "unconfirmed": [
-          "詳細な設定方法やAIモデルのバックエンドに関する具体的な仕様",
-          "コントリビューション手順の細かいルール"
+          "詳細な設定オプションや対応しているAIモデルの全リスト"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "a8551f97c57f9140c4c2ce9f7c004dc4bc21954b",
-        "generated_at": "2026-10-24T08:56:29.102225+09:00"
+        "cached": false,
+        "readme_sha": "60adea0e397cd675f01b1cf5f6dac9550ef5b377",
+        "generated_at": "2026-10-27T09:41:58.092363+09:00"
       }
     },
     {
@@ -365,17 +364,17 @@
       "url": "https://github.com/stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars_total": 105763,
-      "forks_total": 6691,
-      "stars_period": 9828,
+      "stars_total": 107068,
+      "forks_total": 6752,
+      "stars_period": 9241,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-25T23:26:54Z",
-        "pushed_at": "2026-10-25T23:27:45Z",
-        "open_issues": 8515,
+        "updated_at": "2026-10-27T00:41:57Z",
+        "pushed_at": "2026-10-27T00:41:54Z",
+        "open_issues": 8088,
         "archived": false,
-        "size_kb": 1695243,
+        "size_kb": 1754528,
         "topics": [
           "ade",
           "agent-ide",
@@ -401,51 +400,51 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "dc6b13791676eaf8b8896ba2896d34eb1139e701",
+        "sha": "06a568c3e28c1cfc5f017fbc3c9e44650332bc72",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 17389,
-        "used_chars": 11270
+        "original_chars": 17527,
+        "used_chars": 11408
       },
       "analysis": {
-        "summary_ja": "Orcaは、複数のコーディングエージェント（Claude Code、Codexなど）を並行して実行・管理するためのAIオーケストレーターです。デスクトップ、モバイル、リモートランタイムに対応しており、複数のエージェントを独立したワークツリーで同時に動かすことができます。",
+        "summary_ja": "Orcaは、複数のAIコーディングエージェント（Claude Code、Codex、Grokなど）を並行して実行・管理するためのAIオーケストレータおよびデスクトップ/モバイル環境です。",
         "capabilities": [
           {
-            "text": "独立したgitワークツリー上で複数のAIエージェントを並行して実行し、結果を比較してマージできる",
+            "text": "モバイルアプリを使用して、外出先からエージェントの監視、通知の受け取り、フォローアップの送信ができる。",
             "evidence_section": "Features"
           },
           {
-            "text": "モバイルアプリを使用して、エージェントの作業完了の通知受け取りやスマホからのフォローアップ指示ができる",
+            "text": "1つのプロンプトを複数のエージェントへ同時に送信し、それぞれ独立したGitワークツリーで実行・比較できる。",
             "evidence_section": "Features"
           },
           {
-            "text": "Chromiumウィンドウ上のUI要素をクリックして、HTMLやCSS、切り抜きスクリーンショットをエージェントのプロンプトに送信できる",
+            "text": "ターミナル分割やデザインモード、SSHワークツリー、GitHub・Linearのネイティブ統合などの機能を提供する。",
             "evidence_section": "Features"
           }
         ],
         "use_cases": [
           {
-            "text": "1つのプロンプトを複数のエージェントに同時に処理させ、最も優れた結果をマージする",
+            "text": "複数の異なるAIエージェントを並行して走らせ、それぞれの結果を比較して最適なものをマージする。",
             "basis": "README明記",
             "evidence_section": "Features"
           },
           {
-            "text": "外出先やデスクから離れた場所からでも、モバイル端末でAIエージェントの進捗監視や指示出しを行う",
+            "text": "デスクトップで実行中のエージェントの状況をスマートフォンのモバイルコンパニオンアプリから遠隔監視する。",
             "basis": "README明記",
             "evidence_section": "Features"
           },
           {
-            "text": "アプリ内でGitHubのプルリクエストやIssue、プロジェクトボードを確認し、文脈を切り替えることなくワークツリーを開いてレビューする",
+            "text": "SSH接続したリモートの強力なマシン上でAIエージェントを実行し、ファイル編集やターミナル操作を行う。",
             "basis": "README明記",
             "evidence_section": "Features"
           }
         ],
         "first_trial": {
-          "goal": "Orcaデスクトップアプリをインストールして起動する",
+          "goal": "デスクトップアプリまたはパッケージマネージャーを使用してOrcaをインストールする",
           "steps": [
-            "公式サイト（onorca.dev/download）またはHomebrew（brew install --cask stablyai/orca/orca）などのパッケージマネージャーを使用してインストールする"
+            "公式サイト（onorca.dev/download）からインストーラーをダウンロードするか、macOSの場合は「brew install --cask stablyai/orca/orca」、Arch Linuxの場合は「yay -S stably-orca-bin」を実行する。"
           ],
-          "success_criteria": "Orcaデスクトップアプリが正常に起動すること"
+          "success_criteria": "Orcaがシステムにインストールされ、起動できるようになること。"
         },
         "evidence_sections": [
           "Features",
@@ -457,214 +456,33 @@
           "License"
         ],
         "unconfirmed": [
-          "CONTRIBUTING.mdの詳細な開発手順",
-          "cloud/ディレクトリにあるリレーサーバーの具体的なセットアップ手順"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "dc6b13791676eaf8b8896ba2896d34eb1139e701",
-        "generated_at": "2026-10-24T08:56:31.905656+09:00"
-      }
-    },
-    {
-      "rank": 6,
-      "full_name": "heygen-com/hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
-      "language": "TypeScript",
-      "stars_total": 72127,
-      "forks_total": 6518,
-      "stars_period": 5633,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-10-25T23:27:16Z",
-        "pushed_at": "2026-10-25T23:26:36Z",
-        "open_issues": 239,
-        "archived": false,
-        "size_kb": 516535,
-        "topics": [
-          "ai",
-          "ai-agents",
-          "animation",
-          "claude-code",
-          "ffmpeg",
-          "framework",
-          "gsap",
-          "html",
-          "html-to-video",
-          "mcp",
-          "motion-graphics",
-          "puppeteer",
-          "rendering",
-          "typescript",
-          "video-editor"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "9090da4ac27bb90d21c93d2db2b95215a952619e",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 22944,
-        "used_chars": 20981
-      },
-      "analysis": {
-        "summary_ja": "HyperFramesは、HTML、CSS、メディア、シーク可能なアニメーションを決定論的なMP4動画に変換するためのオープンソースフレームワークです。CLIを用いたローカルでの操作や、AIコーディングエージェントからのスキル利用、ホスト型オーサリングワークフローのレンダリングコアとして機能します。",
-        "capabilities": [
-          {
-            "text": "HTMLとCSS、シーク可能なアニメーションを使用して動画を定義し、決定論的なMP4動画としてレンダリングする",
-            "evidence_section": "How It Works"
-          },
-          {
-            "text": "AIコーディングエージェント向けにスキルを提供し、エージェントから動画作成のワークループを実行できる",
-            "evidence_section": "Quick Start"
-          },
-          {
-            "text": "CLIを使用して、ローカルでのプロジェクトの初期化、ブラウザでのプレビュー、およびMP4へのレンダリングを行える",
-            "evidence_section": "Quick Start"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "製品のローンチ動画や機能紹介アニメーションの作成",
-            "basis": "README明記",
-            "evidence_section": "What You Can Build"
-          },
-          {
-            "text": "アニメーション付きのコード差分やナレーション、字幕を含むPRウォークスルーの作成",
-            "basis": "README明記",
-            "evidence_section": "What You Can Build"
-          },
-          {
-            "text": "データビジュアライゼーションやチャートレース、マップアニメーションの制作",
-            "basis": "README明記",
-            "evidence_section": "What You Can Build"
-          }
-        ],
-        "first_trial": {
-          "goal": "HyperFramesを使用して新規プロジェクトを初期化し、ブラウザでプレビューした上でMP4にレンダリングする",
-          "steps": [
-            "npx hyperframes init my-video",
-            "cd my-video",
-            "npx hyperframes preview",
-            "npx hyperframes render"
-          ],
-          "success_criteria": "ブラウザでのライブリロードによるプレビュー確認と、MP4ファイルへのローカルレンダリングが成功すること"
-        },
-        "evidence_sections": [
-          "Quick Start",
-          "How It Works",
-          "What You Can Build"
-        ],
-        "unconfirmed": [
-          "AWS Lambdaレンダリングの詳細な設定手順と内部アーキテクチャの具体的なコード実装"
+          "CONTRIBUTING.mdに記載されている具体的な開発セットアップ手順の詳細",
+          "cloud/ディレクトリにあるリレーサーバーの具体的な設定手順"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "9090da4ac27bb90d21c93d2db2b95215a952619e",
-        "generated_at": "2026-10-26T08:28:24.853437+09:00"
+        "readme_sha": "06a568c3e28c1cfc5f017fbc3c9e44650332bc72",
+        "generated_at": "2026-10-27T09:42:01.256685+09:00"
       }
     },
     {
-      "rank": 7,
-      "full_name": "android/skills",
-      "url": "https://github.com/android/skills",
-      "description": "",
-      "language": "Kotlin",
-      "stars_total": 9712,
-      "forks_total": 626,
-      "stars_period": 1317,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-10-25T23:22:39Z",
-        "pushed_at": "2026-10-23T14:35:29Z",
-        "open_issues": 36,
-        "archived": false,
-        "size_kb": 1802,
-        "topics": [
-          "skills"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "6636206616de644079b8b1d3334f4da22c8b379a",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 3019,
-        "used_chars": 3017
-      },
-      "analysis": {
-        "summary_ja": "Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。",
-        "capabilities": [
-          {
-            "text": "Android CLIを使用して特定のスキルをカレントディレクトリにインストールする",
-            "evidence_section": "Install Android skills"
-          },
-          {
-            "text": "Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする",
-            "evidence_section": "Install Android skills"
-          },
-          {
-            "text": "プラグインとしてClaude CodeやCodexにインストールする",
-            "evidence_section": "Install as an agent plugin"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる",
-            "basis": "README明記",
-            "evidence_section": "Android skills"
-          },
-          {
-            "text": "エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる",
-            "basis": "README明記",
-            "evidence_section": "Activate skills"
-          }
-        ],
-        "first_trial": {
-          "goal": "Android CLIを使用して特定のスキルをインストールする",
-          "steps": [
-            "android skills add r8-analyzer --project=."
-          ],
-          "success_criteria": "指定したスキルがプロジェクトにインストールされること"
-        },
-        "evidence_sections": [
-          "Android skills",
-          "Install Android skills",
-          "Install as an agent plugin",
-          "Activate skills"
-        ],
-        "unconfirmed": [
-          "リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "6636206616de644079b8b1d3334f4da22c8b379a",
-        "generated_at": "2026-10-21T09:02:56.267313+09:00"
-      }
-    },
-    {
-      "rank": 8,
+      "rank": 6,
       "full_name": "Graphify-Labs/graphify",
       "url": "https://github.com/Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "stars_total": 135195,
-      "forks_total": 12901,
-      "stars_period": 6868,
+      "stars_total": 136149,
+      "forks_total": 12999,
+      "stars_period": 7183,
       "api": {
         "default_branch": "v8",
         "license": "Apache-2.0",
-        "updated_at": "2026-10-25T23:28:11Z",
-        "pushed_at": "2026-10-23T17:59:28Z",
-        "open_issues": 1635,
+        "updated_at": "2026-10-27T00:39:40Z",
+        "pushed_at": "2026-10-26T15:18:22Z",
+        "open_issues": 1631,
         "archived": false,
-        "size_kb": 31859,
+        "size_kb": 32622,
         "topics": [
           "ai-agents",
           "antigravity",
@@ -736,28 +554,108 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "a2240fea8f624fe86467911821cb9a55cede4e26",
         "generated_at": "2026-10-26T08:28:34.993479+09:00"
       }
     },
     {
-      "rank": 9,
+      "rank": 7,
+      "full_name": "android/skills",
+      "url": "https://github.com/android/skills",
+      "description": "",
+      "language": "Kotlin",
+      "stars_total": 9833,
+      "forks_total": 635,
+      "stars_period": 823,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-27T00:38:48Z",
+        "pushed_at": "2026-10-26T20:27:33Z",
+        "open_issues": 36,
+        "archived": false,
+        "size_kb": 2118,
+        "topics": [
+          "skills"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "6636206616de644079b8b1d3334f4da22c8b379a",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 3019,
+        "used_chars": 3017
+      },
+      "analysis": {
+        "summary_ja": "Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。",
+        "capabilities": [
+          {
+            "text": "Android CLIを使用して特定のスキルをカレントディレクトリにインストールする",
+            "evidence_section": "Install Android skills"
+          },
+          {
+            "text": "Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする",
+            "evidence_section": "Install Android skills"
+          },
+          {
+            "text": "プラグインとしてClaude CodeやCodexにインストールする",
+            "evidence_section": "Install as an agent plugin"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる",
+            "basis": "README明記",
+            "evidence_section": "Android skills"
+          },
+          {
+            "text": "エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる",
+            "basis": "README明記",
+            "evidence_section": "Activate skills"
+          }
+        ],
+        "first_trial": {
+          "goal": "Android CLIを使用して特定のスキルをインストールする",
+          "steps": [
+            "android skills add r8-analyzer --project=."
+          ],
+          "success_criteria": "指定したスキルがプロジェクトにインストールされること"
+        },
+        "evidence_sections": [
+          "Android skills",
+          "Install Android skills",
+          "Install as an agent plugin",
+          "Activate skills"
+        ],
+        "unconfirmed": [
+          "リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "6636206616de644079b8b1d3334f4da22c8b379a",
+        "generated_at": "2026-10-21T09:02:56.267313+09:00"
+      }
+    },
+    {
+      "rank": 8,
       "full_name": "akitaonrails/ai-memory",
       "url": "https://github.com/akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars_total": 13511,
-      "forks_total": 959,
-      "stars_period": 3541,
+      "stars_total": 13800,
+      "forks_total": 980,
+      "stars_period": 2838,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-10-25T23:23:30Z",
-        "pushed_at": "2026-10-25T23:25:06Z",
-        "open_issues": 15,
+        "updated_at": "2026-10-27T00:40:55Z",
+        "pushed_at": "2026-10-27T00:37:44Z",
+        "open_issues": 17,
         "archived": false,
-        "size_kb": 39621,
+        "size_kb": 43339,
         "topics": []
       },
       "readme": {
@@ -823,125 +721,275 @@
       }
     },
     {
-      "rank": 10,
-      "full_name": "Comfy-Org/ComfyUI",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "language": "Python",
-      "stars_total": 142925,
-      "forks_total": 16873,
-      "stars_period": 4648,
+      "rank": 9,
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "不明",
+      "stars_total": 224651,
+      "forks_total": 22472,
+      "stars_period": 3286,
       "api": {
-        "default_branch": "master",
-        "license": "GPL-3.0",
-        "updated_at": "2026-10-25T23:22:57Z",
-        "pushed_at": "2026-10-25T23:21:42Z",
-        "open_issues": 5347,
+        "default_branch": "main",
+        "license": null,
+        "updated_at": "2026-10-27T00:40:14Z",
+        "pushed_at": "2026-04-20T10:05:04Z",
+        "open_issues": 138,
         "archived": false,
-        "size_kb": 105306,
-        "topics": [
-          "ai",
-          "comfy",
-          "comfyui",
-          "python",
-          "pytorch",
-          "stable-diffusion"
-        ]
+        "size_kb": 20,
+        "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "99eed6176e91673783620b93f6f5e430b22d9dce",
+        "sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 29298,
-        "used_chars": 29028
+        "original_chars": 6162,
+        "used_chars": 6161
       },
       "analysis": {
-        "summary_ja": "ComfyUIは、グラフおよびノードインターフェースを備えた、強力でモジュール式の拡散モデル向けGUI、API、バックエンドです。",
+        "summary_ja": "Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。",
         "capabilities": [
           {
-            "text": "画像、動画、3Dモデル、音声などの生成や編集を行うための視覚的なノードグラフインターフェースを提供します。",
-            "evidence_section": "Features"
+            "text": "Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。",
+            "evidence_section": "Install"
           },
           {
-            "text": "非同期の重みストリーミング技術を使用して、一般的なコンシューマーハードウェア上で大規模なオープンソースモデルを実行できます。",
-            "evidence_section": "README冒頭"
+            "text": "プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。",
+            "evidence_section": "Install"
           },
           {
-            "text": "生成されたメディアのファイルから、使用されたシードや完全なワークフローを復元または読み込むことができます。",
-            "evidence_section": "Features"
+            "text": "Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。",
+            "evidence_section": "Using with Cursor"
           }
         ],
         "use_cases": [
           {
-            "text": "ビジュアルプロフェッショナルがモデルやパラメーターを細部まで制御しながら画像や動画などのコンテンツを生成する。",
+            "text": "Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "The Solution"
           },
           {
-            "text": "APIエンドポイントを使用して本番パイプラインへワークフローをシームレスに統合する。",
+            "text": "Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "カスタムノードを導入して機能を拡張する。",
-            "basis": "README明記",
-            "evidence_section": "Features"
+            "evidence_section": "Using with Cursor"
           }
         ],
         "first_trial": {
-          "goal": "ComfyUIの依存関係をインストールして起動する",
+          "goal": "Claude Codeプラグインとしてガイドラインをインストールする",
           "steps": [
-            "リポジトリをクローンする",
-            "ComfyUIフォルダ内でターミナルを開き、依存関係をインストールする: pip install -r requirements.txt",
-            "ComfyUIを起動する: python main.py"
+            "/plugin marketplace add forrestchang/andrej-karpathy-skills",
+            "/plugin install andrej-karpathy-skills@karpathy-skills"
           ],
-          "success_criteria": "ComfyUIが正常に起動し、Webブラウザ等からアクセスできる状態になること"
+          "success_criteria": "プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること"
         },
         "evidence_sections": [
-          "README冒頭",
-          "Get Started",
-          "Examples",
-          "Features",
-          "Release Process",
-          "Shortcuts",
-          "Installing",
-          "Running",
-          "Notes",
-          "QA"
+          "Karpathy-Inspired Claude Code Guidelines",
+          "The Problems",
+          "The Solution",
+          "The Four Principles in Detail",
+          "Install",
+          "Using with Cursor",
+          "Key Insight",
+          "How to Know It's Working",
+          "Customization",
+          "Tradeoff Note",
+          "License"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b",
+        "generated_at": "2026-10-27T09:42:06.003295+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars_total": 116090,
+      "forks_total": 22274,
+      "stars_period": 3437,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-27T00:41:15Z",
+        "pushed_at": "2026-10-16T21:38:46Z",
+        "open_issues": 154,
+        "archived": false,
+        "size_kb": 6425,
+        "topics": [
+          "agent",
+          "finance",
+          "llm",
+          "multiagent",
+          "trading"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "cedcdb1e5bf56705cab3fa4b86944686cd62276c",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 27208,
+        "used_chars": 25746
+      },
+      "analysis": {
+        "summary_ja": "TradingAgentsは、実際の金融取引会社の動きを模した、マルチエージェント型のLLM金融取引フレームワークです。ファンダメンタルズ分析、センチメント分析、テクニカル分析などの専門エージェントが協調して市場状況を評価し、取引判断を行います。",
+        "capabilities": [
+          {
+            "text": "ファンダメンタルズ分析、センチメント分析、ニュース分析、テクニカル分析を担当する専門エージェントによる並行分析",
+            "evidence_section": "Analyst Team"
+          },
+          {
+            "text": "複数のLLMプロバイダー（OpenAI、Google、Anthropicなど）およびDocker、ローカル環境での実行をサポート",
+            "evidence_section": "Installation and CLI"
+          },
+          {
+            "text": "過去の決定に対する報酬の追跡や過去の教訓の引き継ぎを行うメモリログ機能",
+            "evidence_section": "Memory log"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "世界各国の市場や暗号資産の銘柄に対し、エージェントを活用したシミュレーションや取引判断の評価を行う",
+            "basis": "README明記",
+            "evidence_section": "Markets and tickers"
+          },
+          {
+            "text": "バックテスト機能を用いて特定の期間や複数の銘柄における取引戦略の評価を行う",
+            "basis": "README明記",
+            "evidence_section": "Evaluating decisions over time"
+          },
+          {
+            "text": "自身の保有ポートフォリオ情報を入力し、実際のアカウント状況に基づいたリスク評価や取引提案を受ける",
+            "basis": "README明記",
+            "evidence_section": "Current holdings"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをクローンし、必要な環境構築とパッケージのインストールを行ってCLIを起動する",
+          "steps": [
+            "git clone https://github.com/TauricResearch/TradingAgents.git",
+            "cd TradingAgents",
+            "pip install ."
+          ],
+          "success_criteria": "パッケージのインストールが完了し、CLIコマンドが利用できるようになること"
+        },
+        "evidence_sections": [
+          "TradingAgents Framework",
+          "Analyst Team",
+          "Installation and CLI",
+          "TradingAgents Package",
+          "Persistence and Recovery",
+          "Evaluating decisions over time",
+          "Markets and tickers"
         ],
         "unconfirmed": [
-          "詳細なパフォーマンス数値や具体的な動作速度の保証範囲"
+          "実際の商用環境での運用における正確な収益性やパフォーマンス"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "99eed6176e91673783620b93f6f5e430b22d9dce",
-        "generated_at": "2026-10-24T08:56:38.171123+09:00"
+        "cached": false,
+        "readme_sha": "cedcdb1e5bf56705cab3fa4b86944686cd62276c",
+        "generated_at": "2026-10-27T09:42:08.995911+09:00"
       }
     }
   ],
   "zenn": [
     {
-      "title": "Pythonの基礎学習が終わったら、Pythonでスクレイピングを始めよう！",
-      "url": "https://zenn.dev/momiji_ai/articles/67c7ce4c54fad3",
-      "author": "meihao550",
-      "published": "Sun, 25 Oct 2026 07:46:55 GMT",
-      "summary": "自己紹介\n普段はセキュリティやAIに興味があり、脆弱性、CVE-2026-73683を発見し、報告したことで採番されたり、AIを個人的に勉強している現役学生です。\n\n この記事を書く目的\n\n業務でPyppeteerを使うシステムのコスト削減に取り組んだから\n応用的な使い方も説明したいから\n\n\n はじめに\nこの記事では、Python から本物のブラウザを動かしてスクレイピングできるライブラリ Pyppeteer を、手を動かしながら学びます。\n前半の入門編では、スクレイピング練"
+      "title": "昨今のセキュリティ情勢を踏まえて、Azure のセキュリティ系新資格 SC-500 を受けてみた【合格体験記】",
+      "url": "https://zenn.dev/microsoft/articles/112ff28ccc30e3",
+      "author": "Naoki Matsumoto",
+      "published": "Mon, 26 Oct 2026 18:01:40 GMT",
+      "summary": "以前、AI-300の受験記とAI-103の受験記を書きました。\nhttps://zenn.dev/microsoft/articles/9af0e38b6ae763\nhttps://zenn.dev/microsoft/articles/b8014fa8da044d\n今回はクラウドとAIのセキュリティを扱うSC-500を受験し、2回目で合格しました。\nSC-500はAzureのセキュリティ資格であるAZ-500の後継にあたる試験です。\n初回は合格ラインにあと少し届かず、不合格"
     },
     {
-      "title": "AlphaEngine : 最適化編②",
-      "url": "https://zenn.dev/reu/articles/0f77f6eb0940af",
-      "author": "みぞれに",
-      "published": "Sun, 25 Oct 2026 07:19:40 GMT",
-      "summary": "はじめに\n今回は最適化の続きとして全ピクセルや全フロクセルで行っていた\nfor (uint i = 0; i < light_count; ++i)\nをやめるべく\nClustered Lightingを実装してみた話をしていきたいと思います。\n\n Clustered Lighting\nClustered Lightingはカメラの視錐台を3Dグリッドに分割し、各クラスタに影響するライトだけをリスト化し、後段のライティング時に行う計算数を減らす最適化手段です。\n詳細な説明は他の"
+      "title": "学生2人で日本語音声LLMを作り、FT-LLM 2026 自由形タスクで1位を獲得した話",
+      "url": "https://zenn.dev/ayutaso/articles/ftllm2026-ja-speech-llm",
+      "author": "Atotti",
+      "published": "Mon, 26 Oct 2026 13:54:50 GMT",
+      "summary": "はじめに\n東京都立大学のあゆ（@aya172957）です。2025年11月〜2026年2月に開催された LLM-jp 主催のコンペ「FT-LLM 2026」の自由形タスクに参加し、LLM-jp-4 8B をベースにした日本語音声 LLM を開発しました。NLP2026 のワークショップでの発表において、自由形タスク1位として表彰していただきました。国産 LLM をベースにした、音声で指示できるオープンなモデルとしては、私たちが調べた限りで初めての成果となります。\n半年以上前の"
     },
     {
-      "title": "ros_gzの終了時クラッシュとRange変換の不具合を修正した話",
-      "url": "https://zenn.dev/yuu7/articles/ros2-gazebo-teardown-range-fixes",
-      "author": "Yuu",
-      "published": "Sat, 24 Oct 2026 18:15:57 GMT",
-      "summary": "ROS 2とGazeboをつなぐros_gzに送った修正PRが、2026年10月13日に2件マージされました。\n一つは画像ブリッジの終了時に発生するuse-after-free、もう一つは距離センサーが何も検出していないのにmax_range + 1を返す問題です。前者は終了処理とコールバックの同期、後者はセンサーメッセージの値の意味を修正しています。\n\n#981：image_bridgeの終了処理で起きる競合状態の修正\n#982：LaserScanからRangeへの変換をR"
+      "title": "OpenWrt 25.12のadblock 4.5に豆腐フィルタを適用する（ruleの書式が変わった）",
+      "url": "https://zenn.dev/yotan/articles/openwrt-25-adblock-tofu-filter",
+      "author": "よたん",
+      "published": "Mon, 26 Oct 2026 10:49:33 GMT",
+      "summary": "はじめに\n自宅のDNSとDHCPを担当しているルーターを、OpenWrt 24.10から25.12.6の別機に入れ替えました。その準備の途中で、adblockに豆腐フィルタを追加するカスタムフィードの書式が変わっていて、旧機の設定をそのまま写すだけでは、ブロックが働きませんでした。直したあとも、旧機と比べると差があり、X（旧Twitter）やLINEまで止まっていました。\n以前に書いた OpenWrt 22.03のadblockに豆腐フィルタを適用する の続編です。adblo"
+    },
+    {
+      "title": "Vue Fes Japan 2026 「 Vite+への貢献と、Team Memberになって見えてきた風景」スピーカーノート",
+      "url": "https://zenn.dev/comm_vue_nuxt/articles/33f8491afbc66d",
+      "author": "Naoki Haba",
+      "published": "Mon, 26 Oct 2026 08:44:09 GMT",
+      "summary": "https://www.docswell.com/s/naokihaba/K4N7JN-2026-10-15-132213\nhttps://vuefes.jp/2026/speaker/naokihaba\n\n 導入\nHello, everyone!\nMy slides are in English, but I will speak in Japanese today,\nsince I am still learning English.\nI hope you enjoy m"
+    },
+    {
+      "title": "AI時代のアーキテクチャ：実装を任せるために、詳細設計を自分のものにする",
+      "url": "https://zenn.dev/simplex/articles/f2b41d3367e9c7",
+      "author": "Simplex テックブログ運営",
+      "published": "Mon, 26 Oct 2026 07:02:56 GMT",
+      "summary": "はじめに\nこんにちは。シンプレクスで今年度よりSPM（Senior Project Manager）としてプロジェクトマネジメントに携わっている小林政友です。また、時にアーキテクトや開発リードとして、設計と実装の両面からプロジェクトを推進しています。\nAIに実装を任せる機会が増えると、人間がコードを書く時間は減っていきます。その余った時間、力をどこに使うべきでしょうか。私は、「何を、どんな構造で作るか」という詳細設計に、もっと時間を使うべきだと考えています。\n必要な処理を思い"
+    },
+    {
+      "title": "AI の謎な説明文を直すスキル",
+      "url": "https://zenn.dev/microsoft/articles/explain-before-shorten",
+      "author": "Kazuki Ota",
+      "published": "Mon, 26 Oct 2026 04:32:54 GMT",
+      "summary": "ここ最近は自作の MarkdStage で Markdown ファイルでスライドを作っているのですが、AI に箇条書きを作らせると、なんというか、もっとこう説明いるだろ！？なんでいきなり否定から入るの！？みたいな文章を作りがちです。直近だとこういうのが出てきました。0件じゃないのを表してるのはそうだけど、ここで説明したいのはこれじゃない！みたいな気持ちを抱いていました。\n\nCompleted は、コードが最後まで実行された状態です。入力不正が0件であることを意味するわけではあ"
+    },
+    {
+      "title": "Node.js の Brotli 脆弱性 CVE-2026-111497 を読む",
+      "url": "https://zenn.dev/chot/articles/79e6c94e27782d",
+      "author": "k1350",
+      "published": "Mon, 26 Oct 2026 02:29:36 GMT",
+      "summary": "!\n注記: 本記事で扱うのは、修正コミットから読み取れる原因と修正内容である。「out-of-bounds write によってクラッシュ、メモリ内容の漏えい、RCE につながりうる」という影響の説明は Node.js の脆弱性告知によるもので、そこに至る経路は本記事では扱わない。\n\n\n きっかけ\n2026年10月21日に Node.js のセキュリティリリースが公開された。\n複数の脆弱性が同時に修正されたが、\n\nNode.js Brotli decoder out-of-b"
+    },
+    {
+      "title": "最近の E2E 戦略（2026 年 10 月現在）",
+      "url": "https://zenn.dev/polyco/articles/26624b38c951b5",
+      "author": "Tatsunori Nakano",
+      "published": "Mon, 26 Oct 2026 01:18:03 GMT",
+      "summary": "この記事に書いてあること\n\nE2E を主要シナリオだけでなく網羅的に整備した\n実装から拾った確認対象とシナリオの対応漏れをチェックし漏れがあれば CI で落とす\n開発ワークフローの品質ゲートにローカル E2E 実行を組み込んでいる\n毎回全シナリオを回すのではなく、実装に関連する箇所のみ回している（でかいリファクタの時は回帰テストとして全シナリオ回す）\nやるなら e2e ライブラリがいいよという話\n\n\n 前提となる構成\nWeb も API も TypeScript で書いている"
+    },
+    {
+      "title": "AIネイティブなインターン生を受け入れて考えた、これからの開発エンジニア",
+      "url": "https://zenn.dev/tokium_dev/articles/internship-mentoring-2026",
+      "author": "おかもり",
+      "published": "Mon, 26 Oct 2026 01:00:06 GMT",
+      "summary": "こんにちは、TOKIUM デジタライズチームのおかもりです。\nお客様からお預かりした領収書などのデータ化作業を行うシステムと、その作業実績を管理するシステムの開発を担当しています。\n9/28〜10/2の5日間で、インターン生2名を受け入れました。\n受け入れを通して感じたことなどを、この記事に書きます。\n\n 受け入れの準備\n学生時代にエンジニア職のインターンを経験したことがありませんでした。そのため、今回はじめてインターン生の受け入れ担当に指名されてからは、何もかもが手探りで始"
+    },
+    {
+      "title": "S3のParquet、そのままSnowflakeで分析しても遅くない？Parquet Directを検証",
+      "url": "https://zenn.dev/snowflakejp/articles/parquet-direct-pruning-benchmark",
+      "author": "rniki",
+      "published": "Mon, 26 Oct 2026 00:41:46 GMT",
+      "summary": "はじめに\nS3にParquetで出力しているデータがある。このデータを、SnowflakeからもSQLで分析したい。\nそのためにデータをコピーしたり、Iceberg形式に変換する処理を追加したりするのは、できれば避けたいところです。既存の出力処理を活かしたまま、分析を始められるとうれしいですよね。\nこれを実現するのが、既存のParquetファイルを、その場でSnowflakeから参照できるParquet Directです。\nただ、直接読めるだけでは、使うかどうかを判断できませ"
+    },
+    {
+      "title": "スタックトレースを読むとヒープが約1,470 MB増えていた話",
+      "url": "https://zenn.dev/dress_code/articles/f2a51226c9ec6f",
+      "author": "かわうそ",
+      "published": "Mon, 26 Oct 2026 00:00:13 GMT",
+      "summary": "はじめに\nDress Code 株式会社のかわうそです。\nAPI サーバーのメモリを測っていたら、スタックトレースを一度読んだだけで、ヒープが約 1,470 MB 増えていました。調べてみると、source-map-support が巨大な source map を読み込み、結果を保持していました。エラーの場所を教えてくれる処理に、これだけのメモリを使っていました。\n今回は、本番プロセスで source map を読み込まない構成を採用しました。ローカルでは、ほかの改善も合わ"
+    },
+    {
+      "title": "育休復帰のキャッチアップをAI に手伝ってもらった話",
+      "url": "https://zenn.dev/nextbeat/articles/862dd45c304c13",
+      "author": "iidadaiti",
+      "published": "Sun, 25 Oct 2026 23:35:58 GMT",
+      "summary": "子供が生まれて、2026年の2月から育休を取りました。\n最初は2か月の予定だったのが、生まれてみたら毎日バタバタで、結局5か月に延ばしました。\n延長がすんなり通ったのは会社の制度がしっかりしていたおかげで、本当にありがたかったです🙇\n8月に復帰して2か月が経ち、ようやく落ち着いてきました。この記事は休んでいるあいだに開いた差をAIに埋めてもらった話と、速くなった勢いでつまずいた話になります。\n!\n技術の話はほとんどありません🙇\n\n\n 育休に入る前\n当時の私は、AIに叩き台を書"
+    },
+    {
+      "title": "私が5種類のコーディングエージェントを使い分ける理由",
+      "url": "https://zenn.dev/rimon/articles/45c1fd2f015af8",
+      "author": "ミモ  フォワードCTO・CPO",
+      "published": "Sun, 25 Oct 2026 22:44:03 GMT",
+      "summary": "私は普段から5種類のコーディングエージェントを併用しています。\n人間が5つの画面を行き来するのではなく、Claude Codeを窓口にして他のエージェントを呼び出しています。\nこの記事では、なぜ私がそのような使い方をしているのか、それぞれどう使い分けているのかを解説します。\n※アウトプットの品質などは主観を含みます。\n\n 5種類のコーディングエージェントを使い分ける理由\n私がコーディングエージェントを使い分ける理由は2つで、①モデルごとの得手不得手が違うことと、②Claude"
     },
     {
       "title": "600人規模のイベント運営を支えたインカムを、学生1人で作った話",
@@ -951,39 +999,11 @@
       "summary": "はじめに\n2026年10月18日に開催された DevFest Kansai 2026 で、スタッフが連絡に使うインカムアプリ「inkam」を作りました。\nhttps://gdgkwansai.connpass.com/event/388434/\n当日は60人を超えるスタッフが使ってくれました。朝8時から夜8時までで、1,493回。特に朝から昼過ぎまでは1時間に150〜200回ほど話されていました！！\nちなみに自分はコダックといいます！！神戸電子専門学校の3年生で、GDG Gr"
     },
     {
-      "title": "Flutter アプリを iPhone Duo の「縦帯」に対応させる",
-      "url": "https://zenn.dev/yus1127/articles/flutter-iphone-duo-vertical-bar",
-      "author": "ゆう",
-      "published": "Sat, 24 Oct 2026 16:59:46 GMT",
-      "summary": "こんにちは、ゆうです。\nFlutterKaigi 2026のアプリの開発をしています。\nXを見ると、iPhone Duoを買った人が思ったより多いようでした。mixi2さんがFlutterでiPhone Duoに最適化しているポストも流れてきたので、FlutterKaigi 2026のアプリも対応することにしました。\nhttps://x.com/chehonz201/status/2113578442751185351\n以下の2つPRで対応してます。\nhttps://gith"
-    },
-    {
-      "title": "AWSにデプロイせず、FastAPI製Lambdaのarm64実行をCIで検証する",
-      "url": "https://zenn.dev/shingokumon/articles/4da5acb9697d56",
-      "author": "shingokumon",
-      "published": "Sat, 24 Oct 2026 16:07:43 GMT",
-      "summary": "はじめに\nFastAPIで開発している案件判定API「SUMI Job Engine」に、AWSへデプロイせずにLambda向けパッケージを検証するCIを追加しました。\n今回確認したかったのは、「SAMでビルドできるか」の一歩先です。ビルドした成果物をarm64のLambda公式Pythonコンテナに読み込ませ、実際のハンドラーを呼び出せるかを確かめました。\nこの記事では、実プロジェクトで使った構成とコードの要点を紹介します。コードは既存アプリからの抜粋です。単独で動くサンプ"
-    },
-    {
-      "title": "Xcode 27 で ＠State がマクロになった理由 ― 遅延評価は private だけ、＠StateObject との違い",
-      "url": "https://zenn.dev/takehito/articles/50145459523321",
-      "author": "小清水 健人",
-      "published": "Sat, 24 Oct 2026 15:56:27 GMT",
-      "summary": "!\n確認日：2026-10-24、2026-10-25\n確認に使った環境は、Xcode 26.6（Build 17F113）、Xcode 27.1（Build 27A9275）、macOS 26.7.1 です。iOS 26.5 シミュレータ（Build 23F77）でも一部を確認しました。2026-10-25 には、@StateObject との比較、LazyState の計測、iOS シミュレータでの計測、そのほかの追加の計測をしました。Apple の SwiftUI リフ"
-    },
-    {
-      "title": "@napi-rs/canvas v1.0.12 で実質的な破壊的変更が入った話",
-      "url": "https://zenn.dev/devuloper/articles/napi_rs_canvas_1_0_12_font_tofu",
-      "author": "otoneko.",
-      "published": "Sat, 24 Oct 2026 15:28:06 GMT",
-      "summary": "@napi-rs/canvas を 1.0.11 から 1.0.12 以降に上げると、ctx.font = '48px M PLUS Rounded 1c' のように引用符なしで書いたフォント指定が、まるごと無視されるようになりました。日本語は 10px の豆腐で描かれ、例外も警告も出ません。フォント名を \"M PLUS Rounded 1c\" のように引用符で囲めば直ります。\nこの記事は、気づいたきっかけから原因の特定、対策までをまとめたものです。\n\n きっかけ\nmakei"
-    },
-    {
-      "title": "VueFes Japan 2026に参加してきた",
-      "url": "https://zenn.dev/krz_tech/articles/vuefes_japan_2026",
-      "author": "くらず / kurazu",
-      "published": "Sat, 24 Oct 2026 15:10:47 GMT",
-      "summary": "VueFes Japan 2026に参加してきました\n\n\n はじめに\nはじめましての方ははじめまして。\n福岡県を拠点に活動している「くらず / Kurazu」と申します。\nこの度、VueFes Japan 2026学生支援制度にて交通費等のご支援をいただき、東京で開催されたVueFes Japan 2026に参加することができました！ありがとうございます！\nこのレポートはそんな僕が参加して感じたこととか、思ったことをつらつらと書いた記事になっております。\nフロントエンドにそこ"
+      "title": "2026年の国内情報漏えい71件を侵入経路で分類してみた",
+      "url": "https://zenn.dev/blackleg/articles/e9ed8b038bcf48",
+      "author": "blackleg",
+      "published": "Sat, 24 Oct 2026 15:21:05 GMT",
+      "summary": "今年は情報漏えいのニュースが本当に多いです。KDDIのメールシステムで1,200万人、タイムズカーで660万件、10月に入ってからも委託先経由で大和証券やシチズンの顧客情報が漏れ、10月23日には佐川急便が最大約5,323万件という過去最多の数字を出しました。毎週のように何か出てきます。\nただ、ニュースを個別に読んでいても「また漏れたのか」で終わってしまうので、2026年に公表された事案をまとめて並べて、どこから入られたのかで分けてみました。対象は71事案です。各社のプレスリ"
     },
     {
       "title": "prpr: Rust 向けのシンプルで高速な Parser generator",
@@ -993,11 +1013,11 @@
       "summary": "prpr (PackRat Parser in Rust) という Rust 向けの新しい Parser generator ライブラリを作りました。\nhttps://crates.io/crates/prpr\nhttps://github.com/tanakh/prpr\n詳しい使い方を書いたドキュメントがありますので、使ってみたいと思った方はぜひこちらをご覧になってください。\nhttps://tanakh.github.io/prpr/\n開発の背景についてちょっと説明してお"
     },
     {
-      "title": "「読みにくいDB」はAI開発のコストを1.9倍にする――Claude Codeで検証したDB設計の影響",
-      "url": "https://zenn.dev/actbe_tech/articles/8b4a9991d5365d",
-      "author": "北野",
-      "published": "Fri, 23 Oct 2026 09:00:05 GMT",
-      "summary": "はじめに\nTwitterで「mdやskillを整える以外にも、AIが読みやすいDB構成がある」という話を見かけました。\n今後AIで開発していくと、開発スピードと同じくらいAIのコストが効いてくると思っています。そこで、読みやすいDBと読みにくいDBで、トークンとコストがどれくらい変わるのかを実験してみました。\n先に言ってしまうと、AIにとって読みやすいDBは、人間にとって読みやすいDBとほとんど同じでした。わかりやすい命名、コメント、外部キー。昔から言われてきた「ちゃんとした"
+      "title": "eMudhra 中間 CA 漏洩、OS もブラウザも最新なのにコンテナ 9 個と Python 環境 16 個が偽の証明書を信じていた",
+      "url": "https://zenn.dev/nanora/articles/20261024-emudhra-ca-own-bundles",
+      "author": "nanora",
+      "published": "Sat, 24 Oct 2026 03:53:11 GMT",
+      "summary": "TL;DR\n\nOS もブラウザも最新だったのに、コンテナ 9 個と Python 環境 16 個が偽の証明書を信じていた\neMudhra の中間 CA 8 本の秘密鍵が、証明書から誰でも復元できる状態だった\nブラウザと OS は塞がったが、自前の証明書を持つアプリは自分で上げるまで偽サイトを信じる\n確かめ方は curl 1 行。証明書エラーなら安全、繋がったら要更新\n直す場所は環境しだい（うちは venv・pip 本体・コンテナ・Edge・VS Code・uv）\n「更新した」"
     },
     {
       "title": "eMudhraの中間CA証明書の秘密鍵を求めてみる",
@@ -1005,13 +1025,6 @@
       "author": "herumi",
       "published": "Fri, 23 Oct 2026 05:50:11 GMT",
       "summary": "はじめに\n2026年10月に認証局eMudhraの中間CA証明書の署名鍵（秘密鍵）が脆弱だったという報告がありました。\nここではそのCA証明書に記載された検証鍵（公開鍵）から署名鍵を実際に求めてみます。\n\n Pythonを使って求める\n脆弱だった秘密鍵は8ビット以下だったということで、洗練された高速なライブラリを使わずナイーブな方法を使います。\n『Software Design 2022年3月号』で紹介した記事、楕円曲線暗号のPythonによる実装その1（有限体とECDH鍵共"
-    },
-    {
-      "title": "AI が実装してくれる時代こそ、自分の手で実装しよう",
-      "url": "https://zenn.dev/loglass/articles/24b2a4776ce8d4",
-      "author": "Firas",
-      "published": "Fri, 23 Oct 2026 01:28:43 GMT",
-      "summary": "!\nこの記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の166週目の記事です！\n4年間連続達成まで残り46週となりました！\n\n\n 3行まとめ\n\nAIが実装してくれる今こそ、使っているシステムの仕組みを深く理解しておきたい。それが問題解決やシステム設計の土台になる\nAIがやってくれるのに、わざわざ手で作る。自分にとっては、それが深い理解へのいちばん確実な道だった\n個人開発でシェル、LLMエージェント、MCPサーバーを作り直したら、毎日使"
     },
     {
       "title": "脆弱性管理の仕組みを整えた",
@@ -1026,54 +1039,15 @@
       "author": "musoukun",
       "published": "Wed, 21 Oct 2026 02:14:44 GMT",
       "summary": "最近は動画で説明資料を作っている\nアプリの仕組みをお客さんに説明するとき、構成図とかHTML・Markdownで、説明するのが一般的かと思いますが\n最近はjavascriptを用いて、Claudeで動画を生成しやすくなったので、アプリの操作と、その裏で起きている処理を交互に見せる解説動画を作って説明に使っています。\nめちゃくちゃ便利なので、Claude Code に作らせる指示テンプレートと、動画の作りを紹介します。\nhttps://github.com/musoukun/s"
-    },
-    {
-      "title": "コードレビューをなくして見えたもの",
-      "url": "https://zenn.dev/henteko/articles/b76b15922cdf72",
-      "author": "henteko",
-      "published": "Wed, 21 Oct 2026 01:39:50 GMT",
-      "summary": "この記事の内容をざっくり1分20秒でまとめた動画を作っているので、時間がない方はこちらをご覧ください。\nhttps://youtu.be/hjiz8CrAHzc\n\n はじめに\n半年ほど前に、こんな記事を書きました。\nhttps://zenn.dev/henteko/articles/871526c9fffcec\n人間によるコードレビューをやめて、実装の前に「コンセプト」をチームで確認するワークフローに移行したい、という内容でした。その記事の最後にこんなことを書いていました。\n"
-    },
-    {
-      "title": "バイブコーディングを6週間続けたら、Mac の起動が20分かかるようになった",
-      "url": "https://zenn.dev/singularity/articles/vibe-coding-mac-boot-20min",
-      "author": "Isamu",
-      "published": "Tue, 20 Oct 2026 09:15:46 GMT",
-      "summary": "Mac が落ちました。\nファイルまわりの負荷がじわじわ溜まって、最後は反応しなくなって、落ちた。そこまではまあ、たまにあります。問題はそのあとでした。\n起動しないのです。\n電源を入れて、FileVault のパスワードを入れる。進捗バーが出る。2割くらいまで進む。そこで止まる。5分待っても、10分待っても動かない。\nMac が壊れた、と思いました。\n電源ボタンを長押しして、強制的に切りました。\nしばらくしてから、もう一度だけ電源を入れました。また2割で止まります。今度は何もせ"
-    },
-    {
-      "title": "Oxlint + Oxfmt で規約をコード化するモノレポ運用",
-      "url": "https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006",
-      "author": "Toshiki Okazaki",
-      "published": "Tue, 20 Oct 2026 02:00:05 GMT",
-      "summary": "長らく ESLint + Prettier を使ってきました。大きな不満はなかったものの、実行時間が少し気になっていました。そこで、Biome と Oxc を実際のモノレポで検証して、最終的に Oxlint + Oxfmt に移行しました。\nこの記事では、Biome と Oxc を比較・検証した過程と、Oxlint + Oxfmt を使ってコーディング規約をコードとして強制する運用を紹介します。\n\n 導入の経緯とモチベーション\n\n lint / format の待ち時間が気に"
-    },
-    {
-      "title": "Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】",
-      "url": "https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49",
-      "author": "iakito",
-      "published": "Mon, 19 Oct 2026 23:00:05 GMT",
-      "summary": "はじめに\nこんにちは。e-dash でエンジニアをしている iakito です。\nAI コーディングエージェントを使って開発していると、実装と一緒にテストも増えていき、気づいたときには膨大な量になっていることがあります。私が担当しているプロダクトも例外ではなく、PR CI の待ち時間は長いときで 18 分を超え、日々の開発で地味なストレスになっていました。\n本記事では、Claude Code を使ってこの待ち時間を 4 分台まで短縮した取り組みを紹介します。\n\n 背景\nCI "
-    },
-    {
-      "title": "AI時代、配布するPythonコードをどう守るか: 難読化の実験と判断軸",
-      "url": "https://zenn.dev/pksha/articles/0f9c11d1daea2e",
-      "author": "山本隼輔",
-      "published": "Mon, 19 Oct 2026 03:19:32 GMT",
-      "summary": "はじめに\nこんにちは。PKSHA Technology でソフトウェアエンジニアをしている山本です。\n2026 年 8 月 22 日に広島で開催された PyCon JP 2026 にて、「AI 時代、配布する Python コードをどう守るか: 難読化の実験と判断軸」というタイトルで発表しました。本記事は、その発表内容をもとに、発表時間の都合で触れられなかった内容も加えて文章にまとめ直したものです。\n\n発表ページ: https://2026.pycon.jp/ja/talks"
     }
   ],
   "common_terms": [
     "code",
     "claude",
-    "python",
-    "skill",
-    "api",
-    "mcp",
-    "build",
-    "html",
-    "engine",
-    "llm"
+    "llm",
+    "edge",
+    "sql",
+    "typescript"
   ],
   "ai_analysis": {
     "enabled": true,

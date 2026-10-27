@@ -1,0 +1,58 @@
+{
+  "summary_ja": "opencodeは、オープンソースのAIコーディングエージェントです。CLIやデスクトップアプリとして利用でき、開発向けのbuildエージェントや読み取り専用のplanエージェントなどを切り替えてコードの作成や探索が行えます。",
+  "capabilities": [
+    {
+      "text": "buildエージェントによる開発作業向けの高権限な処理",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "planエージェントによるファイル編集の拒否や確認を伴う安全なコード探索",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "Tabキーによるエージェント間の切り替え機能",
+      "evidence_section": "Agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発作業におけるコード作成やエージェントを活用した実装",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "不慣れなコードベースの探索や変更計画の立案",
+      "basis": "README明記",
+      "evidence_section": "Agents"
+    },
+    {
+      "text": "デスクトップアプリケーションを利用したAIコーディング作業",
+      "basis": "README明記",
+      "evidence_section": "Desktop App (BETA)"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI環境でopencodeをインストールする",
+    "steps": [
+      "curl -fsSL https://opencode.ai/v2/install | bash"
+    ],
+    "success_criteria": "opencodeがインストールされ、利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Desktop App (BETA)",
+    "Agents",
+    "Documentation",
+    "Contributing",
+    "Building on OpenCode"
+  ],
+  "unconfirmed": [
+    "詳細な設定オプションや対応しているAIモデルの全リスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "60adea0e397cd675f01b1cf5f6dac9550ef5b377",
+  "generated_at": "2026-10-27T09:41:58.092363+09:00"
+}

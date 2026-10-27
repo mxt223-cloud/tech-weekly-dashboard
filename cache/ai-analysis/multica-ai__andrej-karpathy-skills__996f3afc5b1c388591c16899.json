@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。",
+  "capabilities": [
+    {
+      "text": "Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。",
+      "evidence_section": "Install"
+    },
+    {
+      "text": "プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。",
+      "evidence_section": "Install"
+    },
+    {
+      "text": "Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。",
+      "evidence_section": "Using with Cursor"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。",
+      "basis": "README明記",
+      "evidence_section": "The Solution"
+    },
+    {
+      "text": "Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。",
+      "basis": "README明記",
+      "evidence_section": "Using with Cursor"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeプラグインとしてガイドラインをインストールする",
+    "steps": [
+      "/plugin marketplace add forrestchang/andrej-karpathy-skills",
+      "/plugin install andrej-karpathy-skills@karpathy-skills"
+    ],
+    "success_criteria": "プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること"
+  },
+  "evidence_sections": [
+    "Karpathy-Inspired Claude Code Guidelines",
+    "The Problems",
+    "The Solution",
+    "The Four Principles in Detail",
+    "Install",
+    "Using with Cursor",
+    "Key Insight",
+    "How to Know It's Working",
+    "Customization",
+    "Tradeoff Note",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b",
+  "generated_at": "2026-10-27T09:42:06.003295+09:00"
+}

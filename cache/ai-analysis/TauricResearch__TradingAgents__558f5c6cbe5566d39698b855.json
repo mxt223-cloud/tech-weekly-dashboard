@@ -1,0 +1,60 @@
+{
+  "summary_ja": "TradingAgentsは、実際の金融取引会社の動きを模した、マルチエージェント型のLLM金融取引フレームワークです。ファンダメンタルズ分析、センチメント分析、テクニカル分析などの専門エージェントが協調して市場状況を評価し、取引判断を行います。",
+  "capabilities": [
+    {
+      "text": "ファンダメンタルズ分析、センチメント分析、ニュース分析、テクニカル分析を担当する専門エージェントによる並行分析",
+      "evidence_section": "Analyst Team"
+    },
+    {
+      "text": "複数のLLMプロバイダー（OpenAI、Google、Anthropicなど）およびDocker、ローカル環境での実行をサポート",
+      "evidence_section": "Installation and CLI"
+    },
+    {
+      "text": "過去の決定に対する報酬の追跡や過去の教訓の引き継ぎを行うメモリログ機能",
+      "evidence_section": "Memory log"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "世界各国の市場や暗号資産の銘柄に対し、エージェントを活用したシミュレーションや取引判断の評価を行う",
+      "basis": "README明記",
+      "evidence_section": "Markets and tickers"
+    },
+    {
+      "text": "バックテスト機能を用いて特定の期間や複数の銘柄における取引戦略の評価を行う",
+      "basis": "README明記",
+      "evidence_section": "Evaluating decisions over time"
+    },
+    {
+      "text": "自身の保有ポートフォリオ情報を入力し、実際のアカウント状況に基づいたリスク評価や取引提案を受ける",
+      "basis": "README明記",
+      "evidence_section": "Current holdings"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンし、必要な環境構築とパッケージのインストールを行ってCLIを起動する",
+    "steps": [
+      "git clone https://github.com/TauricResearch/TradingAgents.git",
+      "cd TradingAgents",
+      "pip install ."
+    ],
+    "success_criteria": "パッケージのインストールが完了し、CLIコマンドが利用できるようになること"
+  },
+  "evidence_sections": [
+    "TradingAgents Framework",
+    "Analyst Team",
+    "Installation and CLI",
+    "TradingAgents Package",
+    "Persistence and Recovery",
+    "Evaluating decisions over time",
+    "Markets and tickers"
+  ],
+  "unconfirmed": [
+    "実際の商用環境での運用における正確な収益性やパフォーマンス"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "cedcdb1e5bf56705cab3fa4b86944686cd62276c",
+  "generated_at": "2026-10-27T09:42:08.995911+09:00"
+}
