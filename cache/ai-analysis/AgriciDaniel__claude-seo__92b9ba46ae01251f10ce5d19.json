@@ -1,0 +1,69 @@
+{
+  "summary_ja": "Claude Code上で動作する無料のオープンソースSEOプラグインであり、技術的SEO、コンテンツの品質、構造化データ、AI検索（GEO）、ローカル・ECサイトのSEO監査を並行エージェントで実行し、優先順位付きの行動計画を提供します。",
+  "capabilities": [
+    {
+      "text": "技術的SEO監査として、クロール可能性、インデックス登録、サイトマップ、robots.txt、リダイレクト、ページ速度、Core Web Vitalsをチェックします。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "構造化データの検出、検証、およびリッチリザルト向けのSchema.orgマークアップの作成を行います。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "AI検索（GEO）において、Google AI Overviews、AI Mode、ChatGPT、Perplexity、GeminiなどのAI検索エンジンにページが引用される可能性を評価します。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "SEOエージェンシーがクライアント向けに四半期ごとではなく毎週の監査を行い、問題の変化をモニタリングする。",
+      "basis": "README明記",
+      "evidence_section": "Meet the team"
+    },
+    {
+      "text": "SaaS、メディア、EC企業の社内SEOチームが、AI検索への対応を含めて記事やレビュー公開前のダブルチェックを行う。",
+      "basis": "README明記",
+      "evidence_section": "Meet the team"
+    },
+    {
+      "text": "フリーランスのSEOコンサルタントが初回の打ち合わせ時に監査を実行し、提案書を書く前に実際のスコアと主な修正点を示す。",
+      "basis": "README明記",
+      "evidence_section": "Meet the team"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code内でClaude SEOをセットアップし、ウェブサイトのフル監査を実行する",
+    "steps": [
+      "/plugin marketplace add AgriciDaniel/claude-seo",
+      "/plugin install claude-seo@agricidaniel-claude-seo",
+      "/seo setup",
+      "/seo audit https://example.com"
+    ],
+    "success_criteria": "Claude SEOのセットアップが完了し、指定したURLのフルサイト監査と優先順位付きプランが出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "See it in action",
+    "Real results",
+    "Meet the team",
+    "Commands",
+    "Pricing",
+    "How an audit works",
+    "Install",
+    "FAQ",
+    "Extensions",
+    "Star history",
+    "More from the same family",
+    "License and contributing",
+    "Author"
+  ],
+  "unconfirmed": [
+    "オプショナルな拡張機能（Live data、image-gen、seranking、profound、bing、unlighthouse）の具体的な導入手順やAPIキー設定の詳細",
+    "AI Marketing Hub Pro会員向けプライベートバージョンのすべての詳細な機能差異"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "70b98e1ad7cd3aa7228781bbd12458e1a15577ce",
+  "generated_at": "2026-10-28T09:40:24.402640+09:00"
+}

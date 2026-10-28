@@ -1,0 +1,61 @@
+{
+  "summary_ja": "TradingAgentsは、実際の証券会社のダイナミクスを模倣したマルチエージェント型の金融取引フレームワークです。ファンダメンタルズ分析、センチメント分析、ニュース分析、テクニカル分析などの専門的な役割を持つLLM駆動のエージェントが協力して市場状況を評価し、取引の意思決定を支援します。",
+  "capabilities": [
+    {
+      "text": "ファンダメンタルズアナリスト、センチメントアナリスト、ニュースアナリスト、テクニカルアナリストなどの専門的な役割を持つLLMエージェントが協調して市場を評価する",
+      "evidence_section": "TradingAgents Framework"
+    },
+    {
+      "text": "OpenAI、Google、Anthropic、DeepSeek、Ollamaなどの複数のLLMプロバイダーや、自身のChatGPT Plus/Proプランを利用できる",
+      "evidence_section": "Installation and CLI"
+    },
+    {
+      "text": "LangGraphによるチェックポイントの再開機能や、決定事項の記憶ログを記録・維持する機能を持つ",
+      "evidence_section": "Persistence and Recovery"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "銘柄コードと日付を指定して、AIエージェントによる取引判断や分析レポートを生成する",
+      "basis": "README明記",
+      "evidence_section": "CLI Usage"
+    },
+    {
+      "text": "過去の日付や複数銘柄のグリッドに対してバックテストを実行し、意思決定のパフォーマンスを評価する",
+      "basis": "README明記",
+      "evidence_section": "Evaluating decisions over time"
+    },
+    {
+      "text": "保有する資産ポートフォリオを渡して、自身の実際の手持ち状況に合わせた取引の提案やリスク評価を行う",
+      "basis": "README明記",
+      "evidence_section": "Current holdings"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてパッケージをインストールし、CLIまたはPythonコードからTradingAgentsを実行する",
+    "steps": [
+      "git clone https://github.com/TauricResearch/TradingAgents.git",
+      "cd TradingAgents",
+      "pip install ."
+    ],
+    "success_criteria": "パッケージのインストールが完了し、CLIコマンドまたはPythonのTradingAgentsGraphによる実行結果が得られること"
+  },
+  "evidence_sections": [
+    "TradingAgents Framework",
+    "Installation and CLI",
+    "TradingAgents Package",
+    "Persistence and Recovery",
+    "Evaluating decisions over time",
+    "Reproducibility",
+    "Contributing",
+    "Citation"
+  ],
+  "unconfirmed": [
+    "デフォルトで推奨されているモデル（GPT-6やClaude Sonnet 5など、標準的なAPI以外における実際の挙動や利用制限の詳細は実際の環境に依存する）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a9ddf10db162f608af4d3387b8a7dd35bc4d1a13",
+  "generated_at": "2026-10-28T09:40:28.006464+09:00"
+}

@@ -1,6 +1,6 @@
-# Tech Daily — 2026-10-27
+# Tech Daily — 2026-10-28
 
-生成日時: 2026-10-27T09:42:09.152570+09:00  
+生成日時: 2026-10-28T09:40:32.986387+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
 
 - 言語: JavaScript
-- 今週のスター: 16593
+- 今週のスター: 16388
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -48,7 +48,7 @@ Skills CLIを使用してsecurity-auditスキルをインストールする
 **概要:** anthropic/knowledge-work-pluginsは、Claudeを専門業務特化型のアシスタントに変えるためのオープンソースプラグイン集です。Claude CoworkおよびClaude Codeで利用でき、スキル、コネクター、スラッシュコマンド、サブエージェントをバンドルしてタスクを効率化します。
 
 - 言語: Python
-- 今週のスター: 2822
+- 今週のスター: 2789
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -84,242 +84,59 @@ Claude Codeを使用してマーケットプレイスを追加し、特定のプ
 未確認: プラグインごとの詳細な内部実装コードや個別のコネクター設定の全詳細
 
 
-## 3. [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
+## 3. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
 
-**概要:** ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張するエージェントメタハーネスです。100種類以上の専門エージェント、協調スウォーム、自己学習メモリ、ゼロトラスト型のエージェント間フェデレーション機能などを提供し、複数エージェントによる自律的なワークフローの構築や会話型AIシステムの開発を支援します。
-
-- 言語: TypeScript
-- 今週のスター: 2683
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 100種類以上の専門的なエージェントによるコーディング、テスト、セキュリティ、ドキュメント作成のサポート（根拠: What You Get）
-
-- HNSWインデックス付きAgentDBやベクターRAG統合によるエージェントメモリと学習機能（根拠: What You Get）
-
-- mTLSとed25519を用いたゼロトラスト型のエージェント間フェデレーションとPIIフィルタリング機能（根拠: Agent Federation — Slack for Agents）
-
-
-### 利用例
-
-- 複数エージェントを連携させた自律的な開発ワークフローの構築と協調処理（README明記／根拠: Get started with Ruflo）
-
-- ベクトルメモリやRAGを活用した、コードベース全体の効率的な検索と知識管理（README明記／根拠: What You Get）
-
-- 異なるマシンや組織間で機密情報を保護しながらエージェント同士でタスクを共有する協業（README明記／根拠: Agent Federation — Slack for Agents）
-
-
-### 最初に試すこと
-
-プロジェクトの初期設定ウィザードを実行する
-
-1. プロジェクトのターミナルでセットアップウィザードを実行する
-
-
-成功の目安: npx ruflo@latest init wizard コマンドが正常に実行され、初期設定が完了すること
-
-
-
-
-## 4. [anomalyco/opencode](https://github.com/anomalyco/opencode)
-
-**概要:** opencodeは、オープンソースのAIコーディングエージェントです。CLIやデスクトップアプリとして利用でき、開発向けのbuildエージェントや読み取り専用のplanエージェントなどを切り替えてコードの作成や探索が行えます。
-
-- 言語: TypeScript
-- 今週のスター: 5070
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- buildエージェントによる開発作業向けの高権限な処理（根拠: Agents）
-
-- planエージェントによるファイル編集の拒否や確認を伴う安全なコード探索（根拠: Agents）
-
-- Tabキーによるエージェント間の切り替え機能（根拠: Agents）
-
-
-### 利用例
-
-- 開発作業におけるコード作成やエージェントを活用した実装（README明記／根拠: Agents）
-
-- 不慣れなコードベースの探索や変更計画の立案（README明記／根拠: Agents）
-
-- デスクトップアプリケーションを利用したAIコーディング作業（README明記／根拠: Desktop App (BETA)）
-
-
-### 最初に試すこと
-
-CLI環境でopencodeをインストールする
-
-1. curl -fsSL https://opencode.ai/v2/install | bash
-
-
-成功の目安: opencodeがインストールされ、利用可能になること
-
-未確認: 詳細な設定オプションや対応しているAIモデルの全リスト
-
-
-## 5. [stablyai/orca](https://github.com/stablyai/orca)
-
-**概要:** Orcaは、複数のAIコーディングエージェント（Claude Code、Codex、Grokなど）を並行して実行・管理するためのAIオーケストレータおよびデスクトップ/モバイル環境です。
-
-- 言語: TypeScript
-- 今週のスター: 9241
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- モバイルアプリを使用して、外出先からエージェントの監視、通知の受け取り、フォローアップの送信ができる。（根拠: Features）
-
-- 1つのプロンプトを複数のエージェントへ同時に送信し、それぞれ独立したGitワークツリーで実行・比較できる。（根拠: Features）
-
-- ターミナル分割やデザインモード、SSHワークツリー、GitHub・Linearのネイティブ統合などの機能を提供する。（根拠: Features）
-
-
-### 利用例
-
-- 複数の異なるAIエージェントを並行して走らせ、それぞれの結果を比較して最適なものをマージする。（README明記／根拠: Features）
-
-- デスクトップで実行中のエージェントの状況をスマートフォンのモバイルコンパニオンアプリから遠隔監視する。（README明記／根拠: Features）
-
-- SSH接続したリモートの強力なマシン上でAIエージェントを実行し、ファイル編集やターミナル操作を行う。（README明記／根拠: Features）
-
-
-### 最初に試すこと
-
-デスクトップアプリまたはパッケージマネージャーを使用してOrcaをインストールする
-
-1. 公式サイト（onorca.dev/download）からインストーラーをダウンロードするか、macOSの場合は「brew install --cask stablyai/orca/orca」、Arch Linuxの場合は「yay -S stably-orca-bin」を実行する。
-
-
-成功の目安: Orcaがシステムにインストールされ、起動できるようになること。
-
-未確認: CONTRIBUTING.mdに記載されている具体的な開発セットアップ手順の詳細／cloud/ディレクトリにあるリレーサーバーの具体的な設定手順
-
-
-## 6. [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
-
-**概要:** Graphify-Labs/graphifyは、コードベースやドキュメント、SQLスキーマ、設定、PDFなどを検索可能なナレッジグラフに変換するツールです。Claude Code、Cursor、Codex、Gemini CLIなどのAIコーディングアシスタントで/graphifyスキルとして利用でき、ローカルでの決定論的なAST解析とベクトルストアを使わないグラフ構造を提供します。
+**概要:** Claude Code上で動作する無料のオープンソースSEOプラグインであり、技術的SEO、コンテンツの品質、構造化データ、AI検索（GEO）、ローカル・ECサイトのSEO監査を並行エージェントで実行し、優先順位付きの行動計画を提供します。
 
 - 言語: Python
-- 今週のスター: 7183
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- コードベースをtree-sitter ASTによりローカルで決定論的に解析し、完全ローカルでコードマップを作成する（根拠: README冒頭）
-
-- ドキュメント、PDF、画像、ビデオをアシスタントのモデルや設定済みAPIキーを使用してセマンティックパスとして処理する（根拠: README冒頭）
-
-- 各接続（エッジ）をソースに明示された「EXTRACTED」とgraphifyによって解決された「INFERRED」にタグ付けして説明する（根拠: README冒頭）
-
-
-### 利用例
-
-- AIコーディングアシスタント内で/graphifyと入力し、プロジェクト全体をファイル内検索（grep）の代わりにクエリ可能なナレッジグラフとしてマッピングする（README明記／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-/graphifyスキルをAIコーディングアシスタントで実行してプロジェクトのマッピングを開始する
-
-1. Claude Code、Cursor、Codex、またはGemini CLIなどの対応するAIコーディングアシスタントを開く
-
-2. チャット欄やプロンプトに「/graphify」と入力して実行する
-
-
-成功の目安: プロジェクトがナレッジグラフとしてマッピングされ、ファイル検索の代わりにクエリできるようになること
-
-未確認: 詳細なインストールコマンドやQuick Startの具体的な実行手順コード／ローカル実行以外のGraphify Cloudの具体的な連携機能の全容
-
-
-## 7. [android/skills](https://github.com/android/skills)
-
-**概要:** Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。
-
-- 言語: Kotlin
-- 今週のスター: 823
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- Android CLIを使用して特定のスキルをカレントディレクトリにインストールする（根拠: Install Android skills）
-
-- Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする（根拠: Install Android skills）
-
-- プラグインとしてClaude CodeやCodexにインストールする（根拠: Install as an agent plugin）
-
-
-### 利用例
-
-- LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる（README明記／根拠: Android skills）
-
-- エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる（README明記／根拠: Activate skills）
-
-
-### 最初に試すこと
-
-Android CLIを使用して特定のスキルをインストールする
-
-1. android skills add r8-analyzer --project=.
-
-
-成功の目安: 指定したスキルがプロジェクトにインストールされること
-
-未確認: リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類
-
-
-## 8. [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory)
-
-**概要:** ai-memoryは、複数のAIコーディングエージェント（Claude Code、Codex、Cursorなど）の間で長期的なコンテキストや作業の引き継ぎを共有するためのRust製ソリューションです。
-
-- 言語: Rust
-- 今週のスター: 2838
+- 今週のスター: 3081
 - ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
+- AI分析状態: ok
 
 ### できること
 
-- 複数のAIエージェント間で共有メモリと引き継ぎプロトコルを利用できる。（根拠: Why ai-memory）
+- 技術的SEO監査として、クロール可能性、インデックス登録、サイトマップ、robots.txt、リダイレクト、ページ速度、Core Web Vitalsをチェックします。（根拠: README冒頭）
 
-- 保存されるデータはプレーンなMarkdownのGitバックアップwikiであり、検索や手動編集が可能。（根拠: Why ai-memory）
+- 構造化データの検出、検証、およびリッチリザルト向けのSchema.orgマークアップの作成を行います。（根拠: README冒頭）
 
-- ライフサイクルHookによって作業内容を自動で静かに記録し、デフォルトではLLMの呼び出しを必要としない。（根拠: Why ai-memory）
+- AI検索（GEO）において、Google AI Overviews、AI Mode、ChatGPT、Perplexity、GeminiなどのAI検索エンジンにページが引用される可能性を評価します。（根拠: README冒頭）
 
 
 ### 利用例
 
-- Claude Codeで作業を途中で中断し、同じディレクトリでOpenAI Codexを起動して説明なしに作業を引き継ぐ。（README明記／根拠: Why ai-memory）
+- SEOエージェンシーがクライアント向けに四半期ごとではなく毎週の監査を行い、問題の変化をモニタリングする。（README明記／根拠: Meet the team）
 
-- パッケージマネージャやテストレイアウトなど、自身の開発スタイルに関するプロファイルを新しいリポジトリでのセッション開始時に反映させる。（README明記／根拠: Why ai-memory）
+- SaaS、メディア、EC企業の社内SEOチームが、AI検索への対応を含めて記事やレビュー公開前のダブルチェックを行う。（README明記／根拠: Meet the team）
 
-- チームメンバー全員で1つのサーバーを参照し、ある人のセッションから得た知識を他のメンバーのAIエージェントで共有する。（README明記／根拠: Why ai-memory）
+- フリーランスのSEOコンサルタントが初回の打ち合わせ時に監査を実行し、提案書を書く前に実際のスコアと主な修正点を示す。（README明記／根拠: Meet the team）
 
 
 ### 最初に試すこと
 
-クイックスタートの実施
+Claude Code内でClaude SEOをセットアップし、ウェブサイトのフル監査を実行する
+
+1. /plugin marketplace add AgriciDaniel/claude-seo
+
+2. /plugin install claude-seo@agricidaniel-claude-seo
+
+3. /seo setup
+
+4. /seo audit https://example.com
 
 
-成功の目安: クイックスタート手順の完了
+成功の目安: Claude SEOのセットアップが完了し、指定したURLのフルサイト監査と優先順位付きプランが出力されること
 
-未確認: 具体的なインストールコマンドや実行コマンドの詳細な手順はREADMEのQuick startセクションが空のため不明です。
+未確認: オプショナルな拡張機能（Live data、image-gen、seranking、profound、bing、unlighthouse）の具体的な導入手順やAPIキー設定の詳細／AI Marketing Hub Pro会員向けプライベートバージョンのすべての詳細な機能差異
 
 
-## 9. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+## 4. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 
 **概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
 
 - 言語: 不明
-- 今週のスター: 3286
+- 今週のスター: 4039
 - ライセンス: 不明
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -351,36 +168,36 @@ Claude Codeプラグインとしてガイドラインをインストールする
 
 
 
-## 10. [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
+## 5. [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
 
-**概要:** TradingAgentsは、実際の金融取引会社の動きを模した、マルチエージェント型のLLM金融取引フレームワークです。ファンダメンタルズ分析、センチメント分析、テクニカル分析などの専門エージェントが協調して市場状況を評価し、取引判断を行います。
+**概要:** TradingAgentsは、実際の証券会社のダイナミクスを模倣したマルチエージェント型の金融取引フレームワークです。ファンダメンタルズ分析、センチメント分析、ニュース分析、テクニカル分析などの専門的な役割を持つLLM駆動のエージェントが協力して市場状況を評価し、取引の意思決定を支援します。
 
 - 言語: Python
-- 今週のスター: 3437
+- 今週のスター: 4882
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- ファンダメンタルズ分析、センチメント分析、ニュース分析、テクニカル分析を担当する専門エージェントによる並行分析（根拠: Analyst Team）
+- ファンダメンタルズアナリスト、センチメントアナリスト、ニュースアナリスト、テクニカルアナリストなどの専門的な役割を持つLLMエージェントが協調して市場を評価する（根拠: TradingAgents Framework）
 
-- 複数のLLMプロバイダー（OpenAI、Google、Anthropicなど）およびDocker、ローカル環境での実行をサポート（根拠: Installation and CLI）
+- OpenAI、Google、Anthropic、DeepSeek、Ollamaなどの複数のLLMプロバイダーや、自身のChatGPT Plus/Proプランを利用できる（根拠: Installation and CLI）
 
-- 過去の決定に対する報酬の追跡や過去の教訓の引き継ぎを行うメモリログ機能（根拠: Memory log）
+- LangGraphによるチェックポイントの再開機能や、決定事項の記憶ログを記録・維持する機能を持つ（根拠: Persistence and Recovery）
 
 
 ### 利用例
 
-- 世界各国の市場や暗号資産の銘柄に対し、エージェントを活用したシミュレーションや取引判断の評価を行う（README明記／根拠: Markets and tickers）
+- 銘柄コードと日付を指定して、AIエージェントによる取引判断や分析レポートを生成する（README明記／根拠: CLI Usage）
 
-- バックテスト機能を用いて特定の期間や複数の銘柄における取引戦略の評価を行う（README明記／根拠: Evaluating decisions over time）
+- 過去の日付や複数銘柄のグリッドに対してバックテストを実行し、意思決定のパフォーマンスを評価する（README明記／根拠: Evaluating decisions over time）
 
-- 自身の保有ポートフォリオ情報を入力し、実際のアカウント状況に基づいたリスク評価や取引提案を受ける（README明記／根拠: Current holdings）
+- 保有する資産ポートフォリオを渡して、自身の実際の手持ち状況に合わせた取引の提案やリスク評価を行う（README明記／根拠: Current holdings）
 
 
 ### 最初に試すこと
 
-リポジトリをクローンし、必要な環境構築とパッケージのインストールを行ってCLIを起動する
+リポジトリをクローンしてパッケージをインストールし、CLIまたはPythonコードからTradingAgentsを実行する
 
 1. git clone https://github.com/TauricResearch/TradingAgents.git
 
@@ -389,23 +206,240 @@ Claude Codeプラグインとしてガイドラインをインストールする
 3. pip install .
 
 
-成功の目安: パッケージのインストールが完了し、CLIコマンドが利用できるようになること
+成功の目安: パッケージのインストールが完了し、CLIコマンドまたはPythonのTradingAgentsGraphによる実行結果が得られること
 
-未確認: 実際の商用環境での運用における正確な収益性やパフォーマンス
+未確認: デフォルトで推奨されているモデル（GPT-6やClaude Sonnet 5など、標準的なAPI以外における実際の挙動や利用制限の詳細は実際の環境に依存する）
+
+
+## 6. [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
+
+**概要:** Graphify-Labs/graphifyは、コードベースやドキュメント、SQLスキーマ、設定、PDFなどを検索可能なナレッジグラフに変換するツールです。Claude Code、Cursor、Codex、Gemini CLIなどのAIコーディングアシスタントで/graphifyスキルとして利用でき、ローカルでの決定論的なAST解析とベクトルストアを使わないグラフ構造を提供します。
+
+- 言語: Python
+- 今週のスター: 7268
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- コードベースをtree-sitter ASTによりローカルで決定論的に解析し、完全ローカルでコードマップを作成する（根拠: README冒頭）
+
+- ドキュメント、PDF、画像、ビデオをアシスタントのモデルや設定済みAPIキーを使用してセマンティックパスとして処理する（根拠: README冒頭）
+
+- 各接続（エッジ）をソースに明示された「EXTRACTED」とgraphifyによって解決された「INFERRED」にタグ付けして説明する（根拠: README冒頭）
+
+
+### 利用例
+
+- AIコーディングアシスタント内で/graphifyと入力し、プロジェクト全体をファイル内検索（grep）の代わりにクエリ可能なナレッジグラフとしてマッピングする（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+/graphifyスキルをAIコーディングアシスタントで実行してプロジェクトのマッピングを開始する
+
+1. Claude Code、Cursor、Codex、またはGemini CLIなどの対応するAIコーディングアシスタントを開く
+
+2. チャット欄やプロンプトに「/graphify」と入力して実行する
+
+
+成功の目安: プロジェクトがナレッジグラフとしてマッピングされ、ファイル検索の代わりにクエリできるようになること
+
+未確認: 詳細なインストールコマンドやQuick Startの具体的な実行手順コード／ローカル実行以外のGraphify Cloudの具体的な連携機能の全容
+
+
+## 7. [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
+
+**概要:** ruvnet/rufloは、Claude CodeやCodexなどのモデルを拡張して、複数のAIエージェントによるチームや自律的なワークフローを構築・管理するためのエージェントメタハーネス（実行層）です。
+
+- 言語: TypeScript
+- 今週のスター: 2296
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 100以上の専門エージェントによるコーディング、テスト、セキュリティ、ドキュメント作成の支援（根拠: What You Get）
+
+- HNSWインデックス付きのAgentDBを利用したベクトルメモリおよびセッション横断の記憶維持（根拠: What You Get）
+
+- mTLSとed25519によるゼロトラストセキュリティを用いた、異なるマシン間での安全なエージェントフェデレーション（協調）（根拠: Agent Federation — Slack for Agents）
+
+
+### 利用例
+
+- 複数のエージェントを協調させて自律的な開発ワークフローを実行する（README明記／根拠: Get started with Ruflo）
+
+- ベクトルメモリやRAG統合を活用してエージェントの過去の成功パターンや知識を学習・共有する（README明記／根拠: What You Get）
+
+- セキュリティ監査やコードの脆弱性スキャン、CVEの対策を自動化する（README明記／根拠: What You Get）
+
+
+### 最初に試すこと
+
+Claude Code環境でRufloの基本機能とプラグインを導入する
+
+1. /plugin marketplace add ruvnet/ruflo
+
+2. /plugin install ruflo-core@ruflo
+
+3. /plugin install ruflo-console@ruflo
+
+4. /plugin install ruflo-mods@ruflo
+
+5. /reload-plugins
+
+6. /ruflo
+
+
+成功の目安: Claude Code内でプラグインが有効化され、/rufloコマンドを実行してコンソールやツールを利用できること
+
+未確認: 本番環境における大規模運用時の具体的なパフォーマンス数値／外部連携する各LLMプロバイダーごとの詳細な挙動と制限
+
+
+## 8. [anomalyco/opencode](https://github.com/anomalyco/opencode)
+
+**概要:** opencodeは、オープンソースのAIコーディングエージェントです。CLIやデスクトップアプリとして利用でき、開発向けのbuildエージェントや読み取り専用のplanエージェントなどを切り替えてコードの作成や探索が行えます。
+
+- 言語: TypeScript
+- 今週のスター: 4334
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- buildエージェントによる開発作業向けの高権限な処理（根拠: Agents）
+
+- planエージェントによるファイル編集の拒否や確認を伴う安全なコード探索（根拠: Agents）
+
+- Tabキーによるエージェント間の切り替え機能（根拠: Agents）
+
+
+### 利用例
+
+- 開発作業におけるコード作成やエージェントを活用した実装（README明記／根拠: Agents）
+
+- 不慣れなコードベースの探索や変更計画の立案（README明記／根拠: Agents）
+
+- デスクトップアプリケーションを利用したAIコーディング作業（README明記／根拠: Desktop App (BETA)）
+
+
+### 最初に試すこと
+
+CLI環境でopencodeをインストールする
+
+1. curl -fsSL https://opencode.ai/v2/install | bash
+
+
+成功の目安: opencodeがインストールされ、利用可能になること
+
+未確認: 詳細な設定オプションや対応しているAIモデルの全リスト
+
+
+## 9. [stablyai/orca](https://github.com/stablyai/orca)
+
+**概要:** Orcaは、複数のAIコーディングエージェント（Claude Code、Codex、Grokなど）を並行して実行・管理するためのAIオーケストレータおよびデスクトップ/モバイル環境です。
+
+- 言語: TypeScript
+- 今週のスター: 8802
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- モバイルアプリを使用して、外出先からエージェントの監視、通知の受け取り、フォローアップの送信ができる。（根拠: Features）
+
+- 1つのプロンプトを複数のエージェントへ同時に送信し、それぞれ独立したGitワークツリーで実行・比較できる。（根拠: Features）
+
+- ターミナル分割やデザインモード、SSHワークツリー、GitHub・Linearのネイティブ統合などの機能を提供する。（根拠: Features）
+
+
+### 利用例
+
+- 複数の異なるAIエージェントを並行して走らせ、それぞれの結果を比較して最適なものをマージする。（README明記／根拠: Features）
+
+- デスクトップで実行中のエージェントの状況をスマートフォンのモバイルコンパニオンアプリから遠隔監視する。（README明記／根拠: Features）
+
+- SSH接続したリモートの強力なマシン上でAIエージェントを実行し、ファイル編集やターミナル操作を行う。（README明記／根拠: Features）
+
+
+### 最初に試すこと
+
+デスクトップアプリまたはパッケージマネージャーを使用してOrcaをインストールする
+
+1. 公式サイト（onorca.dev/download）からインストーラーをダウンロードするか、macOSの場合は「brew install --cask stablyai/orca/orca」、Arch Linuxの場合は「yay -S stably-orca-bin」を実行する。
+
+
+成功の目安: Orcaがシステムにインストールされ、起動できるようになること。
+
+未確認: CONTRIBUTING.mdに記載されている具体的な開発セットアップ手順の詳細／cloud/ディレクトリにあるリレーサーバーの具体的な設定手順
+
+
+## 10. [android/skills](https://github.com/android/skills)
+
+**概要:** Android開発向けのAI最適化されたモジュール式指示とリソースを提供するリポジトリです。LLMが苦手とするユースケースやワークフローを対象としています。
+
+- 言語: Kotlin
+- 今週のスター: 873
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Android CLIを使用して特定のスキルをカレントディレクトリにインストールする（根拠: Install Android skills）
+
+- Android CLIを使用してすべてのAndroidスキルを検出されたすべてのエージェント向けにインストールする（根拠: Install Android skills）
+
+- プラグインとしてClaude CodeやCodexにインストールする（根拠: Install as an agent plugin）
+
+
+### 利用例
+
+- LLMのエージェントに特定のスキルをインストールして、Android開発のベストプラクティスやパターンを実行させる（README明記／根拠: Android skills）
+
+- エージェントが自動的に関連するスキルを有効化し、アプリUIをエッジツーエッジにするなどのタスクを実行させる（README明記／根拠: Activate skills）
+
+
+### 最初に試すこと
+
+Android CLIを使用して特定のスキルをインストールする
+
+1. android skills add r8-analyzer --project=.
+
+
+成功の目安: 指定したスキルがプロジェクトにインストールされること
+
+未確認: リポジトリ内に含まれる個別のスキルの全一覧や詳細な種類
 
 
 
 ## Zenn
 
-- [昨今のセキュリティ情勢を踏まえて、Azure のセキュリティ系新資格 SC-500 を受けてみた【合格体験記】](https://zenn.dev/microsoft/articles/112ff28ccc30e3) — Naoki Matsumoto
+- [コードを読まずにマージするために必要なこと](https://zenn.dev/nrs/articles/c777388530aa84) — nrs
+
+- [Go で動く新世代の補完プラグイン goda-cmp.vim](https://zenn.dev/shougo/articles/goda-cmp-vim-beta) — Shougo
+
+- [AAIF に加わった Open Responses を Amazon Bedrock で試す](https://zenn.dev/exwzd/articles/20261023-open-responses) — 伊賀 裕展
+
+- [Kiro から Backlog・Chat・ドライブを横断検索できるようにしてみた（公式MCP）](https://zenn.dev/senuma/articles/588fb50a8f56ce) — 瀬沼
+
+- [Vue Fes Japan 2026 に参加してきました！](https://zenn.dev/koutyuke/articles/vuefes-japan-2026) — こうちゅけ
+
+- [Jevに問い合わせメッセージを仕分けてもらう](https://zenn.dev/chot/articles/980c44e5a19736) — Akira Tempaku
+
+- [GASで素のJSを埋め込むと < がエスケープされて動かない：getContent() の落とし穴と直し方](https://zenn.dev/kimura0314/articles/gas-htmloutput-getcontent-escapes-lt) — kimura
+
+- [Chromium(V8)のArray.prototype.lastIndexOfを最大約26000倍高速化した](https://zenn.dev/dinii/articles/2f66b147007cf8) — Riya Amemiya
+
+- [Dockerのビルドを遅くしたコミットをGrafana Tempoのトレースで見つける](https://zenn.dev/ymotongpoo/articles/20261027-buildkit-traces-tempo) — Yoshi Yamaguchi
+
+- [新卒エンジニアが初めてのインターン受け入れでマネジメントに奮闘した話](https://zenn.dev/tokium_dev/articles/summer-intern-first-team-management) — ちっち
+
+- [HPA は kubectl scale の台数を守らない](https://zenn.dev/shinagawa_web/articles/hpa-reverts-manual-scale) — shinagawa
+
+- [Dockerfileのビルドとコンテナの中の確認](https://zenn.dev/mutsu_zenn/articles/62895d07e7ef23) — mutsu
 
 - [学生2人で日本語音声LLMを作り、FT-LLM 2026 自由形タスクで1位を獲得した話](https://zenn.dev/ayutaso/articles/ftllm2026-ja-speech-llm) — Atotti
-
-- [OpenWrt 25.12のadblock 4.5に豆腐フィルタを適用する（ruleの書式が変わった）](https://zenn.dev/yotan/articles/openwrt-25-adblock-tofu-filter) — よたん
-
-- [Vue Fes Japan 2026 「 Vite+への貢献と、Team Memberになって見えてきた風景」スピーカーノート](https://zenn.dev/comm_vue_nuxt/articles/33f8491afbc66d) — Naoki Haba
-
-- [AI時代のアーキテクチャ：実装を任せるために、詳細設計を自分のものにする](https://zenn.dev/simplex/articles/f2b41d3367e9c7) — Simplex テックブログ運営
 
 - [AI の謎な説明文を直すスキル](https://zenn.dev/microsoft/articles/explain-before-shorten) — Kazuki Ota
 
@@ -413,29 +447,13 @@ Claude Codeプラグインとしてガイドラインをインストールする
 
 - [最近の E2E 戦略（2026 年 10 月現在）](https://zenn.dev/polyco/articles/26624b38c951b5) — Tatsunori Nakano
 
-- [AIネイティブなインターン生を受け入れて考えた、これからの開発エンジニア](https://zenn.dev/tokium_dev/articles/internship-mentoring-2026) — おかもり
-
-- [S3のParquet、そのままSnowflakeで分析しても遅くない？Parquet Directを検証](https://zenn.dev/snowflakejp/articles/parquet-direct-pruning-benchmark) — rniki
-
-- [スタックトレースを読むとヒープが約1,470 MB増えていた話](https://zenn.dev/dress_code/articles/f2a51226c9ec6f) — かわうそ
-
-- [育休復帰のキャッチアップをAI に手伝ってもらった話](https://zenn.dev/nextbeat/articles/862dd45c304c13) — iidadaiti
-
 - [私が5種類のコーディングエージェントを使い分ける理由](https://zenn.dev/rimon/articles/45c1fd2f015af8) — ミモ  フォワードCTO・CPO
 
 - [600人規模のイベント運営を支えたインカムを、学生1人で作った話](https://zenn.dev/kodak_20/articles/3b0ba74333b56c) — コダック
 
 - [2026年の国内情報漏えい71件を侵入経路で分類してみた](https://zenn.dev/blackleg/articles/e9ed8b038bcf48) — blackleg
 
-- [prpr: Rust 向けのシンプルで高速な Parser generator](https://zenn.dev/tanakh/articles/prpr-packrat-parser) — Hideyuki Tanaka
-
-- [eMudhra 中間 CA 漏洩、OS もブラウザも最新なのにコンテナ 9 個と Python 環境 16 個が偽の証明書を信じていた](https://zenn.dev/nanora/articles/20261024-emudhra-ca-own-bundles) — nanora
-
 - [eMudhraの中間CA証明書の秘密鍵を求めてみる](https://zenn.dev/herumi/articles/search_bad_emudhra_key) — herumi
-
-- [脆弱性管理の仕組みを整えた](https://zenn.dev/dress_code/articles/be5550254695cd) — anizozina
-
-- [仕組みを理解する動画を、Claude Codeに作らせると便利すぎる](https://zenn.dev/explaza/articles/c749042ecbe232) — musoukun
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。
