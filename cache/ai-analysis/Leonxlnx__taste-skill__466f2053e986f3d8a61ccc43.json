@@ -1,0 +1,56 @@
+{
+  "summary_ja": "Taste Skillは、コーディングエージェントにデザインの感性、実際の画像、実際のブラウザでの検証機能を与え、一般的なAIによるページではなく、高品質なウェブサイトやアプリ画面を設計できるようにするエージェントスキルです。",
+  "capabilities": [
+    {
+      "text": "独自のアートディレクションの提示、オープンアーカイブからの実写画像の利用、実際のブラウザでの自己検証を行う",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ダッシュボードやアプリ画面向けに、実製品の画面研究に基づくスタイル適応、シェル、データ、チャート、テーブルの構築を行う",
+      "evidence_section": "How v2 works"
+    },
+    {
+      "text": "React、Vue、Svelte、プレーンなHTMLなど、フレームワークを問わずデザインのルールを適用できる",
+      "evidence_section": "Common Questions"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントを使用して独自のこだわりを持ったランディングページを構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ダッシュボード、管理画面、設定画面などのアプリ画面を構築する",
+      "basis": "README明記",
+      "evidence_section": "Common Questions"
+    },
+    {
+      "text": "既存のページを変更する前に実際のブラウザで監査する",
+      "basis": "README明記",
+      "evidence_section": "Moved skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "skills CLIを使用してdesign-taste-frontendスキルをインストールする",
+    "steps": [
+      "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\""
+    ],
+    "success_criteria": "スキルが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "How v2 works",
+    "Moved skills",
+    "Common Questions"
+  ],
+  "unconfirmed": [
+    "具体的なAIモデルの内部動作や詳細なトークン消費量の変動要因"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8efa355f7d03ada51edccea568dccf26e628b511",
+  "generated_at": "2026-10-29T10:09:50.447273+09:00"
+}

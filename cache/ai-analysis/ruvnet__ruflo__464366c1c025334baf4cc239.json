@@ -1,0 +1,56 @@
+{
+  "summary_ja": "RufloはClaude CodeやCodexなどのモデルを対象としたエージェント用メタハーネスです。100以上の専門エージェント、協調スウォーム、自己学習型メモリ、ゼロトラストなエージェント間フェデレーション、ベクトルRAG統合などの機能を提供し、マルチエージェントシステムの構築や自律的なワークフローの制御を可能にします。",
+  "capabilities": [
+    {
+      "text": "100以上の特殊化されたエージェントによるコーディング、テスト、セキュリティ、ドキュメント生成などのサポート",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "エージェント間でのゼロトラストなセキュア通信とワークスペース共有を実現するフェデレーション機能",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    },
+    {
+      "text": "HNSWインデックス付きAgentDBを用いた高速なベクトルメモリと自己学習メカニズム",
+      "evidence_section": "What You Get"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIエージェントをチームとして連携させ、自律的なワークフローやコーディングタスクを調整する",
+      "basis": "README明記",
+      "evidence_section": "Get started with Ruflo"
+    },
+    {
+      "text": "異なるマシンや組織間でエージェント同士を接続し、プライバシーを保護しながらデータを共有して協調作業を行う",
+      "basis": "README明記",
+      "evidence_section": "Agent Federation — Slack for Agents"
+    },
+    {
+      "text": "プロジェクトのコード品質検査やテストケースの自動生成、セキュリティ脆弱性のスキャンを実行する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトの初期化またはCLIセットアップウィザードの実行",
+    "steps": [
+      "npx ruflo@latest init wizard"
+    ],
+    "success_criteria": "セットアップウィザードが起動し、プロジェクトの初期化が行われること"
+  },
+  "evidence_sections": [
+    "Get started with Ruflo",
+    "Quick Start",
+    "What You Get",
+    "Agent Federation — Slack for Agents"
+  ],
+  "unconfirmed": [
+    "具体的な商用利用における大規模運用でのパフォーマンス詳細",
+    "すべてのプラグインの個別詳細な動作仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fb3ac0362328df86076aa98089f02fb81341eb54",
+  "generated_at": "2026-10-29T10:09:58.129793+09:00"
+}

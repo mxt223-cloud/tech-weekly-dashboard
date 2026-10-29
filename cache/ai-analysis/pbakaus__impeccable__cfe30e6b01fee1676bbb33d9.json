@@ -1,0 +1,64 @@
+{
+  "summary_ja": "コーディングエージェント向けのデザイン語彙および支援ツールであり、デザインの改善、レビュー、品質監査、AI特有のありふれたデザイン（AI slop）の検出を行います。",
+  "capabilities": [
+    {
+      "text": "bolderやquieterなどのコマンドでコードエージェントのデザイン指示を制御する。",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "critiqueおよびauditコマンドでユーザビリティやアクセシビリティのレビューとスコア算出を行う。",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "決定論的ルールを用いたAI slopの検出を、エージェントフック、CLI、ブラウザ拡張機能で実行する。",
+      "evidence_section": "Three ways to run the detector"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIが生成しがちなありふれたデザイン上の欠陥（AI slop）を事前に検出して防ぐ。",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "コマンドを使用してUIのトーン調整やフォント、レイアウト、アクセシビリティの修正をエージェントに指示する。",
+      "basis": "README明記",
+      "evidence_section": "24 commands"
+    },
+    {
+      "text": "CLIツールを使用してソースコードディレクトリやレンダリング済みページをスキャンし、問題点をレポートする。",
+      "basis": "README明記",
+      "evidence_section": "Three ways to run the detector"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトにImpeccableをインストールして初期化する。",
+    "steps": [
+      "npx impeccable install",
+      "コーディングツールをリロードする",
+      "エージェント内で /impeccable init を実行する"
+    ],
+    "success_criteria": "プロジェクトにImpeccableがインストールされ、初期化コマンドが実行できること。"
+  },
+  "evidence_sections": [
+    "Why",
+    "How it works",
+    "24 commands",
+    "Live mode",
+    "Three ways to run the detector",
+    "Installation",
+    "Project files and git",
+    "Good to know",
+    "Community",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な内部実装アルゴリズムや外部APIの通信仕様",
+    "商用利用における具体的なライセンス制限（Apache 2.0以外の条件）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+  "generated_at": "2026-10-29T10:09:44.384882+09:00"
+}
