@@ -1,0 +1,60 @@
+{
+  "summary_ja": "php/php-srcは、Web開発に特化した汎用スクリプト言語PHPのインタプリタのソースコードリポジトリです。",
+  "capabilities": [
+    {
+      "text": "PHPスクリプト言語のインタプリタとして機能する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ソースコードからのビルドやテストの実行が可能",
+      "evidence_section": "Building PHP source code"
+    },
+    {
+      "text": "拡張機能による追加機能の提供に対応している",
+      "evidence_section": "PHP extensions"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Web開発のためのスクリプト言語の実行環境として利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ソースコードからPHPをビルドしてカスタム環境にインストールする",
+      "basis": "README明記",
+      "evidence_section": "Building PHP source code"
+    },
+    {
+      "text": "付属のテストスイートを使用してPHPの品質や動作を確認する",
+      "basis": "README明記",
+      "evidence_section": "Testing PHP source code"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードからPHPをビルドするための設定ファイルを生成する",
+    "steps": [
+      "./buildconf"
+    ],
+    "success_criteria": "設定スクリプトが正常に生成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Documentation",
+    "Installation",
+    "Testing PHP source code",
+    "Installing PHP built from source",
+    "PHP extensions",
+    "Contributing",
+    "Credits"
+  ],
+  "unconfirmed": [
+    "具体的なPHPの言語仕様や各関数の詳細な挙動",
+    "すべての拡張機能の完全な一覧と個別設定方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "80618f2d6f94c8520ff62a0e0d30fe733a3e9fc3",
+  "generated_at": "2026-10-30T10:16:34.440244+09:00"
+}

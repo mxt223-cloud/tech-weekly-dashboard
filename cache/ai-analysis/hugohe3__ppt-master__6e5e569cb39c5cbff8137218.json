@@ -1,0 +1,54 @@
+{
+  "summary_ja": "hugohe3/ppt-masterは、PDF、DOCXファイル、ウェブページなどのソース資料やトピックから、ネイティブに編集可能なPowerPointのプレゼンテーション（.pptx）をAIによって自動生成するPythonツールです。フラットな画像ではなく、スライドマスター、図形、データに基づいたグラフやテーブル、トランジションやアニメーションを備えた実際のPowerPointファイルを出力します。",
+  "capabilities": [
+    {
+      "text": "PDF、DOCXファイル、ウェブページなどのソース資料から編集可能なPowerPointのプレゼンテーション（.pptx）を生成する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "スライドマスター、ネイティブな図形、データに基づいたグラフやテーブルなど、PowerPointのネイティブオブジェクトを構築する",
+      "evidence_section": "Product Positioning"
+    },
+    {
+      "text": "既存の.pptxファイルに新しいコンテンツを流し込みながらデザインを維持する機能を提供する",
+      "evidence_section": "Product Positioning"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "PDFなどの資料をもとに、編集可能なPowerPointの発表資料をAIで自動作成する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "既存のブランド用テンプレートやデッキの構成を維持したまま、新しい内容でスライドを再構築する",
+      "basis": "README明記",
+      "evidence_section": "Product Positioning"
+    },
+    {
+      "text": "完成したスライドに対して、ネイティブなトランジションやアニメーション、音声ナレーションを追加する",
+      "basis": "README明記",
+      "evidence_section": "Product Positioning"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトのソースコードをクローンし、依存関係をインストールした上で、エージェントを使ってPPTを生成する",
+    "steps": [
+      "git clone https://github.com/hugohe3/ppt-master.git",
+      "cd ppt-master",
+      "pip install -r requirements.txt"
+    ],
+    "success_criteria": "依存関係のインストールが完了し、AIチャットまたはエージェントを通じてソース資料から.pptxファイルが正常に出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Product Positioning",
+    "Quick Start"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c443bf26f0c87a7dac0ba8dc7ceba708e812d61e",
+  "generated_at": "2026-10-30T10:16:40.027351+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。",
+  "capabilities": [
+    {
+      "text": "コードを書く前に意図や仕様を引き出すブレインストーミング機能",
+      "evidence_section": "The Basic Workflow"
+    },
+    {
+      "text": "仕様に基づいた詳細な実装計画の作成機能",
+      "evidence_section": "The Basic Workflow"
+    },
+    {
+      "text": "テスト駆動開発（TDD）の強制とサブエージェントによる開発進行",
+      "evidence_section": "The Basic Workflow"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントに自動で要件定義や設計を行わせる",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "AIエージェントにテスト駆動開発を実施させて品質を保つ",
+      "basis": "README明記",
+      "evidence_section": "The Basic Workflow"
+    },
+    {
+      "text": "複数タスクをサブエージェントに自律的に処理させる",
+      "basis": "README明記",
+      "evidence_section": "How it works"
+    }
+  ],
+  "first_trial": {
+    "goal": "Antigravity環境にSuperpowersプラグインをインストールする",
+    "steps": [
+      "agy plugin install https://github.com/obra/superpowers"
+    ],
+    "success_criteria": "プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること"
+  },
+  "evidence_sections": [
+    "How it works",
+    "Installation",
+    "The Basic Workflow",
+    "When Something Goes Wrong",
+    "What's Inside"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+  "generated_at": "2026-10-30T10:16:42.304363+09:00"
+}
