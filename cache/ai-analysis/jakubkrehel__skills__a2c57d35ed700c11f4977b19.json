@@ -1,0 +1,56 @@
+{
+  "summary_ja": "jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。",
+  "capabilities": [
+    {
+      "text": "アクセシビリティ、レイアウト、ライティング、タイポグラフィ、カラー、UIポリッシュの観点から画面やフローをレビューし、レポートを返します。",
+      "evidence_section": "Skills that help build great interfaces"
+    },
+    {
+      "text": "ボーダー半径、光学調整、影、アイコンの状態、アニメーションの正確な値を使用してサーフェス、アイコン、モーションをブラッシュアップします。",
+      "evidence_section": "Skills that help build great interfaces"
+    },
+    {
+      "text": "Figmaファイルやデザイン画像から、プロジェクトの既存トークンやコンポーネントを使用してUIを構築します。",
+      "evidence_section": "Skills that help build great interfaces"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "画面やインターフェース全体をレビューして改善のためのレポートを作成する",
+      "basis": "README明記",
+      "evidence_section": "Skills that help build great interfaces"
+    },
+    {
+      "text": "Webサイト、視覚効果、アニメーションがどのように構築されたかをライブURLやスクリーンショットから説明する",
+      "basis": "README明記",
+      "evidence_section": "Skills that help build great interfaces"
+    },
+    {
+      "text": "Figmaファイルやデザイン画像からプロジェクトの既存トークンを使ってUIを実装する",
+      "basis": "README明記",
+      "evidence_section": "Skills that help build great interfaces"
+    }
+  ],
+  "first_trial": {
+    "goal": "skillsを追加する",
+    "steps": [
+      "npx skills add jakubkrehel/skills"
+    ],
+    "success_criteria": "リポジトリのスキルが追加されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Skills that help build great interfaces",
+    "Install",
+    "Claude Code plugin"
+  ],
+  "unconfirmed": [
+    "各スキルの具体的な実行結果や詳細な内部実装",
+    "Claude Codeプラグインの利用に必要な事前準備や環境設定の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4a98833328ce2fbcf3338ece1fb4a9459121bc58",
+  "generated_at": "2026-10-31T09:58:08.817614+09:00"
+}
