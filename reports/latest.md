@@ -1,15 +1,54 @@
-# Tech Daily — 2026-10-31
+# Tech Daily — 2026-11-01
 
-生成日時: 2026-10-31T09:58:11.710712+09:00  
+生成日時: 2026-11-01T09:19:28.250757+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
-## 1. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+## 1. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
+
+**概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
+
+- 言語: CSS
+- 今週のスター: 12062
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能（根拠: New in v2）
+
+- 既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能（根拠: New in v2）
+
+- 既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能（根拠: Redesign）
+
+
+### 利用例
+
+- AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合（README明記／根拠: README冒頭）
+
+- 既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合（README明記／根拠: New in v2）
+
+- 予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合（README明記／根拠: New in v2）
+
+
+### 最初に試すこと
+
+hallmarkをグローバルにインストールする
+
+1. npx skills add nutlope/hallmark -g
+
+
+成功の目安: Node 18以降の環境で、パッケージが正常にインストールされること
+
+
+
+
+## 2. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
 
 **概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
 
 - 言語: JavaScript
-- 今週のスター: 12838
+- 今週のスター: 11908
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -43,12 +82,12 @@ Skills CLIを使用してsecurity-auditスキルをインストールする
 
 
 
-## 2. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
+## 3. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
 
 **概要:** Claude Code上で動作する無料のオープンソースSEOプラグインであり、技術的SEO、コンテンツの品質、構造化データ、AI検索（GEO）、ローカル・ECサイトのSEO監査を並行エージェントで実行し、優先順位付きの行動計画を提供します。
 
 - 言語: Python
-- 今週のスター: 4478
+- 今週のスター: 4814
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -88,12 +127,12 @@ Claude Code内でClaude SEOをセットアップし、ウェブサイトのフ�
 未確認: オプショナルな拡張機能（Live data、image-gen、seranking、profound、bing、unlighthouse）の具体的な導入手順やAPIキー設定の詳細／AI Marketing Hub Pro会員向けプライベートバージョンのすべての詳細な機能差異
 
 
-## 3. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+## 4. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
 **概要:** コーディングエージェント向けのデザイン語彙および支援ツールであり、デザインの改善、レビュー、品質監査、AI特有のありふれたデザイン（AI slop）の検出を行います。
 
 - 言語: Rust
-- 今週のスター: 11323
+- 今週のスター: 12031
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -131,12 +170,12 @@ Claude Code内でClaude SEOをセットアップし、ウェブサイトのフ�
 未確認: 詳細な内部実装アルゴリズムや外部APIの通信仕様／商用利用における具体的なライセンス制限（Apache 2.0以外の条件）
 
 
-## 4. [obra/superpowers](https://github.com/obra/superpowers)
+## 5. [obra/superpowers](https://github.com/obra/superpowers)
 
 **概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
 
 - 言語: Shell
-- 今週のスター: 5474
+- 今週のスター: 5636
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -170,12 +209,51 @@ Antigravity環境にSuperpowersプラグインをインストールする
 
 
 
-## 5. [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
+## 6. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+
+**概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
+
+- 言語: 不明
+- 今週のスター: 4277
+- ライセンス: 不明
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。（根拠: Install）
+
+- プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。（根拠: Install）
+
+- Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。（根拠: Using with Cursor）
+
+
+### 利用例
+
+- Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。（README明記／根拠: The Solution）
+
+- Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。（README明記／根拠: Using with Cursor）
+
+
+### 最初に試すこと
+
+Claude Codeプラグインとしてガイドラインをインストールする
+
+1. /plugin marketplace add forrestchang/andrej-karpathy-skills
+
+2. /plugin install andrej-karpathy-skills@karpathy-skills
+
+
+成功の目安: プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること
+
+
+
+
+## 7. [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
 
 **概要:** TradingAgentsは、実際の証券会社のダイナミクスを模倣したマルチエージェント型の金融取引フレームワークです。ファンダメンタルズ分析、センチメント分析、ニュース分析、テクニカル分析などの専門的な役割を持つLLM駆動のエージェントが協力して市場状況を評価し、取引の意思決定を支援します。
 
 - 言語: Python
-- 今週のスター: 5490
+- 今週のスター: 5483
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -213,51 +291,51 @@ Antigravity環境にSuperpowersプラグインをインストールする
 未確認: デフォルトで推奨されているモデル（GPT-6やClaude Sonnet 5など、標準的なAPI以外における実際の挙動や利用制限の詳細は実際の環境に依存する）
 
 
-## 6. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+## 8. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
 
-**概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
+**概要:** jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。
 
-- 言語: 不明
-- 今週のスター: 4178
-- ライセンス: 不明
+- 言語: Markdown
+- 今週のスター: 1272
+- ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。（根拠: Install）
+- アクセシビリティ、レイアウト、ライティング、タイポグラフィ、カラー、UIポリッシュの観点から画面やフローをレビューし、レポートを返します。（根拠: Skills that help build great interfaces）
 
-- プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。（根拠: Install）
+- ボーダー半径、光学調整、影、アイコンの状態、アニメーションの正確な値を使用してサーフェス、アイコン、モーションをブラッシュアップします。（根拠: Skills that help build great interfaces）
 
-- Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。（根拠: Using with Cursor）
+- Figmaファイルやデザイン画像から、プロジェクトの既存トークンやコンポーネントを使用してUIを構築します。（根拠: Skills that help build great interfaces）
 
 
 ### 利用例
 
-- Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。（README明記／根拠: The Solution）
+- 画面やインターフェース全体をレビューして改善のためのレポートを作成する（README明記／根拠: Skills that help build great interfaces）
 
-- Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。（README明記／根拠: Using with Cursor）
+- Webサイト、視覚効果、アニメーションがどのように構築されたかをライブURLやスクリーンショットから説明する（README明記／根拠: Skills that help build great interfaces）
+
+- Figmaファイルやデザイン画像からプロジェクトの既存トークンを使ってUIを実装する（README明記／根拠: Skills that help build great interfaces）
 
 
 ### 最初に試すこと
 
-Claude Codeプラグインとしてガイドラインをインストールする
+skillsを追加する
 
-1. /plugin marketplace add forrestchang/andrej-karpathy-skills
-
-2. /plugin install andrej-karpathy-skills@karpathy-skills
+1. npx skills add jakubkrehel/skills
 
 
-成功の目安: プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること
+成功の目安: リポジトリのスキルが追加されること
+
+未確認: 各スキルの具体的な実行結果や詳細な内部実装／Claude Codeプラグインの利用に必要な事前準備や環境設定の詳細
 
 
-
-
-## 7. [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
+## 9. [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
 
 **概要:** Taste Skillは、コーディングエージェントにデザインの感性、実際の画像、実際のブラウザでの検証機能を与え、一般的なAIによるページではなく、高品質なウェブサイトやアプリ画面を設計できるようにするエージェントスキルです。
 
 - 言語: JavaScript
-- 今週のスター: 4712
+- 今週のスター: 4975
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -291,53 +369,14 @@ skills CLIを使用してdesign-taste-frontendスキルをインストールす�
 未確認: 具体的なAIモデルの内部動作や詳細なトークン消費量の変動要因
 
 
-## 8. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
-
-**概要:** jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。
-
-- 言語: Markdown
-- 今週のスター: 1107
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- アクセシビリティ、レイアウト、ライティング、タイポグラフィ、カラー、UIポリッシュの観点から画面やフローをレビューし、レポートを返します。（根拠: Skills that help build great interfaces）
-
-- ボーダー半径、光学調整、影、アイコンの状態、アニメーションの正確な値を使用してサーフェス、アイコン、モーションをブラッシュアップします。（根拠: Skills that help build great interfaces）
-
-- Figmaファイルやデザイン画像から、プロジェクトの既存トークンやコンポーネントを使用してUIを構築します。（根拠: Skills that help build great interfaces）
-
-
-### 利用例
-
-- 画面やインターフェース全体をレビューして改善のためのレポートを作成する（README明記／根拠: Skills that help build great interfaces）
-
-- Webサイト、視覚効果、アニメーションがどのように構築されたかをライブURLやスクリーンショットから説明する（README明記／根拠: Skills that help build great interfaces）
-
-- Figmaファイルやデザイン画像からプロジェクトの既存トークンを使ってUIを実装する（README明記／根拠: Skills that help build great interfaces）
-
-
-### 最初に試すこと
-
-skillsを追加する
-
-1. npx skills add jakubkrehel/skills
-
-
-成功の目安: リポジトリのスキルが追加されること
-
-未確認: 各スキルの具体的な実行結果や詳細な内部実装／Claude Codeプラグインの利用に必要な事前準備や環境設定の詳細
-
-
-## 9. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+## 10. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
 
 **概要:** T3 Codeは、iOSやAndroidのモバイルアプリ、Webアプリ、Electron製デスクトップアプリから、PC上のAIエージェントを制御するためのコントロールサーフェスです。
 
 - 言語: TypeScript
-- 今週のスター: 2775
+- 今週のスター: 3718
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -363,59 +402,22 @@ skillsを追加する
 未確認: 具体的なプロジェクトの内部実装の詳細やすべての機能の網羅的な仕様
 
 
-## 10. [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-
-**概要:** anthropic/knowledge-work-pluginsは、Claudeを専門業務特化型のアシスタントに変えるためのオープンソースプラグイン集です。Claude CoworkおよびClaude Codeで利用でき、スキル、コネクター、スラッシュコマンド、サブエージェントをバンドルしてタスクを効率化します。
-
-- 言語: Python
-- 今週のスター: 2083
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- ロール、チーム、企業に合わせた専門的なプラグイン（生産性向上、営業、カスタマーサポート、製品管理、マーケティング、法務、財務、データ分析、エンタープライズ検索、バイオ研究、プラグイン管理など11種類）を提供する。（根拠: Plugin Marketplace）
-
-- MCPサーバーを介してSlack、Notion、Asana、Snowflakeなどの外部ツールやデータソースと接続する。（根拠: How Plugins Work）
-
-- マークダウンとJSONによるファイルベースの構造を採用し、コードやインフラストラクチャなしでカスタムプラグインの作成や既存プラグインのカスタマイズができる。（根拠: Making Them Yours）
-
-
-### 利用例
-
-- 営業活動において、見込み客の調査、コールの準備、パイプラインの確認、アウトリーチの下書き、競合バトルカードの作成を行う。（README明記／根拠: Plugin Marketplace）
-
-- 財務業務において、仕訳の準備、勘定科目の消込、財務諸表の作成、差異分析、決算管理、監査支援を行う。（README明記／根拠: Plugin Marketplace）
-
-- データ分析において、クエリの記述、可視化、データセットの解釈、統計分析、ダッシュボードの構築を行う。（README明記／根拠: Plugin Marketplace）
-
-
-### 最初に試すこと
-
-Claude Codeを使用してマーケットプレイスを追加し、特定のプラグインをインストールする
-
-1. claude plugin marketplace add anthropics/knowledge-work-plugins
-
-2. claude plugin install sales@knowledge-work-plugins
-
-
-成功の目安: 指定したプラグインがClaude Code環境に正常にインストールされること
-
-未確認: プラグインごとの詳細な内部実装コードや個別のコネクター設定の全詳細
-
-
 
 ## Zenn
 
-- [今後のセキュリティの考え方](https://zenn.dev/cscloud_blog/articles/a987163efae5d8) — nishikawa
+- [3 人それぞれの Claude Code を Slack でつないで ISUCON2026 に参加した（207,039 点）](https://zenn.dev/kauche/articles/f3736c660aab77) — a-thug
 
-- [フロントエンドカンファレンス関西2026に参加しました！](https://zenn.dev/flagxs/articles/931d7d45292717) — aoi
+- [ISUCONに初めて出たら、直すたびに次のボトルネックが出てきて、超面白かった](https://zenn.dev/paraponera/articles/2026-10-31-isucon-2026-isureal) — 船長（せんちょう）
+
+- [16GB RAM・6GB VRAM のノート PC で gpt-oss-20b とチャットする](https://zenn.dev/shozotanaka/articles/01877d688dfc65) — ShozoTanaka
+
+- [【最速解説】goda.vimでHello, worldする](https://zenn.dev/comamoca/articles/2026-10-30-trying-hello-world-with-goda-vim) — こまもか🦊
+
+- [今後のセキュリティの考え方](https://zenn.dev/cscloud_blog/articles/a987163efae5d8) — nishikawa
 
 - [IVRyのSREの取り組み 2026冬](https://zenn.dev/ivry/articles/70d4f05ce4ae5c) — ryuichi1208
 
 - [yoroによろしくぅ！Ai Workforce 事業部のリモートコーディングエージェント環境 yoro のご紹介](https://zenn.dev/layerx/articles/a277f83a93d300) — ishiken
-
-- [2026年自分流AIエージェント環境構築の秋](https://zenn.dev/rescuenow/articles/49826fc6cc2713) — しもち
 
 - [WASIじゃない、もう一つのインターフェース「WALI」という提案](https://zenn.dev/progate/articles/wali-webassembly-linux-interface) — Godai Hori
 
@@ -423,11 +425,7 @@ Claude Codeを使用してマーケットプレイスを追加し、特定のプ
 
 - [人間がコードを読まずにPRをマージする技術 ─ それでも、品質は手放さない](https://zenn.dev/karamage/articles/ac71f1c89c73ff) — karamage
 
-- [Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？](https://zenn.dev/sre_holdings/articles/d4acb079680a79) — SNabe
-
 - [GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！](https://zenn.dev/progate/articles/24b1140180300c) — 横江（よこえ）
-
-- [Expo アプリを iPhone Duo に対応させる](https://zenn.dev/chot/articles/5718685fde3626) — yoshino
 
 - [KaniによるVerylコンパイラの形式検証](https://zenn.dev/dalance/articles/44a8f80ea0cfa1) — dalance
 

@@ -1,0 +1,53 @@
+{
+  "summary_ja": "Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。",
+  "capabilities": [
+    {
+      "text": "50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能",
+      "evidence_section": "New in v2"
+    },
+    {
+      "text": "既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能",
+      "evidence_section": "New in v2"
+    },
+    {
+      "text": "既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能",
+      "evidence_section": "Redesign"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合",
+      "basis": "README明記",
+      "evidence_section": "New in v2"
+    },
+    {
+      "text": "予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合",
+      "basis": "README明記",
+      "evidence_section": "New in v2"
+    }
+  ],
+  "first_trial": {
+    "goal": "hallmarkをグローバルにインストールする",
+    "steps": [
+      "npx skills add nutlope/hallmark -g"
+    ],
+    "success_criteria": "Node 18以降の環境で、パッケージが正常にインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "New in v2",
+    "Redesign",
+    "Install"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+  "generated_at": "2026-11-01T09:19:21.840232+09:00"
+}
