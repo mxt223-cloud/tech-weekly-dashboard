@@ -1,0 +1,56 @@
+{
+  "summary_ja": "T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。",
+  "capabilities": [
+    {
+      "text": "モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能",
+      "evidence_section": "Command line"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "インストールせずに一時的にコマンドを実行して動作を試す",
+      "basis": "README明記",
+      "evidence_section": "Command line"
+    }
+  ],
+  "first_trial": {
+    "goal": "インストールせずに一時的にT3 Codeを試す",
+    "steps": [
+      "npx t3@latest"
+    ],
+    "success_criteria": "サーバーが起動し、ローカルのWebアプリが開くこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Command line",
+    "Desktop app"
+  ],
+  "unconfirmed": [
+    "詳細なエージェント連携時の内部動作やAPI仕様",
+    "コントリビューションの受け入れ条件の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+  "generated_at": "2026-11-02T09:58:46.190507+09:00"
+}

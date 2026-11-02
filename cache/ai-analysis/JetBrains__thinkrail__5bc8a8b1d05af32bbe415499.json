@@ -1,0 +1,62 @@
+{
+  "summary_ja": "ThinkRailは、コーディングエージェントpiを中心とした軽量かつリアルな統合開発環境（IDE）であり、isolated worktreeによる独立したワークスペースや、living specsによるプロジェクトの知識共有、再利用可能なスキルを活用した開発をサポートします。",
+  "capabilities": [
+    {
+      "text": "Isolated workspacesにより、git worktreeを使った独立したワークスペースでエージェントを並行して安全に動作させることができます。",
+      "evidence_section": "What you get"
+    },
+    {
+      "text": "SPEC.mdファイルを活用したグラフィカルな仕様管理（Specs as ground truth）機能を提供します。",
+      "evidence_section": "What you get"
+    },
+    {
+      "text": "OpenAI互換のカスタムサーバー（LiteLLM、sglang、vLLM、Ollama、LM Studio、llama.cppなど）をモデルプロバイダとして接続可能です。",
+      "evidence_section": "What you get"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のリポジトリやブランチで、メインのチェックアウトに影響を与えずにエージェントを使った並行開発を行う。",
+      "basis": "README明記",
+      "evidence_section": "What you get"
+    },
+    {
+      "text": "プロジェクトのコードのそばに配置されたSPEC.mdを通じてエージェントに意図を正しく伝え、仕様を維持する。",
+      "basis": "README明記",
+      "evidence_section": "What you get"
+    },
+    {
+      "text": "ローカルマシンや社内ゲートウェイ上のカスタムAIモデルサーバーを接続してコード生成を行う。",
+      "basis": "README明記",
+      "evidence_section": "What you get"
+    }
+  ],
+  "first_trial": {
+    "goal": "ThinkRail CLIをインストールし、リポジトリを開いて起動する",
+    "steps": [
+      "curl -fsSL https://raw.githubusercontent.com/JetBrains/thinkrail/main/install.sh | bash",
+      "thinkrail ~/code/my-repo"
+    ],
+    "success_criteria": "ThinkRailが起動し、指定したリポジトリがプロジェクトとして開かれること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What you get",
+    "Install",
+    "Analytics & privacy",
+    "Under the hood",
+    "Developing ThinkRail",
+    "Contributing",
+    "Community",
+    "License"
+  ],
+  "unconfirmed": [
+    "デスクトップアプリの具体的な内部処理の詳細",
+    "外部拡張機能が完全に実装された際の挙動の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7594cab8513d03f0b699bb225a78322ad89ac0bc",
+  "generated_at": "2026-11-02T09:58:43.544263+09:00"
+}
