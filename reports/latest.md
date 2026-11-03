@@ -1,6 +1,6 @@
-# Tech Daily — 2026-11-02
+# Tech Daily — 2026-11-03
 
-生成日時: 2026-11-02T09:58:47.632850+09:00  
+生成日時: 2026-11-03T12:00:42.809132+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
 
 - 言語: CSS
-- 今週のスター: 11566
+- 今週のスター: 10517
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -43,55 +43,94 @@ hallmarkをグローバルにインストールする
 
 
 
-## 2. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+## 2. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
-**概要:** コーディングエージェント向けのデザイン語彙および支援ツールであり、デザインの改善、レビュー、品質監査、AI特有のありふれたデザイン（AI slop）の検出を行います。
+**概要:** claude-memは、AIエージェントのセッション間で文脈を継続的に保持するための永続的メモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで圧縮して次回のセッションに反映させます。
 
-- 言語: Rust
-- 今週のスター: 12017
+- 言語: TypeScript
+- 今週のスター: 7255
 - ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
+- AI分析状態: ok
 
 ### できること
 
-- bolderやquieterなどのコマンドでコードエージェントのデザイン指示を制御する。（根拠: Why）
+- セッション間でコンテキストを自動的に保持し、再接続後もプロジェクトの知識を維持する（根拠: README冒頭）
 
-- critiqueおよびauditコマンドでユーザビリティやアクセシビリティのレビューとスコア算出を行う。（根拠: Why）
+- トークン効率の良い3階層のワークフロー（search、timeline、get_observations）によるメモリ検索機能（根拠: MCP Search Tools）
 
-- 決定論的ルールを用いたAI slopの検出を、エージェントフック、CLI、ブラウザ拡張機能で実行する。（根拠: Three ways to run the detector）
+- SQLiteデータベースとChromaベクトルデータベースによるハイブリッド検索（根拠: Documentation）
 
 
 ### 利用例
 
-- AIが生成しがちなありふれたデザイン上の欠陥（AI slop）を事前に検出して防ぐ。（README明記／根拠: Why）
+- Claude CodeなどのAIエージェントのセッションが終了または再接続した後も、過去の作業コンテキストを引き継いで開発を継続する（README明記／根拠: README冒頭）
 
-- コマンドを使用してUIのトーン調整やフォント、レイアウト、アクセシビリティの修正をエージェントに指示する。（README明記／根拠: 24 commands）
-
-- CLIツールを使用してソースコードディレクトリやレンダリング済みページをスキャンし、問題点をレポートする。（README明記／根拠: Three ways to run the detector）
+- 自然言語やキーワードを使ってプロジェクトの履歴や過去のバグ修正情報を検索する（README明記／根拠: MCP Search Tools）
 
 
 ### 最初に試すこと
 
-プロジェクトにImpeccableをインストールして初期化する。
+Claude Code向けにclaude-memをインストールし、動作を確認する
+
+1. npx claude-mem install を実行する
+
+2. Claude Codeを再起動する
+
+
+成功の目安: 新規セッションで過去のセッションのコンテキストが自動的に表示されること
+
+未確認: claude-memの無料トライアル終了後の自動切り替えにおける詳細な課金プランの仕様
+
+
+## 3. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+**概要:** pbakaus/impeccableは、コーディングエージェントのためのデザイン語彙ツールです。デザインの調整、レビュー、AI生成のありふれた表現（スロップ）の検出をサポートします。
+
+- 言語: Rust
+- 今週のスター: 11754
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- デザインの方向性を調整するための24種類のコマンドを提供します。（根拠: 24 commands）
+
+- 使い勝手のヒューリスティックに基づいてデザインをスコア化しレビューします。（根拠: Why）
+
+- 決定的ルールを用いて、AI生成のありふれた表現や品質上の問題を検出します。（根拠: Why）
+
+
+### 利用例
+
+- 価格設定カードなどのデザインを特定の指示で調整する。（README明記／根拠: Why）
+
+- アクセシビリティやパフォーマンス、レスポンシブ動作を技術的に監査する。（README明記／根拠: Why）
+
+- ブラウザ上で要素を選択し、バリエーションを切り替えてライブで反復作業を行う。（README明記／根拠: Live mode）
+
+
+### 最初に試すこと
+
+Impeccableをインストールして初期化する
 
 1. npx impeccable install
 
 2. コーディングツールをリロードする
 
-3. エージェント内で /impeccable init を実行する
+3. エージェントで /impeccable init を実行する
 
 
-成功の目安: プロジェクトにImpeccableがインストールされ、初期化コマンドが実行できること。
+成功の目安: プロジェクトにImpeccableが初期化され、PRODUCT.mdが作成されること
 
-未確認: 詳細な内部実装アルゴリズムや外部APIの通信仕様／商用利用における具体的なライセンス制限（Apache 2.0以外の条件）
+未確認: 詳細な内部実装や商用利用における追加の制限事項
 
 
-## 3. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
+## 4. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
 
 **概要:** Claude Code上で動作する無料のオープンソースSEOプラグインであり、技術的SEO、コンテンツの品質、構造化データ、AI検索（GEO）、ローカル・ECサイトのSEO監査を並行エージェントで実行し、優先順位付きの行動計画を提供します。
 
 - 言語: Python
-- 今週のスター: 5034
+- 今週のスター: 4091
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -131,88 +170,12 @@ Claude Code内でClaude SEOをセットアップし、ウェブサイトのフ�
 未確認: オプショナルな拡張機能（Live data、image-gen、seranking、profound、bing、unlighthouse）の具体的な導入手順やAPIキー設定の詳細／AI Marketing Hub Pro会員向けプライベートバージョンのすべての詳細な機能差異
 
 
-## 4. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
-
-**概要:** claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。エージェントのセッション中の活動をキャプチャし、AIで要約して、将来のセッションに適切なコンテキストを注入します。
-
-- 言語: TypeScript
-- 今週のスター: 5852
-- ライセンス: Apache-2.0
-- AI分析状態: ok
-
-### できること
-
-- セッション間でコンテキストを自動的に保存し、次のセッションで利用可能にします。（根拠: README冒頭）
-
-- MCPツールを使用した自然言語によるプロジェクト履歴の検索に対応しています。（根拠: MCP Search Tools）
-
-- SQLiteデータベースとChromaベクトルデータベースを使用したハイブリッド検索と永続化を行います。（根拠: How It Works）
-
-
-### 利用例
-
-- AIエージェントの過去のセッションの知識や文脈を維持し、セッション終了後も継続性を持たせる。（README明記／根拠: README冒頭）
-
-- プロジェクトの履歴やバグ修正の経緯を自然言語で効率的に検索する。（README明記／根拠: MCP Search Tools）
-
-
-### 最初に試すこと
-
-Claude Code向けにclaude-memをインストールする
-
-1. npx claude-mem install を実行する
-
-
-成功の目安: インストーラーが正常にセットアップを完了し、サインインまたはプロバイダーの選択が行えること
-
-未確認: 無料トライアル終了後の正確な料金体系や自動切り替えの挙動の詳細
-
-
-## 5. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
-
-**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
-
-- 言語: JavaScript
-- 今週のスター: 10069
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
-
-- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
-
-- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
-
-
-### 利用例
-
-- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
-
-- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
-
-- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
-
-
-### 最初に試すこと
-
-Skills CLIを使用してsecurity-auditスキルをインストールする
-
-1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
-
-
-成功の目安: スキルが正常にインストールされること
-
-
-
-
-## 6. [obra/superpowers](https://github.com/obra/superpowers)
+## 5. [obra/superpowers](https://github.com/obra/superpowers)
 
 **概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
 
 - 言語: Shell
-- 今週のスター: 5896
+- 今週のスター: 5956
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -246,14 +209,53 @@ Antigravity環境にSuperpowersプラグインをインストールする
 
 
 
+## 6. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+
+**概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
+
+- 言語: TypeScript
+- 今週のスター: 9770
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール（根拠: README冒頭）
+
+- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携（根拠: Installation）
+
+- コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能（根拠: Command line）
+
+
+### 利用例
+
+- スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する（README明記／根拠: README冒頭）
+
+- デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する（README明記／根拠: README冒頭）
+
+- インストールせずに一時的にコマンドを実行して動作を試す（README明記／根拠: Command line）
+
+
+### 最初に試すこと
+
+インストールせずに一時的にT3 Codeを試す
+
+1. npx t3@latest
+
+
+成功の目安: サーバーが起動し、ローカルのWebアプリが開くこと
+
+未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
+
+
 ## 7. [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
 
 **概要:** ThinkRailは、コーディングエージェントpiを中心とした軽量かつリアルな統合開発環境（IDE）であり、isolated worktreeによる独立したワークスペースや、living specsによるプロジェクトの知識共有、再利用可能なスキルを活用した開発をサポートします。
 
 - 言語: TypeScript
-- 今週のスター: 5760
+- 今週のスター: 4812
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -287,90 +289,51 @@ ThinkRail CLIをインストールし、リポジトリを開いて起動する
 未確認: デスクトップアプリの具体的な内部処理の詳細／外部拡張機能が完全に実装された際の挙動の詳細
 
 
-## 8. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+## 8. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
 
-**概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
+**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
 
-- 言語: TypeScript
-- 今週のスター: 6926
+- 言語: JavaScript
+- 今週のスター: 9155
 - ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール（根拠: README冒頭）
-
-- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携（根拠: Installation）
-
-- コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能（根拠: Command line）
-
-
-### 利用例
-
-- スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する（README明記／根拠: README冒頭）
-
-- デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する（README明記／根拠: README冒頭）
-
-- インストールせずに一時的にコマンドを実行して動作を試す（README明記／根拠: Command line）
-
-
-### 最初に試すこと
-
-インストールせずに一時的にT3 Codeを試す
-
-1. npx t3@latest
-
-
-成功の目安: サーバーが起動し、ローカルのWebアプリが開くこと
-
-未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
-
-
-## 9. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
-
-**概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
-
-- 言語: 不明
-- 今週のスター: 4459
-- ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。（根拠: Install）
+- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
 
-- プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。（根拠: Install）
+- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
 
-- Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。（根拠: Using with Cursor）
+- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
 
 
 ### 利用例
 
-- Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。（README明記／根拠: The Solution）
+- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
 
-- Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。（README明記／根拠: Using with Cursor）
+- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
+
+- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
 
 
 ### 最初に試すこと
 
-Claude Codeプラグインとしてガイドラインをインストールする
+Skills CLIを使用してsecurity-auditスキルをインストールする
 
-1. /plugin marketplace add forrestchang/andrej-karpathy-skills
-
-2. /plugin install andrej-karpathy-skills@karpathy-skills
+1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
 
 
-成功の目安: プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること
+成功の目安: スキルが正常にインストールされること
 
 
 
 
-## 10. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
+## 9. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
 
 **概要:** jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。
 
 - 言語: Markdown
-- 今週のスター: 1607
+- 今週のスター: 1707
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -404,48 +367,87 @@ skillsを追加する
 未確認: 各スキルの具体的な実行結果や詳細な内部実装／Claude Codeプラグインの利用に必要な事前準備や環境設定の詳細
 
 
+## 10. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+
+**概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
+
+- 言語: 不明
+- 今週のスター: 4397
+- ライセンス: 不明
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。（根拠: Install）
+
+- プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。（根拠: Install）
+
+- Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。（根拠: Using with Cursor）
+
+
+### 利用例
+
+- Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。（README明記／根拠: The Solution）
+
+- Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。（README明記／根拠: Using with Cursor）
+
+
+### 最初に試すこと
+
+Claude Codeプラグインとしてガイドラインをインストールする
+
+1. /plugin marketplace add forrestchang/andrej-karpathy-skills
+
+2. /plugin install andrej-karpathy-skills@karpathy-skills
+
+
+成功の目安: プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること
+
+
+
+
 
 ## Zenn
 
+- [ISUCON2026 で優勝しました（当日編）](https://zenn.dev/luvtechno/articles/isucon2026-competition-day) — Yoshinori Kawasaki
+
+- [学部生3人でISUCON2026に出て、最後に証拠より常識を選んで負けた話](https://zenn.dev/enari_k/articles/b512e044ec9240) — enari_K
+
+- [AIが書く「読みづらいADR」に発狂しかけたので、ADRのガイドラインを作った](https://zenn.dev/tokium_dev/articles/adr-authoring-guideline) — にしこりさぶろ〜 | TOKIUM
+
+- [Snowflake: Optima Clustering による 1KB クラスタリングキーでの日本語フィルタの改善](https://zenn.dev/snowflakejp/articles/d907c02698d748) — indigo13love
+
+- [弊社がAIでPlaywrightテストコードを生成するために調整したこと](https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude) — ぬまさん
+
+- [ローカルLLMはどんな業務で使えるのか？ DGX Spark + DeepSeek V4-FlashのSlackチャットボットを評価した](https://zenn.dev/sompojapan_dx/articles/05f34316118943) — akira0g
+
+- [Agent DX 〜 AI時代にフレームワークHonoは必要か](https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1) — yusukebe
+
+- [ISUCON 2026 Writeup / チーム nicklegr](https://zenn.dev/nicklegr/articles/de0a6fd86b6ce3) — にっくる
+
+- [ISUCON2026 にツールを捨てて勝ちたかった](https://zenn.dev/mazrean/articles/5c968503fd69a3) — mazrean
+
+- [パフォーマンスチューニング経験ゼロ、事前準備ゼロでISUCON2026に出て、良い経験になった話](https://zenn.dev/go_furu93/articles/isucon2026-solo-retro-20261031-bc4f82) — sakopon
+
 - [ISUCON 2026 参加記](https://zenn.dev/catatsuy/articles/159edffe202c0c) — catatsuy
 
-- [ISUCON2026 本番に出た](https://zenn.dev/ntk221/articles/98b17a773669a1) — ntk
+- [日本の全法令を git の履歴にしてみた](https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git) — kohei
 
 - [3 人それぞれの Claude Code を Slack でつないで ISUCON2026 に参加した（207,039 点）](https://zenn.dev/kauche/articles/f3736c660aab77) — a-thug
 
 - [ISUCONに初めて出たら、直すたびに次のボトルネックが出てきて、超面白かった](https://zenn.dev/paraponera/articles/2026-10-31-isucon-2026-isureal) — 船長（せんちょう）
 
-- [ISUCON2026に人間1人＋AIエージェント軍団で出て19.6万点、ループは閉じたけど中身が弱かった反省文😇](https://zenn.dev/tak848/articles/20261031-isucon2026-writeup) — TAK848
-
 - [ペイントツール上でニューラルネットワークを動かす](https://zenn.dev/melville/articles/953aa2b41f674b) — Melville
 
-- [16GB RAM・6GB VRAM のノート PC で gpt-oss-20b とチャットする](https://zenn.dev/shozotanaka/articles/01877d688dfc65) — ShozoTanaka
+- [FlutterKaigi 2026 で生字幕を映像に載せて会場スクリーンに投影しました](https://zenn.dev/hiro_pon/articles/2f3b68ec60ddae) — hiropon
 
 - [【最速解説】goda.vimでHello, worldする](https://zenn.dev/comamoca/articles/2026-10-30-trying-hello-world-with-goda-vim) — こまもか🦊
 
 - [今後のセキュリティの考え方](https://zenn.dev/cscloud_blog/articles/a987163efae5d8) — nishikawa
 
-- [Cloudflare Workers を触ってみた](https://zenn.dev/atware/articles/ec1dfd799289b7) — Nishikawa
-
-- [yoroによろしくぅ！Ai Workforce 事業部のリモートコーディングエージェント環境 yoro のご紹介](https://zenn.dev/layerx/articles/a277f83a93d300) — ishiken
-
-- [WASIじゃない、もう一つのインターフェース「WALI」という提案](https://zenn.dev/progate/articles/wali-webassembly-linux-interface) — Godai Hori
-
-- [元フロントエンドエンジニアがプロダクトエンジニアとして強制成長した1年](https://zenn.dev/dress_code/articles/bbc5159fefbd2c) — もず
+- [プロダクトの情報を「浴びるように」見られる場所を作った話](https://zenn.dev/tokium_dev/articles/product-cockpit-for-product-teams) — taichiterada
 
 - [GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！](https://zenn.dev/progate/articles/24b1140180300c) — 横江（よこえ）
-
-- [いいから休め - Black October が終わる今、セキュリティエンジニアがやるべきこと](https://zenn.dev/nayuta/articles/aec9ab2e11a7b7) — nayuta
-
-- [Flutter やめました。電話アプリを Native にした理由](https://zenn.dev/ivry/articles/d155267331a3ca) — tsutou
-
-- [AIエージェントに設計書レビューを任せたらレビュワーは楽になった。でも現場は？？](https://zenn.dev/nttdata_tech/articles/6a06f484ebfab7) — kazuma sugiyama
-
-- [コードを読まずにマージするために必要なこと](https://zenn.dev/nrs/articles/c777388530aa84) — nrs
-
-- [学生2人で日本語音声LLMを作り、FT-LLM 2026 自由形タスクで1位を獲得した話](https://zenn.dev/ayutaso/articles/ftllm2026-ja-speech-llm) — Atotti
-
-- [最近の E2E 戦略（2026 年 10 月現在）](https://zenn.dev/polyco/articles/26624b38c951b5) — Tatsunori Nakano
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

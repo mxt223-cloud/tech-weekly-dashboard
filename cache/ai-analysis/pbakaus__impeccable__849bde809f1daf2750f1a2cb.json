@@ -1,0 +1,64 @@
+{
+  "summary_ja": "pbakaus/impeccableは、コーディングエージェントのためのデザイン語彙ツールです。デザインの調整、レビュー、AI生成のありふれた表現（スロップ）の検出をサポートします。",
+  "capabilities": [
+    {
+      "text": "デザインの方向性を調整するための24種類のコマンドを提供します。",
+      "evidence_section": "24 commands"
+    },
+    {
+      "text": "使い勝手のヒューリスティックに基づいてデザインをスコア化しレビューします。",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "決定的ルールを用いて、AI生成のありふれた表現や品質上の問題を検出します。",
+      "evidence_section": "Why"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "価格設定カードなどのデザインを特定の指示で調整する。",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "アクセシビリティやパフォーマンス、レスポンシブ動作を技術的に監査する。",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "ブラウザ上で要素を選択し、バリエーションを切り替えてライブで反復作業を行う。",
+      "basis": "README明記",
+      "evidence_section": "Live mode"
+    }
+  ],
+  "first_trial": {
+    "goal": "Impeccableをインストールして初期化する",
+    "steps": [
+      "npx impeccable install",
+      "コーディングツールをリロードする",
+      "エージェントで /impeccable init を実行する"
+    ],
+    "success_criteria": "プロジェクトにImpeccableが初期化され、PRODUCT.mdが作成されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "How it works",
+    "24 commands",
+    "Live mode",
+    "Three ways to run the detector",
+    "Installation",
+    "Project files and git",
+    "Good to know",
+    "Community",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な内部実装や商用利用における追加の制限事項"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "555fd9a67de957c750950e62bf1baad167f61b00",
+  "generated_at": "2026-11-03T12:00:39.139814+09:00"
+}
