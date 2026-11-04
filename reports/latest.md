@@ -1,6 +1,6 @@
-# Tech Daily — 2026-11-03
+# Tech Daily — 2026-11-04
 
-生成日時: 2026-11-03T12:00:42.809132+09:00  
+生成日時: 2026-11-04T10:35:41.757567+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
 
 - 言語: CSS
-- 今週のスター: 10517
+- 今週のスター: 8765
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -48,9 +48,9 @@ hallmarkをグローバルにインストールする
 **概要:** claude-memは、AIエージェントのセッション間で文脈を継続的に保持するための永続的メモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで圧縮して次回のセッションに反映させます。
 
 - 言語: TypeScript
-- 今週のスター: 7255
+- 今週のスター: 7995
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -82,14 +82,92 @@ Claude Code向けにclaude-memをインストールし、動作を確認する
 未確認: claude-memの無料トライアル終了後の自動切り替えにおける詳細な課金プランの仕様
 
 
-## 3. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+## 3. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+
+**概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
+
+- 言語: TypeScript
+- 今週のスター: 12542
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール（根拠: README冒頭）
+
+- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携（根拠: Installation）
+
+- コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能（根拠: Command line）
+
+
+### 利用例
+
+- スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する（README明記／根拠: README冒頭）
+
+- デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する（README明記／根拠: README冒頭）
+
+- インストールせずに一時的にコマンドを実行して動作を試す（README明記／根拠: Command line）
+
+
+### 最初に試すこと
+
+インストールせずに一時的にT3 Codeを試す
+
+1. npx t3@latest
+
+
+成功の目安: サーバーが起動し、ローカルのWebアプリが開くこと
+
+未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
+
+
+## 4. [obra/superpowers](https://github.com/obra/superpowers)
+
+**概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
+
+- 言語: Shell
+- 今週のスター: 5994
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- コードを書く前に意図や仕様を引き出すブレインストーミング機能（根拠: The Basic Workflow）
+
+- 仕様に基づいた詳細な実装計画の作成機能（根拠: The Basic Workflow）
+
+- テスト駆動開発（TDD）の強制とサブエージェントによる開発進行（根拠: The Basic Workflow）
+
+
+### 利用例
+
+- コーディングエージェントに自動で要件定義や設計を行わせる（README明記／根拠: How it works）
+
+- AIエージェントにテスト駆動開発を実施させて品質を保つ（README明記／根拠: The Basic Workflow）
+
+- 複数タスクをサブエージェントに自律的に処理させる（README明記／根拠: How it works）
+
+
+### 最初に試すこと
+
+Antigravity環境にSuperpowersプラグインをインストールする
+
+1. agy plugin install https://github.com/obra/superpowers
+
+
+成功の目安: プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること
+
+
+
+
+## 5. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
 **概要:** pbakaus/impeccableは、コーディングエージェントのためのデザイン語彙ツールです。デザインの調整、レビュー、AI生成のありふれた表現（スロップ）の検出をサポートします。
 
 - 言語: Rust
-- 今週のスター: 11754
+- 今週のスター: 11405
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -125,12 +203,12 @@ Impeccableをインストールして初期化する
 未確認: 詳細な内部実装や商用利用における追加の制限事項
 
 
-## 4. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
+## 6. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
 
 **概要:** Claude Code上で動作する無料のオープンソースSEOプラグインであり、技術的SEO、コンテンツの品質、構造化データ、AI検索（GEO）、ローカル・ECサイトのSEO監査を並行エージェントで実行し、優先順位付きの行動計画を提供します。
 
 - 言語: Python
-- 今週のスター: 4091
+- 今週のスター: 3751
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -170,90 +248,12 @@ Claude Code内でClaude SEOをセットアップし、ウェブサイトのフ�
 未確認: オプショナルな拡張機能（Live data、image-gen、seranking、profound、bing、unlighthouse）の具体的な導入手順やAPIキー設定の詳細／AI Marketing Hub Pro会員向けプライベートバージョンのすべての詳細な機能差異
 
 
-## 5. [obra/superpowers](https://github.com/obra/superpowers)
-
-**概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
-
-- 言語: Shell
-- 今週のスター: 5956
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- コードを書く前に意図や仕様を引き出すブレインストーミング機能（根拠: The Basic Workflow）
-
-- 仕様に基づいた詳細な実装計画の作成機能（根拠: The Basic Workflow）
-
-- テスト駆動開発（TDD）の強制とサブエージェントによる開発進行（根拠: The Basic Workflow）
-
-
-### 利用例
-
-- コーディングエージェントに自動で要件定義や設計を行わせる（README明記／根拠: How it works）
-
-- AIエージェントにテスト駆動開発を実施させて品質を保つ（README明記／根拠: The Basic Workflow）
-
-- 複数タスクをサブエージェントに自律的に処理させる（README明記／根拠: How it works）
-
-
-### 最初に試すこと
-
-Antigravity環境にSuperpowersプラグインをインストールする
-
-1. agy plugin install https://github.com/obra/superpowers
-
-
-成功の目安: プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること
-
-
-
-
-## 6. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
-
-**概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
-
-- 言語: TypeScript
-- 今週のスター: 9770
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール（根拠: README冒頭）
-
-- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携（根拠: Installation）
-
-- コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能（根拠: Command line）
-
-
-### 利用例
-
-- スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する（README明記／根拠: README冒頭）
-
-- デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する（README明記／根拠: README冒頭）
-
-- インストールせずに一時的にコマンドを実行して動作を試す（README明記／根拠: Command line）
-
-
-### 最初に試すこと
-
-インストールせずに一時的にT3 Codeを試す
-
-1. npx t3@latest
-
-
-成功の目安: サーバーが起動し、ローカルのWebアプリが開くこと
-
-未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
-
-
 ## 7. [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
 
 **概要:** ThinkRailは、コーディングエージェントpiを中心とした軽量かつリアルな統合開発環境（IDE）であり、isolated worktreeによる独立したワークスペースや、living specsによるプロジェクトの知識共有、再利用可能なスキルを活用した開発をサポートします。
 
 - 言語: TypeScript
-- 今週のスター: 4812
+- 今週のスター: 3898
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -289,43 +289,45 @@ ThinkRail CLIをインストールし、リポジトリを開いて起動する
 未確認: デスクトップアプリの具体的な内部処理の詳細／外部拡張機能が完全に実装された際の挙動の詳細
 
 
-## 8. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+## 8. [anthropics/skills](https://github.com/anthropics/skills)
 
-**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
+**概要:** anthropics/skillsは、Claudeに専門的なタスクを繰り返し実行させるためのスキル（指示、スクリプト、リソースのフォルダ）の実装例や仕様を提供するリポジトリです。
 
-- 言語: JavaScript
-- 今週のスター: 9155
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
+- 言語: Python
+- 今週のスター: 2969
+- ライセンス: 不明
+- AI分析状態: ok
 
 ### できること
 
-- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
+- Claudeが動的に読み込んで専門的なタスクのパフォーマンスを向上させるための、指示やスクリプトを含むスキルフォルダを提供する。（根拠: Skills）
 
-- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
+- Claude CodeのプラグインマーケットVPLACEとしてこのリポジトリを登録し、スキルをインストールして利用できる。（根拠: Claude Code）
 
-- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
+- SKILL.mdファイル内にYAMLフロントマターと指示、例、ガイドラインを記述して独自のカスタムスキルを作成できる。（根拠: Creating a Basic Skill）
 
 
 ### 利用例
 
-- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
+- 企業ブランドのガイドラインに沿ったドキュメントの作成や、固有のワークフローを用いたデータ分析を行う。（README明記／根拠: Skills）
 
-- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
+- PDFやdocx、pptx、xlsxなどのドキュメント作成・編集スキルを本番AIアプリケーションの参考として活用する。（README明記／根拠: About This Repository）
 
-- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
+- Claude Code上でプラグインをインストールし、PDFスキルなどを用いてPDFファイルからフォームフィールドを抽出する。（README明記／根拠: Claude Code）
 
 
 ### 最初に試すこと
 
-Skills CLIを使用してsecurity-auditスキルをインストールする
+Claude Codeでリポジトリをプラグインマーケットとして登録する
 
-1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
+1. Claude Codeを開く
+
+2. 以下のコマンドを実行する: /plugin marketplace add anthropics/skills
 
 
-成功の目安: スキルが正常にインストールされること
+成功の目安: リポジトリがClaude Codeのプラグインマーケットとして登録されること
 
-
+未確認: 各スキルの具体的な内部実装の詳細や、教育目的以外の利用における挙動の詳細
 
 
 ## 9. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
@@ -333,7 +335,7 @@ Skills CLIを使用してsecurity-auditスキルをインストールする
 **概要:** jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。
 
 - 言語: Markdown
-- 今週のスター: 1707
+- 今週のスター: 1761
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -372,7 +374,7 @@ skillsを追加する
 **概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
 
 - 言語: 不明
-- 今週のスター: 4397
+- 今週のスター: 3921
 - ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
@@ -409,43 +411,43 @@ Claude Codeプラグインとしてガイドラインをインストールする
 
 ## Zenn
 
+- [Radeon VIIとUbuntu 26.04でROCmを動かし、Flash-NextをOpenCodeにつないだ](https://zenn.dev/masanork/articles/radeon-vii-rocm-strata-opencode) — masanork
+
+- [(備忘録) お名前.comからRoute 53へドメイン移管し、お名前メールをさくらのメールボックスへ移す](https://zenn.dev/momura/articles/896dbde5e42491) — momura
+
+- [Aurora とDynamoDBとTimestreamとBigQueryを2400万レコードで性能比較してみた](https://zenn.dev/ncdc/articles/c47df2c1f32e0c) — むーさん
+
+- [ADRをregoでlintする](https://zenn.dev/babarot/articles/regomark-adr-checker) — babarot
+
+- [1 人チームでKiro CLI とISUCON2026に参加した記録：エージェントに任せたこと、任せきれなかったこと](https://zenn.dev/ndmxjp/articles/isucon2026-kiro-agent-ops) — Takumi Saito
+
+- [バイブコーディングで機能を継ぎ足していて見えてきたClaudeCodeの実装のクセ](https://zenn.dev/uguisu_blog/articles/45d1f446ece415) — ぴよ
+
+- [quench を管理者アカウントから卒業させる：シャットダウン専用の Windows アカウント svc-power](https://zenn.dev/ryuchama/articles/forge-svc-power-account) — ちゃま
+
+- [Human-out-of-the-loop(もどき)で戦うISUCON2026 (301,558 点 | 12 位)](https://zenn.dev/ponyo877/articles/2a8a24acc2ea3b) — ponyo877
+
 - [ISUCON2026 で優勝しました（当日編）](https://zenn.dev/luvtechno/articles/isucon2026-competition-day) — Yoshinori Kawasaki
 
 - [学部生3人でISUCON2026に出て、最後に証拠より常識を選んで負けた話](https://zenn.dev/enari_k/articles/b512e044ec9240) — enari_K
 
 - [AIが書く「読みづらいADR」に発狂しかけたので、ADRのガイドラインを作った](https://zenn.dev/tokium_dev/articles/adr-authoring-guideline) — にしこりさぶろ〜 | TOKIUM
 
-- [Snowflake: Optima Clustering による 1KB クラスタリングキーでの日本語フィルタの改善](https://zenn.dev/snowflakejp/articles/d907c02698d748) — indigo13love
-
 - [弊社がAIでPlaywrightテストコードを生成するために調整したこと](https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude) — ぬまさん
-
-- [ローカルLLMはどんな業務で使えるのか？ DGX Spark + DeepSeek V4-FlashのSlackチャットボットを評価した](https://zenn.dev/sompojapan_dx/articles/05f34316118943) — akira0g
 
 - [Agent DX 〜 AI時代にフレームワークHonoは必要か](https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1) — yusukebe
 
-- [ISUCON 2026 Writeup / チーム nicklegr](https://zenn.dev/nicklegr/articles/de0a6fd86b6ce3) — にっくる
-
 - [ISUCON2026 にツールを捨てて勝ちたかった](https://zenn.dev/mazrean/articles/5c968503fd69a3) — mazrean
-
-- [パフォーマンスチューニング経験ゼロ、事前準備ゼロでISUCON2026に出て、良い経験になった話](https://zenn.dev/go_furu93/articles/isucon2026-solo-retro-20261031-bc4f82) — sakopon
-
-- [ISUCON 2026 参加記](https://zenn.dev/catatsuy/articles/159edffe202c0c) — catatsuy
 
 - [日本の全法令を git の履歴にしてみた](https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git) — kohei
 
 - [3 人それぞれの Claude Code を Slack でつないで ISUCON2026 に参加した（207,039 点）](https://zenn.dev/kauche/articles/f3736c660aab77) — a-thug
 
-- [ISUCONに初めて出たら、直すたびに次のボトルネックが出てきて、超面白かった](https://zenn.dev/paraponera/articles/2026-10-31-isucon-2026-isureal) — 船長（せんちょう）
-
 - [ペイントツール上でニューラルネットワークを動かす](https://zenn.dev/melville/articles/953aa2b41f674b) — Melville
 
 - [FlutterKaigi 2026 で生字幕を映像に載せて会場スクリーンに投影しました](https://zenn.dev/hiro_pon/articles/2f3b68ec60ddae) — hiropon
 
-- [【最速解説】goda.vimでHello, worldする](https://zenn.dev/comamoca/articles/2026-10-30-trying-hello-world-with-goda-vim) — こまもか🦊
-
 - [今後のセキュリティの考え方](https://zenn.dev/cscloud_blog/articles/a987163efae5d8) — nishikawa
-
-- [プロダクトの情報を「浴びるように」見られる場所を作った話](https://zenn.dev/tokium_dev/articles/product-cockpit-for-product-teams) — taichiterada
 
 - [GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！](https://zenn.dev/progate/articles/24b1140180300c) — 横江（よこえ）
 

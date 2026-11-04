@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T12:00:42.809132+09:00",
-  "week": "2026-11-03",
+  "generated_at": "2026-11-04T10:35:41.757567+09:00",
+  "week": "2026-11-04",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars_total": 46097,
-      "forks_total": 2446,
-      "stars_period": 10517,
+      "stars_total": 47012,
+      "forks_total": 2487,
+      "stars_period": 8765,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-03T03:00:10Z",
-        "pushed_at": "2026-10-29T16:50:04Z",
-        "open_issues": 77,
+        "updated_at": "2026-11-04T01:31:44Z",
+        "pushed_at": "2026-11-03T09:01:00Z",
+        "open_issues": 71,
         "archived": false,
-        "size_kb": 233552,
+        "size_kb": 233574,
         "topics": []
       },
       "readme": {
@@ -90,17 +90,17 @@
       "url": "https://github.com/thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars_total": 110848,
-      "forks_total": 9663,
-      "stars_period": 7255,
+      "stars_total": 111941,
+      "forks_total": 9739,
+      "stars_period": 7995,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-03T03:00:28Z",
-        "pushed_at": "2026-11-03T01:49:06Z",
-        "open_issues": 126,
+        "updated_at": "2026-11-04T01:34:50Z",
+        "pushed_at": "2026-11-03T21:59:27Z",
+        "open_issues": 160,
         "archived": false,
-        "size_kb": 732264,
+        "size_kb": 768834,
         "topics": [
           "ai",
           "ai-agents",
@@ -179,28 +179,203 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "77bf508ecb41b0d09b445a60bf655ee8bac428b9",
         "generated_at": "2026-11-03T12:00:36.368543+09:00"
       }
     },
     {
       "rank": 3,
+      "full_name": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars_total": 44461,
+      "forks_total": 9258,
+      "stars_period": 12542,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-04T01:35:00Z",
+        "pushed_at": "2026-11-04T01:34:36Z",
+        "open_issues": 4662,
+        "archived": false,
+        "size_kb": 726195,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 5255,
+        "used_chars": 5254
+      },
+      "analysis": {
+        "summary_ja": "T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。",
+        "capabilities": [
+          {
+            "text": "モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携",
+            "evidence_section": "Installation"
+          },
+          {
+            "text": "コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能",
+            "evidence_section": "Command line"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "インストールせずに一時的にコマンドを実行して動作を試す",
+            "basis": "README明記",
+            "evidence_section": "Command line"
+          }
+        ],
+        "first_trial": {
+          "goal": "インストールせずに一時的にT3 Codeを試す",
+          "steps": [
+            "npx t3@latest"
+          ],
+          "success_criteria": "サーバーが起動し、ローカルのWebアプリが開くこと"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Installation",
+          "Command line",
+          "Desktop app"
+        ],
+        "unconfirmed": [
+          "詳細なエージェント連携時の内部動作やAPI仕様",
+          "コントリビューションの受け入れ条件の詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+        "generated_at": "2026-11-02T09:58:46.190507+09:00"
+      }
+    },
+    {
+      "rank": 4,
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_total": 311883,
+      "forks_total": 27739,
+      "stars_period": 5994,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-04T01:34:16Z",
+        "pushed_at": "2026-11-03T23:24:58Z",
+        "open_issues": 329,
+        "archived": false,
+        "size_kb": 8099,
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14835,
+        "used_chars": 14834
+      },
+      "analysis": {
+        "summary_ja": "Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。",
+        "capabilities": [
+          {
+            "text": "コードを書く前に意図や仕様を引き出すブレインストーミング機能",
+            "evidence_section": "The Basic Workflow"
+          },
+          {
+            "text": "仕様に基づいた詳細な実装計画の作成機能",
+            "evidence_section": "The Basic Workflow"
+          },
+          {
+            "text": "テスト駆動開発（TDD）の強制とサブエージェントによる開発進行",
+            "evidence_section": "The Basic Workflow"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "コーディングエージェントに自動で要件定義や設計を行わせる",
+            "basis": "README明記",
+            "evidence_section": "How it works"
+          },
+          {
+            "text": "AIエージェントにテスト駆動開発を実施させて品質を保つ",
+            "basis": "README明記",
+            "evidence_section": "The Basic Workflow"
+          },
+          {
+            "text": "複数タスクをサブエージェントに自律的に処理させる",
+            "basis": "README明記",
+            "evidence_section": "How it works"
+          }
+        ],
+        "first_trial": {
+          "goal": "Antigravity環境にSuperpowersプラグインをインストールする",
+          "steps": [
+            "agy plugin install https://github.com/obra/superpowers"
+          ],
+          "success_criteria": "プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること"
+        },
+        "evidence_sections": [
+          "How it works",
+          "Installation",
+          "The Basic Workflow",
+          "When Something Goes Wrong",
+          "What's Inside"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+        "generated_at": "2026-10-30T10:16:42.304363+09:00"
+      }
+    },
+    {
+      "rank": 5,
       "full_name": "pbakaus/impeccable",
       "url": "https://github.com/pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars_total": 100591,
-      "forks_total": 5942,
-      "stars_period": 11754,
+      "stars_total": 101568,
+      "forks_total": 5988,
+      "stars_period": 11405,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-03T03:00:30Z",
-        "pushed_at": "2026-11-02T22:39:39Z",
-        "open_issues": 63,
+        "updated_at": "2026-11-04T01:33:02Z",
+        "pushed_at": "2026-11-03T22:58:41Z",
+        "open_issues": 70,
         "archived": false,
-        "size_kb": 886659,
+        "size_kb": 895492,
         "topics": [
           "agent-skills",
           "ai",
@@ -277,26 +452,26 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "555fd9a67de957c750950e62bf1baad167f61b00",
         "generated_at": "2026-11-03T12:00:39.139814+09:00"
       }
     },
     {
-      "rank": 4,
+      "rank": 6,
       "full_name": "AgriciDaniel/claude-seo",
       "url": "https://github.com/AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars_total": 26025,
-      "forks_total": 3400,
-      "stars_period": 4091,
+      "stars_total": 26346,
+      "forks_total": 3433,
+      "stars_period": 3751,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-03T02:57:41Z",
+        "updated_at": "2026-11-04T01:28:50Z",
         "pushed_at": "2026-11-01T06:07:26Z",
-        "open_issues": 81,
+        "open_issues": 84,
         "archived": false,
         "size_kb": 6934,
         "topics": [
@@ -388,197 +563,22 @@
       }
     },
     {
-      "rank": 5,
-      "full_name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars_total": 311294,
-      "forks_total": 27698,
-      "stars_period": 5956,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-03T03:00:39Z",
-        "pushed_at": "2026-11-03T02:51:39Z",
-        "open_issues": 351,
-        "archived": false,
-        "size_kb": 8065,
-        "topics": [
-          "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 14835,
-        "used_chars": 14834
-      },
-      "analysis": {
-        "summary_ja": "Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。",
-        "capabilities": [
-          {
-            "text": "コードを書く前に意図や仕様を引き出すブレインストーミング機能",
-            "evidence_section": "The Basic Workflow"
-          },
-          {
-            "text": "仕様に基づいた詳細な実装計画の作成機能",
-            "evidence_section": "The Basic Workflow"
-          },
-          {
-            "text": "テスト駆動開発（TDD）の強制とサブエージェントによる開発進行",
-            "evidence_section": "The Basic Workflow"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "コーディングエージェントに自動で要件定義や設計を行わせる",
-            "basis": "README明記",
-            "evidence_section": "How it works"
-          },
-          {
-            "text": "AIエージェントにテスト駆動開発を実施させて品質を保つ",
-            "basis": "README明記",
-            "evidence_section": "The Basic Workflow"
-          },
-          {
-            "text": "複数タスクをサブエージェントに自律的に処理させる",
-            "basis": "README明記",
-            "evidence_section": "How it works"
-          }
-        ],
-        "first_trial": {
-          "goal": "Antigravity環境にSuperpowersプラグインをインストールする",
-          "steps": [
-            "agy plugin install https://github.com/obra/superpowers"
-          ],
-          "success_criteria": "プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること"
-        },
-        "evidence_sections": [
-          "How it works",
-          "Installation",
-          "The Basic Workflow",
-          "When Something Goes Wrong",
-          "What's Inside"
-        ],
-        "unconfirmed": [],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
-        "generated_at": "2026-10-30T10:16:42.304363+09:00"
-      }
-    },
-    {
-      "rank": 6,
-      "full_name": "pingdotgg/t3code",
-      "url": "https://github.com/pingdotgg/t3code",
-      "description": "",
-      "language": "TypeScript",
-      "stars_total": 42180,
-      "forks_total": 9118,
-      "stars_period": 9770,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-03T03:00:11Z",
-        "pushed_at": "2026-11-03T03:00:36Z",
-        "open_issues": 4391,
-        "archived": false,
-        "size_kb": 698120,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 5255,
-        "used_chars": 5254
-      },
-      "analysis": {
-        "summary_ja": "T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。",
-        "capabilities": [
-          {
-            "text": "モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携",
-            "evidence_section": "Installation"
-          },
-          {
-            "text": "コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能",
-            "evidence_section": "Command line"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "インストールせずに一時的にコマンドを実行して動作を試す",
-            "basis": "README明記",
-            "evidence_section": "Command line"
-          }
-        ],
-        "first_trial": {
-          "goal": "インストールせずに一時的にT3 Codeを試す",
-          "steps": [
-            "npx t3@latest"
-          ],
-          "success_criteria": "サーバーが起動し、ローカルのWebアプリが開くこと"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Installation",
-          "Command line",
-          "Desktop app"
-        ],
-        "unconfirmed": [
-          "詳細なエージェント連携時の内部動作やAPI仕様",
-          "コントリビューションの受け入れ条件の詳細"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
-        "generated_at": "2026-11-02T09:58:46.190507+09:00"
-      }
-    },
-    {
       "rank": 7,
       "full_name": "JetBrains/thinkrail",
       "url": "https://github.com/JetBrains/thinkrail",
       "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
       "language": "TypeScript",
-      "stars_total": 7198,
-      "forks_total": 421,
-      "stars_period": 4812,
+      "stars_total": 7423,
+      "forks_total": 442,
+      "stars_period": 3898,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-03T03:00:22Z",
-        "pushed_at": "2026-11-02T16:45:53Z",
-        "open_issues": 343,
+        "updated_at": "2026-11-04T01:34:45Z",
+        "pushed_at": "2026-11-04T00:31:39Z",
+        "open_issues": 362,
         "archived": false,
-        "size_kb": 74908,
+        "size_kb": 76065,
         "topics": [
           "agent",
           "agent-skills",
@@ -668,85 +668,88 @@
     },
     {
       "rank": 8,
-      "full_name": "cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars_total": 57486,
-      "forks_total": 3735,
-      "stars_period": 9155,
+      "full_name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars_total": 187123,
+      "forks_total": 22086,
+      "stars_period": 2969,
       "api": {
         "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-03T02:59:40Z",
-        "pushed_at": "2026-09-14T19:29:02Z",
-        "open_issues": 111,
+        "license": null,
+        "updated_at": "2026-11-04T01:35:24Z",
+        "pushed_at": "2026-10-28T19:20:39Z",
+        "open_issues": 1467,
         "archived": false,
-        "size_kb": 143,
-        "topics": []
+        "size_kb": 5488,
+        "topics": [
+          "agent-skills"
+        ]
       },
       "readme": {
         "status": "ok",
-        "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "sha": "eb54ee8b92f2d40b4b26569be0772be3c1e23156",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 6946,
-        "used_chars": 6945
+        "original_chars": 5552,
+        "used_chars": 5551
       },
       "analysis": {
-        "summary_ja": "cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。",
+        "summary_ja": "anthropics/skillsは、Claudeに専門的なタスクを繰り返し実行させるためのスキル（指示、スクリプト、リソースのフォルダ）の実装例や仕様を提供するリポジトリです。",
         "capabilities": [
           {
-            "text": "6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。",
-            "evidence_section": "What it does"
+            "text": "Claudeが動的に読み込んで専門的なタスクのパフォーマンスを向上させるための、指示やスクリプトを含むスキルフォルダを提供する。",
+            "evidence_section": "Skills"
           },
           {
-            "text": "findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。",
-            "evidence_section": "Files"
+            "text": "Claude CodeのプラグインマーケットVPLACEとしてこのリポジトリを登録し、スキルをインストールして利用できる。",
+            "evidence_section": "Claude Code"
           },
           {
-            "text": "同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。",
-            "evidence_section": "What it does"
+            "text": "SKILL.mdファイル内にYAMLフロントマターと指示、例、ガイドラインを記述して独自のカスタムスキルを作成できる。",
+            "evidence_section": "Creating a Basic Skill"
           }
         ],
         "use_cases": [
           {
-            "text": "コードベース全体のセキュリティ監査をエージェントに実行させる。",
+            "text": "企業ブランドのガイドラインに沿ったドキュメントの作成や、固有のワークフローを用いたデータ分析を行う。",
             "basis": "README明記",
-            "evidence_section": "Usage"
+            "evidence_section": "Skills"
           },
           {
-            "text": "指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。",
+            "text": "PDFやdocx、pptx、xlsxなどのドキュメント作成・編集スキルを本番AIアプリケーションの参考として活用する。",
             "basis": "README明記",
-            "evidence_section": "Usage"
+            "evidence_section": "About This Repository"
           },
           {
-            "text": "セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。",
+            "text": "Claude Code上でプラグインをインストールし、PDFスキルなどを用いてPDFファイルからフォームフィールドを抽出する。",
             "basis": "README明記",
-            "evidence_section": "Usage"
+            "evidence_section": "Claude Code"
           }
         ],
         "first_trial": {
-          "goal": "Skills CLIを使用してsecurity-auditスキルをインストールする",
+          "goal": "Claude Codeでリポジトリをプラグインマーケットとして登録する",
           "steps": [
-            "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
+            "Claude Codeを開く",
+            "以下のコマンドを実行する: /plugin marketplace add anthropics/skills"
           ],
-          "success_criteria": "スキルが正常にインストールされること"
+          "success_criteria": "リポジトリがClaude Codeのプラグインマーケットとして登録されること"
         },
         "evidence_sections": [
-          "What it does",
-          "Files",
-          "Installation",
-          "Usage",
-          "Requirements",
-          "Design principles"
+          "Skills",
+          "About This Repository",
+          "Claude Code",
+          "Creating a Basic Skill"
         ],
-        "unconfirmed": [],
+        "unconfirmed": [
+          "各スキルの具体的な内部実装の詳細や、教育目的以外の利用における挙動の詳細"
+        ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
-        "generated_at": "2026-09-26T09:03:01.890303+09:00"
+        "cached": false,
+        "readme_sha": "eb54ee8b92f2d40b4b26569be0772be3c1e23156",
+        "generated_at": "2026-11-04T10:35:40.118541+09:00"
       }
     },
     {
@@ -755,13 +758,13 @@
       "url": "https://github.com/jakubkrehel/skills",
       "description": "A collection of agent skills that help you build great interfaces.",
       "language": "Markdown",
-      "stars_total": 10389,
-      "forks_total": 401,
-      "stars_period": 1707,
+      "stars_total": 10625,
+      "forks_total": 409,
+      "stars_period": 1761,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-03T02:54:27Z",
+        "updated_at": "2026-11-04T01:31:59Z",
         "pushed_at": "2026-11-02T01:29:43Z",
         "open_issues": 11,
         "archived": false,
@@ -839,13 +842,13 @@
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "不明",
-      "stars_total": 228588,
-      "forks_total": 22789,
-      "stars_period": 4397,
+      "stars_total": 229110,
+      "forks_total": 22833,
+      "stars_period": 3921,
       "api": {
         "default_branch": "main",
         "license": null,
-        "updated_at": "2026-11-03T03:00:37Z",
+        "updated_at": "2026-11-04T01:33:35Z",
         "pushed_at": "2026-04-20T10:05:04Z",
         "open_issues": 137,
         "archived": false,
@@ -920,11 +923,67 @@
   ],
   "zenn": [
     {
+      "title": "Radeon VIIとUbuntu 26.04でROCmを動かし、Flash-NextをOpenCodeにつないだ",
+      "url": "https://zenn.dev/masanork/articles/radeon-vii-rocm-strata-opencode",
+      "author": "masanork",
+      "published": "Tue, 03 Nov 2026 14:15:49 GMT",
+      "summary": "5年ほど前に組んだデスクトップがある。当時、GPUにはすでに型落ちだったRadeon VIIを5万円くらいで入手して載せた。Stable Diffusionで遊んでいた時期もあったが、飽きてからはすっかり出番がなくなっていた。\n最近はローカルLLMが盛り上がっている。とはいえ、パソコンもGPUもクソ高い。新しいGPUを買う前に、あまり期待せず、久しぶりにこのデスクトップに火を入れて環境を組み直してみることにした。\n気になったのは、Radeon VIIのROCm公式サポートが切"
+    },
+    {
+      "title": "(備忘録) お名前.comからRoute 53へドメイン移管し、お名前メールをさくらのメールボックスへ移す",
+      "url": "https://zenn.dev/momura/articles/896dbde5e42491",
+      "author": "momura",
+      "published": "Tue, 03 Nov 2026 09:56:38 GMT",
+      "summary": "はじめに\n個人で利用している独自ドメインの管理をお名前.com → Route 53 に移し、お名前メールもやめた。その作業の備忘録。\n\nDNS とドメインの登録を Route 53 に移す流れ\nメールの移行先の選定（WorkMail は終了予定）\nRoute 53 のレコード名に @ と入れてメールが届かなくなった件\n\nドメイン名やサーバー名は example.com などに置き換えている。\n\n 前提と構成\n\n\n\n項目\n移行前\n移行後\n\n\n\n\nレジストラ\nお名前.com\nA"
+    },
+    {
+      "title": "Aurora とDynamoDBとTimestreamとBigQueryを2400万レコードで性能比較してみた",
+      "url": "https://zenn.dev/ncdc/articles/c47df2c1f32e0c",
+      "author": "むーさん",
+      "published": "Tue, 03 Nov 2026 09:39:55 GMT",
+      "summary": "はじめに\n私が働いているNCDCでは、年に1回会社でハッカソンをやっています。\n興味ある技術を使って、なんか作るみたいなイベントです。\n私はDBに最近興味を持っているので、DBの性能を比較するWEBアプリを構築しました。\nそこで得た知見をこの記事に残したいと思います。\nこの記事は、ベンチマーク記事というより、性能を比較しようとして気づいたことをまとめたものです。\nフェアな比較の難しさも、あわせて書いています。\n数値は、私が組んだ条件での参考値として読んでください。\n\n シナリ"
+    },
+    {
+      "title": "ADRをregoでlintする",
+      "url": "https://zenn.dev/babarot/articles/regomark-adr-checker",
+      "author": "babarot",
+      "published": "Tue, 03 Nov 2026 07:59:33 GMT",
+      "summary": "AIが書くADRのフォーマットをどう揃えるか\n自分のリポジトリでは、設計の決定を ADR（Architecture Decision Records）として docs/adr/ に残している。最近は、その ADR の多くを Claude Code に書いてもらっている。決定を相談して、「これを ADR にしておいて」と頼むと書いてくれる。\nただ、AI に書かせた ADR は、少しずつ自由になっていく。テンプレートを置いて書き方を指示していても、ずれるときはずれる。たとえば、\n"
+    },
+    {
+      "title": "1 人チームでKiro CLI とISUCON2026に参加した記録：エージェントに任せたこと、任せきれなかったこと",
+      "url": "https://zenn.dev/ndmxjp/articles/isucon2026-kiro-agent-ops",
+      "author": "Takumi Saito",
+      "published": "Tue, 03 Nov 2026 06:33:45 GMT",
+      "summary": "はじめに\nこんにちは！ AWSでソリューションアーキテクトをしている齋藤 拓巳です。\n2026 年 10 月 31 日のISUCON2026に、1 人チーム「takumi_」で参加しました。作業のほとんどは手元の Kiro CLI に任せ、最終スコアは 109,240 点、順位は 149 位でした。\n8 時間で試した変更は 42 個です。ただ、優勝の 625,857 点とは約 5.7 倍の差があり、「こうすれば勝てる」と言える結果ではありません。この記事は、作業のほとんどをエ"
+    },
+    {
+      "title": "バイブコーディングで機能を継ぎ足していて見えてきたClaudeCodeの実装のクセ",
+      "url": "https://zenn.dev/uguisu_blog/articles/45d1f446ece415",
+      "author": "ぴよ",
+      "published": "Tue, 03 Nov 2026 03:30:05 GMT",
+      "summary": "「業務フローがよくわからないんだよね」という状態でも、チャラくバイブコーディングで自力でシステムが作れる時代が来ました。特にエンジニアは、アイディアをすぐに形にできます。普段からClaude CodeなどのAIエージェントに慣れ親しんでいれば、バイブコーディングのハードルは数ミリ程度まで下がっています。その結果、要件定義できるほどの解像度はない、できてからいろいろ意見はしたい、でも人の介在は最小限にしたい、という ガチのシステム屋さんに言ったら殴られそうな 要望を持つことも多"
+    },
+    {
+      "title": "quench を管理者アカウントから卒業させる：シャットダウン専用の Windows アカウント svc-power",
+      "url": "https://zenn.dev/ryuchama/articles/forge-svc-power-account",
+      "author": "ちゃま",
+      "published": "Tue, 03 Nov 2026 02:25:50 GMT",
+      "summary": "はじめに\n前回の記事で、ラズパイから Windows PC をシャットダウンするコマンド quench を作りました。quench foo と打てば、確認を挟んで SSH で shutdown を送り、PC が止まるまで待ってくれます。\nただ、前回の記事の最後にも書いたとおり、今の quench は Windows の管理者アカウントで SSH しています。ラズパイに置いてあるこの秘密鍵があれば、シャットダウンどころか、ソフトのインストールもファイルの削除も、何でもできてしま"
+    },
+    {
+      "title": "Human-out-of-the-loop(もどき)で戦うISUCON2026 (301,558 点 | 12 位)",
+      "url": "https://zenn.dev/ponyo877/articles/2a8a24acc2ea3b",
+      "author": "ponyo877",
+      "published": "Mon, 02 Nov 2026 14:52:35 GMT",
+      "summary": "ISUCON2026に応援とちょっかい出しの二人とClaude Code(Opus 5.5+Fable 5.1)のチームで参加しました。\n結果は 301,558 点で856 チーム中 12 位でした 🎉\n\nISUCONとは与えられたWebアプリを8時間でどこまで速くできるかを競うコンテストです。\n運営が用意したベンチマーカーを走らせるとスコアが出ます、楽しいです。\n今回は人間は方針を伝えるだけにしてコードの修正からデプロイ、ベンチ、結果の判断、記録までをエージェントに任せてみ"
+    },
+    {
       "title": "ISUCON2026 で優勝しました（当日編）",
       "url": "https://zenn.dev/luvtechno/articles/isucon2026-competition-day",
       "author": "Yoshinori Kawasaki",
       "published": "Mon, 02 Nov 2026 13:26:09 GMT",
-      "summary": "はじめに\nこんにちは！ @kawasy です。普段は Typing Bears という人間1人の会社で個人開発・研究をしながら、スタートアップを中心に経営課題の解決を支援しています。活動の主なテーマは、ソフトウェアプロダクト開発企業に必要なCTO機能の提供と育成です。\nISUCON2026 にチーム Typing Bears として1人で参加し、最終スコア 625,857 点で優勝しました。ISUCON への参加は10年ぶりです。\n今回は、完全自律で動作する、HOOTL (H"
+      "summary": "はじめに\nこんにちは！ @kawasy です。普段は Typing Bears という人間1人の会社で個人開発・研究をしながら、スタートアップを中心に経営課題の解決を支援しています。活動の主なテーマは、ソフトウェアプロダクト開発企業に必要なCTO機能の提供と育成です。\nISUCON2026 にチーム Typing Bears として1人で参加し、最終スコア 625,857 点で優勝しました。ISUCON への参加は10年ぶりです。\n今回は、完全自律で動作する、HOOTL（Hu"
     },
     {
       "title": "学部生3人でISUCON2026に出て、最後に証拠より常識を選んで負けた話",
@@ -941,25 +1000,11 @@
       "summary": "はじめに\nみなさん、ADR（Architecture Decision Record）は書いていますでしょうか？\nAIを使ったソフトウェア開発において「意思決定の記録を残す」ことの重要性は、今や多くのエンジニアに周知されているかと思います。\n僕が率いるチームにおいても、プロジェクト開始初期から様々な技術的な意思決定をADRに記録し、運用してきました。最近では、ADRのドラフト作成もAIに任せるようになっています。\nところが、ADRを書くルールを整備しないままAIに書かせている"
     },
     {
-      "title": "Snowflake: Optima Clustering による 1KB クラスタリングキーでの日本語フィルタの改善",
-      "url": "https://zenn.dev/snowflakejp/articles/d907c02698d748",
-      "author": "indigo13love",
-      "published": "Mon, 02 Nov 2026 04:03:34 GMT",
-      "summary": "!\nDisclaimer: 筆者は Snowflake で Principal Performance Engineer として働いていますが、この記事は公式の見解ではなく、あくまでも個人的な内容になります。\n\n\n Intro\n2026 年 10 月頃に Optima Clustering がすべてのアカウントで有効化されました。\nhttps://www.snowflake.com/en/blog/engineering/introducing-snowflake-optim"
-    },
-    {
       "title": "弊社がAIでPlaywrightテストコードを生成するために調整したこと",
       "url": "https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude",
       "author": "ぬまさん",
       "published": "Mon, 02 Nov 2026 02:58:52 GMT",
       "summary": "こんにちは！CastingONEの大沼です。\n\n 始めに\n弊社では毎回のQA期間で行うテスト工数を減らすために、Playwrightを使った自動テストを導入しました。テストコードはAIで生成したものを使っていましたが、最初は品質が悪く色々調整する必要があったため、この辺について備忘録としてまとめました。\n\n AIが生成したコードで微妙だった点と対策\nどういったルールが必要なのか僕も分からなかったので一旦AIに色々書かせてみて、ここは調整した方が良いなと思ったのをいくつか紹介し"
-    },
-    {
-      "title": "ローカルLLMはどんな業務で使えるのか？ DGX Spark + DeepSeek V4-FlashのSlackチャットボットを評価した",
-      "url": "https://zenn.dev/sompojapan_dx/articles/05f34316118943",
-      "author": "akira0g",
-      "published": "Mon, 02 Nov 2026 00:06:09 GMT",
-      "summary": "はじめに\n損害保険ジャパンでAIエージェントシステムを開発しているエンジニアです。\nローカルLLMが実際の業務でどこまで使えるかを検証するため、Slackボットの頭脳をクラウドのAPIではなく手元のマシン1台で完結させる構成を組み、評価してみました。\n今回ローカルLLMを検証した背景には、社内の会話やドキュメントを扱う上で社外APIに出さない選択肢を持っておきたかったこと、そして検証用に手配したDGX Sparkが手元にあったという事情があります。\n環境としては、DGX Sp"
     },
     {
       "title": "Agent DX 〜 AI時代にフレームワークHonoは必要か",
@@ -969,32 +1014,11 @@
       "summary": "AIがユーザーになりました。我々は人間向けの開発者ではなく、AI向けの開発者体験を考えなくてはいけません。\n我々は人間です。雰囲気で「フレームワークは必要ない」「フレームワークは必要」と言っても、AIの意見ではありません。人間の意見です。説得力がありません。我々人間はAIのことをもっと知らなくてはいけません。\nそこで、Honoでは「Agent DX」というプロジェクトを立ち上げて、AI向けの開発者体験をちゃんと測りました。以下3つのカンファレンスでAgent DXについて話し"
     },
     {
-      "title": "ISUCON 2026 Writeup / チーム nicklegr",
-      "url": "https://zenn.dev/nicklegr/articles/de0a6fd86b6ce3",
-      "author": "にっくる",
-      "published": "Sun, 01 Nov 2026 12:20:12 GMT",
-      "summary": "ISUCON2026 に参加しました。初参加・1人チームです。\n結果は19890点で513位でした。\nプロの方のブログが多数出てるので高度な話を読みたい方はそちらをどうぞ。\n初心者の立場の記事もあるといいかなと思って書いてみます。\n\n 筆者のスキル\n\nVPSや自宅サーバをSSHでいじったことはある\n\nでもほぼDockerなのでLinuxの深い部分は知らない\n\n\nWebアプリはいくつか作ったことがある\nDBは使ったことがある。負荷に困ったことはない\n\n重いとこにインデックス張っ"
-    },
-    {
       "title": "ISUCON2026 にツールを捨てて勝ちたかった",
       "url": "https://zenn.dev/mazrean/articles/5c968503fd69a3",
       "author": "mazrean",
       "published": "Sun, 01 Nov 2026 12:16:33 GMT",
       "summary": "ISUCON2026 に INUCON2026(いい感じに猫を動かすコンテスト ニャオニャム)として参加したのでその参加記です。\n最終スコアは 198,146、順位としては 40~50 位あたりになりそうです。\nISUCON には ISUCON 9 から参加していて、ISUCON 12 からは「誰でも ISUCON 優勝クラスのチューニングができる」ようにできないかと思い、ツールの力で勝とうと 1人チームで参加していました。\nhttps://trap.jp/post/2434"
-    },
-    {
-      "title": "パフォーマンスチューニング経験ゼロ、事前準備ゼロでISUCON2026に出て、良い経験になった話",
-      "url": "https://zenn.dev/go_furu93/articles/isucon2026-solo-retro-20261031-bc4f82",
-      "author": "sakopon",
-      "published": "Sun, 01 Nov 2026 04:39:46 GMT",
-      "summary": "こんにちは、三つ子育児系エンジニアのsakoponです！\n2026年10月31日に開催されたISUCON2026に、ソロで出場しました🏃\n今回はそのイベントでの感想を記事にしました。\nISUCONとは、お題のWebアプリを制限時間内にどこまで速くできるかを競うチューニングコンテストです。\n私はパフォーマンスチューニングの経験がありません。事前準備もろくにできず、当日もほとんどの部分をAIに頼りました。最終スコアは25717です。\nそれでも、参加してよかったと思っています。\n\n"
-    },
-    {
-      "title": "ISUCON 2026 参加記",
-      "url": "https://zenn.dev/catatsuy/articles/159edffe202c0c",
-      "author": "catatsuy",
-      "published": "Sun, 01 Nov 2026 03:40:42 GMT",
-      "summary": "ChatGPTにGitHubのログをまとめてもらいました。\n最終スコアは26000点台くらいで、完全敗北でした。repoはこちらです。\nhttps://github.com/catatsuy/isu2026\n\n はじめに\n今回はAIを活用することを前提として、1人でISUCONに参加しました。\n事前にAIに作業してもらうための準備をしておき、当日はCodexなどを使いながら最適化を進めました。自分は主に方針決定、ベンチマーク、ログの分析、デプロイを担当する形です。\n\n 10時"
     },
     {
       "title": "日本の全法令を git の履歴にしてみた",
@@ -1011,13 +1035,6 @@
       "summary": "この記事の下書きは、メンバーの 1 人が使っていた Claude Code が、当日の Slack、リポジトリ、Google Meet の自動メモをもとに作りました。そのメンバーが加筆と修正をしています。\n\n3 人のチーム「いくぜカウシェ」で ISUCON2026 に参加しました。最終スコアは 207,039 点です。\n各メンバーが自分の PC で Claude Code を動かし、調査からデプロイ、ベンチマークの実行までを任せました。エージェントどうしは会話の履歴を共有して"
     },
     {
-      "title": "ISUCONに初めて出たら、直すたびに次のボトルネックが出てきて、超面白かった",
-      "url": "https://zenn.dev/paraponera/articles/2026-10-31-isucon-2026-isureal",
-      "author": "船長（せんちょう）",
-      "published": "Sat, 31 Oct 2026 12:17:24 GMT",
-      "summary": "はじめに\n船長（せんちょう）と申します。\n2年ぶりに開催された ISUCON 2026 に、初めて出てきました。\n実務でパフォーマンスチューニングをやった経験はほぼないです。前職で Datadog を眺めて、エラーが起きたらログを追って解消する、くらい。インフラとバックエンドも、まあちょっと触ったことはあるよ、という程度でした。\nそれでも出ようと思ったのは、裏側をまるっと全部直そうぜ、というのが単純にめっちゃ面白そうだったからです。\nそれと、同じ問題を解いた強い人たちが、終わ"
-    },
-    {
       "title": "ペイントツール上でニューラルネットワークを動かす",
       "url": "https://zenn.dev/melville/articles/953aa2b41f674b",
       "author": "Melville",
@@ -1032,25 +1049,11 @@
       "summary": "自動翻訳字幕\n\n取り急ぎ、問い合わせが多かったので書きました。不足分は徐々にアップデートします。\nFlutterKaigi 2026（2026-10-29・30）では、登壇者の話をその場で文字起こし・翻訳して、スライドとカメラを合成した映像に字幕として焼き込みました。英語のセッションには日本語の字幕、日本語のセッションには英語の字幕が出ます。\n実際の字幕はこちらからご確認いただけます。\nこの記事では、各部屋に 1 台置いて、合成と字幕の焼き込みをした「合成 Mac」を紹介しま"
     },
     {
-      "title": "【最速解説】goda.vimでHello, worldする",
-      "url": "https://zenn.dev/comamoca/articles/2026-10-30-trying-hello-world-with-goda-vim",
-      "author": "こまもか🦊",
-      "published": "Sat, 31 Oct 2026 01:57:43 GMT",
-      "summary": "トリックオアトリート！\nお菓子をくれなきゃあなたを今後Vim/Neovim/Emacsしか使えない体にします。こまもかです。\n今週から一段と冷えこんできたこの頃ですが、こんな寒い季節は家に籠ってdotfilesを整備するのが相場と決まっています。\nという訳で、Shougoさんの新作goda.vimを使ってHello, worldする方法を解説していきます。\ngoda.vimを簡単に解説すると、GoでVim pluginを書けるようにするというものです。\nDenoでVim pl"
-    },
-    {
       "title": "今後のセキュリティの考え方",
       "url": "https://zenn.dev/cscloud_blog/articles/a987163efae5d8",
       "author": "nishikawa",
       "published": "Fri, 30 Oct 2026 10:30:27 GMT",
       "summary": "どうもサイバーセキュリティクラウド 脅威インテリジェンスグループの西川です。\n本日のウェビナー（【緊急開催セミナー】重大脆弱性を狙うサイバー攻撃への備え ～パッチ適用までのリスクを低減する「仮想パッチ」とは～）にお越しくださった皆様ありがとうございます。\n当日は時間の関係でお伝えしきれなかった、今後のセキュリティの考え方について、改めて書いてみます。\n特に AWS 環境の話をしていきますが、すべての環境において共通です。\n\n アタックサーフェスや管理面を減らす\n管理面を減らす"
-    },
-    {
-      "title": "プロダクトの情報を「浴びるように」見られる場所を作った話",
-      "url": "https://zenn.dev/tokium_dev/articles/product-cockpit-for-product-teams",
-      "author": "taichiterada",
-      "published": "Fri, 30 Oct 2026 08:18:26 GMT",
-      "summary": "はじめに\nプロダクト本部の寺田です。複数のプロダクトを担当する開発部門で、部長をしています。\nこの数ヶ月、プロダクトの状況を一画面に集める仕組みを作って、部のメンバーに共有し始めました。社内では「コックピット」と呼んでいます。\n情報を集めたダッシュボードの話は、世の中にもうたくさんあります。なのでこの記事では、つくりの話は少しにして、部長として何を思ってこれを作ったのか、一緒に働くPdMたちとこれを使ってどう話したいのかを中心に書きます。\n\n PdMの視界は、開発に寄りやすい"
     },
     {
       "title": "GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！",
@@ -1065,7 +1068,7 @@
     "claude",
     "code",
     "llm",
-    "codex",
+    "opencode",
     "google"
   ],
   "ai_analysis": {
