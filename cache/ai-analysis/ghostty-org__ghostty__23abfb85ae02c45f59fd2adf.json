@@ -1,0 +1,54 @@
+{
+  "summary_ja": "Ghosttyは、高速で機能豊富、かつプラットフォームネイティブなUIとGPUアクセラレーションを備えたクロスプラットフォームのターミナルエミュレータです。",
+  "capabilities": [
+    {
+      "text": "マルチウィンドウ、タブ、ペイン分割などの豊富なウィンドウ管理機能を提供します。",
+      "evidence_section": "Roadmap and Status"
+    },
+    {
+      "text": "macOSではSwiftUIとMetal、LinuxではGTKを使用し、各プラットフォームに深く統合されたネイティブな操作性を提供します。",
+      "evidence_section": "Roadmap and Status"
+    },
+    {
+      "text": "CおよびZig向けのクロスプラットフォームライブラリ「libghostty」を提供し、他のアプリケーションへのターミナルの埋め込みが可能です。",
+      "evidence_section": "About"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日常的な作業において、高速でカスタマイズ性の高い高機能なターミナルエミュレータとして利用する。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    },
+    {
+      "text": "サードパーティ製アプリケーションや独自のプロジェクトにターミナル機能を埋め込む。",
+      "basis": "README明記",
+      "evidence_section": "About"
+    }
+  ],
+  "first_trial": {
+    "goal": "クラッシュレポート一覧の取得",
+    "steps": [
+      "Ghosttyを起動する",
+      "CLIコマンド「ghostty +crash-report」を実行する"
+    ],
+    "success_criteria": "利用可能なクラッシュレポートの一覧が表示されること"
+  },
+  "evidence_sections": [
+    "About",
+    "Download",
+    "Documentation",
+    "Contributing and Developing",
+    "Roadmap and Status",
+    "Crash Reports"
+  ],
+  "unconfirmed": [
+    "インストール手順の具体的なコマンドライン例",
+    "ソースコードからの具体的なビルド手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1ad60391cecaab1f28d06f493bed304b636f527f",
+  "generated_at": "2026-11-05T10:42:32.393980+09:00"
+}

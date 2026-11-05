@@ -1,15 +1,52 @@
-# Tech Daily — 2026-11-04
+# Tech Daily — 2026-11-05
 
-生成日時: 2026-11-04T10:35:41.757567+09:00  
+生成日時: 2026-11-05T10:42:32.617851+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
-## 1. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
+## 1. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+
+**概要:** claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。エージェントのセッション中の活動を自動でキャプチャし、AIで要約したうえで将来のセッションに適切なコンテキストを注入します。
+
+- 言語: TypeScript
+- 今週のスター: 8822
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- セッション間でコンテキストを自動保存し、AIエージェントが過去の知識やプロジェクトの連続性を維持できるようにする。（根拠: README冒頭）
+
+- MCP検索ツールを活用した効率的なメモリ検索やタイムライン確認を提供する。（根拠: MCP Search Tools）
+
+- 複数のワークフローモードや言語設定に対応し、観測結果や要約を指定した言語で記述できる。（根拠: Mode & Language Configuration）
+
+
+### 利用例
+
+- AIエージェントの過去のセッションの作業内容や決定事項を次のセッションに引き継ぎたいとき（README明記／根拠: README冒頭）
+
+- 自然言語クエリを使用して過去のプロジェクト履歴やバグ修正の記録を検索したいとき（README明記／根拠: MCP Search Tools）
+
+
+### 最初に試すこと
+
+claude-memをインストールする
+
+1. npx claude-mem installを実行する
+
+
+成功の目安: インストーラーが正常にセットアップを完了し、サインインやプロバイダーの選択が行えること
+
+
+
+
+## 2. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
 
 **概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
 
 - 言語: CSS
-- 今週のスター: 8765
+- 今週のスター: 7622
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -43,51 +80,12 @@ hallmarkをグローバルにインストールする
 
 
 
-## 2. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
-
-**概要:** claude-memは、AIエージェントのセッション間で文脈を継続的に保持するための永続的メモリ圧縮システムです。セッション中のエージェントの動作をキャプチャし、AIで圧縮して次回のセッションに反映させます。
-
-- 言語: TypeScript
-- 今週のスター: 7995
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- セッション間でコンテキストを自動的に保持し、再接続後もプロジェクトの知識を維持する（根拠: README冒頭）
-
-- トークン効率の良い3階層のワークフロー（search、timeline、get_observations）によるメモリ検索機能（根拠: MCP Search Tools）
-
-- SQLiteデータベースとChromaベクトルデータベースによるハイブリッド検索（根拠: Documentation）
-
-
-### 利用例
-
-- Claude CodeなどのAIエージェントのセッションが終了または再接続した後も、過去の作業コンテキストを引き継いで開発を継続する（README明記／根拠: README冒頭）
-
-- 自然言語やキーワードを使ってプロジェクトの履歴や過去のバグ修正情報を検索する（README明記／根拠: MCP Search Tools）
-
-
-### 最初に試すこと
-
-Claude Code向けにclaude-memをインストールし、動作を確認する
-
-1. npx claude-mem install を実行する
-
-2. Claude Codeを再起動する
-
-
-成功の目安: 新規セッションで過去のセッションのコンテキストが自動的に表示されること
-
-未確認: claude-memの無料トライアル終了後の自動切り替えにおける詳細な課金プランの仕様
-
-
 ## 3. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
 
 **概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
 
 - 言語: TypeScript
-- 今週のスター: 12542
+- 今週のスター: 14580
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -121,51 +119,12 @@ Claude Code向けにclaude-memをインストールし、動作を確認する
 未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
 
 
-## 4. [obra/superpowers](https://github.com/obra/superpowers)
-
-**概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
-
-- 言語: Shell
-- 今週のスター: 5994
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- コードを書く前に意図や仕様を引き出すブレインストーミング機能（根拠: The Basic Workflow）
-
-- 仕様に基づいた詳細な実装計画の作成機能（根拠: The Basic Workflow）
-
-- テスト駆動開発（TDD）の強制とサブエージェントによる開発進行（根拠: The Basic Workflow）
-
-
-### 利用例
-
-- コーディングエージェントに自動で要件定義や設計を行わせる（README明記／根拠: How it works）
-
-- AIエージェントにテスト駆動開発を実施させて品質を保つ（README明記／根拠: The Basic Workflow）
-
-- 複数タスクをサブエージェントに自律的に処理させる（README明記／根拠: How it works）
-
-
-### 最初に試すこと
-
-Antigravity環境にSuperpowersプラグインをインストールする
-
-1. agy plugin install https://github.com/obra/superpowers
-
-
-成功の目安: プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること
-
-
-
-
-## 5. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+## 4. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
 **概要:** pbakaus/impeccableは、コーディングエージェントのためのデザイン語彙ツールです。デザインの調整、レビュー、AI生成のありふれた表現（スロップ）の検出をサポートします。
 
 - 言語: Rust
-- 今週のスター: 11405
+- 今週のスター: 10921
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -203,57 +162,170 @@ Impeccableをインストールして初期化する
 未確認: 詳細な内部実装や商用利用における追加の制限事項
 
 
-## 6. [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
+## 5. [obra/superpowers](https://github.com/obra/superpowers)
 
-**概要:** Claude Code上で動作する無料のオープンソースSEOプラグインであり、技術的SEO、コンテンツの品質、構造化データ、AI検索（GEO）、ローカル・ECサイトのSEO監査を並行エージェントで実行し、優先順位付きの行動計画を提供します。
+**概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
 
-- 言語: Python
-- 今週のスター: 3751
+- 言語: Shell
+- 今週のスター: 5565
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- 技術的SEO監査として、クロール可能性、インデックス登録、サイトマップ、robots.txt、リダイレクト、ページ速度、Core Web Vitalsをチェックします。（根拠: README冒頭）
+- コードを書く前に意図や仕様を引き出すブレインストーミング機能（根拠: The Basic Workflow）
 
-- 構造化データの検出、検証、およびリッチリザルト向けのSchema.orgマークアップの作成を行います。（根拠: README冒頭）
+- 仕様に基づいた詳細な実装計画の作成機能（根拠: The Basic Workflow）
 
-- AI検索（GEO）において、Google AI Overviews、AI Mode、ChatGPT、Perplexity、GeminiなどのAI検索エンジンにページが引用される可能性を評価します。（根拠: README冒頭）
+- テスト駆動開発（TDD）の強制とサブエージェントによる開発進行（根拠: The Basic Workflow）
 
 
 ### 利用例
 
-- SEOエージェンシーがクライアント向けに四半期ごとではなく毎週の監査を行い、問題の変化をモニタリングする。（README明記／根拠: Meet the team）
+- コーディングエージェントに自動で要件定義や設計を行わせる（README明記／根拠: How it works）
 
-- SaaS、メディア、EC企業の社内SEOチームが、AI検索への対応を含めて記事やレビュー公開前のダブルチェックを行う。（README明記／根拠: Meet the team）
+- AIエージェントにテスト駆動開発を実施させて品質を保つ（README明記／根拠: The Basic Workflow）
 
-- フリーランスのSEOコンサルタントが初回の打ち合わせ時に監査を実行し、提案書を書く前に実際のスコアと主な修正点を示す。（README明記／根拠: Meet the team）
+- 複数タスクをサブエージェントに自律的に処理させる（README明記／根拠: How it works）
 
 
 ### 最初に試すこと
 
-Claude Code内でClaude SEOをセットアップし、ウェブサイトのフル監査を実行する
+Antigravity環境にSuperpowersプラグインをインストールする
 
-1. /plugin marketplace add AgriciDaniel/claude-seo
-
-2. /plugin install claude-seo@agricidaniel-claude-seo
-
-3. /seo setup
-
-4. /seo audit https://example.com
+1. agy plugin install https://github.com/obra/superpowers
 
 
-成功の目安: Claude SEOのセットアップが完了し、指定したURLのフルサイト監査と優先順位付きプランが出力されること
-
-未確認: オプショナルな拡張機能（Live data、image-gen、seranking、profound、bing、unlighthouse）の具体的な導入手順やAPIキー設定の詳細／AI Marketing Hub Pro会員向けプライベートバージョンのすべての詳細な機能差異
+成功の目安: プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること
 
 
-## 7. [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
+
+
+## 6. [anthropics/skills](https://github.com/anthropics/skills)
+
+**概要:** anthropics/skillsは、Claudeに専門的なタスクを繰り返し実行させるためのスキル（指示、スクリプト、リソースのフォルダ）の実装例や仕様を提供するリポジトリです。
+
+- 言語: Python
+- 今週のスター: 3003
+- ライセンス: 不明
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claudeが動的に読み込んで専門的なタスクのパフォーマンスを向上させるための、指示やスクリプトを含むスキルフォルダを提供する。（根拠: Skills）
+
+- Claude CodeのプラグインマーケットVPLACEとしてこのリポジトリを登録し、スキルをインストールして利用できる。（根拠: Claude Code）
+
+- SKILL.mdファイル内にYAMLフロントマターと指示、例、ガイドラインを記述して独自のカスタムスキルを作成できる。（根拠: Creating a Basic Skill）
+
+
+### 利用例
+
+- 企業ブランドのガイドラインに沿ったドキュメントの作成や、固有のワークフローを用いたデータ分析を行う。（README明記／根拠: Skills）
+
+- PDFやdocx、pptx、xlsxなどのドキュメント作成・編集スキルを本番AIアプリケーションの参考として活用する。（README明記／根拠: About This Repository）
+
+- Claude Code上でプラグインをインストールし、PDFスキルなどを用いてPDFファイルからフォームフィールドを抽出する。（README明記／根拠: Claude Code）
+
+
+### 最初に試すこと
+
+Claude Codeでリポジトリをプラグインマーケットとして登録する
+
+1. Claude Codeを開く
+
+2. 以下のコマンドを実行する: /plugin marketplace add anthropics/skills
+
+
+成功の目安: リポジトリがClaude Codeのプラグインマーケットとして登録されること
+
+未確認: 各スキルの具体的な内部実装の詳細や、教育目的以外の利用における挙動の詳細
+
+
+## 7. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
+
+**概要:** Worktrunkは、Gitワークツリーの管理を効率化し、複数のAIエージェントを並行して実行しやすくするためのコマンドラインツールです。
+
+- 言語: Rust
+- 今週のスター: 1261
+- ライセンス: NOASSERTION
+- AI分析状態: ok
+
+### できること
+
+- ブランチ名を指定してワークツリーの切り替えや作成、削除を行える（根拠: Worktrunk makes git worktrees as easy as branches）
+
+- ワークツリーの一覧をステータス付きで表示できる（根拠: Worktrunk makes git worktrees as easy as branches）
+
+- フック機能によるワークフローの自動化や、LLMを活用したコミットメッセージの生成が行える（根拠: Worktrunk makes git worktrees as easy as branches）
+
+
+### 利用例
+
+- 複数のAIエージェントにそれぞれ独立した作業用ディレクトリを割り当てて並行作業させる（README明記／根拠: Context: git worktrees）
+
+- ワークツリーを作成すると同時にClaudeなどのエージェントを起動して開発を始める（README明記／根拠: Worktrunk makes git worktrees as easy as branches）
+
+- 作業が完了したワークツリーをマージして不要になったブランチとともに一括で削除する（README明記／根拠: Quick start）
+
+
+### 最初に試すこと
+
+新しい機能用のワークツリーを作成して切り替える
+
+1. wt switch --create feature-auth
+
+
+成功の目安: 新しいブランチとワークツリーが作成され、そこに切り替わっていること
+
+未確認: 詳細な設定ファイルやフックのカスタムスクリプトの全仕様
+
+
+## 8. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
+
+**概要:** jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。
+
+- 言語: Markdown
+- 今週のスター: 1865
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- アクセシビリティ、レイアウト、ライティング、タイポグラフィ、カラー、UIポリッシュの観点から画面やフローをレビューし、レポートを返します。（根拠: Skills that help build great interfaces）
+
+- ボーダー半径、光学調整、影、アイコンの状態、アニメーションの正確な値を使用してサーフェス、アイコン、モーションをブラッシュアップします。（根拠: Skills that help build great interfaces）
+
+- Figmaファイルやデザイン画像から、プロジェクトの既存トークンやコンポーネントを使用してUIを構築します。（根拠: Skills that help build great interfaces）
+
+
+### 利用例
+
+- 画面やインターフェース全体をレビューして改善のためのレポートを作成する（README明記／根拠: Skills that help build great interfaces）
+
+- Webサイト、視覚効果、アニメーションがどのように構築されたかをライブURLやスクリーンショットから説明する（README明記／根拠: Skills that help build great interfaces）
+
+- Figmaファイルやデザイン画像からプロジェクトの既存トークンを使ってUIを実装する（README明記／根拠: Skills that help build great interfaces）
+
+
+### 最初に試すこと
+
+skillsを追加する
+
+1. npx skills add jakubkrehel/skills
+
+
+成功の目安: リポジトリのスキルが追加されること
+
+未確認: 各スキルの具体的な実行結果や詳細な内部実装／Claude Codeプラグインの利用に必要な事前準備や環境設定の詳細
+
+
+## 9. [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
 
 **概要:** ThinkRailは、コーディングエージェントpiを中心とした軽量かつリアルな統合開発環境（IDE）であり、isolated worktreeによる独立したワークスペースや、living specsによるプロジェクトの知識共有、再利用可能なスキルを活用した開発をサポートします。
 
 - 言語: TypeScript
-- 今週のスター: 3898
+- 今週のスター: 3031
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -289,167 +361,87 @@ ThinkRail CLIをインストールし、リポジトリを開いて起動する
 未確認: デスクトップアプリの具体的な内部処理の詳細／外部拡張機能が完全に実装された際の挙動の詳細
 
 
-## 8. [anthropics/skills](https://github.com/anthropics/skills)
+## 10. [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
 
-**概要:** anthropics/skillsは、Claudeに専門的なタスクを繰り返し実行させるためのスキル（指示、スクリプト、リソースのフォルダ）の実装例や仕様を提供するリポジトリです。
+**概要:** Ghosttyは、高速で機能豊富、かつプラットフォームネイティブなUIとGPUアクセラレーションを備えたクロスプラットフォームのターミナルエミュレータです。
 
-- 言語: Python
-- 今週のスター: 2969
-- ライセンス: 不明
+- 言語: Zig
+- 今週のスター: 738
+- ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- Claudeが動的に読み込んで専門的なタスクのパフォーマンスを向上させるための、指示やスクリプトを含むスキルフォルダを提供する。（根拠: Skills）
+- マルチウィンドウ、タブ、ペイン分割などの豊富なウィンドウ管理機能を提供します。（根拠: Roadmap and Status）
 
-- Claude CodeのプラグインマーケットVPLACEとしてこのリポジトリを登録し、スキルをインストールして利用できる。（根拠: Claude Code）
+- macOSではSwiftUIとMetal、LinuxではGTKを使用し、各プラットフォームに深く統合されたネイティブな操作性を提供します。（根拠: Roadmap and Status）
 
-- SKILL.mdファイル内にYAMLフロントマターと指示、例、ガイドラインを記述して独自のカスタムスキルを作成できる。（根拠: Creating a Basic Skill）
-
-
-### 利用例
-
-- 企業ブランドのガイドラインに沿ったドキュメントの作成や、固有のワークフローを用いたデータ分析を行う。（README明記／根拠: Skills）
-
-- PDFやdocx、pptx、xlsxなどのドキュメント作成・編集スキルを本番AIアプリケーションの参考として活用する。（README明記／根拠: About This Repository）
-
-- Claude Code上でプラグインをインストールし、PDFスキルなどを用いてPDFファイルからフォームフィールドを抽出する。（README明記／根拠: Claude Code）
-
-
-### 最初に試すこと
-
-Claude Codeでリポジトリをプラグインマーケットとして登録する
-
-1. Claude Codeを開く
-
-2. 以下のコマンドを実行する: /plugin marketplace add anthropics/skills
-
-
-成功の目安: リポジトリがClaude Codeのプラグインマーケットとして登録されること
-
-未確認: 各スキルの具体的な内部実装の詳細や、教育目的以外の利用における挙動の詳細
-
-
-## 9. [jakubkrehel/skills](https://github.com/jakubkrehel/skills)
-
-**概要:** jakubkrehel/skillsは、優れたインターフェースの構築を支援するエージェント向けスキルコレクションです。UI、タイポグラフィ、色彩、アクセシビリティ、レイアウト、製品ライティングなどのトピックをカバーしています。
-
-- 言語: Markdown
-- 今週のスター: 1761
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- アクセシビリティ、レイアウト、ライティング、タイポグラフィ、カラー、UIポリッシュの観点から画面やフローをレビューし、レポートを返します。（根拠: Skills that help build great interfaces）
-
-- ボーダー半径、光学調整、影、アイコンの状態、アニメーションの正確な値を使用してサーフェス、アイコン、モーションをブラッシュアップします。（根拠: Skills that help build great interfaces）
-
-- Figmaファイルやデザイン画像から、プロジェクトの既存トークンやコンポーネントを使用してUIを構築します。（根拠: Skills that help build great interfaces）
+- CおよびZig向けのクロスプラットフォームライブラリ「libghostty」を提供し、他のアプリケーションへのターミナルの埋め込みが可能です。（根拠: About）
 
 
 ### 利用例
 
-- 画面やインターフェース全体をレビューして改善のためのレポートを作成する（README明記／根拠: Skills that help build great interfaces）
+- 日常的な作業において、高速でカスタマイズ性の高い高機能なターミナルエミュレータとして利用する。（README明記／根拠: About）
 
-- Webサイト、視覚効果、アニメーションがどのように構築されたかをライブURLやスクリーンショットから説明する（README明記／根拠: Skills that help build great interfaces）
-
-- Figmaファイルやデザイン画像からプロジェクトの既存トークンを使ってUIを実装する（README明記／根拠: Skills that help build great interfaces）
+- サードパーティ製アプリケーションや独自のプロジェクトにターミナル機能を埋め込む。（README明記／根拠: About）
 
 
 ### 最初に試すこと
 
-skillsを追加する
+クラッシュレポート一覧の取得
 
-1. npx skills add jakubkrehel/skills
+1. Ghosttyを起動する
 
-
-成功の目安: リポジトリのスキルが追加されること
-
-未確認: 各スキルの具体的な実行結果や詳細な内部実装／Claude Codeプラグインの利用に必要な事前準備や環境設定の詳細
+2. CLIコマンド「ghostty +crash-report」を実行する
 
 
-## 10. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+成功の目安: 利用可能なクラッシュレポートの一覧が表示されること
 
-**概要:** Andrej KarpathyのLLMコーディングにおける指摘をもとに作られた、Claude Codeの挙動を改善する単一のCLAUDE.mdファイルおよび関連ガイドラインです。
-
-- 言語: 不明
-- 今週のスター: 3921
-- ライセンス: 不明
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- Claude Codeのプラグインとしてインストールし、スキルをすべてのプロジェクトで利用できるようにする。（根拠: Install）
-
-- プロジェクト固有のCLAUDE.mdにガイドラインを追加、または新規作成する。（根拠: Install）
-
-- Cursorプロジェクトルールとして設定し、Cursorでも同様のガイドラインを適用する。（根拠: Using with Cursor）
-
-
-### 利用例
-
-- Claude Codeを使用してコーディングを行う際に、勝手な仮定や複雑化を防ぎ、シンプルで正確なコード変更を行わせる。（README明記／根拠: The Solution）
-
-- Cursorなどのエディタでプロジェクトを開いた際に、Karpathyのガイドラインをルールとして適用する。（README明記／根拠: Using with Cursor）
-
-
-### 最初に試すこと
-
-Claude Codeプラグインとしてガイドラインをインストールする
-
-1. /plugin marketplace add forrestchang/andrej-karpathy-skills
-
-2. /plugin install andrej-karpathy-skills@karpathy-skills
-
-
-成功の目安: プラグインが正しくインストールされ、Claude Code内でスキルが利用可能になること
-
-
+未確認: インストール手順の具体的なコマンドライン例／ソースコードからの具体的なビルド手順
 
 
 
 ## Zenn
 
-- [Radeon VIIとUbuntu 26.04でROCmを動かし、Flash-NextをOpenCodeにつないだ](https://zenn.dev/masanork/articles/radeon-vii-rocm-strata-opencode) — masanork
+- [C/Rust/Julia/Go/Java/JS/PyPy/LuaJIT 実行速度ベンチマーク ― 競プロと科学計算のあいだ](https://zenn.dev/trbx304/articles/34fec79781e39c) — TRBX304
 
-- [(備忘録) お名前.comからRoute 53へドメイン移管し、お名前メールをさくらのメールボックスへ移す](https://zenn.dev/momura/articles/896dbde5e42491) — momura
+- [娘とのクイズ遊びをアプリにしたら、日本語の奥深さを体感した話](https://zenn.dev/tomipetit/articles/272c4d70a2bf67) — tomi
 
-- [Aurora とDynamoDBとTimestreamとBigQueryを2400万レコードで性能比較してみた](https://zenn.dev/ncdc/articles/c47df2c1f32e0c) — むーさん
+- [AIにいきなり実装させない — kintoneカスタマイズ開発Skillのヒアリング設計](https://zenn.dev/genda_jp/articles/a5cbba3664748b) — GENDA 公式アカウント
+
+- [GitHubのruleset移行時に注意したい、environment secretのブランチ保護仕様](https://zenn.dev/loglass/articles/a89a8d4ee86559) — uttttto
+
+- [SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話](https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2) — Mikihiro Tanaka
+
+- [FlutterKaigi 2026での初登壇を経て、これからも挑戦し続けると決めた話](https://zenn.dev/assign/articles/2026-10-flutterkaigi-first-talk) — nakamizu
+
+- [NIKKE PCランチャーのサプライチェーン攻撃、IT学生が自分のPCを調べてみた](https://zenn.dev/nanana_sk/articles/nikke-launcher-incident) — ななな。(S.K)
+
+- [ISUCON2026で126,634点でした](https://zenn.dev/o8n/articles/isucon2026-app-agent-retrospective) — o8n
+
+- [OpenCode+Docker+GitHub Actionsで全自動AIペネトレーションテストはじめました](https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest) — dyoshikawa
+
+- [NVIDIAの音声修復モデルRE-USEでポッドキャストのノイズ除去と文字起こしを比較してみた](https://zenn.dev/karaage0703/articles/podcast-reuse-whisper-workflow) — からあげ
+
+- [高市総理のPHP投稿で何がうれしかったのか？今後の説得に使っていくよ～](https://zenn.dev/tyamadadd/articles/36f975db1c41d8) — tyamadadd
 
 - [ADRをregoでlintする](https://zenn.dev/babarot/articles/regomark-adr-checker) — babarot
 
-- [1 人チームでKiro CLI とISUCON2026に参加した記録：エージェントに任せたこと、任せきれなかったこと](https://zenn.dev/ndmxjp/articles/isucon2026-kiro-agent-ops) — Takumi Saito
-
 - [バイブコーディングで機能を継ぎ足していて見えてきたClaudeCodeの実装のクセ](https://zenn.dev/uguisu_blog/articles/45d1f446ece415) — ぴよ
-
-- [quench を管理者アカウントから卒業させる：シャットダウン専用の Windows アカウント svc-power](https://zenn.dev/ryuchama/articles/forge-svc-power-account) — ちゃま
 
 - [Human-out-of-the-loop(もどき)で戦うISUCON2026 (301,558 点 | 12 位)](https://zenn.dev/ponyo877/articles/2a8a24acc2ea3b) — ponyo877
 
 - [ISUCON2026 で優勝しました（当日編）](https://zenn.dev/luvtechno/articles/isucon2026-competition-day) — Yoshinori Kawasaki
 
-- [学部生3人でISUCON2026に出て、最後に証拠より常識を選んで負けた話](https://zenn.dev/enari_k/articles/b512e044ec9240) — enari_K
-
 - [AIが書く「読みづらいADR」に発狂しかけたので、ADRのガイドラインを作った](https://zenn.dev/tokium_dev/articles/adr-authoring-guideline) — にしこりさぶろ〜 | TOKIUM
 
 - [弊社がAIでPlaywrightテストコードを生成するために調整したこと](https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude) — ぬまさん
-
-- [Agent DX 〜 AI時代にフレームワークHonoは必要か](https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1) — yusukebe
-
-- [ISUCON2026 にツールを捨てて勝ちたかった](https://zenn.dev/mazrean/articles/5c968503fd69a3) — mazrean
 
 - [日本の全法令を git の履歴にしてみた](https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git) — kohei
 
 - [3 人それぞれの Claude Code を Slack でつないで ISUCON2026 に参加した（207,039 点）](https://zenn.dev/kauche/articles/f3736c660aab77) — a-thug
 
-- [ペイントツール上でニューラルネットワークを動かす](https://zenn.dev/melville/articles/953aa2b41f674b) — Melville
-
-- [FlutterKaigi 2026 で生字幕を映像に載せて会場スクリーンに投影しました](https://zenn.dev/hiro_pon/articles/2f3b68ec60ddae) — hiropon
-
 - [今後のセキュリティの考え方](https://zenn.dev/cscloud_blog/articles/a987163efae5d8) — nishikawa
-
-- [GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！](https://zenn.dev/progate/articles/24b1140180300c) — 横江（よこえ）
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

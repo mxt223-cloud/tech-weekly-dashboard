@@ -1,0 +1,58 @@
+{
+  "summary_ja": "Worktrunkは、Gitワークツリーの管理を効率化し、複数のAIエージェントを並行して実行しやすくするためのコマンドラインツールです。",
+  "capabilities": [
+    {
+      "text": "ブランチ名を指定してワークツリーの切り替えや作成、削除を行える",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    },
+    {
+      "text": "ワークツリーの一覧をステータス付きで表示できる",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    },
+    {
+      "text": "フック機能によるワークフローの自動化や、LLMを活用したコミットメッセージの生成が行える",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIエージェントにそれぞれ独立した作業用ディレクトリを割り当てて並行作業させる",
+      "basis": "README明記",
+      "evidence_section": "Context: git worktrees"
+    },
+    {
+      "text": "ワークツリーを作成すると同時にClaudeなどのエージェントを起動して開発を始める",
+      "basis": "README明記",
+      "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+    },
+    {
+      "text": "作業が完了したワークツリーをマージして不要になったブランチとともに一括で削除する",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "新しい機能用のワークツリーを作成して切り替える",
+    "steps": [
+      "wt switch --create feature-auth"
+    ],
+    "success_criteria": "新しいブランチとワークツリーが作成され、そこに切り替わっていること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Context: git worktrees",
+    "Worktrunk makes git worktrees as easy as branches",
+    "Install",
+    "Quick start",
+    "Next steps",
+    "Contributing"
+  ],
+  "unconfirmed": [
+    "詳細な設定ファイルやフックのカスタムスクリプトの全仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7dc9e151754e4d5acf1add7d5aa99e69e481b56b",
+  "generated_at": "2026-11-05T10:42:25.996766+09:00"
+}

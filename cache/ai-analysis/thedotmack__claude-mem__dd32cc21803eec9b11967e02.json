@@ -1,0 +1,48 @@
+{
+  "summary_ja": "claude-memは、AIエージェントのセッション間でコンテキストを永続化するためのメモリ圧縮システムです。エージェントのセッション中の活動を自動でキャプチャし、AIで要約したうえで将来のセッションに適切なコンテキストを注入します。",
+  "capabilities": [
+    {
+      "text": "セッション間でコンテキストを自動保存し、AIエージェントが過去の知識やプロジェクトの連続性を維持できるようにする。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "MCP検索ツールを活用した効率的なメモリ検索やタイムライン確認を提供する。",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "複数のワークフローモードや言語設定に対応し、観測結果や要約を指定した言語で記述できる。",
+      "evidence_section": "Mode & Language Configuration"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントの過去のセッションの作業内容や決定事項を次のセッションに引き継ぎたいとき",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自然言語クエリを使用して過去のプロジェクト履歴やバグ修正の記録を検索したいとき",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールする",
+    "steps": [
+      "npx claude-mem installを実行する"
+    ],
+    "success_criteria": "インストーラーが正常にセットアップを完了し、サインインやプロバイダーの選択が行えること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "MCP Search Tools",
+    "Mode & Language Configuration"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "afbb08bc0ddb44611167ce2f4f2e0f59ade6f083",
+  "generated_at": "2026-11-05T10:42:18.521569+09:00"
+}
