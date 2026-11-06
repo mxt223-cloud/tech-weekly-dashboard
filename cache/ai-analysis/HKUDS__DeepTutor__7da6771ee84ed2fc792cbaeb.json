@@ -1,0 +1,54 @@
+{
+  "summary_ja": "DeepTutorは、チュータリング、研究、制作、実践を統合した、エージェントネイティブな学習ワークスペースです。複数の学習モードやグラフRAG等による知識基盤、検証可能なメモリ機能、拡張性の高さを特徴としています。",
+  "capabilities": [
+    {
+      "text": "チャット、クイズ、研究、可視化、解答、習得パス、読書など複数の学習モードを提供します。",
+      "evidence_section": "✨ Key Features"
+    },
+    {
+      "text": "LlamaIndex、PageIndex、GraphRAG、LightRAGを用いたバージョン管理付きライブラリの構築や、外部知識ソースとの接続が可能です。",
+      "evidence_section": "✨ Key Features"
+    },
+    {
+      "text": "L1トレース、L2ファクト、L3合成による検証可能なメモリ機能を備えています。",
+      "evidence_section": "✨ Key Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントを活用した個別最適化された生涯学習環境の構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ドキュメント、動画、音声を用いたソース付き引用を伴う学習",
+      "basis": "README明記",
+      "evidence_section": "✨ Key Features"
+    },
+    {
+      "text": "Claude Codeなどのライブエージェントとの連携や過去の会話のインポート",
+      "basis": "README明記",
+      "evidence_section": "✨ Key Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "モジュールのインストールおよびCLIの起動確認",
+    "steps": [
+      "deeptutor module install solve",
+      "deeptutor chat"
+    ],
+    "success_criteria": "モジュールがインストールされ、CLIチャットが再起動して開始できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "✨ Key Features"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや初期設定の全手順について、READMEの切り抜き部分以外に詳細な記載がないこと"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7fd1e39a9dc1b1907cb9dfa230ce6321fe25656a",
+  "generated_at": "2026-11-06T10:44:04.764453+09:00"
+}

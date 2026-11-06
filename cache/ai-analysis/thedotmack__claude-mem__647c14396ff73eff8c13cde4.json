@@ -1,0 +1,50 @@
+{
+  "summary_ja": "claude-memは、AIエージェントのセッション間で文脈を継続的に保存するための永続的なメモリ圧縮システムです。エージェントの作業やツール使用の観測を自動的にキャプチャし、AIで要圧縮して、将来のセッションに適切な文脈を挿入します。",
+  "capabilities": [
+    {
+      "text": "セッションをまたいで文脈をシームレスに保存し、AIエージェントが過去のプロジェクトの知識を維持できるようにする",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "MCP検索ツールを通じて、効率的な3レイヤーのワークフロー（検索、タイムライン確認、詳細取得）でメモリを問い合わせる",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "ライフサイクルHookやワーカーサービス、SQLite、Chromaベクトルデータベースを組み合わせたハイブリッド検索による文脈取得",
+      "evidence_section": "How It Works"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントを使用する際、過去のセッションで何を行ったかの文脈を失わずに作業を継続する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "自然言語やMCPツールを活用してプロジェクトの履歴やバグ修正の経緯を検索する",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールして動作確認を行う",
+    "steps": [
+      "npx claude-mem install"
+    ],
+    "success_criteria": "インストーラーが起動し、ブラウザでのサインインまたはセットアップ画面が表示されること"
+  },
+  "evidence_sections": [
+    "Quick Start",
+    "MCP Search Tools",
+    "How It Works"
+  ],
+  "unconfirmed": [
+    "商用利用時における詳細なライセンスの境界範囲",
+    "30日間の無料トライアル終了後の正確な移行プロセス"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "93457c450e3986877d85ea59d121f2785ea9d2f6",
+  "generated_at": "2026-11-06T10:44:00.145419+09:00"
+}

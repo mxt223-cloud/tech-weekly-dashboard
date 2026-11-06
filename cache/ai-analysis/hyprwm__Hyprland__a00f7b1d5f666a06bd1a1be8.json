@@ -1,0 +1,49 @@
+{
+  "summary_ja": "Hyprlandは、外観を損なわなく高いカスタマイズ性と豊富な視覚効果を持つ、独立した動的タイリングWaylandコンポジタです。",
+  "capabilities": [
+    {
+      "text": "グラデーションボーダーやアニメーション、影などの豊富な視覚効果を備える",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "タイリング、フロート、フルスクリーンなど多彩なウィンドウ配置をサポートする",
+      "evidence_section": "Features"
+    },
+    {
+      "text": "DwindleやMasterなどの拡張レイアウトをサポートする",
+      "evidence_section": "Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "視覚的に美しくカスタマイズされたWayland環境を構築する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ティアリングサポートを活用してゲームパフォーマンスを向上させる",
+      "basis": "README明記",
+      "evidence_section": "Features"
+    }
+  ],
+  "first_trial": {
+    "goal": "インストール方法やマスターチュートリアルを確認する",
+    "steps": [
+      "READMEのInstallリンクからインストール手順を参照する",
+      "Quick Startリンクからマスターチュートリアルを参照する"
+    ],
+    "success_criteria": "インストールおよび初期設定の手順が確認できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Features"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや実行コマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "886fc163dcfc38735ac28c33dac0e4c66d4ce125",
+  "generated_at": "2026-11-06T10:44:12.598612+09:00"
+}
