@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。",
+  "capabilities": [
+    {
+      "text": "Claudeが特殊なタスクを繰り返し完了できるように、指示、スクリプト、リソースのフォルダを動的に読み込ませる",
+      "evidence_section": "Skills"
+    },
+    {
+      "text": "Claude Codeのプラグインマーケットプレイスとしてこのリポジトリを登録し、プラグインをインストールして使用できるようにする",
+      "evidence_section": "Claude Code"
+    },
+    {
+      "text": "YAMLフロントマッターと指示を含むSKILL.mdファイルを持つフォルダを作成し、カスタムスキルを定義する",
+      "evidence_section": "Creating a Basic Skill"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "会社のブランドガイドラインに沿ったドキュメントの作成",
+      "basis": "README明記",
+      "evidence_section": "Skills"
+    },
+    {
+      "text": "組織固有のワークフローを使用したデータの分析",
+      "basis": "README明記",
+      "evidence_section": "Skills"
+    },
+    {
+      "text": "PDFファイルのフォームフィールドの抽出などのドキュメント処理",
+      "basis": "README明記",
+      "evidence_section": "Claude Code"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeでリポジトリをプラグインマーケットプレイスとして登録する",
+    "steps": [
+      "Claude Codeを開く",
+      "以下のコマンドを実行する: /plugin marketplace add anthropics/skills"
+    ],
+    "success_criteria": "リポジトリがClaude Codeのプラグインマーケットプレイスとして登録されること"
+  },
+  "evidence_sections": [
+    "Skills",
+    "About This Repository",
+    "Skill Sets",
+    "Try in Claude Code, Claude.ai, and the API",
+    "Claude Code",
+    "Creating a Basic Skill"
+  ],
+  "unconfirmed": [
+    "カスタムスキルの詳細なAPIリクエストの実装コード",
+    "各スキルが内部で行う処理の詳細なロジック"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
+  "generated_at": "2026-11-07T10:05:46.778228+09:00"
+}

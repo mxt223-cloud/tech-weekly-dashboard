@@ -1,0 +1,62 @@
+{
+  "summary_ja": "Claude Codeのセッションを本格的なゲーム開発スタジオに変えるためのツールキットです。49体のAIエージェント、74種類のワークフロー用スキル（スラッシュコマンド）、自動検証フック、パス別のコーディング規約を備えており、実際のスタジオ階層を模した協調システムを提供します。",
+  "capabilities": [
+    {
+      "text": "デザイン、プログラミング、アート、音声、ナラティブ、QA、プロダクションの各分野に特化した49体のサブエージェントを利用できる。",
+      "evidence_section": "What's Included"
+    },
+    {
+      "text": "プロジェクトのワークフロー段階を進めるための74種類のスラッシュコマンド（スキル）を実行できる。",
+      "evidence_section": "Slash Commands"
+    },
+    {
+      "text": "Godot 4、Unity、Unreal Engine 5の主要3エンジンに対応した専門家エージェントセットを選択できる。",
+      "evidence_section": "Engine Specialists"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude Codeのセッション内で複数のAIエージェントを組織化し、ブレインストーミングから機能実装、レビュー、リリースまでのゲーム開発プロセス全体を構造化する。",
+      "basis": "README明記",
+      "evidence_section": "Why This Exists"
+    },
+    {
+      "text": "プロジェクトの進捗度や厳格さのレベル（modes.rigor）に応じて、必要な設計ドキュメントの作成やQA検証の度合いを制御する。",
+      "basis": "README明記",
+      "evidence_section": "Configuration"
+    },
+    {
+      "text": "開発中のコードやアセットの変更に対して自動バリデーションフックを実行し、ハードコードやルール違反を検知・防止する。",
+      "basis": "README明記",
+      "evidence_section": "Automated Safety"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてClaude Codeを起動し、初期セットアップと開発開始のワークフローを呼び出す。",
+    "steps": [
+      "git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game",
+      "cd my-game",
+      "claude",
+      "/start"
+    ],
+    "success_criteria": "Claude Codeがプロジェクトのルートディレクトリで起動し、/startコマンドによって現在のプロジェクトの状態確認やワークフローのガイドが開始されること。"
+  },
+  "evidence_sections": [
+    "Why This Exists",
+    "What's Included",
+    "Studio Hierarchy",
+    "Slash Commands",
+    "Getting Started",
+    "Configuration",
+    "Automated Safety",
+    "Path-Scoped Rules"
+  ],
+  "unconfirmed": [
+    "実際のゲームプレイ映像の出力品質や、特定プロジェクトにおける生成ゲームの市場での成功確率"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d73112eae0042d010d867ea850142e66ffc37f71",
+  "generated_at": "2026-11-07T10:05:40.629620+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "summary_ja": "thedotmack/claude-memは、Claude CodeなどのAIエージェントのセッション間でコンテキストを永続化し、自動的な観察のキャプチャ、AIによる圧縮、関連コンテキストの将来のセッションへの注入を行うメモリ圧縮システムです。",
+  "capabilities": [
+    {
+      "text": "セッション間でコンテキストをシームレスに保存し、AIエージェントの知識の継続性を維持する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "検索、タイムライン、詳細取得の3層ワークフローを持つMCPツールによるインテリジェントなメモリ検索を提供する",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "CLIコマンドを用いた簡単なインストールと複数IDE/エージェントへの対応を行う",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "過去のセッションのコンテキストを引き継いでClaude CodeなどのAIエージェントを利用する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "自然言語を使用してプロジェクトの履歴や過去の決定事項を検索する",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "クラウト同期機能やローカルワーカーサービスを利用してチームでの共同作業やプロジェクトの記録を管理する",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールして動作確認する",
+    "steps": [
+      "npx claude-mem install を実行する"
+    ],
+    "success_criteria": "インストーラーが起動し、セットアップ画面またはブラウザでのサインイン案内に進むこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "MCP Search Tools",
+    "How It Works",
+    "Configuration"
+  ],
+  "unconfirmed": [
+    "無料トライアル終了後の具体的な料金プランの詳細",
+    "サポートされているすべての環境における詳細な動作保証"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e2b3204b87fbae7354db36c94857abe8edfc83cd",
+  "generated_at": "2026-11-07T10:05:36.789810+09:00"
+}

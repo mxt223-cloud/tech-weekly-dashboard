@@ -1,0 +1,55 @@
+{
+  "summary_ja": "DeepTutorは、チュータリング、リサーチ、制作、演習を統合した、エージェントネイティブな生涯パーソナライズ学習ワークスペースです。",
+  "capabilities": [
+    {
+      "text": "チャット、クイズ、リサーチ、可視化、解決、マスターパス、読書など、複数の学習モードを共有セッションコンテキスト上で実行可能。",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "LlamaIndex、PageIndex、GraphRAG、LightRAGを用いたバージョン管理付きライブラリの構築や、ソース付き引用による学習機能。",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "L1トレース、L2ファクト、L3合成による透明で編集可能なパーソナライズメモリ。",
+      "evidence_section": "Key Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "パーソナライズされたチャットやクイズ、リサーチなどの多彩な学習モードを通じた学習活動の実施。",
+      "basis": "README明記",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "外部知識ソースやバージョン管理されたライブラリを接続した、ソース付き引用によるドキュメント読書と学習。",
+      "basis": "README明記",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "モジュールのインストールやアンインストールによる学習環境の拡張とカスタマイズ。",
+      "basis": "README明記",
+      "evidence_section": "Package installations only; source checkouts use enable / disable"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLI環境でのモジュールインストールおよびチャットの開始",
+    "steps": [
+      "deeptutor module install solve",
+      "deeptutor chat"
+    ],
+    "success_criteria": "モジュールがインストールされ、CLIでチャットが再起動すること"
+  },
+  "evidence_sections": [
+    "Key Features",
+    "Package installations only; source checkouts use enable / disable"
+  ],
+  "unconfirmed": [
+    "詳細なインストール前提条件やPythonのバージョン要件",
+    "Webアプリの具体的な起動手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8808e1dbfdc7a311e580a97cfbc5265c7369eb1c",
+  "generated_at": "2026-11-07T10:05:51.102991+09:00"
+}
