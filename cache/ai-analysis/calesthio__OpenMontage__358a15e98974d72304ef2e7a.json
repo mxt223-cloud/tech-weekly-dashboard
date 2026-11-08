@@ -1,0 +1,36 @@
+{
+  "summary_ja": "OpenMontageは、AIコーディングアシスタントを動画制作スタジオに変えるオープンソースのエージェント型動画制作システムです。自然言語による指示で、調査、台本作成、素材生成、編集、最終合成までのプロセスを自動化します。",
+  "capabilities": [
+    {
+      "text": "12の制作パイプライン、100以上のツール、700以上のエージェントスキルおよび制作知識ファイルを搭載しています。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "無料のストック映像やオープンアーカイブから実際の動画クリップを収集し、タイムラインに編集してレンダリングする本格的な動画制作が可能です。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングアシスタントを活用して、自然言語の指示から動画の調査、台本、編集、最終合成までを一貫して行う。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "クイックスタートの確認",
+    "steps": [],
+    "success_criteria": "クイックスタート手順が完了し、動作が確認できること。"
+  },
+  "evidence_sections": [
+    "README冒頭"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや実行コマンドはREADMEの途中で切れているため未確認です。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9013c574532a707ee5d719c3199ade0e9a52a83e",
+  "generated_at": "2026-11-08T09:52:19.481203+09:00"
+}

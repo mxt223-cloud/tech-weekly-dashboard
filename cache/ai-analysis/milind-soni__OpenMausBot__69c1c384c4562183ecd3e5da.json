@@ -1,0 +1,53 @@
+{
+  "summary_ja": "OpenMausBotは、Grok BotにインスパイアされたオープンソースのAIチャットアプリです。ClaudeやCodexなどのAIエージェントとメッセージアプリのように会話でき、ローカルファーストで動作します。",
+  "capabilities": [
+    {
+      "text": "ClaudeやCodex、GrokのCLIを利用したAIエージェントの実行",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "ローカルファーストでのデータ管理（トランスクリプトやキーなどが~/.openmausbotに保存される）",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "ElectronベースのデスクトップアプリとしてmacOS、Windows、Ubuntuで動作",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "サイドバーにいる複数のAIボットとチャットアプリ感覚で会話する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "既存のローカル環境のサブスクリプションやログイン情報をそのまま用いてAIエージェントを動かす",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードから開発環境サーバーおよびデスクトップシェルを起動する",
+    "steps": [
+      "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
+      "pnpm install",
+      "pnpm dev:server",
+      "pnpm dev",
+      "pnpm dev:desktop"
+    ],
+    "success_criteria": "ハーネスサーバーやElectronシェルが起動し、アプリケーションが動作すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "Featuresセクション以降のコンテンツがREADME内で途中で途切れているため、機能の詳細の一部"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ee7a12dac2c97db2ac8333cb00d3b07b983f1fd2",
+  "generated_at": "2026-11-08T09:52:15.153910+09:00"
+}

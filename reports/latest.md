@@ -1,56 +1,95 @@
-# Tech Daily — 2026-11-07
+# Tech Daily — 2026-11-08
 
-生成日時: 2026-11-07T10:05:51.281267+09:00  
+生成日時: 2026-11-08T09:52:19.596787+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
-**概要:** thedotmack/claude-memは、Claude CodeなどのAIエージェントのセッション間でコンテキストを永続化し、自動的な観察のキャプチャ、AIによる圧縮、関連コンテキストの将来のセッションへの注入を行うメモリ圧縮システムです。
+**概要:** claude-memは、AIコーディングエージェントのセッション間で永続的なコンテキストを維持するためのツールです。エージェントの作業内容をキャプチャしてAIで圧縮し、次回のセッションに適切なコンテキストを自動で注入します。Claude Codeやその他の主要なエージェントに対応しています。
 
 - 言語: TypeScript
-- 今週のスター: 8726
+- 今週のスター: 7482
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- セッション間でコンテキストをシームレスに保存し、AIエージェントの知識の継続性を維持する（根拠: README冒頭）
+- セッション間の自動記憶：エージェントの作業内容を記録し、次のセッションの開始時に必要なコンテキストを注入する。（根拠: What You Get）
 
-- 検索、タイムライン、詳細取得の3層ワークフローを持つMCPツールによるインテリジェントなメモリ検索を提供する（根拠: MCP Search Tools）
+- MCP検索ツールによるプロジェクト履歴の検索：インデックス、タイムライン、詳細の3段階で効率的な検索を行う。（根拠: MCP Search Tools）
 
-- CLIコマンドを用いた簡単なインストールと複数IDE/エージェントへの対応を行う（根拠: Quick Start）
+- プライバシー保護機能：<private>タグで囲んだ内容を保存対象外にできる。（根拠: What You Get）
 
 
 ### 利用例
 
-- 過去のセッションのコンテキストを引き継いでClaude CodeなどのAIエージェントを利用する（README明記／根拠: Quick Start）
+- 過去のセッションで解決した修正内容や進捗を次のセッションへ引き継ぎ、ゼロからやり直す手間を省く。（README明記／根拠: What You Get）
 
-- 自然言語を使用してプロジェクトの履歴や過去の決定事項を検索する（README明記／根拠: MCP Search Tools）
+- 自然言語を用いたプロジェクト履歴の検索により、過去の作業内容やバグ修正の経緯を効率的に見つける。（README明記／根拠: MCP Search Tools）
 
-- クラウト同期機能やローカルワーカーサービスを利用してチームでの共同作業やプロジェクトの記録を管理する（README明記／根拠: Quick Start）
+- シークレット情報を秘匿した状態でエージェントに安全に作業を記憶させる。（README明記／根拠: What You Get）
 
 
 ### 最初に試すこと
 
-claude-memをインストールして動作確認する
+claude-memをインストールしてプロジェクトの記憶機能を開始する
 
-1. npx claude-mem install を実行する
-
-
-成功の目安: インストーラーが起動し、セットアップ画面またはブラウザでのサインイン案内に進むこと
-
-未確認: 無料トライアル終了後の具体的な料金プランの詳細／サポートされているすべての環境における詳細な動作保証
+1. npx claude-mem install
 
 
-## 2. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+成功の目安: インストーラーが起動し、使用するエージェントの選択やセットアップが完了すること
+
+未確認: セッションの記録や圧縮に利用される具体的なAIモデルの内部仕様の詳細
+
+
+## 2. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
+
+**概要:** Worktrunkは、Gitワークツリーの管理を効率化し、複数のAIエージェントを並行して実行しやすくするためのコマンドラインツールです。
+
+- 言語: Rust
+- 今週のスター: 2292
+- ライセンス: NOASSERTION
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- ブランチ名を指定してワークツリーの切り替えや作成、削除を行える（根拠: Worktrunk makes git worktrees as easy as branches）
+
+- ワークツリーの一覧をステータス付きで表示できる（根拠: Worktrunk makes git worktrees as easy as branches）
+
+- フック機能によるワークフローの自動化や、LLMを活用したコミットメッセージの生成が行える（根拠: Worktrunk makes git worktrees as easy as branches）
+
+
+### 利用例
+
+- 複数のAIエージェントにそれぞれ独立した作業用ディレクトリを割り当てて並行作業させる（README明記／根拠: Context: git worktrees）
+
+- ワークツリーを作成すると同時にClaudeなどのエージェントを起動して開発を始める（README明記／根拠: Worktrunk makes git worktrees as easy as branches）
+
+- 作業が完了したワークツリーをマージして不要になったブランチとともに一括で削除する（README明記／根拠: Quick start）
+
+
+### 最初に試すこと
+
+新しい機能用のワークツリーを作成して切り替える
+
+1. wt switch --create feature-auth
+
+
+成功の目安: 新しいブランチとワークツリーが作成され、そこに切り替わっていること
+
+未確認: 詳細な設定ファイルやフックのカスタムスクリプトの全仕様
+
+
+## 3. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
 
 **概要:** Claude Codeのセッションを本格的なゲーム開発スタジオに変えるためのツールキットです。49体のAIエージェント、74種類のワークフロー用スキル（スラッシュコマンド）、自動検証フック、パス別のコーディング規約を備えており、実際のスタジオ階層を模した協調システムを提供します。
 
 - 言語: Shell
-- 今週のスター: 6018
+- 今週のスター: 5719
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -88,12 +127,57 @@ claude-memをインストールして動作確認する
 未確認: 実際のゲームプレイ映像の出力品質や、特定プロジェクトにおける生成ゲームの市場での成功確率
 
 
-## 3. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+## 4. [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu)
+
+**概要:** GitHubリポジトリ「Renhuai123/ziwei-doushu」は、倪海厦氏の『天纪』体系に基づいたTypeScript製のオープンソースの紫微斗数排盘（命盤作成）エンジンです。完全な排盘アルゴリズム、四化システム、格局知識庫、古籍原文データ、さらに数百万件規模の解读データセットを含みます。
+
+- 言語: TypeScript
+- 今週のスター: 4906
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 真太陽時校正（経度差と均時差の計算）に対応しています。（根拠: 四排盘引擎）
+
+- 1986年から1991年までの中国夏令時（サマータイム）の判定機能を備えています。（根拠: 四排盘引擎）
+
+- 紫府同宫や日月并明などのクラシックな格局の判定規則を含む1100行以上の格局知識庫を提供します。（根拠: 四排盘引擎）
+
+
+### 利用例
+
+- 小規模言語モデル（LLM）の微調整（Fine-tuning）の学習用コーパスとして活用できます。（README明記／根拠: 二、51.8 万命盘样本数据集）
+
+- AI対話のためのRAG（検索拡張生成）の検索ソースとして利用できます。（README明記／根拠: 二、51.8 万命盘样本数据集）
+
+- 独自の紫微斗数アプリケーションの開発において、オープンソースの排盤エンジンやデータベースとして組み込むことができます。（提案／根拠: 三、快速开始）
+
+
+### 最初に試すこと
+
+リポジトリをクローンして依存関係をインストールし、開発サーバーを起動してローカル環境でエンジンを動作させること。
+
+1. git clone https://github.com/Renhuai123/ziwei-doushu.git
+
+2. cd ziwei-doushu
+
+3. npm install
+
+4. npm run dev
+
+
+成功の目安: 開発サーバーが正常に起動し、ローカル環境で排盤アプリのインターフェースを確認できること。
+
+未確認: AI解読（/api/interpret）や合算AI分析（/api/heming）の具体的なAPI内部実装の全容／商用版オンラインプラットフォームの詳細なフロントエンドコード
+
+
+## 5. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
 
 **概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
 
 - 言語: TypeScript
-- 今週のスター: 16782
+- 今週のスター: 17100
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -127,92 +211,14 @@ claude-memをインストールして動作確認する
 未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
 
 
-## 4. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
-
-**概要:** Worktrunkは、Gitワークツリーの管理を効率化し、複数のAIエージェントを並行して実行しやすくするためのコマンドラインツールです。
-
-- 言語: Rust
-- 今週のスター: 2184
-- ライセンス: NOASSERTION
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- ブランチ名を指定してワークツリーの切り替えや作成、削除を行える（根拠: Worktrunk makes git worktrees as easy as branches）
-
-- ワークツリーの一覧をステータス付きで表示できる（根拠: Worktrunk makes git worktrees as easy as branches）
-
-- フック機能によるワークフローの自動化や、LLMを活用したコミットメッセージの生成が行える（根拠: Worktrunk makes git worktrees as easy as branches）
-
-
-### 利用例
-
-- 複数のAIエージェントにそれぞれ独立した作業用ディレクトリを割り当てて並行作業させる（README明記／根拠: Context: git worktrees）
-
-- ワークツリーを作成すると同時にClaudeなどのエージェントを起動して開発を始める（README明記／根拠: Worktrunk makes git worktrees as easy as branches）
-
-- 作業が完了したワークツリーをマージして不要になったブランチとともに一括で削除する（README明記／根拠: Quick start）
-
-
-### 最初に試すこと
-
-新しい機能用のワークツリーを作成して切り替える
-
-1. wt switch --create feature-auth
-
-
-成功の目安: 新しいブランチとワークツリーが作成され、そこに切り替わっていること
-
-未確認: 詳細な設定ファイルやフックのカスタムスクリプトの全仕様
-
-
-## 5. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
-
-**概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
-
-- 言語: CSS
-- 今週のスター: 6900
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能（根拠: New in v2）
-
-- 既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能（根拠: New in v2）
-
-- 既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能（根拠: Redesign）
-
-
-### 利用例
-
-- AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合（README明記／根拠: README冒頭）
-
-- 既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合（README明記／根拠: New in v2）
-
-- 予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合（README明記／根拠: New in v2）
-
-
-### 最初に試すこと
-
-hallmarkをグローバルにインストールする
-
-1. npx skills add nutlope/hallmark -g
-
-
-成功の目安: Node 18以降の環境で、パッケージが正常にインストールされること
-
-
-
-
 ## 6. [anthropics/skills](https://github.com/anthropics/skills)
 
 **概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
 
 - 言語: Python
-- 今週のスター: 3159
+- 今週のスター: 2796
 - ライセンス: 不明
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -246,34 +252,73 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
 
 
-## 7. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+## 7. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
 
-**概要:** OpenMausBotは、Grok Botのオープンソース代替として提供される、チャットアプリ形式のAIボット管理ツールです。ローカルファーストで動作し、独自のパーソナリティや接続アプリを持つ複数のAIボットとチャット形式でやり取りできます。
+**概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
 
-- 言語: TypeScript
-- 今週のスター: 6395
-- ライセンス: Apache-2.0
+- 言語: CSS
+- 今週のスター: 6624
+- ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- ClaudeやCodex、Grokなどの既存のAIエージェントCLIをローカル環境で実行して利用できる。（根拠: Why）
+- 50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能（根拠: New in v2）
 
-- ローカルファーストのアーキテクチャにより、トランスクリプトやキー、イベントをクラウドではなくローカル（~/.openmausbot）に保存できる。（根拠: Why）
+- 既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能（根拠: New in v2）
 
-- macOS、Windows、Ubuntu 24.04に対応したElectronベースのデスクトップアプリとして利用できる。（根拠: Quick start）
+- 既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能（根拠: Redesign）
 
 
 ### 利用例
 
-- サイドバーに配置された複数のボットと連絡先のようにチャットを行い、作業を監視して承認する。（README明記／根拠: README冒頭）
+- AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合（README明記／根拠: README冒頭）
 
-- SettingsからカスタムのCLIバイナリをエンジンとして指定し、独自の環境でAIボットを動作させる。（README明記／根拠: Why）
+- 既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合（README明記／根拠: New in v2）
+
+- 予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合（README明記／根拠: New in v2）
 
 
 ### 最初に試すこと
 
-ソースコードから開発サーバーとデスクトップシェルを起動して動作を確認する
+hallmarkをグローバルにインストールする
+
+1. npx skills add nutlope/hallmark -g
+
+
+成功の目安: Node 18以降の環境で、パッケージが正常にインストールされること
+
+
+
+
+## 8. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+
+**概要:** OpenMausBotは、Grok BotにインスパイアされたオープンソースのAIチャットアプリです。ClaudeやCodexなどのAIエージェントとメッセージアプリのように会話でき、ローカルファーストで動作します。
+
+- 言語: TypeScript
+- 今週のスター: 7077
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- ClaudeやCodex、GrokのCLIを利用したAIエージェントの実行（根拠: Why）
+
+- ローカルファーストでのデータ管理（トランスクリプトやキーなどが~/.openmausbotに保存される）（根拠: Why）
+
+- ElectronベースのデスクトップアプリとしてmacOS、Windows、Ubuntuで動作（根拠: Quick start）
+
+
+### 利用例
+
+- サイドバーにいる複数のAIボットとチャットアプリ感覚で会話する（README明記／根拠: README冒頭）
+
+- 既存のローカル環境のサブスクリプションやログイン情報をそのまま用いてAIエージェントを動かす（README明記／根拠: Why）
+
+
+### 最初に試すこと
+
+ソースコードから開発環境サーバーおよびデスクトップシェルを起動する
 
 1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
 
@@ -286,136 +331,89 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 5. pnpm dev:desktop
 
 
-成功の目安: ハーネスサーバーやアプリ、Electronシェルが起動し、デスクトップアプリとして操作できるようになること
+成功の目安: ハーネスサーバーやElectronシェルが起動し、アプリケーションが動作すること
 
-未確認: 機能セクションの続き（「Agents with hands」以降の詳細な説明）がREADMEの途中で切れているため、ボットが使用する仮想環境やクラウドLinuxデスクトップの詳細な仕様は不明です。
-
-
-## 8. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-
-**概要:** pbakaus/impeccableは、コーディングエージェントのためのデザイン語彙ツールです。デザインの調整、レビュー、AI生成のありふれた表現（スロップ）の検出をサポートします。
-
-- 言語: Rust
-- 今週のスター: 8172
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- デザインの方向性を調整するための24種類のコマンドを提供します。（根拠: 24 commands）
-
-- 使い勝手のヒューリスティックに基づいてデザインをスコア化しレビューします。（根拠: Why）
-
-- 決定的ルールを用いて、AI生成のありふれた表現や品質上の問題を検出します。（根拠: Why）
+未確認: Featuresセクション以降のコンテンツがREADME内で途中で途切れているため、機能の詳細の一部
 
 
-### 利用例
+## 9. [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
 
-- 価格設定カードなどのデザインを特定の指示で調整する。（README明記／根拠: Why）
-
-- アクセシビリティやパフォーマンス、レスポンシブ動作を技術的に監査する。（README明記／根拠: Why）
-
-- ブラウザ上で要素を選択し、バリエーションを切り替えてライブで反復作業を行う。（README明記／根拠: Live mode）
-
-
-### 最初に試すこと
-
-Impeccableをインストールして初期化する
-
-1. npx impeccable install
-
-2. コーディングツールをリロードする
-
-3. エージェントで /impeccable init を実行する
-
-
-成功の目安: プロジェクトにImpeccableが初期化され、PRODUCT.mdが作成されること
-
-未確認: 詳細な内部実装や商用利用における追加の制限事項
-
-
-## 9. [obra/superpowers](https://github.com/obra/superpowers)
-
-**概要:** Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。
-
-- 言語: Shell
-- 今週のスター: 4577
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- コードを書く前に意図や仕様を引き出すブレインストーミング機能（根拠: The Basic Workflow）
-
-- 仕様に基づいた詳細な実装計画の作成機能（根拠: The Basic Workflow）
-
-- テスト駆動開発（TDD）の強制とサブエージェントによる開発進行（根拠: The Basic Workflow）
-
-
-### 利用例
-
-- コーディングエージェントに自動で要件定義や設計を行わせる（README明記／根拠: How it works）
-
-- AIエージェントにテスト駆動開発を実施させて品質を保つ（README明記／根拠: The Basic Workflow）
-
-- 複数タスクをサブエージェントに自律的に処理させる（README明記／根拠: How it works）
-
-
-### 最初に試すこと
-
-Antigravity環境にSuperpowersプラグインをインストールする
-
-1. agy plugin install https://github.com/obra/superpowers
-
-
-成功の目安: プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること
-
-
-
-
-## 10. [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)
-
-**概要:** DeepTutorは、チュータリング、リサーチ、制作、演習を統合した、エージェントネイティブな生涯パーソナライズ学習ワークスペースです。
+**概要:** Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析機能、並行クローリングを1つに統合したPythonのWebスクレイピングフレームワークです。
 
 - 言語: Python
-- 今週のスター: 4588
-- ライセンス: Apache-2.0
+- 今週のスター: 8712
+- ライセンス: BSD-3-Clause
 - AI分析状態: ok
 
 ### できること
 
-- チャット、クイズ、リサーチ、可視化、解決、マスターパス、読書など、複数の学習モードを共有セッションコンテキスト上で実行可能。（根拠: Key Features）
+- 高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能を提供します。（根拠: What you can do with Scrapling）
 
-- LlamaIndex、PageIndex、GraphRAG、LightRAGを用いたバージョン管理付きライブラリの構築や、ソース付き引用による学習機能。（根拠: Key Features）
+- CSS、XPath、テキスト・正規表現検索による柔軟なデータ抽出が可能です。（根拠: What you can do with Scrapling）
 
-- L1トレース、L2ファクト、L3合成による透明で編集可能なパーソナライズメモリ。（根拠: Key Features）
+- AIエージェント向けのMCPサーバーやAgent Skill、LLM向けのMarkdown変換機能を備えています。（根拠: AI Features）
 
 
 ### 利用例
 
-- パーソナライズされたチャットやクイズ、リサーチなどの多彩な学習モードを通じた学習活動の実施。（README明記／根拠: Key Features）
+- 静的ページのスクレイピングやJavaScriptのレンダリング、API呼び出しからのデータ抽出。（README明記／根拠: README冒頭）
 
-- 外部知識ソースやバージョン管理されたライブラリを接続した、ソース付き引用によるドキュメント読書と学習。（README明記／根拠: Key Features）
+- プロキシローテーションや自動リトライ、一時停止・再開機能を備えたクローラーの構築。（README明記／根拠: README冒頭）
 
-- モジュールのインストールやアンインストールによる学習環境の拡張とカスタマイズ。（README明記／根拠: Package installations only; source checkouts use enable / disable）
+- WebページをLLMやRAG向けにクリーンなMarkdown形式に変換すること。（README明記／根拠: AI Features）
 
 
 ### 最初に試すこと
 
-CLI環境でのモジュールインストールおよびチャットの開始
+Scraplingをインストールして動作を確認する
 
-1. deeptutor module install solve
-
-2. deeptutor chat
+1. pip install scrapling
 
 
-成功の目安: モジュールがインストールされ、CLIでチャットが再起動すること
+成功の目安: エラーなくパッケージがインストールされること
 
-未確認: 詳細なインストール前提条件やPythonのバージョン要件／Webアプリの具体的な起動手順
+未確認: fetchersやspidersを使用する場合の具体的な追加インストールコマンド
+
+
+## 10. [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
+
+**概要:** OpenMontageは、AIコーディングアシスタントを動画制作スタジオに変えるオープンソースのエージェント型動画制作システムです。自然言語による指示で、調査、台本作成、素材生成、編集、最終合成までのプロセスを自動化します。
+
+- 言語: Python
+- 今週のスター: 4369
+- ライセンス: AGPL-3.0
+- AI分析状態: ok
+
+### できること
+
+- 12の制作パイプライン、100以上のツール、700以上のエージェントスキルおよび制作知識ファイルを搭載しています。（根拠: README冒頭）
+
+- 無料のストック映像やオープンアーカイブから実際の動画クリップを収集し、タイムラインに編集してレンダリングする本格的な動画制作が可能です。（根拠: README冒頭）
+
+
+### 利用例
+
+- AIコーディングアシスタントを活用して、自然言語の指示から動画の調査、台本、編集、最終合成までを一貫して行う。（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+クイックスタートの確認
+
+
+成功の目安: クイックスタート手順が完了し、動作が確認できること。
+
+未確認: 具体的なインストールコマンドや実行コマンドはREADMEの途中で切れているため未確認です。
 
 
 
 ## Zenn
+
+- [Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化](https://zenn.dev/tomipetit/articles/zero-wire-github-actions) — tomi
+
+- [goda-pm.vim: goda.vim のためのプラグインマネージャー](https://zenn.dev/shougo/articles/goda-pm-vim-beta) — Shougo
+
+- [Weight-Space Programming やってみた(やらせてみた)](https://zenn.dev/nwn/articles/cf9fe78aa33861) — ヨ
 
 - [[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件](https://zenn.dev/xin9le/articles/9a1cf8e10494d6) — xin9le
 
@@ -425,6 +423,8 @@ CLI環境でのモジュールインストールおよびチャットの開始
 
 - [Claudeを使いこなす人に、MagicPodは要るのか。知らないアプリでPlaywrightと比べた記録](https://zenn.dev/genda_jp/articles/7b423bcd20b532) — ikenyal
 
+- [米津玄師に学ぶ：一人で全部作れる時代に、なぜ人と作るのか](https://zenn.dev/tokium_dev/articles/yonezu-kenshi-why-create-with-others) — タケノコご飯
+
 - [【.NET/Unity】C# の型制約とボックス化をハックする — IL と手動スタック配置](https://zenn.dev/aakei/articles/csharp-stack-box) — akeit0
 
 - [Security Hub の SBOM インベントリで、Athena を使わずに組織全体のソフトウェアを調べてみた](https://zenn.dev/cscloud_blog/articles/securityhub-sbom-inventory) — 平木 佳介
@@ -433,17 +433,9 @@ CLI環境でのモジュールインストールおよびチャットの開始
 
 - [.NET にも build.cs 欲しいんじゃーーー](https://zenn.dev/sator_imaging/articles/c10d8da7685308) — サトー™ @sator_imaging
 
-- [Slurm は Kaggle で役に立つ](https://zenn.dev/pomcho555/articles/c455d086ec47af) — pomcho555
-
-- [AI生成コードを本番品質に保つためのフロントエンド開発の仕組み](https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99) — Phung Dinh Son
-
 - [[TypeScript] パスエイリアスには Subpath Imports を使いたい](https://zenn.dev/mediba/articles/167e2a3f663889) — mdbr92
 
-- [Xで積み重ねた日々をmixi2へ。過去ポストのインポート機能ができるまで](https://zenn.dev/mixi/articles/bcf2363e83b0a2) — kuno
-
 - [集約をどこまで機械的に導けるか――形式手法をベースとしたドメインモデリング](https://zenn.dev/nrs/articles/33ba79c8b2542e) — nrs
-
-- [SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話](https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2) — Mikihiro Tanaka
 
 - [コードを読まずにバイブコーディングしたら、Claude Codeは分かっていてスルーしていた](https://zenn.dev/nexta_/articles/42a828ca2b8a02) — bik
 

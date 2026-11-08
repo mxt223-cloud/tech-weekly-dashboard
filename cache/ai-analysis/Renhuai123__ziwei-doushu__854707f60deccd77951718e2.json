@@ -1,0 +1,58 @@
+{
+  "summary_ja": "GitHubリポジトリ「Renhuai123/ziwei-doushu」は、倪海厦氏の『天纪』体系に基づいたTypeScript製のオープンソースの紫微斗数排盘（命盤作成）エンジンです。完全な排盘アルゴリズム、四化システム、格局知識庫、古籍原文データ、さらに数百万件規模の解读データセットを含みます。",
+  "capabilities": [
+    {
+      "text": "真太陽時校正（経度差と均時差の計算）に対応しています。",
+      "evidence_section": "四排盘引擎"
+    },
+    {
+      "text": "1986年から1991年までの中国夏令時（サマータイム）の判定機能を備えています。",
+      "evidence_section": "四排盘引擎"
+    },
+    {
+      "text": "紫府同宫や日月并明などのクラシックな格局の判定規則を含む1100行以上の格局知識庫を提供します。",
+      "evidence_section": "四排盘引擎"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "小規模言語モデル（LLM）の微調整（Fine-tuning）の学習用コーパスとして活用できます。",
+      "basis": "README明記",
+      "evidence_section": "二、51.8 万命盘样本数据集"
+    },
+    {
+      "text": "AI対話のためのRAG（検索拡張生成）の検索ソースとして利用できます。",
+      "basis": "README明記",
+      "evidence_section": "二、51.8 万命盘样本数据集"
+    },
+    {
+      "text": "独自の紫微斗数アプリケーションの開発において、オープンソースの排盤エンジンやデータベースとして組み込むことができます。",
+      "basis": "提案",
+      "evidence_section": "三、快速开始"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして依存関係をインストールし、開発サーバーを起動してローカル環境でエンジンを動作させること。",
+    "steps": [
+      "git clone https://github.com/Renhuai123/ziwei-doushu.git",
+      "cd ziwei-doushu",
+      "npm install",
+      "npm run dev"
+    ],
+    "success_criteria": "開発サーバーが正常に起動し、ローカル環境で排盤アプリのインターフェースを確認できること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "三、快速开始",
+    "四排盘引擎"
+  ],
+  "unconfirmed": [
+    "AI解読（/api/interpret）や合算AI分析（/api/heming）の具体的なAPI内部実装の全容",
+    "商用版オンラインプラットフォームの詳細なフロントエンドコード"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a41db6784407955d4d0d8458602780bd5708445d",
+  "generated_at": "2026-11-08T09:52:11.540450+09:00"
+}

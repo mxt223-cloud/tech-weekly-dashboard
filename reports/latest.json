@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T10:05:51.281267+09:00",
-  "week": "2026-11-07",
+  "generated_at": "2026-11-08T09:52:19.596787+09:00",
+  "week": "2026-11-08",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars_total": 114030,
-      "forks_total": 9893,
-      "stars_period": 8726,
+      "stars_total": 114490,
+      "forks_total": 9928,
+      "stars_period": 7482,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-07T01:03:56Z",
-        "pushed_at": "2026-11-06T22:43:49Z",
-        "open_issues": 129,
+        "updated_at": "2026-11-08T00:51:33Z",
+        "pushed_at": "2026-11-07T21:03:50Z",
+        "open_issues": 86,
         "archived": false,
-        "size_kb": 786680,
+        "size_kb": 791817,
         "topics": [
           "ai",
           "ai-agents",
@@ -45,85 +45,177 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "e2b3204b87fbae7354db36c94857abe8edfc83cd",
+        "sha": "93e2ad9a1cf783ac9f62dba1b2665121a20dc534",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 21651,
-        "used_chars": 20346
+        "original_chars": 25073,
+        "used_chars": 23749
       },
       "analysis": {
-        "summary_ja": "thedotmack/claude-memは、Claude CodeなどのAIエージェントのセッション間でコンテキストを永続化し、自動的な観察のキャプチャ、AIによる圧縮、関連コンテキストの将来のセッションへの注入を行うメモリ圧縮システムです。",
+        "summary_ja": "claude-memは、AIコーディングエージェントのセッション間で永続的なコンテキストを維持するためのツールです。エージェントの作業内容をキャプチャしてAIで圧縮し、次回のセッションに適切なコンテキストを自動で注入します。Claude Codeやその他の主要なエージェントに対応しています。",
         "capabilities": [
           {
-            "text": "セッション間でコンテキストをシームレスに保存し、AIエージェントの知識の継続性を維持する",
-            "evidence_section": "README冒頭"
+            "text": "セッション間の自動記憶：エージェントの作業内容を記録し、次のセッションの開始時に必要なコンテキストを注入する。",
+            "evidence_section": "What You Get"
           },
           {
-            "text": "検索、タイムライン、詳細取得の3層ワークフローを持つMCPツールによるインテリジェントなメモリ検索を提供する",
+            "text": "MCP検索ツールによるプロジェクト履歴の検索：インデックス、タイムライン、詳細の3段階で効率的な検索を行う。",
             "evidence_section": "MCP Search Tools"
           },
           {
-            "text": "CLIコマンドを用いた簡単なインストールと複数IDE/エージェントへの対応を行う",
-            "evidence_section": "Quick Start"
+            "text": "プライバシー保護機能：<private>タグで囲んだ内容を保存対象外にできる。",
+            "evidence_section": "What You Get"
           }
         ],
         "use_cases": [
           {
-            "text": "過去のセッションのコンテキストを引き継いでClaude CodeなどのAIエージェントを利用する",
+            "text": "過去のセッションで解決した修正内容や進捗を次のセッションへ引き継ぎ、ゼロからやり直す手間を省く。",
             "basis": "README明記",
-            "evidence_section": "Quick Start"
+            "evidence_section": "What You Get"
           },
           {
-            "text": "自然言語を使用してプロジェクトの履歴や過去の決定事項を検索する",
+            "text": "自然言語を用いたプロジェクト履歴の検索により、過去の作業内容やバグ修正の経緯を効率的に見つける。",
             "basis": "README明記",
             "evidence_section": "MCP Search Tools"
           },
           {
-            "text": "クラウト同期機能やローカルワーカーサービスを利用してチームでの共同作業やプロジェクトの記録を管理する",
+            "text": "シークレット情報を秘匿した状態でエージェントに安全に作業を記憶させる。",
             "basis": "README明記",
-            "evidence_section": "Quick Start"
+            "evidence_section": "What You Get"
           }
         ],
         "first_trial": {
-          "goal": "claude-memをインストールして動作確認する",
+          "goal": "claude-memをインストールしてプロジェクトの記憶機能を開始する",
           "steps": [
-            "npx claude-mem install を実行する"
+            "npx claude-mem install"
           ],
-          "success_criteria": "インストーラーが起動し、セットアップ画面またはブラウザでのサインイン案内に進むこと"
+          "success_criteria": "インストーラーが起動し、使用するエージェントの選択やセットアップが完了すること"
         },
         "evidence_sections": [
-          "README冒頭",
           "Quick Start",
-          "MCP Search Tools",
+          "What You Get",
           "How It Works",
-          "Configuration"
+          "MCP Search Tools",
+          "System Requirements"
         ],
         "unconfirmed": [
-          "無料トライアル終了後の具体的な料金プランの詳細",
-          "サポートされているすべての環境における詳細な動作保証"
+          "セッションの記録や圧縮に利用される具体的なAIモデルの内部仕様の詳細"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "e2b3204b87fbae7354db36c94857abe8edfc83cd",
-        "generated_at": "2026-11-07T10:05:36.789810+09:00"
+        "readme_sha": "93e2ad9a1cf783ac9f62dba1b2665121a20dc534",
+        "generated_at": "2026-11-08T09:52:07.381785+09:00"
       }
     },
     {
       "rank": 2,
+      "full_name": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars_total": 11948,
+      "forks_total": 463,
+      "stars_period": 2292,
+      "api": {
+        "default_branch": "main",
+        "license": "NOASSERTION",
+        "updated_at": "2026-11-07T23:51:39Z",
+        "pushed_at": "2026-11-07T08:25:14Z",
+        "open_issues": 49,
+        "archived": false,
+        "size_kb": 62852,
+        "topics": [
+          "agents",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "git",
+          "worktrees"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "7dc9e151754e4d5acf1add7d5aa99e69e481b56b",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 14938,
+        "used_chars": 12828
+      },
+      "analysis": {
+        "summary_ja": "Worktrunkは、Gitワークツリーの管理を効率化し、複数のAIエージェントを並行して実行しやすくするためのコマンドラインツールです。",
+        "capabilities": [
+          {
+            "text": "ブランチ名を指定してワークツリーの切り替えや作成、削除を行える",
+            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+          },
+          {
+            "text": "ワークツリーの一覧をステータス付きで表示できる",
+            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+          },
+          {
+            "text": "フック機能によるワークフローの自動化や、LLMを活用したコミットメッセージの生成が行える",
+            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "複数のAIエージェントにそれぞれ独立した作業用ディレクトリを割り当てて並行作業させる",
+            "basis": "README明記",
+            "evidence_section": "Context: git worktrees"
+          },
+          {
+            "text": "ワークツリーを作成すると同時にClaudeなどのエージェントを起動して開発を始める",
+            "basis": "README明記",
+            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
+          },
+          {
+            "text": "作業が完了したワークツリーをマージして不要になったブランチとともに一括で削除する",
+            "basis": "README明記",
+            "evidence_section": "Quick start"
+          }
+        ],
+        "first_trial": {
+          "goal": "新しい機能用のワークツリーを作成して切り替える",
+          "steps": [
+            "wt switch --create feature-auth"
+          ],
+          "success_criteria": "新しいブランチとワークツリーが作成され、そこに切り替わっていること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Context: git worktrees",
+          "Worktrunk makes git worktrees as easy as branches",
+          "Install",
+          "Quick start",
+          "Next steps",
+          "Contributing"
+        ],
+        "unconfirmed": [
+          "詳細な設定ファイルやフックのカスタムスクリプトの全仕様"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "7dc9e151754e4d5acf1add7d5aa99e69e481b56b",
+        "generated_at": "2026-11-05T10:42:25.996766+09:00"
+      }
+    },
+    {
+      "rank": 3,
       "full_name": "Donchitos/Claude-Code-Game-Studios",
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars_total": 36129,
-      "forks_total": 4757,
-      "stars_period": 6018,
+      "stars_total": 36590,
+      "forks_total": 4831,
+      "stars_period": 5719,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-07T01:02:47Z",
+        "updated_at": "2026-11-08T00:50:57Z",
         "pushed_at": "2026-10-19T02:43:42Z",
-        "open_issues": 94,
+        "open_issues": 95,
         "archived": false,
         "size_kb": 4406,
         "topics": [
@@ -207,28 +299,125 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "d73112eae0042d010d867ea850142e66ffc37f71",
         "generated_at": "2026-11-07T10:05:40.629620+09:00"
       }
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "full_name": "Renhuai123/ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars_total": 16722,
+      "forks_total": 3241,
+      "stars_period": 4906,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-08T00:14:16Z",
+        "pushed_at": "2026-11-03T07:39:11Z",
+        "open_issues": 10,
+        "archived": false,
+        "size_kb": 2698,
+        "topics": [
+          "bazi",
+          "chinese-astrology",
+          "divination",
+          "fortune-telling",
+          "nextjs",
+          "open-source",
+          "purple-star-astrology",
+          "typescript",
+          "zi-wei-dou-shu",
+          "ziwei-doushu"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "a41db6784407955d4d0d8458602780bd5708445d",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 15984,
+        "used_chars": 15982
+      },
+      "analysis": {
+        "summary_ja": "GitHubリポジトリ「Renhuai123/ziwei-doushu」は、倪海厦氏の『天纪』体系に基づいたTypeScript製のオープンソースの紫微斗数排盘（命盤作成）エンジンです。完全な排盘アルゴリズム、四化システム、格局知識庫、古籍原文データ、さらに数百万件規模の解读データセットを含みます。",
+        "capabilities": [
+          {
+            "text": "真太陽時校正（経度差と均時差の計算）に対応しています。",
+            "evidence_section": "四排盘引擎"
+          },
+          {
+            "text": "1986年から1991年までの中国夏令時（サマータイム）の判定機能を備えています。",
+            "evidence_section": "四排盘引擎"
+          },
+          {
+            "text": "紫府同宫や日月并明などのクラシックな格局の判定規則を含む1100行以上の格局知識庫を提供します。",
+            "evidence_section": "四排盘引擎"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "小規模言語モデル（LLM）の微調整（Fine-tuning）の学習用コーパスとして活用できます。",
+            "basis": "README明記",
+            "evidence_section": "二、51.8 万命盘样本数据集"
+          },
+          {
+            "text": "AI対話のためのRAG（検索拡張生成）の検索ソースとして利用できます。",
+            "basis": "README明記",
+            "evidence_section": "二、51.8 万命盘样本数据集"
+          },
+          {
+            "text": "独自の紫微斗数アプリケーションの開発において、オープンソースの排盤エンジンやデータベースとして組み込むことができます。",
+            "basis": "提案",
+            "evidence_section": "三、快速开始"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをクローンして依存関係をインストールし、開発サーバーを起動してローカル環境でエンジンを動作させること。",
+          "steps": [
+            "git clone https://github.com/Renhuai123/ziwei-doushu.git",
+            "cd ziwei-doushu",
+            "npm install",
+            "npm run dev"
+          ],
+          "success_criteria": "開発サーバーが正常に起動し、ローカル環境で排盤アプリのインターフェースを確認できること。"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "三、快速开始",
+          "四排盘引擎"
+        ],
+        "unconfirmed": [
+          "AI解読（/api/interpret）や合算AI分析（/api/heming）の具体的なAPI内部実装の全容",
+          "商用版オンラインプラットフォームの詳細なフロントエンドコード"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "a41db6784407955d4d0d8458602780bd5708445d",
+        "generated_at": "2026-11-08T09:52:11.540450+09:00"
+      }
+    },
+    {
+      "rank": 5,
       "full_name": "pingdotgg/t3code",
       "url": "https://github.com/pingdotgg/t3code",
       "description": "",
       "language": "TypeScript",
-      "stars_total": 49823,
-      "forks_total": 9749,
-      "stars_period": 16782,
+      "stars_total": 51280,
+      "forks_total": 9882,
+      "stars_period": 17100,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-07T01:03:19Z",
-        "pushed_at": "2026-11-07T00:13:05Z",
-        "open_issues": 5521,
+        "updated_at": "2026-11-08T00:49:53Z",
+        "pushed_at": "2026-11-08T00:38:51Z",
+        "open_issues": 5770,
         "archived": false,
-        "size_kb": 744617,
+        "size_kb": 752179,
         "topics": []
       },
       "readme": {
@@ -297,194 +486,20 @@
       }
     },
     {
-      "rank": 4,
-      "full_name": "max-sixty/worktrunk",
-      "url": "https://github.com/max-sixty/worktrunk",
-      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-      "language": "Rust",
-      "stars_total": 11803,
-      "forks_total": 454,
-      "stars_period": 2184,
-      "api": {
-        "default_branch": "main",
-        "license": "NOASSERTION",
-        "updated_at": "2026-11-07T00:54:26Z",
-        "pushed_at": "2026-11-06T17:25:04Z",
-        "open_issues": 52,
-        "archived": false,
-        "size_kb": 62844,
-        "topics": [
-          "agents",
-          "claude-code",
-          "codex",
-          "developer-tools",
-          "git",
-          "worktrees"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "7dc9e151754e4d5acf1add7d5aa99e69e481b56b",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 14938,
-        "used_chars": 12828
-      },
-      "analysis": {
-        "summary_ja": "Worktrunkは、Gitワークツリーの管理を効率化し、複数のAIエージェントを並行して実行しやすくするためのコマンドラインツールです。",
-        "capabilities": [
-          {
-            "text": "ブランチ名を指定してワークツリーの切り替えや作成、削除を行える",
-            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
-          },
-          {
-            "text": "ワークツリーの一覧をステータス付きで表示できる",
-            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
-          },
-          {
-            "text": "フック機能によるワークフローの自動化や、LLMを活用したコミットメッセージの生成が行える",
-            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "複数のAIエージェントにそれぞれ独立した作業用ディレクトリを割り当てて並行作業させる",
-            "basis": "README明記",
-            "evidence_section": "Context: git worktrees"
-          },
-          {
-            "text": "ワークツリーを作成すると同時にClaudeなどのエージェントを起動して開発を始める",
-            "basis": "README明記",
-            "evidence_section": "Worktrunk makes git worktrees as easy as branches"
-          },
-          {
-            "text": "作業が完了したワークツリーをマージして不要になったブランチとともに一括で削除する",
-            "basis": "README明記",
-            "evidence_section": "Quick start"
-          }
-        ],
-        "first_trial": {
-          "goal": "新しい機能用のワークツリーを作成して切り替える",
-          "steps": [
-            "wt switch --create feature-auth"
-          ],
-          "success_criteria": "新しいブランチとワークツリーが作成され、そこに切り替わっていること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Context: git worktrees",
-          "Worktrunk makes git worktrees as easy as branches",
-          "Install",
-          "Quick start",
-          "Next steps",
-          "Contributing"
-        ],
-        "unconfirmed": [
-          "詳細な設定ファイルやフックのカスタムスクリプトの全仕様"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "7dc9e151754e4d5acf1add7d5aa99e69e481b56b",
-        "generated_at": "2026-11-05T10:42:25.996766+09:00"
-      }
-    },
-    {
-      "rank": 5,
-      "full_name": "Nutlope/hallmark",
-      "url": "https://github.com/Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "stars_total": 49637,
-      "forks_total": 2632,
-      "stars_period": 6900,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-07T01:05:28Z",
-        "pushed_at": "2026-11-05T13:16:31Z",
-        "open_issues": 45,
-        "archived": false,
-        "size_kb": 233716,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 8731,
-        "used_chars": 7743
-      },
-      "analysis": {
-        "summary_ja": "Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。",
-        "capabilities": [
-          {
-            "text": "50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能",
-            "evidence_section": "New in v2"
-          },
-          {
-            "text": "既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能",
-            "evidence_section": "New in v2"
-          },
-          {
-            "text": "既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能",
-            "evidence_section": "Redesign"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合",
-            "basis": "README明記",
-            "evidence_section": "New in v2"
-          },
-          {
-            "text": "予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合",
-            "basis": "README明記",
-            "evidence_section": "New in v2"
-          }
-        ],
-        "first_trial": {
-          "goal": "hallmarkをグローバルにインストールする",
-          "steps": [
-            "npx skills add nutlope/hallmark -g"
-          ],
-          "success_criteria": "Node 18以降の環境で、パッケージが正常にインストールされること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "New in v2",
-          "Redesign",
-          "Install"
-        ],
-        "unconfirmed": [],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-        "generated_at": "2026-11-01T09:19:21.840232+09:00"
-      }
-    },
-    {
       "rank": 6,
       "full_name": "anthropics/skills",
       "url": "https://github.com/anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars_total": 188176,
-      "forks_total": 22197,
-      "stars_period": 3159,
+      "stars_total": 188788,
+      "forks_total": 22252,
+      "stars_period": 2796,
       "api": {
         "default_branch": "main",
         "license": null,
-        "updated_at": "2026-11-07T00:55:37Z",
+        "updated_at": "2026-11-08T00:50:28Z",
         "pushed_at": "2026-11-06T22:32:32Z",
-        "open_issues": 1485,
+        "open_issues": 1492,
         "archived": false,
         "size_kb": 5502,
         "topics": [
@@ -554,28 +569,109 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
         "generated_at": "2026-11-07T10:05:46.778228+09:00"
       }
     },
     {
       "rank": 7,
+      "full_name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars_total": 50283,
+      "forks_total": 2669,
+      "stars_period": 6624,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-08T00:51:37Z",
+        "pushed_at": "2026-11-05T13:16:31Z",
+        "open_issues": 45,
+        "archived": false,
+        "size_kb": 233716,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 8731,
+        "used_chars": 7743
+      },
+      "analysis": {
+        "summary_ja": "Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。",
+        "capabilities": [
+          {
+            "text": "50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能",
+            "evidence_section": "New in v2"
+          },
+          {
+            "text": "既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能",
+            "evidence_section": "New in v2"
+          },
+          {
+            "text": "既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能",
+            "evidence_section": "Redesign"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合",
+            "basis": "README明記",
+            "evidence_section": "New in v2"
+          },
+          {
+            "text": "予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合",
+            "basis": "README明記",
+            "evidence_section": "New in v2"
+          }
+        ],
+        "first_trial": {
+          "goal": "hallmarkをグローバルにインストールする",
+          "steps": [
+            "npx skills add nutlope/hallmark -g"
+          ],
+          "success_criteria": "Node 18以降の環境で、パッケージが正常にインストールされること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "New in v2",
+          "Redesign",
+          "Install"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+        "generated_at": "2026-11-01T09:19:21.840232+09:00"
+      }
+    },
+    {
+      "rank": 8,
       "full_name": "milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars_total": 15296,
-      "forks_total": 2140,
-      "stars_period": 6395,
+      "stars_total": 16984,
+      "forks_total": 2407,
+      "stars_period": 7077,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-07T01:05:18Z",
-        "pushed_at": "2026-11-07T00:19:49Z",
-        "open_issues": 799,
+        "updated_at": "2026-11-08T00:51:29Z",
+        "pushed_at": "2026-11-08T00:48:46Z",
+        "open_issues": 822,
         "archived": false,
-        "size_kb": 441184,
+        "size_kb": 452045,
         "topics": [
           "ai-agents",
           "claude-code",
@@ -593,42 +689,42 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "1c6526756d174ea00f0f3f0977707fd519926002",
+        "sha": "ee7a12dac2c97db2ac8333cb00d3b07b983f1fd2",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 32492,
+        "original_chars": 32649,
         "used_chars": 6464
       },
       "analysis": {
-        "summary_ja": "OpenMausBotは、Grok Botのオープンソース代替として提供される、チャットアプリ形式のAIボット管理ツールです。ローカルファーストで動作し、独自のパーソナリティや接続アプリを持つ複数のAIボットとチャット形式でやり取りできます。",
+        "summary_ja": "OpenMausBotは、Grok BotにインスパイアされたオープンソースのAIチャットアプリです。ClaudeやCodexなどのAIエージェントとメッセージアプリのように会話でき、ローカルファーストで動作します。",
         "capabilities": [
           {
-            "text": "ClaudeやCodex、Grokなどの既存のAIエージェントCLIをローカル環境で実行して利用できる。",
+            "text": "ClaudeやCodex、GrokのCLIを利用したAIエージェントの実行",
             "evidence_section": "Why"
           },
           {
-            "text": "ローカルファーストのアーキテクチャにより、トランスクリプトやキー、イベントをクラウドではなくローカル（~/.openmausbot）に保存できる。",
+            "text": "ローカルファーストでのデータ管理（トランスクリプトやキーなどが~/.openmausbotに保存される）",
             "evidence_section": "Why"
           },
           {
-            "text": "macOS、Windows、Ubuntu 24.04に対応したElectronベースのデスクトップアプリとして利用できる。",
+            "text": "ElectronベースのデスクトップアプリとしてmacOS、Windows、Ubuntuで動作",
             "evidence_section": "Quick start"
           }
         ],
         "use_cases": [
           {
-            "text": "サイドバーに配置された複数のボットと連絡先のようにチャットを行い、作業を監視して承認する。",
+            "text": "サイドバーにいる複数のAIボットとチャットアプリ感覚で会話する",
             "basis": "README明記",
             "evidence_section": "README冒頭"
           },
           {
-            "text": "SettingsからカスタムのCLIバイナリをエンジンとして指定し、独自の環境でAIボットを動作させる。",
+            "text": "既存のローカル環境のサブスクリプションやログイン情報をそのまま用いてAIエージェントを動かす",
             "basis": "README明記",
             "evidence_section": "Why"
           }
         ],
         "first_trial": {
-          "goal": "ソースコードから開発サーバーとデスクトップシェルを起動して動作を確認する",
+          "goal": "ソースコードから開発環境サーバーおよびデスクトップシェルを起動する",
           "steps": [
             "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
             "pnpm install",
@@ -636,7 +732,7 @@
             "pnpm dev",
             "pnpm dev:desktop"
           ],
-          "success_criteria": "ハーネスサーバーやアプリ、Electronシェルが起動し、デスクトップアプリとして操作できるようになること"
+          "success_criteria": "ハーネスサーバーやElectronシェルが起動し、アプリケーションが動作すること"
         },
         "evidence_sections": [
           "README冒頭",
@@ -644,299 +740,227 @@
           "Quick start"
         ],
         "unconfirmed": [
-          "機能セクションの続き（「Agents with hands」以降の詳細な説明）がREADMEの途中で切れているため、ボットが使用する仮想環境やクラウドLinuxデスクトップの詳細な仕様は不明です。"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "1c6526756d174ea00f0f3f0977707fd519926002",
-        "generated_at": "2026-11-06T10:44:08.832671+09:00"
-      }
-    },
-    {
-      "rank": 8,
-      "full_name": "pbakaus/impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-      "language": "Rust",
-      "stars_total": 104814,
-      "forks_total": 6230,
-      "stars_period": 8172,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-07T00:57:54Z",
-        "pushed_at": "2026-11-07T00:19:40Z",
-        "open_issues": 69,
-        "archived": false,
-        "size_kb": 897718,
-        "topics": [
-          "agent-skills",
-          "ai",
-          "anti-slop",
-          "design",
-          "slop"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "555fd9a67de957c750950e62bf1baad167f61b00",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 16553,
-        "used_chars": 16491
-      },
-      "analysis": {
-        "summary_ja": "pbakaus/impeccableは、コーディングエージェントのためのデザイン語彙ツールです。デザインの調整、レビュー、AI生成のありふれた表現（スロップ）の検出をサポートします。",
-        "capabilities": [
-          {
-            "text": "デザインの方向性を調整するための24種類のコマンドを提供します。",
-            "evidence_section": "24 commands"
-          },
-          {
-            "text": "使い勝手のヒューリスティックに基づいてデザインをスコア化しレビューします。",
-            "evidence_section": "Why"
-          },
-          {
-            "text": "決定的ルールを用いて、AI生成のありふれた表現や品質上の問題を検出します。",
-            "evidence_section": "Why"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "価格設定カードなどのデザインを特定の指示で調整する。",
-            "basis": "README明記",
-            "evidence_section": "Why"
-          },
-          {
-            "text": "アクセシビリティやパフォーマンス、レスポンシブ動作を技術的に監査する。",
-            "basis": "README明記",
-            "evidence_section": "Why"
-          },
-          {
-            "text": "ブラウザ上で要素を選択し、バリエーションを切り替えてライブで反復作業を行う。",
-            "basis": "README明記",
-            "evidence_section": "Live mode"
-          }
-        ],
-        "first_trial": {
-          "goal": "Impeccableをインストールして初期化する",
-          "steps": [
-            "npx impeccable install",
-            "コーディングツールをリロードする",
-            "エージェントで /impeccable init を実行する"
-          ],
-          "success_criteria": "プロジェクトにImpeccableが初期化され、PRODUCT.mdが作成されること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Why",
-          "How it works",
-          "24 commands",
-          "Live mode",
-          "Three ways to run the detector",
-          "Installation",
-          "Project files and git",
-          "Good to know",
-          "Community",
-          "License"
-        ],
-        "unconfirmed": [
-          "詳細な内部実装や商用利用における追加の制限事項"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "555fd9a67de957c750950e62bf1baad167f61b00",
-        "generated_at": "2026-11-03T12:00:39.139814+09:00"
-      }
-    },
-    {
-      "rank": 9,
-      "full_name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars_total": 313609,
-      "forks_total": 27897,
-      "stars_period": 4577,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-07T01:00:57Z",
-        "pushed_at": "2026-11-03T23:24:58Z",
-        "open_issues": 340,
-        "archived": false,
-        "size_kb": 8099,
-        "topics": [
-          "ai",
-          "brainstorming",
-          "coding",
-          "obra",
-          "sdlc",
-          "skills",
-          "subagent-driven-development",
-          "superpowers"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 14835,
-        "used_chars": 14834
-      },
-      "analysis": {
-        "summary_ja": "Superpowersは、AIコーディングエージェント向けのエージェントスキルフレームワークおよびソフトウェア開発方法論であり、ブレインストーミングやテスト駆動開発などのスキルを自動的に組み合わせて開発プロセスをサポートします。",
-        "capabilities": [
-          {
-            "text": "コードを書く前に意図や仕様を引き出すブレインストーミング機能",
-            "evidence_section": "The Basic Workflow"
-          },
-          {
-            "text": "仕様に基づいた詳細な実装計画の作成機能",
-            "evidence_section": "The Basic Workflow"
-          },
-          {
-            "text": "テスト駆動開発（TDD）の強制とサブエージェントによる開発進行",
-            "evidence_section": "The Basic Workflow"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "コーディングエージェントに自動で要件定義や設計を行わせる",
-            "basis": "README明記",
-            "evidence_section": "How it works"
-          },
-          {
-            "text": "AIエージェントにテスト駆動開発を実施させて品質を保つ",
-            "basis": "README明記",
-            "evidence_section": "The Basic Workflow"
-          },
-          {
-            "text": "複数タスクをサブエージェントに自律的に処理させる",
-            "basis": "README明記",
-            "evidence_section": "How it works"
-          }
-        ],
-        "first_trial": {
-          "goal": "Antigravity環境にSuperpowersプラグインをインストールする",
-          "steps": [
-            "agy plugin install https://github.com/obra/superpowers"
-          ],
-          "success_criteria": "プラグインがインストールされ、using-superpowersスキルによって会話の最初でスキルが読み込まれること"
-        },
-        "evidence_sections": [
-          "How it works",
-          "Installation",
-          "The Basic Workflow",
-          "When Something Goes Wrong",
-          "What's Inside"
-        ],
-        "unconfirmed": [],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
-        "generated_at": "2026-10-30T10:16:42.304363+09:00"
-      }
-    },
-    {
-      "rank": 10,
-      "full_name": "HKUDS/DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
-      "language": "Python",
-      "stars_total": 55942,
-      "forks_total": 6845,
-      "stars_period": 4588,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-07T01:04:33Z",
-        "pushed_at": "2026-11-06T08:42:04Z",
-        "open_issues": 316,
-        "archived": false,
-        "size_kb": 310394,
-        "topics": [
-          "ai-agents",
-          "ai-tutor",
-          "clawbot",
-          "cli-tool",
-          "deepresearch",
-          "interactive-learning",
-          "learning",
-          "multi-agent-systems",
-          "rag"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "8808e1dbfdc7a311e580a97cfbc5265c7369eb1c",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 91287,
-        "used_chars": 6773
-      },
-      "analysis": {
-        "summary_ja": "DeepTutorは、チュータリング、リサーチ、制作、演習を統合した、エージェントネイティブな生涯パーソナライズ学習ワークスペースです。",
-        "capabilities": [
-          {
-            "text": "チャット、クイズ、リサーチ、可視化、解決、マスターパス、読書など、複数の学習モードを共有セッションコンテキスト上で実行可能。",
-            "evidence_section": "Key Features"
-          },
-          {
-            "text": "LlamaIndex、PageIndex、GraphRAG、LightRAGを用いたバージョン管理付きライブラリの構築や、ソース付き引用による学習機能。",
-            "evidence_section": "Key Features"
-          },
-          {
-            "text": "L1トレース、L2ファクト、L3合成による透明で編集可能なパーソナライズメモリ。",
-            "evidence_section": "Key Features"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "パーソナライズされたチャットやクイズ、リサーチなどの多彩な学習モードを通じた学習活動の実施。",
-            "basis": "README明記",
-            "evidence_section": "Key Features"
-          },
-          {
-            "text": "外部知識ソースやバージョン管理されたライブラリを接続した、ソース付き引用によるドキュメント読書と学習。",
-            "basis": "README明記",
-            "evidence_section": "Key Features"
-          },
-          {
-            "text": "モジュールのインストールやアンインストールによる学習環境の拡張とカスタマイズ。",
-            "basis": "README明記",
-            "evidence_section": "Package installations only; source checkouts use enable / disable"
-          }
-        ],
-        "first_trial": {
-          "goal": "CLI環境でのモジュールインストールおよびチャットの開始",
-          "steps": [
-            "deeptutor module install solve",
-            "deeptutor chat"
-          ],
-          "success_criteria": "モジュールがインストールされ、CLIでチャットが再起動すること"
-        },
-        "evidence_sections": [
-          "Key Features",
-          "Package installations only; source checkouts use enable / disable"
-        ],
-        "unconfirmed": [
-          "詳細なインストール前提条件やPythonのバージョン要件",
-          "Webアプリの具体的な起動手順"
+          "Featuresセクション以降のコンテンツがREADME内で途中で途切れているため、機能の詳細の一部"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "8808e1dbfdc7a311e580a97cfbc5265c7369eb1c",
-        "generated_at": "2026-11-07T10:05:51.102991+09:00"
+        "readme_sha": "ee7a12dac2c97db2ac8333cb00d3b07b983f1fd2",
+        "generated_at": "2026-11-08T09:52:15.153910+09:00"
+      }
+    },
+    {
+      "rank": 9,
+      "full_name": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "language": "Python",
+      "stars_total": 99329,
+      "forks_total": 10397,
+      "stars_period": 8712,
+      "api": {
+        "default_branch": "main",
+        "license": "BSD-3-Clause",
+        "updated_at": "2026-11-08T00:51:17Z",
+        "pushed_at": "2026-11-05T18:01:47Z",
+        "open_issues": 15,
+        "archived": false,
+        "size_kb": 16790,
+        "topics": [
+          "ai",
+          "ai-scraping",
+          "automation",
+          "crawler",
+          "crawling",
+          "crawling-python",
+          "data",
+          "data-extraction",
+          "mcp",
+          "mcp-server",
+          "playwright",
+          "python",
+          "scraping",
+          "selectors",
+          "stealth",
+          "web-scraper",
+          "web-scraping",
+          "web-scraping-python",
+          "webscraping",
+          "xpath"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "bf5a1eff0137552b0696859e17973e4bbf319406",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 38099,
+        "used_chars": 7073
+      },
+      "analysis": {
+        "summary_ja": "Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析機能、並行クローリングを1つに統合したPythonのWebスクレイピングフレームワークです。",
+        "capabilities": [
+          {
+            "text": "高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能を提供します。",
+            "evidence_section": "What you can do with Scrapling"
+          },
+          {
+            "text": "CSS、XPath、テキスト・正規表現検索による柔軟なデータ抽出が可能です。",
+            "evidence_section": "What you can do with Scrapling"
+          },
+          {
+            "text": "AIエージェント向けのMCPサーバーやAgent Skill、LLM向けのMarkdown変換機能を備えています。",
+            "evidence_section": "AI Features"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "静的ページのスクレイピングやJavaScriptのレンダリング、API呼び出しからのデータ抽出。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "プロキシローテーションや自動リトライ、一時停止・再開機能を備えたクローラーの構築。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "WebページをLLMやRAG向けにクリーンなMarkdown形式に変換すること。",
+            "basis": "README明記",
+            "evidence_section": "AI Features"
+          }
+        ],
+        "first_trial": {
+          "goal": "Scraplingをインストールして動作を確認する",
+          "steps": [
+            "pip install scrapling"
+          ],
+          "success_criteria": "エラーなくパッケージがインストールされること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "What you can do with Scrapling",
+          "AI Features",
+          "Basic Usage",
+          "Installation"
+        ],
+        "unconfirmed": [
+          "fetchersやspidersを使用する場合の具体的な追加インストールコマンド"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "bf5a1eff0137552b0696859e17973e4bbf319406",
+        "generated_at": "2026-11-08T09:52:17.443388+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars_total": 78281,
+      "forks_total": 10425,
+      "stars_period": 4369,
+      "api": {
+        "default_branch": "main",
+        "license": "AGPL-3.0",
+        "updated_at": "2026-11-08T00:43:33Z",
+        "pushed_at": "2026-11-08T00:41:52Z",
+        "open_issues": 316,
+        "archived": false,
+        "size_kb": 77550,
+        "topics": [
+          "agent",
+          "agentic-ai",
+          "ai",
+          "claude",
+          "copilot",
+          "cursor",
+          "elevenlabs",
+          "ffmpeg",
+          "flux",
+          "image-generation",
+          "open-source",
+          "openai",
+          "python",
+          "remotion",
+          "stable-diffusion",
+          "text-to-speech",
+          "text-to-video",
+          "video-generation",
+          "video-production"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "9013c574532a707ee5d719c3199ade0e9a52a83e",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 43709,
+        "used_chars": 4019
+      },
+      "analysis": {
+        "summary_ja": "OpenMontageは、AIコーディングアシスタントを動画制作スタジオに変えるオープンソースのエージェント型動画制作システムです。自然言語による指示で、調査、台本作成、素材生成、編集、最終合成までのプロセスを自動化します。",
+        "capabilities": [
+          {
+            "text": "12の制作パイプライン、100以上のツール、700以上のエージェントスキルおよび制作知識ファイルを搭載しています。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "無料のストック映像やオープンアーカイブから実際の動画クリップを収集し、タイムラインに編集してレンダリングする本格的な動画制作が可能です。",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "AIコーディングアシスタントを活用して、自然言語の指示から動画の調査、台本、編集、最終合成までを一貫して行う。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "クイックスタートの確認",
+          "steps": [],
+          "success_criteria": "クイックスタート手順が完了し、動作が確認できること。"
+        },
+        "evidence_sections": [
+          "README冒頭"
+        ],
+        "unconfirmed": [
+          "具体的なインストールコマンドや実行コマンドはREADMEの途中で切れているため未確認です。"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "9013c574532a707ee5d719c3199ade0e9a52a83e",
+        "generated_at": "2026-11-08T09:52:19.481203+09:00"
       }
     }
   ],
   "zenn": [
+    {
+      "title": "Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化",
+      "url": "https://zenn.dev/tomipetit/articles/zero-wire-github-actions",
+      "author": "tomi",
+      "published": "Sat, 07 Nov 2026 06:44:47 GMT",
+      "summary": "はじめに\n2026年11月、Cloudflare Radar に Zero Wire という脆弱性インテリジェンスのフィードが公開されました。全 CVE を網羅するのではなく、Web アプリやランタイム、インターネットに公開されたサービスなど「外向きのソフトウェアの重大な CVE」に絞って、ニュースのように読めるブリーフィングを出してくれるものです。\nhttps://blog.cloudflare.com/zero-wire/\n読み物としても便利ですが、せっかく RSS もあ"
+    },
+    {
+      "title": "goda-pm.vim: goda.vim のためのプラグインマネージャー",
+      "url": "https://zenn.dev/shougo/articles/goda-pm-vim-beta",
+      "author": "Shougo",
+      "published": "Sat, 07 Nov 2026 04:46:13 GMT",
+      "summary": "始めに\nこれまで goda.vim の上に、ddu.vim や ddc.vim など私の作成した denops プラグインを移植してきました。goda-fi.vim、goda-cmp.vim、goda-term.vim、goda-hex.vim、goda-skk.vim といったプラグインです。そして最後に残っていたのがプラグインマネージャー、つまり dpp.vim でした。\nhttps://github.com/Shougo/goda-pm.vim\ngoda-pm.vim "
+    },
+    {
+      "title": "Weight-Space Programming やってみた(やらせてみた)",
+      "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
+      "author": "ヨ",
+      "published": "Sat, 07 Nov 2026 00:57:13 GMT",
+      "summary": "GPT-6 AstraにQwen3.5-0.8Bの重みを編集させることができたという論文が話題です。\nhttps://x.com/rikiyatakehi/status/2117313742891327994\nXで反応を見ていると、AstraがQwenの重みを丸ごと読み込んで、その数値の意味を理解したように受け取られている場面がありました。実験でAstraがやったのは、コードを書いて対象モデルの重みや内部活性を調べ、挙動の仮説を立て、重みに変更を加えて結果を確かめることです。"
+    },
     {
       "title": "[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件",
       "url": "https://zenn.dev/xin9le/articles/9a1cf8e10494d6",
@@ -964,6 +988,13 @@
       "author": "ikenyal",
       "published": "Fri, 06 Nov 2026 05:13:04 GMT",
       "summary": "2026年10月、MagicPodのMCPサーバーが刷新されました。Claudeのコネクタ一覧から接続するだけで、Claudeとの対話を通じてMagicPodのテストケースを作成・編集・実行できるようになっています。\nhttps://prtimes.jp/main/html/rd/p/000000079.000027392.html\n以前、MagicPod MCPサーバーとClaudeを組み合わせて、テストケースをAIでレビューする仕組みについて書きました。\nhttps://"
+    },
+    {
+      "title": "米津玄師に学ぶ：一人で全部作れる時代に、なぜ人と作るのか",
+      "url": "https://zenn.dev/tokium_dev/articles/yonezu-kenshi-why-create-with-others",
+      "author": "タケノコご飯",
+      "published": "Fri, 06 Nov 2026 04:08:37 GMT",
+      "summary": "こんにちは。株式会社TOKIUM26卒エンジニアのタケノコご飯です。\n突然ですがエンジニアの皆さん、今日は人と話しましたか？\n在宅で、且つmtgのない日だともしかしたら一言も人と話していないかもしれません。\n出社している皆さんも、今日何人の同僚と会話をしましたか？\nSlackなども含め、どのくらい人と交流しましたでしょうか。\n正直なところ、私はつい個人作業に没頭してしまい、\n今日誰とも関わらなかったか、、？という日が月に一回くらい発生してしまいます。\n質問はまずAIに投げ、情"
     },
     {
       "title": "【.NET/Unity】C# の型制約とボックス化をハックする — IL と手動スタック配置",
@@ -994,20 +1025,6 @@
       "summary": "某 NIKKE のゲームランチャーが攻撃されるインシデントが発生しました。\n協力会社（出資元？）が CDN として使っていたドメインが期限切れになり、一部のスクリプトが改ざんされたことが原因だそうです。\n\n 動的データは開発体験を上げるが・・・\nいわゆる RemoteConfig 等のゲームに関連するもの「ではなく」\n\n常に最新版をサーバーから引っ張ってくれば楽できて開発体験が上がる\n\nによって問題が起きたように見えます。\n私も広く公開していないアプリで「最新版を常に Git"
     },
     {
-      "title": "Slurm は Kaggle で役に立つ",
-      "url": "https://zenn.dev/pomcho555/articles/c455d086ec47af",
-      "author": "pomcho555",
-      "published": "Thu, 05 Nov 2026 11:54:56 GMT",
-      "summary": "1. はじめに\nSlurm は、スパコンや研究室の GPU クラスタでよく使われるジョブスケジューラです。投入されたジョブをキューに並べておいて、CPU・メモリ・GPU が空いたものから順に実行してくれます。\n「大きなクラスタのための道具でしょ？」という印象がありますが、実は自宅の GPU 1 枚で Kaggle をするときにも、めちゃくちゃ役に立ちました！Kaggle の RSNA Knee Abnormality Detection（膝 MRI の異常検出）に RTX 3"
-    },
-    {
-      "title": "AI生成コードを本番品質に保つためのフロントエンド開発の仕組み",
-      "url": "https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99",
-      "author": "Phung Dinh Son",
-      "published": "Thu, 05 Nov 2026 09:00:55 GMT",
-      "summary": "はじめに\nAI が書いたコードの品質は、プロンプトの工夫よりも、AI の外側に用意した「仕組み」で決まります。この記事では、Next.js（App Router）と TypeScript のフロントエンド開発を例に、AI 生成コードを本番品質に保つための仕組みを 4 つの層に分けて紹介します。\n\n AI は「書かれていないこと」を推測で埋める\nたとえば AI に「プロフィール編集フォームを作って」と頼んだとします。仕様書にニックネームの最大文字数やエラー文言が書かれていなけれ"
-    },
-    {
       "title": "[TypeScript] パスエイリアスには Subpath Imports を使いたい",
       "url": "https://zenn.dev/mediba/articles/167e2a3f663889",
       "author": "mdbr92",
@@ -1015,25 +1032,11 @@
       "summary": "medibaにバックエンドエンジニアとして所属している@mdbr92です。\n肩書はバックエンドエンジニアですが、実際にはフロントエンド・API・バッチ処理などアプリケーション全体の開発やアーキテクチャ選定・開発環境の整備などをよく担当しています。\n\n はじめに\n私がこれまで開発に携わったTypeScriptを採用したいくつかのプロダクトでは、tsconfig.json の paths を使ったパスエイリアス設定を利用しています。\nパスエイリアス設定を利用して、たとえば ../"
     },
     {
-      "title": "Xで積み重ねた日々をmixi2へ。過去ポストのインポート機能ができるまで",
-      "url": "https://zenn.dev/mixi/articles/bcf2363e83b0a2",
-      "author": "kuno",
-      "published": "Thu, 05 Nov 2026 04:29:39 GMT",
-      "summary": "こんにちは！mixi2 エンジニアの久野です🦆\n今回は、X の過去ポストを mixi2 に取り込めるインポート機能について、開発のきっかけや設計、実装で考えたことを紹介します！\n\n\n 開発のきっかけ\nmixi2には、過去の投稿をカレンダーから振り返る機能があります📅\n日付を辿って、その日に書いたことや撮った写真を見返せる、自分の記録を積み重ねていくための機能です。\n\n\n\n月ごとのカレンダー\n日ごとのカレンダー（タイムラインビュー）\n日ごとのカレンダー（メディアビュー）\n\n\n\n"
-    },
-    {
       "title": "集約をどこまで機械的に導けるか――形式手法をベースとしたドメインモデリング",
       "url": "https://zenn.dev/nrs/articles/33ba79c8b2542e",
       "author": "nrs",
       "published": "Wed, 04 Nov 2026 11:54:39 GMT",
       "summary": "AI に任せられる範囲と人が介入する範囲を分ける基準は、判断の不可逆性にあると考えています。\nすぐに直せる実装の細部は AI に任せられますが、後戻りしにくい判断まで AI だけに任せることには若干の不安が残り、人が介入する余地はいまだにありそうです。\nたとえば AI がコードを正しく書けても、できあがったシステムがビジネスに合っているとは限りません。\nビジネスの進め方や判断の基準と、システムに組み込んだルールがずれていれば、機能が動いても使ってもらえないでしょう。\nそのずれ"
-    },
-    {
-      "title": "SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話",
-      "url": "https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2",
-      "author": "Mikihiro Tanaka",
-      "published": "Wed, 04 Nov 2026 05:42:59 GMT",
-      "summary": "はじめに\nNoetraでは、フィジカルAIの実現に向けて、国産マルチモーダルLLMの開発を進めています。その基盤技術の一つとして、本記事では画像エンコーダーをフルスクラッチで構築した取り組みについて紹介します。\n近年、国内外の企業・研究機関でマルチモーダルLLMの開発が活発化しています。多くのモデルは、言語モデルを独自開発している一方で、画像エンコーダーにはSigLIP2に代表される、非公開データで学習された高性能なモデルを利用しています。しかし、そのデータや学習過程が分から"
     },
     {
       "title": "コードを読まずにバイブコーディングしたら、Claude Codeは分かっていてスルーしていた",
@@ -1082,9 +1085,14 @@
     "claude",
     "code",
     "https",
+    "web",
     "git",
     "typescript",
-    "unity"
+    "mcp",
+    "unity",
+    "request",
+    "x.com",
+    "playwright"
   ],
   "ai_analysis": {
     "enabled": true,
