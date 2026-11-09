@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Worktrunkは、Gitのワークツリー管理を効率化し、複数のAIエージェントの並行ワークフローを支援するためのコマンドラインツールです。",
+  "capabilities": [
+    {
+      "text": "ブランチ名を用いたワークツリーの切り替えや作成、削除などの基本操作を行える",
+      "evidence_section": "README"
+    },
+    {
+      "text": "フック機能によるワークツリー作成時やマージ前後のワークフロー自動化を行える",
+      "evidence_section": "README"
+    },
+    {
+      "text": "差分からLLMを活用したコミットメッセージの生成を行える",
+      "evidence_section": "README"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Claude CodeなどのAIエージェントを複数のワークツリーで同時に稼働させ、並行してタスクを処理する",
+      "basis": "README明記",
+      "evidence_section": "README"
+    },
+    {
+      "text": "ワークツリーごとに固有のポート番号や開発サーバー割り当てを行い、環境競合を防ぐ",
+      "basis": "README明記",
+      "evidence_section": "README"
+    },
+    {
+      "text": "複数ワークツリー間でビルドキャッシュを共有し、ディスク容量やビルド時間を節約する",
+      "basis": "README明記",
+      "evidence_section": "README"
+    }
+  ],
+  "first_trial": {
+    "goal": "新しい機能用のワークツリーを作成して切り替える",
+    "steps": [
+      "wt switch --create feature-auth"
+    ],
+    "success_criteria": "新しいブランチとワークツリーが作成され、そこに切り替わること"
+  },
+  "evidence_sections": [
+    "README",
+    "Install",
+    "Quick start"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "cb34774014556b4eedaf43ca5f572cb4bcb5e1f9",
+  "generated_at": "2026-11-09T10:08:28.357011+09:00"
+}

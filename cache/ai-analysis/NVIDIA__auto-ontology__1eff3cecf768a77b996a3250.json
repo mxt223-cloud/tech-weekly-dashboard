@@ -1,0 +1,69 @@
+{
+  "summary_ja": "Auto Ontologyは、企業データのメタデータからセマンティックな知識グラフやオントロジーを構築し、AIエージェントの決定論的なクエリ生成やコンテキスト取得を支援するPythonフレームワークです。",
+  "capabilities": [
+    {
+      "text": "メタデータから企業向けオントロジーを生成し、知識グラフを構築する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自然言語の質問をSQLに翻訳し、接続されたデータベースに対して実行する",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "MCP、CLI、APIを通じて任意のAIエージェントにコンテキストを提供する",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "リレーショナルソース上のセマンティックカタログ層として利用し、データの意味や関係性をエージェントに与える",
+      "basis": "README明記",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "Web UIのチャット、分析、データカタログ機能を通じてデータ分析や設定を行う",
+      "basis": "README明記",
+      "evidence_section": "Key Features"
+    },
+    {
+      "text": "MCPサーバーを用いて任意のMCPクライアントからオントロジーに対する読み取り専用ツールにアクセスする",
+      "basis": "README明記",
+      "evidence_section": "Use it from your agent"
+    }
+  ],
+  "first_trial": {
+    "goal": "Docker Composeを使用してAuto-Ontologyをローカル環境で起動し、サンプルデータベースに対する質問応答を確認する",
+    "steps": [
+      "git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology",
+      "cp .env.example .env",
+      "docker compose up -d --wait postgres",
+      "git clone https://github.com/NVIDIA/auto-ontology-eval.git ../auto-ontology-eval",
+      "docker compose up -d --build"
+    ],
+    "success_criteria": "ブラウザで http://localhost:3000 を開き、ログイン後にセマンティックコンパイルが完了し、チャットで質問に対してSQLと回答が返ってくること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Key Features",
+    "Software Components",
+    "NVIDIA NIM",
+    "Quickstart",
+    "How it works",
+    "Use it from your agent",
+    "Connectors, models, and predictions",
+    "Integrate with us",
+    "Reference",
+    "License",
+    "Notice and Disclaimer",
+    "Security"
+  ],
+  "unconfirmed": [
+    "外部からのプルリクエストの受け入れ可否（現在のREADMEでは非受付と記載されているが将来の変更可能性は不明）",
+    "KumoRFM以外の予測サービスの具体的な統合方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "464a6484b4dc36cd2120578bc6b6e7dcfe236b23",
+  "generated_at": "2026-11-09T10:08:22.849713+09:00"
+}

@@ -1,0 +1,53 @@
+{
+  "summary_ja": "OpenMausBotは、チャットアプリの形式で複数のAIボットと会話できるオープンソースのGrok Bot代替プロジェクトです。ローカルファーストで動作し、Claude、Codex、Grokなどのエージェントを利用して独自のコンピュータ環境やアプリで作業させることができます。",
+  "capabilities": [
+    {
+      "text": "独自の個性やモデル、コンピュータ、接続済みアプリを持つ複数のAIボットとチャットアプリ形式でやり取りできる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自身のマシンにインストールされたClaude、Codex、GrokのCLIを利用して追加のアカウント不要でボットを稼働させることができる",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "ローカルファーストの設計により、トランスクリプトやキー、イベントをクラウドではなくローカル環境に保存する",
+      "evidence_section": "Why"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "サイドバーに表示される複数のAIボットから好みのエージェントを選択し、連絡先のようにメッセージで指示を出す",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "独自のクラウドLinuxデスクトップやローカルVMを活用し、AIボットに作業を代行させて進捗を確認する",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードからローカル環境で開発サーバーとElectronアプリを起動する",
+    "steps": [
+      "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
+      "pnpm install",
+      "pnpm dev:server",
+      "pnpm dev",
+      "pnpm dev:desktop"
+    ],
+    "success_criteria": "ハーネスサーバーとアプリ、およびElectronシェルが正常に起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "Capabilitiesの3件目におけるプラットフォームの安全性境界に関する記述の詳細は、READMEの途中で文章が切れているため確認できません。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ab96963faab0faf95623676109aca3933d06dccf",
+  "generated_at": "2026-11-09T10:08:32.133486+09:00"
+}

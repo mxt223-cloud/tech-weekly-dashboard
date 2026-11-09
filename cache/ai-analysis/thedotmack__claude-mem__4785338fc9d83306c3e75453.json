@@ -1,0 +1,61 @@
+{
+  "summary_ja": "claude-memは、AIコーディングエージェント向けにセッション間でコンテキストを永続化するためのツールです。エージェントの作業を記録し、AIで圧縮した上で次回のセッションに関連するコンテキストを自動的に注入します。",
+  "capabilities": [
+    {
+      "text": "エージェントのセッション中の活動やツール呼び出しを記録し、観察結果として保存する",
+      "evidence_section": "How It Works"
+    },
+    {
+      "text": "次回のセッション開始時に、過去の観察結果から重要なインデックスをコンパクトに注入する",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "MCP検索ツールや mem-search スキルを使用してプロジェクトの履歴を効率的に検索できる",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントが過去のセッションのコンテキストを引き継ぎ、同じ質問や修正を繰り返さないようにする",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "機密情報を保護するために、特定のタグで囲んだ情報を保存対象外にする",
+      "basis": "README明記",
+      "evidence_section": "What You Get"
+    },
+    {
+      "text": "チーム間で作業履歴や知見を共有し、協力して開発を進める",
+      "basis": "README明記",
+      "evidence_section": "What You Get"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールしてプロジェクトでのセッション記憶を有効にする",
+    "steps": [
+      "npx claude-mem install を実行してインタラクティブなインストーラーを起動する",
+      "画面の指示に従ってエージェントの設定やサインインを行う"
+    ],
+    "success_criteria": "インストーラーが正常に完了し、次回のセッションで過去のセッションのコンテキストが反映されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "What You Get",
+    "How It Works",
+    "MCP Search Tools",
+    "System Requirements",
+    "Configuration",
+    "Troubleshooting",
+    "License"
+  ],
+  "unconfirmed": [
+    "サードパーティ製トークンであるCMEMの具体的なユーティリティや詳細なエコシステムの位置づけ"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e15742520c4dc39c4b5f68003e9a4cf31d248c3f",
+  "generated_at": "2026-11-09T10:08:25.904068+09:00"
+}
