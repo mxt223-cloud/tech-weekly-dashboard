@@ -1,0 +1,59 @@
+{
+  "summary_ja": "Claude Codeをゲーム開発スタジオに変えるテンプレートであり、アイデアからプレイ可能なブラウザゲームのプロトタイプ作成や、チーム開発向けの多数のエージェントやスキル、ワークフローを備えています。",
+  "capabilities": [
+    {
+      "text": "アイデアを元に質問を行い、1ページのゲーム企画書とプレイ可能なブラウザゲームを自動で構築する。",
+      "evidence_section": "Make me a game"
+    },
+    {
+      "text": "Web、Godot 4、Unity、Unreal Engine 5などの複数エンジンをサポートする。",
+      "evidence_section": "Engines"
+    },
+    {
+      "text": "49体のAIエージェントと75種類のスキル（スラッシュコマンド）によるスタジオモードを提供する。",
+      "evidence_section": "Studio Mode"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "テキストでアイデアを入力し、ブラウザゲームのプロトタイプをすばやく作成する。",
+      "basis": "README明記",
+      "evidence_section": "Make me a game"
+    },
+    {
+      "text": "既存のブラウザゲームをインポートして変更や機能追加を行う。",
+      "basis": "README明記",
+      "evidence_section": "Make me a game"
+    },
+    {
+      "text": "プロジェクトの進行度や規模に応じて開発プロセスの厳格さを設定する。",
+      "basis": "README明記",
+      "evidence_section": "Configuration"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてClaude Codeを起動し、プロトタイプ作成コマンドを実行する",
+    "steps": [
+      "git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game",
+      "cd my-game",
+      "claude",
+      "/prototype a fishing game where the rare fish only bite at dusk"
+    ],
+    "success_criteria": "Claude Codeが起動し、ゲームのプロトタイプ作成プロセスが開始されること"
+  },
+  "evidence_sections": [
+    "Make me a game",
+    "Engines",
+    "Configuration",
+    "Studio Mode",
+    "Getting Started"
+  ],
+  "unconfirmed": [
+    "macOSやLinux環境におけるデスクトップ通知機能の動作詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1842501050d579e421bef697ccd37487b37279be",
+  "generated_at": "2026-11-10T12:44:22.659996+09:00"
+}

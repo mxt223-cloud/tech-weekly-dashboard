@@ -1,0 +1,55 @@
+{
+  "summary_ja": "claude-memは、AIコーディングエージェントのセッション間でコンテキストを永続化するためのツールです。エージェントの作業内容をバックグラウンドで記録・圧縮し、次回のセッション時に必要なコンテキストを自動的に注入することで、エージェントが過去の作業を引き継げるようにします。",
+  "capabilities": [
+    {
+      "text": "セッション中のエージェントの動作をバックグラウンドで記録し、AIで圧縮して次回のセッションにコンテキストを注入する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "全文検索、タイムライン表示、詳細取得の3ステップによる効率的なメモリ検索機能を提供する。",
+      "evidence_section": "MCP Search Tools"
+    },
+    {
+      "text": "Claude CodeやOpenCodeなど複数の主要なAIエージェントやハーネスに対応している。",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "前回のセッションで修正したバグや解決した内容を次のセッションに引き継ぎ、同じミスを繰り返さないようにする。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "自然言語を使用して過去のプロジェクト履歴を検索し、必要なコード修正の経緯や判断材料を見つける。",
+      "basis": "README明記",
+      "evidence_section": "MCP Search Tools"
+    }
+  ],
+  "first_trial": {
+    "goal": "claude-memをインストールして動作を開始する",
+    "steps": [
+      "npx claude-mem install"
+    ],
+    "success_criteria": "インストーラーが起動し、お使いの環境にあるエージェントが検出されて設定が進められること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick Start",
+    "What You Get",
+    "MCP Search Tools",
+    "How It Works",
+    "System Requirements",
+    "Configuration",
+    "Troubleshooting",
+    "License"
+  ],
+  "unconfirmed": [
+    "商用利用における詳細なライセンスの境界条件や料金プランの全貌"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a719803580012c4de9184559d59f1e2cb70d859c",
+  "generated_at": "2026-11-10T12:44:16.802531+09:00"
+}

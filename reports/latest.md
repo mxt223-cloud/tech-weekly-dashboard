@@ -1,6 +1,6 @@
-# Tech Daily — 2026-11-09
+# Tech Daily — 2026-11-10
 
-生成日時: 2026-11-09T10:08:39.457707+09:00  
+生成日時: 2026-11-10T12:44:33.344940+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,9 +9,9 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Auto Ontologyは、企業データのメタデータからセマンティックな知識グラフやオントロジーを構築し、AIエージェントの決定論的なクエリ生成やコンテキスト取得を支援するPythonフレームワークです。
 
 - 言語: Python
-- 今週のスター: 9327
+- 今週のスター: 10159
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -51,92 +51,53 @@ Docker Composeを使用してAuto-Ontologyをローカル環境で起動し、�
 未確認: 外部からのプルリクエストの受け入れ可否（現在のREADMEでは非受付と記載されているが将来の変更可能性は不明）／KumoRFM以外の予測サービスの具体的な統合方法
 
 
-## 2. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+## 2. [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
 
-**概要:** claude-memは、AIコーディングエージェント向けにセッション間でコンテキストを永続化するためのツールです。エージェントの作業を記録し、AIで圧縮した上で次回のセッションに関連するコンテキストを自動的に注入します。
+**概要:** agent-desktopは、AIエージェントがOSのアクセシビリティツリーを介してmacOS、Windows、Linux上のデスクトップアプリを視認・操作できるようにするコンピュータ操作用CLIおよびCライブラリです。
 
-- 言語: TypeScript
-- 今週のスター: 6443
+- 言語: Rust
+- 今週のスター: 12120
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- エージェントのセッション中の活動やツール呼び出しを記録し、観察結果として保存する（根拠: How It Works）
+- スクリーンショットやピクセルマッチングを行わず、デスクトップアプリのアクセシビリティツリーを読み取ってJSONとして返す機能（根拠: README冒頭）
 
-- 次回のセッション開始時に、過去の観察結果から重要なインデックスをコンパクトに注入する（根拠: What You Get）
+- CLIやCライブラリとして提供され、MCP（Model Context Protocol）ツールとしても各コマンドを提供してstdio経由で実行できる機能（根拠: MCP）
 
-- MCP検索ツールや mem-search スキルを使用してプロジェクトの履歴を効率的に検索できる（根拠: MCP Search Tools）
-
-
-### 利用例
-
-- エージェントが過去のセッションのコンテキストを引き継ぎ、同じ質問や修正を繰り返さないようにする（README明記／根拠: README冒頭）
-
-- 機密情報を保護するために、特定のタグで囲んだ情報を保存対象外にする（README明記／根拠: What You Get）
-
-- チーム間で作業履歴や知見を共有し、協力して開発を進める（README明記／根拠: What You Get）
-
-
-### 最初に試すこと
-
-claude-memをインストールしてプロジェクトでのセッション記憶を有効にする
-
-1. npx claude-mem install を実行してインタラクティブなインストーラーを起動する
-
-2. 画面の指示に従ってエージェントの設定やサインインを行う
-
-
-成功の目安: インストーラーが正常に完了し、次回のセッションで過去のセッションのコンテキストが反映されること
-
-未確認: サードパーティ製トークンであるCMEMの具体的なユーティリティや詳細なエコシステムの位置づけ
-
-
-## 3. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
-
-**概要:** Worktrunkは、Gitのワークツリー管理を効率化し、複数のAIエージェントの並行ワークフローを支援するためのコマンドラインツールです。
-
-- 言語: Rust
-- 今週のスター: 2313
-- ライセンス: NOASSERTION
-- AI分析状態: ok
-
-### できること
-
-- ブランチ名を用いたワークツリーの切り替えや作成、削除などの基本操作を行える（根拠: README）
-
-- フック機能によるワークツリー作成時やマージ前後のワークフロー自動化を行える（根拠: README）
-
-- 差分からLLMを活用したコミットメッセージの生成を行える（根拠: README）
+- スナップショット、要素へのクリックや文字入力、ウィンドウやアプリの管理、クリップボード操作など多数の運用コマンドを備えている機能（根拠: Commands）
 
 
 ### 利用例
 
-- Claude CodeなどのAIエージェントを複数のワークツリーで同時に稼働させ、並行してタスクを処理する（README明記／根拠: README）
+- AIエージェントがデスクトップアプリのUI要素を認識してクリックや入力を実行し、結果を検証する自動化ループの構築（README明記／根拠: README冒頭）
 
-- ワークツリーごとに固有のポート番号や開発サーバー割り当てを行い、環境競合を防ぐ（README明記／根拠: README）
-
-- 複数ワークツリー間でビルドキャッシュを共有し、ディスク容量やビルド時間を節約する（README明記／根拠: README）
+- Model Context Protocol（MCP）に対応したAIエージェントのインフラやクライアントにデスクトップ操作機能を組み込むこと（提案／根拠: MCP）
 
 
 ### 最初に試すこと
 
-新しい機能用のワークツリーを作成して切り替える
+デスクトップアプリの状態をスナップショットで取得し、対象の要素に対して操作を行うこと
 
-1. wt switch --create feature-auth
+1. agent-desktop snapshot --app Finder -i
+
+2. agent-desktop click @s8f3k2p9:e8
+
+3. agent-desktop snapshot --app Finder -i
 
 
-成功の目安: 新しいブランチとワークツリーが作成され、そこに切り替わること
+成功の目安: コマンドがJSONエンベロープを出力し、UI要素の情報や操作結果が確認できること
+
+未確認: READMEに記載されていない詳細な内部アーキテクチャや独自拡張機能の有無
 
 
-
-
-## 4. [anthropics/skills](https://github.com/anthropics/skills)
+## 3. [anthropics/skills](https://github.com/anthropics/skills)
 
 **概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
 
 - 言語: Python
-- 今週のスター: 3169
+- 今週のスター: 3796
 - ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
@@ -172,59 +133,53 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
 
 
-## 5. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+## 4. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
 
-**概要:** Claude Codeのセッションを本格的なゲーム開発スタジオに変えるためのツールキットです。49体のAIエージェント、74種類のワークフロー用スキル（スラッシュコマンド）、自動検証フック、パス別のコーディング規約を備えており、実際のスタジオ階層を模した協調システムを提供します。
+**概要:** Worktrunkは、Gitのワークツリー管理を効率化し、複数のAIエージェントの並行ワークフローを支援するためのコマンドラインツールです。
 
-- 言語: Shell
-- 今週のスター: 5235
-- ライセンス: MIT
+- 言語: Rust
+- 今週のスター: 2395
+- ライセンス: NOASSERTION
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- デザイン、プログラミング、アート、音声、ナラティブ、QA、プロダクションの各分野に特化した49体のサブエージェントを利用できる。（根拠: What's Included）
+- ブランチ名を用いたワークツリーの切り替えや作成、削除などの基本操作を行える（根拠: README）
 
-- プロジェクトのワークフロー段階を進めるための74種類のスラッシュコマンド（スキル）を実行できる。（根拠: Slash Commands）
+- フック機能によるワークツリー作成時やマージ前後のワークフロー自動化を行える（根拠: README）
 
-- Godot 4、Unity、Unreal Engine 5の主要3エンジンに対応した専門家エージェントセットを選択できる。（根拠: Engine Specialists）
+- 差分からLLMを活用したコミットメッセージの生成を行える（根拠: README）
 
 
 ### 利用例
 
-- Claude Codeのセッション内で複数のAIエージェントを組織化し、ブレインストーミングから機能実装、レビュー、リリースまでのゲーム開発プロセス全体を構造化する。（README明記／根拠: Why This Exists）
+- Claude CodeなどのAIエージェントを複数のワークツリーで同時に稼働させ、並行してタスクを処理する（README明記／根拠: README）
 
-- プロジェクトの進捗度や厳格さのレベル（modes.rigor）に応じて、必要な設計ドキュメントの作成やQA検証の度合いを制御する。（README明記／根拠: Configuration）
+- ワークツリーごとに固有のポート番号や開発サーバー割り当てを行い、環境競合を防ぐ（README明記／根拠: README）
 
-- 開発中のコードやアセットの変更に対して自動バリデーションフックを実行し、ハードコードやルール違反を検知・防止する。（README明記／根拠: Automated Safety）
+- 複数ワークツリー間でビルドキャッシュを共有し、ディスク容量やビルド時間を節約する（README明記／根拠: README）
 
 
 ### 最初に試すこと
 
-リポジトリをクローンしてClaude Codeを起動し、初期セットアップと開発開始のワークフローを呼び出す。
+新しい機能用のワークツリーを作成して切り替える
 
-1. git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
-
-2. cd my-game
-
-3. claude
-
-4. /start
+1. wt switch --create feature-auth
 
 
-成功の目安: Claude Codeがプロジェクトのルートディレクトリで起動し、/startコマンドによって現在のプロジェクトの状態確認やワークフローのガイドが開始されること。
-
-未確認: 実際のゲームプレイ映像の出力品質や、特定プロジェクトにおける生成ゲームの市場での成功確率
+成功の目安: 新しいブランチとワークツリーが作成され、そこに切り替わること
 
 
-## 6. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+
+
+## 5. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
 
 **概要:** OpenMausBotは、チャットアプリの形式で複数のAIボットと会話できるオープンソースのGrok Bot代替プロジェクトです。ローカルファーストで動作し、Claude、Codex、Grokなどのエージェントを利用して独自のコンピュータ環境やアプリで作業させることができます。
 
 - 言語: TypeScript
-- 今週のスター: 7621
+- 今週のスター: 8325
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -262,218 +217,249 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: Capabilitiesの3件目におけるプラットフォームの安全性境界に関する記述の詳細は、READMEの途中で文章が切れているため確認できません。
 
 
-## 7. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+## 6. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
-**概要:** T3 Codeは、ローカル環境にあるClaude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのAIエージェントを、モバイルアプリ、Webアプリ、Electron製デスクトップアプリから一元的にコントロールするためのエージェント制御インターフェースです。
+**概要:** claude-memは、AIコーディングエージェントのセッション間でコンテキストを永続化するためのツールです。エージェントの作業内容をバックグラウンドで記録・圧縮し、次回のセッション時に必要なコンテキストを自動的に注入することで、エージェントが過去の作業を引き継げるようにします。
 
 - 言語: TypeScript
-- 今週のスター: 15379
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
+- 今週のスター: 5130
+- ライセンス: Apache-2.0
+- AI分析状態: ok
 
 ### できること
 
-- モバイルアプリ、Webアプリ、Electron製デスクトップアプリを使ったエージェントのコントロール（根拠: README冒頭）
+- セッション中のエージェントの動作をバックグラウンドで記録し、AIで圧縮して次回のセッションにコンテキストを注入する。（根拠: README冒頭）
 
-- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーとの連携（根拠: Installation）
+- 全文検索、タイムライン表示、詳細取得の3ステップによる効率的なメモリ検索機能を提供する。（根拠: MCP Search Tools）
 
-- コマンドラインでのサーバー起動やバックグラウンドサービスとしての常駐、更新機能（根拠: Command line）
+- Claude CodeやOpenCodeなど複数の主要なAIエージェントやハーネスに対応している。（根拠: Quick Start）
 
 
 ### 利用例
 
-- スマートフォンなどのリモート端末から、手元のマシンで動作するAIエージェントを遠隔操作する（README明記／根拠: README冒頭）
+- 前回のセッションで修正したバグや解決した内容を次のセッションに引き継ぎ、同じミスを繰り返さないようにする。（README明記／根拠: README冒頭）
 
-- デスクトップアプリやWebアプリを用いて、複数の異なるAIエージェントの開発環境を統合的に管理する（README明記／根拠: README冒頭）
-
-- インストールせずに一時的にコマンドを実行して動作を試す（README明記／根拠: Command line）
+- 自然言語を使用して過去のプロジェクト履歴を検索し、必要なコード修正の経緯や判断材料を見つける。（README明記／根拠: MCP Search Tools）
 
 
 ### 最初に試すこと
 
-インストールせずに一時的にT3 Codeを試す
+claude-memをインストールして動作を開始する
 
-1. npx t3@latest
-
-
-成功の目安: サーバーが起動し、ローカルのWebアプリが開くこと
-
-未確認: 詳細なエージェント連携時の内部動作やAPI仕様／コントリビューションの受け入れ条件の詳細
+1. npx claude-mem install
 
 
-## 8. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
+成功の目安: インストーラーが起動し、お使いの環境にあるエージェントが検出されて設定が進められること
 
-**概要:** Nutlope/hallmarkは、Claude Code、Cursor、Codex、OpenCode向けの「AIっぽいデザイン」を避けるためのデザインスキルです。50種類のテーマやカスタムデザイン、ブラウザでの自動lint機能などを提供し、機械的でテンプレート感のある見た目を防ぎます。
-
-- 言語: CSS
-- 今週のスター: 6356
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 50種類のテーマから適切なものを選び、ページのレイアウトや構造を構築する機能（根拠: New in v2）
-
-- 既存のページやアプリをURL、開発サーバー、ファイルパスから指定してスクリーンショットや監査を行う機能（根拠: New in v2）
-
-- 既存のコンテンツや配線を維持したままリデザインを行う「/hallmark redesign」や監査を行う「/hallmark audit」機能（根拠: Redesign）
+未確認: 商用利用における詳細なライセンスの境界条件や料金プランの全貌
 
 
-### 利用例
+## 7. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
 
-- AIが生成したような紋切り型のデザインを避け、人間が作ったような自然なWebページを構築したい場合（README明記／根拠: README冒頭）
+**概要:** Claude Codeをゲーム開発スタジオに変えるテンプレートであり、アイデアからプレイ可能なブラウザゲームのプロトタイプ作成や、チーム開発向けの多数のエージェントやスキル、ワークフローを備えています。
 
-- 既存のWebページやアプリケーションを指定して、コンテンツの配線を変えずにデザインのリメイクや監査を行いたい場合（README明記／根拠: New in v2）
-
-- 予約ページやショップ、ニュースレター登録など、目的のジョブに合わせたページ構造を自動で配置したい場合（README明記／根拠: New in v2）
-
-
-### 最初に試すこと
-
-hallmarkをグローバルにインストールする
-
-1. npx skills add nutlope/hallmark -g
-
-
-成功の目安: Node 18以降の環境で、パッケージが正常にインストールされること
-
-
-
-
-## 9. [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu)
-
-**概要:** GitHubリポジトリ「Renhuai123/ziwei-doushu」は、倪海厦氏の『天纪』体系に基づくTypeScript製のオープンソースの紫微斗数（中国の伝統的命理学）の命盤計算エンジンおよびデータセットです。完全な排盤アルゴリズム、四化システム、格局知識庫、古籍原文データ、大規模な解读データセットを含んでいます。
-
-- 言語: TypeScript
-- 今週のスター: 4191
+- 言語: Shell
+- 今週のスター: 4324
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- 真太陽時校正（経度差と均時差）や中国の夏令時判定、閏月の複数口径、晚子時換日機能を持つ完全な紫微斗数排盤エンジンを提供します。（根拠: 四排盘引擎）
+- アイデアを元に質問を行い、1ページのゲーム企画書とプレイ可能なブラウザゲームを自動で構築する。（根拠: Make me a game）
 
-- 1100行を超える規則ライブラリに基づいた紫府同宫や日月并明などの格局判定を行います。（根拠: 四排盘引擎）
+- Web、Godot 4、Unity、Unreal Engine 5などの複数エンジンをサポートする。（根拠: Engines）
 
-- 公历1950年から2026年までの命盤をカバーする13次元解説データセットv4.0（約67.5万枚の命盤、877万段以上の解説）を利用可能です。（根拠: 二·新、13 维解读数据集 v4.0（2026-10-15））
+- 49体のAIエージェントと75種類のスキル（スラッシュコマンド）によるスタジオモードを提供する。（根拠: Studio Mode）
 
 
 ### 利用例
 
-- 紫微斗数の排盤アルゴリズムや伝統的な命理学の研究、およびデータ分析。（README明記／根拠: 二、51.8 万命盘样本数据集）
+- テキストでアイデアを入力し、ブラウザゲームのプロトタイプをすばやく作成する。（README明記／根拠: Make me a game）
 
-- 小規模なAIモデルのトレーニングコーパスや、AI対話のためのRAG（検索拡張生成）のデータソースとしての利用。（README明記／根拠: 二、51.8 万命盘样本数据集）
+- 既存のブラウザゲームをインポートして変更や機能追加を行う。（README明記／根拠: Make me a game）
 
-- 独自の紫微斗数Webアプリケーションやサービスを構築するためのオープンソースのバックエンドエンジンとしての活用。（提案／根拠: 三快速开始）
+- プロジェクトの進行度や規模に応じて開発プロセスの厳格さを設定する。（README明記／根拠: Configuration）
 
 
 ### 最初に試すこと
 
-リポジトリをクローンして依存関係をインストールし、開発サーバーを起動してTypeScriptの型チェックとテストを実行する
+リポジトリをクローンしてClaude Codeを起動し、プロトタイプ作成コマンドを実行する
 
-1. git clone https://github.com/Renhuai123/ziwei-doushu.git
+1. git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
 
-2. cd ziwei-doushu
+2. cd my-game
 
-3. npm install
+3. claude
 
-4. cp .env.example .env.local
-
-5. npm run dev
-
-6. npm run typecheck
-
-7. npm test
+4. /prototype a fishing game where the rare fish only bite at dusk
 
 
-成功の目安: 開発サーバーが起動し、型チェックと排盤エンジンの回帰テスト（npm test）が正常に完了すること
+成功の目安: Claude Codeが起動し、ゲームのプロトタイプ作成プロセスが開始されること
 
-未確認: オンラインの商用版フロントエンド界面や商用版の断語ライブラリ、およびバックエンドAPI（/api/interpretなど）の実装詳細／AI解釈プロンプトの具体的な内容
+未確認: macOSやLinux環境におけるデスクトップ通知機能の動作詳細
+
+
+## 8. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
+
+**概要:** agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。
+
+- 言語: Rust
+- 今週のスター: 2994
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- ページをコンパクトなテキスト（アクセシビリティツリー）としてスナップショット取得し、各要素にrefを割り当てる機能（根拠: README冒頭）
+
+- クリック、入力、スクロール、待機、スクリーンショット撮影などの豊富なブラウザ操作コマンドの提供（根拠: Commands）
+
+- エージェント向けのスキル取得機能やMCPサーバーとしての起動機能（根拠: For AI agents）
+
+
+### 利用例
+
+- シェルからAIエージェントにWebページを開かせ、要素を指定してクリックや入力を行わせるブラウザ自動化（README明記／根拠: Quick start）
+
+- AIエージェントにスキルやMCPサーバー機能を組み込んで、インタラクティブなWeb操作ワークフローを実行させる（README明記／根拠: For AI agents）
+
+
+### 最初に試すこと
+
+ブラウザを開いてページのインタラクティブな要素のスナップショットを取得し、要素をクリックして結果を確認する
+
+1. agent-browser open example.com
+
+2. agent-browser snapshot -i
+
+3. agent-browser click @e1
+
+4. agent-browser get url
+
+5. agent-browser close
+
+
+成功の目安: コマンドが正常に実行され、指定したURLのページ操作結果が取得できること
+
+未確認: 詳細な設定ファイルや環境変数によるカスタマイズの全容／LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順
+
+
+## 9. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+
+**概要:** T3 Codeは、手元の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元的に操作・制御するためのコントロールサーフェスです。
+
+- 言語: TypeScript
+- 今週のスター: 13448
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- iOS、Android、Web、Electronベースのデスクトップアプリからマシンの上のエージェントを制御できる（根拠: README冒頭）
+
+- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーと連携できる（根拠: README冒頭）
+
+
+### 利用例
+
+- スマートフォンや別のマシンからリモートで開発用エージェントを操作する（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+T3 Codeのサーバーを起動してローカルのWebアプリを開く
+
+1. curl -fsSL https://t3.codes/install.sh | sh を実行してインストールする
+
+2. t3 を実行してサーバーを起動し、ローカルのWebアプリを開く
+
+
+成功の目安: t3コマンドを実行してサーバーが起動し、ローカルのWebアプリが開くこと
+
+未確認: ソースコードの内部構造や詳細な機能についての詳細なドキュメントの内容
 
 
 ## 10. [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
 
-**概要:** Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析機能、並行クロールを1つのライブラリに統合したPythonのWebスクレイピングフレームワークです。
+**概要:** Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析、並行クロールを1つのライブラリに統合したPythonのWebスクレイピングフレームワークです。
 
 - 言語: Python
-- 今週のスター: 8342
+- 今週のスター: 8226
 - ライセンス: BSD-3-Clause
 - AI分析状態: ok
 
 ### できること
 
-- 高速なHTTPリクエスト、ステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能を提供します。（根拠: What you can do with Scrapling）
+- 高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能（根拠: What you can do with Scrapling）
 
-- CSS、XPath、テキスト・正規表現検索、アダプティブ要素追跡などの解析・抽出機能を提供します。（根拠: What you can do with Scrapling）
+- CSS、XPath、テキストおよび正規表現検索、類似要素マッチングによる柔軟な解析と抽出機能（根拠: What you can do with Scrapling）
 
-- MCPサーバーやAgent SkillによるAI連携や、LLM向けにページをクリーンなMarkdownに変換する機能を提供します。（根拠: AI Features）
+- AIチャットボットやエージェントから利用できるMCPサーバー機能およびRAG向けMarkdown変換機能（根拠: AI Features）
 
 
 ### 利用例
 
-- 静的ページのスクレイピング、JavaScriptのレンダリング、Webサイトの操作、API呼び出しからのデータ抽出を行います。（README明記／根拠: README冒頭）
+- 静的なページのスクレイピングからJavaScriptのレンダリング、API呼び出しデータの抽出（README明記／根拠: README冒頭）
 
-- 再利用可能なセッション、プロキシローテーション、自動リトライ、一時停止・再開を備えたクローラーを構築します。（README明記／根拠: README冒頭）
+- AIエージェントやLLMを活用したRAGシステム向けのクリーンなMarkdown形式への変換（README明記／根拠: AI Features）
 
-- Webページの内容をクリーンなMarkdownに変換し、RAGシステム向けにWebサイト全体をコーパス化します。（README明記／根拠: AI Features）
+- セッション管理やプロキシローテーション、自動リトライを伴う大規模なWebクロールの構築（README明記／根拠: README冒頭）
 
 
 ### 最初に試すこと
 
-Scraplingをインストールして基本的なセッション付きHTTPリクエストを実行する
+Scraplingをインストールして基本的なHTTPリクエストと解析を行う
 
 1. pip install scrapling
 
-2. PythonスクリプトでFetcherSessionとimpersonate='chrome'を使用してページを取得する
 
+成功の目安: パッケージがエラーなくインストールされること
 
-成功の目安: 指定したURLからデータが正常に取得でき、セレクタによる要素の抽出ができること
-
-未確認: 詳細な全依存関係パッケージのインストール方法／すべてのCLIコマンドの具体的使用方法
+未確認: フェッチ機能やスパイダー機能を利用する際の追加依存関係の具体的なインストールコマンド
 
 
 
 ## Zenn
 
-- [古代のグラボ（GTX 1080）でも動くローカルLLMを動かしてみた](https://zenn.dev/koheidisney/articles/729394f8be42c5) — kohei
+- [少年団の役員向けRAGを作った — 条文単位に切り直しただけで正答52%→72%、ハイブリッド検索は効かなかった](https://zenn.dev/mappy55/articles/rulebook-rag-01) — mappy
 
-- [自宅サーバーにClaude Codeを常駐させ、スマホから24時間指示を出す（Remote Control＋systemd）](https://zenn.dev/samurai_works/articles/114a5e654ca295) — TAKA
+- [ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで](https://zenn.dev/taaroo/articles/47f8d1ac55d4af) — Taro
+
+- [2 つのエージェントで異なる方向性から検証を行う](https://zenn.dev/kokagex/articles/75f89df3b007cc) — こかげ
+
+- [JAWS FESTA 2026 in AKITA 懇親会を振り返ってみる](https://zenn.dev/k_suzuki_pnx/articles/411e236ab4f2c7) — 鈴木 健斗
+
+- [ホロ1グランプリで宙科そぴあさんが使ってたサイエンスメソッドを最適化の視点で深掘りしてみた](https://zenn.dev/akira5kitaoka/articles/holo1gp_sopias_science_method) — Akira Kitaoka
+
+- [なぜ mixi2 は iPhone Duo の発売初日から最適化できたのか？](https://zenn.dev/mixi/articles/b0ea64fded9503) — kuno
+
+- [AIですぐに作れる時代に、何と向き合うか](https://zenn.dev/peoplex_blog/articles/2611-what-to-face-when-ai-builds-fast) — サカツ | PeopleX AIプロダクトエンジニア
+
+- [LLM アプリケーションのプロンプトをどこで管理するか](https://zenn.dev/painter/articles/663816c3195cec) — Keita Ichihashi
+
+- [閉域網でも AI を使いこなす: ローカル LLM × GitLab DAP（GitLab Epic Tour Japan 2026 登壇）](https://zenn.dev/fixstars/articles/gitlab-epic-tour-2026-local-llm) — Yoshiki Matsuda
+
+- [ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す](https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin) — kazutoyo@TellerNovel
+
+- [Anthropicから毎月もらえるAPIクレジットで、AIペンテストツールShannonを回してみた](https://zenn.dev/arm_techblog/articles/9c5a29e37d1522) — Kyosuke Takayama
+
+- [個性を磨くUI観点](https://zenn.dev/silverbirder/books/ui-craft-techniques) — silverbirder
+
+- [週間制限に3日で到達していたClaudeが、ModelとEffortの使い分けで5日持つようになった話](https://zenn.dev/sun_asterisk/articles/1d1c65b1fe409a) — Asutin
+
+- [Herdr.app と hc の上で Claude Code の司令塔を回している](https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c) — hoshinotsuyoshi
 
 - [AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること](https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610) — Yuki Tsumita
 
 - [SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話](https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763) — naoki
 
-- [正規性検定による正規性チェック後の統計的仮説検定について](https://zenn.dev/tomoshige_n/articles/22e19d310acf88) — T. N.
-
-- [Go の defer の動きをちょっと調べてみた](https://zenn.dev/wakame_atsushi/articles/8c45ac07bac534) — わかめ
-
 - [ISUCON2026 ソロ参加記：自作ハーネスで Claude Code をほぼ無人運転した](https://zenn.dev/5alt_nacl/articles/isucon2026-solo-ai-agent) — NaCl_5alt
-
-- [Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化](https://zenn.dev/tomipetit/articles/zero-wire-github-actions) — tomi
 
 - [Weight-Space Programming やってみた(やらせてみた)](https://zenn.dev/nwn/articles/cf9fe78aa33861) — ヨ
 
 - [[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件](https://zenn.dev/xin9le/articles/9a1cf8e10494d6) — xin9le
 
 - [タスク管理までAIエージェントに任せたら、確認待ちに答えるだけになった](https://zenn.dev/rescuenow/articles/4c03a548cd6589) — しもち
-
-- [米津玄師に学ぶ：一人で全部作れる時代に、なぜ人と作るのか](https://zenn.dev/tokium_dev/articles/yonezu-kenshi-why-create-with-others) — タケノコご飯
-
-- [AI駆動文章作成において俺が意識しているテクニック集](https://zenn.dev/ntk221/articles/34ad88a9225364) — ntk
-
-- [.NET にも build.cs 欲しいんじゃーーー](https://zenn.dev/sator_imaging/articles/c10d8da7685308) — サトー™ @sator_imaging
-
-- [[TypeScript] パスエイリアスには Subpath Imports を使いたい](https://zenn.dev/mediba/articles/167e2a3f663889) — mdbr92
-
-- [コードを読まずにバイブコーディングしたら、Claude Codeは分かっていてスルーしていた](https://zenn.dev/nexta_/articles/42a828ca2b8a02) — bik
-
-- [OpenCode+Docker+GitHub Actionsで全自動AIペネトレーションテストはじめました](https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest) — dyoshikawa
-
-- [ADRをregoでlintする](https://zenn.dev/babarot/articles/regomark-adr-checker) — babarot
-
-- [ISUCON2026 で優勝しました（当日編）](https://zenn.dev/luvtechno/articles/isucon2026-competition-day) — Yoshinori Kawasaki
-
-- [AIが書く「読みづらいADR」に発狂しかけたので、ADRのガイドラインを作った](https://zenn.dev/tokium_dev/articles/adr-authoring-guideline) — にしこりさぶろ〜 | TOKIUM
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

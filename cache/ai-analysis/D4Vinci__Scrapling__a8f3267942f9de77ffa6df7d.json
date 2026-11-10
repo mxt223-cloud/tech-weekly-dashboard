@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析、並行クロールを1つのライブラリに統合したPythonのWebスクレイピングフレームワークです。",
+  "capabilities": [
+    {
+      "text": "高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能",
+      "evidence_section": "What you can do with Scrapling"
+    },
+    {
+      "text": "CSS、XPath、テキストおよび正規表現検索、類似要素マッチングによる柔軟な解析と抽出機能",
+      "evidence_section": "What you can do with Scrapling"
+    },
+    {
+      "text": "AIチャットボットやエージェントから利用できるMCPサーバー機能およびRAG向けMarkdown変換機能",
+      "evidence_section": "AI Features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "静的なページのスクレイピングからJavaScriptのレンダリング、API呼び出しデータの抽出",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "AIエージェントやLLMを活用したRAGシステム向けのクリーンなMarkdown形式への変換",
+      "basis": "README明記",
+      "evidence_section": "AI Features"
+    },
+    {
+      "text": "セッション管理やプロキシローテーション、自動リトライを伴う大規模なWebクロールの構築",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "Scraplingをインストールして基本的なHTTPリクエストと解析を行う",
+    "steps": [
+      "pip install scrapling"
+    ],
+    "success_criteria": "パッケージがエラーなくインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What you can do with Scrapling",
+    "AI Features",
+    "Getting Started",
+    "Basic Usage",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "フェッチ機能やスパイダー機能を利用する際の追加依存関係の具体的なインストールコマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
+  "generated_at": "2026-11-10T12:44:33.150615+09:00"
+}

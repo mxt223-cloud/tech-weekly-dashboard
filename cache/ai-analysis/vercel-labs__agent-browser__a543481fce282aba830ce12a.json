@@ -1,0 +1,61 @@
+{
+  "summary_ja": "agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。",
+  "capabilities": [
+    {
+      "text": "ページをコンパクトなテキスト（アクセシビリティツリー）としてスナップショット取得し、各要素にrefを割り当てる機能",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "クリック、入力、スクロール、待機、スクリーンショット撮影などの豊富なブラウザ操作コマンドの提供",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "エージェント向けのスキル取得機能やMCPサーバーとしての起動機能",
+      "evidence_section": "For AI agents"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "シェルからAIエージェントにWebページを開かせ、要素を指定してクリックや入力を行わせるブラウザ自動化",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "AIエージェントにスキルやMCPサーバー機能を組み込んで、インタラクティブなWeb操作ワークフローを実行させる",
+      "basis": "README明記",
+      "evidence_section": "For AI agents"
+    }
+  ],
+  "first_trial": {
+    "goal": "ブラウザを開いてページのインタラクティブな要素のスナップショットを取得し、要素をクリックして結果を確認する",
+    "steps": [
+      "agent-browser open example.com",
+      "agent-browser snapshot -i",
+      "agent-browser click @e1",
+      "agent-browser get url",
+      "agent-browser close"
+    ],
+    "success_criteria": "コマンドが正常に実行され、指定したURLのページ操作結果が取得できること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Quick start",
+    "How it works",
+    "For AI agents",
+    "Commands",
+    "Platforms",
+    "Development",
+    "Documentation",
+    "License"
+  ],
+  "unconfirmed": [
+    "詳細な設定ファイルや環境変数によるカスタマイズの全容",
+    "LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
+  "generated_at": "2026-11-10T12:44:27.801992+09:00"
+}

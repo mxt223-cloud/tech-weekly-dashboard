@@ -1,0 +1,40 @@
+{
+  "summary_ja": "T3 Codeは、手元の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元的に操作・制御するためのコントロールサーフェスです。",
+  "capabilities": [
+    {
+      "text": "iOS、Android、Web、Electronベースのデスクトップアプリからマシンの上のエージェントを制御できる",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーと連携できる",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "スマートフォンや別のマシンからリモートで開発用エージェントを操作する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "T3 Codeのサーバーを起動してローカルのWebアプリを開く",
+    "steps": [
+      "curl -fsSL https://t3.codes/install.sh | sh を実行してインストールする",
+      "t3 を実行してサーバーを起動し、ローカルのWebアプリを開く"
+    ],
+    "success_criteria": "t3コマンドを実行してサーバーが起動し、ローカルのWebアプリが開くこと"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation"
+  ],
+  "unconfirmed": [
+    "ソースコードの内部構造や詳細な機能についての詳細なドキュメントの内容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
+  "generated_at": "2026-11-10T12:44:30.159432+09:00"
+}
