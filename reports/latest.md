@@ -1,7 +1,7 @@
-# Tech Daily — 2026-11-10
+# Tech Daily — 2026-11-11
 
-生成日時: 2026-11-10T12:44:33.344940+09:00  
-AI分析: 10/10件成功（gemini-3.5-flash-lite）
+生成日時: 2026-11-11T10:25:02.444406+09:00  
+AI分析: 9/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology)
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Auto Ontologyは、企業データのメタデータからセマンティックな知識グラフやオントロジーを構築し、AIエージェントの決定論的なクエリ生成やコンテキスト取得を支援するPythonフレームワークです。
 
 - 言語: Python
-- 今週のスター: 10159
+- 今週のスター: 9621
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -56,9 +56,9 @@ Docker Composeを使用してAuto-Ontologyをローカル環境で起動し、�
 **概要:** agent-desktopは、AIエージェントがOSのアクセシビリティツリーを介してmacOS、Windows、Linux上のデスクトップアプリを視認・操作できるようにするコンピュータ操作用CLIおよびCライブラリです。
 
 - 言語: Rust
-- 今週のスター: 12120
+- 今週のスター: 9502
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -97,7 +97,7 @@ Docker Composeを使用してAuto-Ontologyをローカル環境で起動し、�
 **概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
 
 - 言語: Python
-- 今週のスター: 3796
+- 今週のスター: 5014
 - ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
@@ -133,12 +133,55 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
 
 
-## 4. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
+## 4. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+
+**概要:** OpenMausBotは、Grok Botにインスパイアされたオープンソースのチャットアプリ型AIボットプラットフォームです。ローカルで動作するClaudeやCodexなどのAIエージェントを、連絡先のようにチャット形式で管理・操作できます。
+
+- 言語: TypeScript
+- 今週のスター: 8951
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- ClaudeやCodex、GrokなどのAIエージェントCLIをローカル環境で直接利用できる（根拠: Why）
+
+- macOS、Windows、Ubuntu向けのデスクトップアプリとしてビルド・実行できる（根拠: Quick start）
+
+- 内蔵されたハーネスサーバーにより、追加のサーバー設定なしで動作する（根拠: Quick start）
+
+
+### 利用例
+
+- 複数のAIボットとチャットアプリのように会話しながら作業を進める（README明記／根拠: README冒頭）
+
+- ローカルにインストールされたAIモデルやエージェントを活用してタスクを実行する（README明記／根拠: Why）
+
+
+### 最初に試すこと
+
+ソースコードから開発サーバーを起動してアプリを動作させる
+
+1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
+
+2. pnpm install
+
+3. pnpm dev:server
+
+4. pnpm dev
+
+
+成功の目安: ハーネスサーバーおよびアプリが指定されたローカルアドレスで起動すること
+
+未確認: Featuresセクションの具体的な詳細内容（途中で切れているため）／Tailscaleを用いたデスクトップ間コンパニオンモードの詳細な手順
+
+
+## 5. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
 
 **概要:** Worktrunkは、Gitのワークツリー管理を効率化し、複数のAIエージェントの並行ワークフローを支援するためのコマンドラインツールです。
 
 - 言語: Rust
-- 今週のスター: 2395
+- 今週のスター: 2093
 - ライセンス: NOASSERTION
 - AI分析状態: ok（キャッシュ）
 
@@ -172,141 +215,14 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 
 
 
-## 5. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
-
-**概要:** OpenMausBotは、チャットアプリの形式で複数のAIボットと会話できるオープンソースのGrok Bot代替プロジェクトです。ローカルファーストで動作し、Claude、Codex、Grokなどのエージェントを利用して独自のコンピュータ環境やアプリで作業させることができます。
-
-- 言語: TypeScript
-- 今週のスター: 8325
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 独自の個性やモデル、コンピュータ、接続済みアプリを持つ複数のAIボットとチャットアプリ形式でやり取りできる（根拠: README冒頭）
-
-- 自身のマシンにインストールされたClaude、Codex、GrokのCLIを利用して追加のアカウント不要でボットを稼働させることができる（根拠: Why）
-
-- ローカルファーストの設計により、トランスクリプトやキー、イベントをクラウドではなくローカル環境に保存する（根拠: Why）
-
-
-### 利用例
-
-- サイドバーに表示される複数のAIボットから好みのエージェントを選択し、連絡先のようにメッセージで指示を出す（README明記／根拠: README冒頭）
-
-- 独自のクラウドLinuxデスクトップやローカルVMを活用し、AIボットに作業を代行させて進捗を確認する（README明記／根拠: Why）
-
-
-### 最初に試すこと
-
-ソースコードからローカル環境で開発サーバーとElectronアプリを起動する
-
-1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
-
-2. pnpm install
-
-3. pnpm dev:server
-
-4. pnpm dev
-
-5. pnpm dev:desktop
-
-
-成功の目安: ハーネスサーバーとアプリ、およびElectronシェルが正常に起動すること
-
-未確認: Capabilitiesの3件目におけるプラットフォームの安全性境界に関する記述の詳細は、READMEの途中で文章が切れているため確認できません。
-
-
-## 6. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
-
-**概要:** claude-memは、AIコーディングエージェントのセッション間でコンテキストを永続化するためのツールです。エージェントの作業内容をバックグラウンドで記録・圧縮し、次回のセッション時に必要なコンテキストを自動的に注入することで、エージェントが過去の作業を引き継げるようにします。
-
-- 言語: TypeScript
-- 今週のスター: 5130
-- ライセンス: Apache-2.0
-- AI分析状態: ok
-
-### できること
-
-- セッション中のエージェントの動作をバックグラウンドで記録し、AIで圧縮して次回のセッションにコンテキストを注入する。（根拠: README冒頭）
-
-- 全文検索、タイムライン表示、詳細取得の3ステップによる効率的なメモリ検索機能を提供する。（根拠: MCP Search Tools）
-
-- Claude CodeやOpenCodeなど複数の主要なAIエージェントやハーネスに対応している。（根拠: Quick Start）
-
-
-### 利用例
-
-- 前回のセッションで修正したバグや解決した内容を次のセッションに引き継ぎ、同じミスを繰り返さないようにする。（README明記／根拠: README冒頭）
-
-- 自然言語を使用して過去のプロジェクト履歴を検索し、必要なコード修正の経緯や判断材料を見つける。（README明記／根拠: MCP Search Tools）
-
-
-### 最初に試すこと
-
-claude-memをインストールして動作を開始する
-
-1. npx claude-mem install
-
-
-成功の目安: インストーラーが起動し、お使いの環境にあるエージェントが検出されて設定が進められること
-
-未確認: 商用利用における詳細なライセンスの境界条件や料金プランの全貌
-
-
-## 7. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
-
-**概要:** Claude Codeをゲーム開発スタジオに変えるテンプレートであり、アイデアからプレイ可能なブラウザゲームのプロトタイプ作成や、チーム開発向けの多数のエージェントやスキル、ワークフローを備えています。
-
-- 言語: Shell
-- 今週のスター: 4324
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- アイデアを元に質問を行い、1ページのゲーム企画書とプレイ可能なブラウザゲームを自動で構築する。（根拠: Make me a game）
-
-- Web、Godot 4、Unity、Unreal Engine 5などの複数エンジンをサポートする。（根拠: Engines）
-
-- 49体のAIエージェントと75種類のスキル（スラッシュコマンド）によるスタジオモードを提供する。（根拠: Studio Mode）
-
-
-### 利用例
-
-- テキストでアイデアを入力し、ブラウザゲームのプロトタイプをすばやく作成する。（README明記／根拠: Make me a game）
-
-- 既存のブラウザゲームをインポートして変更や機能追加を行う。（README明記／根拠: Make me a game）
-
-- プロジェクトの進行度や規模に応じて開発プロセスの厳格さを設定する。（README明記／根拠: Configuration）
-
-
-### 最初に試すこと
-
-リポジトリをクローンしてClaude Codeを起動し、プロトタイプ作成コマンドを実行する
-
-1. git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
-
-2. cd my-game
-
-3. claude
-
-4. /prototype a fishing game where the rare fish only bite at dusk
-
-
-成功の目安: Claude Codeが起動し、ゲームのプロトタイプ作成プロセスが開始されること
-
-未確認: macOSやLinux環境におけるデスクトップ通知機能の動作詳細
-
-
-## 8. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
+## 6. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 
 **概要:** agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。
 
 - 言語: Rust
-- 今週のスター: 2994
+- 今週のスター: 3606
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -344,122 +260,209 @@ claude-memをインストールして動作を開始する
 未確認: 詳細な設定ファイルや環境変数によるカスタマイズの全容／LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順
 
 
-## 9. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+## 7. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
 
-**概要:** T3 Codeは、手元の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元的に操作・制御するためのコントロールサーフェスです。
+**概要:** Claude Codeをゲーム開発スタジオに変えるテンプレートであり、アイデアからプレイ可能なブラウザゲームのプロトタイプ作成や、チーム開発向けの多数のエージェントやスキル、ワークフローを備えています。
 
-- 言語: TypeScript
-- 今週のスター: 13448
+- 言語: Shell
+- 今週のスター: 3730
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- iOS、Android、Web、Electronベースのデスクトップアプリからマシンの上のエージェントを制御できる（根拠: README冒頭）
+- アイデアを元に質問を行い、1ページのゲーム企画書とプレイ可能なブラウザゲームを自動で構築する。（根拠: Make me a game）
 
-- Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーと連携できる（根拠: README冒頭）
+- Web、Godot 4、Unity、Unreal Engine 5などの複数エンジンをサポートする。（根拠: Engines）
+
+- 49体のAIエージェントと75種類のスキル（スラッシュコマンド）によるスタジオモードを提供する。（根拠: Studio Mode）
 
 
 ### 利用例
 
-- スマートフォンや別のマシンからリモートで開発用エージェントを操作する（README明記／根拠: README冒頭）
+- テキストでアイデアを入力し、ブラウザゲームのプロトタイプをすばやく作成する。（README明記／根拠: Make me a game）
+
+- 既存のブラウザゲームをインポートして変更や機能追加を行う。（README明記／根拠: Make me a game）
+
+- プロジェクトの進行度や規模に応じて開発プロセスの厳格さを設定する。（README明記／根拠: Configuration）
 
 
 ### 最初に試すこと
 
-T3 Codeのサーバーを起動してローカルのWebアプリを開く
+リポジトリをクローンしてClaude Codeを起動し、プロトタイプ作成コマンドを実行する
 
-1. curl -fsSL https://t3.codes/install.sh | sh を実行してインストールする
+1. git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
 
-2. t3 を実行してサーバーを起動し、ローカルのWebアプリを開く
+2. cd my-game
+
+3. claude
+
+4. /prototype a fishing game where the rare fish only bite at dusk
 
 
-成功の目安: t3コマンドを実行してサーバーが起動し、ローカルのWebアプリが開くこと
+成功の目安: Claude Codeが起動し、ゲームのプロトタイプ作成プロセスが開始されること
 
-未確認: ソースコードの内部構造や詳細な機能についての詳細なドキュメントの内容
+未確認: macOSやLinux環境におけるデスクトップ通知機能の動作詳細
 
 
-## 10. [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
+## 8. [mattpocock/skills](https://github.com/mattpocock/skills)
 
-**概要:** Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析、並行クロールを1つのライブラリに統合したPythonのWebスクレイピングフレームワークです。
+**概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
+
+- 言語: Shell
+- 今週のスター: 9872
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。（根拠: Installation (30-second setup)）
+
+- エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。（根拠: Why These Skills Exist）
+
+- コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。（根拠: Engineering）
+
+
+### 利用例
+
+- 実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。（README明記／根拠: Why These Skills Exist）
+
+- テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。（README明記／根拠: Why These Skills Exist）
+
+- プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。（README明記／根拠: Why These Skills Exist）
+
+
+### 最初に試すこと
+
+リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする
+
+1. エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）
+
+2. エージェント内で /setup-matt-pocock-skills を実行する
+
+
+成功の目安: イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること
+
+未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
+
+
+## 9. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+
+**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
+
+- 言語: JavaScript
+- 今週のスター: 10967
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
+
+- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
+
+- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
+
+
+### 利用例
+
+- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
+
+- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
+
+- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
+
+
+### 最初に試すこと
+
+Skills CLIを使用してsecurity-auditスキルをインストールする
+
+1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
+
+
+成功の目安: スキルが正常にインストールされること
+
+
+
+
+## 10. [The-PR-Agent/pr-agent](https://github.com/The-PR-Agent/pr-agent)
+
+**概要:** 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.
 
 - 言語: Python
-- 今週のスター: 8226
-- ライセンス: BSD-3-Clause
-- AI分析状態: ok
+- 今週のスター: 1591
+- ライセンス: MIT
+- AI分析状態: api_error
 
 ### できること
 
-- 高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能（根拠: What you can do with Scrapling）
-
-- CSS、XPath、テキストおよび正規表現検索、類似要素マッチングによる柔軟な解析と抽出機能（根拠: What you can do with Scrapling）
-
-- AIチャットボットやエージェントから利用できるMCPサーバー機能およびRAG向けMarkdown変換機能（根拠: AI Features）
+- READMEから確認できませんでした。
 
 
 ### 利用例
 
-- 静的なページのスクレイピングからJavaScriptのレンダリング、API呼び出しデータの抽出（README明記／根拠: README冒頭）
-
-- AIエージェントやLLMを活用したRAGシステム向けのクリーンなMarkdown形式への変換（README明記／根拠: AI Features）
-
-- セッション管理やプロキシローテーション、自動リトライを伴う大規模なWebクロールの構築（README明記／根拠: README冒頭）
+- READMEから確認できませんでした。
 
 
 ### 最初に試すこと
 
-Scraplingをインストールして基本的なHTTPリクエストと解析を行う
-
-1. pip install scrapling
+未確認
 
 
-成功の目安: パッケージがエラーなくインストールされること
+成功の目安: 未確認
 
-未確認: フェッチ機能やスパイダー機能を利用する際の追加依存関係の具体的なインストールコマンド
+未確認: Gemini API HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 
 
 
 ## Zenn
 
-- [少年団の役員向けRAGを作った — 条文単位に切り直しただけで正答52%→72%、ハイブリッド検索は効かなかった](https://zenn.dev/mappy55/articles/rulebook-rag-01) — mappy
+- [HAC125DX 用の無線カメラを Pi Zero 2 W で作って、ライブスタックしてみた](https://zenn.dev/tsukitsukiss/articles/livestack-hac125dx-wireless-camera) — tsuki
 
-- [ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで](https://zenn.dev/taaroo/articles/47f8d1ac55d4af) — Taro
+- [LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意](https://zenn.dev/aws_japan/articles/4399262cf00559) — Hiroki Tsuji
 
-- [2 つのエージェントで異なる方向性から検証を行う](https://zenn.dev/kokagex/articles/75f89df3b007cc) — こかげ
+- [LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み](https://zenn.dev/aws_japan/articles/ac9ae548d57323) — Hiroki Tsuji
+
+- [Clojureのマクロによるメタプログラミングで業務ルールのDSLを作る](https://zenn.dev/pksha/articles/b7e4c1a9d38f52) — Hyuga Yamaguchi
+
+- [JaCoCoはどうやってカバレッジを測っているのか](https://zenn.dev/chikina/articles/jacoco-coverage-bytecode) — ちきな
+
+- [AI ネイティブなデータ分析基盤を作った話（後編）](https://zenn.dev/pksha/articles/laplace-build-guide) — Shogun
+
+- [AIでテストカバレッジを23%から84%に引き上げた方法](https://zenn.dev/litalico/articles/20261029-test-with-ai) — eggc
+
+- [GitHub rulesetのON/OFFで「マージ禁止期間」を作る](https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze) — ik-fib
+
+- [退屈なCoding AgentはMuseにやらせよう](https://zenn.dev/watany/articles/342b9815dd0553) — watany
+
+- [NVIDIAの「長文コンテキスト不要」論文](https://zenn.dev/knowledgesense/articles/bd917ed6829121) — Atsushi Kadowaki
+
+- [「漏洩された側」は何ができるのか？ 相次ぐインシデントから考えるエンドユーザーの防衛策](https://zenn.dev/nttdata_tech/articles/a68fc15144b2d8) — Rikita Koshiba
+
+- [Claude Codeで最近使っているTips【2026/11】](https://zenn.dev/oikon/articles/claude-code-recipe) — Oikon
+
+- [脆弱性問題を解決するためにRustに移行するべきなのか？](https://zenn.dev/garasubo/articles/72340052cdd871) — ガラスボー
 
 - [JAWS FESTA 2026 in AKITA 懇親会を振り返ってみる](https://zenn.dev/k_suzuki_pnx/articles/411e236ab4f2c7) — 鈴木 健斗
-
-- [ホロ1グランプリで宙科そぴあさんが使ってたサイエンスメソッドを最適化の視点で深掘りしてみた](https://zenn.dev/akira5kitaoka/articles/holo1gp_sopias_science_method) — Akira Kitaoka
 
 - [なぜ mixi2 は iPhone Duo の発売初日から最適化できたのか？](https://zenn.dev/mixi/articles/b0ea64fded9503) — kuno
 
 - [AIですぐに作れる時代に、何と向き合うか](https://zenn.dev/peoplex_blog/articles/2611-what-to-face-when-ai-builds-fast) — サカツ | PeopleX AIプロダクトエンジニア
 
-- [LLM アプリケーションのプロンプトをどこで管理するか](https://zenn.dev/painter/articles/663816c3195cec) — Keita Ichihashi
-
-- [閉域網でも AI を使いこなす: ローカル LLM × GitLab DAP（GitLab Epic Tour Japan 2026 登壇）](https://zenn.dev/fixstars/articles/gitlab-epic-tour-2026-local-llm) — Yoshiki Matsuda
-
-- [ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す](https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin) — kazutoyo@TellerNovel
-
-- [Anthropicから毎月もらえるAPIクレジットで、AIペンテストツールShannonを回してみた](https://zenn.dev/arm_techblog/articles/9c5a29e37d1522) — Kyosuke Takayama
-
 - [個性を磨くUI観点](https://zenn.dev/silverbirder/books/ui-craft-techniques) — silverbirder
 
 - [週間制限に3日で到達していたClaudeが、ModelとEffortの使い分けで5日持つようになった話](https://zenn.dev/sun_asterisk/articles/1d1c65b1fe409a) — Asutin
 
-- [Herdr.app と hc の上で Claude Code の司令塔を回している](https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c) — hoshinotsuyoshi
-
 - [AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること](https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610) — Yuki Tsumita
 
-- [SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話](https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763) — naoki
-
-- [ISUCON2026 ソロ参加記：自作ハーネスで Claude Code をほぼ無人運転した](https://zenn.dev/5alt_nacl/articles/isucon2026-solo-ai-agent) — NaCl_5alt
-
-- [Weight-Space Programming やってみた(やらせてみた)](https://zenn.dev/nwn/articles/cf9fe78aa33861) — ヨ
-
 - [[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件](https://zenn.dev/xin9le/articles/9a1cf8e10494d6) — xin9le
-
-- [タスク管理までAIエージェントに任せたら、確認待ちに答えるだけになった](https://zenn.dev/rescuenow/articles/4c03a548cd6589) — しもち
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

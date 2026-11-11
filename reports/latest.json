@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T12:44:33.344940+09:00",
-  "week": "2026-11-10",
+  "generated_at": "2026-11-11T10:25:02.444406+09:00",
+  "week": "2026-11-11",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars_total": 11087,
-      "forks_total": 905,
-      "stars_period": 10159,
+      "stars_total": 11469,
+      "forks_total": 942,
+      "stars_period": 9621,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-10T03:41:22Z",
-        "pushed_at": "2026-11-09T23:51:56Z",
-        "open_issues": 102,
+        "updated_at": "2026-11-11T01:21:29Z",
+        "pushed_at": "2026-11-10T19:31:47Z",
+        "open_issues": 113,
         "archived": false,
-        "size_kb": 22039,
+        "size_kb": 22012,
         "topics": []
       },
       "readme": {
@@ -106,17 +106,17 @@
       "url": "https://github.com/vercel-labs/agent-desktop",
       "description": "Computer use CLI for AI agents",
       "language": "Rust",
-      "stars_total": 20631,
-      "forks_total": 1527,
-      "stars_period": 12120,
+      "stars_total": 21411,
+      "forks_total": 1593,
+      "stars_period": 9502,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-10T03:42:53Z",
-        "pushed_at": "2026-11-10T00:42:54Z",
-        "open_issues": 207,
+        "updated_at": "2026-11-11T01:21:51Z",
+        "pushed_at": "2026-11-11T00:12:36Z",
+        "open_issues": 209,
         "archived": false,
-        "size_kb": 71420,
+        "size_kb": 71647,
         "topics": [
           "accessibility",
           "accessibility-api",
@@ -196,7 +196,7 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "32dee9630df91348cb7202f5e4329b30b5237e3c",
         "generated_at": "2026-11-10T12:44:11.549689+09:00"
       }
@@ -207,15 +207,15 @@
       "url": "https://github.com/anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars_total": 191197,
-      "forks_total": 22462,
-      "stars_period": 3796,
+      "stars_total": 192356,
+      "forks_total": 22649,
+      "stars_period": 5014,
       "api": {
         "default_branch": "main",
         "license": null,
-        "updated_at": "2026-11-10T03:44:02Z",
+        "updated_at": "2026-11-11T01:24:00Z",
         "pushed_at": "2026-11-06T22:32:32Z",
-        "open_issues": 1508,
+        "open_issues": 1516,
         "archived": false,
         "size_kb": 5502,
         "topics": [
@@ -292,21 +292,114 @@
     },
     {
       "rank": 4,
+      "full_name": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars_total": 20648,
+      "forks_total": 2862,
+      "stars_period": 8951,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-11T01:24:14Z",
+        "pushed_at": "2026-11-11T01:13:00Z",
+        "open_issues": 1011,
+        "archived": false,
+        "size_kb": 514928,
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "computer-use",
+          "docker",
+          "electron",
+          "grok",
+          "grok-bot",
+          "grok-bot-alternative",
+          "self-hosted",
+          "typescript"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "fdfc12be61d3dd55a39e69292375acb06bc48ef7",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 33776,
+        "used_chars": 6464
+      },
+      "analysis": {
+        "summary_ja": "OpenMausBotは、Grok Botにインスパイアされたオープンソースのチャットアプリ型AIボットプラットフォームです。ローカルで動作するClaudeやCodexなどのAIエージェントを、連絡先のようにチャット形式で管理・操作できます。",
+        "capabilities": [
+          {
+            "text": "ClaudeやCodex、GrokなどのAIエージェントCLIをローカル環境で直接利用できる",
+            "evidence_section": "Why"
+          },
+          {
+            "text": "macOS、Windows、Ubuntu向けのデスクトップアプリとしてビルド・実行できる",
+            "evidence_section": "Quick start"
+          },
+          {
+            "text": "内蔵されたハーネスサーバーにより、追加のサーバー設定なしで動作する",
+            "evidence_section": "Quick start"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "複数のAIボットとチャットアプリのように会話しながら作業を進める",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "ローカルにインストールされたAIモデルやエージェントを活用してタスクを実行する",
+            "basis": "README明記",
+            "evidence_section": "Why"
+          }
+        ],
+        "first_trial": {
+          "goal": "ソースコードから開発サーバーを起動してアプリを動作させる",
+          "steps": [
+            "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
+            "pnpm install",
+            "pnpm dev:server",
+            "pnpm dev"
+          ],
+          "success_criteria": "ハーネスサーバーおよびアプリが指定されたローカルアドレスで起動すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Why",
+          "Quick start"
+        ],
+        "unconfirmed": [
+          "Featuresセクションの具体的な詳細内容（途中で切れているため）",
+          "Tailscaleを用いたデスクトップ間コンパニオンモードの詳細な手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "fdfc12be61d3dd55a39e69292375acb06bc48ef7",
+        "generated_at": "2026-11-11T10:24:43.338517+09:00"
+      }
+    },
+    {
+      "rank": 5,
       "full_name": "max-sixty/worktrunk",
       "url": "https://github.com/max-sixty/worktrunk",
       "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "stars_total": 12289,
-      "forks_total": 480,
-      "stars_period": 2395,
+      "stars_total": 12398,
+      "forks_total": 487,
+      "stars_period": 2093,
       "api": {
         "default_branch": "main",
         "license": "NOASSERTION",
-        "updated_at": "2026-11-10T03:27:49Z",
-        "pushed_at": "2026-11-09T17:26:09Z",
+        "updated_at": "2026-11-11T01:24:00Z",
+        "pushed_at": "2026-11-10T19:16:52Z",
         "open_issues": 57,
         "archived": false,
-        "size_kb": 63222,
+        "size_kb": 63238,
         "topics": [
           "agents",
           "claude-code",
@@ -378,200 +471,92 @@
       }
     },
     {
-      "rank": 5,
-      "full_name": "milind-soni/OpenMausBot",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "language": "TypeScript",
-      "stars_total": 19892,
-      "forks_total": 2712,
-      "stars_period": 8325,
+      "rank": 6,
+      "full_name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars_total": 49231,
+      "forks_total": 3451,
+      "stars_period": 3606,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-10T03:42:37Z",
-        "pushed_at": "2026-11-10T03:42:18Z",
-        "open_issues": 944,
+        "updated_at": "2026-11-11T01:24:40Z",
+        "pushed_at": "2026-11-11T00:34:33Z",
+        "open_issues": 561,
         "archived": false,
-        "size_kb": 494064,
-        "topics": [
-          "ai-agents",
-          "claude-code",
-          "codex",
-          "computer-use",
-          "docker",
-          "electron",
-          "grok",
-          "grok-bot",
-          "grok-bot-alternative",
-          "self-hosted",
-          "typescript"
-        ]
+        "size_kb": 31581,
+        "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "ab96963faab0faf95623676109aca3933d06dccf",
+        "sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 32760,
-        "used_chars": 6464
+        "original_chars": 8780,
+        "used_chars": 8026
       },
       "analysis": {
-        "summary_ja": "OpenMausBotは、チャットアプリの形式で複数のAIボットと会話できるオープンソースのGrok Bot代替プロジェクトです。ローカルファーストで動作し、Claude、Codex、Grokなどのエージェントを利用して独自のコンピュータ環境やアプリで作業させることができます。",
+        "summary_ja": "agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。",
         "capabilities": [
           {
-            "text": "独自の個性やモデル、コンピュータ、接続済みアプリを持つ複数のAIボットとチャットアプリ形式でやり取りできる",
+            "text": "ページをコンパクトなテキスト（アクセシビリティツリー）としてスナップショット取得し、各要素にrefを割り当てる機能",
             "evidence_section": "README冒頭"
           },
           {
-            "text": "自身のマシンにインストールされたClaude、Codex、GrokのCLIを利用して追加のアカウント不要でボットを稼働させることができる",
-            "evidence_section": "Why"
+            "text": "クリック、入力、スクロール、待機、スクリーンショット撮影などの豊富なブラウザ操作コマンドの提供",
+            "evidence_section": "Commands"
           },
           {
-            "text": "ローカルファーストの設計により、トランスクリプトやキー、イベントをクラウドではなくローカル環境に保存する",
-            "evidence_section": "Why"
+            "text": "エージェント向けのスキル取得機能やMCPサーバーとしての起動機能",
+            "evidence_section": "For AI agents"
           }
         ],
         "use_cases": [
           {
-            "text": "サイドバーに表示される複数のAIボットから好みのエージェントを選択し、連絡先のようにメッセージで指示を出す",
+            "text": "シェルからAIエージェントにWebページを開かせ、要素を指定してクリックや入力を行わせるブラウザ自動化",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Quick start"
           },
           {
-            "text": "独自のクラウドLinuxデスクトップやローカルVMを活用し、AIボットに作業を代行させて進捗を確認する",
+            "text": "AIエージェントにスキルやMCPサーバー機能を組み込んで、インタラクティブなWeb操作ワークフローを実行させる",
             "basis": "README明記",
-            "evidence_section": "Why"
+            "evidence_section": "For AI agents"
           }
         ],
         "first_trial": {
-          "goal": "ソースコードからローカル環境で開発サーバーとElectronアプリを起動する",
+          "goal": "ブラウザを開いてページのインタラクティブな要素のスナップショットを取得し、要素をクリックして結果を確認する",
           "steps": [
-            "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
-            "pnpm install",
-            "pnpm dev:server",
-            "pnpm dev",
-            "pnpm dev:desktop"
+            "agent-browser open example.com",
+            "agent-browser snapshot -i",
+            "agent-browser click @e1",
+            "agent-browser get url",
+            "agent-browser close"
           ],
-          "success_criteria": "ハーネスサーバーとアプリ、およびElectronシェルが正常に起動すること"
+          "success_criteria": "コマンドが正常に実行され、指定したURLのページ操作結果が取得できること"
         },
         "evidence_sections": [
           "README冒頭",
-          "Why",
-          "Quick start"
+          "Install",
+          "Quick start",
+          "How it works",
+          "For AI agents",
+          "Commands",
+          "Platforms",
+          "Development",
+          "Documentation",
+          "License"
         ],
         "unconfirmed": [
-          "Capabilitiesの3件目におけるプラットフォームの安全性境界に関する記述の詳細は、READMEの途中で文章が切れているため確認できません。"
+          "詳細な設定ファイルや環境変数によるカスタマイズの全容",
+          "LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": true,
-        "readme_sha": "ab96963faab0faf95623676109aca3933d06dccf",
-        "generated_at": "2026-11-09T10:08:32.133486+09:00"
-      }
-    },
-    {
-      "rank": 6,
-      "full_name": "thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "language": "TypeScript",
-      "stars_total": 115446,
-      "forks_total": 10023,
-      "stars_period": 5130,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-10T03:42:00Z",
-        "pushed_at": "2026-11-10T03:22:25Z",
-        "open_issues": 67,
-        "archived": false,
-        "size_kb": 831949,
-        "topics": [
-          "ai",
-          "ai-agents",
-          "ai-memory",
-          "anthropic",
-          "artificial-intelligence",
-          "chromadb",
-          "claude",
-          "claude-agent-sdk",
-          "claude-agents",
-          "claude-code",
-          "claude-code-plugin",
-          "claude-skills",
-          "embeddings",
-          "long-term-memory",
-          "mem0",
-          "memory-engine",
-          "openmemory",
-          "rag",
-          "sqlite",
-          "supermemory"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "a719803580012c4de9184559d59f1e2cb70d859c",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 25073,
-        "used_chars": 23749
-      },
-      "analysis": {
-        "summary_ja": "claude-memは、AIコーディングエージェントのセッション間でコンテキストを永続化するためのツールです。エージェントの作業内容をバックグラウンドで記録・圧縮し、次回のセッション時に必要なコンテキストを自動的に注入することで、エージェントが過去の作業を引き継げるようにします。",
-        "capabilities": [
-          {
-            "text": "セッション中のエージェントの動作をバックグラウンドで記録し、AIで圧縮して次回のセッションにコンテキストを注入する。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "全文検索、タイムライン表示、詳細取得の3ステップによる効率的なメモリ検索機能を提供する。",
-            "evidence_section": "MCP Search Tools"
-          },
-          {
-            "text": "Claude CodeやOpenCodeなど複数の主要なAIエージェントやハーネスに対応している。",
-            "evidence_section": "Quick Start"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "前回のセッションで修正したバグや解決した内容を次のセッションに引き継ぎ、同じミスを繰り返さないようにする。",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "自然言語を使用して過去のプロジェクト履歴を検索し、必要なコード修正の経緯や判断材料を見つける。",
-            "basis": "README明記",
-            "evidence_section": "MCP Search Tools"
-          }
-        ],
-        "first_trial": {
-          "goal": "claude-memをインストールして動作を開始する",
-          "steps": [
-            "npx claude-mem install"
-          ],
-          "success_criteria": "インストーラーが起動し、お使いの環境にあるエージェントが検出されて設定が進められること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Quick Start",
-          "What You Get",
-          "MCP Search Tools",
-          "How It Works",
-          "System Requirements",
-          "Configuration",
-          "Troubleshooting",
-          "License"
-        ],
-        "unconfirmed": [
-          "商用利用における詳細なライセンスの境界条件や料金プランの全貌"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "a719803580012c4de9184559d59f1e2cb70d859c",
-        "generated_at": "2026-11-10T12:44:16.802531+09:00"
+        "readme_sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
+        "generated_at": "2026-11-10T12:44:27.801992+09:00"
       }
     },
     {
@@ -580,13 +565,13 @@
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "language": "Shell",
-      "stars_total": 37644,
-      "forks_total": 4936,
-      "stars_period": 4324,
+      "stars_total": 38074,
+      "forks_total": 4970,
+      "stars_period": 3730,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-10T03:43:22Z",
+        "updated_at": "2026-11-11T01:24:05Z",
         "pushed_at": "2026-11-09T23:33:14Z",
         "open_issues": 96,
         "archived": false,
@@ -669,296 +654,326 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "1842501050d579e421bef697ccd37487b37279be",
         "generated_at": "2026-11-10T12:44:22.659996+09:00"
       }
     },
     {
       "rank": 8,
-      "full_name": "vercel-labs/agent-browser",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "stars_total": 48603,
-      "forks_total": 3309,
-      "stars_period": 2994,
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_total": 320952,
+      "forks_total": 26908,
+      "stars_period": 9872,
       "api": {
         "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-10T03:41:42Z",
-        "pushed_at": "2026-11-10T01:45:24Z",
-        "open_issues": 542,
+        "license": "MIT",
+        "updated_at": "2026-11-11T01:22:39Z",
+        "pushed_at": "2026-11-09T14:03:07Z",
+        "open_issues": 233,
         "archived": false,
-        "size_kb": 31632,
+        "size_kb": 2269,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
+        "sha": "f7038f139299985eea6c3e18398dbafb379a0010",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 8780,
-        "used_chars": 8026
+        "original_chars": 16449,
+        "used_chars": 16319
       },
       "analysis": {
-        "summary_ja": "agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。",
+        "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
         "capabilities": [
           {
-            "text": "ページをコンパクトなテキスト（アクセシビリティツリー）としてスナップショット取得し、各要素にrefを割り当てる機能",
-            "evidence_section": "README冒頭"
+            "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
+            "evidence_section": "Installation (30-second setup)"
           },
           {
-            "text": "クリック、入力、スクロール、待機、スクリーンショット撮影などの豊富なブラウザ操作コマンドの提供",
-            "evidence_section": "Commands"
+            "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
+            "evidence_section": "Why These Skills Exist"
           },
           {
-            "text": "エージェント向けのスキル取得機能やMCPサーバーとしての起動機能",
-            "evidence_section": "For AI agents"
+            "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
+            "evidence_section": "Engineering"
           }
         ],
         "use_cases": [
           {
-            "text": "シェルからAIエージェントにWebページを開かせ、要素を指定してクリックや入力を行わせるブラウザ自動化",
+            "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
             "basis": "README明記",
-            "evidence_section": "Quick start"
+            "evidence_section": "Why These Skills Exist"
           },
           {
-            "text": "AIエージェントにスキルやMCPサーバー機能を組み込んで、インタラクティブなWeb操作ワークフローを実行させる",
+            "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
             "basis": "README明記",
-            "evidence_section": "For AI agents"
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
           }
         ],
         "first_trial": {
-          "goal": "ブラウザを開いてページのインタラクティブな要素のスナップショットを取得し、要素をクリックして結果を確認する",
+          "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
           "steps": [
-            "agent-browser open example.com",
-            "agent-browser snapshot -i",
-            "agent-browser click @e1",
-            "agent-browser get url",
-            "agent-browser close"
+            "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
+            "エージェント内で /setup-matt-pocock-skills を実行する"
           ],
-          "success_criteria": "コマンドが正常に実行され、指定したURLのページ操作結果が取得できること"
+          "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
         },
         "evidence_sections": [
-          "README冒頭",
-          "Install",
-          "Quick start",
-          "How it works",
-          "For AI agents",
-          "Commands",
-          "Platforms",
-          "Development",
-          "Documentation",
-          "License"
+          "Installation (30-second setup)",
+          "Why These Skills Exist",
+          "Reference",
+          "Engineering",
+          "Productivity"
         ],
         "unconfirmed": [
-          "詳細な設定ファイルや環境変数によるカスタマイズの全容",
-          "LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順"
+          "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
-        "generated_at": "2026-11-10T12:44:27.801992+09:00"
+        "cached": true,
+        "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "generated_at": "2026-10-09T10:20:43.679066+09:00"
       }
     },
     {
       "rank": 9,
-      "full_name": "pingdotgg/t3code",
-      "url": "https://github.com/pingdotgg/t3code",
-      "description": "",
-      "language": "TypeScript",
-      "stars_total": 54358,
-      "forks_total": 10205,
-      "stars_period": 13448,
+      "full_name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars_total": 69359,
+      "forks_total": 4580,
+      "stars_period": 10967,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-10T03:44:23Z",
-        "pushed_at": "2026-11-10T03:43:58Z",
-        "open_issues": 5969,
+        "updated_at": "2026-11-11T01:23:54Z",
+        "pushed_at": "2026-09-14T19:29:02Z",
+        "open_issues": 123,
         "archived": false,
-        "size_kb": 765884,
+        "size_kb": 143,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
+        "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 5294,
-        "used_chars": 5293
+        "original_chars": 6946,
+        "used_chars": 6945
       },
       "analysis": {
-        "summary_ja": "T3 Codeは、手元の開発用AIエージェントをモバイルアプリやWebアプリ、デスクトップアプリから一元的に操作・制御するためのコントロールサーフェスです。",
+        "summary_ja": "cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。",
         "capabilities": [
           {
-            "text": "iOS、Android、Web、Electronベースのデスクトップアプリからマシンの上のエージェントを制御できる",
-            "evidence_section": "README冒頭"
+            "text": "6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。",
+            "evidence_section": "What it does"
           },
           {
-            "text": "Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fxなどのプロバイダーと連携できる",
-            "evidence_section": "README冒頭"
+            "text": "findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。",
+            "evidence_section": "Files"
+          },
+          {
+            "text": "同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。",
+            "evidence_section": "What it does"
           }
         ],
         "use_cases": [
           {
-            "text": "スマートフォンや別のマシンからリモートで開発用エージェントを操作する",
+            "text": "コードベース全体のセキュリティ監査をエージェントに実行させる。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Usage"
+          },
+          {
+            "text": "指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。",
+            "basis": "README明記",
+            "evidence_section": "Usage"
+          },
+          {
+            "text": "セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。",
+            "basis": "README明記",
+            "evidence_section": "Usage"
           }
         ],
         "first_trial": {
-          "goal": "T3 Codeのサーバーを起動してローカルのWebアプリを開く",
+          "goal": "Skills CLIを使用してsecurity-auditスキルをインストールする",
           "steps": [
-            "curl -fsSL https://t3.codes/install.sh | sh を実行してインストールする",
-            "t3 を実行してサーバーを起動し、ローカルのWebアプリを開く"
+            "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
           ],
-          "success_criteria": "t3コマンドを実行してサーバーが起動し、ローカルのWebアプリが開くこと"
+          "success_criteria": "スキルが正常にインストールされること"
         },
         "evidence_sections": [
-          "README冒頭",
-          "Installation"
+          "What it does",
+          "Files",
+          "Installation",
+          "Usage",
+          "Requirements",
+          "Design principles"
         ],
-        "unconfirmed": [
-          "ソースコードの内部構造や詳細な機能についての詳細なドキュメントの内容"
-        ],
+        "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-        "generated_at": "2026-11-10T12:44:30.159432+09:00"
+        "cached": true,
+        "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "generated_at": "2026-09-26T09:03:01.890303+09:00"
       }
     },
     {
       "rank": 10,
-      "full_name": "D4Vinci/Scrapling",
-      "url": "https://github.com/D4Vinci/Scrapling",
-      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "full_name": "The-PR-Agent/pr-agent",
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "language": "Python",
-      "stars_total": 100642,
-      "forks_total": 10513,
-      "stars_period": 8226,
+      "stars_total": 15882,
+      "forks_total": 2170,
+      "stars_period": 1591,
       "api": {
         "default_branch": "main",
-        "license": "BSD-3-Clause",
-        "updated_at": "2026-11-10T03:44:05Z",
-        "pushed_at": "2026-11-09T10:36:37Z",
-        "open_issues": 20,
+        "license": "MIT",
+        "updated_at": "2026-11-11T01:17:42Z",
+        "pushed_at": "2026-11-11T01:00:18Z",
+        "open_issues": 41,
         "archived": false,
-        "size_kb": 16312,
+        "size_kb": 184508,
         "topics": [
           "ai",
-          "ai-scraping",
-          "automation",
-          "crawler",
-          "crawling",
-          "crawling-python",
-          "data",
-          "data-extraction",
-          "mcp",
-          "mcp-server",
-          "playwright",
-          "python",
-          "scraping",
-          "selectors",
-          "stealth",
-          "web-scraper",
-          "web-scraping",
-          "web-scraping-python",
-          "webscraping",
-          "xpath"
+          "anthropic",
+          "code-review",
+          "coding-assistant",
+          "devtools",
+          "ollama",
+          "openai",
+          "pull-request",
+          "pull-requests"
         ]
       },
       "readme": {
         "status": "ok",
-        "sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
+        "sha": "551cde8216132a3134367a29599297b55e995d3c",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 38279,
-        "used_chars": 7073
+        "original_chars": 10677,
+        "used_chars": 8995
       },
       "analysis": {
-        "summary_ja": "Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析、並行クロールを1つのライブラリに統合したPythonのWebスクレイピングフレームワークです。",
-        "capabilities": [
-          {
-            "text": "高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能",
-            "evidence_section": "What you can do with Scrapling"
-          },
-          {
-            "text": "CSS、XPath、テキストおよび正規表現検索、類似要素マッチングによる柔軟な解析と抽出機能",
-            "evidence_section": "What you can do with Scrapling"
-          },
-          {
-            "text": "AIチャットボットやエージェントから利用できるMCPサーバー機能およびRAG向けMarkdown変換機能",
-            "evidence_section": "AI Features"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "静的なページのスクレイピングからJavaScriptのレンダリング、API呼び出しデータの抽出",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "AIエージェントやLLMを活用したRAGシステム向けのクリーンなMarkdown形式への変換",
-            "basis": "README明記",
-            "evidence_section": "AI Features"
-          },
-          {
-            "text": "セッション管理やプロキシローテーション、自動リトライを伴う大規模なWebクロールの構築",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          }
-        ],
+        "status": "api_error",
+        "summary_ja": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+        "capabilities": [],
+        "use_cases": [],
         "first_trial": {
-          "goal": "Scraplingをインストールして基本的なHTTPリクエストと解析を行う",
-          "steps": [
-            "pip install scrapling"
-          ],
-          "success_criteria": "パッケージがエラーなくインストールされること"
+          "goal": "未確認",
+          "steps": [],
+          "success_criteria": "未確認"
         },
-        "evidence_sections": [
-          "README冒頭",
-          "What you can do with Scrapling",
-          "AI Features",
-          "Getting Started",
-          "Basic Usage",
-          "Installation"
-        ],
+        "evidence_sections": [],
         "unconfirmed": [
-          "フェッチ機能やスパイダー機能を利用する際の追加依存関係の具体的なインストールコマンド"
+          "Gemini API HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
         ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
-        "generated_at": "2026-11-10T12:44:33.150615+09:00"
+        "model": null,
+        "cached": false
       }
     }
   ],
   "zenn": [
     {
-      "title": "少年団の役員向けRAGを作った — 条文単位に切り直しただけで正答52%→72%、ハイブリッド検索は効かなかった",
-      "url": "https://zenn.dev/mappy55/articles/rulebook-rag-01",
-      "author": "mappy",
-      "published": "Mon, 09 Nov 2026 20:35:11 GMT",
-      "summary": "会則の質問に答えるボットを作る\n私は地域の少年スポーツ団体で会計を担当しています。保護者や役員から来る問い合わせは、だいたい決まっています。「年度の途中で入会したら会費はいくらか」「退会したら返金はあるのか」「振込先はどこか」「雨の日の練習はどうなるのか」。答えは会則、入会案内、過去に役員グループへ流した連絡文のどこかに書いてあるのですが、毎回探して答えています。\nこういう問い合わせに RAG を使ったチャットボットで答えさせるとどうなるのか知りたくなり、架空のクラブのデータ"
+      "title": "HAC125DX 用の無線カメラを Pi Zero 2 W で作って、ライブスタックしてみた",
+      "url": "https://zenn.dev/tsukitsukiss/articles/livestack-hac125dx-wireless-camera",
+      "author": "tsuki",
+      "published": "Tue, 10 Nov 2026 20:52:00 GMT",
+      "summary": "はじめに\n撮影専用の天体望遠鏡である Sky-Watcher の HAC125DX（口径 125mm、焦点距離 250mm、F2）のプライムフォーカスに載せる 無線カメラ を作りました。Raspberry Pi Zero 2 W に IMX585 というイメージセンサを取り付け、バッテリーで動かし、撮った RAW を Wi-Fi で PC に送って、PC 側でライブスタックします。\nこの記事では、なぜ無線にしたのか、筐体の光路長をどう追い込んだのか、実際に使ってどこでつまずい"
     },
     {
-      "title": "ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで",
-      "url": "https://zenn.dev/taaroo/articles/47f8d1ac55d4af",
-      "author": "Taro",
-      "published": "Mon, 09 Nov 2026 14:48:35 GMT",
-      "summary": "はじめに\nこんにちはTaarooです。皆さんMambaしてますか〜\n自分はですね、前回の記事で作ったMamba3言語モデル（NanoMambaLM）をちょっとスケール(0.13B → 0.26B)して、またゼロから事前学習やSFTをして、ちょっとずつお話ができるようになっていくのを楽しんでました！\nそうしているうちに、テキストチャットだけじゃなくて直接おしゃべりしたいな～と思うようになりまして...。\nそこで今回は、このNanoMambaLMをベースに耳と口をくっつけて、聞き"
+      "title": "LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意",
+      "url": "https://zenn.dev/aws_japan/articles/4399262cf00559",
+      "author": "Hiroki Tsuji",
+      "published": "Tue, 10 Nov 2026 14:30:35 GMT",
+      "summary": "はじめに\nこの記事は前後編の後編です。前編では、Adaptive Routerによる分類、Beta分布からの品質サンプル、モデルスコア、重み、min_quality_tier を扱いました。\n\n後編では、会話からモデルごとの品質を学習する条件と、運用時に注意が必要な動作を検証します。\n\n 後編でわかったことのまとめ\n\n\n\n項目\n結果\n\n\n\n\nモデル選択の学習方法\n次のターンの user 発話と、応答間の類似度を評価する。user の反応は直前の応答モデルへ反映される。セッショ"
     },
     {
-      "title": "2 つのエージェントで異なる方向性から検証を行う",
-      "url": "https://zenn.dev/kokagex/articles/75f89df3b007cc",
-      "author": "こかげ",
-      "published": "Mon, 09 Nov 2026 13:41:19 GMT",
-      "summary": "この記事は AI コーディングエージェントが自分で書いとります。\nソロ開発者が回しとる自作の長期記憶基盤と、その周りの skill 群の連載 11 本目だわ。\n今回は、書き終えたコードを 2 つのエージェントに、別々の方向から確かめさせた話を書く。\n1 つは目標と過去の決定から見る係、もう 1 つはコードを動かして見る係だわ。\nやってみて、わかったことは 2 つある。\n1 つ目は、これまでの確かめでは見つけられんかったバグを、見つけられるようになったこと。\n2 つ目は、本番に"
+      "title": "LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み",
+      "url": "https://zenn.dev/aws_japan/articles/ac9ae548d57323",
+      "author": "Hiroki Tsuji",
+      "published": "Tue, 10 Nov 2026 14:28:03 GMT",
+      "summary": "はじめに\nLiteLLM の Adaptive Router（auto_router/adaptive_router、BETA）は、1つのモデル名で受け付けたリクエストを、内容に応じて複数のモデルへ振り分けます。モデルの品質とコストを評価し、会話から得た反応を以後の選択に反映します。\n公式ドキュメントだけでは、次の仕様を把握しにくい状態です。\n\nモデル選択で参照する情報\n\nweights（品質とコストの重み）が選択結果に与える影響\n学習に使用するシグナルと、学習が発生しない条"
+    },
+    {
+      "title": "Clojureのマクロによるメタプログラミングで業務ルールのDSLを作る",
+      "url": "https://zenn.dev/pksha/articles/b7e4c1a9d38f52",
+      "author": "Hyuga Yamaguchi",
+      "published": "Tue, 10 Nov 2026 12:55:14 GMT",
+      "summary": "要約\n設備点検の条件式から、判定関数と、根拠を集めるための参照一覧を生成する DSL(ドメイン固有言語)を作ります。Clojure のマクロで式をデータとして読み取り、参照箇所を集めながら、実行するコードへ変換します。条件式を一度書けば、判定と根拠の収集に必要な定義がそろう仕組みです。\n完成したルールと生成コードを見たあと、Clojure の記法とマクロの実装を説明し、ルールの保守・拡張で省ける作業を確認します。Lisp を初めて読む方を想定しています。\n\n はじめに\nPKS"
+    },
+    {
+      "title": "JaCoCoはどうやってカバレッジを測っているのか",
+      "url": "https://zenn.dev/chikina/articles/jacoco-coverage-bytecode",
+      "author": "ちきな",
+      "published": "Tue, 10 Nov 2026 08:41:07 GMT",
+      "summary": "Eclipseでカバレッジを計測すると、コードが赤、黄、緑で色分けされます。\nどこまでカバーできたかは見えるものの、その色をどう決めているかは見えづらく、ちょっと黒魔術っぽく感じます。\nEclipseからカバレッジを計測し、結果を表示するプラグインがEclEmmaで、計測と解析にはJaCoCoを使います。\nその仕組みを調べるため、計測前後のclassファイルを比べてみました。\n小さなJUnitのテストで、計測用の命令が実行されてから、記録を解析してソースに色が付くまでを追いま"
+    },
+    {
+      "title": "AI ネイティブなデータ分析基盤を作った話（後編）",
+      "url": "https://zenn.dev/pksha/articles/laplace-build-guide",
+      "author": "Shogun",
+      "published": "Tue, 10 Nov 2026 07:38:37 GMT",
+      "summary": "はじめに\nPKSHA Technology で PKSHA VoiceAgent の SRE をしている三浦です。\n前回の記事「AI ネイティブなデータ分析基盤を作った話」で、データ分析基盤 Laplace を「なぜ作ったか」「何を選んだか」「運用して何が起きたか」の順で書きました。今回は設計の中身です。技術スタックの紹介ではなく、「何を守るために、どこに境界を引いたか」を書きます。\n分析基盤を作る、あるいは作り直す人が自分の環境に持ち帰れるよう、GCS や GKE といった"
+    },
+    {
+      "title": "AIでテストカバレッジを23%から84%に引き上げた方法",
+      "url": "https://zenn.dev/litalico/articles/20261029-test-with-ai",
+      "author": "eggc",
+      "published": "Tue, 10 Nov 2026 02:50:00 GMT",
+      "summary": "1. はじめに\nLITALICOナーシングネット開発チームの江口です。今回は、私が1年半かけて、試行錯誤しながら取り組んできたテストカバレッジ向上施策について紹介します。AI以前の取り組みから、AIにおけるプロンプトやスキル、うまくいかなかった点も含めて説明します。チームのテストを手厚くしたい、とお考えの方はぜひ参考にしてみてください。\n\n 2. AI以前: CIとテスト文化の土台づくり\n\n 2.1. 配属当初の課題\n私がチームに配属されて、初めて環境構築を済ませた時のことを"
+    },
+    {
+      "title": "GitHub rulesetのON/OFFで「マージ禁止期間」を作る",
+      "url": "https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze",
+      "author": "ik-fib",
+      "published": "Tue, 10 Nov 2026 02:45:29 GMT",
+      "summary": "こんにちは、株式会社イエソドでバックエンドエンジニアをしているik-fib（@ik11235）です。\n\n はじめに\n弊社では、週の初めにリリース対象の変更内容を確認する「リリース判定」を行っています。この記事では、リリースする変更をまとめるブランチをGit flowにならって仮にdevelopと呼びます。リリースまでの流れは次のとおりです。\n\n普段の開発では、レビューと検証を通った変更をdevelopにマージする\n週の初めに、developに入っている変更内容をリリース判定で"
+    },
+    {
+      "title": "退屈なCoding AgentはMuseにやらせよう",
+      "url": "https://zenn.dev/watany/articles/342b9815dd0553",
+      "author": "watany",
+      "published": "Tue, 10 Nov 2026 02:35:05 GMT",
+      "summary": "はじめに\n旧FacebookのMetaが開発したパーソナルAIエージェントのMuseがすごく良くて、意味不明なくらいずっと触ってる。紹介コード: 7L990R を入れるとトークンがもらえるのでよろしくね。\nhttps://muse.ai/\nMuseは触ると魅力がわかるタイプのプロダクトで、使ってないとClaudeやCodexで良いじゃん、なんで今更驚き屋してんの？って思われる。そんな捻くれた俺たちでも触りやすい使い方を紹介します。\n\n Museにコードを書かせる\n大前提として"
+    },
+    {
+      "title": "NVIDIAの「長文コンテキスト不要」論文",
+      "url": "https://zenn.dev/knowledgesense/articles/bd917ed6829121",
+      "author": "Atsushi Kadowaki",
+      "published": "Tue, 10 Nov 2026 00:01:05 GMT",
+      "summary": "本記事では、AIエージェントの推論コストを下げつつ、精度を保つ手法について、ざっくり理解します。\n株式会社ナレッジセンスは、生成AIやRAGを使ったプロダクトを、エンタープライズ企業向けに開発しているスタートアップです。\n\n この記事は何\nこの記事は、「AIに長い文章を読ませると、コストが高くなる」問題に関する記事です。NVIDIAの研究チームによって2026年11月に発表された新手法の論文[1]について、日本語で簡単にまとめています。\nhttps://arxiv.org/a"
+    },
+    {
+      "title": "「漏洩された側」は何ができるのか？ 相次ぐインシデントから考えるエンドユーザーの防衛策",
+      "url": "https://zenn.dev/nttdata_tech/articles/a68fc15144b2d8",
+      "author": "Rikita Koshiba",
+      "published": "Tue, 10 Nov 2026 00:00:08 GMT",
+      "summary": "連日のように、企業による個人情報漏洩の公表を目にするようになりました。\n背景にはサイバー攻撃の手口の高度化があります。近年では生成AIの普及により、自然な文面を用いたフィッシングメールの作成やシステムの脆弱性調査が容易になり、攻撃側の作業コストが大きく下がりました。企業側が相応のセキュリティ投資を行っていても、漏洩インシデントのリスクを完全にゼロにすることは非常に困難な環境となっています。\nこうした状況下、私自身の個人メール宛てにも、複数の利用先企業から「個人情報漏洩に関する"
+    },
+    {
+      "title": "Claude Codeで最近使っているTips【2026/11】",
+      "url": "https://zenn.dev/oikon/articles/claude-code-recipe",
+      "author": "Oikon",
+      "published": "Mon, 09 Nov 2026 22:01:05 GMT",
+      "summary": "Oikonです。\n気がつけば2026年も終わりが見えてきました。今年はありがたいことにClaude Codeの書籍を2冊出版させていただきました。\n\n\nClaude Code実践入門 [生成AI深掘りガイド]（SBクリエイティブ）\n\nClaude Code実践レシピ集（技術評論社）\n\n新刊のClaude Code実践レシピ集は、個人的に好きなClaude CodeのTipsをベースに、割と好き勝手に書かせていただきました笑。\n新しいClaude Code本の発売記念に、この記"
+    },
+    {
+      "title": "脆弱性問題を解決するためにRustに移行するべきなのか？",
+      "url": "https://zenn.dev/garasubo/articles/72340052cdd871",
+      "author": "ガラスボー",
+      "published": "Mon, 09 Nov 2026 13:51:19 GMT",
+      "summary": "近年、AIの発達により攻撃側の脆弱性発見能力が大幅に向上したことにより、セキュリティ対策の重要性がより高まっています。\n最近、PHPの脆弱性であるPHP2Shellが発見されました。これはOpenAIの支援を受けたサイバーセキュリティ企業[1]が発見しました。\n一部の技術者、中には政治家の方もメモリ安全性が保証されているRustのような言語への移行を目指すべきだという意見が見られました。\n確かに、熱心なRust愛好家は以前からこのような主張をすることは見かけますが、実際の主張"
     },
     {
       "title": "JAWS FESTA 2026 in AKITA 懇親会を振り返ってみる",
@@ -966,13 +981,6 @@
       "author": "鈴木 健斗",
       "published": "Mon, 09 Nov 2026 08:13:00 GMT",
       "summary": "はじめに\n2026年11月7日（土）に開催された「JAWS FESTA 2026 in AKITA」で、懇親会の担当をさせていただきました。鈴木です。\n私はこれまで、JAWS-UGの規模の大きいイベントの懇親会に何度か運営として関わってきました。\n\nJAWS DAYS 2025：懇親会の司会\nJAWS DAYS 2026：飲食まわり（前夜祭、ランチ、懇親会）\nJAWS FESTA 2026：懇親会担当\n\nこの記事では、その中で得たナレッジを共有したいと思います。今回のJAWS"
-    },
-    {
-      "title": "ホロ1グランプリで宙科そぴあさんが使ってたサイエンスメソッドを最適化の視点で深掘りしてみた",
-      "url": "https://zenn.dev/akira5kitaoka/articles/holo1gp_sopias_science_method",
-      "author": "Akira Kitaoka",
-      "published": "Mon, 09 Nov 2026 07:49:59 GMT",
-      "summary": "概要\n11月8日にホロライブで「ホロ1GP」という競馬のイベントが開催された．そのイベントで宙科そぴあさんがとっていた戦略と，その戦略の理論保証について解説する．\n!\n本記事は個人的に書いた非公式の分析記事である．\n\n結論を先に書くと，次のようになる．\n\n8頭立ての複勝で，オッズの高い6頭に，掛け金がオッズの逆数に比例するように賭けると，どの3頭が来ても払戻しは所持金の 1/S_6 倍以上になる（S_6 は6頭のオッズの逆数和）．\nこの賭け方は，「6頭以下に賭ける」戦略の中で"
     },
     {
       "title": "なぜ mixi2 は iPhone Duo の発売初日から最適化できたのか？",
@@ -989,34 +997,6 @@
       "summary": "こんにちは。PeopleX AI面接の開発をしている坂津です。\nここ1年で、私はコードを一切手で書かなくなりました。\nClaude Opus 5.5 が登場してからは AI が書いたコードの細部もそこまで気にしなくなっています。正しく指示をすれば、Opus 5.5 が書くコードは品質が高く、設計の意図に沿った読みやすいコードがそのまま出てくることがほとんどです。それにアプリケーションのコードはあとからでも比較的簡単に直せます。いまレビューで力を入れているのは、DB 設計やアー"
     },
     {
-      "title": "LLM アプリケーションのプロンプトをどこで管理するか",
-      "url": "https://zenn.dev/painter/articles/663816c3195cec",
-      "author": "Keita Ichihashi",
-      "published": "Mon, 09 Nov 2026 03:11:23 GMT",
-      "summary": "はじめに\nLLM アプリケーションを本番運用するときは、プロンプトをコードと一緒にリポジトリで管理するか、Langfuse などのプロンプト管理ツールで管理して実行時に取得するかを決める必要があります。\nLangfuse は、エンジニアを介さず、デプロイもせずにプロンプトを更新する利点を挙げています[1]。一方で OpenAI はダッシュボードでプロンプトを管理する reusable prompts を 2026 年 11 月 30 日に終了すると告知しました。移行先として、"
-    },
-    {
-      "title": "閉域網でも AI を使いこなす: ローカル LLM × GitLab DAP（GitLab Epic Tour Japan 2026 登壇）",
-      "url": "https://zenn.dev/fixstars/articles/gitlab-epic-tour-2026-local-llm",
-      "author": "Yoshiki Matsuda",
-      "published": "Mon, 09 Nov 2026 01:45:40 GMT",
-      "summary": "はじめに\n2026 年 10 月 9 日の GitLab Epic Tour Japan 2026 にて、「閉域網でも AI を使いこなす ローカル LLM × GitLab DAP の実践知」というタイトルで登壇しました。株式会社フィックスターズの取り組みを、ぜひ当日会場にいなかった方にもお伝えしたいと思い、スライドと話した内容を記事にしました。以下にスライドを 1 枚ずつ載せ、当日のトークを書き起こしたものを掲載します。\n\n\n話の中心は、私たちが作った開発環境です。フィッ"
-    },
-    {
-      "title": "ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す",
-      "url": "https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin",
-      "author": "kazutoyo@TellerNovel",
-      "published": "Mon, 09 Nov 2026 01:38:40 GMT",
-      "summary": "こんにちは！テラーノベルでiOS/Android/Webとフロントエンド周りを担当している@kazutoyoです！\n先日、Shopify Engineeringから「Reflex」というモバイルアプリのアーキテクチャの記事が公開されました。\nhttps://shopify.engineering/reflex\nShopifyはReact Nativeで作っていたアプリをネイティブに置き換えていて、Reflexはその中で生まれた設計です。\niOSとAndroidをそれぞれネイテ"
-    },
-    {
-      "title": "Anthropicから毎月もらえるAPIクレジットで、AIペンテストツールShannonを回してみた",
-      "url": "https://zenn.dev/arm_techblog/articles/9c5a29e37d1522",
-      "author": "Kyosuke Takayama",
-      "published": "Mon, 09 Nov 2026 01:06:50 GMT",
-      "summary": "こんにちは、フィッツプラス の高山です。\n最近、Claudeのプラン（MaxやTeamなど）に、APIのクレジットが毎月付いてくるようになりました。\nhttps://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans\nありがたい。ありがたいんですが、これがClaude Codeで使えるものではなく、Claude APIやAgent SDKなど、自分でA"
-    },
-    {
       "title": "個性を磨くUI観点",
       "url": "https://zenn.dev/silverbirder/books/ui-craft-techniques",
       "author": "silverbirder",
@@ -1031,13 +1011,6 @@
       "summary": "はじめに\n結論から言うと、Claude Codeの利用制限に毎週引っかかる原因は「使いすぎ」ではなく「設定の当て方」でした。モデルとEffortを工程ごとに使い分けただけで、同じ仕事量でも利用枠の減りが大幅に遅くなりました。\n私が試したのはClaude Codeですが、モデルとEffortを選べるのはチャット版のClaudeも同じです。しかもTeamプランでは、チャットとClaude Codeは同じ利用枠を使います。この記事の考え方は、Claude Codeを使っていない人に"
     },
     {
-      "title": "Herdr.app と hc の上で Claude Code の司令塔を回している",
-      "url": "https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c",
-      "author": "hoshinotsuyoshi",
-      "published": "Sun, 08 Nov 2026 16:00:51 GMT",
-      "summary": "Herdr.app と hc の上で Claude Code の司令塔を回している\n前提: 2026-11 時点の個人の運用メモ。 Herdr.app 0.1.13 / hc (herdr-core) 0.1.18 / Claude Code 2.1.318。\n一言で: 自分が話す相手は司令塔の Claude Code 1 体だけ。 ほかの agent の面倒は司令塔に見させる。\n\n 使っている道具\n自分が使っているのは Herdr.app と hc (herdr-core)"
-    },
-    {
       "title": "AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること",
       "url": "https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610",
       "author": "Yuki Tsumita",
@@ -1045,56 +1018,28 @@
       "summary": "AWS Ambassadorの積田です。\n画像入りのPDFをS3に置いて、Amazon OpenSearch Serverless(以下AOSS)のIntelligent ingestionでIngestion jobを実行しました。\n翌朝コンソールを開いたら、当月のコストが$2,777,528.09になっていました。1ドル155円で換算すると約4.3億円です。\n\n実はAWSさんの課金バグで1,000万円以上の請求をされるのは今年3回目です（2月に約1,400万円、7月に約3"
     },
     {
-      "title": "SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話",
-      "url": "https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763",
-      "author": "naoki",
-      "published": "Sun, 08 Nov 2026 08:41:46 GMT",
-      "summary": "前提\n\nDB：Amazon Aurora PostgreSQL 16\n\n\n TL;DR\n\nSELECTしかしていないトランザクションが放置され、リリース時のマイグレーションがロック待ちで失敗した\nPostgreSQLのロックは「共有」「排他」の2種類ではなく、SELECTが取るACCESS SHAREは REINDEX などが要求するACCESS EXCLUSIVEを止める\nトランザクションは最小限に分け、保険としてAuroraの idle_in_transaction_se"
-    },
-    {
-      "title": "ISUCON2026 ソロ参加記：自作ハーネスで Claude Code をほぼ無人運転した",
-      "url": "https://zenn.dev/5alt_nacl/articles/isucon2026-solo-ai-agent",
-      "author": "NaCl_5alt",
-      "published": "Sat, 07 Nov 2026 23:35:44 GMT",
-      "summary": "はじめに\n2026-10-31 の ISUCON2026 に、チーム「なんとかなれー」として1人で出ました。\n競技時間（10:00〜18:00）の作業は、ほぼすべて AI エージェントの Claude Code に任せました。自宅の Windows デスクトップで動く Claude Code が、マニュアルを読み、スタックを作り、計測し、コードを直し、ベンチを回し、再起動試験まで自分で進めています。私はその日は旅行中で、移動の合間にスマホで通知を見ていました。\nただし、完全な"
-    },
-    {
-      "title": "Weight-Space Programming やってみた(やらせてみた)",
-      "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
-      "author": "ヨ",
-      "published": "Sat, 07 Nov 2026 00:57:13 GMT",
-      "summary": "GPT-6 AstraにQwen3.5-0.8Bの重みを編集させることができたという論文が話題です。\nhttps://x.com/rikiyatakehi/status/2117313742891327994\nXで反応を見ていると、AstraがQwenの重みを丸ごと読み込んで、その数値の意味を理解したように受け取られている場面がありました。実験でAstraがやったのは、コードを書いて対象モデルの重みや内部活性を調べ、挙動の仮説を立て、重みに変更を加えて結果を確かめることです。"
-    },
-    {
       "title": "[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件",
       "url": "https://zenn.dev/xin9le/articles/9a1cf8e10494d6",
       "author": "xin9le",
       "published": "Fri, 06 Nov 2026 14:39:45 GMT",
       "summary": "「お前は何を言っているんだ？」と思うかもしれませんが、本当なのだから仕方ない！動いていたはずの CI の単体テストが突然コケるという事態に遭遇してビックリ。「何もしてないのに壊れた」。まじで。\n\n\n 何が起きたか\nありのままのコードを載せるわけにはいかないのでポイントを絞って記載します。ざっくり以下のような感じです。サンプルコードは C# / .NET です。\n\n和暦への変換\n// 和暦のカルチャ情報を作る\nvar culture = new CultureInfo(\"ja-"
-    },
-    {
-      "title": "タスク管理までAIエージェントに任せたら、確認待ちに答えるだけになった",
-      "url": "https://zenn.dev/rescuenow/articles/4c03a548cd6589",
-      "author": "しもち",
-      "published": "Fri, 06 Nov 2026 08:59:24 GMT",
-      "summary": "はじめに\nこんにちは、しもちです。\n前回の「2026年自分流AIエージェント環境構築の秋」では、司令塔のエージェントに作業役を回してもらう仕組みを紹介しました。司令塔には作業だけでなく、抱えているタスク全体の管理も任せていて、どれに手を付けるか、どの順で進めるかも司令塔が決めます。自分でタスクの一覧を見て回ることはなくなり、司令塔が出してくる確認待ちに答えるのが主な仕事になりました。\n今回は画面を中心に、その確認待ちを普段どう捌いているかを紹介します。\n\n 画面の全体\n\n左が"
     }
   ],
   "common_terms": [
+    "agent",
     "claude",
     "code",
-    "agent",
-    "web",
-    "https",
-    "llm",
-    "anthropic",
-    "rag",
-    "x.com"
+    "auto",
+    "rust",
+    "git",
+    "codex",
+    "nvidia",
+    "openai"
   ],
   "ai_analysis": {
     "enabled": true,
     "model": "gemini-3.5-flash-lite",
-    "successful": 10,
+    "successful": 9,
     "total": 10
   },
   "verification": {

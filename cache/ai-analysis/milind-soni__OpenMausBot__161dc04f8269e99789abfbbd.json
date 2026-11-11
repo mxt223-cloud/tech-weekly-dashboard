@@ -1,0 +1,53 @@
+{
+  "summary_ja": "OpenMausBotは、Grok Botにインスパイアされたオープンソースのチャットアプリ型AIボットプラットフォームです。ローカルで動作するClaudeやCodexなどのAIエージェントを、連絡先のようにチャット形式で管理・操作できます。",
+  "capabilities": [
+    {
+      "text": "ClaudeやCodex、GrokなどのAIエージェントCLIをローカル環境で直接利用できる",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "macOS、Windows、Ubuntu向けのデスクトップアプリとしてビルド・実行できる",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "内蔵されたハーネスサーバーにより、追加のサーバー設定なしで動作する",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIボットとチャットアプリのように会話しながら作業を進める",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ローカルにインストールされたAIモデルやエージェントを活用してタスクを実行する",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードから開発サーバーを起動してアプリを動作させる",
+    "steps": [
+      "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
+      "pnpm install",
+      "pnpm dev:server",
+      "pnpm dev"
+    ],
+    "success_criteria": "ハーネスサーバーおよびアプリが指定されたローカルアドレスで起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "Featuresセクションの具体的な詳細内容（途中で切れているため）",
+    "Tailscaleを用いたデスクトップ間コンパニオンモードの詳細な手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "fdfc12be61d3dd55a39e69292375acb06bc48ef7",
+  "generated_at": "2026-11-11T10:24:43.338517+09:00"
+}
