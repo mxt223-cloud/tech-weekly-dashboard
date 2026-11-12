@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenMausBotは、チャットアプリの形式で複数のAIボットを管理できるオープンソースのGrok Bot代替ツールです。ローカル環境でClaude、Codex、GrokなどのAIエージェントを実行し、それぞれに独自のパーソナリティや仮想コンピュータを持たせてやり取りすることができます。",
+  "capabilities": [
+    {
+      "text": "Claude、Codex、GrokのCLIをローカル環境で実行し、独自のログイン情報やサブスクリプションを利用可能",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "macOS、Windows、Ubuntu 24.04に対応したデスクトップビルドおよびパッケージング機能の提供",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "ハーネスサーバーが組み込まれており、リリース版では個別のサーバー設定が不要",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "サイドバーに配置された複数のAIボットとチャットアプリのように会話を行い、作業を監視して承認する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ローカルにインストールされたAIエージェントを利用して独自のパーソナリティやクラウドコンピュータを持つボットを動かす",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "Tailscaleを介して別のWindows、macOS、Ubuntuホストのクライアントとしてデスクトップ同士をペアリングする",
+      "basis": "README明記",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードから開発サーバーおよびデスクトップシェルを起動して動作を確認する",
+    "steps": [
+      "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
+      "pnpm install",
+      "pnpm dev:server",
+      "pnpm dev",
+      "pnpm dev:desktop"
+    ],
+    "success_criteria": "ハーネスサーバーおよびElectronシェルが起動し、アプリケーションが正常に動作すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "Featuresセクションの具体的な詳細内容（READMEの途中で文章が途切れているため）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9eb918d3f784c3ab91ebc753e31488d4d346e109",
+  "generated_at": "2026-11-12T11:24:20.934413+09:00"
+}

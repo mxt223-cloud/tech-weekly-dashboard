@@ -1,0 +1,41 @@
+{
+  "summary_ja": "Zedは、AtomとTree-sitterの開発者によって作られた、高性能かつマルチプレイヤー対応のコードエディタです。",
+  "capabilities": [
+    {
+      "text": "macOS、Linux、Windows向けにダウンロードまたはパッケージマネージャー経由でインストールできる。",
+      "evidence_section": "Installation"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数人での共同作業やコーディングを行う。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "公式サイトからZedをダウンロードまたはインストールして利用を開始する",
+    "steps": [
+      "公式サイトのダウンロードページにアクセスする",
+      "macOS、Linux、Windowsのいずれかの方法でインストールを行う"
+    ],
+    "success_criteria": "Zedエディタが起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "Developing Zed",
+    "Contributing",
+    "Licensing",
+    "Sponsorship"
+  ],
+  "unconfirmed": [
+    "具体的なマルチプレイヤー機能の詳細な操作方法",
+    "サポートされている全てのパッケージマネージャーのリスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
+  "generated_at": "2026-11-12T11:24:24.763067+09:00"
+}

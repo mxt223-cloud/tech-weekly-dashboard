@@ -1,7 +1,7 @@
-# Tech Daily — 2026-11-11
+# Tech Daily — 2026-11-12
 
-生成日時: 2026-11-11T10:25:02.444406+09:00  
-AI分析: 9/10件成功（gemini-3.5-flash-lite）
+生成日時: 2026-11-12T11:24:25.396697+09:00  
+AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
 ## 1. [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology)
@@ -9,7 +9,7 @@ AI分析: 9/10件成功（gemini-3.5-flash-lite）
 **概要:** Auto Ontologyは、企業データのメタデータからセマンティックな知識グラフやオントロジーを構築し、AIエージェントの決定論的なクエリ生成やコンテキスト取得を支援するPythonフレームワークです。
 
 - 言語: Python
-- 今週のスター: 9621
+- 今週のスター: 7947
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -51,53 +51,12 @@ Docker Composeを使用してAuto-Ontologyをローカル環境で起動し、�
 未確認: 外部からのプルリクエストの受け入れ可否（現在のREADMEでは非受付と記載されているが将来の変更可能性は不明）／KumoRFM以外の予測サービスの具体的な統合方法
 
 
-## 2. [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
-
-**概要:** agent-desktopは、AIエージェントがOSのアクセシビリティツリーを介してmacOS、Windows、Linux上のデスクトップアプリを視認・操作できるようにするコンピュータ操作用CLIおよびCライブラリです。
-
-- 言語: Rust
-- 今週のスター: 9502
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- スクリーンショットやピクセルマッチングを行わず、デスクトップアプリのアクセシビリティツリーを読み取ってJSONとして返す機能（根拠: README冒頭）
-
-- CLIやCライブラリとして提供され、MCP（Model Context Protocol）ツールとしても各コマンドを提供してstdio経由で実行できる機能（根拠: MCP）
-
-- スナップショット、要素へのクリックや文字入力、ウィンドウやアプリの管理、クリップボード操作など多数の運用コマンドを備えている機能（根拠: Commands）
-
-
-### 利用例
-
-- AIエージェントがデスクトップアプリのUI要素を認識してクリックや入力を実行し、結果を検証する自動化ループの構築（README明記／根拠: README冒頭）
-
-- Model Context Protocol（MCP）に対応したAIエージェントのインフラやクライアントにデスクトップ操作機能を組み込むこと（提案／根拠: MCP）
-
-
-### 最初に試すこと
-
-デスクトップアプリの状態をスナップショットで取得し、対象の要素に対して操作を行うこと
-
-1. agent-desktop snapshot --app Finder -i
-
-2. agent-desktop click @s8f3k2p9:e8
-
-3. agent-desktop snapshot --app Finder -i
-
-
-成功の目安: コマンドがJSONエンベロープを出力し、UI要素の情報や操作結果が確認できること
-
-未確認: READMEに記載されていない詳細な内部アーキテクチャや独自拡張機能の有無
-
-
-## 3. [anthropics/skills](https://github.com/anthropics/skills)
+## 2. [anthropics/skills](https://github.com/anthropics/skills)
 
 **概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
 
 - 言語: Python
-- 今週のスター: 5014
+- 今週のスター: 5738
 - ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
@@ -133,34 +92,77 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
 
 
-## 4. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+## 3. [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
 
-**概要:** OpenMausBotは、Grok Botにインスパイアされたオープンソースのチャットアプリ型AIボットプラットフォームです。ローカルで動作するClaudeやCodexなどのAIエージェントを、連絡先のようにチャット形式で管理・操作できます。
+**概要:** agent-desktopは、AIエージェントがmacOS、Windows、LinuxのデスクトップアプリをOSのアクセシビリティツリー経由で操作するためのコンピュータ用CLIおよびCライブラリです。
 
-- 言語: TypeScript
-- 今週のスター: 8951
+- 言語: Rust
+- 今週のスター: 7772
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- ClaudeやCodex、GrokなどのAIエージェントCLIをローカル環境で直接利用できる（根拠: Why）
+- OSのアクセシビリティツリーを読み取り、操作可能な要素に参照（ref）を付与してJSON形式で返却する。（根拠: README冒頭）
 
-- macOS、Windows、Ubuntu向けのデスクトップアプリとしてビルド・実行できる（根拠: Quick start）
+- クリックや文字入力などのUI操作を、スクリーンショットやピクセルマッチングなしで実行できる。（根拠: README冒頭）
 
-- 内蔵されたハーネスサーバーにより、追加のサーバー設定なしで動作する（根拠: Quick start）
+- すべてのコマンドをstdio経由のMCPツールとして提供する機能を持つ。（根拠: MCP）
 
 
 ### 利用例
 
-- 複数のAIボットとチャットアプリのように会話しながら作業を進める（README明記／根拠: README冒頭）
+- AIエージェントがデスクトップアプリのUI要素のツリー構造を把握し、指定した要素に対して操作と結果の検証を繰り返す。（README明記／根拠: README冒頭）
 
-- ローカルにインストールされたAIモデルやエージェントを活用してタスクを実行する（README明記／根拠: Why）
+- MCPサーバーを介してAIエージェントの外部ツールとして統合し、デスクトップ操作を行わせる。（README明記／根拠: MCP）
 
 
 ### 最初に試すこと
 
-ソースコードから開発サーバーを起動してアプリを動作させる
+Finderアプリのインタラクティブ要素のスナップショットを取得し、要素に対する操作と確認を行う
+
+1. agent-desktop snapshot --app Finder -i
+
+2. agent-desktop click @s8f3k2p9:e8
+
+3. agent-desktop snapshot --app Finder -i
+
+
+成功の目安: スナップショットおよびクリック操作の結果がJSON形式で正常に出力されること
+
+未確認: リポジトリのドキュメントに詳細な仕様が記載されていない一部の設定や高度なAPIの使い方
+
+
+## 4. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+
+**概要:** OpenMausBotは、チャットアプリの形式で複数のAIボットを管理できるオープンソースのGrok Bot代替ツールです。ローカル環境でClaude、Codex、GrokなどのAIエージェントを実行し、それぞれに独自のパーソナリティや仮想コンピュータを持たせてやり取りすることができます。
+
+- 言語: TypeScript
+- 今週のスター: 9257
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- Claude、Codex、GrokのCLIをローカル環境で実行し、独自のログイン情報やサブスクリプションを利用可能（根拠: Why）
+
+- macOS、Windows、Ubuntu 24.04に対応したデスクトップビルドおよびパッケージング機能の提供（根拠: Quick start）
+
+- ハーネスサーバーが組み込まれており、リリース版では個別のサーバー設定が不要（根拠: Quick start）
+
+
+### 利用例
+
+- サイドバーに配置された複数のAIボットとチャットアプリのように会話を行い、作業を監視して承認する（README明記／根拠: README冒頭）
+
+- ローカルにインストールされたAIエージェントを利用して独自のパーソナリティやクラウドコンピュータを持つボットを動かす（README明記／根拠: Why）
+
+- Tailscaleを介して別のWindows、macOS、Ubuntuホストのクライアントとしてデスクトップ同士をペアリングする（README明記／根拠: Quick start）
+
+
+### 最初に試すこと
+
+ソースコードから開発サーバーおよびデスクトップシェルを起動して動作を確認する
 
 1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
 
@@ -170,57 +172,20 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 
 4. pnpm dev
 
-
-成功の目安: ハーネスサーバーおよびアプリが指定されたローカルアドレスで起動すること
-
-未確認: Featuresセクションの具体的な詳細内容（途中で切れているため）／Tailscaleを用いたデスクトップ間コンパニオンモードの詳細な手順
+5. pnpm dev:desktop
 
 
-## 5. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
+成功の目安: ハーネスサーバーおよびElectronシェルが起動し、アプリケーションが正常に動作すること
 
-**概要:** Worktrunkは、Gitのワークツリー管理を効率化し、複数のAIエージェントの並行ワークフローを支援するためのコマンドラインツールです。
-
-- 言語: Rust
-- 今週のスター: 2093
-- ライセンス: NOASSERTION
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- ブランチ名を用いたワークツリーの切り替えや作成、削除などの基本操作を行える（根拠: README）
-
-- フック機能によるワークツリー作成時やマージ前後のワークフロー自動化を行える（根拠: README）
-
-- 差分からLLMを活用したコミットメッセージの生成を行える（根拠: README）
+未確認: Featuresセクションの具体的な詳細内容（READMEの途中で文章が途切れているため）
 
 
-### 利用例
-
-- Claude CodeなどのAIエージェントを複数のワークツリーで同時に稼働させ、並行してタスクを処理する（README明記／根拠: README）
-
-- ワークツリーごとに固有のポート番号や開発サーバー割り当てを行い、環境競合を防ぐ（README明記／根拠: README）
-
-- 複数ワークツリー間でビルドキャッシュを共有し、ディスク容量やビルド時間を節約する（README明記／根拠: README）
-
-
-### 最初に試すこと
-
-新しい機能用のワークツリーを作成して切り替える
-
-1. wt switch --create feature-auth
-
-
-成功の目安: 新しいブランチとワークツリーが作成され、そこに切り替わること
-
-
-
-
-## 6. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
+## 5. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 
 **概要:** agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。
 
 - 言語: Rust
-- 今週のスター: 3606
+- 今週のスター: 4183
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -260,12 +225,164 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: 詳細な設定ファイルや環境変数によるカスタマイズの全容／LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順
 
 
-## 7. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+## 6. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+
+**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
+
+- 言語: JavaScript
+- 今週のスター: 11507
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
+
+- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
+
+- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
+
+
+### 利用例
+
+- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
+
+- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
+
+- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
+
+
+### 最初に試すこと
+
+Skills CLIを使用してsecurity-auditスキルをインストールする
+
+1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
+
+
+成功の目安: スキルが正常にインストールされること
+
+
+
+
+## 7. [mattpocock/skills](https://github.com/mattpocock/skills)
+
+**概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
+
+- 言語: Shell
+- 今週のスター: 9575
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。（根拠: Installation (30-second setup)）
+
+- エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。（根拠: Why These Skills Exist）
+
+- コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。（根拠: Engineering）
+
+
+### 利用例
+
+- 実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。（README明記／根拠: Why These Skills Exist）
+
+- テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。（README明記／根拠: Why These Skills Exist）
+
+- プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。（README明記／根拠: Why These Skills Exist）
+
+
+### 最初に試すこと
+
+リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする
+
+1. エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）
+
+2. エージェント内で /setup-matt-pocock-skills を実行する
+
+
+成功の目安: イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること
+
+未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
+
+
+## 8. [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
+
+**概要:** Scraplingは、高速なHTTPリクエスト、ステルスブラウザ、強力な解析、並行クロールを1つのライブラリに統合したPythonのWebスクレイピングフレームワークです。
+
+- 言語: Python
+- 今週のスター: 5814
+- ライセンス: BSD-3-Clause
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 高速なHTTPリクエストやステルスブラウザ、JavaScriptレンダリング、Cloudflare対策などのフェッチ機能（根拠: What you can do with Scrapling）
+
+- CSS、XPath、テキストおよび正規表現検索、類似要素マッチングによる柔軟な解析と抽出機能（根拠: What you can do with Scrapling）
+
+- AIチャットボットやエージェントから利用できるMCPサーバー機能およびRAG向けMarkdown変換機能（根拠: AI Features）
+
+
+### 利用例
+
+- 静的なページのスクレイピングからJavaScriptのレンダリング、API呼び出しデータの抽出（README明記／根拠: README冒頭）
+
+- AIエージェントやLLMを活用したRAGシステム向けのクリーンなMarkdown形式への変換（README明記／根拠: AI Features）
+
+- セッション管理やプロキシローテーション、自動リトライを伴う大規模なWebクロールの構築（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+Scraplingをインストールして基本的なHTTPリクエストと解析を行う
+
+1. pip install scrapling
+
+
+成功の目安: パッケージがエラーなくインストールされること
+
+未確認: フェッチ機能やスパイダー機能を利用する際の追加依存関係の具体的なインストールコマンド
+
+
+## 9. [zed-industries/zed](https://github.com/zed-industries/zed)
+
+**概要:** Zedは、AtomとTree-sitterの開発者によって作られた、高性能かつマルチプレイヤー対応のコードエディタです。
+
+- 言語: Rust
+- 今週のスター: 2310
+- ライセンス: NOASSERTION
+- AI分析状態: ok
+
+### できること
+
+- macOS、Linux、Windows向けにダウンロードまたはパッケージマネージャー経由でインストールできる。（根拠: Installation）
+
+
+### 利用例
+
+- 複数人での共同作業やコーディングを行う。（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+公式サイトからZedをダウンロードまたはインストールして利用を開始する
+
+1. 公式サイトのダウンロードページにアクセスする
+
+2. macOS、Linux、Windowsのいずれかの方法でインストールを行う
+
+
+成功の目安: Zedエディタが起動すること
+
+未確認: 具体的なマルチプレイヤー機能の詳細な操作方法／サポートされている全てのパッケージマネージャーのリスト
+
+
+## 10. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
 
 **概要:** Claude Codeをゲーム開発スタジオに変えるテンプレートであり、アイデアからプレイ可能なブラウザゲームのプロトタイプ作成や、チーム開発向けの多数のエージェントやスキル、ワークフローを備えています。
 
 - 言語: Shell
-- 今週のスター: 3730
+- 今週のスター: 3150
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -305,164 +422,48 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: macOSやLinux環境におけるデスクトップ通知機能の動作詳細
 
 
-## 8. [mattpocock/skills](https://github.com/mattpocock/skills)
-
-**概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
-
-- 言語: Shell
-- 今週のスター: 9872
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。（根拠: Installation (30-second setup)）
-
-- エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。（根拠: Why These Skills Exist）
-
-- コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。（根拠: Engineering）
-
-
-### 利用例
-
-- 実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。（README明記／根拠: Why These Skills Exist）
-
-- テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。（README明記／根拠: Why These Skills Exist）
-
-- プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。（README明記／根拠: Why These Skills Exist）
-
-
-### 最初に試すこと
-
-リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする
-
-1. エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）
-
-2. エージェント内で /setup-matt-pocock-skills を実行する
-
-
-成功の目安: イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること
-
-未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
-
-
-## 9. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
-
-**概要:** cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。
-
-- 言語: JavaScript
-- 今週のスター: 10967
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。（根拠: What it does）
-
-- findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。（根拠: Files）
-
-- 同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。（根拠: What it does）
-
-
-### 利用例
-
-- コードベース全体のセキュリティ監査をエージェントに実行させる。（README明記／根拠: Usage）
-
-- 指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。（README明記／根拠: Usage）
-
-- セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。（README明記／根拠: Usage）
-
-
-### 最初に試すこと
-
-Skills CLIを使用してsecurity-auditスキルをインストールする
-
-1. npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
-
-
-成功の目安: スキルが正常にインストールされること
-
-
-
-
-## 10. [The-PR-Agent/pr-agent](https://github.com/The-PR-Agent/pr-agent)
-
-**概要:** 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.
-
-- 言語: Python
-- 今週のスター: 1591
-- ライセンス: MIT
-- AI分析状態: api_error
-
-### できること
-
-- READMEから確認できませんでした。
-
-
-### 利用例
-
-- READMEから確認できませんでした。
-
-
-### 最初に試すこと
-
-未確認
-
-
-成功の目安: 未確認
-
-未確認: Gemini API HTTP 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-
-
 
 ## Zenn
 
-- [HAC125DX 用の無線カメラを Pi Zero 2 W で作って、ライブスタックしてみた](https://zenn.dev/tsukitsukiss/articles/livestack-hac125dx-wireless-camera) — tsuki
+- [OpenCodeを拡張して、複数の担当と定期実行をひとつのチャットにまとめる「いちょまる」を作った](https://zenn.dev/theoj/articles/opencode-development-log) — theoj
 
-- [LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意](https://zenn.dev/aws_japan/articles/4399262cf00559) — Hiroki Tsuji
+- [Real2Sim2Realの現在地：現場スキャンからロボット検証環境へ](https://zenn.dev/kudan_jp/articles/a0cb75384f4a83) — Hiro Horii
 
-- [LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み](https://zenn.dev/aws_japan/articles/ac9ae548d57323) — Hiroki Tsuji
+- [ISUCON2026 で優勝しました（準備編）](https://zenn.dev/luvtechno/articles/isucon2026-preparation) — Yoshinori Kawasaki
+
+- [個人的な推し、Raycastの音声入力「Dictation」](https://zenn.dev/miive/articles/aa272cc544ddf3) — Seiji
+
+- [AIに書かせた、が全然AIが書いてない件](https://zenn.dev/appleworld/articles/65aed6c725af71) — petanko
+
+- [Snowflake Dashboards 2.0が最高な理由と、これからBIに求められること](https://zenn.dev/dataheroes/articles/snowflake-dashboards-2-and-future-of-bi) — ぺい(pei0804)
 
 - [Clojureのマクロによるメタプログラミングで業務ルールのDSLを作る](https://zenn.dev/pksha/articles/b7e4c1a9d38f52) — Hyuga Yamaguchi
 
-- [JaCoCoはどうやってカバレッジを測っているのか](https://zenn.dev/chikina/articles/jacoco-coverage-bytecode) — ちきな
-
 - [AI ネイティブなデータ分析基盤を作った話（後編）](https://zenn.dev/pksha/articles/laplace-build-guide) — Shogun
 
-- [AIでテストカバレッジを23%から84%に引き上げた方法](https://zenn.dev/litalico/articles/20261029-test-with-ai) — eggc
-
-- [GitHub rulesetのON/OFFで「マージ禁止期間」を作る](https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze) — ik-fib
+- [Rustで作られたExpoの新フレームワーク「Exact」で、モバイル・Web・デスクトップアプリを作ってみた](https://zenn.dev/tellernovel_inc/articles/expo-exact-first-impression) — kazutoyo@TellerNovel
 
 - [退屈なCoding AgentはMuseにやらせよう](https://zenn.dev/watany/articles/342b9815dd0553) — watany
 
 - [NVIDIAの「長文コンテキスト不要」論文](https://zenn.dev/knowledgesense/articles/bd917ed6829121) — Atsushi Kadowaki
 
-- [「漏洩された側」は何ができるのか？ 相次ぐインシデントから考えるエンドユーザーの防衛策](https://zenn.dev/nttdata_tech/articles/a68fc15144b2d8) — Rikita Koshiba
-
 - [Claude Codeで最近使っているTips【2026/11】](https://zenn.dev/oikon/articles/claude-code-recipe) — Oikon
 
 - [脆弱性問題を解決するためにRustに移行するべきなのか？](https://zenn.dev/garasubo/articles/72340052cdd871) — ガラスボー
 
-- [JAWS FESTA 2026 in AKITA 懇親会を振り返ってみる](https://zenn.dev/k_suzuki_pnx/articles/411e236ab4f2c7) — 鈴木 健斗
+- [Zennに投稿された26.4万件の記事のデータから見る現在の技術ブログ](https://zenn.dev/northward/articles/zenn-data-report-2611) — Northward
 
 - [なぜ mixi2 は iPhone Duo の発売初日から最適化できたのか？](https://zenn.dev/mixi/articles/b0ea64fded9503) — kuno
 
 - [AIですぐに作れる時代に、何と向き合うか](https://zenn.dev/peoplex_blog/articles/2611-what-to-face-when-ai-builds-fast) — サカツ | PeopleX AIプロダクトエンジニア
+
+- [ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す](https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin) — kazutoyo@TellerNovel
 
 - [個性を磨くUI観点](https://zenn.dev/silverbirder/books/ui-craft-techniques) — silverbirder
 
 - [週間制限に3日で到達していたClaudeが、ModelとEffortの使い分けで5日持つようになった話](https://zenn.dev/sun_asterisk/articles/1d1c65b1fe409a) — Asutin
 
 - [AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること](https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610) — Yuki Tsumita
-
-- [[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件](https://zenn.dev/xin9le/articles/9a1cf8e10494d6) — xin9le
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

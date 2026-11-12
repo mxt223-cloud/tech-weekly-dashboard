@@ -1,0 +1,60 @@
+{
+  "summary_ja": "agent-desktopは、AIエージェントがmacOS、Windows、LinuxのデスクトップアプリをOSのアクセシビリティツリー経由で操作するためのコンピュータ用CLIおよびCライブラリです。",
+  "capabilities": [
+    {
+      "text": "OSのアクセシビリティツリーを読み取り、操作可能な要素に参照（ref）を付与してJSON形式で返却する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "クリックや文字入力などのUI操作を、スクリーンショットやピクセルマッチングなしで実行できる。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "すべてのコマンドをstdio経由のMCPツールとして提供する機能を持つ。",
+      "evidence_section": "MCP"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIエージェントがデスクトップアプリのUI要素のツリー構造を把握し、指定した要素に対して操作と結果の検証を繰り返す。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "MCPサーバーを介してAIエージェントの外部ツールとして統合し、デスクトップ操作を行わせる。",
+      "basis": "README明記",
+      "evidence_section": "MCP"
+    }
+  ],
+  "first_trial": {
+    "goal": "Finderアプリのインタラクティブ要素のスナップショットを取得し、要素に対する操作と確認を行う",
+    "steps": [
+      "agent-desktop snapshot --app Finder -i",
+      "agent-desktop click @s8f3k2p9:e8",
+      "agent-desktop snapshot --app Finder -i"
+    ],
+    "success_criteria": "スナップショットおよびクリック操作の結果がJSON形式で正常に出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Install",
+    "Quick start",
+    "How it works",
+    "For AI agents",
+    "MCP",
+    "Commands",
+    "Platform support",
+    "C library",
+    "Development",
+    "Documentation",
+    "License"
+  ],
+  "unconfirmed": [
+    "リポジトリのドキュメントに詳細な仕様が記載されていない一部の設定や高度なAPIの使い方"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7b592641a826b48dc793b3434fcb150dd05e7e45",
+  "generated_at": "2026-11-12T11:24:17.662861+09:00"
+}
