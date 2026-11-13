@@ -1,0 +1,62 @@
+{
+  "summary_ja": "MuJoCoは、ロボット工学、バイオメカニクス、機械学習などの分野で高速かつ正確な物理シミュレーションを行うための汎用物理エンジンです。",
+  "capabilities": [
+    {
+      "text": "C言語のAPIを持ち、低レベルデータ構造を用いたパフォーマンス重視の実行時シミュレーションモジュールを提供します。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ネイティブデスクトップウィンドウやウェブブラウザでのインタラクティブな可視化機能が含まれています。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "PythonバインディングおよびUnityゲームエンジン向けのプラグインが提供されています。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ロボット工学や機械学習の研究開発において、環境と相互作用する関節構造の高速な物理シミュレーションに利用する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ブラウザ上でWebAssembly版のMuJoCo Studioを使用し、モデルの閲覧やドラッグ＆ドロップによる確認を行う。",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    },
+    {
+      "text": "Pythonのチュートリアルノートブックを使用して、強化学習のポリシー訓練やLQRコントローラーの合成を行う。",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    }
+  ],
+  "first_trial": {
+    "goal": "Python環境でMuJoCoのパッケージをインストールし動作確認を行う",
+    "steps": [
+      "pip install mujoco"
+    ],
+    "success_criteria": "エラーなくパッケージがインストールされ、Pythonからインポート可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Documentation",
+    "Getting Started",
+    "Installation",
+    "Versioning",
+    "Contributing",
+    "Asking Questions",
+    "Bug reports and feature requests",
+    "Related software",
+    "Citation",
+    "License and Disclaimer"
+  ],
+  "unconfirmed": [
+    "ソースコードからのビルド手順の詳細については、外部ドキュメントを参照する必要がある。"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c6fb8355165ddd1477109a96d3aace4e6f9cd17b",
+  "generated_at": "2026-11-13T11:02:20.499708+09:00"
+}

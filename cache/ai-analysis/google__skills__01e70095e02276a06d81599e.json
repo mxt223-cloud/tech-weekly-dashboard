@@ -1,0 +1,59 @@
+{
+  "summary_ja": "google/skillsは、Googleの製品やテクノロジー（Google Cloudなど）に関するAgent Skillsを収集・提供するリポジトリです。npxなどのコマンドを使用して、エージェント用のスキルやプラグインを追加・更新できます。",
+  "capabilities": [
+    {
+      "text": "Google Cloudなどの製品やテクノロジーに関する多数のAgent Skillsの提供",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "npx skills addコマンドによるスキルの追加機能",
+      "evidence_section": "Installation"
+    },
+    {
+      "text": "npx skills updateコマンドによるインストール済みスキルの更新と不要スキルの削除オプション",
+      "evidence_section": "Updating Skills"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "Google Cloudの認証や基盤構築、AI/ML、インフラ管理などのタスクをAIエージェントに実行させる",
+      "basis": "README明記",
+      "evidence_section": "Available Skills"
+    },
+    {
+      "text": "Claude CodeやCodexなどのエージェントハーネスにGoogle製品のプラグインを追加して利用する",
+      "basis": "README明記",
+      "evidence_section": "Plugins"
+    },
+    {
+      "text": "インストール済みのスキルを最新バージョンに一括でアップデートする",
+      "basis": "README明記",
+      "evidence_section": "Updating Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "スキルをエージェントに追加する",
+    "steps": [
+      "npx skills add google/skills を実行する",
+      "プロンプトが表示されたら、特定のスキルまたは全スキル、ターゲットのエージェント、インストール範囲を選択する"
+    ],
+    "success_criteria": "選択したスキルやエージェントの設定が正常に完了すること"
+  },
+  "evidence_sections": [
+    "Installation",
+    "Updating Skills",
+    "Available Skills",
+    "Plugins",
+    "Support",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "各スキルが内部でどのような処理を行っているかに関する詳細な動作仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "c41ada4b66f8b4f9eb1d700914e383c44b3d49c9",
+  "generated_at": "2026-11-13T11:02:23.662011+09:00"
+}
