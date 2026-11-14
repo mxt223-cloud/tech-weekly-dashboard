@@ -1,23 +1,113 @@
 {
-  "generated_at": "2026-11-13T11:02:24.025631+09:00",
-  "week": "2026-11-13",
+  "generated_at": "2026-11-14T10:38:14.269364+09:00",
+  "week": "2026-11-14",
   "title": "Tech Daily",
   "github": [
     {
       "rank": 1,
+      "full_name": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars_total": 111171,
+      "forks_total": 12864,
+      "stars_period": 13364,
+      "api": {
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-11-14T01:36:39Z",
+        "pushed_at": "2026-11-13T05:13:46Z",
+        "open_issues": 413,
+        "archived": false,
+        "size_kb": 19102,
+        "topics": [
+          "cli",
+          "cti",
+          "cybersecurity",
+          "forensics",
+          "hacktoberfest",
+          "information-gathering",
+          "infosec",
+          "linux",
+          "osint",
+          "pentesting",
+          "python",
+          "python3",
+          "reconnaissance",
+          "redteam",
+          "sherlock",
+          "tools"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+        "path": "docs/README.md",
+        "truncated": true,
+        "original_chars": 5596,
+        "used_chars": 4976
+      },
+      "analysis": {
+        "summary_ja": "sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。",
+        "capabilities": [
+          {
+            "text": "400以上のソーシャルネットワークを対象としたユーザー名検索",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "単一または複数のユーザー名を同時に指定した検索",
+            "evidence_section": "General usage"
+          },
+          {
+            "text": "検索結果のテキストファイルやCSV、XLSXなどでの保存",
+            "evidence_section": "General usage"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "特定のユーザー名が使われているソーシャルメディアアカウントの調査",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "コマンドを使用して単一のユーザー名を検索する",
+          "steps": [
+            "sherlock user123"
+          ],
+          "success_criteria": "見つかったアカウント情報がターミナルに表示され、ユーザー名に応じたテキストファイルに保存されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Installation",
+          "General usage"
+        ],
+        "unconfirmed": [
+          "詳細な設定ファイルの詳細な挙動",
+          "公式パッケージ以外のサポート範囲の詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+        "generated_at": "2026-11-14T10:38:02.646881+09:00"
+      }
+    },
+    {
+      "rank": 2,
       "full_name": "anthropics/skills",
       "url": "https://github.com/anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars_total": 193720,
-      "forks_total": 22790,
-      "stars_period": 6055,
+      "stars_total": 194152,
+      "forks_total": 22833,
+      "stars_period": 6169,
       "api": {
         "default_branch": "main",
         "license": null,
-        "updated_at": "2026-11-13T02:01:47Z",
+        "updated_at": "2026-11-14T01:36:19Z",
         "pushed_at": "2026-11-06T22:32:32Z",
-        "open_issues": 1525,
+        "open_issues": 1531,
         "archived": false,
         "size_kb": 5502,
         "topics": [
@@ -93,22 +183,22 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
       "full_name": "milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars_total": 21740,
-      "forks_total": 3026,
-      "stars_period": 9104,
+      "stars_total": 22209,
+      "forks_total": 3079,
+      "stars_period": 7763,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-13T02:01:37Z",
-        "pushed_at": "2026-11-12T19:50:16Z",
-        "open_issues": 1041,
+        "updated_at": "2026-11-14T01:36:29Z",
+        "pushed_at": "2026-11-13T22:00:55Z",
+        "open_issues": 1047,
         "archived": false,
-        "size_kb": 537443,
+        "size_kb": 550784,
         "topics": [
           "ai-agents",
           "claude-code",
@@ -191,22 +281,22 @@
       }
     },
     {
-      "rank": 3,
+      "rank": 4,
       "full_name": "vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars_total": 50351,
-      "forks_total": 3505,
-      "stars_period": 4601,
+      "stars_total": 50746,
+      "forks_total": 3527,
+      "stars_period": 4360,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-13T01:59:28Z",
-        "pushed_at": "2026-11-13T02:01:28Z",
+        "updated_at": "2026-11-14T01:33:22Z",
+        "pushed_at": "2026-11-14T01:11:18Z",
         "open_issues": 571,
         "archived": false,
-        "size_kb": 32297,
+        "size_kb": 33853,
         "topics": []
       },
       "readme": {
@@ -280,22 +370,217 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "full_name": "google/elephant-goldfish-model",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "description": "Open-source plugin for designing and reviewing software with agents",
+      "language": "Python",
+      "stars_total": 18634,
+      "forks_total": 1389,
+      "stars_period": 5560,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-14T01:33:01Z",
+        "pushed_at": "2026-11-13T17:16:33Z",
+        "open_issues": 103,
+        "archived": false,
+        "size_kb": 15065,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "antigravity",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "codex",
+          "codex-plugin",
+          "coding-agents",
+          "context-engineering",
+          "developer-tools",
+          "gemini",
+          "llm",
+          "multi-agent",
+          "prompt-engineering",
+          "spec-driven-development"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "d570bc7dee8f29e09f243e6a6245976bb803da15",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 9492,
+        "used_chars": 8324
+      },
+      "analysis": {
+        "summary_ja": "elephant-goldfish-model（EGM）は、AIアシスタント向けのオープンソースプラグインです。プロジェクトの文脈を保持する「Elephant」と、新鮮な視点でレビューを行う「Goldfish」の役割を組み合わせ、ソフトウェア仕様の設計やレビュー、コードとの乖離チェックを行います。",
+        "capabilities": [
+          {
+            "text": "プロジェクトの文脈や要件を整理し、コンセプトブリーフの作成や仕様書のドラフト作成を行う。",
+            "evidence_section": "Choose a skill"
+          },
+          {
+            "text": "既存の会話コンテキストを含めずに参照資料やドキュメントを検証し、前提の抜けや見落としを検出するレビューを行う。",
+            "evidence_section": "How it works"
+          },
+          {
+            "text": "チェックインされているドキュメントと現在のソースコードを比較し、乖離を報告する。",
+            "evidence_section": "Choose a skill"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "新しい機能のアイデアについて要件やトレードオフを検討し、合致した方向性を保存する。",
+            "basis": "README明記",
+            "evidence_section": "Try your first design"
+          },
+          {
+            "text": "既存の設計図やREADME、PRプランを実際のコードに対してレビューする。",
+            "basis": "README明記",
+            "evidence_section": "Try a 60-second review on existing code"
+          },
+          {
+            "text": "既存のコードベースに対するドキュメントを作成または更新する。",
+            "basis": "README明記",
+            "evidence_section": "Choose a skill"
+          }
+        ],
+        "first_trial": {
+          "goal": "プロジェクトを開き、機能のアイデアに対するブレインストーミングや設計ドラフト作成の流れを確認する。",
+          "steps": [
+            "/egm-brainstorm Add webhook delivery to this project.",
+            "/egm-draft",
+            "/egm-review design_draft.md"
+          ],
+          "success_criteria": "エージェントとの対話を通じてコンセプトブリーフや設計ドラフトが生成され、レビューを実施できること。"
+        },
+        "evidence_sections": [
+          "Install",
+          "Try a 60-second review on existing code",
+          "Try your first design",
+          "How it works",
+          "Choose a skill"
+        ],
+        "unconfirmed": [
+          "サブエージェントを作成できない環境での動作制限の詳細について、外部ドキュメント以外の具体的な挙動"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "d570bc7dee8f29e09f243e6a6245976bb803da15",
+        "generated_at": "2026-11-14T10:38:06.871623+09:00"
+      }
+    },
+    {
+      "rank": 6,
+      "full_name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars_total": 71635,
+      "forks_total": 57294,
+      "stars_period": 3778,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-14T01:37:20Z",
+        "pushed_at": "2026-11-14T01:35:44Z",
+        "open_issues": 57,
+        "archived": false,
+        "size_kb": 121896,
+        "topics": [
+          "a-stock",
+          "ai-agent",
+          "aigc",
+          "llm",
+          "quant",
+          "quantitative-finance",
+          "quantitative-trading"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "80e2a4befc6a72568278fa90050be6ed88b8b7b6",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 11095,
+        "used_chars": 10372
+      },
+      "analysis": {
+        "summary_ja": "ZhuLinsen/daily_stock_analysisは、LLMを活用して複数の市場における株式の自動分析と通知を行うインテリジェントな分析システムです。",
+        "capabilities": [
+          {
+            "text": "核心結論、スコア、トレンド、売買ポイント、リスク警告などを含むAI決定レポートの生成",
+            "evidence_section": "功能特性"
+          },
+          {
+            "text": "A株、香港株、米国株、日本株、韓国株、台湾株、ETFの多市場データ集約",
+            "evidence_section": "功能特性"
+          },
+          {
+            "text": "GitHub Actions、Docker、ローカルの定期実行、FastAPIサービス、各種チャットツールやメールへの通知",
+            "evidence_section": "功能特性"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "毎日の株式分析結果を決定ダッシュボード形式で企業微信、飛書、Telegram、Discord、Slack、メールへ自動送信する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "WebやAPIを利用して、移動平均線やボリンジャーバンドなどの15種類の内蔵戦略に基づくマルチターン形式のAI戦略質問を行う",
+            "basis": "README明記",
+            "evidence_section": "功能特性"
+          },
+          {
+            "text": "画像やCSV、Excelなどのデータをスマートに取り込み、株式コードや名称の補完を行う",
+            "basis": "README明記",
+            "evidence_section": "功能特性"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリをクローンして依存関係をインストールし、手動で解析を実行する",
+          "steps": [
+            "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
+            "pip install -r requirements.txt",
+            "cp .env.example .env && vim .env",
+            "python main.py"
+          ],
+          "success_criteria": "解析スクリプトがエラーなく実行されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "功能特性",
+          "技术栈与数据来源",
+          "快速开始"
+        ],
+        "unconfirmed": [],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "80e2a4befc6a72568278fa90050be6ed88b8b7b6",
+        "generated_at": "2026-11-14T10:38:09.748090+09:00"
+      }
+    },
+    {
+      "rank": 7,
       "full_name": "NVIDIA/auto-ontology",
       "url": "https://github.com/NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "language": "Python",
-      "stars_total": 12264,
-      "forks_total": 1011,
-      "stars_period": 5802,
+      "stars_total": 12566,
+      "forks_total": 1032,
+      "stars_period": 4108,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-13T02:01:29Z",
-        "pushed_at": "2026-11-12T21:23:57Z",
-        "open_issues": 119,
+        "updated_at": "2026-11-14T01:29:19Z",
+        "pushed_at": "2026-11-14T00:17:41Z",
+        "open_issues": 120,
         "archived": false,
-        "size_kb": 22220,
+        "size_kb": 22303,
         "topics": []
       },
       "readme": {
@@ -377,365 +662,22 @@
       }
     },
     {
-      "rank": 5,
-      "full_name": "cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars_total": 71247,
-      "forks_total": 4738,
-      "stars_period": 10700,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-13T02:01:05Z",
-        "pushed_at": "2026-09-14T19:29:02Z",
-        "open_issues": 126,
-        "archived": false,
-        "size_kb": 143,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 6946,
-        "used_chars": 6945
-      },
-      "analysis": {
-        "summary_ja": "cloudflare/security-audit-skillは、コーディングエージェントをセキュリティ監査人に変えるスキルリポジトリです。偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成という6つのフェーズで構造化されたセキュリティ監査を実行します。",
-        "capabilities": [
-          {
-            "text": "6つのフェーズ（偵察、カバレッジ主導のハント、候補検証、構造化出力、独立した記録検証、ターゲット非依存のレポート作成）で構造化されたセキュリティ監査を実行する。",
-            "evidence_section": "What it does"
-          },
-          {
-            "text": "findings.jsonやcoverage-ledger.jsonなどの出力を検証するためのバリデーター（validate-findings.cjs、validate-coverage-ledger.cjs）を提供する。",
-            "evidence_section": "Files"
-          },
-          {
-            "text": "同じリポジトリに対する複数回の実行で結果が加算的になり、ギャップのターゲット設定や変更されたソースの再検証を行う。",
-            "evidence_section": "What it does"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "コードベース全体のセキュリティ監査をエージェントに実行させる。",
-            "basis": "README明記",
-            "evidence_section": "Usage"
-          },
-          {
-            "text": "指定したディレクトリ（./srcなど）内のセキュリティ脆弱性を発見する。",
-            "basis": "README明記",
-            "evidence_section": "Usage"
-          },
-          {
-            "text": "セキュリティレビューを実施し、特定の結果を指定の出力先に出力する。",
-            "basis": "README明記",
-            "evidence_section": "Usage"
-          }
-        ],
-        "first_trial": {
-          "goal": "Skills CLIを使用してsecurity-auditスキルをインストールする",
-          "steps": [
-            "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
-          ],
-          "success_criteria": "スキルが正常にインストールされること"
-        },
-        "evidence_sections": [
-          "What it does",
-          "Files",
-          "Installation",
-          "Usage",
-          "Requirements",
-          "Design principles"
-        ],
-        "unconfirmed": [],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
-        "generated_at": "2026-09-26T09:03:01.890303+09:00"
-      }
-    },
-    {
-      "rank": 6,
-      "full_name": "vercel-labs/agent-desktop",
-      "url": "https://github.com/vercel-labs/agent-desktop",
-      "description": "Computer use CLI for AI agents",
-      "language": "Rust",
-      "stars_total": 22755,
-      "forks_total": 1686,
-      "stars_period": 6414,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-13T02:02:00Z",
-        "pushed_at": "2026-11-13T01:30:24Z",
-        "open_issues": 236,
-        "archived": false,
-        "size_kb": 72819,
-        "topics": [
-          "accessibility",
-          "accessibility-api",
-          "ai-agents",
-          "automation",
-          "cli",
-          "computer-use",
-          "computer-use-agent",
-          "computer-use-agents",
-          "desktop-automation",
-          "macos",
-          "mcp",
-          "rust"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "7b592641a826b48dc793b3434fcb150dd05e7e45",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 10105,
-        "used_chars": 9120
-      },
-      "analysis": {
-        "summary_ja": "agent-desktopは、AIエージェントがmacOS、Windows、LinuxのデスクトップアプリをOSのアクセシビリティツリー経由で操作するためのコンピュータ用CLIおよびCライブラリです。",
-        "capabilities": [
-          {
-            "text": "OSのアクセシビリティツリーを読み取り、操作可能な要素に参照（ref）を付与してJSON形式で返却する。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "クリックや文字入力などのUI操作を、スクリーンショットやピクセルマッチングなしで実行できる。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "すべてのコマンドをstdio経由のMCPツールとして提供する機能を持つ。",
-            "evidence_section": "MCP"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "AIエージェントがデスクトップアプリのUI要素のツリー構造を把握し、指定した要素に対して操作と結果の検証を繰り返す。",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "MCPサーバーを介してAIエージェントの外部ツールとして統合し、デスクトップ操作を行わせる。",
-            "basis": "README明記",
-            "evidence_section": "MCP"
-          }
-        ],
-        "first_trial": {
-          "goal": "Finderアプリのインタラクティブ要素のスナップショットを取得し、要素に対する操作と確認を行う",
-          "steps": [
-            "agent-desktop snapshot --app Finder -i",
-            "agent-desktop click @s8f3k2p9:e8",
-            "agent-desktop snapshot --app Finder -i"
-          ],
-          "success_criteria": "スナップショットおよびクリック操作の結果がJSON形式で正常に出力されること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Install",
-          "Quick start",
-          "How it works",
-          "For AI agents",
-          "MCP",
-          "Commands",
-          "Platform support",
-          "C library",
-          "Development",
-          "Documentation",
-          "License"
-        ],
-        "unconfirmed": [
-          "リポジトリのドキュメントに詳細な仕様が記載されていない一部の設定や高度なAPIの使い方"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "7b592641a826b48dc793b3434fcb150dd05e7e45",
-        "generated_at": "2026-11-12T11:24:17.662861+09:00"
-      }
-    },
-    {
-      "rank": 7,
-      "full_name": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars_total": 323042,
-      "forks_total": 27099,
-      "stars_period": 8731,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-13T01:54:39Z",
-        "pushed_at": "2026-11-12T12:11:43Z",
-        "open_issues": 240,
-        "archived": false,
-        "size_kb": 2322,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "f7038f139299985eea6c3e18398dbafb379a0010",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 16449,
-        "used_chars": 16319
-      },
-      "analysis": {
-        "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
-        "capabilities": [
-          {
-            "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
-            "evidence_section": "Installation (30-second setup)"
-          },
-          {
-            "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
-            "evidence_section": "Why These Skills Exist"
-          },
-          {
-            "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
-            "evidence_section": "Engineering"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
-            "basis": "README明記",
-            "evidence_section": "Why These Skills Exist"
-          },
-          {
-            "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
-            "basis": "README明記",
-            "evidence_section": "Why These Skills Exist"
-          },
-          {
-            "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
-            "basis": "README明記",
-            "evidence_section": "Why These Skills Exist"
-          }
-        ],
-        "first_trial": {
-          "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
-          "steps": [
-            "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
-            "エージェント内で /setup-matt-pocock-skills を実行する"
-          ],
-          "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
-        },
-        "evidence_sections": [
-          "Installation (30-second setup)",
-          "Why These Skills Exist",
-          "Reference",
-          "Engineering",
-          "Productivity"
-        ],
-        "unconfirmed": [
-          "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
-        "generated_at": "2026-10-09T10:20:43.679066+09:00"
-      }
-    },
-    {
       "rank": 8,
-      "full_name": "zed-industries/zed",
-      "url": "https://github.com/zed-industries/zed",
-      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "language": "Rust",
-      "stars_total": 94857,
-      "forks_total": 11671,
-      "stars_period": 2339,
-      "api": {
-        "default_branch": "main",
-        "license": "NOASSERTION",
-        "updated_at": "2026-11-13T01:59:40Z",
-        "pushed_at": "2026-11-13T00:01:14Z",
-        "open_issues": 3075,
-        "archived": false,
-        "size_kb": 554014,
-        "topics": [
-          "gpui",
-          "rust-lang",
-          "text-editor",
-          "zed"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 2852,
-        "used_chars": 2851
-      },
-      "analysis": {
-        "summary_ja": "Zedは、AtomとTree-sitterの開発者によって作られた、高性能かつマルチプレイヤー対応のコードエディタです。",
-        "capabilities": [
-          {
-            "text": "macOS、Linux、Windows向けにダウンロードまたはパッケージマネージャー経由でインストールできる。",
-            "evidence_section": "Installation"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "複数人での共同作業やコーディングを行う。",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          }
-        ],
-        "first_trial": {
-          "goal": "公式サイトからZedをダウンロードまたはインストールして利用を開始する",
-          "steps": [
-            "公式サイトのダウンロードページにアクセスする",
-            "macOS、Linux、Windowsのいずれかの方法でインストールを行う"
-          ],
-          "success_criteria": "Zedエディタが起動すること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Installation",
-          "Developing Zed",
-          "Contributing",
-          "Licensing",
-          "Sponsorship"
-        ],
-        "unconfirmed": [
-          "具体的なマルチプレイヤー機能の詳細な操作方法",
-          "サポートされている全てのパッケージマネージャーのリスト"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf",
-        "generated_at": "2026-11-12T11:24:24.763067+09:00"
-      }
-    },
-    {
-      "rank": 9,
       "full_name": "google-deepmind/mujoco",
       "url": "https://github.com/google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars_total": 17774,
-      "forks_total": 2180,
-      "stars_period": 1671,
+      "stars_total": 17877,
+      "forks_total": 2188,
+      "stars_period": 1764,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-13T01:53:36Z",
-        "pushed_at": "2026-11-12T23:22:44Z",
-        "open_issues": 393,
+        "updated_at": "2026-11-14T01:26:25Z",
+        "pushed_at": "2026-11-13T17:42:32Z",
+        "open_issues": 408,
         "archived": false,
-        "size_kb": 154059,
+        "size_kb": 153786,
         "topics": [
           "mujoco",
           "physics",
@@ -808,117 +750,233 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "c6fb8355165ddd1477109a96d3aace4e6f9cd17b",
         "generated_at": "2026-11-13T11:02:20.499708+09:00"
       }
     },
     {
-      "rank": 10,
-      "full_name": "google/skills",
-      "url": "https://github.com/google/skills",
-      "description": "Agent Skills for Google products and technologies",
-      "language": "Python",
-      "stars_total": 24077,
-      "forks_total": 2005,
-      "stars_period": 1933,
+      "rank": 9,
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars_total": 323848,
+      "forks_total": 27179,
+      "stars_period": 7599,
       "api": {
         "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-13T02:01:31Z",
-        "pushed_at": "2026-11-12T23:00:01Z",
-        "open_issues": 40,
+        "license": "MIT",
+        "updated_at": "2026-11-14T01:35:25Z",
+        "pushed_at": "2026-11-13T12:30:31Z",
+        "open_issues": 243,
         "archived": false,
-        "size_kb": 6000,
+        "size_kb": 2391,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 16449,
+        "used_chars": 16319
+      },
+      "analysis": {
+        "summary_ja": "mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。",
+        "capabilities": [
+          {
+            "text": "Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。",
+            "evidence_section": "Installation (30-second setup)"
+          },
+          {
+            "text": "エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。",
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。",
+            "evidence_section": "Engineering"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
+          },
+          {
+            "text": "プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。",
+            "basis": "README明記",
+            "evidence_section": "Why These Skills Exist"
+          }
+        ],
+        "first_trial": {
+          "goal": "リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする",
+          "steps": [
+            "エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）",
+            "エージェント内で /setup-matt-pocock-skills を実行する"
+          ],
+          "success_criteria": "イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること"
+        },
+        "evidence_sections": [
+          "Installation (30-second setup)",
+          "Why These Skills Exist",
+          "Reference",
+          "Engineering",
+          "Productivity"
+        ],
+        "unconfirmed": [
+          "具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "f7038f139299985eea6c3e18398dbafb379a0010",
+        "generated_at": "2026-10-09T10:20:43.679066+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars_total": 117161,
+      "forks_total": 12251,
+      "stars_period": 3502,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-14T01:37:18Z",
+        "pushed_at": "2026-11-01T19:24:49Z",
+        "open_issues": 140,
+        "archived": false,
+        "size_kb": 1943,
         "topics": [
-          "google",
-          "googlecloud",
+          "agent-skills",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
           "skills"
         ]
       },
       "readme": {
         "status": "ok",
-        "sha": "c41ada4b66f8b4f9eb1d700914e383c44b3d49c9",
+        "sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 21399,
-        "used_chars": 21356
+        "original_chars": 25184,
+        "used_chars": 24722
       },
       "analysis": {
-        "summary_ja": "google/skillsは、Googleの製品やテクノロジー（Google Cloudなど）に関するAgent Skillsを収集・提供するリポジトリです。npxなどのコマンドを使用して、エージェント用のスキルやプラグインを追加・更新できます。",
+        "summary_ja": "addyosmani/agent-skillsは、AIコーディングエージェントに本番品質のエンジニアリングスキルやワークフローを適用するための、25個のスキルとスラッシュコマンドを提供するリポジトリです。",
         "capabilities": [
           {
-            "text": "Google Cloudなどの製品やテクノロジーに関する多数のAgent Skillsの提供",
-            "evidence_section": "Available Skills"
+            "text": "開発ライフサイクルに沿った9個のスラッシュコマンド（/spec, /plan, /build, /test, /constraints, /review, /webperf, /code-simplify, /shipなど）を提供します。",
+            "evidence_section": "Commands"
           },
           {
-            "text": "npx skills addコマンドによるスキルの追加機能",
-            "evidence_section": "Installation"
+            "text": "合計25個のスキル（24個のライフサイクルスキルと1個のメタスキル）を収めており、構造化されたステップや検証ゲートをエージェントに実行させます。",
+            "evidence_section": "All 25 Skills"
           },
           {
-            "text": "npx skills updateコマンドによるインストール済みスキルの更新と不要スキルの削除オプション",
-            "evidence_section": "Updating Skills"
+            "text": "オープンなskills CLIを使用して、70以上のエージェントに一括または個別のスキルをインストールできます。",
+            "evidence_section": "Quick Start"
           }
         ],
         "use_cases": [
           {
-            "text": "Google Cloudの認証や基盤構築、AI/ML、インフラ管理などのタスクをAIエージェントに実行させる",
+            "text": "開発の初期段階で、エージェントに要件定義やPRDの作成を行わせる。",
             "basis": "README明記",
-            "evidence_section": "Available Skills"
+            "evidence_section": "Commands"
           },
           {
-            "text": "Claude CodeやCodexなどのエージェントハーネスにGoogle製品のプラグインを追加して利用する",
+            "text": "マージ前のコードレビューで、品質ゲートに基づいたコード改善を行う。",
             "basis": "README明記",
-            "evidence_section": "Plugins"
+            "evidence_section": "Commands"
           },
           {
-            "text": "インストール済みのスキルを最新バージョンに一括でアップデートする",
+            "text": "ウェブパフォーマンスの最適化や測定を行う。",
             "basis": "README明記",
-            "evidence_section": "Updating Skills"
+            "evidence_section": "Commands"
           }
         ],
         "first_trial": {
-          "goal": "スキルをエージェントに追加する",
+          "goal": "skills CLIを使用してリポジトリの全スキルをインストールする",
           "steps": [
-            "npx skills add google/skills を実行する",
-            "プロンプトが表示されたら、特定のスキルまたは全スキル、ターゲットのエージェント、インストール範囲を選択する"
+            "npx skills add addyosmani/agent-skills"
           ],
-          "success_criteria": "選択したスキルやエージェントの設定が正常に完了すること"
+          "success_criteria": "全25個のスキルがエージェント環境にインストールされること"
         },
         "evidence_sections": [
-          "Installation",
-          "Updating Skills",
-          "Available Skills",
-          "Plugins",
-          "Support",
-          "Contributing",
-          "License"
+          "Commands",
+          "Quick Start",
+          "All 25 Skills"
         ],
-        "unconfirmed": [
-          "各スキルが内部でどのような処理を行っているかに関する詳細な動作仕様"
-        ],
+        "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "c41ada4b66f8b4f9eb1d700914e383c44b3d49c9",
-        "generated_at": "2026-11-13T11:02:23.662011+09:00"
+        "readme_sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
+        "generated_at": "2026-11-14T10:38:14.145712+09:00"
       }
     }
   ],
   "zenn": [
     {
-      "title": "【備忘録】Transformerを数式レベルからnumpyのみで実装して理解する（②Backward Propagation編）",
-      "url": "https://zenn.dev/matsu8/articles/a01ba3fc713e03",
-      "author": "やくも",
-      "published": "Thu, 12 Nov 2026 13:30:40 GMT",
-      "summary": "はじめに\n前回の記事（①Forward Propagation編）では、Transformerの各部品をnumpyだけで実装し、Forward Propagationが最後まで通ることを確認しました。今回はその続きとして、各部品のBack Propagation（誤差逆伝播法）を実装し、損失から全てのパラメータまで勾配が流れることを確認していきます。\n実装している途中で、「こういう学習内容のまとめは、AIの普及であまり価値がなくなるのでは？」とも思いました。忘れたことはその都"
+      "title": "ng: Neovim のためのシンプルな GUI",
+      "url": "https://zenn.dev/shougo/articles/ng-nvim-simple-gui",
+      "author": "Shougo",
+      "published": "Fri, 13 Nov 2026 10:49:55 GMT",
+      "summary": "はじめに\n私は今回 Linux 向けの Neovim GUIとして「ng」を作りました。Go で書いた、最小限の GUI クライアントです。\nhttps://github.com/Shougo/ng\nng は Neovim の上に新しいエディタを作るものではありません。Neovim のための、ただの UI です。GVim が Vim にとってそうであるように、ng は Neovim に GUI の窓を与えるだけです。\n\nリポジトリ: Shougo/ng\n\nライセンス: MIT"
     },
     {
-      "title": "Tauri の MSI インストーラーが更新のたびに削除済みデスクトップショートカットを復活させる問題を直した話",
-      "url": "https://zenn.dev/takahiro_nago/articles/article-tauri-msi-desktop-shortcut",
-      "author": "TakahiroNago",
-      "published": "Thu, 12 Nov 2026 09:34:34 GMT",
-      "summary": "はじめに\nTauri の MSI インストーラーには、「ユーザーがデスクトップショートカットを削除しても、アプリを更新するたびに復活する」という問題がありました。NSIS 版のインストーラーでは起きない、MSI 版だけの挙動です。\nこの問題を tauri-bundler 側で修正し、Pull Request が 2026 年 11 月 12 日に dev ブランチへマージされました。この記事では、問題の原因、WiX (Windows Installer XML) のアップグレ"
+      "title": "困ったらAIにすぐ聞く3年目エンジニアが社会人になって読んだ技術書 10冊.",
+      "url": "https://zenn.dev/atrae/articles/032b9fccca0ff7",
+      "author": "shin",
+      "published": "Fri, 13 Nov 2026 07:46:50 GMT",
+      "summary": "いつの間にか新卒3年目になり,バックエンドエンジニアとしてAIエージェントの基盤開発に携わっています.\n最近では困ったことがあったらAIに聞くことが多く,朝から晩までAIと会話していることもあります.でも,AIで解決できないことを体系的に学べるので,本を読むのも好きです.書物は学ぶことに特化されているので,読むことでエンジニアとしてステップアップできると思っています.\n社会人になってから3年で読んでよかった本を10冊まとめました.\n\n アーキテクチャ\n\n 1.マイクロサービス"
+    },
+    {
+      "title": "5年後のエンジニアは、何に責任を持つのだろうか",
+      "url": "https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now",
+      "author": "ara_ta3",
+      "published": "Fri, 13 Nov 2026 05:03:44 GMT",
+      "summary": "はじめに\n最近は、AI Agentを使ってコードを書くことが日常になりました。その一方で、自分で直接コードを書く頻度は本当に減ったと感じています。何年もかけて少しずつ変わったというより、ここ2年も経たないうちの変化です。\n今や新しいモデルが出るたびに、Artificial Analysisのグラフを眺めています。少し前まで十分良いと思っていた性能を上回りつつ、速度も出て、コストとのバランスも良いのはどのあたりか。モデルと推論にかける労力（Reasoning Effort）の組"
+    },
+    {
+      "title": "【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え",
+      "url": "https://zenn.dev/karamage/articles/5c3f8370b2b370",
+      "author": "karamage",
+      "published": "Fri, 13 Nov 2026 02:48:24 GMT",
+      "summary": "AIが書いたコードをマルチエージェントで多角的な視点で別のAIに容赦なく叩かせ、\nそれを何往復もループで繰り返せば品質は上がっていくはず。。。\n純粋無垢な私はずっと、そう信じていた頃がありました。\nところが、かなりトークンを注ぎ込んだPRからあっさり本番バグが出てしまい、以下の疑問にはじめて気づきました。\n\n問い: AI同士の敵対的レビューで、成果物は本当に信頼できるものになるのか?\n結論: なりません。そのトークンは実際に動かして確かめる「検証」に使うべきです\n理由: コー"
+    },
+    {
+      "title": "仕組み編：Two-Towerによる検索システム（学習・推論・配信）",
+      "url": "https://zenn.dev/ca_kagglers/articles/two-tower-mechanism",
+      "author": "ihiratch",
+      "published": "Fri, 13 Nov 2026 01:55:36 GMT",
+      "summary": "はじめに\nihiratchです。本記事では、検索・推薦タスクで使われる Two-Tower モデルについて解説します。\nTwo-Tower は、クエリとアイテムをそれぞれ別のニューラルネットワークでベクトルに変換し、その類似度から関連度を評価するモデルです。アイテム側のベクトルを事前に計算しておけるため、大量の候補から効率よく検索することができます。\n本記事は「仕組み編」として、検索タスクから始まり、Two-Tower の構造・推論・学習・配信までを説明します。学習については"
+    },
+    {
+      "title": "最強オープンウェイトモデル Kimi-K3.1-Pro をセルフホストして独自ベンチで比べてみた",
+      "url": "https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark",
+      "author": "iizuka kota",
+      "published": "Thu, 12 Nov 2026 23:50:35 GMT",
+      "summary": "Kimi-K3.1-Pro は、中国のベンチャー企業 Moonshot AI が開発したオープンウェイトの大規模言語モデルです。サイズは 2.8T-A104B と 2026/11/12 時点で公開されている主要なモデルでは最大、 Artificial Analysis v5 指標では 46 点であり二番手 (DeepSeek-V4.1-Flash-1017, 33 点) を大きく引き離しています。スペックを見る限り、 Kimi-K3.1-Pro は最強のオープンウェイトモデル"
+    },
+    {
+      "title": "AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録",
+      "url": "https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat",
+      "author": "Keisuke",
+      "published": "Thu, 12 Nov 2026 11:41:36 GMT",
+      "summary": "はじめに\nこんにちは。ビジネス映像メディア「PIVOT」で、QAエンジニア兼PjMをしている ケイスケ です。\nPIVOTのモバイルアプリ（iOS / Android）では、AIでテストケースを書くようになってから、ケースの数が増え続けています。リリース前のUAT（受け入れテスト）で全件を回すのが難しくなってきたので、リスクベースドテスト（RBT）で回すケースを選ぶことにしました。ルールは一度では決まらず、何度も作り直しています。この記事は、その途中で試したことと分かったこと"
     },
     {
       "title": "セキュリティ・キャンプ 2026 応募課題晒し",
@@ -935,13 +993,6 @@
       "summary": "2026年11月11日（米国時間）、AWSが AWS Emulator をリリースしました。AWS SDKやAWS CLIの呼び出しを、クラウドではなく手元のエミュレーターが受けて、AWSと同じ形の応答を返すツールです。\nhttps://github.com/aws/aws-emulator\nニュースを見て、真っ先に頭に浮かんだのはこれでした。\n「AWS Blocksのモックって、もういらなくなるの？」\nAWS Blocksには、パブリックプレビューの段階から微力ながらコント"
     },
     {
-      "title": "週刊Cloudflare - 2026/11/08週",
-      "url": "https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107",
-      "author": "あさひ",
-      "published": "Thu, 12 Nov 2026 04:54:55 GMT",
-      "summary": "こんにちは、あさひです 🙋‍♂️ 今週の Cloudflare のアップデートをまとめていきます！\n\n\n この記事の主旨\nこの記事では、前週に Cloudflare のサービスにどんな変更があったかをざっくりと理解してもらい、サービスに興味を持ってもらうことを目的としています。そのため、変更点を網羅することを優先します。\n\n 2026/11/01 ~ 2026/11/07 の変更\n\n Wrangler\n\n\n 4.156.1\n\nパッチアップデート\n\n\nwrangler type"
-    },
-    {
       "title": "AIエージェントが決定を勝手に変えてしまった5つのパターンと工夫",
       "url": "https://zenn.dev/dress_code/articles/568fd547315abe",
       "author": "いっしー",
@@ -956,25 +1007,11 @@
       "summary": "Next.js や NestJS でアプリを書いていて、「Node.js の脆弱性が公表されたけれど、自分のアプリは対象なのか」を自分で判断したい人に向けた記事です。\n2026年11月11日に、Node.js 22・24・26 系のセキュリティリリースが公表されました。深刻度が High の 7 件は、ロードバランサーや nginx の後ろで Node.js を動かしている構成には届きません。\n\n TL;DR\n\n今回の High の 7 件は、Node.js が自分で暗号化の"
     },
     {
-      "title": "libsignal のグループ暗号化を追って、署名改ざんのテストを追加した",
-      "url": "https://zenn.dev/under_michi/articles/7791295efdb23e",
-      "author": "michi",
-      "published": "Thu, 12 Nov 2026 01:12:25 GMT",
-      "summary": "はじめに\nこの記事は、東京大学工学部電子情報工学科・電気電子工学科の3年次後期実験の一つ、「大規模ソフトウェアを手探る」の実験レポートを兼ねています。\nこの記事は Signal, libsignalをいじってみた の実験の子ページです。libsignal自体の説明は親ページを参照してください。\nこの記事の目的は、libsignal でまだテストされていないケースをデバッグで見つけて、テストを追加することです。主にグループ署名についてのテストについて調べて、PRを提出しました("
-    },
-    {
       "title": "Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤",
       "url": "https://zenn.dev/ubie_dev/articles/45501469c9c044",
       "author": "Yuku Kotani",
       "published": "Thu, 12 Nov 2026 00:44:52 GMT",
       "summary": "Ubie CTO の @yukukotani です。\nUbie では 2023 年、GPT-3.5 Turbo が出た頃から、Web UI や Slack を起点に動くクラウドエージェント基盤を内製してきました（当時の様子）。\n2025 年には、Software Factory を目指して、クラウド型エンジニアリングエージェント Uvin の開発も始めました（当時の様子）。一貫してクラウドエージェントに Bet しています。\nhttps://zenn.dev/ubie_dev"
-    },
-    {
-      "title": "AI ファーストな管理画面を、WebMCP もどきで実現したい",
-      "url": "https://zenn.dev/tokium_dev/articles/llm-admin-interface",
-      "author": "urugus",
-      "published": "Wed, 11 Nov 2026 23:00:06 GMT",
-      "summary": "管理画面って、すぐ肥大化しますよね。\n請求書などの書類のデータ化を行う社内向けシステムを開発している、urugusです。\n\n 管理画面は肥大化しがち\nここでいう管理画面は、お客様が使う画面ではなく、社内のメンバーが運用のために使う画面のことです。\n管理画面ってなぜすぐに大盛りマシマシになってしまうのでしょうか。\n\n機能が複数のドメインにまたがる\n人によって見たい粒度、切り口が異なる\n社内向けなぶん、気軽に増やしてしまいがち\n逆に、使われなくなったページがあっても気づきづらい\n"
     },
     {
       "title": "Claude Code に忘れさせたら、トークン使用量が4割減った",
@@ -984,25 +1021,11 @@
       "summary": "こんにちは、Saeです。\n「さえたエンジニア」へなるために、日々鍛錬に勤しんでます。\n最近、Claude Code の使用頻度が多くなってきてトークン節約したいなーと倹約家の血が騒いだので、シンプルですが compact の設定と、離席中に compact させる仕組みを調整してみました。\nそうしたら、結論送っているトークンが合計で4割ほど減りました。\n使い心地も変わらず使えているので、やったことを書いておきます。\n!\n数字は、自分1人の会話の記録（10/13〜11/9）から"
     },
     {
-      "title": "Amazon Bedrock AgentCore Gatewayで、vLLMのQwenとAmazon Bedrockを使い分けてみた",
-      "url": "https://zenn.dev/fusic/articles/4dc357178cbc1e",
-      "author": "xthixsl_ml@レオナ",
-      "published": "Wed, 11 Nov 2026 22:00:05 GMT",
-      "summary": "はじめに\nFusicのレオナです。\n社内ではOpenCodeから量子化されたQwen3.6を使っています。モデルはRunPodのGPUを借りてvLLMで動かしており、GPUを借りるのは平日の日中だけです。GPUがない時間帯は、Amazon Bedrockで使えるモデル群を代わりに答えさせたいと考えました。\nそこで、Amazon Bedrock AgentCore Gateway(以下、AgentCore Gateway)の推論ターゲットを使い、vLLM経由とAmazon Be"
-    },
-    {
       "title": "ISUCON2026 で優勝しました（準備編）",
       "url": "https://zenn.dev/luvtechno/articles/isucon2026-preparation",
       "author": "Yoshinori Kawasaki",
       "published": "Wed, 11 Nov 2026 05:05:46 GMT",
       "summary": "はじめに\nこんにちは！ @kawasy です。当日編に続いて、この記事では3か月の準備期間に何をしていたかを、時系列で追いながら振り返ります。\n\n モチベーション\n私は土曜日はいつも、子どもを習い事に連れて行っています。Slack でレギュレーションの「AI 利用可」を見かけたとき、全部 AI に任せられれば、いつもどおりの土曜日を過ごしながら参加できるかもしれないと思いました。それが開発のきっかけでした。\n\nもう1つは、人間が手を出さずに、エージェントだけでどこまでできるの"
-    },
-    {
-      "title": "AIに書かせた、が全然AIが書いてない件",
-      "url": "https://zenn.dev/appleworld/articles/65aed6c725af71",
-      "author": "petanko",
-      "published": "Wed, 11 Nov 2026 02:11:05 GMT",
-      "summary": "こんにちは。株式会社アップルワールド プロダクト開発部 グローバルグループの室です。\n私もAIに記事を書かせたい。ここに書くのは、自分の文体で書かせようとした休日一日の記録で、中身はほぼ愚痴である。\n自分で書けるのに任せるのは、積み上がると踏んだからだ。文体の指示書は、直すたびに次の初稿が良くなる。それが本当なら、いまの手間は払う価値がある。この賭けの記録でもある。\n\n 1. 何を作っていたか\n技術記事を投稿するように言われているので、投稿までを自動にする仕組みを作っていた。"
     },
     {
       "title": "Snowflake Dashboards 2.0が最高な理由と、これからBIに求められること",
@@ -1048,12 +1071,14 @@
     }
   ],
   "common_terms": [
-    "code",
     "agent",
-    "rust",
+    "codex",
+    "analysis",
     "cli",
-    "cloudflare",
-    "codex"
+    "coding",
+    "software",
+    "linux",
+    "reasoning"
   ],
   "ai_analysis": {
     "enabled": true,

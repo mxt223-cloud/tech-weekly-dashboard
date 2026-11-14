@@ -1,0 +1,45 @@
+{
+  "summary_ja": "sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。",
+  "capabilities": [
+    {
+      "text": "400以上のソーシャルネットワークを対象としたユーザー名検索",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "単一または複数のユーザー名を同時に指定した検索",
+      "evidence_section": "General usage"
+    },
+    {
+      "text": "検索結果のテキストファイルやCSV、XLSXなどでの保存",
+      "evidence_section": "General usage"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "特定のユーザー名が使われているソーシャルメディアアカウントの調査",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "コマンドを使用して単一のユーザー名を検索する",
+    "steps": [
+      "sherlock user123"
+    ],
+    "success_criteria": "見つかったアカウント情報がターミナルに表示され、ユーザー名に応じたテキストファイルに保存されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "General usage"
+  ],
+  "unconfirmed": [
+    "詳細な設定ファイルの詳細な挙動",
+    "公式パッケージ以外のサポート範囲の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+  "generated_at": "2026-11-14T10:38:02.646881+09:00"
+}

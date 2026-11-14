@@ -1,0 +1,58 @@
+{
+  "summary_ja": "elephant-goldfish-model（EGM）は、AIアシスタント向けのオープンソースプラグインです。プロジェクトの文脈を保持する「Elephant」と、新鮮な視点でレビューを行う「Goldfish」の役割を組み合わせ、ソフトウェア仕様の設計やレビュー、コードとの乖離チェックを行います。",
+  "capabilities": [
+    {
+      "text": "プロジェクトの文脈や要件を整理し、コンセプトブリーフの作成や仕様書のドラフト作成を行う。",
+      "evidence_section": "Choose a skill"
+    },
+    {
+      "text": "既存の会話コンテキストを含めずに参照資料やドキュメントを検証し、前提の抜けや見落としを検出するレビューを行う。",
+      "evidence_section": "How it works"
+    },
+    {
+      "text": "チェックインされているドキュメントと現在のソースコードを比較し、乖離を報告する。",
+      "evidence_section": "Choose a skill"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "新しい機能のアイデアについて要件やトレードオフを検討し、合致した方向性を保存する。",
+      "basis": "README明記",
+      "evidence_section": "Try your first design"
+    },
+    {
+      "text": "既存の設計図やREADME、PRプランを実際のコードに対してレビューする。",
+      "basis": "README明記",
+      "evidence_section": "Try a 60-second review on existing code"
+    },
+    {
+      "text": "既存のコードベースに対するドキュメントを作成または更新する。",
+      "basis": "README明記",
+      "evidence_section": "Choose a skill"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロジェクトを開き、機能のアイデアに対するブレインストーミングや設計ドラフト作成の流れを確認する。",
+    "steps": [
+      "/egm-brainstorm Add webhook delivery to this project.",
+      "/egm-draft",
+      "/egm-review design_draft.md"
+    ],
+    "success_criteria": "エージェントとの対話を通じてコンセプトブリーフや設計ドラフトが生成され、レビューを実施できること。"
+  },
+  "evidence_sections": [
+    "Install",
+    "Try a 60-second review on existing code",
+    "Try your first design",
+    "How it works",
+    "Choose a skill"
+  ],
+  "unconfirmed": [
+    "サブエージェントを作成できない環境での動作制限の詳細について、外部ドキュメント以外の具体的な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d570bc7dee8f29e09f243e6a6245976bb803da15",
+  "generated_at": "2026-11-14T10:38:06.871623+09:00"
+}

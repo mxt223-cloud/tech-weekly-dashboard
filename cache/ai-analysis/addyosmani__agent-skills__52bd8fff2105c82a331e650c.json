@@ -1,0 +1,52 @@
+{
+  "summary_ja": "addyosmani/agent-skillsは、AIコーディングエージェントに本番品質のエンジニアリングスキルやワークフローを適用するための、25個のスキルとスラッシュコマンドを提供するリポジトリです。",
+  "capabilities": [
+    {
+      "text": "開発ライフサイクルに沿った9個のスラッシュコマンド（/spec, /plan, /build, /test, /constraints, /review, /webperf, /code-simplify, /shipなど）を提供します。",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "合計25個のスキル（24個のライフサイクルスキルと1個のメタスキル）を収めており、構造化されたステップや検証ゲートをエージェントに実行させます。",
+      "evidence_section": "All 25 Skills"
+    },
+    {
+      "text": "オープンなskills CLIを使用して、70以上のエージェントに一括または個別のスキルをインストールできます。",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "開発の初期段階で、エージェントに要件定義やPRDの作成を行わせる。",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "マージ前のコードレビューで、品質ゲートに基づいたコード改善を行う。",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    },
+    {
+      "text": "ウェブパフォーマンスの最適化や測定を行う。",
+      "basis": "README明記",
+      "evidence_section": "Commands"
+    }
+  ],
+  "first_trial": {
+    "goal": "skills CLIを使用してリポジトリの全スキルをインストールする",
+    "steps": [
+      "npx skills add addyosmani/agent-skills"
+    ],
+    "success_criteria": "全25個のスキルがエージェント環境にインストールされること"
+  },
+  "evidence_sections": [
+    "Commands",
+    "Quick Start",
+    "All 25 Skills"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
+  "generated_at": "2026-11-14T10:38:14.145712+09:00"
+}

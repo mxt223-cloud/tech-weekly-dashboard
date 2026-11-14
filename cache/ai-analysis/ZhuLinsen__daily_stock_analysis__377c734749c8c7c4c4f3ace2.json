@@ -1,0 +1,56 @@
+{
+  "summary_ja": "ZhuLinsen/daily_stock_analysisは、LLMを活用して複数の市場における株式の自動分析と通知を行うインテリジェントな分析システムです。",
+  "capabilities": [
+    {
+      "text": "核心結論、スコア、トレンド、売買ポイント、リスク警告などを含むAI決定レポートの生成",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "A株、香港株、米国株、日本株、韓国株、台湾株、ETFの多市場データ集約",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "GitHub Actions、Docker、ローカルの定期実行、FastAPIサービス、各種チャットツールやメールへの通知",
+      "evidence_section": "功能特性"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "毎日の株式分析結果を決定ダッシュボード形式で企業微信、飛書、Telegram、Discord、Slack、メールへ自動送信する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "WebやAPIを利用して、移動平均線やボリンジャーバンドなどの15種類の内蔵戦略に基づくマルチターン形式のAI戦略質問を行う",
+      "basis": "README明記",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "画像やCSV、Excelなどのデータをスマートに取り込み、株式コードや名称の補完を行う",
+      "basis": "README明記",
+      "evidence_section": "功能特性"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして依存関係をインストールし、手動で解析を実行する",
+    "steps": [
+      "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
+      "pip install -r requirements.txt",
+      "cp .env.example .env && vim .env",
+      "python main.py"
+    ],
+    "success_criteria": "解析スクリプトがエラーなく実行されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "功能特性",
+    "技术栈与数据来源",
+    "快速开始"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "80e2a4befc6a72568278fa90050be6ed88b8b7b6",
+  "generated_at": "2026-11-14T10:38:09.748090+09:00"
+}
