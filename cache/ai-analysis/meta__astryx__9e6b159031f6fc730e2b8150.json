@@ -1,0 +1,61 @@
+{
+  "summary_ja": "Astryxは、Metaで社内開発されオープンソース化された、カスタマイズ可能でAIエージェントの利用にも対応したオープンソースのデザインシステムです。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、テンプレート、CLIを提供します。",
+  "capabilities": [
+    {
+      "text": "150以上のアクセシブルなReactコンポーネントと完全なTypeScriptサポートを提供します。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "ブランドレベルのテーマ機能、ダークモード、すぐに使えるテンプレートを備えています。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "コンポーネントのソースコードをプロジェクトに取り込んで直接編集できる「swizzle」機能を持ちます。",
+      "evidence_section": "Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "人手とAIアシスタントの両方で同じツールやAPIを用いてUIを構築する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Tailwind CSSやCSSモジュール、通常のCSSなど既存のプロジェクトのスタイリング方法で上書きして利用する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "CLIツールを活用したコンポーネントのドキュメント参照やテンプレート、スキャホーディング、テーマ管理を行う。",
+      "basis": "README明記",
+      "evidence_section": "Packages"
+    }
+  ],
+  "first_trial": {
+    "goal": "npmを使用して、Astryxのコアパッケージ、中立テーマ、依存関係、およびCLIをインストールする。",
+    "steps": [
+      "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
+      "npm install -D @astryxdesign/cli"
+    ],
+    "success_criteria": "エラーなくパッケージのインストールが完了し、プロジェクトの依存関係に追加されること。"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Overview",
+    "Getting Started",
+    "Packages",
+    "Principles",
+    "Architecture",
+    "Project Structure",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "具体的なNext.jsやVite、Tailwindなどの詳細な統合手順（パッケージ内の外部ドキュメントを参照する必要があるため）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
+  "generated_at": "2026-11-15T10:12:57.423849+09:00"
+}

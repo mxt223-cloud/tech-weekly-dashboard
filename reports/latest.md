@@ -1,17 +1,58 @@
-# Tech Daily — 2026-11-14
+# Tech Daily — 2026-11-15
 
-生成日時: 2026-11-14T10:38:14.269364+09:00  
+生成日時: 2026-11-15T10:13:04.445726+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
-## 1. [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
+## 1. [meta/astryx](https://github.com/meta/astryx)
+
+**概要:** Astryxは、Metaで社内開発されオープンソース化された、カスタマイズ可能でAIエージェントの利用にも対応したオープンソースのデザインシステムです。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、テンプレート、CLIを提供します。
+
+- 言語: TypeScript
+- 今週のスター: 13660
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 150以上のアクセシブルなReactコンポーネントと完全なTypeScriptサポートを提供します。（根拠: Overview）
+
+- ブランドレベルのテーマ機能、ダークモード、すぐに使えるテンプレートを備えています。（根拠: Overview）
+
+- コンポーネントのソースコードをプロジェクトに取り込んで直接編集できる「swizzle」機能を持ちます。（根拠: Overview）
+
+
+### 利用例
+
+- 人手とAIアシスタントの両方で同じツールやAPIを用いてUIを構築する。（README明記／根拠: Overview）
+
+- Tailwind CSSやCSSモジュール、通常のCSSなど既存のプロジェクトのスタイリング方法で上書きして利用する。（README明記／根拠: Overview）
+
+- CLIツールを活用したコンポーネントのドキュメント参照やテンプレート、スキャホーディング、テーマ管理を行う。（README明記／根拠: Packages）
+
+
+### 最初に試すこと
+
+npmを使用して、Astryxのコアパッケージ、中立テーマ、依存関係、およびCLIをインストールする。
+
+1. npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+
+2. npm install -D @astryxdesign/cli
+
+
+成功の目安: エラーなくパッケージのインストールが完了し、プロジェクトの依存関係に追加されること。
+
+未確認: 具体的なNext.jsやVite、Tailwindなどの詳細な統合手順（パッケージ内の外部ドキュメントを参照する必要があるため）
+
+
+## 2. [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
 
 **概要:** sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。
 
 - 言語: Python
-- 今週のスター: 13364
+- 今週のスター: 12401
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -39,12 +80,12 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 未確認: 詳細な設定ファイルの詳細な挙動／公式パッケージ以外のサポート範囲の詳細
 
 
-## 2. [anthropics/skills](https://github.com/anthropics/skills)
+## 3. [anthropics/skills](https://github.com/anthropics/skills)
 
 **概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
 
 - 言語: Python
-- 今週のスター: 6169
+- 今週のスター: 6220
 - ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
@@ -80,59 +121,12 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
 
 
-## 3. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
-
-**概要:** OpenMausBotは、チャットアプリの形式で複数のAIボットを管理できるオープンソースのGrok Bot代替ツールです。ローカル環境でClaude、Codex、GrokなどのAIエージェントを実行し、それぞれに独自のパーソナリティや仮想コンピュータを持たせてやり取りすることができます。
-
-- 言語: TypeScript
-- 今週のスター: 7763
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- Claude、Codex、GrokのCLIをローカル環境で実行し、独自のログイン情報やサブスクリプションを利用可能（根拠: Why）
-
-- macOS、Windows、Ubuntu 24.04に対応したデスクトップビルドおよびパッケージング機能の提供（根拠: Quick start）
-
-- ハーネスサーバーが組み込まれており、リリース版では個別のサーバー設定が不要（根拠: Quick start）
-
-
-### 利用例
-
-- サイドバーに配置された複数のAIボットとチャットアプリのように会話を行い、作業を監視して承認する（README明記／根拠: README冒頭）
-
-- ローカルにインストールされたAIエージェントを利用して独自のパーソナリティやクラウドコンピュータを持つボットを動かす（README明記／根拠: Why）
-
-- Tailscaleを介して別のWindows、macOS、Ubuntuホストのクライアントとしてデスクトップ同士をペアリングする（README明記／根拠: Quick start）
-
-
-### 最初に試すこと
-
-ソースコードから開発サーバーおよびデスクトップシェルを起動して動作を確認する
-
-1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
-
-2. pnpm install
-
-3. pnpm dev:server
-
-4. pnpm dev
-
-5. pnpm dev:desktop
-
-
-成功の目安: ハーネスサーバーおよびElectronシェルが起動し、アプリケーションが正常に動作すること
-
-未確認: Featuresセクションの具体的な詳細内容（READMEの途中で文章が途切れているため）
-
-
 ## 4. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 
 **概要:** agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。
 
 - 言語: Rust
-- 今週のスター: 4360
+- 今週のスター: 4601
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -177,9 +171,9 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 **概要:** elephant-goldfish-model（EGM）は、AIアシスタント向けのオープンソースプラグインです。プロジェクトの文脈を保持する「Elephant」と、新鮮な視点でレビューを行う「Goldfish」の役割を組み合わせ、ソフトウェア仕様の設計やレビュー、コードとの乖離チェックを行います。
 
 - 言語: Python
-- 今週のスター: 5560
+- 今週のスター: 5539
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -215,14 +209,61 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: サブエージェントを作成できない環境での動作制限の詳細について、外部ドキュメント以外の具体的な挙動
 
 
-## 6. [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
+## 6. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+
+**概要:** OpenMausBotは、チャットアプリの形式で複数のAIボットを管理できるオープンソースのGrok Bot代替ツールです。ローカル環境でClaude、Codex、GrokなどのAIエージェントを実行し、それぞれに独自のパーソナリティや仮想コンピュータを持たせてやり取りすることができます。
+
+- 言語: TypeScript
+- 今週のスター: 6413
+- ライセンス: Apache-2.0
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- Claude、Codex、GrokのCLIをローカル環境で実行し、独自のログイン情報やサブスクリプションを利用可能（根拠: Why）
+
+- macOS、Windows、Ubuntu 24.04に対応したデスクトップビルドおよびパッケージング機能の提供（根拠: Quick start）
+
+- ハーネスサーバーが組み込まれており、リリース版では個別のサーバー設定が不要（根拠: Quick start）
+
+
+### 利用例
+
+- サイドバーに配置された複数のAIボットとチャットアプリのように会話を行い、作業を監視して承認する（README明記／根拠: README冒頭）
+
+- ローカルにインストールされたAIエージェントを利用して独自のパーソナリティやクラウドコンピュータを持つボットを動かす（README明記／根拠: Why）
+
+- Tailscaleを介して別のWindows、macOS、Ubuntuホストのクライアントとしてデスクトップ同士をペアリングする（README明記／根拠: Quick start）
+
+
+### 最初に試すこと
+
+ソースコードから開発サーバーおよびデスクトップシェルを起動して動作を確認する
+
+1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
+
+2. pnpm install
+
+3. pnpm dev:server
+
+4. pnpm dev
+
+5. pnpm dev:desktop
+
+
+成功の目安: ハーネスサーバーおよびElectronシェルが起動し、アプリケーションが正常に動作すること
+
+未確認: Featuresセクションの具体的な詳細内容（READMEの途中で文章が途切れているため）
+
+
+## 7. [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
 
 **概要:** ZhuLinsen/daily_stock_analysisは、LLMを活用して複数の市場における株式の自動分析と通知を行うインテリジェントな分析システムです。
 
 - 言語: Python
-- 今週のスター: 3778
+- 今週のスター: 4526
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -260,59 +301,12 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 
 
 
-## 7. [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology)
-
-**概要:** Auto Ontologyは、企業データのメタデータからセマンティックな知識グラフやオントロジーを構築し、AIエージェントの決定論的なクエリ生成やコンテキスト取得を支援するPythonフレームワークです。
-
-- 言語: Python
-- 今週のスター: 4108
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- メタデータから企業向けオントロジーを生成し、知識グラフを構築する（根拠: README冒頭）
-
-- 自然言語の質問をSQLに翻訳し、接続されたデータベースに対して実行する（根拠: Key Features）
-
-- MCP、CLI、APIを通じて任意のAIエージェントにコンテキストを提供する（根拠: README冒頭）
-
-
-### 利用例
-
-- リレーショナルソース上のセマンティックカタログ層として利用し、データの意味や関係性をエージェントに与える（README明記／根拠: Key Features）
-
-- Web UIのチャット、分析、データカタログ機能を通じてデータ分析や設定を行う（README明記／根拠: Key Features）
-
-- MCPサーバーを用いて任意のMCPクライアントからオントロジーに対する読み取り専用ツールにアクセスする（README明記／根拠: Use it from your agent）
-
-
-### 最初に試すこと
-
-Docker Composeを使用してAuto-Ontologyをローカル環境で起動し、サンプルデータベースに対する質問応答を確認する
-
-1. git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology
-
-2. cp .env.example .env
-
-3. docker compose up -d --wait postgres
-
-4. git clone https://github.com/NVIDIA/auto-ontology-eval.git ../auto-ontology-eval
-
-5. docker compose up -d --build
-
-
-成功の目安: ブラウザで http://localhost:3000 を開き、ログイン後にセマンティックコンパイルが完了し、チャットで質問に対してSQLと回答が返ってくること
-
-未確認: 外部からのプルリクエストの受け入れ可否（現在のREADMEでは非受付と記載されているが将来の変更可能性は不明）／KumoRFM以外の予測サービスの具体的な統合方法
-
-
 ## 8. [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco)
 
 **概要:** MuJoCoは、ロボット工学、バイオメカニクス、機械学習などの分野で高速かつ正確な物理シミュレーションを行うための汎用物理エンジンです。
 
 - 言語: C++
-- 今週のスター: 1764
+- 今週のスター: 1859
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -346,45 +340,45 @@ Python環境でMuJoCoのパッケージをインストールし動作確認を�
 未確認: ソースコードからのビルド手順の詳細については、外部ドキュメントを参照する必要がある。
 
 
-## 9. [mattpocock/skills](https://github.com/mattpocock/skills)
+## 9. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
 
-**概要:** mattpocock/skillsは、Claude Code、Codex、GitHub CopilotなどのAIコーディングエージェント向けに設計された、小型で拡張可能なエージェントスキルのコレクションです。要件定義の精緻化、共有言語の構築、テスト駆動開発（TDD）、コードベースのアーキテクチャ改善など、実際のソフトウェアエンジニアリングを支援する様々なスキルを提供します。
+**概要:** plannotatorは、AIコーディングエージェントの作業を確認、レビュー、アノテーションするためのローカルなブラウザベースのレビューツールです。
 
-- 言語: Shell
-- 今週のスター: 7599
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
+- 言語: TypeScript
+- 今週のスター: 818
+- ライセンス: Apache-2.0
+- AI分析状態: ok
 
 ### できること
 
-- Claude Code、Codex、GitHub Copilot、Gemini CLIなど、様々なエージェント環境へのプラグインとしてインストール可能。（根拠: Installation (30-second setup)）
+- プラン、仕様、Markdown、HTMLなどのアーティファクトに注釈を付け、エージェントにフィードバックを送信できます。（根拠: README冒頭）
 
-- エージェントに詳細な質問をさせることで認識のズレを防ぐ、要件確認セッション機能。（根拠: Why These Skills Exist）
+- ローカルの変更やリモートのプルリクエストのコードレビューを行い、差分へのコメントやコードの提案が可能です。（根拠: README冒頭）
 
-- コードベースのアーキテクチャ改善機会をスキャンし、視覚的なHTMLレポートとして提示する機能。（根拠: Engineering）
+- エージェントがプランを提示した際にブラウザでレビュー画面を自動的に開くことができます。（根拠: Plan mode）
 
 
 ### 利用例
 
-- 実装前にエージェントから詳細な質問を引き出し、作りたいものへの認識を合わせる。（README明記／根拠: Why These Skills Exist）
+- AIコーディングエージェントが作成したプランや提案を確認し、ブラウザ上で直接フィードバックを書き込んでエージェントに戻す。（README明記／根拠: Plannotator）
 
-- テスト駆動開発（TDD）の赤-緑-リファクターループをエージェントに実践させ、高品質なコードを維持する。（README明記／根拠: Why These Skills Exist）
+- GitやGitHub等の差分に対してコメントを残し、コードレビューを効率化する。（README明記／根拠: Code Review）
 
-- プロジェクト固有の専門用語や用語集（GLOSSARY.md）をエージェントと共有し、冗長な説明を減らしてコンテキスト理解を効率化する。（README明記／根拠: Why These Skills Exist）
+- ターミナル内でエージェントの返信やMarkdownドキュメントのレビューを行う。（README明記／根拠: Herdr Annotate: Plannotator in the Terminal）
 
 
 ### 最初に試すこと
 
-リポジトリの初期設定を行い、エンジニアリングスキルを利用可能な状態にする
+plannotatorのインストールと動作確認を行う
 
-1. エージェント向けにスキルをインストールする（例: npx skills@latest add mattpocock/skills）
+1. curl -fsSL https://plannotator.ai/install.sh | bash を実行してインストールする
 
-2. エージェント内で /setup-matt-pocock-skills を実行する
+2. /plannotator-last を実行してエージェントの最後の返信に注釈を付ける
 
 
-成功の目安: イシュートラッカーやトリアージラベル、ドキュメントの保存先を設定するプロンプトが正常に完了すること
+成功の目安: plannotatorが正常にインストールされ、ブラウザまたはコマンド上でレビュー画面が起動すること
 
-未確認: 具体的なスキルの内部実装の詳細や、AIモデルごとの挙動の差異
+
 
 
 ## 10. [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
@@ -392,9 +386,9 @@ Python環境でMuJoCoのパッケージをインストールし動作確認を�
 **概要:** addyosmani/agent-skillsは、AIコーディングエージェントに本番品質のエンジニアリングスキルやワークフローを適用するための、25個のスキルとスラッシュコマンドを提供するリポジトリです。
 
 - 言語: JavaScript
-- 今週のスター: 3502
+- 今週のスター: 3670
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -429,6 +423,10 @@ skills CLIを使用してリポジトリの全スキルをインストールす�
 
 ## Zenn
 
+- [【2026/11/13時点】Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）](https://zenn.dev/canly/articles/e2bd67c9a4c18b) — ふくだ（fukuda ryu）
+
+- [Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに](https://zenn.dev/caphtech/articles/qwen38-zh-ban) — rizumita
+
 - [ng: Neovim のためのシンプルな GUI](https://zenn.dev/shougo/articles/ng-nvim-simple-gui) — Shougo
 
 - [困ったらAIにすぐ聞く3年目エンジニアが社会人になって読んだ技術書 10冊.](https://zenn.dev/atrae/articles/032b9fccca0ff7) — shin
@@ -443,17 +441,13 @@ skills CLIを使用してリポジトリの全スキルをインストールす�
 
 - [AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録](https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat) — Keisuke
 
-- [セキュリティ・キャンプ 2026 応募課題晒し](https://zenn.dev/uvu/articles/758ee227a614ea) — ?Sw()m%kLc$VfD!!
-
-- [AWS EmulatorはAWS Blocksのモックを置き換えるのか？実際に動かして見えた「三つ目の層」](https://zenn.dev/genda_jp/articles/18d1f780f6b41f) — ikenyal
-
 - [AIエージェントが決定を勝手に変えてしまった5つのパターンと工夫](https://zenn.dev/dress_code/articles/568fd547315abe) — いっしー
 
 - [Node.js 22 / 24 / 26 の脆弱性、自分のアプリが影響を受けるか確認する方法【2026年11月】](https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy) — maya honey
 
 - [Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤](https://zenn.dev/ubie_dev/articles/45501469c9c044) — Yuku Kotani
 
-- [Claude Code に忘れさせたら、トークン使用量が4割減った](https://zenn.dev/sae_eng/articles/0e9ed7205ebc41) — Sae_Eng
+- [SlackでMarkdown記法が使えるようになっていた](https://zenn.dev/lnest_knowledge/articles/ed5977bd7b6c1f) — shown_it
 
 - [ISUCON2026 で優勝しました（準備編）](https://zenn.dev/luvtechno/articles/isucon2026-preparation) — Yoshinori Kawasaki
 

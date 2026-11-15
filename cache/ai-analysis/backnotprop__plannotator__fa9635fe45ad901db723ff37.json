@@ -1,0 +1,58 @@
+{
+  "summary_ja": "plannotatorは、AIコーディングエージェントの作業を確認、レビュー、アノテーションするためのローカルなブラウザベースのレビューツールです。",
+  "capabilities": [
+    {
+      "text": "プラン、仕様、Markdown、HTMLなどのアーティファクトに注釈を付け、エージェントにフィードバックを送信できます。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ローカルの変更やリモートのプルリクエストのコードレビューを行い、差分へのコメントやコードの提案が可能です。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "エージェントがプランを提示した際にブラウザでレビュー画面を自動的に開くことができます。",
+      "evidence_section": "Plan mode"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングエージェントが作成したプランや提案を確認し、ブラウザ上で直接フィードバックを書き込んでエージェントに戻す。",
+      "basis": "README明記",
+      "evidence_section": "Plannotator"
+    },
+    {
+      "text": "GitやGitHub等の差分に対してコメントを残し、コードレビューを効率化する。",
+      "basis": "README明記",
+      "evidence_section": "Code Review"
+    },
+    {
+      "text": "ターミナル内でエージェントの返信やMarkdownドキュメントのレビューを行う。",
+      "basis": "README明記",
+      "evidence_section": "Herdr Annotate: Plannotator in the Terminal"
+    }
+  ],
+  "first_trial": {
+    "goal": "plannotatorのインストールと動作確認を行う",
+    "steps": [
+      "curl -fsSL https://plannotator.ai/install.sh | bash を実行してインストールする",
+      "/plannotator-last を実行してエージェントの最後の返信に注釈を付ける"
+    ],
+    "success_criteria": "plannotatorが正常にインストールされ、ブラウザまたはコマンド上でレビュー画面が起動すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Plannotator",
+    "Code Review",
+    "Plannotator Inbox",
+    "Herdr Annotate: Plannotator in the Terminal",
+    "Commands",
+    "Install",
+    "Plan mode"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
+  "generated_at": "2026-11-15T10:13:03.801882+09:00"
+}
