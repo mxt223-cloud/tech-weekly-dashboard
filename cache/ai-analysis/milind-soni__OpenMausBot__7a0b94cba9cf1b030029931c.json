@@ -1,0 +1,54 @@
+{
+  "summary_ja": "OpenMausBotは、チャットアプリの形式でAIボットを管理できるオープンソースのGrok Bot代替アプリケーションです。ローカルで動作するClaudeやCodexなどのAIエージェントを連絡先のように操作し、それぞれにパーソナリティや専用のクラウドコンピュータを持たせることができます。",
+  "capabilities": [
+    {
+      "text": "ClaudeやCodexなどのAIエージェントCLIをローカル環境で実行し、既存のログイン情報やサブスクリプションをそのまま利用できる",
+      "evidence_section": "Why"
+    },
+    {
+      "text": "macOS、Windows、Ubuntu 24.04向けのデスクトップアプリとしてビルドおよび実行が可能である",
+      "evidence_section": "Quick start"
+    },
+    {
+      "text": "Tailscaleを介して、別のコンピュータ上のボットを開いて操作することができる",
+      "evidence_section": "Quick start"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "複数のAIボットとチャットアプリ感覚で会話を行い、作業を進めさせる",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ローカルにインストールされたAIエージェントを利用して開発やタスクを実行する",
+      "basis": "README明記",
+      "evidence_section": "Why"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードから開発サーバーおよびElectronシェルを起動する",
+    "steps": [
+      "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
+      "pnpm install",
+      "pnpm dev:server",
+      "pnpm dev",
+      "pnpm dev:desktop"
+    ],
+    "success_criteria": "Electronシェルが起動し、デスクトップアプリとして操作できるようになること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why",
+    "Quick start"
+  ],
+  "unconfirmed": [
+    "具体的なボットの内部実装や詳細なカスタマイズ方法",
+    "対応しているすべての機能やコマンドの詳細なオプション"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "0bb6bcbeeb262acf233227a5f78bff35a66b2924",
+  "generated_at": "2026-11-16T10:19:40.395128+09:00"
+}

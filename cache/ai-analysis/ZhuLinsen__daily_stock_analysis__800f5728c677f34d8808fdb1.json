@@ -1,0 +1,49 @@
+{
+  "summary_ja": "ZhuLinsen/daily_stock_analysisは、AI大模型を活用して複数の市場（A股、港股、美股、日股、韩股、台股等）の株式を自動分析し、企業微信やTelegramなどの通知ツールへ「决策仪表盘」をプッシュ通知するスマート分析システムです。",
+  "capabilities": [
+    {
+      "text": "AIによる核心結論、スコア、トレンド、売買ポイント、リスク警報を含む意思決定レポートの生成",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "複数市場のデータ（株価、Kライン、テクニカル指標、ニュース、公告、ファンダメンタルズなど）の集約",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "GitHub Actions、Docker、ローカルの定期実行による自動化と各種チャット・メールへの通知",
+      "evidence_section": "功能特性"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "毎日の株式市場の分析結果と意思決定ダッシュボードをチャットツールやメールに自動で受け取る",
+      "basis": "README明記",
+      "evidence_section": "功能特性"
+    },
+    {
+      "text": "WebインターフェースやAPIを使い、AIエージェントの戦略に基づいた銘柄の対話型質問や分析を行う",
+      "basis": "README明記",
+      "evidence_section": "功能特性"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でプロジェクトをクローンして依存関係をインストールし、分析を実行する",
+    "steps": [
+      "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
+      "pip install -r requirements.txt",
+      "cp .env.example .env && vim .env",
+      "python main.py"
+    ],
+    "success_criteria": "main.pyがエラーなく実行され、株式の分析処理が完了すること"
+  },
+  "evidence_sections": [
+    "功能特性",
+    "快速开始"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "300b01f12764430edcc7005eaef5d1c2844a8ebe",
+  "generated_at": "2026-11-16T10:19:34.826233+09:00"
+}

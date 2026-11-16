@@ -1,0 +1,55 @@
+{
+  "summary_ja": "we-promise/sure は、開発が終了した Maybe Finance プロジェクトのコミュニティ主導によるフォーク版であり、すべての人のための個人財務・資産管理アプリケーションです。Dockerによるセルフホストやブラウザ、デスクトップアプリ、モバイルアプリなどからのアクセスをサポートしています。",
+  "capabilities": [
+    {
+      "text": "Dockerを使用して個人財務アプリをセルフホストできる",
+      "evidence_section": "Hosting Sure"
+    },
+    {
+      "text": "ブラウザ、macOSデスクトップアプリ、モバイルアプリ、APIクライアント、LLMエージェントからアクセス可能",
+      "evidence_section": "Hosting Sure"
+    },
+    {
+      "text": "開発環境向けにデモデータをロードする機能を持つ",
+      "evidence_section": "Local Development Setup"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "個人や家族の資産管理・財務状況の把握のためにアプリを自前でホストして利用する",
+      "basis": "README明記",
+      "evidence_section": "Hosting Sure"
+    },
+    {
+      "text": "開発者がローカル環境でアプリのソースコードを実行し、貢献やカスタマイズを行う",
+      "basis": "README明記",
+      "evidence_section": "Local Development Setup"
+    }
+  ],
+  "first_trial": {
+    "goal": "ローカル環境でアプリケーションを起動し、動作を確認する",
+    "steps": [
+      "cd sure",
+      "cp .env.local.example .env.local",
+      "bin/setup",
+      "bin/dev",
+      "rake demo_data:default"
+    ],
+    "success_criteria": "http://localhost:3000 にアクセスしてアプリケーションが閲覧でき、デモデータの資格情報でログインできること"
+  },
+  "evidence_sections": [
+    "Hosting Sure",
+    "Local Development Setup",
+    "Backstory",
+    "License and Trademarks"
+  ],
+  "unconfirmed": [
+    "Maybe Financeからのフォーク以降に追加された具体的な新機能の全容",
+    "LLMエージェントやモバイルアプリとの連携の詳細な設定手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
+  "generated_at": "2026-11-16T10:19:37.677022+09:00"
+}
