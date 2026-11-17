@@ -1,15 +1,52 @@
-# Tech Daily — 2026-11-16
+# Tech Daily — 2026-11-17
 
-生成日時: 2026-11-16T10:19:41.545903+09:00  
-AI分析: 10/10件成功（gemini-3.5-flash-lite）
+生成日時: 2026-11-17T13:06:24.407848+09:00  
+AI分析: 9/10件成功（gemini-3.5-flash-lite）
 
 
-## 1. [meta/astryx](https://github.com/meta/astryx)
+## 1. [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)
+
+**概要:** モダンなWebプラットフォームの専門知識やベストプラクティスをコーディングエージェントに組み込むためのスキルとドキュメントを提供するソースリポジトリです。古いパターンを避け、最新のWebプラットフォームの機能を活用した解決策へと導きます。
+
+- 言語: TypeScript
+- 今週のスター: 6542
+- ライセンス: Apache-2.0
+- AI分析状態: ok
+
+### できること
+
+- 対話型ウィザードを使用したモダンWebガイダンスのインストール機能（根拠: Quickstart）
+
+- 関連するガイドの検索、IDによるガイドの取得、コードベースのレガシーパターンのスキャンを行うCLI機能（根拠: Quickstart）
+
+- ユーザーエクスペリエンス、CSSレイアウト、パフォーマンスに関する最新のWebプラットフォーム機能やガイドの提供（根拠: What's Included?）
+
+
+### 利用例
+
+- コーディングエージェントが古いコードや冗長なJavaScriptを生成するのを防ぎ、最新のネイティブなWebプラットフォームソリューションを活用させる（README明記／根拠: Why?）
+
+- プロジェクトのコードベースをスキャンしてレガシーパターンを検出し、モダン化するためのガイドを適用する（README明記／根拠: Quickstart）
+
+
+### 最初に試すこと
+
+インストールせずにCLIを使用して関連ガイドを検索する
+
+1. npx modern-web-guidance@latest search "animate a dialog modal backdrop"
+
+
+成功の目安: ダイアログモーダルの背景アニメーションに関連するガイドの検索結果が表示されること
+
+未確認: 代替のインストール方法の詳細な手順
+
+
+## 2. [meta/astryx](https://github.com/meta/astryx)
 
 **概要:** Astryxは、Metaで社内開発されオープンソース化された、カスタマイズ可能でAIエージェントの利用にも対応したオープンソースのデザインシステムです。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、テンプレート、CLIを提供します。
 
 - 言語: TypeScript
-- 今週のスター: 13501
+- 今週のスター: 10939
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -45,12 +82,48 @@ npmを使用して、Astryxのコアパッケージ、中立テーマ、依存�
 未確認: 具体的なNext.jsやVite、Tailwindなどの詳細な統合手順（パッケージ内の外部ドキュメントを参照する必要があるため）
 
 
-## 2. [anthropics/skills](https://github.com/anthropics/skills)
+## 3. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
+
+**概要:** The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.
+
+- 言語: TypeScript
+- 今週のスター: 2325
+- ライセンス: Apache-2.0
+- AI分析状態: api_error
+
+### できること
+
+- READMEから確認できませんでした。
+
+
+### 利用例
+
+- READMEから確認できませんでした。
+
+
+### 最初に試すこと
+
+未確認
+
+
+成功の目安: 未確認
+
+未確認: Gemini API HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+
+
+## 4. [anthropics/skills](https://github.com/anthropics/skills)
 
 **概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
 
 - 言語: Python
-- 今週のスター: 6077
+- 今週のスター: 5666
 - ライセンス: 不明
 - AI分析状態: ok（キャッシュ）
 
@@ -86,88 +159,12 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
 
 
-## 3. [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
-
-**概要:** sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。
-
-- 言語: Python
-- 今週のスター: 10412
-- ライセンス: MIT
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 400以上のソーシャルネットワークを対象としたユーザー名検索（根拠: README冒頭）
-
-- 単一または複数のユーザー名を同時に指定した検索（根拠: General usage）
-
-- 検索結果のテキストファイルやCSV、XLSXなどでの保存（根拠: General usage）
-
-
-### 利用例
-
-- 特定のユーザー名が使われているソーシャルメディアアカウントの調査（README明記／根拠: README冒頭）
-
-
-### 最初に試すこと
-
-コマンドを使用して単一のユーザー名を検索する
-
-1. sherlock user123
-
-
-成功の目安: 見つかったアカウント情報がターミナルに表示され、ユーザー名に応じたテキストファイルに保存されること
-
-未確認: 詳細な設定ファイルの詳細な挙動／公式パッケージ以外のサポート範囲の詳細
-
-
-## 4. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
-
-**概要:** plannotatorは、AIコーディングエージェントの作業を確認、レビュー、アノテーションするためのローカルなブラウザベースのレビューツールです。
-
-- 言語: TypeScript
-- 今週のスター: 1719
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- プラン、仕様、Markdown、HTMLなどのアーティファクトに注釈を付け、エージェントにフィードバックを送信できます。（根拠: README冒頭）
-
-- ローカルの変更やリモートのプルリクエストのコードレビューを行い、差分へのコメントやコードの提案が可能です。（根拠: README冒頭）
-
-- エージェントがプランを提示した際にブラウザでレビュー画面を自動的に開くことができます。（根拠: Plan mode）
-
-
-### 利用例
-
-- AIコーディングエージェントが作成したプランや提案を確認し、ブラウザ上で直接フィードバックを書き込んでエージェントに戻す。（README明記／根拠: Plannotator）
-
-- GitやGitHub等の差分に対してコメントを残し、コードレビューを効率化する。（README明記／根拠: Code Review）
-
-- ターミナル内でエージェントの返信やMarkdownドキュメントのレビューを行う。（README明記／根拠: Herdr Annotate: Plannotator in the Terminal）
-
-
-### 最初に試すこと
-
-plannotatorのインストールと動作確認を行う
-
-1. curl -fsSL https://plannotator.ai/install.sh | bash を実行してインストールする
-
-2. /plannotator-last を実行してエージェントの最後の返信に注釈を付ける
-
-
-成功の目安: plannotatorが正常にインストールされ、ブラウザまたはコマンド上でレビュー画面が起動すること
-
-
-
-
 ## 5. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 
 **概要:** agent-browserは、AIエージェント向けのネイティブRust製ブラウザ自動化CLIツールです。シェルコマンドから1つずつブラウザを操作でき、ページをアクセシビリティツリーのコンパクトなテキストとしてスナップショット取得して要素の参照（ref）を返し、それに対してクリックなどの操作を行えます。
 
 - 言語: Rust
-- 今週のスター: 4217
+- 今週のスター: 3760
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -207,57 +204,14 @@ plannotatorのインストールと動作確認を行う
 未確認: 詳細な設定ファイルや環境変数によるカスタマイズの全容／LightpandaやObscuraなど特定エンジン・プロバイダの具体的な設定・接続手順
 
 
-## 6. [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
-
-**概要:** ZhuLinsen/daily_stock_analysisは、AI大模型を活用して複数の市場（A股、港股、美股、日股、韩股、台股等）の株式を自動分析し、企業微信やTelegramなどの通知ツールへ「决策仪表盘」をプッシュ通知するスマート分析システムです。
-
-- 言語: Python
-- 今週のスター: 4548
-- ライセンス: MIT
-- AI分析状態: ok
-
-### できること
-
-- AIによる核心結論、スコア、トレンド、売買ポイント、リスク警報を含む意思決定レポートの生成（根拠: 功能特性）
-
-- 複数市場のデータ（株価、Kライン、テクニカル指標、ニュース、公告、ファンダメンタルズなど）の集約（根拠: 功能特性）
-
-- GitHub Actions、Docker、ローカルの定期実行による自動化と各種チャット・メールへの通知（根拠: 功能特性）
-
-
-### 利用例
-
-- 毎日の株式市場の分析結果と意思決定ダッシュボードをチャットツールやメールに自動で受け取る（README明記／根拠: 功能特性）
-
-- WebインターフェースやAPIを使い、AIエージェントの戦略に基づいた銘柄の対話型質問や分析を行う（README明記／根拠: 功能特性）
-
-
-### 最初に試すこと
-
-ローカル環境でプロジェクトをクローンして依存関係をインストールし、分析を実行する
-
-1. git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis
-
-2. pip install -r requirements.txt
-
-3. cp .env.example .env && vim .env
-
-4. python main.py
-
-
-成功の目安: main.pyがエラーなく実行され、株式の分析処理が完了すること
-
-
-
-
-## 7. [we-promise/sure](https://github.com/we-promise/sure)
+## 6. [we-promise/sure](https://github.com/we-promise/sure)
 
 **概要:** we-promise/sure は、開発が終了した Maybe Finance プロジェクトのコミュニティ主導によるフォーク版であり、すべての人のための個人財務・資産管理アプリケーションです。Dockerによるセルフホストやブラウザ、デスクトップアプリ、モバイルアプリなどからのアクセスをサポートしています。
 
 - 言語: Ruby
-- 今週のスター: 4556
+- 今週のスター: 4679
 - ライセンス: AGPL-3.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -295,49 +249,82 @@ plannotatorのインストールと動作確認を行う
 未確認: Maybe Financeからのフォーク以降に追加された具体的な新機能の全容／LLMエージェントやモバイルアプリとの連携の詳細な設定手順
 
 
-## 8. [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+## 7. [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
 
-**概要:** OpenMausBotは、チャットアプリの形式でAIボットを管理できるオープンソースのGrok Bot代替アプリケーションです。ローカルで動作するClaudeやCodexなどのAIエージェントを連絡先のように操作し、それぞれにパーソナリティや専用のクラウドコンピュータを持たせることができます。
+**概要:** ZhuLinsen/daily_stock_analysisは、AI大模型を活用して複数の市場（A股、港股、美股、日股、韩股、台股等）の株式を自動分析し、企業微信やTelegramなどの通知ツールへ「决策仪表盘」をプッシュ通知するスマート分析システムです。
 
-- 言語: TypeScript
-- 今週のスター: 5463
-- ライセンス: Apache-2.0
-- AI分析状態: ok
+- 言語: Python
+- 今週のスター: 4355
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- ClaudeやCodexなどのAIエージェントCLIをローカル環境で実行し、既存のログイン情報やサブスクリプションをそのまま利用できる（根拠: Why）
+- AIによる核心結論、スコア、トレンド、売買ポイント、リスク警報を含む意思決定レポートの生成（根拠: 功能特性）
 
-- macOS、Windows、Ubuntu 24.04向けのデスクトップアプリとしてビルドおよび実行が可能である（根拠: Quick start）
+- 複数市場のデータ（株価、Kライン、テクニカル指標、ニュース、公告、ファンダメンタルズなど）の集約（根拠: 功能特性）
 
-- Tailscaleを介して、別のコンピュータ上のボットを開いて操作することができる（根拠: Quick start）
+- GitHub Actions、Docker、ローカルの定期実行による自動化と各種チャット・メールへの通知（根拠: 功能特性）
 
 
 ### 利用例
 
-- 複数のAIボットとチャットアプリ感覚で会話を行い、作業を進めさせる（README明記／根拠: README冒頭）
+- 毎日の株式市場の分析結果と意思決定ダッシュボードをチャットツールやメールに自動で受け取る（README明記／根拠: 功能特性）
 
-- ローカルにインストールされたAIエージェントを利用して開発やタスクを実行する（README明記／根拠: Why）
+- WebインターフェースやAPIを使い、AIエージェントの戦略に基づいた銘柄の対話型質問や分析を行う（README明記／根拠: 功能特性）
 
 
 ### 最初に試すこと
 
-ソースコードから開発サーバーおよびElectronシェルを起動する
+ローカル環境でプロジェクトをクローンして依存関係をインストールし、分析を実行する
 
-1. git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot
+1. git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis
 
-2. pnpm install
+2. pip install -r requirements.txt
 
-3. pnpm dev:server
+3. cp .env.example .env && vim .env
 
-4. pnpm dev
-
-5. pnpm dev:desktop
+4. python main.py
 
 
-成功の目安: Electronシェルが起動し、デスクトップアプリとして操作できるようになること
+成功の目安: main.pyがエラーなく実行され、株式の分析処理が完了すること
 
-未確認: 具体的なボットの内部実装や詳細なカスタマイズ方法／対応しているすべての機能やコマンドの詳細なオプション
+
+
+
+## 8. [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
+
+**概要:** sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。
+
+- 言語: Python
+- 今週のスター: 7067
+- ライセンス: MIT
+- AI分析状態: ok（キャッシュ）
+
+### できること
+
+- 400以上のソーシャルネットワークを対象としたユーザー名検索（根拠: README冒頭）
+
+- 単一または複数のユーザー名を同時に指定した検索（根拠: General usage）
+
+- 検索結果のテキストファイルやCSV、XLSXなどでの保存（根拠: General usage）
+
+
+### 利用例
+
+- 特定のユーザー名が使われているソーシャルメディアアカウントの調査（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+コマンドを使用して単一のユーザー名を検索する
+
+1. sherlock user123
+
+
+成功の目安: 見つかったアカウント情報がターミナルに表示され、ユーザー名に応じたテキストファイルに保存されること
+
+未確認: 詳細な設定ファイルの詳細な挙動／公式パッケージ以外のサポート範囲の詳細
 
 
 ## 9. [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model)
@@ -345,7 +332,7 @@ plannotatorのインストールと動作確認を行う
 **概要:** elephant-goldfish-model（EGM）は、AIアシスタント向けのオープンソースプラグインです。プロジェクトの文脈を保持する「Elephant」と、新鮮な視点でレビューを行う「Goldfish」の役割を組み合わせ、ソフトウェア仕様の設計やレビュー、コードとの乖離チェックを行います。
 
 - 言語: Python
-- 今週のスター: 5060
+- 今週のスター: 4249
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -388,7 +375,7 @@ plannotatorのインストールと動作確認を行う
 **概要:** MuJoCoは、ロボット工学、バイオメカニクス、機械学習などの分野で高速かつ正確な物理シミュレーションを行うための汎用物理エンジンです。
 
 - 言語: C++
-- 今週のスター: 1922
+- 今週のスター: 1448
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -425,19 +412,35 @@ Python環境でMuJoCoのパッケージをインストールし動作確認を�
 
 ## Zenn
 
-- [Lightdashで作れるグラフを試してみた【dbt v2】](https://zenn.dev/ryatora/articles/lightdash-chart-catalog) — rnm
+- [スマホ内蔵のセンサーを使って周辺光取得を試す](https://zenn.dev/aldagram_tech/articles/f7b57935e31070) — KSND
 
-- [FTDで実装するTLS Decryption](https://zenn.dev/5x4x7/articles/92a962f3cd6cb6) — 5x4x7
+- [AI駆動開発で自分用の情報収集Discordサーバーを作る](https://zenn.dev/tree_and_tree/articles/ai-driven-discord-info-server) — さみっと
 
-- [Canton Networkとは何か――金融機関が「見せる相手を選べる」ブロックチェーンに集まる理由](https://zenn.dev/komlock_lab/articles/canton-network-evm-comparison-2026) — Kobara Toi
+- [実践パスキー認証設計](https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9) — Yasuaki Omokawa
 
-- [.NET 11 の ASP.NET Core Blazor の新機能のスケールイン対応機能！](https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale) — Kazuki Ota
+- [Kotlin Fest 2026 参加記](https://zenn.dev/0st_ts/articles/d55862e1a134c2) — わかと
+
+- [X の投稿を Rust で画像にするライブラリ xeet を試す](https://zenn.dev/yamauz/articles/fb97f92af23a3e) — やまう
+
+- [QA生産性を爆上げさせるためのQA AIプラットフォーム構築](https://zenn.dev/gatechnologies/articles/8bdea59269eb10) — akki
+
+- [物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門](https://zenn.dev/turing_motors/articles/cea9e3c85611b2) — ymg_aq
+
+- [インフラ＆CI/CD（GitHub Actionsの自動デプロイ）〜化石時代のFTPから脱却。あえて作り込まない「運用カバー」の自動化〜](https://zenn.dev/dgft/articles/da631c5758aa6a) — イナガキ
+
+- [若手の「説明力」は、AI開発で育てられるか ― 資料レビューAIを題材にしたOJTの実践](https://zenn.dev/nttdata_tech/articles/d159fdd9c38c00) — Yuichi Moriya / 守谷 祐一
+
+- [Claude Codeが書いたコードを読む代わりにやっていること](https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code) — Misugi Takeru
+
+- [mizchi/mutator を入れてみた](https://zenn.dev/polyco/articles/e05cb28c569801) — Tatsunori Nakano
+
+- [GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった](https://zenn.dev/kesin11/articles/20261114_github_issue_artifact) — Kesin11
+
+- [サンドボックス内のAIエージェントにHerdrを安全に使わせたい](https://zenn.dev/naofumimurata/articles/nono-hc-proxy) — Naofumi Murata
+
+- [AIの回答が長すぎて、理解しないまま実装している問題（理解負債）](https://zenn.dev/kent_code/articles/5892898be90cac) — Kent
 
 - [フロントエンドのフレームワークを、安全に段階的に入れ替える](https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928) — Yasuaki Omokawa
-
-- [【2026/11/13時点】Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）](https://zenn.dev/canly/articles/e2bd67c9a4c18b) — ふくだ（fukuda ryu）
-
-- [Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに](https://zenn.dev/caphtech/articles/qwen38-zh-ban) — rizumita
 
 - [ng: Neovim のためのシンプルな GUI](https://zenn.dev/shougo/articles/ng-nvim-simple-gui) — Shougo
 
@@ -445,25 +448,9 @@ Python環境でMuJoCoのパッケージをインストールし動作確認を�
 
 - [【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え](https://zenn.dev/karamage/articles/5c3f8370b2b370) — karamage
 
-- [仕組み編：Two-Towerによる検索システム（学習・推論・配信）](https://zenn.dev/ca_kagglers/articles/two-tower-mechanism) — ihiratch
-
-- [PostgreSQLのバージョンアップ後に ANALYZE VERBOSE を実行する理由](https://zenn.dev/fusic/articles/e05247d244838e) — きたのかい
-
-- [脱WordPress：10年超の個人ブログをAstro + Cloudflare Workersへ移行しPageSpeed 100点を実現](https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb) — 星影
-
-- [AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録](https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat) — Keisuke
-
-- [Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順](https://zenn.dev/happy_elements/articles/201519107f93de) — ko.+
-
 - [Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤](https://zenn.dev/ubie_dev/articles/45501469c9c044) — Yuku Kotani
 
-- [SlackでMarkdown記法が使えるようになっていた](https://zenn.dev/lnest_knowledge/articles/ed5977bd7b6c1f) — shown_it
-
 - [ISUCON2026 で優勝しました（準備編）](https://zenn.dev/luvtechno/articles/isucon2026-preparation) — Yoshinori Kawasaki
-
-- [退屈なCoding AgentはMuseにやらせよう](https://zenn.dev/watany/articles/342b9815dd0553) — watany
-
-- [Claude Codeで最近使っているTips【2026/11】](https://zenn.dev/oikon/articles/claude-code-recipe) — Oikon
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

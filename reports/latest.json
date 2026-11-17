@@ -1,25 +1,102 @@
 {
-  "generated_at": "2026-11-16T10:19:41.545903+09:00",
-  "week": "2026-11-16",
+  "generated_at": "2026-11-17T13:06:24.407848+09:00",
+  "week": "2026-11-17",
   "title": "Tech Daily",
   "github": [
     {
       "rank": 1,
+      "full_name": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars_total": 8075,
+      "forks_total": 702,
+      "stars_period": 6542,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-17T04:05:00Z",
+        "pushed_at": "2026-11-17T00:06:49Z",
+        "open_issues": 404,
+        "archived": false,
+        "size_kb": 173446,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "705d5b77f74d109637faffbdda9aacc035b181e8",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 110395,
+        "used_chars": 30000
+      },
+      "analysis": {
+        "summary_ja": "モダンなWebプラットフォームの専門知識やベストプラクティスをコーディングエージェントに組み込むためのスキルとドキュメントを提供するソースリポジトリです。古いパターンを避け、最新のWebプラットフォームの機能を活用した解決策へと導きます。",
+        "capabilities": [
+          {
+            "text": "対話型ウィザードを使用したモダンWebガイダンスのインストール機能",
+            "evidence_section": "Quickstart"
+          },
+          {
+            "text": "関連するガイドの検索、IDによるガイドの取得、コードベースのレガシーパターンのスキャンを行うCLI機能",
+            "evidence_section": "Quickstart"
+          },
+          {
+            "text": "ユーザーエクスペリエンス、CSSレイアウト、パフォーマンスに関する最新のWebプラットフォーム機能やガイドの提供",
+            "evidence_section": "What's Included?"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "コーディングエージェントが古いコードや冗長なJavaScriptを生成するのを防ぎ、最新のネイティブなWebプラットフォームソリューションを活用させる",
+            "basis": "README明記",
+            "evidence_section": "Why?"
+          },
+          {
+            "text": "プロジェクトのコードベースをスキャンしてレガシーパターンを検出し、モダン化するためのガイドを適用する",
+            "basis": "README明記",
+            "evidence_section": "Quickstart"
+          }
+        ],
+        "first_trial": {
+          "goal": "インストールせずにCLIを使用して関連ガイドを検索する",
+          "steps": [
+            "npx modern-web-guidance@latest search \"animate a dialog modal backdrop\""
+          ],
+          "success_criteria": "ダイアログモーダルの背景アニメーションに関連するガイドの検索結果が表示されること"
+        },
+        "evidence_sections": [
+          "Quickstart",
+          "Why?",
+          "What's Included?"
+        ],
+        "unconfirmed": [
+          "代替のインストール方法の詳細な手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "705d5b77f74d109637faffbdda9aacc035b181e8",
+        "generated_at": "2026-11-17T13:06:17.578847+09:00"
+      }
+    },
+    {
+      "rank": 2,
       "full_name": "meta/astryx",
       "url": "https://github.com/meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars_total": 28886,
-      "forks_total": 2255,
-      "stars_period": 13501,
+      "stars_total": 29706,
+      "forks_total": 2312,
+      "stars_period": 10939,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-16T01:19:03Z",
-        "pushed_at": "2026-11-16T01:19:27Z",
-        "open_issues": 706,
+        "updated_at": "2026-11-17T04:04:17Z",
+        "pushed_at": "2026-11-17T04:04:27Z",
+        "open_issues": 817,
         "archived": false,
-        "size_kb": 1380302,
+        "size_kb": 1388513,
         "topics": []
       },
       "readme": {
@@ -93,22 +170,77 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "full_name": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars_total": 12683,
+      "forks_total": 1240,
+      "stars_period": 2325,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-17T04:05:43Z",
+        "pushed_at": "2026-11-17T03:33:49Z",
+        "open_issues": 186,
+        "archived": false,
+        "size_kb": 382244,
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "34bbdf47dbf2ba9367c5c8a660085071e167b595",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 29423,
+        "used_chars": 27448
+      },
+      "analysis": {
+        "status": "api_error",
+        "summary_ja": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+        "capabilities": [],
+        "use_cases": [],
+        "first_trial": {
+          "goal": "未確認",
+          "steps": [],
+          "success_criteria": "未確認"
+        },
+        "evidence_sections": [],
+        "unconfirmed": [
+          "Gemini API HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+        ],
+        "model": null,
+        "cached": false
+      }
+    },
+    {
+      "rank": 4,
       "full_name": "anthropics/skills",
       "url": "https://github.com/anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars_total": 195373,
-      "forks_total": 22965,
-      "stars_period": 6077,
+      "stars_total": 196148,
+      "forks_total": 23024,
+      "stars_period": 5666,
       "api": {
         "default_branch": "main",
         "license": null,
-        "updated_at": "2026-11-16T01:19:13Z",
-        "pushed_at": "2026-11-14T21:52:49Z",
-        "open_issues": 1548,
+        "updated_at": "2026-11-17T04:05:35Z",
+        "pushed_at": "2026-11-16T14:22:50Z",
+        "open_issues": 1549,
         "archived": false,
-        "size_kb": 5547,
+        "size_kb": 5542,
         "topics": [
           "agent-skills"
         ]
@@ -182,208 +314,22 @@
       }
     },
     {
-      "rank": 3,
-      "full_name": "sherlock-project/sherlock",
-      "url": "https://github.com/sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "language": "Python",
-      "stars_total": 112496,
-      "forks_total": 12989,
-      "stars_period": 10412,
-      "api": {
-        "default_branch": "master",
-        "license": "MIT",
-        "updated_at": "2026-11-16T01:18:26Z",
-        "pushed_at": "2026-11-15T05:13:15Z",
-        "open_issues": 415,
-        "archived": false,
-        "size_kb": 19102,
-        "topics": [
-          "cli",
-          "cti",
-          "cybersecurity",
-          "forensics",
-          "hacktoberfest",
-          "information-gathering",
-          "infosec",
-          "linux",
-          "osint",
-          "pentesting",
-          "python",
-          "python3",
-          "reconnaissance",
-          "redteam",
-          "sherlock",
-          "tools"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
-        "path": "docs/README.md",
-        "truncated": true,
-        "original_chars": 5596,
-        "used_chars": 4976
-      },
-      "analysis": {
-        "summary_ja": "sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。",
-        "capabilities": [
-          {
-            "text": "400以上のソーシャルネットワークを対象としたユーザー名検索",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "単一または複数のユーザー名を同時に指定した検索",
-            "evidence_section": "General usage"
-          },
-          {
-            "text": "検索結果のテキストファイルやCSV、XLSXなどでの保存",
-            "evidence_section": "General usage"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "特定のユーザー名が使われているソーシャルメディアアカウントの調査",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          }
-        ],
-        "first_trial": {
-          "goal": "コマンドを使用して単一のユーザー名を検索する",
-          "steps": [
-            "sherlock user123"
-          ],
-          "success_criteria": "見つかったアカウント情報がターミナルに表示され、ユーザー名に応じたテキストファイルに保存されること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Installation",
-          "General usage"
-        ],
-        "unconfirmed": [
-          "詳細な設定ファイルの詳細な挙動",
-          "公式パッケージ以外のサポート範囲の詳細"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
-        "generated_at": "2026-11-14T10:38:02.646881+09:00"
-      }
-    },
-    {
-      "rank": 4,
-      "full_name": "backnotprop/plannotator",
-      "url": "https://github.com/backnotprop/plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "language": "TypeScript",
-      "stars_total": 11853,
-      "forks_total": 1083,
-      "stars_period": 1719,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-16T01:18:59Z",
-        "pushed_at": "2026-11-16T01:17:34Z",
-        "open_issues": 220,
-        "archived": false,
-        "size_kb": 374267,
-        "topics": [
-          "agents",
-          "claude-code",
-          "code-review",
-          "codex",
-          "obsidian",
-          "opencode",
-          "pi-mono",
-          "plan-mode",
-          "skills"
-        ]
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 31339,
-        "used_chars": 29515
-      },
-      "analysis": {
-        "summary_ja": "plannotatorは、AIコーディングエージェントの作業を確認、レビュー、アノテーションするためのローカルなブラウザベースのレビューツールです。",
-        "capabilities": [
-          {
-            "text": "プラン、仕様、Markdown、HTMLなどのアーティファクトに注釈を付け、エージェントにフィードバックを送信できます。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "ローカルの変更やリモートのプルリクエストのコードレビューを行い、差分へのコメントやコードの提案が可能です。",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "エージェントがプランを提示した際にブラウザでレビュー画面を自動的に開くことができます。",
-            "evidence_section": "Plan mode"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "AIコーディングエージェントが作成したプランや提案を確認し、ブラウザ上で直接フィードバックを書き込んでエージェントに戻す。",
-            "basis": "README明記",
-            "evidence_section": "Plannotator"
-          },
-          {
-            "text": "GitやGitHub等の差分に対してコメントを残し、コードレビューを効率化する。",
-            "basis": "README明記",
-            "evidence_section": "Code Review"
-          },
-          {
-            "text": "ターミナル内でエージェントの返信やMarkdownドキュメントのレビューを行う。",
-            "basis": "README明記",
-            "evidence_section": "Herdr Annotate: Plannotator in the Terminal"
-          }
-        ],
-        "first_trial": {
-          "goal": "plannotatorのインストールと動作確認を行う",
-          "steps": [
-            "curl -fsSL https://plannotator.ai/install.sh | bash を実行してインストールする",
-            "/plannotator-last を実行してエージェントの最後の返信に注釈を付ける"
-          ],
-          "success_criteria": "plannotatorが正常にインストールされ、ブラウザまたはコマンド上でレビュー画面が起動すること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Plannotator",
-          "Code Review",
-          "Plannotator Inbox",
-          "Herdr Annotate: Plannotator in the Terminal",
-          "Commands",
-          "Install",
-          "Plan mode"
-        ],
-        "unconfirmed": [],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
-        "generated_at": "2026-11-15T10:13:03.801882+09:00"
-      }
-    },
-    {
       "rank": 5,
       "full_name": "vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars_total": 51636,
-      "forks_total": 3610,
-      "stars_period": 4217,
+      "stars_total": 52079,
+      "forks_total": 3639,
+      "stars_period": 3760,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-16T01:16:02Z",
-        "pushed_at": "2026-11-15T12:43:23Z",
-        "open_issues": 587,
+        "updated_at": "2026-11-17T04:05:44Z",
+        "pushed_at": "2026-11-17T02:41:48Z",
+        "open_issues": 593,
         "archived": false,
-        "size_kb": 34349,
+        "size_kb": 35598,
         "topics": []
       },
       "readme": {
@@ -458,21 +404,104 @@
     },
     {
       "rank": 6,
+      "full_name": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars_total": 16042,
+      "forks_total": 1394,
+      "stars_period": 4679,
+      "api": {
+        "default_branch": "main",
+        "license": "AGPL-3.0",
+        "updated_at": "2026-11-17T04:05:25Z",
+        "pushed_at": "2026-11-17T01:21:49Z",
+        "open_issues": 974,
+        "archived": false,
+        "size_kb": 170072,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 7806,
+        "used_chars": 7475
+      },
+      "analysis": {
+        "summary_ja": "we-promise/sure は、開発が終了した Maybe Finance プロジェクトのコミュニティ主導によるフォーク版であり、すべての人のための個人財務・資産管理アプリケーションです。Dockerによるセルフホストやブラウザ、デスクトップアプリ、モバイルアプリなどからのアクセスをサポートしています。",
+        "capabilities": [
+          {
+            "text": "Dockerを使用して個人財務アプリをセルフホストできる",
+            "evidence_section": "Hosting Sure"
+          },
+          {
+            "text": "ブラウザ、macOSデスクトップアプリ、モバイルアプリ、APIクライアント、LLMエージェントからアクセス可能",
+            "evidence_section": "Hosting Sure"
+          },
+          {
+            "text": "開発環境向けにデモデータをロードする機能を持つ",
+            "evidence_section": "Local Development Setup"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "個人や家族の資産管理・財務状況の把握のためにアプリを自前でホストして利用する",
+            "basis": "README明記",
+            "evidence_section": "Hosting Sure"
+          },
+          {
+            "text": "開発者がローカル環境でアプリのソースコードを実行し、貢献やカスタマイズを行う",
+            "basis": "README明記",
+            "evidence_section": "Local Development Setup"
+          }
+        ],
+        "first_trial": {
+          "goal": "ローカル環境でアプリケーションを起動し、動作を確認する",
+          "steps": [
+            "cd sure",
+            "cp .env.local.example .env.local",
+            "bin/setup",
+            "bin/dev",
+            "rake demo_data:default"
+          ],
+          "success_criteria": "http://localhost:3000 にアクセスしてアプリケーションが閲覧でき、デモデータの資格情報でログインできること"
+        },
+        "evidence_sections": [
+          "Hosting Sure",
+          "Local Development Setup",
+          "Backstory",
+          "License and Trademarks"
+        ],
+        "unconfirmed": [
+          "Maybe Financeからのフォーク以降に追加された具体的な新機能の全容",
+          "LLMエージェントやモバイルアプリとの連携の詳細な設定手順"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": true,
+        "readme_sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
+        "generated_at": "2026-11-16T10:19:37.677022+09:00"
+      }
+    },
+    {
+      "rank": 7,
       "full_name": "ZhuLinsen/daily_stock_analysis",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars_total": 72512,
-      "forks_total": 57574,
-      "stars_period": 4548,
+      "stars_total": 72866,
+      "forks_total": 57685,
+      "stars_period": 4355,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-16T01:18:48Z",
-        "pushed_at": "2026-11-15T15:47:25Z",
-        "open_issues": 36,
+        "updated_at": "2026-11-17T04:05:24Z",
+        "pushed_at": "2026-11-16T13:20:41Z",
+        "open_issues": 39,
         "archived": false,
-        "size_kb": 122475,
+        "size_kb": 122079,
         "topics": [
           "a-stock",
           "ai-agent",
@@ -536,186 +565,99 @@
         "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "300b01f12764430edcc7005eaef5d1c2844a8ebe",
         "generated_at": "2026-11-16T10:19:34.826233+09:00"
       }
     },
     {
-      "rank": 7,
-      "full_name": "we-promise/sure",
-      "url": "https://github.com/we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars_total": 15721,
-      "forks_total": 1375,
-      "stars_period": 4556,
-      "api": {
-        "default_branch": "main",
-        "license": "AGPL-3.0",
-        "updated_at": "2026-11-16T01:18:46Z",
-        "pushed_at": "2026-11-15T23:58:07Z",
-        "open_issues": 947,
-        "archived": false,
-        "size_kb": 169724,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 7806,
-        "used_chars": 7475
-      },
-      "analysis": {
-        "summary_ja": "we-promise/sure は、開発が終了した Maybe Finance プロジェクトのコミュニティ主導によるフォーク版であり、すべての人のための個人財務・資産管理アプリケーションです。Dockerによるセルフホストやブラウザ、デスクトップアプリ、モバイルアプリなどからのアクセスをサポートしています。",
-        "capabilities": [
-          {
-            "text": "Dockerを使用して個人財務アプリをセルフホストできる",
-            "evidence_section": "Hosting Sure"
-          },
-          {
-            "text": "ブラウザ、macOSデスクトップアプリ、モバイルアプリ、APIクライアント、LLMエージェントからアクセス可能",
-            "evidence_section": "Hosting Sure"
-          },
-          {
-            "text": "開発環境向けにデモデータをロードする機能を持つ",
-            "evidence_section": "Local Development Setup"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "個人や家族の資産管理・財務状況の把握のためにアプリを自前でホストして利用する",
-            "basis": "README明記",
-            "evidence_section": "Hosting Sure"
-          },
-          {
-            "text": "開発者がローカル環境でアプリのソースコードを実行し、貢献やカスタマイズを行う",
-            "basis": "README明記",
-            "evidence_section": "Local Development Setup"
-          }
-        ],
-        "first_trial": {
-          "goal": "ローカル環境でアプリケーションを起動し、動作を確認する",
-          "steps": [
-            "cd sure",
-            "cp .env.local.example .env.local",
-            "bin/setup",
-            "bin/dev",
-            "rake demo_data:default"
-          ],
-          "success_criteria": "http://localhost:3000 にアクセスしてアプリケーションが閲覧でき、デモデータの資格情報でログインできること"
-        },
-        "evidence_sections": [
-          "Hosting Sure",
-          "Local Development Setup",
-          "Backstory",
-          "License and Trademarks"
-        ],
-        "unconfirmed": [
-          "Maybe Financeからのフォーク以降に追加された具体的な新機能の全容",
-          "LLMエージェントやモバイルアプリとの連携の詳細な設定手順"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-        "generated_at": "2026-11-16T10:19:37.677022+09:00"
-      }
-    },
-    {
       "rank": 8,
-      "full_name": "milind-soni/OpenMausBot",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "language": "TypeScript",
-      "stars_total": 23425,
-      "forks_total": 3254,
-      "stars_period": 5463,
+      "full_name": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars_total": 113266,
+      "forks_total": 13040,
+      "stars_period": 7067,
       "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-16T01:19:29Z",
-        "pushed_at": "2026-11-16T01:13:09Z",
-        "open_issues": 1087,
+        "default_branch": "master",
+        "license": "MIT",
+        "updated_at": "2026-11-17T04:04:56Z",
+        "pushed_at": "2026-11-16T05:15:23Z",
+        "open_issues": 414,
         "archived": false,
-        "size_kb": 571837,
+        "size_kb": 19103,
         "topics": [
-          "ai-agents",
-          "claude-code",
-          "codex",
-          "computer-use",
-          "docker",
-          "electron",
-          "grok",
-          "grok-bot",
-          "grok-bot-alternative",
-          "self-hosted",
-          "typescript"
+          "cli",
+          "cti",
+          "cybersecurity",
+          "forensics",
+          "hacktoberfest",
+          "information-gathering",
+          "infosec",
+          "linux",
+          "osint",
+          "pentesting",
+          "python",
+          "python3",
+          "reconnaissance",
+          "redteam",
+          "sherlock",
+          "tools"
         ]
       },
       "readme": {
         "status": "ok",
-        "sha": "0bb6bcbeeb262acf233227a5f78bff35a66b2924",
-        "path": "README.md",
+        "sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+        "path": "docs/README.md",
         "truncated": true,
-        "original_chars": 34343,
-        "used_chars": 6478
+        "original_chars": 5596,
+        "used_chars": 4976
       },
       "analysis": {
-        "summary_ja": "OpenMausBotは、チャットアプリの形式でAIボットを管理できるオープンソースのGrok Bot代替アプリケーションです。ローカルで動作するClaudeやCodexなどのAIエージェントを連絡先のように操作し、それぞれにパーソナリティや専用のクラウドコンピュータを持たせることができます。",
+        "summary_ja": "sherlock-project/sherlockは、ユーザー名を手がかりに400以上のソーシャルネットワークからソーシャルメディアアカウントを検索・特定するためのPythonツールです。",
         "capabilities": [
           {
-            "text": "ClaudeやCodexなどのAIエージェントCLIをローカル環境で実行し、既存のログイン情報やサブスクリプションをそのまま利用できる",
-            "evidence_section": "Why"
+            "text": "400以上のソーシャルネットワークを対象としたユーザー名検索",
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "macOS、Windows、Ubuntu 24.04向けのデスクトップアプリとしてビルドおよび実行が可能である",
-            "evidence_section": "Quick start"
+            "text": "単一または複数のユーザー名を同時に指定した検索",
+            "evidence_section": "General usage"
           },
           {
-            "text": "Tailscaleを介して、別のコンピュータ上のボットを開いて操作することができる",
-            "evidence_section": "Quick start"
+            "text": "検索結果のテキストファイルやCSV、XLSXなどでの保存",
+            "evidence_section": "General usage"
           }
         ],
         "use_cases": [
           {
-            "text": "複数のAIボットとチャットアプリ感覚で会話を行い、作業を進めさせる",
+            "text": "特定のユーザー名が使われているソーシャルメディアアカウントの調査",
             "basis": "README明記",
             "evidence_section": "README冒頭"
-          },
-          {
-            "text": "ローカルにインストールされたAIエージェントを利用して開発やタスクを実行する",
-            "basis": "README明記",
-            "evidence_section": "Why"
           }
         ],
         "first_trial": {
-          "goal": "ソースコードから開発サーバーおよびElectronシェルを起動する",
+          "goal": "コマンドを使用して単一のユーザー名を検索する",
           "steps": [
-            "git clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot",
-            "pnpm install",
-            "pnpm dev:server",
-            "pnpm dev",
-            "pnpm dev:desktop"
+            "sherlock user123"
           ],
-          "success_criteria": "Electronシェルが起動し、デスクトップアプリとして操作できるようになること"
+          "success_criteria": "見つかったアカウント情報がターミナルに表示され、ユーザー名に応じたテキストファイルに保存されること"
         },
         "evidence_sections": [
           "README冒頭",
-          "Why",
-          "Quick start"
+          "Installation",
+          "General usage"
         ],
         "unconfirmed": [
-          "具体的なボットの内部実装や詳細なカスタマイズ方法",
-          "対応しているすべての機能やコマンドの詳細なオプション"
+          "詳細な設定ファイルの詳細な挙動",
+          "公式パッケージ以外のサポート範囲の詳細"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "0bb6bcbeeb262acf233227a5f78bff35a66b2924",
-        "generated_at": "2026-11-16T10:19:40.395128+09:00"
+        "cached": true,
+        "readme_sha": "ddad6e0214cfa14bfabab0d67bf52293f5d2990e",
+        "generated_at": "2026-11-14T10:38:02.646881+09:00"
       }
     },
     {
@@ -724,17 +666,17 @@
       "url": "https://github.com/google/elephant-goldfish-model",
       "description": "Open-source plugin for designing and reviewing software with agents",
       "language": "Python",
-      "stars_total": 19785,
-      "forks_total": 1463,
-      "stars_period": 5060,
+      "stars_total": 20442,
+      "forks_total": 1511,
+      "stars_period": 4249,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-16T01:19:12Z",
-        "pushed_at": "2026-11-15T18:47:38Z",
-        "open_issues": 111,
+        "updated_at": "2026-11-17T03:59:56Z",
+        "pushed_at": "2026-11-17T03:40:33Z",
+        "open_issues": 123,
         "archived": false,
-        "size_kb": 15225,
+        "size_kb": 15262,
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -827,17 +769,17 @@
       "url": "https://github.com/google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
-      "stars_total": 18074,
-      "forks_total": 2215,
-      "stars_period": 1922,
+      "stars_total": 18199,
+      "forks_total": 2205,
+      "stars_period": 1448,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-16T01:05:07Z",
-        "pushed_at": "2026-11-15T18:40:47Z",
-        "open_issues": 416,
+        "updated_at": "2026-11-17T03:49:28Z",
+        "pushed_at": "2026-11-17T00:40:25Z",
+        "open_issues": 420,
         "archived": false,
-        "size_kb": 153521,
+        "size_kb": 153796,
         "topics": [
           "mujoco",
           "physics",
@@ -918,32 +860,102 @@
   ],
   "zenn": [
     {
-      "title": "Lightdashで作れるグラフを試してみた【dbt v2】",
-      "url": "https://zenn.dev/ryatora/articles/lightdash-chart-catalog",
-      "author": "rnm",
-      "published": "Sun, 15 Nov 2026 15:07:26 GMT",
-      "summary": "1. 概要\n\n 1.1 本記事の目的\nNBA（アメリカのプロバスケットボールリーグ）のデータを使って、Lightdash[1]で様々なグラフを作成してみました。各グラフのYAMLも載せています。\n2章で準備をして、3章でグラフを種類ごとに作ります。4章では、組み込みにないグラフを作る方法に触れます。\n\n 1.2 Lightdashとは\nLightdashは、dbtのプロジェクトか、Lightdash独自のYAML[2]に書いたmetricなどの定義をもとに、グラフやダッシュボ"
+      "title": "スマホ内蔵のセンサーを使って周辺光取得を試す",
+      "url": "https://zenn.dev/aldagram_tech/articles/f7b57935e31070",
+      "author": "KSND",
+      "published": "Tue, 17 Nov 2026 00:37:04 GMT",
+      "summary": "アルダグラムで iOS・Android のアプリ「KANNA」の開発をしている小千田というものです。\n普段のアプリ開発では、スマホに入っている各種センサーを使った機能を作ることはあまり多くありません。それでも以前から、何かしら活用できたらいいなという興味はありました。\n今回ふと、スマホは周りが暗くなると画面も自動で暗くなるな、と思いました。同じような値をアプリから取れれば、ユーザー体験をよくすることに使えるのではないか。そう思って、調査と、試しに触ってみたところまでをまとめた"
     },
     {
-      "title": "FTDで実装するTLS Decryption",
-      "url": "https://zenn.dev/5x4x7/articles/92a962f3cd6cb6",
-      "author": "5x4x7",
-      "published": "Sun, 15 Nov 2026 13:49:46 GMT",
-      "summary": "※概要だけ確認される場合は検証部分は見なくてよいかと思います。\n※検証環境で登場するVMはCMLを含め、全てProxmox VE上に構築しています。フルバーチャルで検証できるようになり、良い時代になりましたね。\n※検証はFTD、FMCともに10.0.0を使用しています。\n!\n自分が書いてみたいという理由だけでHTML/CSSを埋め込んでみましたが、力尽きました。\nスマホで見ると表示が崩れますが、ギリ読めなくはないので気合で読むか大人しくPCとかiPadとかで開いてください。\n"
+      "title": "AI駆動開発で自分用の情報収集Discordサーバーを作る",
+      "url": "https://zenn.dev/tree_and_tree/articles/ai-driven-discord-info-server",
+      "author": "さみっと",
+      "published": "Mon, 16 Nov 2026 15:14:11 GMT",
+      "summary": "!\nかなり長い記事なので目次から適宜気になるところをつまんでもらえたらと思います。\nもちろん通しで読んでもらうのは大歓迎＆大喜びです！\n\n\n TL;DR\n\n自分用の情報収集Discordサーバーを、2ヶ月ほどAI駆動開発で育てている（起票したイシュー555件、マージしたPR403本）\nイシュードリブン開発で、起票→精査→ready→実装→マージ→振り返りの流れをAIが回し、人は判断が必要なところだけ関わる\n深夜にハーネス改善の「ハーネ・スー」と配信改善の「デリバー・リー」とい"
     },
     {
-      "title": "Canton Networkとは何か――金融機関が「見せる相手を選べる」ブロックチェーンに集まる理由",
-      "url": "https://zenn.dev/komlock_lab/articles/canton-network-evm-comparison-2026",
-      "author": "Kobara Toi",
-      "published": "Sun, 15 Nov 2026 09:06:22 GMT",
-      "summary": "こんにちは！ブロックチェーン×AI Agentで自律経済圏を創るKomlock lab（Pacific Meta Group）でエンジニアをしている小原（@brto_0224）です。\nオンチェーン金融の大きなニュースには、たびたびCanton Networkの名前が出てきます。米国の証券決済を担うDTCCがCantonとつながる証券のデジタル化サービスを動かし始め、J.P. Morganも銀行預金をデジタル化した独自のお金をCantonで発行する準備を進めています。ただ、それ"
+      "title": "実践パスキー認証設計",
+      "url": "https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9",
+      "author": "Yasuaki Omokawa",
+      "published": "Mon, 16 Nov 2026 12:53:34 GMT",
+      "summary": "この記事の想定読者\n\nこれからパスキーを自分のサービスに入れたいが、まず全体像と勘所をつかみたい開発エンジニア\nパスキーがなぜ有効かを、ビジネス側 (事業責任者、営業、サポート) に説明する立場のテックリード\n\nlibrary の使い方の解説ではありません。「何を決めておけば、後から困らないか」を、実際のサービスで設計した記録として書きます。\n読み方の目安です。\n\nエンジニアの方: 「サマリー」のあと、「要求」「要件」「やってはいけないこと」の 3 節が本体です。「出す順」と"
     },
     {
-      "title": ".NET 11 の ASP.NET Core Blazor の新機能のスケールイン対応機能！",
-      "url": "https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale",
-      "author": "Kazuki Ota",
-      "published": "Sun, 15 Nov 2026 07:58:03 GMT",
-      "summary": "はじめに\n今まで ASP.NET Core Blazor の InteractiveServer のモードでは、サーバー側のメモリに保持される回路（Circuit）をスケールイン時に別のサーバーへ移行できませんでした。そのため柔軟なスケールアウト！スケールイン！するようなシステムにするのをあきらめざるを得ませんでした…。\n.NET 11 では、サーバー側からクライアント側に状態を保存させてから再接続をするということが出来るようになったので、スケールインの前にいったんステートを"
+      "title": "Kotlin Fest 2026 参加記",
+      "url": "https://zenn.dev/0st_ts/articles/d55862e1a134c2",
+      "author": "わかと",
+      "published": "Mon, 16 Nov 2026 10:00:05 GMT",
+      "summary": "こんにちは、わかと（@0ts_st）です。\n2026年11月14日、東京コンファレンスセンター品川で開催されたKotlin Fest 2026に参加してきました！\n今回は学生スカラシップで参加しました。この制度、Kotlin Festでは今回が初めてだったそうです。こういう機会を作ってくださった運営・スポンサーの皆さん、ありがとうございます！\n普段はGoやTypeScriptを触ることが多いので、Kotlinは知らないことが結構多いです。聞きながら「これ何の話？」ってなるとこ"
+    },
+    {
+      "title": "X の投稿を Rust で画像にするライブラリ xeet を試す",
+      "url": "https://zenn.dev/yamauz/articles/fb97f92af23a3e",
+      "author": "やまう",
+      "published": "Mon, 16 Nov 2026 09:20:35 GMT",
+      "summary": "X の投稿を、ブラウザを使わずに PNG にするライブラリ xeet を触ってみました。\n自分が個人で作っている メトロノームアプリ Metronome.fm の LP に、X の投稿をカードとして載せたいなと思っていて、どうやるか考えていたところでした。X の埋め込みだとページで X のスクリプトを読み込むことになるのがちょっと嫌だし、スクショを手で撮って貼るのも面倒です。そんなときにたまたま xeet を見かけて、これは良さそうだなと。\n調べたところ、投稿の画像を作るツー"
+    },
+    {
+      "title": "QA生産性を爆上げさせるためのQA AIプラットフォーム構築",
+      "url": "https://zenn.dev/gatechnologies/articles/8bdea59269eb10",
+      "author": "akki",
+      "published": "Mon, 16 Nov 2026 09:12:44 GMT",
+      "summary": "akkiです。2026年7月からGA technologiesに出戻り入社してQAエンジニアをしています。\n元々は2021年〜2024年6月まで在籍していました。\n以前はインプロセスQAとして活動していましたが、現在はプロダクトのQAからは離れ、QAプロセス全体の改善や、インプロセスQAを行っているメンバーの支援をしています。\n今回は出戻り入社してから現在まで私が取り組んできた、QA AIプラットフォーム「GAQ」を構築し、チーム内に定着させて生産性を向上させてきた話をします"
+    },
+    {
+      "title": "物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門",
+      "url": "https://zenn.dev/turing_motors/articles/cea9e3c85611b2",
+      "author": "ymg_aq",
+      "published": "Mon, 16 Nov 2026 08:00:05 GMT",
+      "summary": "1. はじめに\nAIが「いま何を考えているのか」を、人間はどうやって知ればいいのでしょうか？\n我々チューリング株式会社は、カメラ映像から走行軌跡を直接予測するEnd-to-End（E2E）自動運転AIを開発しています。社内では、予測軌跡をカメラ映像に重ねる可視化が、実車試験の振り返りからデモ映像まで、あらゆる場面で使われています。\nhttps://x.com/DaisukeMAN/status/2109111871228022910\n自動運転AIが出力する「自車がこの先数秒間"
+    },
+    {
+      "title": "インフラ＆CI/CD（GitHub Actionsの自動デプロイ）〜化石時代のFTPから脱却。あえて作り込まない「運用カバー」の自動化〜",
+      "url": "https://zenn.dev/dgft/articles/da631c5758aa6a",
+      "author": "イナガキ",
+      "published": "Mon, 16 Nov 2026 08:00:05 GMT",
+      "summary": "はじめに\nこんにちは。DGフィナンシャルテクノロジー（DGFT）技術本部のイナガキです。\n本連載では、長らく実務から離れていた私が、生成AIを相棒にして実質100時間で社内の「作業実績報告システム」を立ち上げた裏側をご紹介しています。\n第4回となる今回は、インフラ構成と「GitHub Actionsを用いた自動デプロイ（CI/CD）」についてのお話です。\n私が現役でコードを書いていた時代、Webシステムのデプロイといえば「本番サーバーにFTPでファイルを上書きアップロードする"
+    },
+    {
+      "title": "若手の「説明力」は、AI開発で育てられるか ― 資料レビューAIを題材にしたOJTの実践",
+      "url": "https://zenn.dev/nttdata_tech/articles/d159fdd9c38c00",
+      "author": "Yuichi Moriya / 守谷 祐一",
+      "published": "Mon, 16 Nov 2026 07:30:17 GMT",
+      "summary": "1. はじめに\n生成AIを使えば、経験の浅いコンサルタントでも、短時間で整った資料を作れるようになりました。しかし「なぜ、この結論に決めたのか」を説明できなければ、責任を持った提案にはなり得ません。\n今年度、私は2年目社員のトレーナーとして、資料レビューAIの開発をテーマに指導に取り組んでいます。目指しているのは、実務で役立つAIを作ることと、その開発過程を本人の学びにつなげることです。育成は現在も続いていますが、本人の成長を感じる場面も増えてきたため、ここまでの取り組みを紹"
+    },
+    {
+      "title": "Claude Codeが書いたコードを読む代わりにやっていること",
+      "url": "https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code",
+      "author": "Misugi Takeru",
+      "published": "Mon, 16 Nov 2026 05:04:44 GMT",
+      "summary": "はじめに\n個人で作っているWebアプリの実装を、最近はClaude Codeに任せています。PRが増えて全部は読みきれなくなり、ほとんどコードを読まずにマージしています。テストもレビューも動作確認も、AIにやらせています。\nところが、作業を終える前にテストを回すはずの仕組みが、一度もテストを動かしていませんでした。毎回0.1秒かからずに通っていて、確認は全部通っていたので、しばらく気づきませんでした。\nこの件もあって、コードを読まなくなった代わりに、今は次の2つをしています。"
+    },
+    {
+      "title": "mizchi/mutator を入れてみた",
+      "url": "https://zenn.dev/polyco/articles/e05cb28c569801",
+      "author": "Tatsunori Nakano",
+      "published": "Mon, 16 Nov 2026 03:49:18 GMT",
+      "summary": "この記事に書いてあること\n\nAI が書きまくったテストに意味のないテストがどれくらいあるのか数えた\n金額や権限など間違えるとやばいところはテストの穴を 0 件にした\nStrykerJS と条件をそろえて比べてみたけど確かに速い\n開発ワークフロースキルに組み込んで、意味のないテストが書かれたらすぐ気づけるようにした\n機械的に拾えないものはスキルでカバー\n毎回全部は流さない。その作業で修正したコードとテストに関係するファイルだけ試す\n\n\n 前提となる構成\n\nWeb も API も"
+    },
+    {
+      "title": "GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった",
+      "url": "https://zenn.dev/kesin11/articles/20261114_github_issue_artifact",
+      "author": "Kesin11",
+      "published": "Sun, 15 Nov 2026 23:00:07 GMT",
+      "summary": "今年もGitHub Universeが開催され、多くの新機能が発表されました！\n一方、派手な発表の影に隠れてあまり目立っていませんが、普段使いしているIssueにも「Issue Artifact」という機能がPublic Previewとして追加されています。Issueに対してHTMLやMarkdownをArtifactとして添付し、Issue画面上の専用パネルでそのまま表示できる機能です。\nhttps://github.blog/changelog/2026-10-28-i"
+    },
+    {
+      "title": "サンドボックス内のAIエージェントにHerdrを安全に使わせたい",
+      "url": "https://zenn.dev/naofumimurata/articles/nono-hc-proxy",
+      "author": "Naofumi Murata",
+      "published": "Sun, 15 Nov 2026 09:46:35 GMT",
+      "summary": "Claude Code を nono のサンドボックス内で動かしています。サンドボックス内で実行しているときも、ターミナルマルチプレクサの Herdr をエージェントに使わせたいのですが、何もせず Herdr の操作を許可するとサンドボックスを抜けられてしまうため、エージェントと Herdr の間にプロキシを挟む構成を作ってみました。\n\n 前提\n\n nono\nhttps://nono.sh\nAI エージェントなどのプロセスを、ファイルシステム・ネットワーク・コマンド実行を制限"
+    },
+    {
+      "title": "AIの回答が長すぎて、理解しないまま実装している問題（理解負債）",
+      "url": "https://zenn.dev/kent_code/articles/5892898be90cac",
+      "author": "Kent",
+      "published": "Sun, 15 Nov 2026 00:19:17 GMT",
+      "summary": "主に C#/.NET で業務システムを作って25年くらいになります。ここ1年ほどは、設計の相談も実装も Claude Code と一緒にやっています。\n便利なのは間違いないんですが、使えば使うほどストレスも溜まっていました。返ってくる情報の量が膨大で、頭がついていかないのです。。\nつまり、回答が長すぎて、理解が追いつかないまま実装に進んでしまう。\nこの記事では、この課題に対して CLAUDE.md に数行のルールを足しただけでかなり楽になった話と、同じ質問をルールなし／ルール"
     },
     {
       "title": "フロントエンドのフレームワークを、安全に段階的に入れ替える",
@@ -951,20 +963,6 @@
       "author": "Yasuaki Omokawa",
       "published": "Sat, 14 Nov 2026 07:12:52 GMT",
       "summary": "この記事の想定読者\n\nReact などで書いた画面を、別の framework へ少しずつ移したいエンジニア\n移行の計画を承認する立場で、「作業がどこまで安全で、途中で止めたらどうなるのか」を判断したいマネージャー\n\nframework の名前は例として出します。移す先が Vue でも Svelte でも、考え方は同じです。\n読み方の目安です。\n\nエンジニアの方: 「この形が使える前提」で自分のアプリに当てはまるかを確かめてから、「やり方 1〜3」と「feature flag"
-    },
-    {
-      "title": "【2026/11/13時点】Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）",
-      "url": "https://zenn.dev/canly/articles/e2bd67c9a4c18b",
-      "author": "ふくだ（fukuda ryu）",
-      "published": "Fri, 13 Nov 2026 23:45:16 GMT",
-      "summary": "はじめに\n2026/11/13、Claude Duet が Claude の Team プランの管理画面に出てきました。\n筆者が見た範囲でも、X で「Team の管理画面に出た」という報告がいくつもあり、カンリーの管理画面にも 2026/11/13 の午前に「Claude Duet（ベータ）」のページが出ていました。組織で ON にして実際に触ってみたので、Duet で何ができるかと、組織で使うときに管理者側で何をどこまで縛れるかをまとめます。\n!\n2026/11/13 時点"
-    },
-    {
-      "title": "Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに",
-      "url": "https://zenn.dev/caphtech/articles/qwen38-zh-ban",
-      "author": "rizumita",
-      "published": "Fri, 13 Nov 2026 13:08:40 GMT",
-      "summary": "この記事は個人（と会社）の実験の記録です。モデルはQwen3.8-Flash-Next（Qwen Community License 1.0）、問いの一部にJMMLUのCC BY-SA 4.0版（Hugging Faceのnlp-waseda/JMMLU_CC-BY-SA）の医療の問題を使いました。実装と実行はClaude Code（AnthropicのClaude）と一緒に行いました。\n書き換えと確かめには、私たちが公開している道具Kestromを使いました。Kestrom"
     },
     {
       "title": "ng: Neovim のためのシンプルな GUI",
@@ -988,41 +986,6 @@
       "summary": "AIが書いたコードをマルチエージェントで多角的な視点で別のAIに容赦なく叩かせ、\nそれを何往復もループで繰り返せば品質は上がっていくはず。。。\n純粋無垢な私はずっと、そう信じていた頃がありました。\nところが、かなりトークンを注ぎ込んだPRからあっさり本番バグが出てしまい、以下の疑問にはじめて気づきました。\n\n問い: AI同士の敵対的レビューで、成果物は本当に信頼できるものになるのか?\n結論: なりません。そのトークンは実際に動かして確かめる「検証」に使うべきです\n理由: コー"
     },
     {
-      "title": "仕組み編：Two-Towerによる検索システム（学習・推論・配信）",
-      "url": "https://zenn.dev/ca_kagglers/articles/two-tower-mechanism",
-      "author": "ihiratch",
-      "published": "Fri, 13 Nov 2026 01:55:36 GMT",
-      "summary": "はじめに\nihiratchです。本記事では、検索・推薦タスクで使われる Two-Tower モデルについて解説します。\nTwo-Tower は、クエリとアイテムをそれぞれ別のニューラルネットワークでベクトルに変換し、その類似度から関連度を評価するモデルです。アイテム側のベクトルを事前に計算しておけるため、大量の候補から効率よく検索することができます。\n本記事は「仕組み編」として、検索タスクから始まり、Two-Tower の構造・推論・学習・配信までを説明します。学習については"
-    },
-    {
-      "title": "PostgreSQLのバージョンアップ後に ANALYZE VERBOSE を実行する理由",
-      "url": "https://zenn.dev/fusic/articles/e05247d244838e",
-      "author": "きたのかい",
-      "published": "Fri, 13 Nov 2026 00:32:26 GMT",
-      "summary": "はじめに\nこんにちは、Fusicの北野です。\n業務の中で、PostgreSQLのバージョンアップ後に、統計情報を更新するためのANALYZE VERBOSEというものを実行する機会がありました。その時はとりあえず言われた通りに実行しましたが、「なぜ統計情報を更新する必要があるのか」を十分に理解できていませんでした。\nそこで本記事では、PostgreSQLにおける統計情報の役割と、実行計画との関係を整理します。\n\n データベースにおける「統計情報」とは\nデータベースにおける統計"
-    },
-    {
-      "title": "脱WordPress：10年超の個人ブログをAstro + Cloudflare Workersへ移行しPageSpeed 100点を実現",
-      "url": "https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb",
-      "author": "星影",
-      "published": "Thu, 12 Nov 2026 15:31:01 GMT",
-      "summary": "はじめに\n10 年以上 WordPress で運用してきた個人ブログを Astro + Cloudflare Workers の静的サイト に移行しました。\n移行の経緯と読者向けのまとめはブログ側の記事に書いています。\nhttps://unsolublesugar.com/20261112/120000/\nこの記事では技術的な中身をまとめます。記事データの変換から Cloudflare での公開、公開後の調整までを扱います。作業の大半を Claude に任せた進め方 も紹介し"
-    },
-    {
-      "title": "AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録",
-      "url": "https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat",
-      "author": "Keisuke",
-      "published": "Thu, 12 Nov 2026 11:41:36 GMT",
-      "summary": "はじめに\nこんにちは。ビジネス映像メディア「PIVOT」で、QAエンジニア兼PjMをしている ケイスケ です。\nPIVOTのモバイルアプリ（iOS / Android）では、AIでテストケースを書くようになってから、ケースの数が増え続けています。リリース前のUAT（受け入れテスト）で全件を回すのが難しくなってきたので、リスクベースドテスト（RBT）で回すケースを選ぶことにしました。ルールは一度では決まらず、何度も作り直しています。この記事は、その途中で試したことと分かったこと"
-    },
-    {
-      "title": "Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順",
-      "url": "https://zenn.dev/happy_elements/articles/201519107f93de",
-      "author": "ko.+",
-      "published": "Thu, 12 Nov 2026 03:38:09 GMT",
-      "summary": "2026 年 10 月 22 日、Anthropic の claude.com ブログに「Building agents: When to fold subagents into your main agent loop」が公開されました。サブエージェントに分けて組んだエージェントを、メインのエージェントループに取り込み、Skills（必要になったときに読み込む手順や知識のまとまり）とツールを持たせた 1 つのループへ戻す（ブログの言葉では fold）ときの判断基準と手順をま"
-    },
-    {
       "title": "Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤",
       "url": "https://zenn.dev/ubie_dev/articles/45501469c9c044",
       "author": "Yuku Kotani",
@@ -1030,51 +993,27 @@
       "summary": "Ubie CTO の @yukukotani です。\nUbie では 2023 年、GPT-3.5 Turbo が出た頃から、Web UI や Slack を起点に動くクラウドエージェント基盤を内製してきました（当時の様子）。\n2025 年には、Software Factory を目指して、クラウド型エンジニアリングエージェント Uvin の開発も始めました（当時の様子）。一貫してクラウドエージェントに Bet しています。\nhttps://zenn.dev/ubie_dev"
     },
     {
-      "title": "SlackでMarkdown記法が使えるようになっていた",
-      "url": "https://zenn.dev/lnest_knowledge/articles/ed5977bd7b6c1f",
-      "author": "shown_it",
-      "published": "Wed, 11 Nov 2026 05:52:02 GMT",
-      "summary": "!\n2026年11月11日時点の検証です。Markdownの文字列をメッセージ入力欄に貼り付けて投稿し、表示はmacOS版Slackとブラウザ版（Chrome）で確認しました。機能の導入日や、すべてのワークスペース・端末で同じ動作になるかは確認していません。\n\n\n メッセージ内に表が表示される\n今回、使いどころが多そうだと感じたのが表です。次のようなパイプ区切りのMarkdownを貼り付けました。\n| 左寄せ | 中央寄せ | 右寄せ |\n| :--- | :---: | -"
-    },
-    {
       "title": "ISUCON2026 で優勝しました（準備編）",
       "url": "https://zenn.dev/luvtechno/articles/isucon2026-preparation",
       "author": "Yoshinori Kawasaki",
       "published": "Wed, 11 Nov 2026 05:05:46 GMT",
-      "summary": "はじめに\nこんにちは！ @kawasy です。当日編に続いて、この記事では3か月の準備期間に何をしていたかを、時系列で追いながら振り返ります。\n\n モチベーション\n私は土曜日はいつも、子どもを習い事に連れて行っています。Slack でレギュレーションの「AI 利用可」を見かけたとき、全部 AI に任せられれば、いつもどおりの土曜日を過ごしながら参加できるかもしれないと思いました。それが開発のきっかけでした。\n\nもう1つは、人間が手を出さずに、エージェントだけでどこまでできるの"
-    },
-    {
-      "title": "退屈なCoding AgentはMuseにやらせよう",
-      "url": "https://zenn.dev/watany/articles/342b9815dd0553",
-      "author": "watany",
-      "published": "Tue, 10 Nov 2026 02:35:05 GMT",
-      "summary": "はじめに\n旧FacebookのMetaが開発したパーソナルAIエージェントのMuseがすごく良くて、意味不明なくらいずっと触ってる。紹介コード: 7L990R を入れるとトークンがもらえるのでよろしくね。\nhttps://muse.ai/\nMuseは触ると魅力がわかるタイプのプロダクトで、使ってないとClaudeやCodexで良いじゃん、なんで今更驚き屋してんの？って思われる。そんな捻くれた俺たちでも触りやすい使い方を紹介します。\n\n Museにコードを書かせる\n大前提として"
-    },
-    {
-      "title": "Claude Codeで最近使っているTips【2026/11】",
-      "url": "https://zenn.dev/oikon/articles/claude-code-recipe",
-      "author": "Oikon",
-      "published": "Mon, 09 Nov 2026 22:01:05 GMT",
-      "summary": "Oikonです。\n気がつけば2026年も終わりが見えてきました。今年はありがたいことにClaude Codeの書籍を2冊出版させていただきました。\n\n\nClaude Code実践入門 [生成AI深掘りガイド]（SBクリエイティブ）\n\nClaude Code実践レシピ集（技術評論社）\n\n新刊のClaude Code実践レシピ集は、個人的に好きなClaude CodeのTipsをベースに、割と好き勝手に書かせていただきました笑。\n新しいClaude Code本の発売記念に、この記"
+      "summary": "!\nポッドキャストでもお話ししました（2026-11-16 追記）：\n\n\n142. ISUCON2026で優勝する方法 w/ kawasy（fukabori.fm）\n\n#27 緊急！ISUCON2026優勝者に聞く、完全自律AIエージェントの作り方と今後のOSS（八百万のOSS）\n\nISUCON 2026を制した謎のAI使い(?) (kawasy)（趣味でOSSをやっている者だ）\n\n\n\n はじめに\nこんにちは！ @kawasy です。当日編に続いて、この記事では3か月の準備期"
     }
   ],
   "common_terms": [
     "agent",
     "code",
-    "agents",
-    "skills",
-    "codex",
-    "team",
-    "meta",
-    "software",
+    "web",
     "analysis",
-    "linux",
-    "loop"
+    "software",
+    "public",
+    "ready",
+    "linux"
   ],
   "ai_analysis": {
     "enabled": true,
     "model": "gemini-3.5-flash-lite",
-    "successful": 10,
+    "successful": 9,
     "total": 10
   },
   "verification": {
