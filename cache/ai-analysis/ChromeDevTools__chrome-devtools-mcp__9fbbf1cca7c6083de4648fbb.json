@@ -1,0 +1,54 @@
+{
+  "summary_ja": "chrome-devtools-mcpは、コーディングエージェントがライブのChromeブラウザを制御・検査できるようにするモデルコンテキストプロトコル(MCP)サーバーおよびCLIツールです。",
+  "capabilities": [
+    {
+      "text": "Chrome DevToolsを使用してトレースを記録し、パフォーマンスインサイトを抽出する",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "ネットワークリクエストの分析、スクリーンショットの撮影、ブラウザコンソールメッセージの確認を行う",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "Puppeteerを使用してChrome内のアクションを自動化し、結果を自動的に待機する",
+      "evidence_section": "Key features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ウェブページのパフォーマンスをチェックして改善する",
+      "basis": "README明記",
+      "evidence_section": "Getting started"
+    },
+    {
+      "text": "ターミナルからCLIを使用してブラウザを操作・制御する",
+      "basis": "README明記",
+      "evidence_section": "CLI"
+    },
+    {
+      "text": "アクセシビリティの問題を監査および修正する",
+      "basis": "README明記",
+      "evidence_section": "Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "MCPクライアントからパフォーマンスをチェックして動作を確認する",
+    "steps": [
+      "MCPクライアントに設定を追加する",
+      "MCPクライアントにプロンプト「Check the performance of https://developers.chrome.com」を入力する"
+    ],
+    "success_criteria": "MCPクライアントがブラウザを開き、パフォーマンスのトレースを記録すること"
+  },
+  "evidence_sections": [
+    "Key features",
+    "Getting started",
+    "CLI",
+    "Skills"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
+  "generated_at": "2026-11-18T12:04:18.202047+09:00"
+}

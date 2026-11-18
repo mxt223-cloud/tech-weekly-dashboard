@@ -1,0 +1,58 @@
+{
+  "summary_ja": "ZhuLinsen/daily_stock_analysisは、LLMを活用して複数市場（A株、香港株、米国株、日本株、韓国株、台湾株）の株式を自動分析し、決定ダッシュボードをチャットツールやメールにプッシュ通知するシステムです。",
+  "capabilities": [
+    {
+      "text": "核心結論、スコア、トレンド、売買ポイント、リスクアラートなどのAI決定レポートの生成",
+      "evidence_section": "✨ 功能特性"
+    },
+    {
+      "text": "複数市場（A株、香港株、米国株、日本株、韓国株、台湾株、ETF）のデータ集約",
+      "evidence_section": "✨ 功能特性"
+    },
+    {
+      "text": "Webおよびデスクトップワークスペースによる手動分析、タスク進捗、履歴レポート管理",
+      "evidence_section": "✨ 功能特性"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "毎日の株式市場の分析結果を企業微信、飛書、Telegram、Discord、Slack、メールへ自動通知する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "複数市場のリアルタイムニュースや基本面データを活用して投資判断の参考情報を作成する",
+      "basis": "README明記",
+      "evidence_section": "✨ 功能特性"
+    },
+    {
+      "text": "GitHub ActionsやDockerを用いてサーバーレスで定期的に株価分析を実行する",
+      "basis": "README明記",
+      "evidence_section": "🚀 快速开始"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンしてローカル環境で分析を実行する",
+    "steps": [
+      "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
+      "pip install -r requirements.txt",
+      "cp .env.example .env && vim .env",
+      "python main.py"
+    ],
+    "success_criteria": "main.pyがエラーなく実行され、分析結果が出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "✨ 功能特性",
+    "🚀 快速开始"
+  ],
+  "unconfirmed": [
+    "有料APIキーを利用しない場合の具体的な無料枠の制限詳細",
+    "一部のデータソースにおける詳細な取得エラー時の挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "3843dc8b0bfd5ea54ee3cc62325bcd5e6d17742e",
+  "generated_at": "2026-11-18T12:04:08.284365+09:00"
+}

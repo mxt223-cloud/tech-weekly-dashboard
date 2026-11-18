@@ -1,0 +1,64 @@
+{
+  "summary_ja": "Claude-BugHunterは、バグハンティングや外部レッドチーム作業を支援するClaude Code用スキルバンドルであり、脆弱性クラスや攻撃マトリクス、検証ツールを提供します。",
+  "capabilities": [
+    {
+      "text": "トピックに応じて自動ロードされる83個のスキルと15個のスラッシュコマンドを提供します。",
+      "evidence_section": "What is this?"
+    },
+    {
+      "text": "Webアプリケーション脆弱性や企業の境界防御に対する攻撃パターン、チェーンテンプレートを含みます。",
+      "evidence_section": "What is this?"
+    },
+    {
+      "text": "Claude Codeだけでなく、OpenAI Codex CLIやHermes Agentなどの複数のエージェントハーネスに対応しています。",
+      "evidence_section": "Runs on multiple agent harnesses"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "バグバウンティハンティングにおけるWebアプリ、API、GraphQL、OAuthなどの脆弱性調査を行います。",
+      "basis": "README明記",
+      "evidence_section": "Scope — what this bundle is for, and what it isn't"
+    },
+    {
+      "text": "インターネット公開された企業のインフラストラクチャやクラウドIAMに対する外部レッドチーム評価を実施します。",
+      "basis": "README明記",
+      "evidence_section": "Scope — what this bundle is for, and what it isn't"
+    },
+    {
+      "text": "検出された脆弱性の検証や証拠の管理、レポーティング作業をサポートします。",
+      "basis": "README明記",
+      "evidence_section": "Scope — what this bundle is for, and what it isn't"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeのプラグインとしてclaude-bughunterをインストールして機能を利用する",
+    "steps": [
+      "/plugin marketplace add elementalsouls/Claude-BugHunter",
+      "/plugin install claude-bughunter@elementalsouls"
+    ],
+    "success_criteria": "83個のスキルと15個のコマンドが名前空間付きでロードされ利用可能になること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "What is this?",
+    "Quickstart",
+    "Runs on multiple agent harnesses",
+    "Scope — what this bundle is for, and what it isn't",
+    "What's inside",
+    "How it works",
+    "Authorization",
+    "Documentation",
+    "Why this exists",
+    "Roadmap",
+    "Sponsors",
+    "About",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "4182889da32bba8e37c28e1d5bec4231bf5046db",
+  "generated_at": "2026-11-18T12:04:12.054939+09:00"
+}

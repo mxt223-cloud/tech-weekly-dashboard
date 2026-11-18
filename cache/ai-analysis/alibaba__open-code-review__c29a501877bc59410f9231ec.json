@@ -1,0 +1,60 @@
+{
+  "summary_ja": "Alibabaが開発したオープンソースのAIコードレビューCLIツールです。決定論的パイプラインとLLMエージェントを組み合わせたハイブリッドアーキテクチャを採用しており、Gitの差分やファイル全体を正確に行単位でレビューします。",
+  "capabilities": [
+    {
+      "text": "Gitの差分を読み込み、変更されたファイルをAIエージェントに送信して行単位の正確なレビューコメントを生成する",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "差分だけでなく、ファイル全体をスキャンして未知のコードベースやディレクトリの監査を行うことができる",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "ネイティブモードとデリゲーションモードの2つのレビューモードをサポートしている",
+      "evidence_section": "Agent Skills"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ワークスペース内のステージング、未ステージング、および追跡されていないすべての変更をレビューする",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "フィーチャーブランチの変更をメインブランチとの分岐点からレビューする",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "Gitの履歴がないコードベースやディレクトリに対して、ファイル全体のフルスキャンを実行してレビューする",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "ツールをグローバルにインストールし、LLMプロバイダーを設定して最初のレビューを実行する",
+    "steps": [
+      "npm install -g @alibaba-group/open-code-review",
+      "ocr config provider",
+      "ocr config model",
+      "cd your-project",
+      "ocr review"
+    ],
+    "success_criteria": "プロジェクトのコード変更に対するレビュー結果が出力されること"
+  },
+  "evidence_sections": [
+    "What is Open Code Review?",
+    "Agent Skills",
+    "CLI",
+    "Quick Start"
+  ],
+  "unconfirmed": [
+    "対応しているすべてのLLMプロバイダーの完全なリスト",
+    "具体的なCI/CDパイプラインとの統合設定の全詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a5669f6323926276435f61c44fca26ba6b3df906",
+  "generated_at": "2026-11-18T12:04:15.048089+09:00"
+}
