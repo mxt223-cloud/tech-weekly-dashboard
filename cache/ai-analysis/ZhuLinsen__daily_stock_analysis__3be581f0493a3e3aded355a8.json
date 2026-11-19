@@ -1,0 +1,58 @@
+{
+  "summary_ja": "ZhuLinsen/daily_stock_analysisは、AI大模型を活用した多市場向けの株式自動分析・予測システムです。複数市場のデータやニュース、リアルタイムの情報を集約し、AIが分析した結果をダッシュボードや多様な通知チャネルを通じて自動配信します。",
+  "capabilities": [
+    {
+      "text": "AIによる決算やトレンド、売買ポイント、リスク警報を含む詳細な意思決定レポートの生成",
+      "evidence_section": "✨ 功能特性"
+    },
+    {
+      "text": "A株、港株、美株、日株、韓株、台株などの複数市場のデータやニュース、テクニカル指標の集約",
+      "evidence_section": "✨ 功能特性"
+    },
+    {
+      "text": "GitHub Actions、Docker、ローカル環境での定期実行および企業微信、飛書、Telegram、Discord、Slack、メールへの自動通知",
+      "evidence_section": "✨ 功能特性"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "毎日の取引時間終了後に各市場の自選股（お気に入り銘柄）の分析レポートを自動で受け取り、投資判断に役立てる",
+      "basis": "README明記",
+      "evidence_section": "🚀 快速开始"
+    },
+    {
+      "text": "Webインターフェースやチャットを通じて、AIエージェントに戦略的な銘柄の質問や過去データの確認を行う",
+      "basis": "README明記",
+      "evidence_section": "🤖 Agent 策略问股"
+    },
+    {
+      "text": "ローカル環境やDockerを活用して、外部サーバーに依存せず独自に株式分析パイプラインを運用する",
+      "basis": "提案",
+      "evidence_section": "🚀 快速开始"
+    }
+  ],
+  "first_trial": {
+    "goal": "リポジトリをクローンして依存関係をインストールし、ローカル環境で分析を実行する",
+    "steps": [
+      "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
+      "pip install -r requirements.txt",
+      "cp .env.example .env && vim .env",
+      "python main.py"
+    ],
+    "success_criteria": "エラーなくプログラムが実行され、株価分析処理が完了すること"
+  },
+  "evidence_sections": [
+    "✨ 功能特性",
+    "🚀 快速开始",
+    "🤖 Agent 策略问股"
+  ],
+  "unconfirmed": [
+    "実際にデプロイした際の使用するAIモデルの応答速度やコストの詳細",
+    "無料のデータソースが上游の制限を受けた場合の具体的なフォールバック挙動の全容"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "23af9944b9a8597549778661357d4eeb3039f72b",
+  "generated_at": "2026-11-19T11:44:40.125367+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "summary_ja": "Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。",
+  "capabilities": [
+    {
+      "text": "フロントエンドコードをHTML抽出やデザインシステム適用を通じてStitchデザインに変換・アップロードする",
+      "evidence_section": "Design (stitch-design)"
+    },
+    {
+      "text": "Stitchの画面をReactコンポーネントやReact Nativeコンポーネントに変換する",
+      "evidence_section": "Build (stitch-build)"
+    },
+    {
+      "text": "曖昧なUIのアイデアを洗練されたStitch最適化プロンプトに変換したり、DESIGN.mdファイルを生成・検証したりする",
+      "evidence_section": "Utilities (stitch-utilities)"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "フロントエンドのコードからデザインシステムを抽出し、DESIGN.mdファイルを作成する",
+      "basis": "README明記",
+      "evidence_section": "Design (stitch-design)"
+    },
+    {
+      "text": "Stitchプロジェクトの画面からRemotionを使用してウォークスルー動画を生成する",
+      "basis": "README明記",
+      "evidence_section": "Build (stitch-build)"
+    },
+    {
+      "text": "設定ページなどのあいまいなUI作成の指示を、詳細なUI/UXキーワードを含むプロンプトに拡張する",
+      "basis": "README明記",
+      "evidence_section": "Utilities (stitch-utilities)"
+    }
+  ],
+  "first_trial": {
+    "goal": "プラグインのヘルプドキュメントを表示して導入を確認する",
+    "steps": [
+      "npx plugins --help",
+      "npx skills --help"
+    ],
+    "success_criteria": "プラグインやスキルのヘルプドキュメントが表示されること"
+  },
+  "evidence_sections": [
+    "Design (stitch-design)",
+    "Build (stitch-build)",
+    "Utilities (stitch-utilities)",
+    "Quick Start"
+  ],
+  "unconfirmed": [
+    "対応するコーディングエージェントのうちCodexやOpenCode以外の詳細な内部動作",
+    "Stitch MCPサーバーの具体的なセットアップ手順の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
+  "generated_at": "2026-11-19T11:44:33.356605+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "summary_ja": "tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。",
+  "capabilities": [
+    {
+      "text": "15分間の日次市場チェックを含む複数の運用ワークフローの提供",
+      "evidence_section": "Recommended Starting Path"
+    },
+    {
+      "text": "週次長期ポートフォリオレビューの実施",
+      "evidence_section": "Recommended Starting Path"
+    },
+    {
+      "text": "取引終了後の記録と学習を行うためのワークフローの提供",
+      "evidence_section": "Recommended Starting Path"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "限られた時間の中で日次市場の状況を手早く確認する",
+      "basis": "README明記",
+      "evidence_section": "Recommended Starting Path"
+    },
+    {
+      "text": "長期投資や配当株・ETFを中心に据えつつ、規律あるスイングトレードを行う",
+      "basis": "README明記",
+      "evidence_section": "Claude Trading Skills"
+    },
+    {
+      "text": "取引の記録と振り返りを通じて意思決定プロセスを改善する",
+      "basis": "README明記",
+      "evidence_section": "Who This Is For"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロバイダーキーなしでオフラインクイックスタートを試す",
+    "steps": [
+      "Offline Quick Start (docs/en/offline-quickstart.md) を参照する"
+    ],
+    "success_criteria": "架空のレポートからNavigatorまでを確認できること"
+  },
+  "evidence_sections": [
+    "Claude Trading Skills",
+    "Who This Is For",
+    "Recommended Starting Path",
+    "Getting Started"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや具体的な実行コマンド",
+    "API要件の詳細な設定手順"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+  "generated_at": "2026-11-19T11:44:35.841151+09:00"
+}

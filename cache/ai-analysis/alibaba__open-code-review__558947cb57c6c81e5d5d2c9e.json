@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenCodeReviewは、確定的パイプラインとLLMエージェントを組み合わせたハイブリッドなアーキテクチャを持つAIコードレビューツールです。Gitの差分や全体ファイルのスキャンを対象に、行単位の正確なレビューコメントや組込みの多言語ルールセットによるチェックを提供します。",
+  "capabilities": [
+    {
+      "text": "Git差分の読取りと、設定可能なLLMを使用したツール機能付きエージェントによる行単位の正確な構造化レビューコメントの生成",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "差分だけでなく、意味のある差分がないコードベースやディレクトリ全体を監査するための全ファイルスキャン機能（ocr scan）",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "OpenAIやAnthropic互換のプロバイダー設定と、ネイティブモードまたはデリゲーションモードの実行選択",
+      "evidence_section": "How to Use"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "プロジェクトのGit差分（ステージ済み、未ステージ、未追跡の変更）をレビューする",
+      "basis": "README明記",
+      "evidence_section": "How to Use"
+    },
+    {
+      "text": "Gitの履歴がない状態や、変更履歴に依存せずにコードベースやディレクトリ全体をスキャンして監査する",
+      "basis": "README明記",
+      "evidence_section": "How to Use"
+    },
+    {
+      "text": "独自のAPIキーを使用せず、ホストとなるAIコーディングエージェントの認証やサブスクリプションを利用してレビューを行う",
+      "basis": "README明記",
+      "evidence_section": "How to Use"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIツールをインストールしてモデルを設定し、プロジェクトのレビューを実行する",
+    "steps": [
+      "npm install -g @alibaba-group/open-code-review",
+      "ocr config provider",
+      "ocr config model",
+      "cd your-project",
+      "ocr review"
+    ],
+    "success_criteria": "OCRのレビューが実行され、結果が出力されること"
+  },
+  "evidence_sections": [
+    "What is Open Code Review?",
+    "How to Use"
+  ],
+  "unconfirmed": [
+    "サポートされている具体的な全モデルの詳細なリスト",
+    "商用利用時における詳細な料金体系やAPI制限"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8728015fc50b50da660a793da84694df9652aa80",
+  "generated_at": "2026-11-19T11:44:30.684421+09:00"
+}
