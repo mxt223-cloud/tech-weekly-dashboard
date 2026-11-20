@@ -1,0 +1,62 @@
+{
+  "summary_ja": "Metaで開発されたオープンソースのデザインシステムであり、人間とAIアシスタントの両方が同じツールやリファレンスで開発を行えるように設計されています。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、CLIなどを提供しています。",
+  "capabilities": [
+    {
+      "text": "150種類以上のアクセシブルなReactコンポーネントを提供し、TypeScriptを完全にサポートしています。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "コンポーネントのソースコードをプロジェクト内に展開して独自にカスタマイズできるswizzle機能を備えています。",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "コンポーネントのドキュメント作成、テンプレート、スキャッフォールディング、テーマ、コードモッドを実行できるCLIツールを提供しています。",
+      "evidence_section": "Packages"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "人間とAIアシスタントが同じ一貫したデザインシステムを用いてWebアプリケーションのUIを構築する。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "Tailwind CSSやCSS Modulesなど、プロジェクト既存のスタイル手法と組み合わせてコンポーネントのスタイルを上書きする。",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "7種類用意されたカスタマイズ可能なテーマパッケージを利用してブランド独自の配色を適用する。",
+      "basis": "README明記",
+      "evidence_section": "Packages"
+    }
+  ],
+  "first_trial": {
+    "goal": "コアパッケージ、テーマ、CLI、および依存関係をインストールし、初期化セットアップを実行する",
+    "steps": [
+      "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
+      "npm install -D @astryxdesign/cli",
+      "npx @astryxdesign/cli init"
+    ],
+    "success_criteria": "初期化コマンドが正常に実行され、ガイドや設定ファイルが適切に保存されること"
+  },
+  "evidence_sections": [
+    "Overview",
+    "Getting Started",
+    "Packages",
+    "Principles",
+    "Architecture",
+    "Project Structure",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "実験的コンポーネントである@astryxdesign/labの詳細な公開スケジュールや安定版のリリース時期",
+    "@astryxdesign/vegaおよび@astryxdesign/chartsの正式な安定版リリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
+  "generated_at": "2026-11-20T11:30:33.353947+09:00"
+}

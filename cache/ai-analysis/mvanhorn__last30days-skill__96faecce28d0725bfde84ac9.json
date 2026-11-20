@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなど複数のプラットフォームを横断して直近30日間の情報を並行検索し、AIエージェントが評価・要約する検索エンジンツールです。",
+  "capabilities": [
+    {
+      "text": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどの複数プラットフォームを並行して横断検索する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "AIエージェントの判定により、実際のエンゲージメントや投票、資金などの評価に基づいて情報を合成する",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "商談の前に企業の直近30日間の動向や実態を把握する",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "ミーティングの前に相手の最近のツイートやポッドキャストの文字起こしを読み込む",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "新しいものを構築する前に、人々が実際に直面している問題を確認する",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeを使用してlast30daysスキルをインストールし、実行する",
+    "steps": [
+      "/plugin marketplace add mvanhorn/last30days-skill",
+      "/plugin install last30days",
+      "/last30days Peter Steinberger"
+    ],
+    "success_criteria": "指定したトピックについて直近30日間の情報が要約されて出力されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why this exists"
+  ],
+  "unconfirmed": [
+    "詳細なインストール以外のすべての機能やCLIコマンドの詳細な網羅",
+    "対応している全ソースの完全な一覧とそれぞれの詳細な動作仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "ee3f7f3b0f64f9ca996e579bfd2aa2383bace11b",
+  "generated_at": "2026-11-20T11:30:24.553643+09:00"
+}

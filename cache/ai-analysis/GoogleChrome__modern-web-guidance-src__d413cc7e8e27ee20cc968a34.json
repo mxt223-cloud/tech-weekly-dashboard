@@ -1,0 +1,56 @@
+{
+  "summary_ja": "GoogleChrome/modern-web-guidance-srcは、コーディングエージェント向けに最新のウェブプラットフォームの専門知識、ベストプラクティス、ブラウザ互換性データを提供するスキルセットおよびそのソースリポジトリです。レガシーなパターンの生成を防ぎ、最新のウェブ機能を活用した実装へと導きます。",
+  "capabilities": [
+    {
+      "text": "インタラクティブウィザードを使用したModern Web Guidanceのインストール",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "関連するガイドの検索、IDによるガイドの取得、コードベース内のレガシーパターンのスキャン",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "最新のブラウザAPI、パフォーマンスとアクセシビリティ、責任あるフォールバックに関するガイドラインの提供",
+      "evidence_section": "Why?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントに最新のウェブのベストプラクティスを組み込み、レガシーパターンを避けた実装を行わせる",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "CLIツールを用いて特定のUI実装に関連するガイドを検索し、エージェントのコンテキストウィンドウに提供する",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "既存のコードベースをスキャンしてモダン化が必要なレガシーパターンを検出する",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    }
+  ],
+  "first_trial": {
+    "goal": "インストールせずにコマンドを使用して関連ガイドを検索する",
+    "steps": [
+      "npx modern-web-guidance@latest search \"animate a dialog modal backdrop\""
+    ],
+    "success_criteria": "関連するガイドの検索結果が表示されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quickstart",
+    "Why?",
+    "What's Included?"
+  ],
+  "unconfirmed": [
+    "詳細な内部実装アルゴリズムや評価ダッシュボードの具体的な仕組み",
+    "対応しているすべてのガイドの網羅的な詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+  "generated_at": "2026-11-20T11:30:20.534907+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "summary_ja": "HermesEnablerは、任意のApple Watchでエルメスの文字盤を使えるようにするためのツールです。macOSまたはWindows環境でサイドロードやXcodeを使ってインストールし、Apple Watch上のアプリから設定を行います。",
+  "capabilities": [
+    {
+      "text": "任意のApple Watchデバイスでエルメスの文字盤を利用可能にする",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "macOS向けにSideloadlyを用いたIPAインストールやXcodeでのビルドをサポートする",
+      "evidence_section": "macOS"
+    },
+    {
+      "text": "Windows向けにコミュニティツールWatchBridgeを通じたインストールをサポートする",
+      "evidence_section": "Windows"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "非対応のApple Watchでエルメスの文字盤を表示させたい場合に、アプリをインストールして利用する",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "対応するwatchOSを搭載したApple Watchとペアリングされた環境で、HermesEnabler2をインストールしてアプリ内の手順を開始する",
+    "steps": [
+      "ReleasesからIPAをダウンロードする",
+      "macOSの場合はSideloadly等を使用してiPhoneおよびApple Watchへアプリをインストールする",
+      "Apple Watch上でHermesEnabler2を開き、アプリ内の手順に従う"
+    ],
+    "success_criteria": "Apple Watch上でHermesEnabler2が起動し、アプリ内の手順に進めること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Installation",
+    "macOS",
+    "Windows",
+    "Cautions",
+    "Credits"
+  ],
+  "unconfirmed": [
+    "アプリ内でエルメス文字盤を有効化する具体的な仕組みや手順の詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+  "generated_at": "2026-11-20T11:30:36.620461+09:00"
+}

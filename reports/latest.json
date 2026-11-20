@@ -1,102 +1,25 @@
 {
-  "generated_at": "2026-11-19T11:44:40.183841+09:00",
-  "week": "2026-11-19",
+  "generated_at": "2026-11-20T11:30:36.799742+09:00",
+  "week": "2026-11-20",
   "title": "Tech Daily",
   "github": [
     {
       "rank": 1,
-      "full_name": "GoogleChrome/modern-web-guidance-src",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars_total": 8865,
-      "forks_total": 741,
-      "stars_period": 7257,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-19T02:41:19Z",
-        "pushed_at": "2026-11-19T01:13:58Z",
-        "open_issues": 397,
-        "archived": false,
-        "size_kb": 175484,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "705d5b77f74d109637faffbdda9aacc035b181e8",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 110395,
-        "used_chars": 30000
-      },
-      "analysis": {
-        "summary_ja": "モダンなWebプラットフォームの専門知識やベストプラクティスをコーディングエージェントに組み込むためのスキルとドキュメントを提供するソースリポジトリです。古いパターンを避け、最新のWebプラットフォームの機能を活用した解決策へと導きます。",
-        "capabilities": [
-          {
-            "text": "対話型ウィザードを使用したモダンWebガイダンスのインストール機能",
-            "evidence_section": "Quickstart"
-          },
-          {
-            "text": "関連するガイドの検索、IDによるガイドの取得、コードベースのレガシーパターンのスキャンを行うCLI機能",
-            "evidence_section": "Quickstart"
-          },
-          {
-            "text": "ユーザーエクスペリエンス、CSSレイアウト、パフォーマンスに関する最新のWebプラットフォーム機能やガイドの提供",
-            "evidence_section": "What's Included?"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "コーディングエージェントが古いコードや冗長なJavaScriptを生成するのを防ぎ、最新のネイティブなWebプラットフォームソリューションを活用させる",
-            "basis": "README明記",
-            "evidence_section": "Why?"
-          },
-          {
-            "text": "プロジェクトのコードベースをスキャンしてレガシーパターンを検出し、モダン化するためのガイドを適用する",
-            "basis": "README明記",
-            "evidence_section": "Quickstart"
-          }
-        ],
-        "first_trial": {
-          "goal": "インストールせずにCLIを使用して関連ガイドを検索する",
-          "steps": [
-            "npx modern-web-guidance@latest search \"animate a dialog modal backdrop\""
-          ],
-          "success_criteria": "ダイアログモーダルの背景アニメーションに関連するガイドの検索結果が表示されること"
-        },
-        "evidence_sections": [
-          "Quickstart",
-          "Why?",
-          "What's Included?"
-        ],
-        "unconfirmed": [
-          "代替のインストール方法の詳細な手順"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "705d5b77f74d109637faffbdda9aacc035b181e8",
-        "generated_at": "2026-11-17T13:06:17.578847+09:00"
-      }
-    },
-    {
-      "rank": 2,
       "full_name": "backnotprop/plannotator",
       "url": "https://github.com/backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars_total": 13476,
-      "forks_total": 1356,
-      "stars_period": 3290,
+      "stars_total": 13683,
+      "forks_total": 1383,
+      "stars_period": 3468,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-19T02:42:05Z",
-        "pushed_at": "2026-11-19T02:44:05Z",
-        "open_issues": 209,
+        "updated_at": "2026-11-20T02:29:44Z",
+        "pushed_at": "2026-11-20T02:25:07Z",
+        "open_issues": 210,
         "archived": false,
-        "size_kb": 385284,
+        "size_kb": 393079,
         "topics": [
           "agents",
           "claude-code",
@@ -186,194 +109,191 @@
       }
     },
     {
-      "rank": 3,
-      "full_name": "meta/astryx",
-      "url": "https://github.com/meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
+      "rank": 2,
+      "full_name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars_total": 30616,
-      "forks_total": 2400,
-      "stars_period": 6250,
+      "stars_total": 10747,
+      "forks_total": 1389,
+      "stars_period": 1829,
       "api": {
         "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-19T02:43:20Z",
-        "pushed_at": "2026-11-19T02:42:56Z",
-        "open_issues": 1114,
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-20T02:27:57Z",
+        "pushed_at": "2026-11-18T05:00:25Z",
+        "open_issues": 25,
         "archived": false,
-        "size_kb": 1424606,
+        "size_kb": 256,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
+        "sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 9082,
-        "used_chars": 8900
+        "original_chars": 11129,
+        "used_chars": 11128
       },
       "analysis": {
-        "summary_ja": "Astryxは、Metaで社内開発されオープンソース化された、カスタマイズ可能でAIエージェントの利用にも対応したオープンソースのデザインシステムです。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、テンプレート、CLIを提供します。",
+        "summary_ja": "Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。",
         "capabilities": [
           {
-            "text": "150以上のアクセシブルなReactコンポーネントと完全なTypeScriptサポートを提供します。",
-            "evidence_section": "Overview"
+            "text": "フロントエンドコードをHTML抽出やデザインシステム適用を通じてStitchデザインに変換・アップロードする",
+            "evidence_section": "Design (stitch-design)"
           },
           {
-            "text": "ブランドレベルのテーマ機能、ダークモード、すぐに使えるテンプレートを備えています。",
-            "evidence_section": "Overview"
+            "text": "Stitchの画面をReactコンポーネントやReact Nativeコンポーネントに変換する",
+            "evidence_section": "Build (stitch-build)"
           },
           {
-            "text": "コンポーネントのソースコードをプロジェクトに取り込んで直接編集できる「swizzle」機能を持ちます。",
-            "evidence_section": "Overview"
+            "text": "曖昧なUIのアイデアを洗練されたStitch最適化プロンプトに変換したり、DESIGN.mdファイルを生成・検証したりする",
+            "evidence_section": "Utilities (stitch-utilities)"
           }
         ],
         "use_cases": [
           {
-            "text": "人手とAIアシスタントの両方で同じツールやAPIを用いてUIを構築する。",
+            "text": "フロントエンドのコードからデザインシステムを抽出し、DESIGN.mdファイルを作成する",
             "basis": "README明記",
-            "evidence_section": "Overview"
+            "evidence_section": "Design (stitch-design)"
           },
           {
-            "text": "Tailwind CSSやCSSモジュール、通常のCSSなど既存のプロジェクトのスタイリング方法で上書きして利用する。",
+            "text": "Stitchプロジェクトの画面からRemotionを使用してウォークスルー動画を生成する",
             "basis": "README明記",
-            "evidence_section": "Overview"
+            "evidence_section": "Build (stitch-build)"
           },
           {
-            "text": "CLIツールを活用したコンポーネントのドキュメント参照やテンプレート、スキャホーディング、テーマ管理を行う。",
+            "text": "設定ページなどのあいまいなUI作成の指示を、詳細なUI/UXキーワードを含むプロンプトに拡張する",
             "basis": "README明記",
-            "evidence_section": "Packages"
+            "evidence_section": "Utilities (stitch-utilities)"
           }
         ],
         "first_trial": {
-          "goal": "npmを使用して、Astryxのコアパッケージ、中立テーマ、依存関係、およびCLIをインストールする。",
+          "goal": "プラグインのヘルプドキュメントを表示して導入を確認する",
           "steps": [
-            "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
-            "npm install -D @astryxdesign/cli"
+            "npx plugins --help",
+            "npx skills --help"
           ],
-          "success_criteria": "エラーなくパッケージのインストールが完了し、プロジェクトの依存関係に追加されること。"
+          "success_criteria": "プラグインやスキルのヘルプドキュメントが表示されること"
         },
         "evidence_sections": [
-          "README冒頭",
-          "Overview",
-          "Getting Started",
-          "Packages",
-          "Principles",
-          "Architecture",
-          "Project Structure",
-          "Contributing",
-          "License"
+          "Design (stitch-design)",
+          "Build (stitch-build)",
+          "Utilities (stitch-utilities)",
+          "Quick Start"
         ],
         "unconfirmed": [
-          "具体的なNext.jsやVite、Tailwindなどの詳細な統合手順（パッケージ内の外部ドキュメントを参照する必要があるため）"
+          "対応するコーディングエージェントのうちCodexやOpenCode以外の詳細な内部動作",
+          "Stitch MCPサーバーの具体的なセットアップ手順の詳細"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": true,
-        "readme_sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-        "generated_at": "2026-11-15T10:12:57.423849+09:00"
+        "readme_sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
+        "generated_at": "2026-11-19T11:44:33.356605+09:00"
+      }
+    },
+    {
+      "rank": 3,
+      "full_name": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars_total": 9136,
+      "forks_total": 754,
+      "stars_period": 6858,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-20T02:28:46Z",
+        "pushed_at": "2026-11-20T01:30:18Z",
+        "open_issues": 391,
+        "archived": false,
+        "size_kb": 171218,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 110604,
+        "used_chars": 30000
+      },
+      "analysis": {
+        "summary_ja": "GoogleChrome/modern-web-guidance-srcは、コーディングエージェント向けに最新のウェブプラットフォームの専門知識、ベストプラクティス、ブラウザ互換性データを提供するスキルセットおよびそのソースリポジトリです。レガシーなパターンの生成を防ぎ、最新のウェブ機能を活用した実装へと導きます。",
+        "capabilities": [
+          {
+            "text": "インタラクティブウィザードを使用したModern Web Guidanceのインストール",
+            "evidence_section": "Quickstart"
+          },
+          {
+            "text": "関連するガイドの検索、IDによるガイドの取得、コードベース内のレガシーパターンのスキャン",
+            "evidence_section": "Quickstart"
+          },
+          {
+            "text": "最新のブラウザAPI、パフォーマンスとアクセシビリティ、責任あるフォールバックに関するガイドラインの提供",
+            "evidence_section": "Why?"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "コーディングエージェントに最新のウェブのベストプラクティスを組み込み、レガシーパターンを避けた実装を行わせる",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "CLIツールを用いて特定のUI実装に関連するガイドを検索し、エージェントのコンテキストウィンドウに提供する",
+            "basis": "README明記",
+            "evidence_section": "Quickstart"
+          },
+          {
+            "text": "既存のコードベースをスキャンしてモダン化が必要なレガシーパターンを検出する",
+            "basis": "README明記",
+            "evidence_section": "Quickstart"
+          }
+        ],
+        "first_trial": {
+          "goal": "インストールせずにコマンドを使用して関連ガイドを検索する",
+          "steps": [
+            "npx modern-web-guidance@latest search \"animate a dialog modal backdrop\""
+          ],
+          "success_criteria": "関連するガイドの検索結果が表示されること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Quickstart",
+          "Why?",
+          "What's Included?"
+        ],
+        "unconfirmed": [
+          "詳細な内部実装アルゴリズムや評価ダッシュボードの具体的な仕組み",
+          "対応しているすべてのガイドの網羅的な詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+        "generated_at": "2026-11-20T11:30:20.534907+09:00"
       }
     },
     {
       "rank": 4,
-      "full_name": "we-promise/sure",
-      "url": "https://github.com/we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars_total": 16520,
-      "forks_total": 1449,
-      "stars_period": 3866,
-      "api": {
-        "default_branch": "main",
-        "license": "AGPL-3.0",
-        "updated_at": "2026-11-19T02:40:24Z",
-        "pushed_at": "2026-11-19T02:30:50Z",
-        "open_issues": 1014,
-        "archived": false,
-        "size_kb": 176192,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 7806,
-        "used_chars": 7475
-      },
-      "analysis": {
-        "summary_ja": "we-promise/sure は、開発が終了した Maybe Finance プロジェクトのコミュニティ主導によるフォーク版であり、すべての人のための個人財務・資産管理アプリケーションです。Dockerによるセルフホストやブラウザ、デスクトップアプリ、モバイルアプリなどからのアクセスをサポートしています。",
-        "capabilities": [
-          {
-            "text": "Dockerを使用して個人財務アプリをセルフホストできる",
-            "evidence_section": "Hosting Sure"
-          },
-          {
-            "text": "ブラウザ、macOSデスクトップアプリ、モバイルアプリ、APIクライアント、LLMエージェントからアクセス可能",
-            "evidence_section": "Hosting Sure"
-          },
-          {
-            "text": "開発環境向けにデモデータをロードする機能を持つ",
-            "evidence_section": "Local Development Setup"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "個人や家族の資産管理・財務状況の把握のためにアプリを自前でホストして利用する",
-            "basis": "README明記",
-            "evidence_section": "Hosting Sure"
-          },
-          {
-            "text": "開発者がローカル環境でアプリのソースコードを実行し、貢献やカスタマイズを行う",
-            "basis": "README明記",
-            "evidence_section": "Local Development Setup"
-          }
-        ],
-        "first_trial": {
-          "goal": "ローカル環境でアプリケーションを起動し、動作を確認する",
-          "steps": [
-            "cd sure",
-            "cp .env.local.example .env.local",
-            "bin/setup",
-            "bin/dev",
-            "rake demo_data:default"
-          ],
-          "success_criteria": "http://localhost:3000 にアクセスしてアプリケーションが閲覧でき、デモデータの資格情報でログインできること"
-        },
-        "evidence_sections": [
-          "Hosting Sure",
-          "Local Development Setup",
-          "Backstory",
-          "License and Trademarks"
-        ],
-        "unconfirmed": [
-          "Maybe Financeからのフォーク以降に追加された具体的な新機能の全容",
-          "LLMエージェントやモバイルアプリとの連携の詳細な設定手順"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-        "generated_at": "2026-11-16T10:19:37.677022+09:00"
-      }
-    },
-    {
-      "rank": 5,
       "full_name": "alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars_total": 54195,
-      "forks_total": 4484,
-      "stars_period": 4383,
+      "stars_total": 54411,
+      "forks_total": 4502,
+      "stars_period": 4492,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-19T02:43:24Z",
-        "pushed_at": "2026-11-19T02:06:36Z",
-        "open_issues": 339,
+        "updated_at": "2026-11-20T02:27:54Z",
+        "pushed_at": "2026-11-19T12:28:52Z",
+        "open_issues": 343,
         "archived": false,
-        "size_kb": 55592,
+        "size_kb": 55871,
         "topics": [
           "agent",
           "agent-skills",
@@ -445,197 +365,129 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "8728015fc50b50da660a793da84694df9652aa80",
         "generated_at": "2026-11-19T11:44:30.684421+09:00"
       }
     },
     {
-      "rank": 6,
-      "full_name": "google-labs-code/stitch-skills",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars_total": 10428,
-      "forks_total": 1368,
-      "stars_period": 1567,
-      "api": {
-        "default_branch": "main",
-        "license": "Apache-2.0",
-        "updated_at": "2026-11-19T02:37:32Z",
-        "pushed_at": "2026-11-18T05:00:25Z",
-        "open_issues": 21,
-        "archived": false,
-        "size_kb": 256,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 11129,
-        "used_chars": 11128
-      },
-      "analysis": {
-        "summary_ja": "Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。",
-        "capabilities": [
-          {
-            "text": "フロントエンドコードをHTML抽出やデザインシステム適用を通じてStitchデザインに変換・アップロードする",
-            "evidence_section": "Design (stitch-design)"
-          },
-          {
-            "text": "Stitchの画面をReactコンポーネントやReact Nativeコンポーネントに変換する",
-            "evidence_section": "Build (stitch-build)"
-          },
-          {
-            "text": "曖昧なUIのアイデアを洗練されたStitch最適化プロンプトに変換したり、DESIGN.mdファイルを生成・検証したりする",
-            "evidence_section": "Utilities (stitch-utilities)"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "フロントエンドのコードからデザインシステムを抽出し、DESIGN.mdファイルを作成する",
-            "basis": "README明記",
-            "evidence_section": "Design (stitch-design)"
-          },
-          {
-            "text": "Stitchプロジェクトの画面からRemotionを使用してウォークスルー動画を生成する",
-            "basis": "README明記",
-            "evidence_section": "Build (stitch-build)"
-          },
-          {
-            "text": "設定ページなどのあいまいなUI作成の指示を、詳細なUI/UXキーワードを含むプロンプトに拡張する",
-            "basis": "README明記",
-            "evidence_section": "Utilities (stitch-utilities)"
-          }
-        ],
-        "first_trial": {
-          "goal": "プラグインのヘルプドキュメントを表示して導入を確認する",
-          "steps": [
-            "npx plugins --help",
-            "npx skills --help"
-          ],
-          "success_criteria": "プラグインやスキルのヘルプドキュメントが表示されること"
-        },
-        "evidence_sections": [
-          "Design (stitch-design)",
-          "Build (stitch-build)",
-          "Utilities (stitch-utilities)",
-          "Quick Start"
-        ],
-        "unconfirmed": [
-          "対応するコーディングエージェントのうちCodexやOpenCode以外の詳細な内部動作",
-          "Stitch MCPサーバーの具体的なセットアップ手順の詳細"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": false,
-        "readme_sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
-        "generated_at": "2026-11-19T11:44:33.356605+09:00"
-      }
-    },
-    {
-      "rank": 7,
-      "full_name": "tradermonty/claude-trading-skills",
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "rank": 5,
+      "full_name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars_total": 7091,
-      "forks_total": 1439,
-      "stars_period": 3242,
+      "stars_total": 70852,
+      "forks_total": 6312,
+      "stars_period": 3179,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-19T02:34:34Z",
-        "pushed_at": "2026-11-19T02:30:53Z",
-        "open_issues": 53,
+        "updated_at": "2026-11-20T02:29:32Z",
+        "pushed_at": "2026-11-19T08:23:36Z",
+        "open_issues": 23,
         "archived": false,
-        "size_kb": 74522,
-        "topics": []
+        "size_kb": 58515,
+        "topics": [
+          "ai-prompts",
+          "ai-skill",
+          "bluesky",
+          "claude",
+          "claude-code",
+          "clawhub",
+          "deep-research",
+          "hackernews",
+          "instagram",
+          "openclaw",
+          "polymarket",
+          "recency",
+          "reddit",
+          "research",
+          "social-media",
+          "tiktok",
+          "trends",
+          "twitter",
+          "web-search",
+          "youtube"
+        ]
       },
       "readme": {
         "status": "ok",
-        "sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+        "sha": "ee3f7f3b0f64f9ca996e579bfd2aa2383bace11b",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 44078,
-        "used_chars": 6167
+        "original_chars": 34932,
+        "used_chars": 4000
       },
       "analysis": {
-        "summary_ja": "tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。",
+        "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなど複数のプラットフォームを横断して直近30日間の情報を並行検索し、AIエージェントが評価・要約する検索エンジンツールです。",
         "capabilities": [
           {
-            "text": "15分間の日次市場チェックを含む複数の運用ワークフローの提供",
-            "evidence_section": "Recommended Starting Path"
+            "text": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどの複数プラットフォームを並行して横断検索する",
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "週次長期ポートフォリオレビューの実施",
-            "evidence_section": "Recommended Starting Path"
-          },
-          {
-            "text": "取引終了後の記録と学習を行うためのワークフローの提供",
-            "evidence_section": "Recommended Starting Path"
+            "text": "AIエージェントの判定により、実際のエンゲージメントや投票、資金などの評価に基づいて情報を合成する",
+            "evidence_section": "README冒頭"
           }
         ],
         "use_cases": [
           {
-            "text": "限られた時間の中で日次市場の状況を手早く確認する",
+            "text": "商談の前に企業の直近30日間の動向や実態を把握する",
             "basis": "README明記",
-            "evidence_section": "Recommended Starting Path"
+            "evidence_section": "Why this exists"
           },
           {
-            "text": "長期投資や配当株・ETFを中心に据えつつ、規律あるスイングトレードを行う",
+            "text": "ミーティングの前に相手の最近のツイートやポッドキャストの文字起こしを読み込む",
             "basis": "README明記",
-            "evidence_section": "Claude Trading Skills"
+            "evidence_section": "Why this exists"
           },
           {
-            "text": "取引の記録と振り返りを通じて意思決定プロセスを改善する",
+            "text": "新しいものを構築する前に、人々が実際に直面している問題を確認する",
             "basis": "README明記",
-            "evidence_section": "Who This Is For"
+            "evidence_section": "Why this exists"
           }
         ],
         "first_trial": {
-          "goal": "プロバイダーキーなしでオフラインクイックスタートを試す",
+          "goal": "Claude Codeを使用してlast30daysスキルをインストールし、実行する",
           "steps": [
-            "Offline Quick Start (docs/en/offline-quickstart.md) を参照する"
+            "/plugin marketplace add mvanhorn/last30days-skill",
+            "/plugin install last30days",
+            "/last30days Peter Steinberger"
           ],
-          "success_criteria": "架空のレポートからNavigatorまでを確認できること"
+          "success_criteria": "指定したトピックについて直近30日間の情報が要約されて出力されること"
         },
         "evidence_sections": [
-          "Claude Trading Skills",
-          "Who This Is For",
-          "Recommended Starting Path",
-          "Getting Started"
+          "README冒頭",
+          "Why this exists"
         ],
         "unconfirmed": [
-          "具体的なインストールコマンドや具体的な実行コマンド",
-          "API要件の詳細な設定手順"
+          "詳細なインストール以外のすべての機能やCLIコマンドの詳細な網羅",
+          "対応している全ソースの完全な一覧とそれぞれの詳細な動作仕様"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
-        "generated_at": "2026-11-19T11:44:35.841151+09:00"
+        "readme_sha": "ee3f7f3b0f64f9ca996e579bfd2aa2383bace11b",
+        "generated_at": "2026-11-20T11:30:24.553643+09:00"
       }
     },
     {
-      "rank": 8,
+      "rank": 6,
       "full_name": "ChromeDevTools/chrome-devtools-mcp",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars_total": 58228,
+      "stars_total": 58383,
       "forks_total": 4877,
-      "stars_period": 3143,
+      "stars_period": 3229,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-19T02:42:47Z",
-        "pushed_at": "2026-11-18T22:28:44Z",
-        "open_issues": 137,
+        "updated_at": "2026-11-20T02:27:08Z",
+        "pushed_at": "2026-11-19T22:21:17Z",
+        "open_issues": 135,
         "archived": false,
-        "size_kb": 13891,
+        "size_kb": 13709,
         "topics": [
           "browser",
           "chrome",
@@ -711,190 +563,412 @@
       }
     },
     {
-      "rank": 9,
-      "full_name": "anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills",
+      "rank": 7,
+      "full_name": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars_total": 197250,
-      "forks_total": 23102,
-      "stars_period": 4381,
+      "stars_total": 7270,
+      "forks_total": 1461,
+      "stars_period": 3385,
       "api": {
         "default_branch": "main",
-        "license": null,
-        "updated_at": "2026-11-19T02:42:52Z",
-        "pushed_at": "2026-11-16T14:22:50Z",
-        "open_issues": 1560,
+        "license": "MIT",
+        "updated_at": "2026-11-20T02:27:49Z",
+        "pushed_at": "2026-11-19T16:01:27Z",
+        "open_issues": 53,
         "archived": false,
-        "size_kb": 5542,
-        "topics": [
-          "agent-skills"
-        ]
+        "size_kb": 74933,
+        "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
+        "sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 5547,
-        "used_chars": 5546
+        "original_chars": 44078,
+        "used_chars": 6167
       },
       "analysis": {
-        "summary_ja": "Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。",
+        "summary_ja": "tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。",
         "capabilities": [
           {
-            "text": "Claudeが特殊なタスクを繰り返し完了できるように、指示、スクリプト、リソースのフォルダを動的に読み込ませる",
-            "evidence_section": "Skills"
+            "text": "15分間の日次市場チェックを含む複数の運用ワークフローの提供",
+            "evidence_section": "Recommended Starting Path"
           },
           {
-            "text": "Claude Codeのプラグインマーケットプレイスとしてこのリポジトリを登録し、プラグインをインストールして使用できるようにする",
-            "evidence_section": "Claude Code"
+            "text": "週次長期ポートフォリオレビューの実施",
+            "evidence_section": "Recommended Starting Path"
           },
           {
-            "text": "YAMLフロントマッターと指示を含むSKILL.mdファイルを持つフォルダを作成し、カスタムスキルを定義する",
-            "evidence_section": "Creating a Basic Skill"
+            "text": "取引終了後の記録と学習を行うためのワークフローの提供",
+            "evidence_section": "Recommended Starting Path"
           }
         ],
         "use_cases": [
           {
-            "text": "会社のブランドガイドラインに沿ったドキュメントの作成",
+            "text": "限られた時間の中で日次市場の状況を手早く確認する",
             "basis": "README明記",
-            "evidence_section": "Skills"
+            "evidence_section": "Recommended Starting Path"
           },
           {
-            "text": "組織固有のワークフローを使用したデータの分析",
+            "text": "長期投資や配当株・ETFを中心に据えつつ、規律あるスイングトレードを行う",
             "basis": "README明記",
-            "evidence_section": "Skills"
+            "evidence_section": "Claude Trading Skills"
           },
           {
-            "text": "PDFファイルのフォームフィールドの抽出などのドキュメント処理",
+            "text": "取引の記録と振り返りを通じて意思決定プロセスを改善する",
             "basis": "README明記",
-            "evidence_section": "Claude Code"
+            "evidence_section": "Who This Is For"
           }
         ],
         "first_trial": {
-          "goal": "Claude Codeでリポジトリをプラグインマーケットプレイスとして登録する",
+          "goal": "プロバイダーキーなしでオフラインクイックスタートを試す",
           "steps": [
-            "Claude Codeを開く",
-            "以下のコマンドを実行する: /plugin marketplace add anthropics/skills"
+            "Offline Quick Start (docs/en/offline-quickstart.md) を参照する"
           ],
-          "success_criteria": "リポジトリがClaude Codeのプラグインマーケットプレイスとして登録されること"
+          "success_criteria": "架空のレポートからNavigatorまでを確認できること"
         },
         "evidence_sections": [
-          "Skills",
-          "About This Repository",
-          "Skill Sets",
-          "Try in Claude Code, Claude.ai, and the API",
-          "Claude Code",
-          "Creating a Basic Skill"
+          "Claude Trading Skills",
+          "Who This Is For",
+          "Recommended Starting Path",
+          "Getting Started"
         ],
         "unconfirmed": [
-          "カスタムスキルの詳細なAPIリクエストの実装コード",
-          "各スキルが内部で行う処理の詳細なロジック"
+          "具体的なインストールコマンドや具体的な実行コマンド",
+          "API要件の詳細な設定手順"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": true,
-        "readme_sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
-        "generated_at": "2026-11-07T10:05:46.778228+09:00"
+        "readme_sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+        "generated_at": "2026-11-19T11:44:35.841151+09:00"
       }
     },
     {
-      "rank": 10,
-      "full_name": "ZhuLinsen/daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "stars_total": 73374,
-      "forks_total": 57905,
-      "stars_period": 3566,
+      "rank": 8,
+      "full_name": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars_total": 20655,
+      "forks_total": 2122,
+      "stars_period": 3455,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-19T02:43:29Z",
-        "pushed_at": "2026-11-18T15:38:50Z",
-        "open_issues": 45,
+        "updated_at": "2026-11-20T02:27:55Z",
+        "pushed_at": "2026-11-19T22:12:16Z",
+        "open_issues": 595,
         "archived": false,
-        "size_kb": 123599,
+        "size_kb": 90602,
         "topics": [
-          "a-stock",
-          "ai-agent",
-          "aigc",
-          "llm",
-          "quant",
-          "quantitative-finance",
-          "quantitative-trading"
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
         ]
       },
       "readme": {
         "status": "ok",
-        "sha": "23af9944b9a8597549778661357d4eeb3039f72b",
+        "sha": "511991757bea32ccb96348a311469f0fd345c88b",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 11329,
-        "used_chars": 10576
+        "original_chars": 19418,
+        "used_chars": 17038
       },
       "analysis": {
-        "summary_ja": "ZhuLinsen/daily_stock_analysisは、AI大模型を活用した多市場向けの株式自動分析・予測システムです。複数市場のデータやニュース、リアルタイムの情報を集約し、AIが分析した結果をダッシュボードや多様な通知チャネルを通じて自動配信します。",
+        "summary_ja": "AG-UIは、AIエージェントとユーザー向けアプリケーションを接続するためのオープンで軽量なイベントベースのプロトコルです。フレームワークに依存せず、双方向のイベントストリームを用いてエージェントの出力をクライアントで描画できるようにします。",
         "capabilities": [
           {
-            "text": "AIによる決算やトレンド、売買ポイント、リスク警報を含む詳細な意思決定レポートの生成",
-            "evidence_section": "✨ 功能特性"
+            "text": "フレームワークやアプリケーションに関わらず、AIエージェントを接続する双方向イベントストリームの提供",
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "A株、港株、美株、日株、韓株、台株などの複数市場のデータやニュース、テクニカル指標の集約",
-            "evidence_section": "✨ 功能特性"
+            "text": "TypeScript、Python、.NETなど公式SDKを用いたエージェントとクライアントの実装",
+            "evidence_section": "SDKs"
           },
           {
-            "text": "GitHub Actions、Docker、ローカル環境での定期実行および企業微信、飛書、Telegram、Discord、Slack、メールへの自動通知",
-            "evidence_section": "✨ 功能特性"
+            "text": "ストリーミングチャット、生成AIによるUI表示、共有状態管理、ヒューマン・イン・the・ループなどの多様な機能の構築",
+            "evidence_section": "Features: what you can build"
           }
         ],
         "use_cases": [
           {
-            "text": "毎日の取引時間終了後に各市場の自選股（お気に入り銘柄）の分析レポートを自動で受け取り、投資判断に役立てる",
+            "text": "同一のAIエージェントを用いてウェブアプリ、モバイルアプリ、ターミナル、Slackなどの多様なクライアントを駆動させる",
             "basis": "README明記",
-            "evidence_section": "🚀 快速开始"
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "Webインターフェースやチャットを通じて、AIエージェントに戦略的な銘柄の質問や過去データの確認を行う",
+            "text": "LangChain、CrewAI、Microsoft Agent Frameworkなどの各種エージェントフレームワークとの連携",
             "basis": "README明記",
-            "evidence_section": "🤖 Agent 策略问股"
+            "evidence_section": "Integrations"
           },
           {
-            "text": "ローカル環境やDockerを活用して、外部サーバーに依存せず独自に株式分析パイプラインを運用する",
-            "basis": "提案",
-            "evidence_section": "🚀 快速开始"
+            "text": "AIエージェントの思考プロセスやサブエージェントの動作をイベントとしてストリーミング表示する",
+            "basis": "README明記",
+            "evidence_section": "Features: what you can build"
           }
         ],
         "first_trial": {
-          "goal": "リポジトリをクローンして依存関係をインストールし、ローカル環境で分析を実行する",
+          "goal": "CLIを使用して新しいAG-UIアプリケーションの雛形を作成する",
           "steps": [
-            "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
-            "pip install -r requirements.txt",
-            "cp .env.example .env && vim .env",
-            "python main.py"
+            "npx create-ag-ui-app@latest",
+            "export OPENAI_API_KEY=\"sk-...\""
           ],
-          "success_criteria": "エラーなくプログラムが実行され、株価分析処理が完了すること"
+          "success_criteria": "CLIによるアプリのテンプレート生成と環境変数の設定が完了すること"
         },
         "evidence_sections": [
-          "✨ 功能特性",
-          "🚀 快速开始",
-          "🤖 Agent 策略问股"
+          "README冒頭",
+          "Quick start",
+          "Where AG-UI fits",
+          "Integrations",
+          "SDKs",
+          "Features: what you can build",
+          "How it works",
+          "Event reference",
+          "Community",
+          "Contributing",
+          "License"
         ],
         "unconfirmed": [
-          "実際にデプロイした際の使用するAIモデルの応答速度やコストの詳細",
-          "無料のデータソースが上游の制限を受けた場合の具体的なフォールバック挙動の全容"
+          "CLIで生成されるテンプレートの具体的な動作検証結果",
+          "コミュニティSDKの細かな実装差異"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
         "cached": false,
-        "readme_sha": "23af9944b9a8597549778661357d4eeb3039f72b",
-        "generated_at": "2026-11-19T11:44:40.125367+09:00"
+        "readme_sha": "511991757bea32ccb96348a311469f0fd345c88b",
+        "generated_at": "2026-11-20T11:30:29.708346+09:00"
+      }
+    },
+    {
+      "rank": 9,
+      "full_name": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars_total": 31010,
+      "forks_total": 2434,
+      "stars_period": 4977,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-20T02:28:36Z",
+        "pushed_at": "2026-11-20T02:28:23Z",
+        "open_issues": 943,
+        "archived": false,
+        "size_kb": 1440856,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 9418,
+        "used_chars": 9236
+      },
+      "analysis": {
+        "summary_ja": "Metaで開発されたオープンソースのデザインシステムであり、人間とAIアシスタントの両方が同じツールやリファレンスで開発を行えるように設計されています。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、CLIなどを提供しています。",
+        "capabilities": [
+          {
+            "text": "150種類以上のアクセシブルなReactコンポーネントを提供し、TypeScriptを完全にサポートしています。",
+            "evidence_section": "Overview"
+          },
+          {
+            "text": "コンポーネントのソースコードをプロジェクト内に展開して独自にカスタマイズできるswizzle機能を備えています。",
+            "evidence_section": "Overview"
+          },
+          {
+            "text": "コンポーネントのドキュメント作成、テンプレート、スキャッフォールディング、テーマ、コードモッドを実行できるCLIツールを提供しています。",
+            "evidence_section": "Packages"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "人間とAIアシスタントが同じ一貫したデザインシステムを用いてWebアプリケーションのUIを構築する。",
+            "basis": "README明記",
+            "evidence_section": "Overview"
+          },
+          {
+            "text": "Tailwind CSSやCSS Modulesなど、プロジェクト既存のスタイル手法と組み合わせてコンポーネントのスタイルを上書きする。",
+            "basis": "README明記",
+            "evidence_section": "Overview"
+          },
+          {
+            "text": "7種類用意されたカスタマイズ可能なテーマパッケージを利用してブランド独自の配色を適用する。",
+            "basis": "README明記",
+            "evidence_section": "Packages"
+          }
+        ],
+        "first_trial": {
+          "goal": "コアパッケージ、テーマ、CLI、および依存関係をインストールし、初期化セットアップを実行する",
+          "steps": [
+            "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
+            "npm install -D @astryxdesign/cli",
+            "npx @astryxdesign/cli init"
+          ],
+          "success_criteria": "初期化コマンドが正常に実行され、ガイドや設定ファイルが適切に保存されること"
+        },
+        "evidence_sections": [
+          "Overview",
+          "Getting Started",
+          "Packages",
+          "Principles",
+          "Architecture",
+          "Project Structure",
+          "Contributing",
+          "License"
+        ],
+        "unconfirmed": [
+          "実験的コンポーネントである@astryxdesign/labの詳細な公開スケジュールや安定版のリリース時期",
+          "@astryxdesign/vegaおよび@astryxdesign/chartsの正式な安定版リリース時期"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
+        "generated_at": "2026-11-20T11:30:33.353947+09:00"
+      }
+    },
+    {
+      "rank": 10,
+      "full_name": "pookjw/HermesEnabler",
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "stars_total": 2257,
+      "forks_total": 189,
+      "stars_period": 904,
+      "api": {
+        "default_branch": "main",
+        "license": "MIT",
+        "updated_at": "2026-11-20T02:28:26Z",
+        "pushed_at": "2026-11-19T02:24:27Z",
+        "open_issues": 84,
+        "archived": false,
+        "size_kb": 4494,
+        "topics": []
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 4570,
+        "used_chars": 4569
+      },
+      "analysis": {
+        "summary_ja": "HermesEnablerは、任意のApple Watchでエルメスの文字盤を使えるようにするためのツールです。macOSまたはWindows環境でサイドロードやXcodeを使ってインストールし、Apple Watch上のアプリから設定を行います。",
+        "capabilities": [
+          {
+            "text": "任意のApple Watchデバイスでエルメスの文字盤を利用可能にする",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "macOS向けにSideloadlyを用いたIPAインストールやXcodeでのビルドをサポートする",
+            "evidence_section": "macOS"
+          },
+          {
+            "text": "Windows向けにコミュニティツールWatchBridgeを通じたインストールをサポートする",
+            "evidence_section": "Windows"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "非対応のApple Watchでエルメスの文字盤を表示させたい場合に、アプリをインストールして利用する",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "対応するwatchOSを搭載したApple Watchとペアリングされた環境で、HermesEnabler2をインストールしてアプリ内の手順を開始する",
+          "steps": [
+            "ReleasesからIPAをダウンロードする",
+            "macOSの場合はSideloadly等を使用してiPhoneおよびApple Watchへアプリをインストールする",
+            "Apple Watch上でHermesEnabler2を開き、アプリ内の手順に従う"
+          ],
+          "success_criteria": "Apple Watch上でHermesEnabler2が起動し、アプリ内の手順に進めること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "Installation",
+          "macOS",
+          "Windows",
+          "Cautions",
+          "Credits"
+        ],
+        "unconfirmed": [
+          "アプリ内でエルメス文字盤を有効化する具体的な仕組みや手順の詳細"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+        "generated_at": "2026-11-20T11:30:36.620461+09:00"
       }
     }
   ],
   "zenn": [
+    {
+      "title": "自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス",
+      "url": "https://zenn.dev/nttdata_tech/articles/9562962cc181a1",
+      "author": "Kazuma Yoshimoto | 吉本 和真",
+      "published": "Thu, 19 Nov 2026 07:28:27 GMT",
+      "summary": "自分の仕事を、コーディングAgentに自律的に進めてほしい。\n一度伝えたことは覚えていて、それを踏まえて、仕事の種類を問わず「私の代わりに」動いてほしい。\nこれが一番の動機で、2026年7月に、自律作業のための個人のハーネスを作り始めました。\nほかにも困っていたことがあります。今でこそOrcaのように、いろいろなコーディングAgentを複数のターミナルで同じように扱える開発環境（ADE: Agentic Development Environment）がありますが、当時は過去"
+    },
+    {
+      "title": "AIが爆速で開発する時代の、自動テストとの向き合い方",
+      "url": "https://zenn.dev/daiaoki/articles/webterm-ai-era-testing",
+      "author": "Dai",
+      "published": "Thu, 19 Nov 2026 07:11:24 GMT",
+      "summary": "WebTerm Learnという、プロのエンジニアを目指す人のためのオンライン学習サービスを個人で開発しています。\n\nスライドで仕組みを学び、そのままブラウザの中のターミナルでコマンドを打って練習する、という形で学べます。\n\nありがたいことに、いまは1日1校のペースで教育機関に導入していただいています！その一方で、バグを出してはいけないというプレッシャーも日に日に大きくなっています。\n\n生徒「あれ、正しいコマンドを打ってるはずなのに次に進まない…？」\n先生「おかしいな、確認し"
+    },
+    {
+      "title": "Gemini Decision 1でスパム退治！",
+      "url": "https://zenn.dev/satoshi_yoneda/articles/decision-1-anti-spam",
+      "author": "米田 聡",
+      "published": "Thu, 19 Nov 2026 06:20:46 GMT",
+      "summary": "我国ではハッキングが相次ぎ、すでに数億人分（！）の個人情報が漏洩したとも聞きます。ネットに関わっていない、ごく一握りを除き、何らかの形で住所やメールアドレスなどが詐欺業者の手に渡っていることでしょう。実際、最近のスパムの急増には手を焼いてます。\n典型的なスパムは伝統的と実績のSpamassassinで防げますが、昨今の新手のスパム（詐欺を含む）は、本文に怪しい部分が少なく、Spamassassinのベイジアンフィルタには引っかからないスパムがかなり増えています。DMARCやD"
+    },
+    {
+      "title": "Microsoft-Decision-1.1公開！Microsoft-Decision-1との差はどれくらい？",
+      "url": "https://zenn.dev/microsoft/articles/ms-decision-1-1",
+      "author": "Junpei Tsuchida（07JP27）",
+      "published": "Thu, 19 Nov 2026 03:41:58 GMT",
+      "summary": "先月、Microsoft純正のDecisionモデル「Microsoft-Decision-1」を紹介する記事を書きました。\nhttps://zenn.dev/microsoft/articles/ms-decision-1\nそれから約1か月、早くも後継の「Microsoft-Decision-1.1」が一般提供（GA）になりました。\nhttps://commandline.microsoft.com/microsoft-decision-model-ga/\n発表では「1の2"
+    },
+    {
+      "title": "TypeScript 7.1 の Content Mapper で型の生成コマンドをなくす",
+      "url": "https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen",
+      "author": "toiroakr",
+      "published": "Thu, 19 Nov 2026 02:10:13 GMT",
+      "summary": "!\n2026-11-19 時点の情報です。この記事の動作は、typescript@next で入る 7.1.0-dev.20261118.1 で確かめています。公式の Iteration Plan では、Stable は 2026-11-24 の予定です。Content Mapper の API は、Stable に向けて安定化している途中で、細部が変わる可能性があります。\n\n\n はじめに\nContent Mapper は、TypeScript 7.1 で入る仕組みです。実装"
+    },
+    {
+      "title": "pstack 完全ガイド ─AIエージェントに雑なコード     を書かせない技術─",
+      "url": "https://zenn.dev/karamage/books/50c18e52e7d19e",
+      "author": "karamage",
+      "published": "Thu, 19 Nov 2026 01:52:32 GMT",
+      "summary": "AIエージェントに仕事を頼むと、自信満々の報告と一緒に検証されていない大量のコードが届いて困ったことはありませんか？\n\nAIエージェントを使い始めた人はもちろん、日常的に使いこなしているエンジニアでも、「どうすれば品質を担保できるのか」「どこまで自律的に仕事を任せられるのか」という疑問は共通の課題ではないでしょうか\n\npstack は、元React コアチームのエンジニア poteto（Lauren Tan）氏が、日々の開発で使っているスキルを公開したものです\n\n本書は、ps"
+    },
+    {
+      "title": "相次ぐOSSの脆弱性に、とりあえずクラウドWAF入れるだけでだいぶ違う話+Rootlessコンテナもいいぞ",
+      "url": "https://zenn.dev/kusuke/articles/98e178e6824cac",
+      "author": "Yusuke Kawabata",
+      "published": "Thu, 19 Nov 2026 01:34:24 GMT",
+      "summary": "昨日から今日にかけて、なんだかすごいことになっていますね。\n先日「PHP2Shell（CVE-2026-109618 / CVE-2026-109619）」というコアそのもののRCE（リモートコード実行）が出て大騒ぎになったと思ったら、JavaでもJavaのBase64デコーダ周りで「Java2Shell（CVE-2026-114938）」が出てきました。さらに今日（11月18日・米国時間）はnginxで10年前から潜んでいたHTTP/2のメモリ破壊バグ（CVE-2026-1"
+    },
+    {
+      "title": "ログの種別を整理して、何をどこまで残すか決めた話",
+      "url": "https://zenn.dev/dress_code/articles/a3bf34274af03f",
+      "author": "ぽこひで",
+      "published": "Thu, 19 Nov 2026 00:00:11 GMT",
+      "summary": "こんにちは。Dress Code株式会社でプロダクトエンジニアをしているぽこひで（@pokohide）です。今日（11/19）は、グラセフの発売日なので有給をとっている方も多いかもしれませんね。空き時間にでも読んでもらえると嬉しいです。\nDress Code株式会社は、2024年9月に設立された、人・採用・総務・IT などの領域を統合管理するワークフォースマネジメントプラットフォーム「DRESS CODE」を開発・提供する企業です。\n人事や労務のデータを預かる業務システムは、"
+    },
     {
       "title": "tsrs を導入したら oxlint の type-aware linting と typecheck が爆速になった話",
       "url": "https://zenn.dev/dress_code/articles/6c179ae5129131",
@@ -903,25 +977,11 @@
       "summary": "はじめに\nこんにちは。ぷーじ（@yug1224）です。\n以前の記事で、フロントエンドとバックエンドに oxlint、oxfmt、tsgo を入れた話を書きました。\nhttps://zenn.dev/dress_code/articles/d655cd7a43b936\nその後も type-aware linting と typecheck は CI の中で重いステップのままで、キャッシュが外れるとバックエンドの typecheck だけで 4 分以上かかっていました。\n2026"
     },
     {
-      "title": "QA効率化におけるAI活用事例",
-      "url": "https://zenn.dev/applibot_tech/articles/6b8ec8d196634b",
-      "author": "tanaka_shuntaro",
-      "published": "Wed, 18 Nov 2026 06:33:59 GMT",
-      "summary": "はじめに\nアプリボットの田中です。普段はUnityエンジニアとしてスマートフォンゲームを開発しており、最近はAIを活用した業務の効率化に取り組んでいます。\nプロジェクトメンバーとQA担当者が連携しながら、ここ半年ほど、AIを活用した仕組みをいくつかつくってきました。私を含むチームメンバーで作成した、以下の 3 つを紹介します。\n\n仕様書と実装の差分チェック\n不具合の起票数の予測\n設計書とマスターデータの静的チェック\n\n3 つとも、「AIにどこまで任せるか」を考えながらつくりま"
-    },
-    {
-      "title": "Odin に賭けたい人向けの Odin 言語入門ガイド",
-      "url": "https://zenn.dev/mizchi/articles/odin-introduction-guide",
-      "author": "mizchi",
-      "published": "Wed, 18 Nov 2026 05:53:00 GMT",
-      "summary": "この記事は自分が Odin 言語を読むためにAIに書かせたものをベースに、おもに所感などを中心に書き換えました。。\n\n「Odin について調べて」\n「bit_field が面白そう」\n「エラー処理どう書く？」\n\n自分は、「Odin は知ってたけど、まさか Rex で採用されるなんて」ぐらいの気持ちで調べています。Rex はすでに使っています。\n\nMitchell Hashimoto 氏が、Rex の Windows クライアントに Odin を使っていると紹介していました。2"
-    },
-    {
-      "title": "Snowflake の managed access schema で COPY GRANTS 付き CLONE がなぜか初回だけ失敗した話",
-      "url": "https://zenn.dev/finatext/articles/snowflake-managed-access-copy-grants",
-      "author": "okashunnn",
-      "published": "Wed, 18 Nov 2026 02:22:05 GMT",
-      "summary": "はじめに\nナウキャストでデータエンジニアをしている岡田です。\nナウキャストでは、Snowflake を主要なデータ基盤として、データホルダーからお預かりした様々なオルタナティブデータを加工・蓄積しています。その中でも私が所属している Financial Research 事業で扱っているデータについては、エンドユーザーにご提供する手段の 1 つとして Snowflake の Secure Data Sharing を採用しています。Secure Data Sharing は、"
+      "title": "正しいUIデザインと、意図のあるUIデザイン",
+      "url": "https://zenn.dev/praha/articles/08568310684aa3",
+      "author": "ゲントク",
+      "published": "Wed, 18 Nov 2026 05:55:40 GMT",
+      "summary": "個人開発のアプリではUIデザインを自分で決めることになります。HIGのようなガイドラインに従ったり、AIエージェントのデザインスキルを活用したりすることで、使う人を困らせない、正しいデザインに近づけることができます。\nしかし、ガイドライン同士はぶつかることがあります。たとえば、次の2つはどちらも正しいガイドラインです。\n\nユーザーの手間を減らす\n正確な値を記録する\n\n値を推定して自動で埋めれば手間は減りますが、正確さは落ちます。どちらを取るべきかは、誰のためのアプリかによって"
     },
     {
       "title": "ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録",
@@ -936,13 +996,6 @@
       "author": "mizchi",
       "published": "Tue, 17 Nov 2026 09:53:47 GMT",
       "summary": "AIがコードを書き散らして認知的負荷が限界に達する今日この頃、皆様いかがお過ごしでしょうか。\nAIによってテストカバレッジを上げることは容易になりました。僕も「分岐カバレッジを80%以上にしろ」みたいな雑なプロンプトを書いて昼飯に行ったりします。帰ってきたらヨシっ！ってマージするわけですね。\nところでそのヨシッは何を担保しているのでしょうか？\nこの記事は次の記事の熱い思いに応えるために書かれています。\nhttps://zenn.dev/polyco/articles/e05c"
-    },
-    {
-      "title": "Go Conference 2026実行委員を終えて",
-      "url": "https://zenn.dev/mire0726/articles/1f3f118662a0f5",
-      "author": "Suu",
-      "published": "Tue, 17 Nov 2026 07:21:52 GMT",
-      "summary": "Go Conference 2026が無事終わり二ヶ月ほど経ちました。記事を書こう書こうと思っていたのですが、すっかり引き延ばして今になってしまいました...\n言い訳をすると、開催から二ヶ月余りほぼ海外旅行をしており...\nけど来年の自分が振り返りを書くときに、前回との違いを感じて欲しいので！今更ですが書いていきます！！\n※この記事は全て人間が書いています\n\n はじめに\n今年は閉会式で、実行委員長の交代が発表されました。\n改めて、sivchariさん三年間実行委員長お疲れ様で"
     },
     {
       "title": "ローカルLLM入門",
@@ -973,25 +1026,11 @@
       "summary": "はじめに\nこんにちは。ぷーじ（@yug1224）です。\nMac の開発環境は dotfiles で管理していて、Homebrew のパッケージ、言語や CLI のツール、設定ファイルの symlink まで mise で入れています。新しい Mac でも make install を 1 回実行すれば、ほぼ元の環境に戻ります（2 回目以降の入れ直しは make mise）。\nその dotfiles の中で、Claude Code と Cursor 用の skill（SKILL"
     },
     {
-      "title": "フロントエンドの logic と UI は、エージェントの責任範囲で分けられるのか",
-      "url": "https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd",
-      "author": "mizumoto",
-      "published": "Mon, 16 Nov 2026 23:00:05 GMT",
-      "summary": "こんにちは、クロステック・マネジメント Foundation Dept. 所属の水本です。\nFoundation Dept. では、要求仕様書を渡すと、設計から実装、テスト、PR 作成までを AI エージェントが完走する開発基盤を作っています。\nエージェントに工程を自律的に回させるための実行の仕組みを、私たちはエージェントハーネスと呼んでいます（なぜエージェントハーネスで開発パイプラインを作っているのか）。\nこの記事では、その基盤でフロントエンドの実装をエージェントにどう分け"
-    },
-    {
       "title": "最近、コードを真面目に読まなくなった",
       "url": "https://zenn.dev/hiromoo/articles/reading-less-preparing-more",
       "author": "むた",
       "published": "Mon, 16 Nov 2026 15:24:23 GMT",
       "summary": "最近、コードを真面目に読むことが減りました。\nAIに実装を任せて、出てきた差分を最初から最後まで丁寧に追う。以前ほど、そういう時間を取らなくなっています。\n決して、不真面目になったつもりはありません。\n私の開発では、前提をきちんと整えておけば、AIが出すコードは大体正しいと感じることが増えたからです。\n大体正しいものを、毎回同じ熱量で読み込む。その時間に、以前と同じだけの意味があるのか。\nそれよりも、AIが正しく仕事をできる前提を整える方に、自分の時間を使う価値があるのではな"
-    },
-    {
-      "title": "最適化プロダクトにおけるUX",
-      "url": "https://zenn.dev/ctenopoma/books/optimization_ux",
-      "author": "クテノポマ",
-      "published": "Mon, 16 Nov 2026 12:47:52 GMT",
-      "summary": "数秒から数分かかる最適化計算を、プロダクトのUXとしてどう設計するかの4部11章。待ち時間の境界と「終わり」の3つの定義、所要時間分布から作る約束、MIPと進捗バーの相性問題、暫定解と品質メーター、ソルバーイベントのパイプライン、バッチと完了通知、実行不能の翻訳、体感性能、キャンセルの意味、再実行と解の安定性。シフト最適化を題材に、各章に触って動かせるHTMLデモが付きます。"
     },
     {
       "title": "QA生産性を爆上げさせるためのQA AIプラットフォーム構築",
@@ -1001,13 +1040,6 @@
       "summary": "akkiです。2026年7月からGA technologiesに出戻り入社してQAエンジニアをしています。\n元々は2021年〜2024年6月まで在籍していました。\n以前はインプロセスQAとして活動していましたが、現在はプロダクトのQAからは離れ、QAプロセス全体の改善や、インプロセスQAを行っているメンバーの支援をしています。\n今回は出戻り入社してから現在まで私が取り組んできた、QA AIプラットフォーム「GAQ」を構築し、チーム内に定着させて生産性を向上させてきた話をします"
     },
     {
-      "title": "物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門",
-      "url": "https://zenn.dev/turing_motors/articles/cea9e3c85611b2",
-      "author": "ymg_aq",
-      "published": "Mon, 16 Nov 2026 08:00:05 GMT",
-      "summary": "1. はじめに\nAIが「いま何を考えているのか」を、人間はどうやって知ればいいのでしょうか？\n我々チューリング株式会社は、カメラ映像から走行軌跡を直接予測するEnd-to-End（E2E）自動運転AIを開発しています。社内では、予測軌跡をカメラ映像に重ねる可視化が、実車試験の振り返りからデモ映像まで、あらゆる場面で使われています。\nhttps://x.com/DaisukeMAN/status/2109111871228022910\n自動運転AIが出力する「自車がこの先数秒間"
-    },
-    {
       "title": "CSS では書きにくいアニメーションを Web Animations API で書く",
       "url": "https://zenn.dev/omu_tryangle/articles/b5817393592229",
       "author": "hyakutake",
@@ -1015,39 +1047,25 @@
       "summary": "Web サイトに動きを付けたいとき、まず使うのは CSS の Transitions や Animations だと思います。ホバーしたら色が変わる、モーダルがふわっと出てくる、といった動きは CSS だけで書けますし、そのほうが簡単です。\nしかし、次のような場面では CSS アニメーションで書こうとすると少し面倒になります（できないわけではないですが）。\n\nボタンを押すたびに、同じアニメーションを最初から再生したい\nJavaScript で計算した値を使ってアニメーションさ"
     },
     {
-      "title": "Claude Codeが書いたコードを読む代わりにやっていること",
-      "url": "https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code",
-      "author": "Misugi Takeru",
-      "published": "Mon, 16 Nov 2026 05:04:44 GMT",
-      "summary": "はじめに\n個人で作っているWebアプリの実装を、最近はClaude Codeに任せています。PRが増えて全部は読みきれなくなり、ほとんどコードを読まずにマージしています。テストもレビューも動作確認も、AIにやらせています。\nところが、作業を終える前にテストを回すはずの仕組みが、一度もテストを動かしていませんでした。毎回0.1秒かからずに通っていて、確認は全部通っていたので、しばらく気づきませんでした。\nこの件もあって、コードを読まなくなった代わりに、今は次の2つをしています。"
-    },
-    {
       "title": "mizchi/mutator を入れてみた",
       "url": "https://zenn.dev/polyco/articles/e05cb28c569801",
       "author": "Tatsunori Nakano",
       "published": "Mon, 16 Nov 2026 03:49:18 GMT",
       "summary": "この記事に書いてあること\n\nAI が書きまくったテストに意味のないテストがどれくらいあるのか数えた\n金額や権限など間違えるとやばいところはテストの穴を 0 件にした\nStrykerJS と条件をそろえて比べてみたけど確かに速い\n開発ワークフロースキルに組み込んで、意味のないテストが書かれたらすぐ気づけるようにした\n機械的に拾えないものはスキルでカバー\n毎回全部は流さない。その作業で修正したコードとテストに関係するファイルだけ試す\n\n\n 前提となる構成\n\nWeb も API も"
-    },
-    {
-      "title": "GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった",
-      "url": "https://zenn.dev/kesin11/articles/20261114_github_issue_artifact",
-      "author": "Kesin11",
-      "published": "Sun, 15 Nov 2026 23:00:07 GMT",
-      "summary": "今年もGitHub Universeが開催され、多くの新機能が発表されました！\n一方、派手な発表の影に隠れてあまり目立っていませんが、普段使いしているIssueにも「Issue Artifact」という機能がPublic Previewとして追加されています。Issueに対してHTMLやMarkdownをArtifactとして添付し、Issue画面上の専用パネルでそのまま表示できる機能です。\nhttps://github.blog/changelog/2026-10-28-i"
     }
   ],
   "common_terms": [
-    "code",
     "agent",
+    "code",
     "skill",
-    "skills",
     "claude",
-    "llm",
     "web",
     "agents",
-    "data",
+    "skills",
+    "plan",
+    "llm",
     "cli",
-    "secure",
+    "codex",
     "workspace"
   ],
   "ai_analysis": {

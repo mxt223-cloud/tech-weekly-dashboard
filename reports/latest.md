@@ -1,52 +1,15 @@
-# Tech Daily — 2026-11-19
+# Tech Daily — 2026-11-20
 
-生成日時: 2026-11-19T11:44:40.183841+09:00  
+生成日時: 2026-11-20T11:30:36.799742+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
-## 1. [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)
-
-**概要:** モダンなWebプラットフォームの専門知識やベストプラクティスをコーディングエージェントに組み込むためのスキルとドキュメントを提供するソースリポジトリです。古いパターンを避け、最新のWebプラットフォームの機能を活用した解決策へと導きます。
-
-- 言語: TypeScript
-- 今週のスター: 7257
-- ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
-
-### できること
-
-- 対話型ウィザードを使用したモダンWebガイダンスのインストール機能（根拠: Quickstart）
-
-- 関連するガイドの検索、IDによるガイドの取得、コードベースのレガシーパターンのスキャンを行うCLI機能（根拠: Quickstart）
-
-- ユーザーエクスペリエンス、CSSレイアウト、パフォーマンスに関する最新のWebプラットフォーム機能やガイドの提供（根拠: What's Included?）
-
-
-### 利用例
-
-- コーディングエージェントが古いコードや冗長なJavaScriptを生成するのを防ぎ、最新のネイティブなWebプラットフォームソリューションを活用させる（README明記／根拠: Why?）
-
-- プロジェクトのコードベースをスキャンしてレガシーパターンを検出し、モダン化するためのガイドを適用する（README明記／根拠: Quickstart）
-
-
-### 最初に試すこと
-
-インストールせずにCLIを使用して関連ガイドを検索する
-
-1. npx modern-web-guidance@latest search "animate a dialog modal backdrop"
-
-
-成功の目安: ダイアログモーダルの背景アニメーションに関連するガイドの検索結果が表示されること
-
-未確認: 代替のインストール方法の詳細な手順
-
-
-## 2. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
+## 1. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
 
 **概要:** Plannotatorは、AIコーディングエージェントと人間の間のレビューを仲介するローカルのブラウザベースのツールです。エージェントの計画、仕様、HTML、コード差分などをブラウザ上でアノテーションやコメント、コードレビューを行い、そのフィードバックをワンクリックでエージェントに送り返すことができます。
 
 - 言語: TypeScript
-- 今週のスター: 3290
+- 今週のスター: 3468
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -82,100 +45,94 @@ Plannotatorのインストーラーを使用してツールを導入し、エー
 
 
 
-## 3. [meta/astryx](https://github.com/meta/astryx)
+## 2. [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
 
-**概要:** Astryxは、Metaで社内開発されオープンソース化された、カスタマイズ可能でAIエージェントの利用にも対応したオープンソースのデザインシステムです。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、テンプレート、CLIを提供します。
+**概要:** Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。
 
 - 言語: TypeScript
-- 今週のスター: 6250
-- ライセンス: MIT
+- 今週のスター: 1829
+- ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- 150以上のアクセシブルなReactコンポーネントと完全なTypeScriptサポートを提供します。（根拠: Overview）
+- フロントエンドコードをHTML抽出やデザインシステム適用を通じてStitchデザインに変換・アップロードする（根拠: Design (stitch-design)）
 
-- ブランドレベルのテーマ機能、ダークモード、すぐに使えるテンプレートを備えています。（根拠: Overview）
+- Stitchの画面をReactコンポーネントやReact Nativeコンポーネントに変換する（根拠: Build (stitch-build)）
 
-- コンポーネントのソースコードをプロジェクトに取り込んで直接編集できる「swizzle」機能を持ちます。（根拠: Overview）
+- 曖昧なUIのアイデアを洗練されたStitch最適化プロンプトに変換したり、DESIGN.mdファイルを生成・検証したりする（根拠: Utilities (stitch-utilities)）
 
 
 ### 利用例
 
-- 人手とAIアシスタントの両方で同じツールやAPIを用いてUIを構築する。（README明記／根拠: Overview）
+- フロントエンドのコードからデザインシステムを抽出し、DESIGN.mdファイルを作成する（README明記／根拠: Design (stitch-design)）
 
-- Tailwind CSSやCSSモジュール、通常のCSSなど既存のプロジェクトのスタイリング方法で上書きして利用する。（README明記／根拠: Overview）
+- Stitchプロジェクトの画面からRemotionを使用してウォークスルー動画を生成する（README明記／根拠: Build (stitch-build)）
 
-- CLIツールを活用したコンポーネントのドキュメント参照やテンプレート、スキャホーディング、テーマ管理を行う。（README明記／根拠: Packages）
+- 設定ページなどのあいまいなUI作成の指示を、詳細なUI/UXキーワードを含むプロンプトに拡張する（README明記／根拠: Utilities (stitch-utilities)）
 
 
 ### 最初に試すこと
 
-npmを使用して、Astryxのコアパッケージ、中立テーマ、依存関係、およびCLIをインストールする。
+プラグインのヘルプドキュメントを表示して導入を確認する
 
-1. npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+1. npx plugins --help
 
-2. npm install -D @astryxdesign/cli
-
-
-成功の目安: エラーなくパッケージのインストールが完了し、プロジェクトの依存関係に追加されること。
-
-未確認: 具体的なNext.jsやVite、Tailwindなどの詳細な統合手順（パッケージ内の外部ドキュメントを参照する必要があるため）
+2. npx skills --help
 
 
-## 4. [we-promise/sure](https://github.com/we-promise/sure)
+成功の目安: プラグインやスキルのヘルプドキュメントが表示されること
 
-**概要:** we-promise/sure は、開発が終了した Maybe Finance プロジェクトのコミュニティ主導によるフォーク版であり、すべての人のための個人財務・資産管理アプリケーションです。Dockerによるセルフホストやブラウザ、デスクトップアプリ、モバイルアプリなどからのアクセスをサポートしています。
+未確認: 対応するコーディングエージェントのうちCodexやOpenCode以外の詳細な内部動作／Stitch MCPサーバーの具体的なセットアップ手順の詳細
 
-- 言語: Ruby
-- 今週のスター: 3866
-- ライセンス: AGPL-3.0
-- AI分析状態: ok（キャッシュ）
+
+## 3. [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)
+
+**概要:** GoogleChrome/modern-web-guidance-srcは、コーディングエージェント向けに最新のウェブプラットフォームの専門知識、ベストプラクティス、ブラウザ互換性データを提供するスキルセットおよびそのソースリポジトリです。レガシーなパターンの生成を防ぎ、最新のウェブ機能を活用した実装へと導きます。
+
+- 言語: TypeScript
+- 今週のスター: 6858
+- ライセンス: Apache-2.0
+- AI分析状態: ok
 
 ### できること
 
-- Dockerを使用して個人財務アプリをセルフホストできる（根拠: Hosting Sure）
+- インタラクティブウィザードを使用したModern Web Guidanceのインストール（根拠: Quickstart）
 
-- ブラウザ、macOSデスクトップアプリ、モバイルアプリ、APIクライアント、LLMエージェントからアクセス可能（根拠: Hosting Sure）
+- 関連するガイドの検索、IDによるガイドの取得、コードベース内のレガシーパターンのスキャン（根拠: Quickstart）
 
-- 開発環境向けにデモデータをロードする機能を持つ（根拠: Local Development Setup）
+- 最新のブラウザAPI、パフォーマンスとアクセシビリティ、責任あるフォールバックに関するガイドラインの提供（根拠: Why?）
 
 
 ### 利用例
 
-- 個人や家族の資産管理・財務状況の把握のためにアプリを自前でホストして利用する（README明記／根拠: Hosting Sure）
+- コーディングエージェントに最新のウェブのベストプラクティスを組み込み、レガシーパターンを避けた実装を行わせる（README明記／根拠: README冒頭）
 
-- 開発者がローカル環境でアプリのソースコードを実行し、貢献やカスタマイズを行う（README明記／根拠: Local Development Setup）
+- CLIツールを用いて特定のUI実装に関連するガイドを検索し、エージェントのコンテキストウィンドウに提供する（README明記／根拠: Quickstart）
+
+- 既存のコードベースをスキャンしてモダン化が必要なレガシーパターンを検出する（README明記／根拠: Quickstart）
 
 
 ### 最初に試すこと
 
-ローカル環境でアプリケーションを起動し、動作を確認する
+インストールせずにコマンドを使用して関連ガイドを検索する
 
-1. cd sure
-
-2. cp .env.local.example .env.local
-
-3. bin/setup
-
-4. bin/dev
-
-5. rake demo_data:default
+1. npx modern-web-guidance@latest search "animate a dialog modal backdrop"
 
 
-成功の目安: http://localhost:3000 にアクセスしてアプリケーションが閲覧でき、デモデータの資格情報でログインできること
+成功の目安: 関連するガイドの検索結果が表示されること
 
-未確認: Maybe Financeからのフォーク以降に追加された具体的な新機能の全容／LLMエージェントやモバイルアプリとの連携の詳細な設定手順
+未確認: 詳細な内部実装アルゴリズムや評価ダッシュボードの具体的な仕組み／対応しているすべてのガイドの網羅的な詳細
 
 
-## 5. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
+## 4. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
 
 **概要:** OpenCodeReviewは、確定的パイプラインとLLMエージェントを組み合わせたハイブリッドなアーキテクチャを持つAIコードレビューツールです。Gitの差分や全体ファイルのスキャンを対象に、行単位の正確なレビューコメントや組込みの多言語ルールセットによるチェックを提供します。
 
 - 言語: Go
-- 今週のスター: 4383
+- 今週のスター: 4492
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -215,92 +172,53 @@ CLIツールをインストールしてモデルを設定し、プロジェク�
 未確認: サポートされている具体的な全モデルの詳細なリスト／商用利用時における詳細な料金体系やAPI制限
 
 
-## 6. [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
+## 5. [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
 
-**概要:** Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。
-
-- 言語: TypeScript
-- 今週のスター: 1567
-- ライセンス: Apache-2.0
-- AI分析状態: ok
-
-### できること
-
-- フロントエンドコードをHTML抽出やデザインシステム適用を通じてStitchデザインに変換・アップロードする（根拠: Design (stitch-design)）
-
-- Stitchの画面をReactコンポーネントやReact Nativeコンポーネントに変換する（根拠: Build (stitch-build)）
-
-- 曖昧なUIのアイデアを洗練されたStitch最適化プロンプトに変換したり、DESIGN.mdファイルを生成・検証したりする（根拠: Utilities (stitch-utilities)）
-
-
-### 利用例
-
-- フロントエンドのコードからデザインシステムを抽出し、DESIGN.mdファイルを作成する（README明記／根拠: Design (stitch-design)）
-
-- Stitchプロジェクトの画面からRemotionを使用してウォークスルー動画を生成する（README明記／根拠: Build (stitch-build)）
-
-- 設定ページなどのあいまいなUI作成の指示を、詳細なUI/UXキーワードを含むプロンプトに拡張する（README明記／根拠: Utilities (stitch-utilities)）
-
-
-### 最初に試すこと
-
-プラグインのヘルプドキュメントを表示して導入を確認する
-
-1. npx plugins --help
-
-2. npx skills --help
-
-
-成功の目安: プラグインやスキルのヘルプドキュメントが表示されること
-
-未確認: 対応するコーディングエージェントのうちCodexやOpenCode以外の詳細な内部動作／Stitch MCPサーバーの具体的なセットアップ手順の詳細
-
-
-## 7. [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)
-
-**概要:** tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。
+**概要:** Reddit、X、YouTube、Hacker News、Polymarket、Webなど複数のプラットフォームを横断して直近30日間の情報を並行検索し、AIエージェントが評価・要約する検索エンジンツールです。
 
 - 言語: Python
-- 今週のスター: 3242
+- 今週のスター: 3179
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- 15分間の日次市場チェックを含む複数の運用ワークフローの提供（根拠: Recommended Starting Path）
+- Reddit、X、YouTube、Hacker News、Polymarket、Webなどの複数プラットフォームを並行して横断検索する（根拠: README冒頭）
 
-- 週次長期ポートフォリオレビューの実施（根拠: Recommended Starting Path）
-
-- 取引終了後の記録と学習を行うためのワークフローの提供（根拠: Recommended Starting Path）
+- AIエージェントの判定により、実際のエンゲージメントや投票、資金などの評価に基づいて情報を合成する（根拠: README冒頭）
 
 
 ### 利用例
 
-- 限られた時間の中で日次市場の状況を手早く確認する（README明記／根拠: Recommended Starting Path）
+- 商談の前に企業の直近30日間の動向や実態を把握する（README明記／根拠: Why this exists）
 
-- 長期投資や配当株・ETFを中心に据えつつ、規律あるスイングトレードを行う（README明記／根拠: Claude Trading Skills）
+- ミーティングの前に相手の最近のツイートやポッドキャストの文字起こしを読み込む（README明記／根拠: Why this exists）
 
-- 取引の記録と振り返りを通じて意思決定プロセスを改善する（README明記／根拠: Who This Is For）
+- 新しいものを構築する前に、人々が実際に直面している問題を確認する（README明記／根拠: Why this exists）
 
 
 ### 最初に試すこと
 
-プロバイダーキーなしでオフラインクイックスタートを試す
+Claude Codeを使用してlast30daysスキルをインストールし、実行する
 
-1. Offline Quick Start (docs/en/offline-quickstart.md) を参照する
+1. /plugin marketplace add mvanhorn/last30days-skill
+
+2. /plugin install last30days
+
+3. /last30days Peter Steinberger
 
 
-成功の目安: 架空のレポートからNavigatorまでを確認できること
+成功の目安: 指定したトピックについて直近30日間の情報が要約されて出力されること
 
-未確認: 具体的なインストールコマンドや具体的な実行コマンド／API要件の詳細な設定手順
+未確認: 詳細なインストール以外のすべての機能やCLIコマンドの詳細な網羅／対応している全ソースの完全な一覧とそれぞれの詳細な動作仕様
 
 
-## 8. [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+## 6. [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 
 **概要:** chrome-devtools-mcpは、コーディングエージェントがライブのChromeブラウザを制御・検査できるようにするモデルコンテキストプロトコル(MCP)サーバーおよびCLIツールです。
 
 - 言語: TypeScript
-- 今週のスター: 3143
+- 今週のスター: 3229
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -336,108 +254,194 @@ MCPクライアントからパフォーマンスをチェックして動作を�
 
 
 
-## 9. [anthropics/skills](https://github.com/anthropics/skills)
+## 7. [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)
 
-**概要:** Claudeが専門的なタスクでパフォーマンスを向上させるため、動的に読み込む指示、スクリプト、リソースのフォルダ（スキル）を提供するAnthropicのリポジトリです。
+**概要:** tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。
 
 - 言語: Python
-- 今週のスター: 4381
-- ライセンス: 不明
+- 今週のスター: 3385
+- ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
 ### できること
 
-- Claudeが特殊なタスクを繰り返し完了できるように、指示、スクリプト、リソースのフォルダを動的に読み込ませる（根拠: Skills）
+- 15分間の日次市場チェックを含む複数の運用ワークフローの提供（根拠: Recommended Starting Path）
 
-- Claude Codeのプラグインマーケットプレイスとしてこのリポジトリを登録し、プラグインをインストールして使用できるようにする（根拠: Claude Code）
+- 週次長期ポートフォリオレビューの実施（根拠: Recommended Starting Path）
 
-- YAMLフロントマッターと指示を含むSKILL.mdファイルを持つフォルダを作成し、カスタムスキルを定義する（根拠: Creating a Basic Skill）
+- 取引終了後の記録と学習を行うためのワークフローの提供（根拠: Recommended Starting Path）
 
 
 ### 利用例
 
-- 会社のブランドガイドラインに沿ったドキュメントの作成（README明記／根拠: Skills）
+- 限られた時間の中で日次市場の状況を手早く確認する（README明記／根拠: Recommended Starting Path）
 
-- 組織固有のワークフローを使用したデータの分析（README明記／根拠: Skills）
+- 長期投資や配当株・ETFを中心に据えつつ、規律あるスイングトレードを行う（README明記／根拠: Claude Trading Skills）
 
-- PDFファイルのフォームフィールドの抽出などのドキュメント処理（README明記／根拠: Claude Code）
+- 取引の記録と振り返りを通じて意思決定プロセスを改善する（README明記／根拠: Who This Is For）
 
 
 ### 最初に試すこと
 
-Claude Codeでリポジトリをプラグインマーケットプレイスとして登録する
+プロバイダーキーなしでオフラインクイックスタートを試す
 
-1. Claude Codeを開く
-
-2. 以下のコマンドを実行する: /plugin marketplace add anthropics/skills
+1. Offline Quick Start (docs/en/offline-quickstart.md) を参照する
 
 
-成功の目安: リポジトリがClaude Codeのプラグインマーケットプレイスとして登録されること
+成功の目安: 架空のレポートからNavigatorまでを確認できること
 
-未確認: カスタムスキルの詳細なAPIリクエストの実装コード／各スキルが内部で行う処理の詳細なロジック
+未確認: 具体的なインストールコマンドや具体的な実行コマンド／API要件の詳細な設定手順
 
 
-## 10. [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
+## 8. [ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui)
 
-**概要:** ZhuLinsen/daily_stock_analysisは、AI大模型を活用した多市場向けの株式自動分析・予測システムです。複数市場のデータやニュース、リアルタイムの情報を集約し、AIが分析した結果をダッシュボードや多様な通知チャネルを通じて自動配信します。
+**概要:** AG-UIは、AIエージェントとユーザー向けアプリケーションを接続するためのオープンで軽量なイベントベースのプロトコルです。フレームワークに依存せず、双方向のイベントストリームを用いてエージェントの出力をクライアントで描画できるようにします。
 
-- 言語: Python
-- 今週のスター: 3566
+- 言語: TypeScript
+- 今週のスター: 3455
 - ライセンス: MIT
 - AI分析状態: ok
 
 ### できること
 
-- AIによる決算やトレンド、売買ポイント、リスク警報を含む詳細な意思決定レポートの生成（根拠: ✨ 功能特性）
+- フレームワークやアプリケーションに関わらず、AIエージェントを接続する双方向イベントストリームの提供（根拠: README冒頭）
 
-- A株、港株、美株、日株、韓株、台株などの複数市場のデータやニュース、テクニカル指標の集約（根拠: ✨ 功能特性）
+- TypeScript、Python、.NETなど公式SDKを用いたエージェントとクライアントの実装（根拠: SDKs）
 
-- GitHub Actions、Docker、ローカル環境での定期実行および企業微信、飛書、Telegram、Discord、Slack、メールへの自動通知（根拠: ✨ 功能特性）
+- ストリーミングチャット、生成AIによるUI表示、共有状態管理、ヒューマン・イン・the・ループなどの多様な機能の構築（根拠: Features: what you can build）
 
 
 ### 利用例
 
-- 毎日の取引時間終了後に各市場の自選股（お気に入り銘柄）の分析レポートを自動で受け取り、投資判断に役立てる（README明記／根拠: 🚀 快速开始）
+- 同一のAIエージェントを用いてウェブアプリ、モバイルアプリ、ターミナル、Slackなどの多様なクライアントを駆動させる（README明記／根拠: README冒頭）
 
-- Webインターフェースやチャットを通じて、AIエージェントに戦略的な銘柄の質問や過去データの確認を行う（README明記／根拠: 🤖 Agent 策略问股）
+- LangChain、CrewAI、Microsoft Agent Frameworkなどの各種エージェントフレームワークとの連携（README明記／根拠: Integrations）
 
-- ローカル環境やDockerを活用して、外部サーバーに依存せず独自に株式分析パイプラインを運用する（提案／根拠: 🚀 快速开始）
+- AIエージェントの思考プロセスやサブエージェントの動作をイベントとしてストリーミング表示する（README明記／根拠: Features: what you can build）
 
 
 ### 最初に試すこと
 
-リポジトリをクローンして依存関係をインストールし、ローカル環境で分析を実行する
+CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 
-1. git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis
+1. npx create-ag-ui-app@latest
 
-2. pip install -r requirements.txt
-
-3. cp .env.example .env && vim .env
-
-4. python main.py
+2. export OPENAI_API_KEY="sk-..."
 
 
-成功の目安: エラーなくプログラムが実行され、株価分析処理が完了すること
+成功の目安: CLIによるアプリのテンプレート生成と環境変数の設定が完了すること
 
-未確認: 実際にデプロイした際の使用するAIモデルの応答速度やコストの詳細／無料のデータソースが上游の制限を受けた場合の具体的なフォールバック挙動の全容
+未確認: CLIで生成されるテンプレートの具体的な動作検証結果／コミュニティSDKの細かな実装差異
+
+
+## 9. [meta/astryx](https://github.com/meta/astryx)
+
+**概要:** Metaで開発されたオープンソースのデザインシステムであり、人間とAIアシスタントの両方が同じツールやリファレンスで開発を行えるように設計されています。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、CLIなどを提供しています。
+
+- 言語: TypeScript
+- 今週のスター: 4977
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 150種類以上のアクセシブルなReactコンポーネントを提供し、TypeScriptを完全にサポートしています。（根拠: Overview）
+
+- コンポーネントのソースコードをプロジェクト内に展開して独自にカスタマイズできるswizzle機能を備えています。（根拠: Overview）
+
+- コンポーネントのドキュメント作成、テンプレート、スキャッフォールディング、テーマ、コードモッドを実行できるCLIツールを提供しています。（根拠: Packages）
+
+
+### 利用例
+
+- 人間とAIアシスタントが同じ一貫したデザインシステムを用いてWebアプリケーションのUIを構築する。（README明記／根拠: Overview）
+
+- Tailwind CSSやCSS Modulesなど、プロジェクト既存のスタイル手法と組み合わせてコンポーネントのスタイルを上書きする。（README明記／根拠: Overview）
+
+- 7種類用意されたカスタマイズ可能なテーマパッケージを利用してブランド独自の配色を適用する。（README明記／根拠: Packages）
+
+
+### 最初に試すこと
+
+コアパッケージ、テーマ、CLI、および依存関係をインストールし、初期化セットアップを実行する
+
+1. npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+
+2. npm install -D @astryxdesign/cli
+
+3. npx @astryxdesign/cli init
+
+
+成功の目安: 初期化コマンドが正常に実行され、ガイドや設定ファイルが適切に保存されること
+
+未確認: 実験的コンポーネントである@astryxdesign/labの詳細な公開スケジュールや安定版のリリース時期／@astryxdesign/vegaおよび@astryxdesign/chartsの正式な安定版リリース時期
+
+
+## 10. [pookjw/HermesEnabler](https://github.com/pookjw/HermesEnabler)
+
+**概要:** HermesEnablerは、任意のApple Watchでエルメスの文字盤を使えるようにするためのツールです。macOSまたはWindows環境でサイドロードやXcodeを使ってインストールし、Apple Watch上のアプリから設定を行います。
+
+- 言語: Objective-C
+- 今週のスター: 904
+- ライセンス: MIT
+- AI分析状態: ok
+
+### できること
+
+- 任意のApple Watchデバイスでエルメスの文字盤を利用可能にする（根拠: README冒頭）
+
+- macOS向けにSideloadlyを用いたIPAインストールやXcodeでのビルドをサポートする（根拠: macOS）
+
+- Windows向けにコミュニティツールWatchBridgeを通じたインストールをサポートする（根拠: Windows）
+
+
+### 利用例
+
+- 非対応のApple Watchでエルメスの文字盤を表示させたい場合に、アプリをインストールして利用する（README明記／根拠: README冒頭）
+
+
+### 最初に試すこと
+
+対応するwatchOSを搭載したApple Watchとペアリングされた環境で、HermesEnabler2をインストールしてアプリ内の手順を開始する
+
+1. ReleasesからIPAをダウンロードする
+
+2. macOSの場合はSideloadly等を使用してiPhoneおよびApple Watchへアプリをインストールする
+
+3. Apple Watch上でHermesEnabler2を開き、アプリ内の手順に従う
+
+
+成功の目安: Apple Watch上でHermesEnabler2が起動し、アプリ内の手順に進めること
+
+未確認: アプリ内でエルメス文字盤を有効化する具体的な仕組みや手順の詳細
 
 
 
 ## Zenn
 
+- [自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス](https://zenn.dev/nttdata_tech/articles/9562962cc181a1) — Kazuma Yoshimoto | 吉本 和真
+
+- [AIが爆速で開発する時代の、自動テストとの向き合い方](https://zenn.dev/daiaoki/articles/webterm-ai-era-testing) — Dai
+
+- [Gemini Decision 1でスパム退治！](https://zenn.dev/satoshi_yoneda/articles/decision-1-anti-spam) — 米田 聡
+
+- [Microsoft-Decision-1.1公開！Microsoft-Decision-1との差はどれくらい？](https://zenn.dev/microsoft/articles/ms-decision-1-1) — Junpei Tsuchida（07JP27）
+
+- [TypeScript 7.1 の Content Mapper で型の生成コマンドをなくす](https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen) — toiroakr
+
+- [pstack 完全ガイド ─AIエージェントに雑なコード     を書かせない技術─](https://zenn.dev/karamage/books/50c18e52e7d19e) — karamage
+
+- [相次ぐOSSの脆弱性に、とりあえずクラウドWAF入れるだけでだいぶ違う話+Rootlessコンテナもいいぞ](https://zenn.dev/kusuke/articles/98e178e6824cac) — Yusuke Kawabata
+
+- [ログの種別を整理して、何をどこまで残すか決めた話](https://zenn.dev/dress_code/articles/a3bf34274af03f) — ぽこひで
+
 - [tsrs を導入したら oxlint の type-aware linting と typecheck が爆速になった話](https://zenn.dev/dress_code/articles/6c179ae5129131) — ぷーじ
 
-- [QA効率化におけるAI活用事例](https://zenn.dev/applibot_tech/articles/6b8ec8d196634b) — tanaka_shuntaro
-
-- [Odin に賭けたい人向けの Odin 言語入門ガイド](https://zenn.dev/mizchi/articles/odin-introduction-guide) — mizchi
-
-- [Snowflake の managed access schema で COPY GRANTS 付き CLONE がなぜか初回だけ失敗した話](https://zenn.dev/finatext/articles/snowflake-managed-access-copy-grants) — okashunnn
+- [正しいUIデザインと、意図のあるUIデザイン](https://zenn.dev/praha/articles/08568310684aa3) — ゲントク
 
 - [ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録](https://zenn.dev/rimo/articles/12d6a7b1c58fcd) — t.kuriyama
 
 - [おい、 Mutation Test をやれ。テスト品質を、測るために](https://zenn.dev/mizchi/articles/mutation-test-quality) — mizchi
-
-- [Go Conference 2026実行委員を終えて](https://zenn.dev/mire0726/articles/1f3f118662a0f5) — Suu
 
 - [ローカルLLM入門](https://zenn.dev/port_inc/articles/ff974c7456f4db) — tesla
 
@@ -447,23 +451,13 @@ Claude Codeでリポジトリをプラグインマーケットプレイスとし
 
 - [mise + gh skill で、dotfiles から Agent Skills を管理する](https://zenn.dev/dress_code/articles/30bd78e1a67f87) — ぷーじ
 
-- [フロントエンドの logic と UI は、エージェントの責任範囲で分けられるのか](https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd) — mizumoto
-
 - [最近、コードを真面目に読まなくなった](https://zenn.dev/hiromoo/articles/reading-less-preparing-more) — むた
-
-- [最適化プロダクトにおけるUX](https://zenn.dev/ctenopoma/books/optimization_ux) — クテノポマ
 
 - [QA生産性を爆上げさせるためのQA AIプラットフォーム構築](https://zenn.dev/gatechnologies/articles/8bdea59269eb10) — akki
 
-- [物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門](https://zenn.dev/turing_motors/articles/cea9e3c85611b2) — ymg_aq
-
 - [CSS では書きにくいアニメーションを Web Animations API で書く](https://zenn.dev/omu_tryangle/articles/b5817393592229) — hyakutake
 
-- [Claude Codeが書いたコードを読む代わりにやっていること](https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code) — Misugi Takeru
-
 - [mizchi/mutator を入れてみた](https://zenn.dev/polyco/articles/e05cb28c569801) — Tatsunori Nakano
-
-- [GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった](https://zenn.dev/kesin11/articles/20261114_github_issue_artifact) — Kesin11
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

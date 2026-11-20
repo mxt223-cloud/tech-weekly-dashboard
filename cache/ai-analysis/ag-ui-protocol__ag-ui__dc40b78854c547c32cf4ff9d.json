@@ -1,0 +1,64 @@
+{
+  "summary_ja": "AG-UIは、AIエージェントとユーザー向けアプリケーションを接続するためのオープンで軽量なイベントベースのプロトコルです。フレームワークに依存せず、双方向のイベントストリームを用いてエージェントの出力をクライアントで描画できるようにします。",
+  "capabilities": [
+    {
+      "text": "フレームワークやアプリケーションに関わらず、AIエージェントを接続する双方向イベントストリームの提供",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "TypeScript、Python、.NETなど公式SDKを用いたエージェントとクライアントの実装",
+      "evidence_section": "SDKs"
+    },
+    {
+      "text": "ストリーミングチャット、生成AIによるUI表示、共有状態管理、ヒューマン・イン・the・ループなどの多様な機能の構築",
+      "evidence_section": "Features: what you can build"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "同一のAIエージェントを用いてウェブアプリ、モバイルアプリ、ターミナル、Slackなどの多様なクライアントを駆動させる",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "LangChain、CrewAI、Microsoft Agent Frameworkなどの各種エージェントフレームワークとの連携",
+      "basis": "README明記",
+      "evidence_section": "Integrations"
+    },
+    {
+      "text": "AIエージェントの思考プロセスやサブエージェントの動作をイベントとしてストリーミング表示する",
+      "basis": "README明記",
+      "evidence_section": "Features: what you can build"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIを使用して新しいAG-UIアプリケーションの雛形を作成する",
+    "steps": [
+      "npx create-ag-ui-app@latest",
+      "export OPENAI_API_KEY=\"sk-...\""
+    ],
+    "success_criteria": "CLIによるアプリのテンプレート生成と環境変数の設定が完了すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Quick start",
+    "Where AG-UI fits",
+    "Integrations",
+    "SDKs",
+    "Features: what you can build",
+    "How it works",
+    "Event reference",
+    "Community",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "CLIで生成されるテンプレートの具体的な動作検証結果",
+    "コミュニティSDKの細かな実装差異"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "511991757bea32ccb96348a311469f0fd345c88b",
+  "generated_at": "2026-11-20T11:30:29.708346+09:00"
+}
