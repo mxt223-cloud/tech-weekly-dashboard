@@ -1,6 +1,6 @@
-# Tech Daily — 2026-11-20
+# Tech Daily — 2026-11-21
 
-生成日時: 2026-11-20T11:30:36.799742+09:00  
+生成日時: 2026-11-21T11:42:10.962919+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Plannotatorは、AIコーディングエージェントと人間の間のレビューを仲介するローカルのブラウザベースのツールです。エージェントの計画、仕様、HTML、コード差分などをブラウザ上でアノテーションやコメント、コードレビューを行い、そのフィードバックをワンクリックでエージェントに送り返すことができます。
 
 - 言語: TypeScript
-- 今週のスター: 3468
+- 今週のスター: 3555
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -50,7 +50,7 @@ Plannotatorのインストーラーを使用してツールを導入し、エー
 **概要:** Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。
 
 - 言語: TypeScript
-- 今週のスター: 1829
+- 今週のスター: 2152
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -91,9 +91,9 @@ Plannotatorのインストーラーを使用してツールを導入し、エー
 **概要:** GoogleChrome/modern-web-guidance-srcは、コーディングエージェント向けに最新のウェブプラットフォームの専門知識、ベストプラクティス、ブラウザ互換性データを提供するスキルセットおよびそのソースリポジトリです。レガシーなパターンの生成を防ぎ、最新のウェブ機能を活用した実装へと導きます。
 
 - 言語: TypeScript
-- 今週のスター: 6858
+- 今週のスター: 5224
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -130,7 +130,7 @@ Plannotatorのインストーラーを使用してツールを導入し、エー
 **概要:** OpenCodeReviewは、確定的パイプラインとLLMエージェントを組み合わせたハイブリッドなアーキテクチャを持つAIコードレビューツールです。Gitの差分や全体ファイルのスキャンを対象に、行単位の正確なレビューコメントや組込みの多言語ルールセットによるチェックを提供します。
 
 - 言語: Go
-- 今週のスター: 4492
+- 今週のスター: 4457
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -177,9 +177,9 @@ CLIツールをインストールしてモデルを設定し、プロジェク�
 **概要:** Reddit、X、YouTube、Hacker News、Polymarket、Webなど複数のプラットフォームを横断して直近30日間の情報を並行検索し、AIエージェントが評価・要約する検索エンジンツールです。
 
 - 言語: Python
-- 今週のスター: 3179
+- 今週のスター: 3788
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -218,7 +218,7 @@ Claude Codeを使用してlast30daysスキルをインストールし、実行�
 **概要:** chrome-devtools-mcpは、コーディングエージェントがライブのChromeブラウザを制御・検査できるようにするモデルコンテキストプロトコル(MCP)サーバーおよびCLIツールです。
 
 - 言語: TypeScript
-- 今週のスター: 3229
+- 今週のスター: 3306
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -259,7 +259,7 @@ MCPクライアントからパフォーマンスをチェックして動作を�
 **概要:** tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。
 
 - 言語: Python
-- 今週のスター: 3385
+- 今週のスター: 3471
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -298,9 +298,9 @@ MCPクライアントからパフォーマンスをチェックして動作を�
 **概要:** AG-UIは、AIエージェントとユーザー向けアプリケーションを接続するためのオープンで軽量なイベントベースのプロトコルです。フレームワークに依存せず、双方向のイベントストリームを用いてエージェントの出力をクライアントで描画できるようにします。
 
 - 言語: TypeScript
-- 今週のスター: 3455
+- 今週のスター: 3621
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -339,9 +339,9 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 **概要:** Metaで開発されたオープンソースのデザインシステムであり、人間とAIアシスタントの両方が同じツールやリファレンスで開発を行えるように設計されています。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、CLIなどを提供しています。
 
 - 言語: TypeScript
-- 今週のスター: 4977
+- 今週のスター: 4131
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -382,9 +382,9 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 **概要:** HermesEnablerは、任意のApple Watchでエルメスの文字盤を使えるようにするためのツールです。macOSまたはWindows環境でサイドロードやXcodeを使ってインストールし、Apple Watch上のアプリから設定を行います。
 
 - 言語: Objective-C
-- 今週のスター: 904
+- 今週のスター: 582
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -419,13 +419,21 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 
 ## Zenn
 
+- [RTKの走行データ収集でAndroidの記録アプリを外から監視する](https://zenn.dev/nauh_blog/articles/b60cd6973c8a3f) — ヤナギ
+
+- [日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた](https://zenn.dev/chaki/articles/4545be3475fdb4) — chaki
+
+- [CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行](https://zenn.dev/levtech/articles/14befd8e727f32) — ナカジー
+
+- [MetaのMuseを使ってみた: 内部構造とセキュリティの調査](https://zenn.dev/shoyataguchi/articles/b1bc6a96d4b963) — Shoya Taguchi
+
+- [CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話](https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons) — hma2moto
+
+- [dbt v1 でメトリクスを一元管理する未来 〜Apache Ossie と Lightdash で試す〜](https://zenn.dev/kyami/articles/dbt-snowflake-apache-ossie) — kyami（キャミ）
+
 - [自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス](https://zenn.dev/nttdata_tech/articles/9562962cc181a1) — Kazuma Yoshimoto | 吉本 和真
 
 - [AIが爆速で開発する時代の、自動テストとの向き合い方](https://zenn.dev/daiaoki/articles/webterm-ai-era-testing) — Dai
-
-- [Gemini Decision 1でスパム退治！](https://zenn.dev/satoshi_yoneda/articles/decision-1-anti-spam) — 米田 聡
-
-- [Microsoft-Decision-1.1公開！Microsoft-Decision-1との差はどれくらい？](https://zenn.dev/microsoft/articles/ms-decision-1-1) — Junpei Tsuchida（07JP27）
 
 - [TypeScript 7.1 の Content Mapper で型の生成コマンドをなくす](https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen) — toiroakr
 
@@ -433,13 +441,9 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 
 - [相次ぐOSSの脆弱性に、とりあえずクラウドWAF入れるだけでだいぶ違う話+Rootlessコンテナもいいぞ](https://zenn.dev/kusuke/articles/98e178e6824cac) — Yusuke Kawabata
 
-- [ログの種別を整理して、何をどこまで残すか決めた話](https://zenn.dev/dress_code/articles/a3bf34274af03f) — ぽこひで
-
 - [tsrs を導入したら oxlint の type-aware linting と typecheck が爆速になった話](https://zenn.dev/dress_code/articles/6c179ae5129131) — ぷーじ
 
 - [正しいUIデザインと、意図のあるUIデザイン](https://zenn.dev/praha/articles/08568310684aa3) — ゲントク
-
-- [ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録](https://zenn.dev/rimo/articles/12d6a7b1c58fcd) — t.kuriyama
 
 - [おい、 Mutation Test をやれ。テスト品質を、測るために](https://zenn.dev/mizchi/articles/mutation-test-quality) — mizchi
 
@@ -449,11 +453,7 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 
 - [毎月6,000 AI Agentsを捌くためにキーボードを捨てた話](https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce) — Andy
 
-- [mise + gh skill で、dotfiles から Agent Skills を管理する](https://zenn.dev/dress_code/articles/30bd78e1a67f87) — ぷーじ
-
 - [最近、コードを真面目に読まなくなった](https://zenn.dev/hiromoo/articles/reading-less-preparing-more) — むた
-
-- [QA生産性を爆上げさせるためのQA AIプラットフォーム構築](https://zenn.dev/gatechnologies/articles/8bdea59269eb10) — akki
 
 - [CSS では書きにくいアニメーションを Web Animations API で書く](https://zenn.dev/omu_tryangle/articles/b5817393592229) — hyakutake
 
