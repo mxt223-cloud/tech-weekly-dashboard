@@ -1,0 +1,51 @@
+{
+  "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどから指定したトピックに関する直近30日間の情報を並行検索し、AIエージェントが要約を作成するスキルです。",
+  "capabilities": [
+    {
+      "text": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどの複数プラットフォームを並行して検索し、AIエージェントが要約を生成する。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "Claude Codeなどのプラグイン機構やnpxコマンドを通じて導入できる。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ビジネスの打ち合わせ前に、企業の直近30日間の動向や事実を調べる。",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "人物の最近のツイートやポッドキャストのトランスクリプトを会議前に確認する。",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "旅行の計画前に、アトラクションの状況やコミュニティの意見を調査する。",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeを利用してプラグインを追加・インストールする",
+    "steps": [
+      "/plugin marketplace add mvanhorn/last30days-skill",
+      "/plugin install last30days"
+    ],
+    "success_criteria": "Claude Code環境へプラグインが追加およびインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why this exists"
+  ],
+  "unconfirmed": [
+    "詳細なインストールオプション（claude.ai web、OpenClaw、手動）の具体的な手順",
+    "セットアップウィザードの詳細な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+  "generated_at": "2026-11-23T10:54:42.955500+09:00"
+}

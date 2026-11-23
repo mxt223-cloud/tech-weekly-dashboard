@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T10:29:29.745639+09:00",
-  "week": "2026-11-22",
+  "generated_at": "2026-11-23T10:54:47.833110+09:00",
+  "week": "2026-11-23",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars_total": 14175,
-      "forks_total": 1411,
-      "stars_period": 3396,
+      "stars_total": 14448,
+      "forks_total": 1430,
+      "stars_period": 2815,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-22T01:23:54Z",
-        "pushed_at": "2026-11-22T01:27:01Z",
-        "open_issues": 207,
+        "updated_at": "2026-11-23T01:50:17Z",
+        "pushed_at": "2026-11-23T01:49:36Z",
+        "open_issues": 206,
         "archived": false,
-        "size_kb": 407796,
+        "size_kb": 411241,
         "topics": [
           "agents",
           "claude-code",
@@ -114,15 +114,15 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars_total": 11453,
-      "forks_total": 1440,
-      "stars_period": 2431,
+      "stars_total": 11938,
+      "forks_total": 1475,
+      "stars_period": 2683,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-22T01:28:02Z",
+        "updated_at": "2026-11-23T01:50:40Z",
         "pushed_at": "2026-11-20T18:08:01Z",
-        "open_issues": 27,
+        "open_issues": 28,
         "archived": false,
         "size_kb": 271,
         "topics": []
@@ -199,17 +199,17 @@
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars_total": 9908,
-      "forks_total": 794,
-      "stars_period": 4400,
+      "stars_total": 10227,
+      "forks_total": 810,
+      "stars_period": 3575,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-22T01:26:06Z",
-        "pushed_at": "2026-11-20T22:14:50Z",
+        "updated_at": "2026-11-23T01:52:37Z",
+        "pushed_at": "2026-11-22T15:16:46Z",
         "open_issues": 384,
         "archived": false,
-        "size_kb": 171848,
+        "size_kb": 171954,
         "topics": []
       },
       "readme": {
@@ -283,17 +283,17 @@
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars_total": 55117,
-      "forks_total": 4566,
-      "stars_period": 4032,
+      "stars_total": 55430,
+      "forks_total": 4605,
+      "stars_period": 3700,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-22T01:10:10Z",
-        "pushed_at": "2026-11-21T08:41:09Z",
-        "open_issues": 342,
+        "updated_at": "2026-11-23T01:49:31Z",
+        "pushed_at": "2026-11-22T15:34:31Z",
+        "open_issues": 345,
         "archived": false,
-        "size_kb": 57824,
+        "size_kb": 58190,
         "topics": [
           "agent",
           "agent-skills",
@@ -305,69 +305,73 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "8728015fc50b50da660a793da84694df9652aa80",
+        "sha": "09245c00353c15e0d70d609636eaeef1c096a307",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 16353,
-        "used_chars": 14402
+        "original_chars": 16486,
+        "used_chars": 14535
       },
       "analysis": {
-        "summary_ja": "OpenCodeReviewは、確定的パイプラインとLLMエージェントを組み合わせたハイブリッドなアーキテクチャを持つAIコードレビューツールです。Gitの差分や全体ファイルのスキャンを対象に、行単位の正確なレビューコメントや組込みの多言語ルールセットによるチェックを提供します。",
+        "summary_ja": "OpenCodeReviewは、確実な決定論的パイプラインとLLMエージェントを組み合わせたハイブリッドアーキテクチャを採用する、AIを活用したコードレビューCLIツールです。",
         "capabilities": [
           {
-            "text": "Git差分の読取りと、設定可能なLLMを使用したツール機能付きエージェントによる行単位の正確な構造化レビューコメントの生成",
+            "text": "Gitの差分を読み込み、変更されたファイルをLLMエージェントに送信して、行単位の精度で構造化されたレビューコメントを生成します。",
             "evidence_section": "What is Open Code Review?"
           },
           {
-            "text": "差分だけでなく、意味のある差分がないコードベースやディレクトリ全体を監査するための全ファイルスキャン機能（ocr scan）",
+            "text": "ファイル全体のフルスキャンを実行し、意味のある差分がないコードベースやディレクトリの監査を行います。",
             "evidence_section": "What is Open Code Review?"
           },
           {
-            "text": "OpenAIやAnthropic互換のプロバイダー設定と、ネイティブモードまたはデリゲーションモードの実行選択",
-            "evidence_section": "How to Use"
+            "text": "OpenAIおよびAnthropicと互換性のあるモデルエンドポイントを設定して利用できます。",
+            "evidence_section": "What is Open Code Review?"
           }
         ],
         "use_cases": [
           {
-            "text": "プロジェクトのGit差分（ステージ済み、未ステージ、未追跡の変更）をレビューする",
+            "text": "開発中のコードの変更内容（ステージング済み、未ステージング、未追跡の変更）に対してワークスペースモードでコードレビューを実行する。",
             "basis": "README明記",
-            "evidence_section": "How to Use"
+            "evidence_section": "Quick Start"
           },
           {
-            "text": "Gitの履歴がない状態や、変更履歴に依存せずにコードベースやディレクトリ全体をスキャンして監査する",
+            "text": "機能ブランチの変更内容をメインブランチとの分岐点と比較してレビューする。",
             "basis": "README明記",
-            "evidence_section": "How to Use"
+            "evidence_section": "Quick Start"
           },
           {
-            "text": "独自のAPIキーを使用せず、ホストとなるAIコーディングエージェントの認証やサブスクリプションを利用してレビューを行う",
+            "text": "履歴がない場合やコードベース全体の監査のために、リポジトリ全体または特定ディレクトリを対象にファイル全体のフルスキャンを実行する。",
             "basis": "README明記",
-            "evidence_section": "How to Use"
+            "evidence_section": "Quick Start"
           }
         ],
         "first_trial": {
-          "goal": "CLIツールをインストールしてモデルを設定し、プロジェクトのレビューを実行する",
+          "goal": "CLIツールをインストールしてLLMを設定し、コードレビューまたはスキャンを実行する",
           "steps": [
             "npm install -g @alibaba-group/open-code-review",
             "ocr config provider",
             "ocr config model",
-            "cd your-project",
             "ocr review"
           ],
-          "success_criteria": "OCRのレビューが実行され、結果が出力されること"
+          "success_criteria": "設定したプロバイダーとモデルを使用してコードレビューが実行され、結果が出力されること"
         },
         "evidence_sections": [
           "What is Open Code Review?",
-          "How to Use"
+          "Benchmark",
+          "Why Open Code Review?",
+          "How to Use",
+          "Documentation",
+          "Contributing",
+          "License"
         ],
         "unconfirmed": [
-          "サポートされている具体的な全モデルの詳細なリスト",
-          "商用利用時における詳細な料金体系やAPI制限"
+          "具体的なマルチ言語ルールセットの詳細や対応している個別ルールの網羅的なリスト",
+          "サポートされているすべてのモデルプロバイダーの完全な一覧"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "8728015fc50b50da660a793da84694df9652aa80",
-        "generated_at": "2026-11-19T11:44:30.684421+09:00"
+        "cached": false,
+        "readme_sha": "09245c00353c15e0d70d609636eaeef1c096a307",
+        "generated_at": "2026-11-23T10:54:40.932377+09:00"
       }
     },
     {
@@ -376,99 +380,98 @@
       "url": "https://github.com/mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars_total": 72018,
-      "forks_total": 6375,
-      "stars_period": 4198,
+      "stars_total": 72761,
+      "forks_total": 6427,
+      "stars_period": 4731,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-22T01:28:58Z",
-        "pushed_at": "2026-11-21T21:45:04Z",
-        "open_issues": 18,
+        "updated_at": "2026-11-23T01:52:17Z",
+        "pushed_at": "2026-11-23T01:00:01Z",
+        "open_issues": 23,
         "archived": false,
-        "size_kb": 57940,
+        "size_kb": 58389,
         "topics": [
-          "ai-prompts",
-          "ai-skill",
-          "bluesky",
-          "claude",
-          "claude-code",
-          "clawhub",
-          "deep-research",
-          "hackernews",
+          "agent-skills",
+          "artificial-intelligence",
+          "automation",
+          "bot",
+          "command-line",
+          "data-science",
+          "dsh",
+          "dsh-plugin",
+          "golang",
           "instagram",
-          "openclaw",
+          "llms",
+          "nlp",
+          "osint",
           "polymarket",
-          "recency",
+          "python3",
           "reddit",
-          "research",
-          "social-media",
+          "terminal",
           "tiktok",
-          "trends",
           "twitter",
-          "web-search",
           "youtube"
         ]
       },
       "readme": {
         "status": "ok",
-        "sha": "ee3f7f3b0f64f9ca996e579bfd2aa2383bace11b",
+        "sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 34932,
+        "original_chars": 35419,
         "used_chars": 4000
       },
       "analysis": {
-        "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなど複数のプラットフォームを横断して直近30日間の情報を並行検索し、AIエージェントが評価・要約する検索エンジンツールです。",
+        "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどから指定したトピックに関する直近30日間の情報を並行検索し、AIエージェントが要約を作成するスキルです。",
         "capabilities": [
           {
-            "text": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどの複数プラットフォームを並行して横断検索する",
+            "text": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどの複数プラットフォームを並行して検索し、AIエージェントが要約を生成する。",
             "evidence_section": "README冒頭"
           },
           {
-            "text": "AIエージェントの判定により、実際のエンゲージメントや投票、資金などの評価に基づいて情報を合成する",
+            "text": "Claude Codeなどのプラグイン機構やnpxコマンドを通じて導入できる。",
             "evidence_section": "README冒頭"
           }
         ],
         "use_cases": [
           {
-            "text": "商談の前に企業の直近30日間の動向や実態を把握する",
+            "text": "ビジネスの打ち合わせ前に、企業の直近30日間の動向や事実を調べる。",
             "basis": "README明記",
             "evidence_section": "Why this exists"
           },
           {
-            "text": "ミーティングの前に相手の最近のツイートやポッドキャストの文字起こしを読み込む",
+            "text": "人物の最近のツイートやポッドキャストのトランスクリプトを会議前に確認する。",
             "basis": "README明記",
             "evidence_section": "Why this exists"
           },
           {
-            "text": "新しいものを構築する前に、人々が実際に直面している問題を確認する",
+            "text": "旅行の計画前に、アトラクションの状況やコミュニティの意見を調査する。",
             "basis": "README明記",
             "evidence_section": "Why this exists"
           }
         ],
         "first_trial": {
-          "goal": "Claude Codeを使用してlast30daysスキルをインストールし、実行する",
+          "goal": "Claude Codeを利用してプラグインを追加・インストールする",
           "steps": [
             "/plugin marketplace add mvanhorn/last30days-skill",
-            "/plugin install last30days",
-            "/last30days Peter Steinberger"
+            "/plugin install last30days"
           ],
-          "success_criteria": "指定したトピックについて直近30日間の情報が要約されて出力されること"
+          "success_criteria": "Claude Code環境へプラグインが追加およびインストールされること"
         },
         "evidence_sections": [
           "README冒頭",
           "Why this exists"
         ],
         "unconfirmed": [
-          "詳細なインストール以外のすべての機能やCLIコマンドの詳細な網羅",
-          "対応している全ソースの完全な一覧とそれぞれの詳細な動作仕様"
+          "詳細なインストールオプション（claude.ai web、OpenClaw、手動）の具体的な手順",
+          "セットアップウィザードの詳細な挙動"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "ee3f7f3b0f64f9ca996e579bfd2aa2383bace11b",
-        "generated_at": "2026-11-20T11:30:24.553643+09:00"
+        "cached": false,
+        "readme_sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+        "generated_at": "2026-11-23T10:54:42.955500+09:00"
       }
     },
     {
@@ -477,17 +480,17 @@
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars_total": 58697,
-      "forks_total": 4906,
-      "stars_period": 2795,
+      "stars_total": 58851,
+      "forks_total": 4916,
+      "stars_period": 2268,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-22T01:13:43Z",
+        "updated_at": "2026-11-23T01:45:43Z",
         "pushed_at": "2026-11-22T01:06:14Z",
-        "open_issues": 139,
+        "open_issues": 138,
         "archived": false,
-        "size_kb": 13803,
+        "size_kb": 13797,
         "topics": [
           "browser",
           "chrome",
@@ -568,17 +571,17 @@
       "url": "https://github.com/tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars_total": 7631,
-      "forks_total": 1480,
-      "stars_period": 3113,
+      "stars_total": 7799,
+      "forks_total": 1497,
+      "stars_period": 2616,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-22T01:24:18Z",
-        "pushed_at": "2026-11-22T00:12:04Z",
-        "open_issues": 51,
+        "updated_at": "2026-11-23T01:48:33Z",
+        "pushed_at": "2026-11-23T01:54:22Z",
+        "open_issues": 54,
         "archived": false,
-        "size_kb": 72164,
+        "size_kb": 73575,
         "topics": []
       },
       "readme": {
@@ -652,17 +655,17 @@
       "url": "https://github.com/ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars_total": 21023,
-      "forks_total": 2144,
-      "stars_period": 3792,
+      "stars_total": 21205,
+      "forks_total": 2157,
+      "stars_period": 3620,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-22T01:25:07Z",
-        "pushed_at": "2026-11-21T18:51:48Z",
-        "open_issues": 601,
+        "updated_at": "2026-11-23T01:53:26Z",
+        "pushed_at": "2026-11-22T21:50:14Z",
+        "open_issues": 605,
         "archived": false,
-        "size_kb": 89885,
+        "size_kb": 89849,
         "topics": [
           "ag-ui-protocol",
           "agent-frontend",
@@ -750,68 +753,68 @@
       "url": "https://github.com/meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars_total": 31818,
-      "forks_total": 2500,
-      "stars_period": 3967,
+      "stars_total": 32249,
+      "forks_total": 2530,
+      "stars_period": 3626,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-22T01:28:46Z",
-        "pushed_at": "2026-11-22T01:28:42Z",
-        "open_issues": 945,
+        "updated_at": "2026-11-23T01:51:03Z",
+        "pushed_at": "2026-11-23T01:44:06Z",
+        "open_issues": 785,
         "archived": false,
-        "size_kb": 1390069,
+        "size_kb": 1388962,
         "topics": []
       },
       "readme": {
         "status": "ok",
-        "sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
+        "sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 9418,
-        "used_chars": 9236
+        "original_chars": 9589,
+        "used_chars": 9407
       },
       "analysis": {
-        "summary_ja": "Metaで開発されたオープンソースのデザインシステムであり、人間とAIアシスタントの両方が同じツールやリファレンスで開発を行えるように設計されています。150以上のアクセシブルなコンポーネント、テーマ機能、ダークモード、CLIなどを提供しています。",
+        "summary_ja": "Astryxは、Metaで開発されたオープンソースのカスタマイズ可能なデザインシステムです。React 19以降とStyleXを基盤にし、150以上のアクセシブルなコンポーネント、テーマ、CLIを提供することで、人間とAIアシスタントの両方が同じツールと規約でUIを構築できるように設計されています。",
         "capabilities": [
           {
-            "text": "150種類以上のアクセシブルなReactコンポーネントを提供し、TypeScriptを完全にサポートしています。",
+            "text": "150種類以上のアクセシブルなコンポーネント、ブランドレベルのテーマ、ダークモード、テンプレート、CLIを提供する",
             "evidence_section": "Overview"
           },
           {
-            "text": "コンポーネントのソースコードをプロジェクト内に展開して独自にカスタマイズできるswizzle機能を備えています。",
+            "text": "swizzle機能により、コンポーネントの完全なソースコードをプロジェクト内に取り込んでカスタマイズできる",
             "evidence_section": "Overview"
           },
           {
-            "text": "コンポーネントのドキュメント作成、テンプレート、スキャッフォールディング、テーマ、コードモッドを実行できるCLIツールを提供しています。",
-            "evidence_section": "Packages"
+            "text": "CSSカスタムプロパティのオーバーライドによって、フォークせずにテーマをカスタマイズできる",
+            "evidence_section": "Overview"
           }
         ],
         "use_cases": [
           {
-            "text": "人間とAIアシスタントが同じ一貫したデザインシステムを用いてWebアプリケーションのUIを構築する。",
+            "text": "人間とAIアシスタントが同じ参照情報やCLIツールを使用して一貫したUIを構築する",
             "basis": "README明記",
             "evidence_section": "Overview"
           },
           {
-            "text": "Tailwind CSSやCSS Modulesなど、プロジェクト既存のスタイル手法と組み合わせてコンポーネントのスタイルを上書きする。",
+            "text": "既存のプロジェクトのスタイルに合わせて、classNameやTailwind、CSS Modules等でコンポーネントを上書きする",
             "basis": "README明記",
             "evidence_section": "Overview"
           },
           {
-            "text": "7種類用意されたカスタマイズ可能なテーマパッケージを利用してブランド独自の配色を適用する。",
+            "text": "CLIツールを使用してコンポーネントのドキュメントやテンプレート、テーマ、コーディモッドを利用する",
             "basis": "README明記",
             "evidence_section": "Packages"
           }
         ],
         "first_trial": {
-          "goal": "コアパッケージ、テーマ、CLI、および依存関係をインストールし、初期化セットアップを実行する",
+          "goal": "Astryxのコアパッケージ、中立テーマ、依存関係をインストールし、初期化コマンドを実行する",
           "steps": [
             "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
             "npm install -D @astryxdesign/cli",
             "npx @astryxdesign/cli init"
           ],
-          "success_criteria": "初期化コマンドが正常に実行され、ガイドや設定ファイルが適切に保存されること"
+          "success_criteria": "初期化が完了し、AGENTS.mdまたはCLAUDE.mdにガイドが保存されること"
         },
         "evidence_sections": [
           "Overview",
@@ -824,14 +827,14 @@
           "License"
         ],
         "unconfirmed": [
-          "実験的コンポーネントである@astryxdesign/labの詳細な公開スケジュールや安定版のリリース時期",
-          "@astryxdesign/vegaおよび@astryxdesign/chartsの正式な安定版リリース時期"
+          "実験的コンポーネントである@astryxdesign/labの具体的な詳細",
+          "カナダ版として配信されている@astryxdesign/vegaおよび@astryxdesign/chartsの正式リリース時期"
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
-        "generated_at": "2026-11-20T11:30:33.353947+09:00"
+        "cached": false,
+        "readme_sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
+        "generated_at": "2026-11-23T10:54:47.209990+09:00"
       }
     },
     {
@@ -840,13 +843,13 @@
       "url": "https://github.com/pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars_total": 2353,
-      "forks_total": 198,
-      "stars_period": 524,
+      "stars_total": 2406,
+      "forks_total": 200,
+      "stars_period": 461,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-22T00:20:55Z",
+        "updated_at": "2026-11-23T01:49:17Z",
         "pushed_at": "2026-11-19T02:24:27Z",
         "open_issues": 84,
         "archived": false,
@@ -914,6 +917,27 @@
   ],
   "zenn": [
     {
+      "title": "SideLoadをしよう！〜SideStoreをiPhone単体で入れる〜(SideInstaller編)",
+      "url": "https://zenn.dev/l_port8000/articles/7550549e6e9970",
+      "author": "一樹（いつき）",
+      "published": "Sun, 22 Nov 2026 03:46:17 GMT",
+      "summary": "⚠注意書き\n・非公式アプリを助長するものではありません。\n・iOS27以上じゃないと単体は無理らしい。\n・アプリの出どころをしっかり確認してください。通常GitHubやdecrypt.download, ipatoolからのインストールのみに限定してください。\n・わからないところがあったらTwitter間違えたXの@L_port8080をメンションして質問してください。必要に応じてここにも書き加えます。DMも対応可能です。\n\n 適当な前置き\n\nこの記事での説明ではPCが不要で"
+    },
+    {
+      "title": "Next.jsのストリーミングはLambda Web Functionsで動くか",
+      "url": "https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions",
+      "author": "りょた",
+      "published": "Sun, 22 Nov 2026 02:30:19 GMT",
+      "summary": "!\nこの記事はAIとの共著です。\n\nこんにちは！@Ryo54388667です！☺️\n普段は都内でエンジニアとして業務をしてます！主にTypeScriptやNext.jsといった技術を触っています。\nLambda Web Functions が出たとき、最初に気になったのは「Next.js の Suspense ストリーミングで、ちゃんと段階表示されるのか」でした。以前 Lambda Web Adapter で試したときは、うまくいかなかったからです。今回は Vercel と並"
+    },
+    {
+      "title": "Orca Botsが良さそう、何ができるのか",
+      "url": "https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro",
+      "author": "Sota Nakamura",
+      "published": "Sat, 21 Nov 2026 15:14:13 GMT",
+      "summary": "はじめに\nこんにちは！KGモーターズの中村です！\nKGモーターズは、1人乗り小型 EV mibot を開発しているスタートアップです。\n\n今回は、最近リリースされた Orca Bots についてのお話です。\n普段からAI Agentを使って開発しているのですが、Orca Botsはなかなか面白かったので、実際に触ってみた内容を簡単にまとめようと思います。\n\n Orcaとは\nまず最初にOrcaについて。\nhttps://orca.dev/\nOrcaは、Claude CodeやC"
+    },
+    {
       "title": "【TLA+】AIにテストケースを書かせるな。ルールを書け",
       "url": "https://zenn.dev/karamage/articles/73027ee36796dc",
       "author": "karamage",
@@ -921,32 +945,11 @@
       "summary": "「はて、このテストケース、誰が考えたんだっけ？ ほんとにだいじょぶ？」\nAIに頼めば、実装もテストも数秒で出て、CIが全部グリーンになって\nApproveボタンを押そうとしたとき、ふと背筋がゾッとして手が止まりました。\nなんか嫌な予感。。。\n実装を書いたのはAI\nレビューしたのもAI\nテストを書いたのも同じAI\nま、だいじょぶでしょ！(大丈夫じゃない)\nえぇい、ままよ！ マージしちゃえ！\n\n問い: AIがコードもテストも書く時代に、テストはどう変わるのか？\n結論: 人間は「テ"
     },
     {
-      "title": "自宅サーバー上のアプリケーションを Cloudflare Tunnel + Access で安全に公開する",
-      "url": "https://zenn.dev/bisque/articles/home-server-cloudflare-tunnel-access",
-      "author": "bisque",
-      "published": "Fri, 20 Nov 2026 07:14:41 GMT",
-      "summary": "はじめに\n最近は Coding Agent のおかげで、ちょっとしたアプリなら週末にサクッと作れるようになりました。「こういうのがあったら便利だな」と思ったら、とりあえず作ってみる。個人開発のハードルは本当に下がったと感じます。\nただ、作ったアプリをどこで動かすかは、意外と悩みどころです。クラウドなどの費用をできるだけ抑えるためにサービスやアーキテクチャを選定することは、ときには楽しい作業ですが、本質ではありません。\nそこで、安価なミニPCを購入して自宅にサーバーを置くことに"
-    },
-    {
-      "title": "日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた",
-      "url": "https://zenn.dev/chaki/articles/4545be3475fdb4",
-      "author": "chaki",
-      "published": "Fri, 20 Nov 2026 04:33:15 GMT",
-      "summary": "自宅のPCで日本のレシートを読むなら、今回いちばん良かったのは YomiToku でした。軽量モデルで全体を読み、自信のない行だけ高精度モデルで読み直す「2段読み」で、商品名の完全一致93%、金額100%、1枚約1.8秒。ただし YomiToku は非商用ライセンスです。商用なら NDLOCR-Lite や PP-OCRv6 が現実的な候補になります。話題の画像対応AI（VLM）は、長いレシートで同じ文字を延々と繰り返す失敗が目立ちました。ただし手書きの領収書では順位がほぼ逆"
-    },
-    {
-      "title": "CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行",
-      "url": "https://zenn.dev/levtech/articles/14befd8e727f32",
-      "author": "ナカジー",
-      "published": "Fri, 20 Nov 2026 01:26:30 GMT",
-      "summary": "はじめに\nこんにちは！\nレバテック開発部の皆様と一緒に、開発に携わらせていただいているナカジーです！\nこの度は CDK 管理のリソースを Terraform に寄せる IaC 移行作業に携わりました。その際に 「所有権を移譲する手法」 をとることで本番インフラ（12 のサービス＋共通基盤、計 13 スタック）を停止させずに IaC 移行を完遂することができました！\n本記事では、そこで得られたナレッジやノウハウをまとめており、\nIaC 移行を検討している方の参考になれば幸いです"
-    },
-    {
-      "title": "CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話",
-      "url": "https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons",
-      "author": "hma2moto",
-      "published": "Thu, 19 Nov 2026 14:13:57 GMT",
-      "summary": "Claude Code では、エージェントに守ってほしい決まりを CLAUDE.md や SKILL.md に書いておくと、エージェントはそれを読んで作業します。私も最初はこうしたルールを普通の Markdown で書いていました。ところがルールが増えるにつれて、どの行がどのルールの例外か、同じ行為を別の場所で禁じていないか、なぜそのルールがあるのかが、読み返さないと分からなくなりました。\nYAML や JSON も考えましたが、「mustWrite は must の一種」の"
+      "title": "寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド",
+      "url": "https://zenn.dev/canly/articles/ca6875cd79539f",
+      "author": "haginota",
+      "published": "Fri, 20 Nov 2026 09:04:40 GMT",
+      "summary": "カンリーCAIOの萩野です。\n\n「All Code Is Slop (Except Mine)（全てのコードはゴミ、私のは除く）」を掲げる開発者 poteto（Lauren Tan）さんの基調講演（2026年11月11日、AI Engineer CODE 2026）では、1か月で3,000本のPRを本番に出し、その多くを寝ている間に進めた話が語られました。そのやり方を MIT ライセンスで公開した Cursor 公式スキル集 pstack を Claude Code に入れ、"
     },
     {
       "title": "自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス",
@@ -1058,12 +1061,13 @@
     "agent",
     "code",
     "claude",
-    "agents",
     "web",
+    "agents",
     "llm",
-    "coding",
     "codex",
-    "workspace"
+    "all",
+    "workspace",
+    "twitter"
   ],
   "ai_analysis": {
     "enabled": true,
