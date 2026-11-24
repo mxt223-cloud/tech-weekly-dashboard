@@ -1,6 +1,6 @@
-# Tech Daily — 2026-11-23
+# Tech Daily — 2026-11-24
 
-生成日時: 2026-11-23T10:54:47.833110+09:00  
+生成日時: 2026-11-24T14:27:37.178055+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Plannotatorは、AIコーディングエージェントと人間の間のレビューを仲介するローカルのブラウザベースのツールです。エージェントの計画、仕様、HTML、コード差分などをブラウザ上でアノテーションやコメント、コードレビューを行い、そのフィードバックをワンクリックでエージェントに送り返すことができます。
 
 - 言語: TypeScript
-- 今週のスター: 2815
+- 今週のスター: 2395
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -50,7 +50,7 @@ Plannotatorのインストーラーを使用してツールを導入し、エー
 **概要:** Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。
 
 - 言語: TypeScript
-- 今週のスター: 2683
+- 今週のスター: 2572
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -88,73 +88,73 @@ Plannotatorのインストーラーを使用してツールを導入し、エー
 
 ## 3. [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)
 
-**概要:** GoogleChrome/modern-web-guidance-srcは、コーディングエージェント向けに最新のウェブプラットフォームの専門知識、ベストプラクティス、ブラウザ互換性データを提供するスキルセットおよびそのソースリポジトリです。レガシーなパターンの生成を防ぎ、最新のウェブ機能を活用した実装へと導きます。
+**概要:** コーディングエージェント向けに最新のウェブ標準のベストプラクティスやブラウザ互換性データを提供するツールです。レガシーなパターンを避け、モダンなウェブプラットフォームの機能や高性能な解決策を活用できるようエージェントを誘導します。
 
 - 言語: TypeScript
-- 今週のスター: 3575
+- 今週のスター: 2694
 - ライセンス: Apache-2.0
-- AI分析状態: ok（キャッシュ）
+- AI分析状態: ok
 
 ### できること
 
-- インタラクティブウィザードを使用したModern Web Guidanceのインストール（根拠: Quickstart）
+- インタラクティブなウィザードを使用して Modern Web Guidance をインストールする（根拠: Quickstart）
 
-- 関連するガイドの検索、IDによるガイドの取得、コードベース内のレガシーパターンのスキャン（根拠: Quickstart）
+- インストールせずに、関連するガイドの検索やIDによるガイドの取得、コードベースのレガシーパターンスキャンを行う（根拠: Quickstart）
 
-- 最新のブラウザAPI、パフォーマンスとアクセシビリティ、責任あるフォールバックに関するガイドラインの提供（根拠: Why?）
+- ユーザーエクスペリエンス、CSSレイアウト、パフォーマンスなどのコアディシプリンに関する専門的でトークン効率の良いガイドラインをエージェントに提供する（根拠: What's Included?）
 
 
 ### 利用例
 
-- コーディングエージェントに最新のウェブのベストプラクティスを組み込み、レガシーパターンを避けた実装を行わせる（README明記／根拠: README冒頭）
+- コーディングエージェントがレガシーなパターンを生成するのを防ぎ、モダンなウェブプラットフォーム機能を利用したコードを書くように誘導する（README明記／根拠: Why?）
 
-- CLIツールを用いて特定のUI実装に関連するガイドを検索し、エージェントのコンテキストウィンドウに提供する（README明記／根拠: Quickstart）
+- CLIツールを使用して関連するガイドを検索し、エージェントのコンテキストウィンドウに直接ターゲットを絞った専門的なガイドラインを返す（README明記／根拠: Quickstart）
 
-- 既存のコードベースをスキャンしてモダン化が必要なレガシーパターンを検出する（README明記／根拠: Quickstart）
+- コードベースをスキャンして古いパターンを見つけ出し、最新化する作業を支援する（README明記／根拠: Quickstart）
 
 
 ### 最初に試すこと
 
-インストールせずにコマンドを使用して関連ガイドを検索する
+インストールせずにコマンドを実行して機能を試す
 
 1. npx modern-web-guidance@latest search "animate a dialog modal backdrop"
 
 
 成功の目安: 関連するガイドの検索結果が表示されること
 
-未確認: 詳細な内部実装アルゴリズムや評価ダッシュボードの具体的な仕組み／対応しているすべてのガイドの網羅的な詳細
+未確認: 詳細なインストール後の設定項目やカスタマイズ方法
 
 
 ## 4. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
 
-**概要:** OpenCodeReviewは、確実な決定論的パイプラインとLLMエージェントを組み合わせたハイブリッドアーキテクチャを採用する、AIを活用したコードレビューCLIツールです。
+**概要:** Open Code Reviewは、決定論的なエンジニアリングパイプラインとLLMエージェントを組み合わせた、AI駆動型のコードレビューCLIツールです。行単位の正確なコメント生成や、大規模な変更に対するスマートなファイルバンドル機能などを提供します。
 
 - 言語: Go
-- 今週のスター: 3700
+- 今週のスター: 3015
 - ライセンス: Apache-2.0
 - AI分析状態: ok
 
 ### できること
 
-- Gitの差分を読み込み、変更されたファイルをLLMエージェントに送信して、行単位の精度で構造化されたレビューコメントを生成します。（根拠: What is Open Code Review?）
+- Gitの差分を読み取り、行単位の正確さで構造化されたレビューコメントを生成する機能（根拠: What is Open Code Review?）
 
-- ファイル全体のフルスキャンを実行し、意味のある差分がないコードベースやディレクトリの監査を行います。（根拠: What is Open Code Review?）
+- 変更のあったファイルだけでなく、ファイル全体を対象に監査するocr scan機能（根拠: What is Open Code Review?）
 
-- OpenAIおよびAnthropicと互換性のあるモデルエンドポイントを設定して利用できます。（根拠: What is Open Code Review?）
+- 関連するファイルをひとつのレビュー単位にまとめて並行レビューを行うスマートファイルバンドル機能（根拠: Core Design: Deterministic Engineering × Agent Hybrid）
 
 
 ### 利用例
 
-- 開発中のコードの変更内容（ステージング済み、未ステージング、未追跡の変更）に対してワークスペースモードでコードレビューを実行する。（README明記／根拠: Quick Start）
+- ステージング、未ステージング、追跡されていない変更を含むワークスペース全体のコードレビュー（README明記／根拠: Quick Start）
 
-- 機能ブランチの変更内容をメインブランチとの分岐点と比較してレビューする。（README明記／根拠: Quick Start）
+- メインブランチから分岐した機能ブランチ間などの差分レビュー（README明記／根拠: Quick Start）
 
-- 履歴がない場合やコードベース全体の監査のために、リポジトリ全体または特定ディレクトリを対象にファイル全体のフルスキャンを実行する。（README明記／根拠: Quick Start）
+- gitの履歴がないプロジェクトや馴染みのないコードベース全体のフルファイルスキャン監査（README明記／根拠: Quick Start）
 
 
 ### 最初に試すこと
 
-CLIツールをインストールしてLLMを設定し、コードレビューまたはスキャンを実行する
+CLIツールをインストールしてモデルを設定し、プロジェクトのコードレビューを実行する
 
 1. npm install -g @alibaba-group/open-code-review
 
@@ -162,12 +162,14 @@ CLIツールをインストールしてLLMを設定し、コードレビュー�
 
 3. ocr config model
 
-4. ocr review
+4. cd your-project
+
+5. ocr review
 
 
-成功の目安: 設定したプロバイダーとモデルを使用してコードレビューが実行され、結果が出力されること
+成功の目安: LLMの設定が完了し、プロジェクトのコードレビュー結果が出力されること
 
-未確認: 具体的なマルチ言語ルールセットの詳細や対応している個別ルールの網羅的なリスト／サポートされているすべてのモデルプロバイダーの完全な一覧
+未確認: サポートされている特定の商用LLMプロバイダーの全リスト／詳細なCLI設定オプションの全仕様
 
 
 ## 5. [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
@@ -175,9 +177,9 @@ CLIツールをインストールしてLLMを設定し、コードレビュー�
 **概要:** Reddit、X、YouTube、Hacker News、Polymarket、Webなどから指定したトピックに関する直近30日間の情報を並行検索し、AIエージェントが要約を作成するスキルです。
 
 - 言語: Python
-- 今週のスター: 4731
+- 今週のスター: 5448
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -214,7 +216,7 @@ Claude Codeを利用してプラグインを追加・インストールする
 **概要:** chrome-devtools-mcpは、コーディングエージェントがライブのChromeブラウザを制御・検査できるようにするモデルコンテキストプロトコル(MCP)サーバーおよびCLIツールです。
 
 - 言語: TypeScript
-- 今週のスター: 2268
+- 今週のスター: 1581
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -255,7 +257,7 @@ MCPクライアントからパフォーマンスをチェックして動作を�
 **概要:** tradermonty/claude-trading-skillsは、時間のない個人投資家向けにClaude Codeのスキルを活用した取引ワークフローツールキットです。売買の自動化ではなく、市場の確認やリスク管理、トレード計画、ジャーナル記録などの意思決定プロセスを構造化します。
 
 - 言語: Python
-- 今週のスター: 2616
+- 今週のスター: 1903
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -294,7 +296,7 @@ MCPクライアントからパフォーマンスをチェックして動作を�
 **概要:** AG-UIは、AIエージェントとユーザー向けアプリケーションを接続するためのオープンで軽量なイベントベースのプロトコルです。フレームワークに依存せず、双方向のイベントストリームを用いてエージェントの出力をクライアントで描画できるようにします。
 
 - 言語: TypeScript
-- 今週のスター: 3620
+- 今週のスター: 2966
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -335,9 +337,9 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 **概要:** Astryxは、Metaで開発されたオープンソースのカスタマイズ可能なデザインシステムです。React 19以降とStyleXを基盤にし、150以上のアクセシブルなコンポーネント、テーマ、CLIを提供することで、人間とAIアシスタントの両方が同じツールと規約でUIを構築できるように設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 3626
+- 今週のスター: 3165
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -378,7 +380,7 @@ Astryxのコアパッケージ、中立テーマ、依存関係をインスト�
 **概要:** HermesEnablerは、任意のApple Watchでエルメスの文字盤を使えるようにするためのツールです。macOSまたはWindows環境でサイドロードやXcodeを使ってインストールし、Apple Watch上のアプリから設定を行います。
 
 - 言語: Objective-C
-- 今週のスター: 461
+- 今週のスター: 390
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -415,9 +417,31 @@ Astryxのコアパッケージ、中立テーマ、依存関係をインスト�
 
 ## Zenn
 
-- [SideLoadをしよう！〜SideStoreをiPhone単体で入れる〜(SideInstaller編)](https://zenn.dev/l_port8000/articles/7550549e6e9970) — 一樹（いつき）
+- [コーディングエージェントが変えたOSS開発のプロセスと喜び](https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565) — cybergarage
 
-- [Next.jsのストリーミングはLambda Web Functionsで動くか](https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions) — りょた
+- [S3 Vectors は RAG のベクトルストアに使えるか（40問で検証＋ハイブリッド検索に関する追記）](https://zenn.dev/shino_i/articles/faeef70f08124c) — 伊佐眞皇(Shino Isa)
+
+- [JSConf JP 2026に参加記録・初登壇の反省など](https://zenn.dev/igrep/articles/2026-11-jsconfjp) — YAMAMOTO Yuji
+
+- [iOSエンジニアのための OAuth 2.0 + PKCE 入門 ― 仕組みを理解してから、Swiftで実装する](https://zenn.dev/mobile_app_tec/articles/ios-oauth2-pkce-native-app) — 小林　慎吾
+
+- [【技術書典21】17人の開発者と作った合同誌『AI キャラクター開発 十人十色』、会場50部が完売しました！！！](https://zenn.dev/mei999/articles/33f2965b3c021c) — めい
+
+- [Googleが実践するSTAMP/STPAとは何か？ 私たちのSREにも使えるのか](https://zenn.dev/maruloop/articles/7ff108e29741b5) — maru
+
+- [JSConf JP 2026 公開資料・Xアカウントリンクまとめ](https://zenn.dev/h_yoshikawa0724/articles/2026-11-23-jsconf-jp-2026) — よし
+
+- [著名なRust製OSSをLean 4で形式検証してみたら、めちゃめちゃバグが見つかった話](https://zenn.dev/koukyosyumei/articles/31c8fcf4da45b7) — Koukyosyumei
+
+- [WolvCTF2026 - writeup](https://zenn.dev/gattoartz/articles/3f302189a1741a) — ちゃちゃまる / GattoArtz
+
+- [箱入り娘ソルバーを約9,400倍高速化してもらった](https://zenn.dev/kaorun343/articles/klotski-solver-optimization) — kaorun343
+
+- [Claude Code の mods を入れる前に調べたこと（備忘録）](https://zenn.dev/shogaku/articles/claude-code-mods-memo) — Ymori
+
+- [ゲーム理論×シミュレーション: 囚人のジレンマにおける戦略と Rust による実装](https://zenn.dev/akitenkrad/articles/1zqjjioamhlyg2) — akitenkrad
+
+- [AIがテストに合わせて実装していない？仕様テストを隠して確かめる](https://zenn.dev/h_aso/articles/isolated-spec-tests-claude-code) — H.Aso
 
 - [Orca Botsが良さそう、何ができるのか](https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro) — Sota Nakamura
 
@@ -427,33 +451,11 @@ Astryxのコアパッケージ、中立テーマ、依存関係をインスト�
 
 - [自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス](https://zenn.dev/nttdata_tech/articles/9562962cc181a1) — Kazuma Yoshimoto | 吉本 和真
 
-- [AIが爆速で開発する時代の、自動テストとの向き合い方](https://zenn.dev/daiaoki/articles/webterm-ai-era-testing) — Dai
-
-- [pstack 完全ガイド ─AIエージェントに雑なコード     を書かせない技術─](https://zenn.dev/karamage/books/50c18e52e7d19e) — karamage
-
 - [相次ぐOSSの脆弱性に、とりあえずクラウドWAF入れるだけでだいぶ違う話+Rootlessコンテナもいいぞ](https://zenn.dev/kusuke/articles/98e178e6824cac) — Yusuke Kawabata
 
-- [tsrs を導入したら oxlint の type-aware linting と typecheck が爆速になった話](https://zenn.dev/dress_code/articles/6c179ae5129131) — ぷーじ
-
-- [正しいUIデザインと、意図のあるUIデザイン](https://zenn.dev/praha/articles/08568310684aa3) — ゲントク
-
-- [おい、 Mutation Test をやれ。テスト品質を、測るために](https://zenn.dev/mizchi/articles/mutation-test-quality) — mizchi
+- [なぜ今形式検証なのか](https://zenn.dev/ncdc/articles/dcec80b0c067b0) — senna
 
 - [ローカルLLM入門](https://zenn.dev/port_inc/articles/ff974c7456f4db) — tesla
-
-- [Claude Desktop 開発のすゝめ](https://zenn.dev/peoplex_blog/articles/vscode-to-claude-desktop) — Aki 🚀 Product Engineer @ PeopleX
-
-- [毎月6,000 AI Agentsを捌くためにキーボードを捨てた話](https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce) — Andy
-
-- [最近、コードを真面目に読まなくなった](https://zenn.dev/hiromoo/articles/reading-less-preparing-more) — むた
-
-- [QA生産性を爆上げさせるためのQA AIプラットフォーム構築](https://zenn.dev/gatechnologies/articles/8bdea59269eb10) — akki
-
-- [物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門](https://zenn.dev/turing_motors/articles/cea9e3c85611b2) — ymg_aq
-
-- [CSS では書きにくいアニメーションを Web Animations API で書く](https://zenn.dev/omu_tryangle/articles/b5817393592229) — hyakutake
-
-- [mizchi/mutator を入れてみた](https://zenn.dev/polyco/articles/e05cb28c569801) — Tatsunori Nakano
 
 
 > AI分析はREADMEの要約であり、実行可否・安全性・正確性を保証しません。

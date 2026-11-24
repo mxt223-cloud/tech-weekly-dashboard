@@ -1,0 +1,54 @@
+{
+  "summary_ja": "コーディングエージェント向けに最新のウェブ標準のベストプラクティスやブラウザ互換性データを提供するツールです。レガシーなパターンを避け、モダンなウェブプラットフォームの機能や高性能な解決策を活用できるようエージェントを誘導します。",
+  "capabilities": [
+    {
+      "text": "インタラクティブなウィザードを使用して Modern Web Guidance をインストールする",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "インストールせずに、関連するガイドの検索やIDによるガイドの取得、コードベースのレガシーパターンスキャンを行う",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "ユーザーエクスペリエンス、CSSレイアウト、パフォーマンスなどのコアディシプリンに関する専門的でトークン効率の良いガイドラインをエージェントに提供する",
+      "evidence_section": "What's Included?"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "コーディングエージェントがレガシーなパターンを生成するのを防ぎ、モダンなウェブプラットフォーム機能を利用したコードを書くように誘導する",
+      "basis": "README明記",
+      "evidence_section": "Why?"
+    },
+    {
+      "text": "CLIツールを使用して関連するガイドを検索し、エージェントのコンテキストウィンドウに直接ターゲットを絞った専門的なガイドラインを返す",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    },
+    {
+      "text": "コードベースをスキャンして古いパターンを見つけ出し、最新化する作業を支援する",
+      "basis": "README明記",
+      "evidence_section": "Quickstart"
+    }
+  ],
+  "first_trial": {
+    "goal": "インストールせずにコマンドを実行して機能を試す",
+    "steps": [
+      "npx modern-web-guidance@latest search \"animate a dialog modal backdrop\""
+    ],
+    "success_criteria": "関連するガイドの検索結果が表示されること"
+  },
+  "evidence_sections": [
+    "Quickstart",
+    "Why?",
+    "What's Included?"
+  ],
+  "unconfirmed": [
+    "詳細なインストール後の設定項目やカスタマイズ方法"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "1516c3810b563a3685e9e06e499201e4e197476c",
+  "generated_at": "2026-11-24T14:27:20.986350+09:00"
+}

@@ -1,0 +1,63 @@
+{
+  "summary_ja": "Open Code Reviewは、決定論的なエンジニアリングパイプラインとLLMエージェントを組み合わせた、AI駆動型のコードレビューCLIツールです。行単位の正確なコメント生成や、大規模な変更に対するスマートなファイルバンドル機能などを提供します。",
+  "capabilities": [
+    {
+      "text": "Gitの差分を読み取り、行単位の正確さで構造化されたレビューコメントを生成する機能",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "変更のあったファイルだけでなく、ファイル全体を対象に監査するocr scan機能",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "関連するファイルをひとつのレビュー単位にまとめて並行レビューを行うスマートファイルバンドル機能",
+      "evidence_section": "Core Design: Deterministic Engineering × Agent Hybrid"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ステージング、未ステージング、追跡されていない変更を含むワークスペース全体のコードレビュー",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "メインブランチから分岐した機能ブランチ間などの差分レビュー",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "gitの履歴がないプロジェクトや馴染みのないコードベース全体のフルファイルスキャン監査",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIツールをインストールしてモデルを設定し、プロジェクトのコードレビューを実行する",
+    "steps": [
+      "npm install -g @alibaba-group/open-code-review",
+      "ocr config provider",
+      "ocr config model",
+      "cd your-project",
+      "ocr review"
+    ],
+    "success_criteria": "LLMの設定が完了し、プロジェクトのコードレビュー結果が出力されること"
+  },
+  "evidence_sections": [
+    "What is Open Code Review?",
+    "Benchmark",
+    "Why Open Code Review?",
+    "How to Use",
+    "Documentation",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "サポートされている特定の商用LLMプロバイダーの全リスト",
+    "詳細なCLI設定オプションの全仕様"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "52bbc2d8e6c65fd1d7b1014998c3fdcd7a32d26d",
+  "generated_at": "2026-11-24T14:27:32.052013+09:00"
+}
