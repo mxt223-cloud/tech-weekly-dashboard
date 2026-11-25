@@ -1,0 +1,61 @@
+{
+  "summary_ja": "Metaで開発されたオープンソースのデザインシステムであり、150以上のアクセシブルなコンポーネント、テーマ機能、CLIを提供し、人間とAIアシスタントの両方が同じツールと規約でUIを構築できるように設計されています。",
+  "capabilities": [
+    {
+      "text": "150以上のアクセシブルなコンポーネント、ブランドレベルのテーマ、ダークモード、テンプレート、CLIを単一のシステムとして提供する",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "コンポーネントの完全なソースコードをプロジェクト内に抽出して所有できるスウィズル機能を持つ",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "React 19以降とStyleXを基盤とし、TailwindやCSSモジュールなどの既存のスタイル手法でオーバーライドできる",
+      "evidence_section": "Overview"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "人間とAIアシスタントが同じ参照情報とツールを使用してUIを構築する",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "CSSカスタムプロパティのオーバーライドによって、コンポーネントのソースコードをフォークせずにカスタムテーマを適用する",
+      "basis": "README明記",
+      "evidence_section": "Overview"
+    },
+    {
+      "text": "CLIツールを使用してコンポーネントのドキュメント参照や初期化を行う",
+      "basis": "README明記",
+      "evidence_section": "Getting Started"
+    }
+  ],
+  "first_trial": {
+    "goal": "Astryxのコアパッケージ、テーマ、ピア依存関係、およびCLIをインストールする",
+    "steps": [
+      "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
+      "npm install -D @astryxdesign/cli",
+      "npx @astryxdesign/cli init"
+    ],
+    "success_criteria": "初期化コマンドが実行され、ガイドファイルが保存されること"
+  },
+  "evidence_sections": [
+    "Overview",
+    "Getting Started",
+    "Packages",
+    "Principles",
+    "Architecture",
+    "Project Structure",
+    "Contributing",
+    "License"
+  ],
+  "unconfirmed": [
+    "Next.jsやViteなどの個別フレームワークでの詳細な統合手順（外部のコアREADMEへのリンクとなっているため本README内では未記載）"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "8dbd1010e751f17398d4fdbb1139016669937900",
+  "generated_at": "2026-11-25T13:29:53.970100+09:00"
+}

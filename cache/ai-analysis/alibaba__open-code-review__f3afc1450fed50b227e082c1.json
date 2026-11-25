@@ -1,0 +1,58 @@
+{
+  "summary_ja": "OpenCodeReviewは、確実な決定論的パイプラインとLLMエージェントを組み合わせたハイブリッドなアーキテクチャを持つ、AIを活用したコードレビューCLIツールです。",
+  "capabilities": [
+    {
+      "text": "Gitの差分を読み込み、変更されたファイルをLLMエージェントに送信して行単位の正確な構造化レビューコメントを生成する",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "ocr scanコマンドを使用して、変更履歴のないコードベースやディレクトリ全体をスキャンし監査する",
+      "evidence_section": "What is Open Code Review?"
+    },
+    {
+      "text": "ファイルを選択してレビューするための決定論的なエンジニアリングハード制約と、動的なコンテキスト取得を行うエージェントを組み合わせる",
+      "evidence_section": "Core Design: Deterministic Engineering × Agent Hybrid"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ワークスペースモードですべてのステージ済み、未ステージ、未追跡の変更をレビューする",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "メインブランチから分岐した機能ブランチの変更範囲をレビューする",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    },
+    {
+      "text": "特定のディレクトリやファイル全体をスキャンしてコードレビューを行う",
+      "basis": "README明記",
+      "evidence_section": "Quick Start"
+    }
+  ],
+  "first_trial": {
+    "goal": "CLIツールをインストールしてモデルを設定し、レビューを実行する",
+    "steps": [
+      "npm install -g @alibaba-group/open-code-review",
+      "ocr config provider",
+      "ocr config model",
+      "ocr review"
+    ],
+    "success_criteria": "ocr reviewコマンドが正常に実行され、プロジェクトのコードレビュー結果が出力されること"
+  },
+  "evidence_sections": [
+    "What is Open Code Review?",
+    "Core Design: Deterministic Engineering × Agent Hybrid",
+    "Quick Start"
+  ],
+  "unconfirmed": [
+    "サポートされている全てのモデルプロバイダーの個別名称や対応しているAPIの完全な仕様",
+    "CI/CDインテグレーションの具体的な設定ファイルの詳細"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "14678eef5a9e6b854d74fcd7c0f19e0c347c6caa",
+  "generated_at": "2026-11-25T13:29:47.405323+09:00"
+}

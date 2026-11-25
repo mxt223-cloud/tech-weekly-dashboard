@@ -1,0 +1,51 @@
+{
+  "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどから指定したトピックに関する直近30日間の情報をAIエージェントが並行して検索・統合し、要約を提供するツールです。",
+  "capabilities": [
+    {
+      "text": "Reddit、X、YouTube、TikTok、Hacker News、Polymarket、GitHub、Webなど複数のプラットフォームを横断して検索を行います。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "検索結果をアップボートや「いいね」、実際の資金によるオッズなどのエンゲージメント指標をもとにスコアリングし、AIエージェントが要約を作成します。",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "商談の前に企業の直近の動向や真実の情報を調べるために実行します。",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "会議の前に人物の最近のツイートやポッドキャストの文字起こしを読み込むために使用します。",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "何かを構築する前に、コミュニティが実際に直面している課題を把握するために利用します。",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Code環境へプラグインを追加する",
+    "steps": [
+      "/plugin marketplace add mvanhorn/last30days-skill",
+      "/plugin install last30days"
+    ],
+    "success_criteria": "プラグインが正常に追加およびインストールされること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why this exists"
+  ],
+  "unconfirmed": [
+    "詳細な検索オプションや設定画面の具体的な全パラメータ",
+    "対応している全ソースの詳細なAPI要件"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "60c4bc407e64a99f18f8a52d5994855e6a7b0538",
+  "generated_at": "2026-11-25T13:29:49.778967+09:00"
+}
