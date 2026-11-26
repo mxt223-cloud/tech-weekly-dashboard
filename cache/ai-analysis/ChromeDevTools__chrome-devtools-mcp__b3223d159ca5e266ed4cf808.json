@@ -1,0 +1,58 @@
+{
+  "summary_ja": "chrome-devtools-mcpは、コーディングエージェントがライブのGoogle Chromeブラウザを制御および検査できるようにするModel-Context-Protocol（MCP）サーバーおよびCLIツールです。",
+  "capabilities": [
+    {
+      "text": "パフォーマンスインサイトの取得：Chrome DevToolsを使用してトレースを記録し、実用的なパフォーマンスインサイトを抽出します。",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "高度なブラウザデバッグ：ネットワークリクエストの分析、スクリーンショットの撮影、ソースマップ付きのスタックトレースを含むブラウザコンソールメッセージの確認を行います。",
+      "evidence_section": "Key features"
+    },
+    {
+      "text": "信頼性の高い自動化：puppeteerを使用してChrome内のアクションを自動化し、アクションの結果を自動的に待ちます。",
+      "evidence_section": "Key features"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "AIコーディングアシスタントにChrome DevToolsの機能を与え、信頼性の高い自動化、高度なデバッグ、パフォーマンス分析を実行する。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "ターミナルからMCPを使用せずにCLI経由でブラウザを操作する。",
+      "basis": "README明記",
+      "evidence_section": "CLI"
+    },
+    {
+      "text": "アクセシビリティの監査や修正、クッキー・セッションのデバッグを行うためのスキルをエージェントに教え込む。",
+      "basis": "README明記",
+      "evidence_section": "Skills"
+    }
+  ],
+  "first_trial": {
+    "goal": "MCPクライアント経由でブラウザのパフォーマンスを確認する",
+    "steps": [
+      "MCPクライアントに設定を追加する",
+      "MCPクライアントに「Check the performance of https://developers.chrome.com」というプロンプトを入力する"
+    ],
+    "success_criteria": "MCPクライアントがブラウザを起動し、パフォーマンスのトレースを記録すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Key features",
+    "Getting started",
+    "CLI",
+    "Skills"
+  ],
+  "unconfirmed": [
+    "対応ブラウザとしてGoogle ChromeとChrome for Testing以外で予期せぬ動作をする場合の具体的な回避策",
+    "各種ガイドに記載されている高度なパラメータの詳細な挙動"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "b957bc13f9bbb54da61c581c46f2348799cce672",
+  "generated_at": "2026-11-26T12:42:54.451316+09:00"
+}

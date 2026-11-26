@@ -1,0 +1,66 @@
+{
+  "summary_ja": "n8n-io/nod は、独自のコンピュータとブラウザを操作して各種タスクを自動実行できる、オープンソースのパーソナルAIエージェントです。ユーザーの選んだAIモデルと連携し、ローカル環境で動作します。",
+  "capabilities": [
+    {
+      "text": "Gmail、Calendar、Slack、Notion、およびWebを横断して作業を遂行します。",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "独自のコンピュータとブラウザを持ち、タブやログイン、フォーム入力を伴う複雑な作業を完了させます。",
+      "evidence_section": "hard-ones"
+    },
+    {
+      "text": "OpenAI、Anthropic、Gemini、OpenRouterなど20種類以上のモデルや、自前のサーバーを利用できます。",
+      "evidence_section": "your-rules"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "メッセージやカレンダー、最新ニュースから1ページのコールブリーフ（要約）を作成します。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "価格表などに基づいてSlackの返信を下書きし、ユーザーの承認を得てから送信します。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "スケジュールに沿ってWebページを定期的にチェックし、変更があった場合のみ通知します。",
+      "basis": "README明記",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "first_trial": {
+    "goal": "ソースコードからnodを起動する",
+    "steps": [
+      "git clone https://github.com/n8n-io/nod.git",
+      "cd nod",
+      "corepack enable",
+      "pnpm start"
+    ],
+    "success_criteria": "nodがローカル環境で起動し、動作を開始すること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "on-your-machine",
+    "hard-ones",
+    "memory",
+    "your-rules",
+    "benchmarks",
+    "under-the-hood",
+    "next-on-the-list",
+    "straight-answers",
+    "get-nod",
+    "build-with-us"
+  ],
+  "unconfirmed": [
+    "完全なビルドおよび実行の前提条件であるDockerやNode.jsの具体的な初期セットアップ手順の詳細",
+    "特定のマネージドホスティングや音声通話機能の具体的なリリース時期"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "bbfc9d699f5082c0d73d48494e2edabbb51d7357",
+  "generated_at": "2026-11-26T12:42:50.851328+09:00"
+}

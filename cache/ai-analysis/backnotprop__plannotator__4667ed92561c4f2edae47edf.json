@@ -1,0 +1,65 @@
+{
+  "summary_ja": "Plannotatorは、AIコーディングエージェントと人間をつなぐローカルのブラウザベースのレビュー・アノテーションツールです。プラン、仕様書、HTML、コード差分などをレビューしてフィードバックをエージェントに送り返すことができます。",
+  "capabilities": [
+    {
+      "text": "プランや仕様書、メッセージ、HTMLなどをブラウザ上でアノテーションし、エージェントにフィードバックを送信できる。",
+      "evidence_section": "Review documents, plans, and agent messages"
+    },
+    {
+      "text": "ローカルの変更やリモートのプルリクエストのコードレビューを行い、差分へのコメントやコードの提案ができる。",
+      "evidence_section": "Code Review"
+    },
+    {
+      "text": "エージェントのメッセージや質問、ファイル、ガイド付きレビューを受け取るローカルのインボックス機能を提供する。",
+      "evidence_section": "Plannotator Inbox"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "エージェントが作成したプランや提案に対してブラウザ上でコメントや承認・却下を行い、エージェントの次の動作に反映させる。",
+      "basis": "README明記",
+      "evidence_section": "Plannotator"
+    },
+    {
+      "text": "GitやGitHubなどのコード差分やプルリクエストに対してコメントやコードの提案を行う。",
+      "basis": "README明記",
+      "evidence_section": "Code Review"
+    },
+    {
+      "text": "ローカルで稼働しているサイトやレンダリングされたHTMLファイルをブラウザ経由で直接コメント・確認する。",
+      "basis": "README明記",
+      "evidence_section": "Annotate HTML artifacts and live sites"
+    }
+  ],
+  "first_trial": {
+    "goal": "Plannotatorのインストーラーを使用してツールをセットアップする",
+    "steps": [
+      "curl -fsSL https://plannotator.ai/install.sh | bash"
+    ],
+    "success_criteria": "plannotatorバイナリがインストールされ、対応するエージェントの設定が自動で行われること"
+  },
+  "evidence_sections": [
+    "Plannotator",
+    "Plannotator Inbox",
+    "Herdr Annotate: Plannotator in the Terminal",
+    "HTML artifacts, live sites, and guided reviews",
+    "Commands",
+    "AI built in",
+    "Sharing",
+    "Install",
+    "Uninstall",
+    "How it works",
+    "Integrations",
+    "Remote / SSH / devcontainer",
+    "Security",
+    "Configuration",
+    "Development",
+    "License"
+  ],
+  "unconfirmed": [],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "05e2dc5607f7d6e3926c1f3807f928535eac3234",
+  "generated_at": "2026-11-26T12:42:47.079700+09:00"
+}

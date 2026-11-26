@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T13:29:54.481946+09:00",
-  "week": "2026-11-25",
+  "generated_at": "2026-11-26T12:42:56.284407+09:00",
+  "week": "2026-11-26",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars_total": 14929,
-      "forks_total": 1438,
-      "stars_period": 1956,
+      "stars_total": 15107,
+      "forks_total": 1449,
+      "stars_period": 1764,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-25T04:17:55Z",
-        "pushed_at": "2026-11-25T03:56:37Z",
-        "open_issues": 226,
+        "updated_at": "2026-11-26T03:35:18Z",
+        "pushed_at": "2026-11-26T03:39:52Z",
+        "open_issues": 239,
         "archived": false,
-        "size_kb": 436759,
+        "size_kb": 443067,
         "topics": [
           "agents",
           "claude-code",
@@ -34,55 +34,53 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+        "sha": "05e2dc5607f7d6e3926c1f3807f928535eac3234",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 29374,
-        "used_chars": 27399
+        "original_chars": 29471,
+        "used_chars": 27496
       },
       "analysis": {
-        "summary_ja": "Plannotatorは、AIコーディングエージェントと人間の間のレビューを仲介するローカルのブラウザベースのツールです。エージェントの計画、仕様、HTML、コード差分などをブラウザ上でアノテーションやコメント、コードレビューを行い、そのフィードバックをワンクリックでエージェントに送り返すことができます。",
+        "summary_ja": "Plannotatorは、AIコーディングエージェントと人間をつなぐローカルのブラウザベースのレビュー・アノテーションツールです。プラン、仕様書、HTML、コード差分などをレビューしてフィードバックをエージェントに送り返すことができます。",
         "capabilities": [
           {
-            "text": "プラン、仕様書、Markdown、HTML、その他のインタラクティブな成果物の確認とアノテーション",
-            "evidence_section": "README冒頭"
+            "text": "プランや仕様書、メッセージ、HTMLなどをブラウザ上でアノテーションし、エージェントにフィードバックを送信できる。",
+            "evidence_section": "Review documents, plans, and agent messages"
           },
           {
-            "text": "ローカルの変更点やリモートのプルリクエスト（PR）のコードレビュー、差分やコードへのコメント、ガイド付きレビュー機能",
-            "evidence_section": "README冒頭"
+            "text": "ローカルの変更やリモートのプルリクエストのコードレビューを行い、差分へのコメントやコードの提案ができる。",
+            "evidence_section": "Code Review"
           },
           {
-            "text": "プラグイン、フック、コマンドを通じて主要なAIエージェントと直接連携し、フィードバックをエージェントへ送り返す仕組み",
-            "evidence_section": "README冒頭"
+            "text": "エージェントのメッセージや質問、ファイル、ガイド付きレビューを受け取るローカルのインボックス機能を提供する。",
+            "evidence_section": "Plannotator Inbox"
           }
         ],
         "use_cases": [
           {
-            "text": "AIコーディングエージェントが作成した計画や仕様書に対してブラウザ上でコメントや指示を書き込み、エージェントの次の動作に反映させる",
+            "text": "エージェントが作成したプランや提案に対してブラウザ上でコメントや承認・却下を行い、エージェントの次の動作に反映させる。",
             "basis": "README明記",
-            "evidence_section": "Plannotator Inbox"
+            "evidence_section": "Plannotator"
           },
           {
-            "text": "Gitなどのリポジトリのローカル変更やプルリクエストの差分をブラウザやターミナルでレビューし、コードの提案や修正指示をエージェントに戻す",
+            "text": "GitやGitHubなどのコード差分やプルリクエストに対してコメントやコードの提案を行う。",
             "basis": "README明記",
-            "evidence_section": "README冒頭"
+            "evidence_section": "Code Review"
           },
           {
-            "text": "ローカルで稼働しているWebサイトやHTMLファイルをプロ経由でブラウザ上に表示し、実際のページを見ながらコメントをつける",
+            "text": "ローカルで稼働しているサイトやレンダリングされたHTMLファイルをブラウザ経由で直接コメント・確認する。",
             "basis": "README明記",
-            "evidence_section": "HTML artifacts, live sites, and guided reviews"
+            "evidence_section": "Annotate HTML artifacts and live sites"
           }
         ],
         "first_trial": {
-          "goal": "Plannotatorのインストーラーを使用してツールを導入し、エージェントのメッセージや差分のレビュー機能を試す",
+          "goal": "Plannotatorのインストーラーを使用してツールをセットアップする",
           "steps": [
-            "curl -fsSL https://plannotator.ai/install.sh | bash を実行してバイナリと対応する設定をインストールする",
-            "/plannotator-last コマンドを実行してエージェントの最後の返信に対するアノテーションを開く"
+            "curl -fsSL https://plannotator.ai/install.sh | bash"
           ],
-          "success_criteria": "ブラウザまたは指定されたインターフェース上でレビュー画面やアノテーション機能が起動し、操作できるようになること"
+          "success_criteria": "plannotatorバイナリがインストールされ、対応するエージェントの設定が自動で行われること"
         },
         "evidence_sections": [
-          "README冒頭",
           "Plannotator",
           "Plannotator Inbox",
           "Herdr Annotate: Plannotator in the Terminal",
@@ -103,9 +101,9 @@
         "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
-        "generated_at": "2026-11-18T12:04:03.652401+09:00"
+        "cached": false,
+        "readme_sha": "05e2dc5607f7d6e3926c1f3807f928535eac3234",
+        "generated_at": "2026-11-26T12:42:47.079700+09:00"
       }
     },
     {
@@ -114,15 +112,15 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars_total": 12727,
-      "forks_total": 1527,
-      "stars_period": 2626,
+      "stars_total": 13020,
+      "forks_total": 1540,
+      "stars_period": 2616,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-25T04:25:32Z",
+        "updated_at": "2026-11-26T03:40:47Z",
         "pushed_at": "2026-11-24T21:51:04Z",
-        "open_issues": 23,
+        "open_issues": 24,
         "archived": false,
         "size_kb": 297,
         "topics": []
@@ -199,17 +197,17 @@
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars_total": 10864,
-      "forks_total": 823,
-      "stars_period": 2494,
+      "stars_total": 11082,
+      "forks_total": 835,
+      "stars_period": 2309,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-25T04:29:12Z",
-        "pushed_at": "2026-11-24T21:38:47Z",
-        "open_issues": 396,
+        "updated_at": "2026-11-26T03:32:21Z",
+        "pushed_at": "2026-11-25T20:51:52Z",
+        "open_issues": 398,
         "archived": false,
-        "size_kb": 177887,
+        "size_kb": 177892,
         "topics": []
       },
       "readme": {
@@ -277,21 +275,136 @@
     },
     {
       "rank": 4,
+      "full_name": "n8n-io/nod",
+      "url": "https://github.com/n8n-io/nod",
+      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+      "language": "TypeScript",
+      "stars_total": 3608,
+      "forks_total": 575,
+      "stars_period": 1008,
+      "api": {
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "updated_at": "2026-11-26T03:35:10Z",
+        "pushed_at": "2026-11-26T01:20:26Z",
+        "open_issues": 109,
+        "archived": false,
+        "size_kb": 156377,
+        "topics": [
+          "agents",
+          "ai-agent",
+          "ai-assistant",
+          "anthropic",
+          "automation",
+          "browser-automation",
+          "computer-use",
+          "electron",
+          "llm",
+          "local-first",
+          "mcp",
+          "n8n",
+          "openai",
+          "personal-agent",
+          "personal-assistant",
+          "privacy",
+          "self-hosted",
+          "telegram-bot",
+          "typescript",
+          "whatsapp-bot"
+        ]
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "bbfc9d699f5082c0d73d48494e2edabbb51d7357",
+        "path": "README.md",
+        "truncated": true,
+        "original_chars": 19275,
+        "used_chars": 15822
+      },
+      "analysis": {
+        "summary_ja": "n8n-io/nod は、独自のコンピュータとブラウザを操作して各種タスクを自動実行できる、オープンソースのパーソナルAIエージェントです。ユーザーの選んだAIモデルと連携し、ローカル環境で動作します。",
+        "capabilities": [
+          {
+            "text": "Gmail、Calendar、Slack、Notion、およびWebを横断して作業を遂行します。",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "独自のコンピュータとブラウザを持ち、タブやログイン、フォーム入力を伴う複雑な作業を完了させます。",
+            "evidence_section": "hard-ones"
+          },
+          {
+            "text": "OpenAI、Anthropic、Gemini、OpenRouterなど20種類以上のモデルや、自前のサーバーを利用できます。",
+            "evidence_section": "your-rules"
+          }
+        ],
+        "use_cases": [
+          {
+            "text": "メッセージやカレンダー、最新ニュースから1ページのコールブリーフ（要約）を作成します。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "価格表などに基づいてSlackの返信を下書きし、ユーザーの承認を得てから送信します。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          },
+          {
+            "text": "スケジュールに沿ってWebページを定期的にチェックし、変更があった場合のみ通知します。",
+            "basis": "README明記",
+            "evidence_section": "README冒頭"
+          }
+        ],
+        "first_trial": {
+          "goal": "ソースコードからnodを起動する",
+          "steps": [
+            "git clone https://github.com/n8n-io/nod.git",
+            "cd nod",
+            "corepack enable",
+            "pnpm start"
+          ],
+          "success_criteria": "nodがローカル環境で起動し、動作を開始すること"
+        },
+        "evidence_sections": [
+          "README冒頭",
+          "on-your-machine",
+          "hard-ones",
+          "memory",
+          "your-rules",
+          "benchmarks",
+          "under-the-hood",
+          "next-on-the-list",
+          "straight-answers",
+          "get-nod",
+          "build-with-us"
+        ],
+        "unconfirmed": [
+          "完全なビルドおよび実行の前提条件であるDockerやNode.jsの具体的な初期セットアップ手順の詳細",
+          "特定のマネージドホスティングや音声通話機能の具体的なリリース時期"
+        ],
+        "status": "ok",
+        "model": "gemini-3.5-flash-lite",
+        "cached": false,
+        "readme_sha": "bbfc9d699f5082c0d73d48494e2edabbb51d7357",
+        "generated_at": "2026-11-26T12:42:50.851328+09:00"
+      }
+    },
+    {
+      "rank": 5,
       "full_name": "alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars_total": 56102,
-      "forks_total": 4633,
-      "stars_period": 2638,
+      "stars_total": 56408,
+      "forks_total": 4664,
+      "stars_period": 2259,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-25T04:22:29Z",
-        "pushed_at": "2026-11-24T16:19:18Z",
-        "open_issues": 348,
+        "updated_at": "2026-11-26T03:42:06Z",
+        "pushed_at": "2026-11-26T02:19:51Z",
+        "open_issues": 351,
         "archived": false,
-        "size_kb": 58381,
+        "size_kb": 58489,
         "topics": [
           "agent",
           "agent-skills",
@@ -363,28 +476,28 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "14678eef5a9e6b854d74fcd7c0f19e0c347c6caa",
         "generated_at": "2026-11-25T13:29:47.405323+09:00"
       }
     },
     {
-      "rank": 5,
+      "rank": 6,
       "full_name": "mvanhorn/last30days-skill",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars_total": 74375,
-      "forks_total": 6554,
-      "stars_period": 5369,
+      "stars_total": 75206,
+      "forks_total": 6630,
+      "stars_period": 5302,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-25T04:27:15Z",
-        "pushed_at": "2026-11-24T19:38:02Z",
-        "open_issues": 26,
+        "updated_at": "2026-11-26T03:38:10Z",
+        "pushed_at": "2026-11-25T17:59:27Z",
+        "open_issues": 28,
         "archived": false,
-        "size_kb": 59724,
+        "size_kb": 59239,
         "topics": [
           "agent-skills",
           "artificial-intelligence",
@@ -463,28 +576,28 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "60c4bc407e64a99f18f8a52d5994855e6a7b0538",
         "generated_at": "2026-11-25T13:29:49.778967+09:00"
       }
     },
     {
-      "rank": 6,
+      "rank": 7,
       "full_name": "ChromeDevTools/chrome-devtools-mcp",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars_total": 59243,
-      "forks_total": 4881,
-      "stars_period": 1258,
+      "stars_total": 59379,
+      "forks_total": 4888,
+      "stars_period": 1203,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-25T04:26:49Z",
-        "pushed_at": "2026-11-24T19:53:24Z",
+        "updated_at": "2026-11-26T03:30:19Z",
+        "pushed_at": "2026-11-25T18:41:45Z",
         "open_issues": 118,
         "archived": false,
-        "size_kb": 14026,
+        "size_kb": 14156,
         "topics": [
           "browser",
           "chrome",
@@ -498,84 +611,88 @@
       },
       "readme": {
         "status": "ok",
-        "sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
+        "sha": "b957bc13f9bbb54da61c581c46f2348799cce672",
         "path": "README.md",
         "truncated": true,
-        "original_chars": 9583,
-        "used_chars": 9582
+        "original_chars": 9736,
+        "used_chars": 9735
       },
       "analysis": {
-        "summary_ja": "chrome-devtools-mcpは、コーディングエージェントがライブのChromeブラウザを制御・検査できるようにするモデルコンテキストプロトコル(MCP)サーバーおよびCLIツールです。",
+        "summary_ja": "chrome-devtools-mcpは、コーディングエージェントがライブのGoogle Chromeブラウザを制御および検査できるようにするModel-Context-Protocol（MCP）サーバーおよびCLIツールです。",
         "capabilities": [
           {
-            "text": "Chrome DevToolsを使用してトレースを記録し、パフォーマンスインサイトを抽出する",
+            "text": "パフォーマンスインサイトの取得：Chrome DevToolsを使用してトレースを記録し、実用的なパフォーマンスインサイトを抽出します。",
             "evidence_section": "Key features"
           },
           {
-            "text": "ネットワークリクエストの分析、スクリーンショットの撮影、ブラウザコンソールメッセージの確認を行う",
+            "text": "高度なブラウザデバッグ：ネットワークリクエストの分析、スクリーンショットの撮影、ソースマップ付きのスタックトレースを含むブラウザコンソールメッセージの確認を行います。",
             "evidence_section": "Key features"
           },
           {
-            "text": "Puppeteerを使用してChrome内のアクションを自動化し、結果を自動的に待機する",
+            "text": "信頼性の高い自動化：puppeteerを使用してChrome内のアクションを自動化し、アクションの結果を自動的に待ちます。",
             "evidence_section": "Key features"
           }
         ],
         "use_cases": [
           {
-            "text": "ウェブページのパフォーマンスをチェックして改善する",
+            "text": "AIコーディングアシスタントにChrome DevToolsの機能を与え、信頼性の高い自動化、高度なデバッグ、パフォーマンス分析を実行する。",
             "basis": "README明記",
-            "evidence_section": "Getting started"
+            "evidence_section": "README冒頭"
           },
           {
-            "text": "ターミナルからCLIを使用してブラウザを操作・制御する",
+            "text": "ターミナルからMCPを使用せずにCLI経由でブラウザを操作する。",
             "basis": "README明記",
             "evidence_section": "CLI"
           },
           {
-            "text": "アクセシビリティの問題を監査および修正する",
+            "text": "アクセシビリティの監査や修正、クッキー・セッションのデバッグを行うためのスキルをエージェントに教え込む。",
             "basis": "README明記",
             "evidence_section": "Skills"
           }
         ],
         "first_trial": {
-          "goal": "MCPクライアントからパフォーマンスをチェックして動作を確認する",
+          "goal": "MCPクライアント経由でブラウザのパフォーマンスを確認する",
           "steps": [
             "MCPクライアントに設定を追加する",
-            "MCPクライアントにプロンプト「Check the performance of https://developers.chrome.com」を入力する"
+            "MCPクライアントに「Check the performance of https://developers.chrome.com」というプロンプトを入力する"
           ],
-          "success_criteria": "MCPクライアントがブラウザを開き、パフォーマンスのトレースを記録すること"
+          "success_criteria": "MCPクライアントがブラウザを起動し、パフォーマンスのトレースを記録すること"
         },
         "evidence_sections": [
+          "README冒頭",
           "Key features",
           "Getting started",
           "CLI",
           "Skills"
         ],
-        "unconfirmed": [],
+        "unconfirmed": [
+          "対応ブラウザとしてGoogle ChromeとChrome for Testing以外で予期せぬ動作をする場合の具体的な回避策",
+          "各種ガイドに記載されている高度なパラメータの詳細な挙動"
+        ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
-        "generated_at": "2026-11-18T12:04:18.202047+09:00"
+        "cached": false,
+        "readme_sha": "b957bc13f9bbb54da61c581c46f2348799cce672",
+        "generated_at": "2026-11-26T12:42:54.451316+09:00"
       }
     },
     {
-      "rank": 7,
+      "rank": 8,
       "full_name": "tradermonty/claude-trading-skills",
       "url": "https://github.com/tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars_total": 8328,
-      "forks_total": 1539,
-      "stars_period": 1504,
+      "stars_total": 8476,
+      "forks_total": 1555,
+      "stars_period": 1422,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-25T04:25:29Z",
-        "pushed_at": "2026-11-23T21:39:16Z",
-        "open_issues": 54,
+        "updated_at": "2026-11-26T03:40:57Z",
+        "pushed_at": "2026-11-25T17:55:12Z",
+        "open_issues": 53,
         "archived": false,
-        "size_kb": 75525,
+        "size_kb": 75627,
         "topics": []
       },
       "readme": {
@@ -644,22 +761,22 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "full_name": "ag-ui-protocol/ag-ui",
       "url": "https://github.com/ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars_total": 21606,
-      "forks_total": 2174,
-      "stars_period": 1753,
+      "stars_total": 21745,
+      "forks_total": 2187,
+      "stars_period": 1421,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-25T04:18:39Z",
-        "pushed_at": "2026-11-24T22:29:20Z",
-        "open_issues": 620,
+        "updated_at": "2026-11-26T03:33:12Z",
+        "pushed_at": "2026-11-26T01:43:15Z",
+        "open_issues": 624,
         "archived": false,
-        "size_kb": 90117,
+        "size_kb": 90133,
         "topics": [
           "ag-ui-protocol",
           "agent-frontend",
@@ -742,22 +859,22 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 10,
       "full_name": "meta/astryx",
       "url": "https://github.com/meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars_total": 32909,
-      "forks_total": 2579,
-      "stars_period": 2890,
+      "stars_total": 33169,
+      "forks_total": 2594,
+      "stars_period": 2635,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-25T04:18:43Z",
-        "pushed_at": "2026-11-25T04:27:55Z",
-        "open_issues": 795,
+        "updated_at": "2026-11-26T03:34:48Z",
+        "pushed_at": "2026-11-26T03:20:35Z",
+        "open_issues": 789,
         "archived": false,
-        "size_kb": 1392280,
+        "size_kb": 1392779,
         "topics": []
       },
       "readme": {
@@ -825,110 +942,96 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "8dbd1010e751f17398d4fdbb1139016669937900",
         "generated_at": "2026-11-25T13:29:53.970100+09:00"
-      }
-    },
-    {
-      "rank": 10,
-      "full_name": "pookjw/HermesEnabler",
-      "url": "https://github.com/pookjw/HermesEnabler",
-      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
-      "language": "Objective-C",
-      "stars_total": 2494,
-      "forks_total": 206,
-      "stars_period": 328,
-      "api": {
-        "default_branch": "main",
-        "license": "MIT",
-        "updated_at": "2026-11-25T03:50:46Z",
-        "pushed_at": "2026-11-19T02:24:27Z",
-        "open_issues": 86,
-        "archived": false,
-        "size_kb": 4494,
-        "topics": []
-      },
-      "readme": {
-        "status": "ok",
-        "sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
-        "path": "README.md",
-        "truncated": true,
-        "original_chars": 4570,
-        "used_chars": 4569
-      },
-      "analysis": {
-        "summary_ja": "HermesEnablerは、任意のApple Watchでエルメスの文字盤を使えるようにするためのツールです。macOSまたはWindows環境でサイドロードやXcodeを使ってインストールし、Apple Watch上のアプリから設定を行います。",
-        "capabilities": [
-          {
-            "text": "任意のApple Watchデバイスでエルメスの文字盤を利用可能にする",
-            "evidence_section": "README冒頭"
-          },
-          {
-            "text": "macOS向けにSideloadlyを用いたIPAインストールやXcodeでのビルドをサポートする",
-            "evidence_section": "macOS"
-          },
-          {
-            "text": "Windows向けにコミュニティツールWatchBridgeを通じたインストールをサポートする",
-            "evidence_section": "Windows"
-          }
-        ],
-        "use_cases": [
-          {
-            "text": "非対応のApple Watchでエルメスの文字盤を表示させたい場合に、アプリをインストールして利用する",
-            "basis": "README明記",
-            "evidence_section": "README冒頭"
-          }
-        ],
-        "first_trial": {
-          "goal": "対応するwatchOSを搭載したApple Watchとペアリングされた環境で、HermesEnabler2をインストールしてアプリ内の手順を開始する",
-          "steps": [
-            "ReleasesからIPAをダウンロードする",
-            "macOSの場合はSideloadly等を使用してiPhoneおよびApple Watchへアプリをインストールする",
-            "Apple Watch上でHermesEnabler2を開き、アプリ内の手順に従う"
-          ],
-          "success_criteria": "Apple Watch上でHermesEnabler2が起動し、アプリ内の手順に進めること"
-        },
-        "evidence_sections": [
-          "README冒頭",
-          "Installation",
-          "macOS",
-          "Windows",
-          "Cautions",
-          "Credits"
-        ],
-        "unconfirmed": [
-          "アプリ内でエルメス文字盤を有効化する具体的な仕組みや手順の詳細"
-        ],
-        "status": "ok",
-        "model": "gemini-3.5-flash-lite",
-        "cached": true,
-        "readme_sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
-        "generated_at": "2026-11-20T11:30:36.620461+09:00"
       }
     }
   ],
   "zenn": [
     {
-      "title": "MCPの記録ツールを追記だけで作ると、訂正のたびに重複が残る。AIは「消せない」と正直に言うが、集計は間違える",
-      "url": "https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections",
-      "author": "kentaro",
-      "published": "Tue, 24 Nov 2026 14:04:27 GMT",
-      "summary": "家の記録を、Claude Codeに書かせている。その日にやったことの時間、休肝日、一言日記、外食、子どもの記録など、Googleスプレッドシートに書き込むMCPのツールが7つある（家の用事をClaude Codeに任せている話は、個人ブログにまとめている）。\n作ってから気づいたのは、7つのうち6つが「追記」と「読む」しか持っていなかったことだ。中身はシートAPIの values().append で、同じ日付でもう一度呼ぶと、新しい行が足される。例外は時間の記録だけで、こち"
+      "title": "specは実装後に8割削除しよう",
+      "url": "https://zenn.dev/ruri/articles/distill-specs-after-implementation",
+      "author": "atsushi ootani",
+      "published": "Wed, 25 Nov 2026 11:33:06 GMT",
+      "summary": "参考にした仕組み: GitHub Spec Kit / OpenSpec のテンプレートとコマンド定義\n参照日: 2026-10-18\n\n\n TL;DR\nspec は、実装の前に考えるための文書です。実装が終わったら、そのまま残さずに仕分けます。実際の spec 7 本で数えると、8 割強は消してよいものでした。\n真実はコードにあります。機能要件・用語・非機能の目標値は、テスト・型・定義箇所のコメントに移ります。動機や設計の判断は ADR に移ります。spec として残るのは"
     },
     {
-      "title": "Copilot Studioのエージェント開発をClaude Codeにどこまで任せられるか試した",
-      "url": "https://zenn.dev/upgradetech/articles/a9a1637d3071c1",
-      "author": "masa",
-      "published": "Tue, 24 Nov 2026 09:24:58 GMT",
-      "summary": "この記事の想定読者\n\nCopilot Studioのエージェントを画面操作で作っていて、直すたびにどこを変えたのか分からなくなっている方\nClaude Codeを使い始めて、コードを書く以外の仕事にも使えないか考えている方\n「AIにアプリを作らせる」が実際どこまで通用するのか、判断材料がほしいPM・マネージャーの方\n記事を見ながら同じものを自分の環境で作ってみたい方\n\nこの記事を読むと、小さなサンプルでClaude Codeにどこまで任せられたのかが分かります。同じものを自分"
+      "title": "アウトプットの「質」ってじゃあなんなんだよ",
+      "url": "https://zenn.dev/watany/articles/1efe3adea67dd5",
+      "author": "watany",
+      "published": "Wed, 25 Nov 2026 11:31:18 GMT",
+      "summary": "はじめに\n登壇にしてもブログにしても「やれば偉い」ってオチにすればみんなハッピーなんだけど、それはそれとして自分のために時間を使ってくれている受け手には失望して欲しくないし、何かを得てもらいたくないですか？面倒なので以降は、共感できる方だけ読み進めてください。\n\n チェックリスト\n他にもあるかもしれませんが、1番近いなと思うものを選んでください\n\n 実験系(やってみた)\n\n公式ドキュメントからの逸脱はあるか？\n　　- 差分や制約があると面白い\n　　- ドキュメント外のナレッジ"
     },
     {
-      "title": "JSConf JP 2026 参加ログ",
-      "url": "https://zenn.dev/aishift/articles/b6dbe1c0acc505",
-      "author": "さっちゃん",
-      "published": "Tue, 24 Nov 2026 08:53:31 GMT",
-      "summary": "はじめに\nこんにちは☀️\n株式会社AI Shiftでフロントエンドエンジニアをしているさっちゃんです！（X：おさわ / 吉岡 爽）\n2026年11月22日（日）にベルサール神田で開催された JSConf JP 2026 に参加してきました！\n4トラック並行で、キーノートは Brendan Eich さんへのインタビューと Josh Junon さんの講演の2本でした。\nhttps://jsconf.jp/2026/\nこの記事は、自分が聞いたセッションのメモを時系列でまとめた参"
+      "title": "RustでFiberを用いたJob Systemを実装したらReleaseビルドでバグが発生した",
+      "url": "https://zenn.dev/otinpan/articles/082f6178eb1472",
+      "author": "otinpan",
+      "published": "Wed, 25 Nov 2026 10:24:41 GMT",
+      "summary": "はじめに\n現在、RustとVulkanを用いた自作ゲームエンジン KaniVolcanoEngine を開発しています。\nKaniVolcanoEngineでは、Jobの並列実行を実現するために、WindowsのFiber APIを用いたJob Systemを実装しています。\n今回、ReleaseビルドでJob Systemを動作させたところ、assertによるpanicや、RefCellの借用エラーが発生しました。原因を調査する過程で、Fiberのスレッド間移動と、コンパイ"
+    },
+    {
+      "title": "結局「オントロジー」って何なのさ 〜概念と良さを4つのレイヤーで整理する〜",
+      "url": "https://zenn.dev/algomatic/articles/ece749a7e3cb24",
+      "author": "ひさふる",
+      "published": "Wed, 25 Nov 2026 09:23:05 GMT",
+      "summary": "こんにちは。11月より、Algomaticでエンジニアをしているひさふるです。\n最近、AIに関連するワードで\"オントロジー\"という用語をよく耳にします。\n「オントロジーを使えば企業のデータを文脈としてAIに理解させられる」のように説明されることも多く、AI時代の企業のデータの持ち方として今非常に注目されています。AIの会社を名乗る我々Algomaticでも、オントロジーの活用は避けては通れず、今様々な領域でオントロジー活用にチャレンジしています。\nしかしこの\"オントロジー\"、"
+    },
+    {
+      "title": "AIを使った開発に「敵対的検証」を取り入れてみた",
+      "url": "https://zenn.dev/visionarray/articles/26b316ff128513",
+      "author": "H.Murayama",
+      "published": "Wed, 25 Nov 2026 06:55:45 GMT",
+      "summary": "AIを使った開発に「敵対的検証」を取り入れてみた\n\n はじめに\n普段、私はCodexやClaude Codeを利用して、設計、実装、コードレビューなどの開発作業を行っています。\nAIを利用することで開発効率は向上しましたが、その一方で、生成されたコードの品質をどのように担保するかについては、日々試行錯誤しています。\nそんな中、たまたまインターネットの記事で「敵対的検証」という言葉を目にしました。\n聞いたことのない言葉だったので興味を持ち、これをAIを使った開発に取り入れてみた"
+    },
+    {
+      "title": "【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み",
+      "url": "https://zenn.dev/codehex/articles/33bc6ee330b880",
+      "author": "codehex",
+      "published": "Wed, 25 Nov 2026 06:12:03 GMT",
+      "summary": "Meta の個人向け AI エージェント「Muse」を使い込んでいくうちに、どうしても欲しくなった仕組みがあります。Slack でメンションされた瞬間や、GitHub でリリースが出た瞬間に、そのまま Muse を動かすことです。\n執筆時点（2026 年 11 月）で僕が調べた範囲では、Muse を外部イベントで即座に動かす仕組みを公開している例は見当たりませんでした。（でもいつかはリリースされそう...?）\nそして、これを見てください！！\nhttps://x.com/cod"
+    },
+    {
+      "title": "AIエージェントのMemory設計 ― 会話履歴・業務データ・長期Memoryの使い分け",
+      "url": "https://zenn.dev/taru_neko/articles/ai-agent-memory-architecture-2026",
+      "author": "樽猫先生",
+      "published": "Wed, 25 Nov 2026 05:23:27 GMT",
+      "summary": "AIエージェントでは、過去の会話を記憶し、次の会話に活用するMemoryという仕組みが使われる。\n一方、従来のWebアプリケーションでも、セッション管理や業務DBによって情報を保持してきた。AIエージェントだからといって、専用のMemory機構が必要とは限らない。\n本記事では、社内の経費精算システムを例に、短期・長期Memoryの構成と既存の仕組みとの使い分けを整理する。さらに、何を記憶するか、情報の更新・削除やセキュリティをどう設計するかを考え、専用の長期Memory機構を"
+    },
+    {
+      "title": "Claude Code のセキュリティ、2026年11月時点のベストプラクティス（サンドボックス・権限・MCP）",
+      "url": "https://zenn.dev/happy_elements/articles/27e14ff6754044",
+      "author": "ko.+",
+      "published": "Wed, 25 Nov 2026 03:53:12 GMT",
+      "summary": "Claude に実行を任せた Bash コマンドは、Claude Code を起動したマシンの上で、自分のユーザー権限で動きます。Mac のターミナルで起動したなら、その Mac です。サンドボックスをオンにしても動く場所は同じで、変わるのは、実行中のコマンドがアクセスできるファイルと通信先の制限です。\n2026 年 11 月時点の公式ドキュメントと changelog をもとに、Claude Code CLI の権限ルール、Bash サンドボックス、MCP の設定をサンプル"
+    },
+    {
+      "title": "Personal Agent Protocol (Poppy) が解く問題と仕組み",
+      "url": "https://zenn.dev/sierra_japan/articles/0b9ba590232345",
+      "author": "konippi",
+      "published": "Tue, 24 Nov 2026 23:30:05 GMT",
+      "summary": "こんにちは、Sierra で Agent Engineer をしている konippi です。\nこの度、Sierra Japan の有志で Engineering Blog を始めました 🎉🎉🎉\nhttps://zenn.dev/p/sierra_japan\n記念すべき最初の記事では、パーソナル AI エージェントと企業をつなぐオープンなプロトコル、Personal Agent Protocol を取り上げます。\n\n はじめに\nMeta の Muse のように、ユーザーの代わ"
+    },
+    {
+      "title": "なんとなくgrill-meしている人に伝えたい、作者本人から学んだSkillsの使い方",
+      "url": "https://zenn.dev/mediaforce/articles/27df1f22a00546",
+      "author": "Kosuke Ikeda",
+      "published": "Tue, 24 Nov 2026 22:30:05 GMT",
+      "summary": "はじめに\n株式会社メディアフォースでエンジニアをしている池田です。自社プロダクトの開発を担当しています。\n弊社の開発チームは、設計や実装にClaude Codeを利用しています。\n周りのエンジニアに勧められたことをきっかけに、最近はMatt PocockのSkillsを利用しています。\nこのSkillsは2026年春頃から話題になっていたgrill-me（grilling）[1]を含んだスキル集です。\n仕様の曖昧さを排除しながら設計できる便利さを感じつつも、質問の多さに疲れた"
+    },
+    {
+      "title": "モデルの性能が出ないのは AI ゲートウェイのせいかもしれない",
+      "url": "https://zenn.dev/google_cloud_jp/articles/7e29a9acf06557",
+      "author": "Kentaro Takiguchi",
+      "published": "Tue, 24 Nov 2026 22:22:23 GMT",
+      "summary": "TL;DR\n\nClaude Code 等から AI ゲートウェイ経由で別プロバイダーのモデルを呼ぶと、HTTP 200 のまま思考のリセットやキャッシュ失効が起きることがある\n異変に気づくには応答品質やエラー率だけでなく、2 ターン目以降の思考トークン数・キャッシュヒット率や、プロバイダー純正のクライアント・API の組み合わせで直接動かしたときとの差を確認するのが有効\nネイティブ API を使える場合はゲートウェイの無変換パススルーを選び、変換を挟む場合はマルチターンの結合"
+    },
+    {
+      "title": "マーダーミステリーのシナリオを形式手法で検証しようとしたら、バグと曖昧さが見つかった",
+      "url": "https://zenn.dev/henteko/articles/ed8d1458246d7a",
+      "author": "henteko",
+      "published": "Tue, 24 Nov 2026 16:45:47 GMT",
+      "summary": "形式手法の勉強のために、マーダーミステリーのシナリオの矛盾を検出するCLIを開発しました。\nhttps://github.com/henteko/murder-mystery-checker\n決まった仕様(JSON)でシナリオを記述すると、到達しないエンディングがあるなど、矛盾を指摘してくれます。\n$ mmcheck check --strict examples/hexagon-house/scenario.json\nwarning H003  持っている物がハンドアウトに"
     },
     {
       "title": "Gemini 4 Neon を API で叩いて Claude Code・Codex CLI と比べた：65万トークンの超長文、費用、失敗",
@@ -938,6 +1041,13 @@
       "summary": "カンリーCAIOの萩野です。\n2026年11月18日に Google が出した Gemini 4 Neon を、同じ8つの課題で Claude Opus 5.5（Claude Code 経由）と GPT-6.2 Sol（Codex CLI 経由）と比べました。一般向けのまとめは note に書いたので、この記事ではどんなリクエストを送り、どう採点し、いくらかかり、どこで失敗したかを、手順を追える粒度で書きます。プロンプトの全文と正解データの作り方は付録に載せました。\n結論を先"
     },
     {
+      "title": "エンジニア20人の組織を、デザイナー1人と AI で支える仕組み",
+      "url": "https://zenn.dev/rimo/articles/c25919207b1cde",
+      "author": "にしゃみー",
+      "published": "Tue, 24 Nov 2026 08:24:00 GMT",
+      "summary": "こんにちは。Rimo 合同会社で 1人目デザイナーをやっているにしゃみー (@NishaMe1024) です。\nRimo にはエンジニアが約20人いて、正社員のデザイナーは入社した3年前から相変わらず私1人です。今年の2月頃、Claude が超絶進化したのを皮切りにプロトタイプを作らせる仕組みを自作し、8ヶ月近くデザイナー1人でもこの人数の開発を支えられる体制をつくってきたので、今回は仕組みや溜まった知見についてご紹介します。\n7月のデザインハーネスイベントで登壇したときの内"
+    },
+    {
       "title": "Claude Code の /ship を図解する",
       "url": "https://zenn.dev/peoplex_blog/articles/claude-code-ship",
       "author": "Aki 🚀 Product Engineer @ PeopleX",
@@ -945,46 +1055,11 @@
       "summary": "はじめに\nPeopleX でプロダクト開発をしている Aki です🚀\nClaude Code に /ship というスキルがベータ版としてリリースされました。コミットと push、PR の作成、レビューと修正、マージかクローズまでの見張りを、1つのセッションで受け持つスキルです。\nhttps://x.com/claudedevs/status/2124959436640858475\n私は普段、自作のスキルと Claude Desktop の Auto-fix を組み合わせて、"
     },
     {
-      "title": "Microsoft Foundry で AI エージェントを設計するときに決める5つのこと",
-      "url": "https://zenn.dev/microsoft/articles/daedf42c8463b8",
-      "author": "Yusuke Shimizu",
-      "published": "Tue, 24 Nov 2026 02:59:05 GMT",
-      "summary": "この記事の目的\nMicrosoft Foundry で AI エージェントを作るときは、データの保存先やエージェントの作成方式、接続するツールを選び、利用に必要な権限やネットワークも設計します。\n本記事では、それぞれの選択がどう関わり合うのかを理解し、エージェント設計の全体像をつかめるように、図中の 1 〜 5 に沿って整理していきます。\n\n!\n本記事は2026年11月23日時点の公式ドキュメントに基づきます。\n\n\n 1. 会話履歴やファイルをどこに保存するのか\n\nMicro"
-    },
-    {
       "title": "Claude Code を5〜8個並べても迷わないように、自分用のダッシュボードをバイブコーディングで作った",
       "url": "https://zenn.dev/nexta_/articles/a3ff76a9f98f1c",
       "author": "bik",
       "published": "Tue, 24 Nov 2026 02:30:05 GMT",
       "summary": "Claude Code は、VSCode の拡張機能で使うのが好きだ。\nMarkdown が見やすく、コードも Git の変更差分もその場で見られる。\nパネルを横に並べられるので、セッション同士が隠れない。VSCode から離れずに済む。\nただ、セッションを5つほど並べると困ることが出てくる。\n一番困ったのは、パネルの見出しが短くて、どれが何の作業をしているのか一目で分からないことだった。\n一時期はメモ帳にパネルの並び順と同じ順で、それぞれ何をしているかを書いていた。\n困りご"
-    },
-    {
-      "title": "Alpamayo は Jetson でリアルタイム推論できるか？ R1 から 2 Edge まで、H100 プロファイルからの実行時間推定",
-      "url": "https://zenn.dev/fixstars/articles/alpamayo-h100",
-      "author": "Togo Sakurai",
-      "published": "Mon, 23 Nov 2026 23:07:40 GMT",
-      "summary": "概要\n本記事では、自動運転向けの VLA モデル Alpamayo R1 / 1.5 と Alpamayo 2 Edge、そして R1 / 1.5 の推論を高速化するフレームワーク FlashDrive を H100 SXM5 (以下 H100) で実際に実行し、そのプロファイリング結果をもとに RTX PRO 6000、Jetson AGX Thor T5000 (以下 Thor)、Jetson AGX Orin 64 GB (以下 Orin) での実行時間を推定します。本"
-    },
-    {
-      "title": "「コードを書く」から「迷わず判断する」へ——AIエージェント時代の開発ワークフローを自作ツールで再設計した話",
-      "url": "https://zenn.dev/syarihu/articles/ba25f243ca79ed",
-      "author": "syarihu",
-      "published": "Mon, 23 Nov 2026 23:00:05 GMT",
-      "summary": "今北産業\n\nAIエージェントに並行して作業を任せるためのツールを、使いながら2か月作り直し続け、iTerm2のタブからボード（いまはMacアプリにもなった）とtmuxで回す形になった\n実装やリファクタはほぼAIに任せ、11月中旬までにおよそ440本のPRをマージした一方、UI/UXは任せきれず、画面の骨格を1か月で5回作り直した\nいちばんストレスが減ったのは、確認待ちの画面を「依頼 → 調べたこと → 計画 → 質問」の順にして、上から読めば答えられるようにしたこと\n\n\n は"
-    },
-    {
-      "title": "コードを全部は読まずにClaude Codeで本番リリースするためにしたこと",
-      "url": "https://zenn.dev/teradox_blog/articles/8ec76cc0d9e2bb",
-      "author": "A.Yoshikawa",
-      "published": "Mon, 23 Nov 2026 21:20:30 GMT",
-      "summary": "はじめに\n2026年10月30日、ゴルフスクール検索・予約ポータル「ゴルフスクールナビ」のリニューアル版をリリースしました。開発は6月10日に始めました。\n普段は Laravel が中心で、今回は特に、要件に合わせた少し複雑な認可まわりに苦戦しました。\n先に書いておくと、リリースしたコードのすべてを私が読み、理解したわけではありません。実装の多くは AI（Claude Code）に任せていました。\nこの記事では、それでも本番にリリースするためにしたことを書きます。主に次の3つ"
-    },
-    {
-      "title": "JSConf JP 2026に参加記録・初登壇の反省など",
-      "url": "https://zenn.dev/igrep/articles/2026-11-jsconfjp",
-      "author": "YAMAMOTO Yuji",
-      "published": "Mon, 23 Nov 2026 15:08:26 GMT",
-      "summary": "去る2026年11月22日、に開催されたJSConf JP 2026に参加し、初めて登壇させていただくことができました🎉！この記事では私の発表内容や反省、そして他の方々の発表で印象に残ったものなどをまとめます。\n\n 私の発表について\nこちらです:\nJS･WasmにもあるRustのアレ - コンポーネント間でやりとりするオブジェクトを管理する (1)\nWasm Component Model について、「Rust 好きな人が Wasm を無駄に複雑にしてしまった」みたいな批判を"
     },
     {
       "title": "JSConf JP 2026 公開資料・Xアカウントリンクまとめ",
@@ -1008,58 +1083,26 @@
       "summary": "プログラミング教育の界隈から抜けて1年と半年以上になる。そのころ私はエンジニアとしての業務と、プログラミング教育を並行してやっていた。\nこの1年半で世の中の状況がだいぶ一変してしまった。1年半前はまだ私は手でコードを書いていて、レビューが機能していたように思う。もうそれがほとんどなくなってしまった。それ以前ではプログラミング教育は根本的な問題を抱えながらも、その重要性が認められてきた。子ども向けのプログラミング教育では、塾でプログラミングが流行り、義務教育に取り入れられてきた"
     },
     {
-      "title": "Orca Botsが良さそう、何ができるのか",
-      "url": "https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro",
-      "author": "Sota Nakamura",
-      "published": "Sat, 21 Nov 2026 15:14:13 GMT",
-      "summary": "はじめに\nこんにちは！KGモーターズの中村です！\nKGモーターズは、1人乗り小型 EV mibot を開発しているスタートアップです。\n\n今回は、最近リリースされた Orca Bots についてのお話です。\n普段からAI Agentを使って開発しているのですが、Orca Botsはなかなか面白かったので、実際に触ってみた内容を簡単にまとめようと思います。\n\n Orcaとは\nまず最初にOrcaについて。\nhttps://orca.dev/\nOrcaは、Claude CodeやC"
-    },
-    {
-      "title": "【TLA+】AIにテストケースを書かせるな。ルールを書け",
-      "url": "https://zenn.dev/karamage/articles/73027ee36796dc",
-      "author": "karamage",
-      "published": "Sat, 21 Nov 2026 02:12:39 GMT",
-      "summary": "「はて、このテストケース、誰が考えたんだっけ？ ほんとにだいじょぶ？」\nAIに頼めば、実装もテストも数秒で出て、CIが全部グリーンになって\nApproveボタンを押そうとしたとき、ふと背筋がゾッとして手が止まりました。\nなんか嫌な予感。。。\n実装を書いたのはAI\nレビューしたのもAI\nテストを書いたのも同じAI\nま、だいじょぶでしょ！(大丈夫じゃない)\nえぇい、ままよ！ マージしちゃえ！\n\n問い: AIがコードもテストも書く時代に、テストはどう変わるのか？\n結論: 人間は「テ"
-    },
-    {
       "title": "寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド",
       "url": "https://zenn.dev/canly/articles/ca6875cd79539f",
       "author": "haginota",
       "published": "Fri, 20 Nov 2026 09:04:40 GMT",
       "summary": "カンリーCAIOの萩野です。\n\n「All Code Is Slop (Except Mine)（全てのコードはゴミ、私のは除く）」を掲げる開発者 poteto（Lauren Tan）さんの基調講演（2026年11月11日、AI Engineer CODE 2026）では、1か月で3,000本のPRを本番に出し、その多くを寝ている間に進めた話が語られました。そのやり方を MIT ライセンスで公開した Cursor 公式スキル集 pstack を Claude Code に入れ、"
-    },
-    {
-      "title": "自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス",
-      "url": "https://zenn.dev/nttdata_tech/articles/9562962cc181a1",
-      "author": "Kazuma Yoshimoto | 吉本 和真",
-      "published": "Thu, 19 Nov 2026 07:28:27 GMT",
-      "summary": "自分の仕事を、コーディングAgentに自律的に進めてほしい。\n一度伝えたことは覚えていて、それを踏まえて、仕事の種類を問わず「私の代わりに」動いてほしい。\nこれが一番の動機で、2026年7月に、自律作業のための個人のハーネスを作り始めました。\nほかにも困っていたことがあります。今でこそOrcaのように、いろいろなコーディングAgentを複数のターミナルで同じように扱える開発環境（ADE: Agentic Development Environment）がありますが、当時は過去"
-    },
-    {
-      "title": "相次ぐOSSの脆弱性に、とりあえずクラウドWAF入れるだけでだいぶ違う話+Rootlessコンテナもいいぞ",
-      "url": "https://zenn.dev/kusuke/articles/98e178e6824cac",
-      "author": "Yusuke Kawabata",
-      "published": "Thu, 19 Nov 2026 01:34:24 GMT",
-      "summary": "昨日から今日にかけて、なんだかすごいことになっていますね。\n先日「PHP2Shell（CVE-2026-109618 / CVE-2026-109619）」というコアそのもののRCE（リモートコード実行）が出て大騒ぎになったと思ったら、JavaでもJavaのBase64デコーダ周りで「Java2Shell（CVE-2026-114938）」が出てきました。さらに今日（11月18日・米国時間）はnginxで10年前から潜んでいたHTTP/2のメモリ破壊バグ（CVE-2026-1"
-    },
-    {
-      "title": "なぜ今形式検証なのか",
-      "url": "https://zenn.dev/ncdc/articles/dcec80b0c067b0",
-      "author": "senna",
-      "published": "Wed, 18 Nov 2026 23:00:05 GMT",
-      "summary": "形式検証、Leanといったワードを最近よくみるので、どんなものなのか知っておきたいというのが今回の動機です。\n解説、詳説というよりは私自身のキャッチアップ記録になります。\n\n 形式検証って何？\n\n形式検証とは、テストや非形式的な議論だけに頼るのではなく、論理を用いてハードウェアやソフトウェアの設計の性質を確立することです。要求の形式的な仕様、実装の形式的なモデル、正確な推論規則を使い、たとえば実装が仕様を満たすことを証明します。\nNIST「formal verificatio"
     }
   ],
   "common_terms": [
     "code",
     "agent",
     "claude",
-    "mcp",
+    "skills",
     "web",
-    "codex",
+    "mcp",
     "cli",
+    "personal",
+    "system",
+    "codex",
     "gemini",
-    "all"
+    "meta"
   ],
   "ai_analysis": {
     "enabled": true,
