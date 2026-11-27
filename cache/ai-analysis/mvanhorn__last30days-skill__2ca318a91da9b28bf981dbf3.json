@@ -1,0 +1,52 @@
+{
+  "summary_ja": "Reddit、X、YouTube、Hacker News、Polymarket、Webなどを横断してトピックを調査し、AIエージェントが根拠のある要約を生成する検索エンジンスキルです。",
+  "capabilities": [
+    {
+      "text": "Reddit、X、YouTube、TikTok、Polymarket、GitHubなどの複数プラットフォームを並行して検索し、AIエージェントが要約を作成する",
+      "evidence_section": "README冒頭"
+    },
+    {
+      "text": "アップボート、いいね、実際の資金（Polymarketなど）のスコアに基づいて情報を評価する",
+      "evidence_section": "README冒頭"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "ビジネスの直近30日間の動向を営業活動の前に調査する",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "ミーティングの前に相手の最近のツイートやポッドキャストのトランスクリプトを読み込む",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    },
+    {
+      "text": "何かを構築する前に、人々が実際に直面している問題を確認する",
+      "basis": "README明記",
+      "evidence_section": "Why this exists"
+    }
+  ],
+  "first_trial": {
+    "goal": "Claude Codeを使用してスキルをインストールし、検索を実行する",
+    "steps": [
+      "/plugin marketplace add mvanhorn/last30days-skill",
+      "/plugin install last30days",
+      "/last30days Peter Steinberger"
+    ],
+    "success_criteria": "指定したトピックについての調査結果がAIエージェントによって要約されること"
+  },
+  "evidence_sections": [
+    "README冒頭",
+    "Why this exists"
+  ],
+  "unconfirmed": [
+    "具体的なAPIキーの設定画面や詳細な設定手順の全容",
+    "対応している全ホスト環境の完全なリスト"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "aa8f48f89de2787778df09ac48b792f1dd4e169d",
+  "generated_at": "2026-11-27T12:43:46.758222+09:00"
+}

@@ -1,0 +1,59 @@
+{
+  "summary_ja": "tradermonty/claude-trading-skills は、時間のない個人投資家向けに市場分析、リスク管理、取引計画、ジャーナル記録などを構造化するための Claude Skills ベースの取引ワークフローツールキットです。",
+  "capabilities": [
+    {
+      "text": "15分間の日次市場チェック（市場の幅や上昇トレンドの分析など）を実行できる",
+      "evidence_section": "Recommended Starting Path"
+    },
+    {
+      "text": "週次の長期ポートフォリオ見直しや配当モニタリングを行うことができる",
+      "evidence_section": "Recommended Starting Path"
+    },
+    {
+      "text": "リスクが許容される場合にのみスイング取引の候補を探すことができる",
+      "evidence_section": "Recommended Starting Path"
+    }
+  ],
+  "use_cases": [
+    {
+      "text": "日々の限られた時間の中で効率的に市場状況を確認したい",
+      "basis": "README明記",
+      "evidence_section": "Recommended Starting Path"
+    },
+    {
+      "text": "長期投資や配当株・ETFを中心に据えつつ、規律あるスイング取引を行いたい",
+      "basis": "README明記",
+      "evidence_section": "Claude Trading Skills"
+    },
+    {
+      "text": "取引の記録と振り返り（ジャーナル）を通じて意思決定プロセスを改善したい",
+      "basis": "README明記",
+      "evidence_section": "Recommended Starting Path"
+    }
+  ],
+  "first_trial": {
+    "goal": "プロバイダーのキーなしでフィクションのレポートとNavigatorを確認する",
+    "steps": [
+      "Offline Quick Start (docs/en/offline-quickstart.md) を参照する"
+    ],
+    "success_criteria": "プロバイダーキーなしでフィクションのレポートとNavigatorを確認できること"
+  },
+  "evidence_sections": [
+    "Claude Trading Skills",
+    "Disclaimer",
+    "Who This Is For",
+    "Recommended Starting Path",
+    "Getting Started",
+    "Additional Workflow Examples",
+    "API Requirements"
+  ],
+  "unconfirmed": [
+    "具体的なインストールコマンドや具体的なセットアップ手順の詳細",
+    "利用可能なすべてのAPIキーの全リストやその設定コマンド"
+  ],
+  "status": "ok",
+  "model": "gemini-3.5-flash-lite",
+  "cached": false,
+  "readme_sha": "f27d11ceef114b21386b333622572513ac42e04c",
+  "generated_at": "2026-11-27T12:43:51.759477+09:00"
+}
