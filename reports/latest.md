@@ -1,6 +1,6 @@
-# Tech Daily — 2026-11-27
+# Tech Daily — 2026-11-28
 
-生成日時: 2026-11-27T12:43:52.847511+09:00  
+生成日時: 2026-11-28T12:27:12.025259+09:00  
 AI分析: 10/10件成功（gemini-3.5-flash-lite）
 
 
@@ -9,7 +9,7 @@ AI分析: 10/10件成功（gemini-3.5-flash-lite）
 **概要:** Plannotatorは、AIコーディングエージェントと人間をつなぐローカルのブラウザベースのレビュー・アノテーションツールです。プラン、仕様書、HTML、コード差分などをレビューしてフィードバックをエージェントに送り返すことができます。
 
 - 言語: TypeScript
-- 今週のスター: 1631
+- 今週のスター: 1596
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -48,7 +48,7 @@ Plannotatorのインストーラーを使用してツールをセットアップ
 **概要:** Google Stitchサーバーと連携するためのエージェントスキルおよびプラグインのコレクションです。デザイン、ビルド、ユーティリティの各カテゴリに分かれた機能を提供します。
 
 - 言語: TypeScript
-- 今週のスター: 2619
+- 今週のスター: 2616
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -89,7 +89,7 @@ Plannotatorのインストーラーを使用してツールをセットアップ
 **概要:** コーディングエージェント向けに最新のウェブ標準のベストプラクティスやブラウザ互換性データを提供するツールです。レガシーなパターンを避け、モダンなウェブプラットフォームの機能や高性能な解決策を活用できるようエージェントを誘導します。
 
 - 言語: TypeScript
-- 今週のスター: 2209
+- 今週のスター: 2008
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -128,7 +128,7 @@ Plannotatorのインストーラーを使用してツールをセットアップ
 **概要:** n8n-io/nod は、独自のコンピュータとブラウザを操作して各種タスクを自動実行できる、オープンソースのパーソナルAIエージェントです。ユーザーの選んだAIモデルと連携し、ローカル環境で動作します。
 
 - 言語: TypeScript
-- 今週のスター: 1165
+- 今週のスター: 1424
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -173,7 +173,7 @@ Plannotatorのインストーラーを使用してツールをセットアップ
 **概要:** OpenCodeReviewは、確実な決定論的パイプラインとLLMエージェントを組み合わせたハイブリッドなアーキテクチャを持つ、AIを活用したコードレビューCLIツールです。
 
 - 言語: Go
-- 今週のスター: 2284
+- 今週のスター: 2335
 - ライセンス: Apache-2.0
 - AI分析状態: ok（キャッシュ）
 
@@ -218,9 +218,9 @@ CLIツールをインストールしてモデルを設定し、レビューを�
 **概要:** Reddit、X、YouTube、Hacker News、Polymarket、Webなどを横断してトピックを調査し、AIエージェントが根拠のある要約を生成する検索エンジンスキルです。
 
 - 言語: Python
-- 今週のスター: 5090
+- 今週のスター: 5072
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -259,9 +259,9 @@ Claude Codeを使用してスキルをインストールし、検索を実行す
 **概要:** chrome-devtools-mcpは、コーディングエージェントがライブのGoogle Chromeブラウザを制御および検査できるようにするModel-Context-Protocol（MCP）サーバーおよびCLIツールです。信頼性の高い自動化、詳細なデバッグ、パフォーマンス分析を提供します。
 
 - 言語: TypeScript
-- 今週のスター: 1175
+- 今週のスター: 1150
 - ライセンス: Apache-2.0
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -300,9 +300,9 @@ MCPクライアントからブラウザを起動し、指定したURLのパフ�
 **概要:** tradermonty/claude-trading-skills は、時間のない個人投資家向けに市場分析、リスク管理、取引計画、ジャーナル記録などを構造化するための Claude Skills ベースの取引ワークフローツールキットです。
 
 - 言語: Python
-- 今週のスター: 1381
+- 今週のスター: 1332
 - ライセンス: MIT
-- AI分析状態: ok
+- AI分析状態: ok（キャッシュ）
 
 ### できること
 
@@ -339,7 +339,7 @@ MCPクライアントからブラウザを起動し、指定したURLのパフ�
 **概要:** AG-UIは、AIエージェントとユーザー向けアプリケーションを接続するためのオープンで軽量なイベントベースのプロトコルです。フレームワークに依存せず、双方向のイベントストリームを用いてエージェントの出力をクライアントで描画できるようにします。
 
 - 言語: TypeScript
-- 今週のスター: 1269
+- 今週のスター: 1185
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -380,7 +380,7 @@ CLIを使用して新しいAG-UIアプリケーションの雛形を作成する
 **概要:** Metaで開発されたオープンソースのデザインシステムであり、150以上のアクセシブルなコンポーネント、テーマ機能、CLIを提供し、人間とAIアシスタントの両方が同じツールと規約でUIを構築できるように設計されています。
 
 - 言語: TypeScript
-- 今週のスター: 2519
+- 今週のスター: 2306
 - ライセンス: MIT
 - AI分析状態: ok（キャッシュ）
 
@@ -421,21 +421,25 @@ Astryxのコアパッケージ、テーマ、ピア依存関係、およびCLI�
 
 ## Zenn
 
+- [Leanで安全制約を書くと、ハザード候補がビルドエラーとして見つかる](https://zenn.dev/kokeshim0chi/articles/lean-safety-constraint-build-error) — kokeshiM0chi
+
+- [GitHub ActionsからPATもGitHub App Private Keyも駆逐する](https://zenn.dev/tmknom/articles/github-app-token-exchange-system) — tmknom
+
+- [禁止しても止まらないClaudeの「欲」を飼いならしてみる](https://zenn.dev/rescuenow/articles/9d1e89a941f4f1) — しもち
+
+- [止められないDBをAWS DMSで移行してハマったこと（RDS for Oracle）](https://zenn.dev/kiri0728/articles/c8d5f349b047dd) — Takuma Kiritoshi
+
+- [日本語のFull-duplex音声対話モデルを実際に動かしてみた話](https://zenn.dev/knowledgework/articles/12a80d8cd4b21f) — mine
+
+- [自宅PCを格安ファイルサーバーとして構築してみた](https://zenn.dev/nextbeat/articles/7c820845a91d7d) — HiCurl
+
+- [AIエージェントにWebのファイルを取得させるリスクについて考える](https://zenn.dev/layerx/articles/65b4828efcaee2) — Tomoya Kudo
+
 - [迷惑メール対策をしているのに、なぜ詐欺メールは届くのか](https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars) — えだまめ
 
 - [自動運転の予測軌跡の可視化動画を誰でも高速に作れるようにする](https://zenn.dev/turing_motors/articles/cbf9872ca90166) — studio_graph
 
 - [作業を止めずに進めるClaude Codeの/btw・/fork・/rewindなどの使い分け](https://zenn.dev/nextbeat/articles/b0ccca979da06b) — sato222
-
-- [個人の目標設定に悩んでいたら、アジャイルが言葉を定義し直すきっかけをくれた話](https://zenn.dev/yoshipon_tech/articles/a0e13c3dbd2f7d) — よしぽん
-
-- [既存のExcelを自動で編集したい──AIに書かせたOffice ScriptsとCopilot Studioで試してみた](https://zenn.dev/upgradetech/articles/1bed37bcbf0732) — gome
-
-- [型チェックが重かったので、クエリの型推論を手放してみた](https://zenn.dev/dress_code/articles/88b55221eea4e0) — anizozina
-
-- [人の判断を切り出すAgent Skillsの設計（v7.0.2）](https://zenn.dev/jayt/articles/agent-skills-judgment-extraction) — Jay T.
-
-- [ぼくはnullが嫌いだ](https://zenn.dev/okaponta/articles/ea88f9ed0c5be5) — okaponta
 
 - [アウトプットの「質」ってじゃあなんなんだよ](https://zenn.dev/watany/articles/1efe3adea67dd5) — watany
 
@@ -445,13 +449,9 @@ Astryxのコアパッケージ、テーマ、ピア依存関係、およびCLI�
 
 - [Claude Code のセキュリティ、2026年11月時点のベストプラクティス（サンドボックス・権限・MCP）](https://zenn.dev/happy_elements/articles/27e14ff6754044) — ko.+
 
-- [Claude CodeとLLM Wikiで全国の自治体の入札参加資格を、一人で回す](https://zenn.dev/wisevine/articles/97b7ba8db70657) — たつや
-
 - [なんとなくgrill-meしている人に伝えたい、作者本人から学んだSkillsの使い方](https://zenn.dev/mediaforce/articles/27df1f22a00546) — Kosuke Ikeda
 
 - [モデルの性能が出ないのは AI ゲートウェイのせいかもしれない](https://zenn.dev/google_cloud_jp/articles/7e29a9acf06557) — Kentaro Takiguchi
-
-- [マーダーミステリーのシナリオを形式手法で検証しようとしたら、バグと曖昧さが見つかった](https://zenn.dev/henteko/articles/ed8d1458246d7a) — henteko
 
 - [Claude Code の /ship を図解する](https://zenn.dev/peoplex_blog/articles/claude-code-ship) — Aki 🚀 Product Engineer @ PeopleX
 

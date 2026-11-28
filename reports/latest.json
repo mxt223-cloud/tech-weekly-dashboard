@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T12:43:52.847511+09:00",
-  "week": "2026-11-27",
+  "generated_at": "2026-11-28T12:27:12.025259+09:00",
+  "week": "2026-11-28",
   "title": "Tech Daily",
   "github": [
     {
@@ -9,17 +9,17 @@
       "url": "https://github.com/backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars_total": 15277,
-      "forks_total": 1463,
-      "stars_period": 1631,
+      "stars_total": 15443,
+      "forks_total": 1479,
+      "stars_period": 1596,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-27T03:35:12Z",
-        "pushed_at": "2026-11-27T03:41:11Z",
+        "updated_at": "2026-11-28T03:26:52Z",
+        "pushed_at": "2026-11-28T03:24:14Z",
         "open_issues": 241,
         "archived": false,
-        "size_kb": 441470,
+        "size_kb": 445634,
         "topics": [
           "agents",
           "claude-code",
@@ -112,15 +112,15 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars_total": 13330,
-      "forks_total": 1567,
-      "stars_period": 2619,
+      "stars_total": 13623,
+      "forks_total": 1631,
+      "stars_period": 2616,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-27T03:24:58Z",
+        "updated_at": "2026-11-28T03:25:25Z",
         "pushed_at": "2026-11-24T21:51:04Z",
-        "open_issues": 25,
+        "open_issues": 26,
         "archived": false,
         "size_kb": 297,
         "topics": []
@@ -197,17 +197,17 @@
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars_total": 11289,
-      "forks_total": 843,
-      "stars_period": 2209,
+      "stars_total": 11480,
+      "forks_total": 848,
+      "stars_period": 2008,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-27T03:35:45Z",
-        "pushed_at": "2026-11-26T20:24:03Z",
-        "open_issues": 401,
+        "updated_at": "2026-11-28T03:22:47Z",
+        "pushed_at": "2026-11-27T19:59:25Z",
+        "open_issues": 403,
         "archived": false,
-        "size_kb": 177908,
+        "size_kb": 178058,
         "topics": []
       },
       "readme": {
@@ -279,17 +279,17 @@
       "url": "https://github.com/n8n-io/nod",
       "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
       "language": "TypeScript",
-      "stars_total": 4041,
-      "forks_total": 617,
-      "stars_period": 1165,
+      "stars_total": 4389,
+      "forks_total": 663,
+      "stars_period": 1424,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-27T03:38:58Z",
-        "pushed_at": "2026-11-27T03:25:06Z",
-        "open_issues": 93,
+        "updated_at": "2026-11-28T03:25:35Z",
+        "pushed_at": "2026-11-28T02:37:39Z",
+        "open_issues": 116,
         "archived": false,
-        "size_kb": 155840,
+        "size_kb": 158513,
         "topics": [
           "agents",
           "ai-agent",
@@ -394,15 +394,15 @@
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars_total": 56676,
-      "forks_total": 4690,
-      "stars_period": 2284,
+      "stars_total": 56926,
+      "forks_total": 4707,
+      "stars_period": 2335,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-27T03:42:12Z",
+        "updated_at": "2026-11-28T03:24:20Z",
         "pushed_at": "2026-11-26T02:19:51Z",
-        "open_issues": 353,
+        "open_issues": 362,
         "archived": false,
         "size_kb": 58489,
         "topics": [
@@ -487,17 +487,17 @@
       "url": "https://github.com/mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars_total": 75870,
-      "forks_total": 6686,
-      "stars_period": 5090,
+      "stars_total": 76417,
+      "forks_total": 6797,
+      "stars_period": 5072,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-27T03:43:39Z",
-        "pushed_at": "2026-11-26T21:28:08Z",
-        "open_issues": 14,
+        "updated_at": "2026-11-28T03:26:44Z",
+        "pushed_at": "2026-11-27T06:30:50Z",
+        "open_issues": 23,
         "archived": false,
-        "size_kb": 59787,
+        "size_kb": 58763,
         "topics": [
           "agent-skills",
           "artificial-intelligence",
@@ -577,7 +577,7 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "aa8f48f89de2787778df09ac48b792f1dd4e169d",
         "generated_at": "2026-11-27T12:43:46.758222+09:00"
       }
@@ -588,17 +588,17 @@
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars_total": 59524,
-      "forks_total": 4898,
-      "stars_period": 1175,
+      "stars_total": 59641,
+      "forks_total": 4857,
+      "stars_period": 1150,
       "api": {
         "default_branch": "main",
         "license": "Apache-2.0",
-        "updated_at": "2026-11-27T03:43:21Z",
-        "pushed_at": "2026-11-26T18:36:23Z",
-        "open_issues": 114,
+        "updated_at": "2026-11-28T02:48:56Z",
+        "pushed_at": "2026-11-27T14:34:29Z",
+        "open_issues": 112,
         "archived": false,
-        "size_kb": 14553,
+        "size_kb": 14614,
         "topics": [
           "browser",
           "chrome",
@@ -668,7 +668,7 @@
         "unconfirmed": [],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "9f9a0ad37bb7b454e2ae14c0f253dfd8e66ce6d2",
         "generated_at": "2026-11-27T12:43:49.281151+09:00"
       }
@@ -679,17 +679,17 @@
       "url": "https://github.com/tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars_total": 8619,
-      "forks_total": 1563,
-      "stars_period": 1381,
+      "stars_total": 8743,
+      "forks_total": 1573,
+      "stars_period": 1332,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-27T03:41:38Z",
-        "pushed_at": "2026-11-27T01:42:33Z",
-        "open_issues": 45,
+        "updated_at": "2026-11-28T03:13:52Z",
+        "pushed_at": "2026-11-28T00:18:25Z",
+        "open_issues": 53,
         "archived": false,
-        "size_kb": 77260,
+        "size_kb": 77393,
         "topics": []
       },
       "readme": {
@@ -755,7 +755,7 @@
         ],
         "status": "ok",
         "model": "gemini-3.5-flash-lite",
-        "cached": false,
+        "cached": true,
         "readme_sha": "f27d11ceef114b21386b333622572513ac42e04c",
         "generated_at": "2026-11-27T12:43:51.759477+09:00"
       }
@@ -766,17 +766,17 @@
       "url": "https://github.com/ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars_total": 21857,
-      "forks_total": 2190,
-      "stars_period": 1269,
+      "stars_total": 21963,
+      "forks_total": 2194,
+      "stars_period": 1185,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-27T03:30:22Z",
-        "pushed_at": "2026-11-26T01:43:15Z",
-        "open_issues": 629,
+        "updated_at": "2026-11-28T03:26:23Z",
+        "pushed_at": "2026-11-27T22:38:34Z",
+        "open_issues": 633,
         "archived": false,
-        "size_kb": 90133,
+        "size_kb": 90489,
         "topics": [
           "ag-ui-protocol",
           "agent-frontend",
@@ -864,17 +864,17 @@
       "url": "https://github.com/meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars_total": 33387,
-      "forks_total": 2604,
-      "stars_period": 2519,
+      "stars_total": 33551,
+      "forks_total": 2614,
+      "stars_period": 2306,
       "api": {
         "default_branch": "main",
         "license": "MIT",
-        "updated_at": "2026-11-27T03:35:27Z",
-        "pushed_at": "2026-11-27T03:21:43Z",
-        "open_issues": 800,
+        "updated_at": "2026-11-28T03:26:20Z",
+        "pushed_at": "2026-11-28T03:12:00Z",
+        "open_issues": 803,
         "archived": false,
-        "size_kb": 1392868,
+        "size_kb": 1394931,
         "topics": []
       },
       "readme": {
@@ -950,6 +950,55 @@
   ],
   "zenn": [
     {
+      "title": "Leanで安全制約を書くと、ハザード候補がビルドエラーとして見つかる",
+      "url": "https://zenn.dev/kokeshim0chi/articles/lean-safety-constraint-build-error",
+      "author": "kokeshiM0chi",
+      "published": "Fri, 27 Nov 2026 04:40:24 GMT",
+      "summary": "Google の『Site Reliability Engineering』第2版に、「Safety Engineering for SRE with STPA and CAST」という章が加わりました。STAMP/STPA はシステム安全工学から生まれた考え方と分析手法で、Google では2021年に社内研修が始まり、2025年の SREcon では Google Maps への適用事例も紹介されています（STPA: Teaching a New Way to Preve"
+    },
+    {
+      "title": "GitHub ActionsからPATもGitHub App Private Keyも駆逐する",
+      "url": "https://zenn.dev/tmknom/articles/github-app-token-exchange-system",
+      "author": "tmknom",
+      "published": "Fri, 27 Nov 2026 02:51:13 GMT",
+      "summary": "GitHub ActionsではGITHUB_TOKENで権限が足りない場合、PAT（Personal Access Token）やGitHub App Token（Installation Access Token）を使います。PATに比べるとGitHub App Tokenはだいぶマシですが、Private Keyの管理が課題になります。そこで GATES というソフトウェアを作ってみたので紹介します。 GitHub App Tokenをワークフロー内で直接生成するには、"
+    },
+    {
+      "title": "禁止しても止まらないClaudeの「欲」を飼いならしてみる",
+      "url": "https://zenn.dev/rescuenow/articles/9d1e89a941f4f1",
+      "author": "しもち",
+      "published": "Fri, 27 Nov 2026 02:47:09 GMT",
+      "summary": "Claudeにコードを書かせると、頼んでもない挙動をしれっと足してくることよくあって、「頼まれていないことはやるな」って書いても全然効いている感じがしないですよね。 Claudeはどうしても頼まれていなくても自分が考える良いものにしようとする「欲」が強いように感じます。 どうも、しもちです。 こういうときによく言われるのが「プロンプトは禁止じゃなくて肯定形で書け」というやつです。本当に効くのか疑問だったので実験してみました。 Pythonの標準ライブラリだけで、CSVをグルー"
+    },
+    {
+      "title": "止められないDBをAWS DMSで移行してハマったこと（RDS for Oracle）",
+      "url": "https://zenn.dev/kiri0728/articles/c8d5f349b047dd",
+      "author": "Takuma Kiritoshi",
+      "published": "Fri, 27 Nov 2026 02:37:34 GMT",
+      "summary": "RDS for Oracle（約150GB）を、DMSのフルロード＋CDCで旧AWS環境から新AWS環境へ移行し、停止時間は約10分に抑えられた CDCで差分が同期されなかった原因は、移行元RDSでサプリメンタルロギングとアーカイブログ保持が未設定だったこと。RDSでは rdsadmin のプロシージャで設定する 接続テストのORA-12545は、IPアドレスを直接指定して名前解決の問題だと切り分けた。原因はホスト名のタイプミスだった 今なら、移行前のチェックリスト、ストレー"
+    },
+    {
+      "title": "日本語のFull-duplex音声対話モデルを実際に動かしてみた話",
+      "url": "https://zenn.dev/knowledgework/articles/12a80d8cd4b21f",
+      "author": "mine",
+      "published": "Fri, 27 Nov 2026 02:27:39 GMT",
+      "summary": "この記事でわかること 日本語Full-duplex音声対話モデル「J-Moshi-ext」のMLX変換版を、Apple Silicon搭載Macでローカル実行する方法 実際に13回の日本語対話を行って観察した相槌、割り込み、発話タイミングなどの挙動 約4分付近で発話内容が崩れる現象と、コンテキスト長との関係についての考察 音声対話では、何を答えるかに加えて「いつ話すか」が重要です。人間同士の会話では、相手の話の途中で相槌を打ったり、割り込んで質問したりすることがあります。こう"
+    },
+    {
+      "title": "自宅PCを格安ファイルサーバーとして構築してみた",
+      "url": "https://zenn.dev/nextbeat/articles/7c820845a91d7d",
+      "author": "HiCurl",
+      "published": "Fri, 27 Nov 2026 02:09:30 GMT",
+      "summary": "ポート開放なしで、外からアクセスできる自宅ファイルサーバーを構築したので、構成をご紹介します。 この記事は、こんな人に向けています。 外部から接続できる自宅サーバーをなるべく安く構築したいが、ポート開放や認証まわりが不安な人 PC が余っていた 外から接続できるファイルサーバーが欲しかった せっかくなら認証周り（Auth0）も触ってみたかった ※ 記事執筆時点での価格 外から入る経路を作る主な手段を比べると、次のようになります。 一番の理由は Auth0 に触れてみたかった "
+    },
+    {
+      "title": "AIエージェントにWebのファイルを取得させるリスクについて考える",
+      "url": "https://zenn.dev/layerx/articles/65b4828efcaee2",
+      "author": "Tomoya Kudo",
+      "published": "Fri, 27 Nov 2026 01:48:19 GMT",
+      "summary": "こんにちは、LayerX Ai Workforce事業部でFDE（Forward Deployed Engineer）をしている工藤です。 AIエージェントに仕事を任せると、「Webにある資料を読ませたい」という要望が出てきます。例えば、IR資料、開示資料、業界レポートといったものです。人間なら検索してPDFを開くだけの作業です。 ところが、エージェントに「任意のURLからファイルを取ってきて読む」能力を持たせるのは、セキュリティの観点ではかなり危ない行為です。 この記事は、"
+    },
+    {
       "title": "迷惑メール対策をしているのに、なぜ詐欺メールは届くのか",
       "url": "https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars",
       "author": "えだまめ",
@@ -969,41 +1018,6 @@
       "author": "sato222",
       "published": "Thu, 26 Nov 2026 07:01:54 GMT",
       "summary": "Claude Codeに実装やレビュー対応を任せていると、作業の途中でちょっと別のことを聞きたくなったり、別の案も試したくなったりすることがあります。 また、テストやCIが終わるのを待っている間に手が止まってしまうことも多いです。 そういった時に使えるコマンドがClaude Codeにはいくつか用意されていますが、/btw、/branch、/forkなど名前が似ていて最初はどれを使えばいいか迷いました。 今回は普段よく使っているものを中心にそれぞれの違いと使い分けをまとめてみ"
-    },
-    {
-      "title": "個人の目標設定に悩んでいたら、アジャイルが言葉を定義し直すきっかけをくれた話",
-      "url": "https://zenn.dev/yoshipon_tech/articles/a0e13c3dbd2f7d",
-      "author": "よしぽん",
-      "published": "Thu, 26 Nov 2026 05:35:21 GMT",
-      "summary": "こちらのイベントで5分LTに登壇したのですが、スライドでは省略したことがかなりあったので記事にしました。 また貴重なイベントに参加させていただきありがとうございましたmm ▼スライドはこちら 普段、業務ではウォーターフォールで開発をしていますが、一時期スクラム開発を実施していた経験もあります。 そのときに触れたアジャイルという考え方が素晴らしく好きなんですが 今回、より一段深くアジャイルを理解するきっかけになったのでどうかお付き合いいただけると嬉しいです 初めに言ってしまうと"
-    },
-    {
-      "title": "既存のExcelを自動で編集したい──AIに書かせたOffice ScriptsとCopilot Studioで試してみた",
-      "url": "https://zenn.dev/upgradetech/articles/1bed37bcbf0732",
-      "author": "gome",
-      "published": "Thu, 26 Nov 2026 03:37:56 GMT",
-      "summary": "業務で使うExcelのファイルには、次のような形のものがあります。 図1：検証に使った架空の備品管理台帳（一部）。分類ごとの区切り行と小計行がある Copilot Studioの標準のExcel用アクション（Excel Online (Business) コネクタの行の取得・追加・更新など）は、Excelの「テーブル」が前提です。テーブルは、1行目に見出しが1段だけあり、その下に1件ずつデータの行が続く形の表です。図1のファイルには、この形に当てはまらない部分があります。 ①"
-    },
-    {
-      "title": "型チェックが重かったので、クエリの型推論を手放してみた",
-      "url": "https://zenn.dev/dress_code/articles/88b55221eea4e0",
-      "author": "anizozina",
-      "published": "Thu, 26 Nov 2026 02:15:05 GMT",
-      "summary": "こんにちは、Dress Code 株式会社でプロダクトエンジニアをやっている津田です。 並列で設計・実装を進めていると、メモリが足りなくて困ることありませんか？ 多分に漏れず、手元の Mac のメモリが足りず、あまつさえディスクまで圧迫される状態が続いていました。原因を追っていくと TypeScript の型チェックに行き着き、さらに調べると、1 つのクエリの型推論が、全件の型チェックの仕事量の約 3 分の 1 を占めていました。 今回は、そのクエリの型推論をやめた話です。 "
-    },
-    {
-      "title": "人の判断を切り出すAgent Skillsの設計（v7.0.2）",
-      "url": "https://zenn.dev/jayt/articles/agent-skills-judgment-extraction",
-      "author": "Jay T.",
-      "published": "Thu, 26 Nov 2026 02:05:57 GMT",
-      "summary": "Agent Skills を作るとき、人の判断を手順と導入先の環境から切り出して別のスキルに置く。 切り出した判断は、人によって答えが分かれるもの（中核判断）と、誰でも同じ答えになるもの（一般的な業務知識）に分ける。 前者は人ごとに差し替えて使い、後者はみんなで育てる。こうすると、作った人の視点を残したままスキルを共有できる、というのがこの文書の仮説である。 考え方だけを知りたいときは、「仮説」と「設計原理」（1〜2章）までを読めば足りる。「設計方針」（3〜7章）は実際にスキ"
-    },
-    {
-      "title": "ぼくはnullが嫌いだ",
-      "url": "https://zenn.dev/okaponta/articles/ea88f9ed0c5be5",
-      "author": "okaponta",
-      "published": "Thu, 26 Nov 2026 01:36:47 GMT",
-      "summary": "nullに対してずっとなんとなく嫌悪感を持ってきましたが、なぜ嫌いなのかをきちんと説明できない気がしたので、今回は腰を据えて考えてみました。 お気持ちとしては、次のようにnullが業務的な意味を持っているコードに対して「わかりづらいな」という感覚です。 もちろんコメントを読めば意図は分かりますが、逆にいえばコメントを読まないと自信が持てません。 コメントがあるならまだいい方で、endDateフィールドのjavadocにだけ書いてあったり、最悪どこにも書いていなかったりします。"
     },
     {
       "title": "アウトプットの「質」ってじゃあなんなんだよ",
@@ -1034,13 +1048,6 @@
       "summary": "Claude に実行を任せた Bash コマンドは、Claude Code を起動したマシンの上で、自分のユーザー権限で動きます。Mac のターミナルで起動したなら、その Mac です。サンドボックスをオンにしても動く場所は同じで、変わるのは、実行中のコマンドがアクセスできるファイルと通信先の制限です。 2026 年 11 月時点の公式ドキュメントと changelog をもとに、Claude Code CLI の権限ルール、Bash サンドボックス、MCP の設定をサンプル"
     },
     {
-      "title": "Claude CodeとLLM Wikiで全国の自治体の入札参加資格を、一人で回す",
-      "url": "https://zenn.dev/wisevine/articles/97b7ba8db70657",
-      "author": "たつや",
-      "published": "Wed, 25 Nov 2026 00:00:07 GMT",
-      "summary": "入札参加資格は、自治体ごとにやり方が違います。 申請の窓口（電子申請、紙、複数自治体の共同受付） 様式 必要な書類 締切 全国の分を一人でやるのは、正直しんどいです。 これまでは、要綱を読んで、様式を集めて、書類を書いて、を自治体ごとに繰り返していました。 目指したのは「話しているうちに終わっている」状態です。 調べる、読む、まとめる、書き込む、は Claude Code と一緒に進める 実印、電子認証、送信ボタンだけは人が押す（書類の郵送の場合はもちろん） 自治体の名前を伝"
-    },
-    {
       "title": "なんとなくgrill-meしている人に伝えたい、作者本人から学んだSkillsの使い方",
       "url": "https://zenn.dev/mediaforce/articles/27df1f22a00546",
       "author": "Kosuke Ikeda",
@@ -1053,13 +1060,6 @@
       "author": "Kentaro Takiguchi",
       "published": "Tue, 24 Nov 2026 22:22:23 GMT",
       "summary": "Claude Code 等から AI ゲートウェイ経由で別プロバイダーのモデルを呼ぶと、HTTP 200 のまま思考のリセットやキャッシュ失効が起きることがある 異変に気づくには応答品質やエラー率だけでなく、2 ターン目以降の思考トークン数・キャッシュヒット率や、プロバイダー純正のクライアント・API の組み合わせで直接動かしたときとの差を確認するのが有効 ネイティブ API を使える場合はゲートウェイの無変換パススルーを選び、変換を挟む場合はマルチターンの結合テストで状態維"
-    },
-    {
-      "title": "マーダーミステリーのシナリオを形式手法で検証しようとしたら、バグと曖昧さが見つかった",
-      "url": "https://zenn.dev/henteko/articles/ed8d1458246d7a",
-      "author": "henteko",
-      "published": "Tue, 24 Nov 2026 16:45:47 GMT",
-      "summary": "形式手法の勉強のために、マーダーミステリーのシナリオの矛盾を検出するCLIを開発しました。 決まった仕様(JSON)でシナリオを記述すると、到達しないエンディングがあるなど、矛盾を指摘してくれます。 これでAIによって自動で作成したシナリオが矛盾がないものになっているかを機械的に判定することができるようになりました。マーダーミステリーのシナリオジェネレーターが作れるってことですね、夢がある。 またHTMLで人間が見やすいようにシナリオと検証結果を表示する機能もあります。 マー"
     },
     {
       "title": "Claude Code の /ship を図解する",
@@ -1092,14 +1092,12 @@
   ],
   "common_terms": [
     "code",
-    "agent",
     "claude",
     "skills",
     "web",
     "mcp",
-    "llm",
+    "personal",
     "cli",
-    "typescript",
     "meta"
   ],
   "ai_analysis": {
